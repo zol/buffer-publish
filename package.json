@@ -4,7 +4,7 @@
   "description": "🍩",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "storyshots"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,11 @@
   },
   "homepage": "https://github.com/bufferapp/project-donut#readme",
   "dependencies": {
-    "@kadira/storybook": "2.34.0",
     "react": "15.4.1",
     "react-dom": "15.4.1"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "2.34.0",
+    "@kadira/storyshots": "^2.1.0"
   }
 }
