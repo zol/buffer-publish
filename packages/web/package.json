@@ -1,0 +1,15 @@
+{
+  "name": "@bufferapp/web",
+  "version": "0.0.1",
+  "description": "Buffer Web Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "buffer",
+    "web"
+  ],
+  "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
+  "license": "MIT"
+}
