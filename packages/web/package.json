@@ -2,9 +2,13 @@
   "name": "@bufferapp/web",
   "version": "0.0.1",
   "description": "Buffer Web Dashboard",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
   },
   "keywords": [
     "buffer",
