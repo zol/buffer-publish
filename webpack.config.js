@@ -6,13 +6,13 @@ module.exports = {
     publicPath: '/static/',
   },
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx'],
+    extensions: ['.js', '.json', '.jsx'],
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       include: __dirname,
       query: {
         presets: ['es2015', 'react', 'react-hmre'],
