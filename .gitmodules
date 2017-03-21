@@ -1,3 +1,6 @@
 [submodule "packages/components"]
 	path = packages/components
 	url = git@github.com:bufferapp/buffer-components.git
+[submodule "packages/web-components"]
+	path = packages/web-components
+	url = git@github.com:bufferapp/buffer-web-components.git
