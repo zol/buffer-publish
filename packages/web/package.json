@@ -5,6 +5,7 @@
   "main": "index.jsx",
   "scripts": {
     "start": "start-storybook -p 9003",
+    "lint": "eslint . --ignore-pattern coverage .storybook node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -20,7 +21,13 @@
   "license": "MIT",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "babel-eslint": "7.1.1",
     "css-loader": "0.27.3",
+    "eslint": "3.17.1",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.10.0",
     "postcss-custom-properties": "5.0.2",
     "postcss-hexrgba": "0.2.1",
     "postcss-import": "9.1.0",
