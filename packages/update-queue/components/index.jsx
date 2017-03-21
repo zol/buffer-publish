@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import {
+  Card,
+  List,
+} from '@bufferapp/components';
 
 const UpdateQueue = ({ updates }) =>
-  <div>{JSON.stringify(updates, null, 2)}</div>;
+  <List items={updates.map(update => <Card>{JSON.stringify(update)}</Card>)} />;
+
+UpdateQueue.propTypes = {
+  updates: PropTypes.arrayOf(
+    PropTypes.object,
+  ),
+};
+
+UpdateQueue.defaultProps = {
+  updates: [],
+};
 
 export default UpdateQueue;

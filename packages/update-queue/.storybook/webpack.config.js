@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        exclude: /node_modules(?!\/@bufferapp\/components|\/@bufferapp\/web-components)/,
+        exclude: /node_modules(?!\/@bufferapp\/components)/,
         loader: 'babel-loader',
         presets: ['es2015', 'stage-0', 'react'],
         plugins: [
