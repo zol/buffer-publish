@@ -17,3 +17,7 @@ export const actions = {
     pendingUpdates,
   }),
 };
+
+export const selectors = {
+  key: 'PENDING_UPDATES',
+};

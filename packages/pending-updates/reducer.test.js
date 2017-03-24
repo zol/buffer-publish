@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze';
-import { reducer, actions, actionTypes } from './reducer';
+import { reducer, actions, actionTypes, selectors } from './reducer';
 import pendingUpdates from './examplePendingUpdates';
 
 describe('reducer', () => {
@@ -44,5 +44,12 @@ describe('actions', () => {
     deepFreeze(pendingUpdates);
     expect(actions.setPendingUpdates({ pendingUpdates }))
       .toEqual(actionAfter);
+  });
+});
+
+describe('selectors', () => {
+  it('should set a root key', () => {
+    expect(selectors.key)
+      .toBe('PENDING_UPDATES');
   });
 });
