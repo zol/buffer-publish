@@ -17,7 +17,18 @@ describe('reducer', () => {
     };
     const stateAfter = pendingUpdates;
     deepFreeze(action);
-    deepFreeze(stateAfter);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
+  it('should set updates from intermediate state', () => {
+    const stateBefore = [pendingUpdates[0]];
+    const action = {
+      type: SET_PENDING_UPDATES,
+      pendingUpdates,
+    };
+    const stateAfter = pendingUpdates;
+    deepFreeze(stateBefore);
+    deepFreeze(action);
     expect(reducer(stateBefore, action))
       .toEqual(stateAfter);
   });
