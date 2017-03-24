@@ -1,7 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
-import PendingUpdatesContainer, { reducer, actions, actionTypes } from './index';
+import PendingUpdatesContainer, {
+  reducer,
+  actions,
+  actionTypes,
+  selectors,
+} from './index';
 import PendingUpdates from './components';
 
 const storeFake = state => ({
@@ -18,6 +23,8 @@ describe('pending-updates', () => {
     expect(actions)
       .toBeDefined();
     expect(actionTypes)
+      .toBeDefined();
+    expect(selectors)
       .toBeDefined();
   });
 

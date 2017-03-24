@@ -5,4 +5,4 @@ export default connect(
   () => ({}),
 )(PendingUpdates);
 
-export { reducer, actions, actionTypes } from './reducer';
+export { reducer, actions, actionTypes, selectors } from './reducer';
