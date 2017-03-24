@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze';
-import reducer, { SET_PENDING_UPDATES } from './reducer';
+import reducer, { setPendingUpdates, SET_PENDING_UPDATES } from './reducer';
 import pendingUpdates from './examplePendingUpdates';
 
 describe('reducer', () => {
@@ -31,5 +31,18 @@ describe('reducer', () => {
     deepFreeze(action);
     expect(reducer(stateBefore, action))
       .toEqual(stateAfter);
+  });
+});
+
+describe('actions', () => {
+  it('should create setPendingUpdates action', () => {
+    const actionAfter = {
+      type: SET_PENDING_UPDATES,
+      pendingUpdates,
+    };
+    deepFreeze(actionAfter);
+    deepFreeze(pendingUpdates);
+    expect(setPendingUpdates({ pendingUpdates }))
+      .toEqual(actionAfter);
   });
 });

@@ -9,4 +9,9 @@ const reducer = (state = [], action) => {
   }
 };
 
+export const setPendingUpdates = ({ pendingUpdates }) => ({
+  type: SET_PENDING_UPDATES,
+  pendingUpdates,
+});
+
 export default reducer;
