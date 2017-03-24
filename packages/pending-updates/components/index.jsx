@@ -4,17 +4,17 @@ import {
   List,
 } from '@bufferapp/components';
 
-const UpdateQueue = ({ updates }) =>
+const PendingUpdates = ({ updates }) =>
   <List items={updates.map(update => <Card>{JSON.stringify(update)}</Card>)} />;
 
-UpdateQueue.propTypes = {
+PendingUpdates.propTypes = {
   updates: PropTypes.arrayOf(
     PropTypes.object,
   ),
 };
 
-UpdateQueue.defaultProps = {
+PendingUpdates.defaultProps = {
   updates: [],
 };
 
-export default UpdateQueue;
+export default PendingUpdates;
