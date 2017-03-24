@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze';
-import reducer, { actions, actionTypes } from './reducer';
+import { reducer, actions, actionTypes } from './reducer';
 import pendingUpdates from './examplePendingUpdates';
 
 describe('reducer', () => {

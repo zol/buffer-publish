@@ -2,7 +2,7 @@ export const actionTypes = {
   SET_PENDING_UPDATES: 'SET_PENDING_UPDATES',
 };
 
-const reducer = (state = [], action) => {
+export const reducer = (state = [], action) => {
   switch (action.type) {
     case actionTypes.SET_PENDING_UPDATES:
       return action.pendingUpdates;
@@ -17,5 +17,3 @@ export const actions = {
     pendingUpdates,
   }),
 };
-
-export default reducer;
