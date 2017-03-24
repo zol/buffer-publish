@@ -52,4 +52,13 @@ describe('selectors', () => {
     expect(selectors.key)
       .toBe('PENDING_UPDATES');
   });
+
+  it('should getPendingUpdates from store', () => {
+    const store = {
+      [selectors.key]: pendingUpdates,
+    };
+    deepFreeze(store);
+    expect(selectors.getPendingUpdates(store))
+      .toEqual(pendingUpdates);
+  });
 });

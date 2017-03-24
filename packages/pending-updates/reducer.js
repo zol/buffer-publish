@@ -1,3 +1,5 @@
+const ROOT_KEY = 'PENDING_UPDATES';
+
 export const actionTypes = {
   SET_PENDING_UPDATES: 'SET_PENDING_UPDATES',
 };
@@ -19,5 +21,6 @@ export const actions = {
 };
 
 export const selectors = {
-  key: 'PENDING_UPDATES',
+  key: ROOT_KEY,
+  getPendingUpdates: store => store[ROOT_KEY],
 };
