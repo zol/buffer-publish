@@ -34,7 +34,7 @@
   "author": "hharnis@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@bufferapp/components": "0.4.2",
+    "@bufferapp/components": "0.4.11",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-redux": "5.0.3"
