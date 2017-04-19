@@ -5,6 +5,7 @@ import {
   InputEmail,
   InputPassword,
 } from '@bufferapp/components';
+import styles from './style.css';
 
 const LoginForm = () =>
   <form>
@@ -16,14 +17,14 @@ const LoginForm = () =>
         placeholder={'hello@buffer.com'}
       />
     </div>
-    <div>
+    <div className={styles.passwordField}>
       <Field
         name={'password'}
         component={InputPassword}
         label={'Password'}
       />
     </div>
-    <div>
+    <div className={styles.loginButton}>
       <Button>Login</Button>
     </div>
   </form>;
