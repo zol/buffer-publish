@@ -7,8 +7,6 @@ import LoginForm from './index';
 
 const store = createStore(combineReducers({ form: formReducer }));
 
-console.log('store', store);
-
 storiesOf('LoginForm')
   .addDecorator(getStory =>
     <Provider store={store}>
