@@ -7,6 +7,17 @@ import {
 } from '@bufferapp/components';
 import styles from './style.css';
 
+const validate = (values) => {
+  const errors = {};
+  if (!values.email) {
+    errors.email = 'email is required';
+  }
+  if (!values.password) {
+    errors.password = 'password is required';
+  }
+  return errors;
+};
+
 const LoginForm = ({
   handleSubmit,
   pristine,
@@ -45,5 +56,6 @@ LoginForm.propTypes = {
 };
 
 export default reduxForm({
+  validate,
   form: 'login',
 })(LoginForm);
