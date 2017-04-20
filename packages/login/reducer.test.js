@@ -14,4 +14,15 @@ describe('actions', () => {
     expect(actions.loginStart())
       .toEqual(actionAfter);
   });
+
+  it('should create loginFail action', () => {
+    const errorMessage = 'something bad happend';
+    const actionAfter = {
+      type: actionTypes.LOGIN_FAIL,
+      errorMessage,
+    };
+    deepFreeze(actionAfter);
+    expect(actions.loginFail({ errorMessage }))
+      .toEqual(actionAfter);
+  });
 });
