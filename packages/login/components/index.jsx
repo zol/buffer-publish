@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import {
   Button,
@@ -7,7 +7,11 @@ import {
 } from '@bufferapp/components';
 import styles from './style.css';
 
-const LoginForm = () =>
+const LoginForm = ({
+  handleSubmit,
+  pristine,
+  submitting,
+}) =>
   <form>
     <div>
       <Field
@@ -25,9 +29,20 @@ const LoginForm = () =>
       />
     </div>
     <div className={styles.loginButton}>
-      <Button>Login</Button>
+      <Button
+        onClick={handleSubmit}
+        disabled={pristine || submitting}
+      >
+        Login
+      </Button>
     </div>
   </form>;
+
+LoginForm.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+  pristine: PropTypes.bool.isRequired,
+  submitting: PropTypes.bool.isRequired,
+};
 
 export default reduxForm({
   form: 'login',

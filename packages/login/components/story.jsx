@@ -1,5 +1,8 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import {
+  storiesOf,
+  action,
+} from '@kadira/storybook';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { reducer as formReducer } from 'redux-form';
@@ -14,5 +17,5 @@ storiesOf('LoginForm')
     </Provider>,
   )
   .add('LoginForm', () => (
-    <LoginForm />
+    <LoginForm onSubmit={action('on-submit')} />
   ));
