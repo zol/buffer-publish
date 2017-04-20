@@ -25,4 +25,15 @@ describe('actions', () => {
     expect(actions.loginFail({ errorMessage }))
       .toEqual(actionAfter);
   });
+
+  it('should create loginSuccess action', () => {
+    const sessionToken = 'some session token';
+    const actionAfter = {
+      type: actionTypes.LOGIN_SUCCESS,
+      sessionToken,
+    };
+    deepFreeze(actionAfter);
+    expect(actions.loginSuccess({ sessionToken }))
+      .toEqual(actionAfter);
+  });
 });
