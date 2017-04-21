@@ -5,7 +5,6 @@ export const actionTypes = {
 };
 
 export const actions = {
-  // TODO: should take email and password
   loginStart: ({
     email,
     password,
@@ -14,12 +13,12 @@ export const actions = {
     email,
     password,
   }),
-  loginFail: ({ errorMessage }) => ({
-    type: actionTypes.LOGIN_FAIL,
-    errorMessage,
-  }),
   loginSuccess: ({ sessionToken }) => ({
     type: actionTypes.LOGIN_SUCCESS,
     sessionToken,
+  }),
+  loginFail: ({ errorMessage }) => ({
+    type: actionTypes.LOGIN_FAIL,
+    errorMessage,
   }),
 };

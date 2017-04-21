@@ -1,3 +1,4 @@
+const path = require('path');
 const PostCSSImport = require('postcss-import');
 const PostCSSCustomProperties = require('postcss-custom-properties');
 const PostCSShexrgba = require('postcss-hexrgba');
@@ -13,6 +14,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.json', '.jsx'],
+    alias: {
+      'react': path.resolve('./node_modules/react'),
+      'react-dom': path.resolve('./node_modules/react-dom'),
+    },
   },
   module: {
     loaders: [
