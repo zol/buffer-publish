@@ -5,8 +5,14 @@ export const actionTypes = {
 };
 
 export const actions = {
-  loginStart: () => ({
+  // TODO: should take email and password
+  loginStart: ({
+    email,
+    password,
+  }) => ({
     type: actionTypes.LOGIN_START,
+    email,
+    password,
   }),
   loginFail: ({ errorMessage }) => ({
     type: actionTypes.LOGIN_FAIL,

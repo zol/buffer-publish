@@ -7,11 +7,18 @@ import {
 
 describe('actions', () => {
   it('should create loginStart action', () => {
+    const email = 'test@test.com';
+    const password = 's3cr3t';
     const actionAfter = {
       type: actionTypes.LOGIN_START,
+      email,
+      password,
     };
     deepFreeze(actionAfter);
-    expect(actions.loginStart())
+    expect(actions.loginStart({
+      email,
+      password,
+    }))
       .toEqual(actionAfter);
   });
 
