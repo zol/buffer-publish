@@ -3,8 +3,12 @@ import {
   applyMiddleware,
   compose,
 } from 'redux';
+import { routerMiddleware } from 'react-router-redux';
+import createHistory from 'history/createHashHistory';
 import loginMiddleware from './loginMiddleware';
 import reducers from './reducers';
+
+export const history = createHistory();
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -17,6 +21,7 @@ const configureStore = initialstate =>
     initialstate,
     composeEnhancers(
       applyMiddleware(loginMiddleware),
+      applyMiddleware(routerMiddleware(history)),
     ),
   );
 
