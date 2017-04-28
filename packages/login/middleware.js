@@ -2,10 +2,10 @@ import RPCClient from 'micro-rpc-client';
 import {
   actionTypes,
   actions,
-} from '@bufferapp/login';
+} from './';
 
 
-const loginMiddleware = (store) => {
+const middleware = (store) => {
   const rpc = new RPCClient({
     serverUrl: 'https://rpc.local.buffer.com',
   });
@@ -34,4 +34,4 @@ const loginMiddleware = (store) => {
   };
 };
 
-export default loginMiddleware;
+export default middleware;

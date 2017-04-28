@@ -8,9 +8,7 @@ import '@bufferapp/components/variables.css';
 import { Provider } from 'react-redux';
 import createStore, { history } from '@bufferapp/store';
 import LoginForm from '@bufferapp/login';
-
 import App from './components/App';
-
 
 ReactDOM.render(
   <Provider store={createStore()}>

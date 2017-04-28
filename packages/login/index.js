@@ -10,3 +10,4 @@ export default connect(
 )(LoginForm);
 
 export { actions, actionTypes } from './reducer';
+export middleware from './middleware';

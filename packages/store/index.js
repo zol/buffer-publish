@@ -5,7 +5,7 @@ import {
 } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createHashHistory';
-import loginMiddleware from './loginMiddleware';
+import { middleware as loginMiddleware } from '@bufferapp/login';
 import reducers from './reducers';
 
 export const history = createHistory();

@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "@bufferapp/login": "0.0.1",
-    "micro-rpc-client": "0.0.1",
     "react-redux": "5.0.4",
     "react-router-redux": "5.0.0-alpha.6",
     "redux": "3.6.0",
