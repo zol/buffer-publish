@@ -12,5 +12,5 @@ export default connect(
 
 export { actions, actionTypes } from './reducer';
 export middleware from './middleware';
-export const loggedIn = () =>
-  store.get('session') !== undefined;
+export const getSession = () => store.get('session');
+export const loggedIn = () => getSession() !== undefined;

@@ -30,6 +30,7 @@
   "dependencies": {
     "@bufferapp/components": "0.4.16",
     "@bufferapp/login": "0.0.1",
+    "@bufferapp/pending-updates": "0.0.1",
     "@bufferapp/store": "0.0.1",
     "react": "15.5.4",
     "react-dom": "15.5.4",

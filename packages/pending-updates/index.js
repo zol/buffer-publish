@@ -9,3 +9,4 @@ export default connect(
 )(PendingUpdates);
 
 export { reducer, actions, actionTypes, selectors } from './reducer';
+export middleware from './middleware';
