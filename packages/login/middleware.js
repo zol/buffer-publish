@@ -1,4 +1,6 @@
 import RPCClient from 'micro-rpc-client';
+import { push } from 'react-router-redux';
+import localStore from 'store';
 import {
   actionTypes,
   actions,
@@ -26,6 +28,13 @@ const middleware = (store) => {
               errorMessage: err.message,
             }));
           });
+        break;
+      case actionTypes.LOGIN_SUCCESS:
+        localStore.set('session', {
+          token: action.sessionToken,
+        });
+        // TODO: if there was an entry url route to that
+        store.dispatch(push('/'));
         break;
       default:
         break;

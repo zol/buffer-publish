@@ -1,3 +1,4 @@
+import store from 'store';
 import { connect } from 'react-redux';
 import LoginForm from './components';
 import { actions } from './reducer';
@@ -11,3 +12,5 @@ export default connect(
 
 export { actions, actionTypes } from './reducer';
 export middleware from './middleware';
+export const loggedIn = () =>
+  store.get('session') !== undefined;
