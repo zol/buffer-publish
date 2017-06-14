@@ -2,6 +2,7 @@ const path = require('path');
 const PostCSSImport = require('postcss-import');
 const PostCSSCustomProperties = require('postcss-custom-properties');
 const PostCSShexrgba = require('postcss-hexrgba');
+const webpack = require('webpack');
 
 const classNameFormat = '[name]_[local]_[hash:base64:5]';
 
@@ -12,6 +13,10 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/',
   },
+  // TODO: put this in a dev config
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(), // Enable HMR
+  ],
   resolve: {
     extensions: ['.js', '.json', '.jsx'],
     alias: {
@@ -44,7 +49,7 @@ module.exports = {
         loader: 'babel-loader',
         include: __dirname,
         query: {
-          presets: ['es2015', 'react', 'react-hmre'],
+          presets: ['es2015', 'react', 'stage-0'],
         },
       },
     ],
