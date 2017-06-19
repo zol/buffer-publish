@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js . --ignore-pattern coverage node_modules",
+    "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "npm run lint && jest --coverage",
     "test-watch": "jest --watch"
   },
@@ -21,23 +21,8 @@
   },
   "author": "hharnisc@gmail.com",
   "license": "MIT",
-  "dependencies": {
-    "react-redux": "5.0.4",
-    "react-router-redux": "5.0.0-alpha.6",
-    "redux": "3.6.0",
-    "redux-form": "6.6.3"
-  },
-  "peerDependencies": {
-    "react": "15.5.4"
-  },
   "devDependencies": {
-    "babel-eslint": "7.2.0",
     "eslint": "3.19.0",
-    "eslint-config-airbnb": "14.1.0",
-    "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "4.0.0",
-    "eslint-plugin-react": "6.10.3",
-    "jest": "19.0.2",
-    "react": "15.5.4"
+    "jest": "19.0.2"
   }
 }
