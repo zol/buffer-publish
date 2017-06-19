@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "@bufferapp/components": "0.4.16",
+    "@bufferapp/components": "0.5.22",
     "@bufferapp/store": "0.0.1",
     "react": "15.5.4",
     "react-dom": "15.5.4",

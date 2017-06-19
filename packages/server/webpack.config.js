@@ -1,10 +1,5 @@
 const path = require('path');
-const PostCSSImport = require('postcss-import');
-const PostCSSCustomProperties = require('postcss-custom-properties');
-const PostCSShexrgba = require('postcss-hexrgba');
 const webpack = require('webpack');
-
-const classNameFormat = '[name]_[local]_[hash:base64:5]';
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -36,17 +31,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          `css-loader?modules&importLoaders=1&localIdentName=${classNameFormat}`,
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: () => [
-                PostCSSImport,
-                PostCSSCustomProperties,
-                PostCSShexrgba,
-              ],
-            },
-          },
+          'css-loader',
         ],
       },
       {
