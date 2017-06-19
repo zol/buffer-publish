@@ -1,25 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Route, Switch } from 'react-router';
-import {
-  ConnectedRouter as Router,
-} from 'react-router-redux';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
+import { AppContainer } from 'react-hot-loader';
 import createStore, { history } from '@bufferapp/store';
-import App from './components/App';
+import Routes from './routes';
 
 const store = createStore();
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Router history={history}>
-      <Switch>
-        <Route
-          path={'/'}
-          component={App}
-        />
-      </Switch>
-    </Router>
-  </Provider>,
-  document.getElementById('root'),
-);
+const renderApp = (RoutesComponent) => {
+  render(
+    <AppContainer>
+      <Provider store={store}>
+        <RoutesComponent history={history} />
+      </Provider>
+    </AppContainer>,
+    document.getElementById('root'),
+  );
+};
+
+renderApp(Routes);
+
+if (module.hot) {
+  module.hot.accept('./routes', () => {
+    const nextRoutes = require('./routes').default; // eslint-disable-line global-require
+    renderApp(nextRoutes);
+  });
+}

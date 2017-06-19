@@ -7,7 +7,13 @@ const webpack = require('webpack');
 const classNameFormat = '[name]_[local]_[hash:base64:5]';
 
 module.exports = {
-  entry: './packages/web/index.jsx',
+  devtool: 'cheap-module-eval-source-map',
+  context: __dirname,
+  entry: [
+    'react-hot-loader/patch',
+    'webpack-hot-middleware/client',
+    '../web/index.jsx',
+  ],
   output: {
     path: __dirname,
     filename: 'bundle.js',
@@ -20,12 +26,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.json', '.jsx'],
     alias: {
-      'react': path.resolve('./node_modules/react'),
+      react: path.resolve('./node_modules/react'),
       'react-dom': path.resolve('./node_modules/react-dom'),
     },
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         use: [
@@ -45,11 +51,20 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        include: __dirname,
-        query: {
-          presets: ['es2015', 'react', 'stage-0'],
+        // exclude: /node_modules/,
+        exclude: /node_modules(?!\/@bufferapp\/components)(?!\/@bufferapp\/web-components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              'es2015',
+              'react',
+              'stage-0',
+            ],
+            plugins: [
+              'react-hot-loader/babel',
+            ],
+          },
         },
       },
     ],
