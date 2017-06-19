@@ -1,9 +1,8 @@
-const fs = require('fs');
 const webpack = require('webpack');
-const { send } = require('micro');
 const config = require('./webpack.config');
 const webpackMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
+const service = require('./service');
 
 const compiler = webpack(config);
 const middleware = (next) => {
@@ -18,8 +17,4 @@ const hotMiddleware = (next) => {
   return (req, res) => mw(req, res, () => next(req, res));
 };
 
-const html = fs.readFileSync(`${__dirname}/index.html`, 'utf8');
-
-const microService = async (req, res) => send(res, 200, html);
-
-module.exports = [hotMiddleware, middleware].reduce((p, c) => c(p), microService);
+module.exports = [hotMiddleware, middleware].reduce((p, c) => c(p), service);

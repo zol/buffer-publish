@@ -4,7 +4,20 @@
   "description": "",
   "scripts": {
     "start": "micro",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/eslint/bin/eslint.js . --ignore-pattern coverage node_modules",
+    "test": "npm run lint && jest --coverage",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   },
   "author": "hharnisc@gmail.com",
   "license": "MIT",
@@ -12,17 +25,26 @@
     "micro": "7.3.3"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-eslint": "^7.2.0",
-    "babel-loader": "^6.4.1",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.27.3",
+    "babel-core": "6.24.0",
+    "babel-eslint": "7.2.0",
+    "babel-loader": "6.4.1",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-es2015": "6.24.0",
+    "babel-preset-react": "6.23.0",
+    "babel-preset-stage-0": "6.24.1",
+    "css-loader": "0.27.3",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.10.3",
+    "jest": "19.0.2",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-hot-loader": "3.0.0-beta.7",
-    "style-loader": "^0.15.0",
+    "request-promise": "4.2.1",
+    "style-loader": "0.15.0",
+    "test-listen": "1.0.2",
     "webpack": "2.6.1",
     "webpack-dev-middleware": "1.10.2",
     "webpack-hot-middleware": "2.18.0"

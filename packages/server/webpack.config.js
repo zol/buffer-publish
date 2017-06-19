@@ -40,16 +40,6 @@ module.exports = {
         exclude: /node_modules(?!\/@bufferapp\/components)(?!\/@bufferapp\/web-components)/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: [
-              'es2015',
-              'react',
-              'stage-0',
-            ],
-            plugins: [
-              'react-hot-loader/babel',
-            ],
-          },
         },
       },
     ],
