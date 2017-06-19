@@ -11,8 +11,8 @@ describe('server', () => {
     const url = await listen(microService);
     const body = await request(url);
     const html = fs.readFileSync(`${__dirname}/index.html`, 'utf8');
-
-    await expect(body)
+    expect(body)
       .toBe(html);
+    microService.close();
   });
 });
