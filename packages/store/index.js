@@ -9,18 +9,19 @@ import reducers from './reducers';
 
 export const history = createHistory();
 
-const composeEnhancers =
-  typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
+const configureStore = (initialstate) => {
+  const composeEnhancers =
+    typeof window === 'object' &&
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+      window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
 
-const configureStore = initialstate =>
-  createStore(
+  return createStore(
     reducers,
     initialstate,
     composeEnhancers(
       applyMiddleware(routerMiddleware(history)),
     ),
   );
+};
 
 export default configureStore;
