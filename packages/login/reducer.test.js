@@ -36,4 +36,13 @@ describe('actions', () => {
     expect(actions.loginSuccess({ sessionToken }))
       .toEqual(actionAfter);
   });
+
+  it('should create a logout action', () => {
+    const actionAfter = {
+      type: actionTypes.LOGOUT,
+    };
+    deepFreeze(actionAfter);
+    expect(actions.logout())
+      .toEqual(actionAfter);
+  });
 });
