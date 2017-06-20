@@ -8,8 +8,6 @@ import Routes from './routes';
 
 const store = createStore();
 
-console.log('store', store);
-
 // TODO: remove thse after login service has been implemented
 window.login = () => store.dispatch(actions.loginStart());
 window.logout = () => store.dispatch(actions.logout());
