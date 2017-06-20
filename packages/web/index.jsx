@@ -3,9 +3,17 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
 import createStore, { history } from '@bufferapp/store';
+import { actions } from '@bufferapp/login';
 import Routes from './routes';
 
 const store = createStore();
+
+console.log('store', store);
+
+// TODO: remove thse after login service has been implemented
+window.login = () => store.dispatch(actions.loginStart());
+window.logout = () => store.dispatch(actions.logout());
+
 
 const renderApp = (RoutesComponent) => {
   render(

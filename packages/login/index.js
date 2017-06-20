@@ -1,4 +1,2 @@
-import { actions } from './reducer';
-
-export const login = () => actions.loginStart();
-export const logout = () => actions.logout();
+export middleware from './middleware';
+export { actions, actionTypes } from './reducer';

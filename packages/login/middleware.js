@@ -24,6 +24,7 @@ const middleware = store => next => (action) => {
       break;
     case actionTypes.LOGIN_FAIL:
     case actionTypes.LOGOUT:
+      console.log('Removing Session Cookie'); // eslint-disable-line no-console
       Cookie.remove('session');
       break;
     default:
