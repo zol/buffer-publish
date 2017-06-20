@@ -4,14 +4,31 @@
   "description": "An example UI package",
   "main": "index.js",
   "scripts": {
+    "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "npm run lint && jest --coverage",
-    "test-watch": "jest --watch"
+    "test-watch": "jest --watch",
+    "test-update": "jest -u"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/components)"
+    ],
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   },
   "author": "hharnisc@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "eslint": "3.19.0",
-    "jest": "19.0.2"
+    "jest": "19.0.2",
+    "@storybook/react": "3.1.3"
   }
 }

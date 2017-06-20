@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots LoggedIn should show user is logged in 1`] = `
+<span>
+  <div>
+    Logged In...
+  </div>
+</span>
+`;
+
+exports[`Snapshots LoggedIn should show user is not logged in 1`] = `
+<span>
+  <div>
+    NOT Logged In...
+  </div>
+</span>
+`;
