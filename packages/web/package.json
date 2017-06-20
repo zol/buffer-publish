@@ -34,9 +34,8 @@
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "license": "MIT",
   "devDependencies": {
-    "@kadira/storybook": "2.35.3",
-    "storyshots": "3.2.2",
     "eslint": "3.19.0",
-    "jest": "19.0.2"
+    "jest": "19.0.2",
+    "@storybook/react": "3.1.3"
   }
 }
