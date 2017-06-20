@@ -29,5 +29,8 @@
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2"
+  },
+  "dependencies": {
+    "js-cookie": "2.1.4"
   }
 }

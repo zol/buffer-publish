@@ -1,18 +1,30 @@
+import Cookie from 'js-cookie';
 import {
+  actions,
   actionTypes,
 } from './';
 
-const middleware = () => next => (action) => {
+const middleware = store => next => (action) => {
   switch (action.type) {
-    case actionTypes.LOGIN_START:
-      // check token exists, otherwise prompt user for token
+    case actionTypes.LOGIN_START: {
+      const sessionCookie = Cookie.get('session');
+      if (sessionCookie) {
+        store.dispatch(actions.loginSuccess({
+          sessionToken: sessionCookie.token,
+        }));
+      } else {
+        console.log('Paste JWT Token:'); // eslint-disable-line no-console
+      }
       break;
+    }
     case actionTypes.LOGIN_SUCCESS:
-      // the the cookie with the session token
+      Cookie.set('session', {
+        token: action.sessionToken,
+      });
       break;
     case actionTypes.LOGIN_FAIL:
     case actionTypes.LOGOUT:
-      // delete session cookie (if it exists)
+      Cookie.remove('session');
       break;
     default:
       break;
