@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshots App App 1`] = `
+exports[`Snapshots App should render application 1`] = `
 <div>
   <div
     style={
