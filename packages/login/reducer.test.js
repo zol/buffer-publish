@@ -1,48 +1,59 @@
 import deepFreeze from 'deep-freeze';
-import {
+import reducer, {
   actions,
   actionTypes,
 } from './reducer';
 
-
-describe('actions', () => {
-  it('should create loginStart action', () => {
-    const actionAfter = {
-      type: actionTypes.LOGIN_START,
+describe('reducer', () => {
+  it('should return initial state', () => {
+    const stateAfter = {};
+    const action = {
+      type: 'INIT',
     };
-    deepFreeze(actionAfter);
-    expect(actions.loginStart())
-      .toEqual(actionAfter);
+    deepFreeze(action);
+    expect(reducer())
+      .toEqual(stateAfter);
   });
 
-  it('should create loginFail action', () => {
-    const errorMessage = 'something bad happend';
-    const actionAfter = {
-      type: actionTypes.LOGIN_FAIL,
-      errorMessage,
-    };
-    deepFreeze(actionAfter);
-    expect(actions.loginFail({ errorMessage }))
-      .toEqual(actionAfter);
-  });
+  describe('actions', () => {
+    it('should create loginStart action', () => {
+      const actionAfter = {
+        type: actionTypes.LOGIN_START,
+      };
+      deepFreeze(actionAfter);
+      expect(actions.loginStart())
+        .toEqual(actionAfter);
+    });
 
-  it('should create loginSuccess action', () => {
-    const sessionToken = 'some session token';
-    const actionAfter = {
-      type: actionTypes.LOGIN_SUCCESS,
-      sessionToken,
-    };
-    deepFreeze(actionAfter);
-    expect(actions.loginSuccess({ sessionToken }))
-      .toEqual(actionAfter);
-  });
+    it('should create loginFail action', () => {
+      const errorMessage = 'something bad happend';
+      const actionAfter = {
+        type: actionTypes.LOGIN_FAIL,
+        errorMessage,
+      };
+      deepFreeze(actionAfter);
+      expect(actions.loginFail({ errorMessage }))
+        .toEqual(actionAfter);
+    });
 
-  it('should create a logout action', () => {
-    const actionAfter = {
-      type: actionTypes.LOGOUT,
-    };
-    deepFreeze(actionAfter);
-    expect(actions.logout())
-      .toEqual(actionAfter);
+    it('should create loginSuccess action', () => {
+      const sessionToken = 'some session token';
+      const actionAfter = {
+        type: actionTypes.LOGIN_SUCCESS,
+        sessionToken,
+      };
+      deepFreeze(actionAfter);
+      expect(actions.loginSuccess({ sessionToken }))
+        .toEqual(actionAfter);
+    });
+
+    it('should create a logout action', () => {
+      const actionAfter = {
+        type: actionTypes.LOGOUT,
+      };
+      deepFreeze(actionAfter);
+      expect(actions.logout())
+        .toEqual(actionAfter);
+    });
   });
 });

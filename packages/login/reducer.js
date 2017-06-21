@@ -5,6 +5,10 @@ export const actionTypes = {
   LOGOUT: 'LOGOUT',
 };
 
+const initialState = {};
+
+export default (state = initialState) => state;
+
 export const actions = {
   loginStart: () => ({
     type: actionTypes.LOGIN_START,
