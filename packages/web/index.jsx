@@ -9,7 +9,9 @@ import Routes from './routes';
 const store = createStore();
 
 // TODO: remove thse after login service has been implemented
-window.login = () => store.dispatch(actions.loginStart());
+window.login = sessionToken => store.dispatch(actions.loginSuccess({
+  sessionToken,
+}));
 window.logout = () => store.dispatch(actions.logout());
 
 
