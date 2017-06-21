@@ -11,7 +11,40 @@ describe('reducer', () => {
       type: 'INIT',
     };
     deepFreeze(action);
-    expect(reducer())
+    expect(reducer(undefined, action))
+      .toEqual(stateAfter);
+  });
+
+  it('should handle LOGIN_SUCCESS action', () => {
+    const sessionToken = 'session token';
+    const stateBefore = {};
+    const stateAfter = {
+      sessionToken,
+    };
+    const action = {
+      type: actionTypes.LOGIN_SUCCESS,
+      sessionToken,
+    };
+    deepFreeze(action);
+    deepFreeze(stateBefore);
+    deepFreeze(stateAfter);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
+
+  it('should handle LOGOUT action', () => {
+    const sessionToken = 'session token';
+    const stateBefore = {
+      sessionToken,
+    };
+    const stateAfter = {};
+    const action = {
+      type: actionTypes.LOGOUT,
+    };
+    deepFreeze(action);
+    deepFreeze(stateBefore);
+    deepFreeze(stateAfter);
+    expect(reducer(stateBefore, action))
       .toEqual(stateAfter);
   });
 

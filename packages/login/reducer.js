@@ -7,7 +7,21 @@ export const actionTypes = {
 
 const initialState = {};
 
-export default (state = initialState) => state;
+export default (state = initialState, action) => {
+  switch (action.type) {
+    case actionTypes.LOGIN_SUCCESS:
+      return {
+        ...state,
+        sessionToken: action.sessionToken,
+      };
+    case actionTypes.LOGOUT: {
+      const { sessionToken, ...newState } = state;
+      return newState;
+    }
+    default:
+      return state;
+  }
+};
 
 export const actions = {
   loginStart: () => ({
