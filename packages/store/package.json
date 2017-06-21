@@ -22,7 +22,8 @@
   "author": "hharnisc@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@bufferapp/login": "0.0.1"
+    "@bufferapp/login": "0.0.1",
+    "@bufferapp/example": "0.0.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",
