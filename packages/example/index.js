@@ -12,7 +12,8 @@ export default connect(
 
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
-
-// a consumer of a package should be able to utilize
-
-// import Example, { reducer, actions, actionTypes, middleware } from '@bufferapp/example';
+export middleware from './middleware';
+/*
+a consumer of a package should be able to use the package in the following way:
+import Example, { actions, actionTypes, middleware, reducer } from '@bufferapp/example';
+*/
