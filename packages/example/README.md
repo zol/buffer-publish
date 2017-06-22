@@ -51,3 +51,65 @@ npm run test-watch
 ```
 
 ## Package Anatomy
+
+A UI package should include all concerns related to a given feature.
+
+```
+example/ # root
++-- __snapshots__/
+    `-- snapshot.test.js.snap # jest snapshots storage
++-- .storybook/ # React Storybook Configuration
+    `-- addons.js # storybook action panel configuration
+    `-- config.js # storybook main configuration
+    `-- preview-head.html # configure <head> in storybook preview
++-- components/ # presentational components
+    +-- LoggedIn # component that displays login state
+        `-- index.jsx # implementation of the login display
+        `-- story.jsx # description of all the possible configurations of the login display
+`-- .babelrc # babel transpiler
+`-- index.js # main package file, should export the container and top level  resources
+`-- index.test.js # main package file tests
+`-- middleware.js # all action side effects
+`-- middleware.test.js # test action side effects
+`-- package.json # npm package
+`-- README.md # you are here
+`-- reducer.js # describe how data changes when actions occur
+`-- reducer.test.js # test the reducer!
+`-- snapshot.test.js # configure jest snapshots
+```
+
+### index.js
+
+This is the main package file, it's default export should be the container.
+
+Imagine another package is trying to use the package you're building. The package API should look like this:
+
+```js
+import Example, { actions, actionTypes, middleware, reducer } from '@bufferapp/example';
+```
+
+### components/
+
+Presentational components ([pure ui](https://rauchg.com/2015/pure-ui)) are implemented with the followign structure:
+
+```
++-- MyComponent/
+    `-- index.jsx
+    `-- story.jsx
+```
+
+#### index.jsx
+
+This should export a [functional and stateless](https://medium.com/@housecor/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc#.ukhlhrqlw) component. There are some special cases where handling things like `focus`, `hover` and active states that need to be tracked.
+
+If you need `focus` and or `hover` take a look at PseudoClassComponent to wrap the component you're building:
+
+https://github.com/bufferapp/buffer-components/blob/master/PseudoClassComponent/index.jsx
+
+Here's an example of how to wrap a `Button`:
+
+https://github.com/bufferapp/buffer-components/blob/master/Button/index.jsx
+
+#### story.jsx
+
+This should set the context (properties) for every configuration of the component in `index.jsx`. The story is used for both `React Storybook` as well as `Jest Snapshots`.
