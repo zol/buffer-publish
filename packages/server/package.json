@@ -22,7 +22,9 @@
   "author": "hharnisc@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "micro": "7.3.3"
+    "@bufferapp/micro-rpc": "0.1.0",
+    "micro": "7.3.3",
+    "microrouter": "2.1.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",
