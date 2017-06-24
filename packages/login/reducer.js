@@ -24,8 +24,17 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  loginStart: () => ({
+  loginStart: ({
+    email,
+    password,
+    clientId,
+    clientSecret,
+  }) => ({
     type: actionTypes.LOGIN_START,
+    email,
+    password,
+    clientId,
+    clientSecret,
   }),
   loginSuccess: ({ sessionToken }) => ({
     type: actionTypes.LOGIN_SUCCESS,
