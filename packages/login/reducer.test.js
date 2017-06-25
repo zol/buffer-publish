@@ -50,11 +50,25 @@ describe('reducer', () => {
 
   describe('actions', () => {
     it('should create loginStart action', () => {
+      const email = 'test@test.com';
+      const password = 'password';
+      const clientId = 'clientId';
+      const clientSecret = 'clientSecret';
+
       const actionAfter = {
         type: actionTypes.LOGIN_START,
+        email,
+        password,
+        clientId,
+        clientSecret,
       };
       deepFreeze(actionAfter);
-      expect(actions.loginStart())
+      expect(actions.loginStart({
+        email,
+        password,
+        clientId,
+        clientSecret,
+      }))
         .toEqual(actionAfter);
     });
 
