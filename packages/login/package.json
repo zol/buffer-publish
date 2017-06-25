@@ -12,7 +12,7 @@
   },
   "jest": {
     "transformIgnorePatterns": [
-      "node_modules/(?!@bufferapp/components)"
+      "node_modules/(?!@bufferapp/*)"
     ],
     "verbose": true,
     "coverageThreshold": {

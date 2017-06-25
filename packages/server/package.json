@@ -17,7 +17,10 @@
         "lines": 100,
         "statements": 100
       }
-    }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ]
   },
   "author": "hharnisc@gmail.com",
   "license": "MIT",
