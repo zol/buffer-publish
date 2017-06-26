@@ -93,12 +93,13 @@ import Example, { actions, actionTypes, middleware, reducer } from '@bufferapp/e
 Presentational components ([pure ui](https://rauchg.com/2015/pure-ui)) are implemented with the followign structure:
 
 ```
-+-- MyComponent/
-    `-- index.jsx
-    `-- story.jsx
++-- components/
+    +-- LoggedIn/
+        `-- index.jsx
+        `-- story.jsx
 ```
 
-#### index.jsx
+#### components/LoggedIn/index.jsx
 
 This should export a [functional and stateless](https://medium.com/@housecor/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc#.ukhlhrqlw) component. There are some special cases where handling things like `focus`, `hover` and active states that need to be tracked.
 
@@ -110,6 +111,6 @@ Here's an example of how to wrap a `Button`:
 
 https://github.com/bufferapp/buffer-components/blob/master/Button/index.jsx
 
-#### story.jsx
+#### components/LoggedIn/story.jsx
 
 This should set the context (properties) for every configuration of the component in `index.jsx`. The story is used for both `React Storybook` as well as `Jest Snapshots`.
