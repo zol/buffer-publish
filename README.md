@@ -13,7 +13,9 @@ Buffer Publish
 
 ## Quick Start
 
-Under normal development conditions you should be able to start `buffer-publish` using the `./dev up` command (currently on the `publish` branch).
+To get started on development:
+
+Checkout the `publish` branch in [`buffer-dev`](https://github.com/bufferapp/buffer-dev) repo and then run `./dev setup && ./dev up`
 
 If you need to start the server by itself:
 
