@@ -4,7 +4,7 @@ Previously Project Donut 🍩
 
 [![Build Status](https://travis-ci.com/bufferapp/buffer-publish.svg?token=DihKVnja7EjA9uxoqNCQ&branch=master)](https://travis-ci.com/bufferapp/buffer-publish)
 
-Buffer Publish
+## Table of contents
 
 - [Quick Start](#quick-start)
 - [NPM Commands](#npm-commands)
@@ -161,3 +161,12 @@ export default (state, action) => {
   }
 };
 ```
+
+## Copyright
+
+© 2017 Buffer Inc.
+
+This project is open source as a way to transparently share our work with the
+community for the purpose of creating opportunities for learning. Buffer
+retains all rights to the code in this repository and no one may reproduce,
+distribute, or create derivative works from this.
