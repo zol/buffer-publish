@@ -23,7 +23,6 @@
     ]
   },
   "author": "hharnisc@gmail.com",
-  "license": "MIT",
   "dependencies": {
     "@bufferapp/micro-rpc": "0.1.0",
     "micro": "7.3.3",

@@ -34,7 +34,6 @@
     "@bufferapp/example": "0.0.1"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
-  "license": "MIT",
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
     "@storybook/react": "3.1.3",
