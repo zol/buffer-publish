@@ -1,3 +1,0 @@
-[submodule "packages/components"]
-	path = packages/components
-	url = git@github.com:bufferapp/buffer-components.git
