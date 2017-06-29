@@ -7,6 +7,7 @@ import LoggedIn from './components/LoggedIn';
 export default connect(
   state => ({
     loggedIn: state.example.loggedIn,
+    translations: state.i18n.translations.example, // all package translations
   }),
 )(LoggedIn);
 

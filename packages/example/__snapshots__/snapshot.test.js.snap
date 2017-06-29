@@ -11,7 +11,7 @@ exports[`Snapshots LoggedIn should show user is logged in 1`] = `
 exports[`Snapshots LoggedIn should show user is not logged in 1`] = `
 <span>
   <div>
-    NOT Logged In...
+    Logged Out...
   </div>
 </span>
 `;

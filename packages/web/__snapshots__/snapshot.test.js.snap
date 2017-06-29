@@ -76,7 +76,7 @@ exports[`Snapshots App should render application 1`] = `
       </span>
     </div>
     <div>
-      NOT Logged In...
+      Logged Out...
     </div>
   </div>
 </span>

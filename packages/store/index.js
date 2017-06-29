@@ -7,6 +7,7 @@ import { routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createHashHistory';
 import { middleware as loginMiddleware } from '@bufferapp/login';
 import { middleware as exampleMiddleware } from '@bufferapp/example';
+import { middleware as i18nMiddleware } from '@bufferapp/publish-i18n';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -23,6 +24,7 @@ const configureStore = (initialstate) => {
     composeEnhancers(
       applyMiddleware(loginMiddleware),
       applyMiddleware(exampleMiddleware),
+      applyMiddleware(i18nMiddleware),
       applyMiddleware(routerMiddleware(history)),
     ),
   );
