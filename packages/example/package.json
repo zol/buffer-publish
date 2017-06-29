@@ -22,11 +22,15 @@
         "lines": 100,
         "statements": 100
       }
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
     }
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/login": "0.0.1"
+    "@bufferapp/login": "0.0.1",
+    "@bufferapp/components": "0.5.22"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
