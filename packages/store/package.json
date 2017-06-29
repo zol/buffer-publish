@@ -20,7 +20,10 @@
     },
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {

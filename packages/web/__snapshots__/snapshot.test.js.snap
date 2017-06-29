@@ -75,9 +75,18 @@ exports[`Snapshots App should render application 1`] = `
         
       </span>
     </div>
-    <div>
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        }
+      }
+    >
       Logged Out...
-    </div>
+    </span>
   </div>
 </span>
 `;
