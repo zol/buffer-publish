@@ -8,7 +8,8 @@
     "test": "if [ -n \"$CI\" ]; then npm run init; fi && lerna run test",
     "init": "npm install && lerna bootstrap",
     "start": "cd ./packages/server/ && npm start",
-    "publish": "echo \"will eventually run: lerna publish\""
+    "publish": "echo \"will eventually run: lerna publish\"",
+    "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
   },
   "repository": {
     "type": "git",
