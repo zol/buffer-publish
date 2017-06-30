@@ -8,7 +8,7 @@ import {
 } from '@bufferapp/components';
 import HoverableText from '../HoverableText';
 
-const tabStyle = (active) => {
+const tabStyle = (active) => { //eslint-disable-line
   return {
     borderBottom: active ? `2px solid ${curiousBlue}` : '',
     padding: '0 4px 16px 4px',
@@ -39,6 +39,7 @@ const Tab = ({
 Tab.propTypes = {
   active: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
+  children: PropTypes.node,
 };
 
 Tab.defaultProps = {
