@@ -16,4 +16,5 @@ module.exports = router(
   get('/', index),
   post('/rpc', rpc),
   get('/*', notFound),
-  post('/*', notFound));
+  post('/*', notFound),
+);
