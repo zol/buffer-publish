@@ -3265,3 +3265,316 @@ exports[`Snapshots RetweetPanel default 1`] = `
   </div>
 </span>
 `;
+
+exports[`Snapshots Tab active 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "2px solid #168eea",
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0 4px 16px 4px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+        }
+      }
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Sent
+        </span>
+      </span>
+    </button>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tab default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "",
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0 4px 16px 4px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+        }
+      }
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Queue
+        </span>
+      </span>
+    </button>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tabs default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ced7df",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "borderBottom": "",
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Queue (1)
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "borderBottom": "",
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Sent Posts
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "borderBottom": "",
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Settings
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</span>
+`;
