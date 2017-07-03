@@ -9,6 +9,7 @@ COPY packages/server/package.json /usr/src/app
 RUN npm install
 
 COPY packages/server /usr/src/app
+COPY staticAssets.json /usr/src/app
 
 EXPOSE 80
 
