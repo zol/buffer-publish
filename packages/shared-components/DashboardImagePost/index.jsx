@@ -46,6 +46,7 @@ const DashboardImagePost = ({
   onDeleteClick,
   onDeleteConfirmClick,
   onEditClick,
+  onShareNowClick,
   postDetails,
   sent,
   text,
@@ -90,6 +91,7 @@ const DashboardImagePost = ({
       onDeleteClick={onDeleteClick}
       onDeleteConfirmClick={onDeleteConfirmClick}
       onEditClick={onEditClick}
+      onShareNowClick={onShareNowClick}
       postDetails={postDetails}
       sent={sent}
       text={text}

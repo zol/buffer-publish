@@ -54,6 +54,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -67,6 +68,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent
     />
   ))
@@ -80,6 +82,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -93,6 +96,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -106,6 +110,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -119,6 +124,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       retweetProfile={retweetProfile}
       sent={false}
     />
@@ -133,6 +139,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -147,6 +154,7 @@ storiesOf('DashboardImagePost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ));

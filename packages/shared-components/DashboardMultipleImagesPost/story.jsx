@@ -42,6 +42,7 @@ storiesOf('DashboardMultipleImagesPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       text={text}
       sent={false}
     />
@@ -55,6 +56,7 @@ storiesOf('DashboardMultipleImagesPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       text={text}
       sent
     />
@@ -68,6 +70,7 @@ storiesOf('DashboardMultipleImagesPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       text={text}
       sent={false}
     />

@@ -27,6 +27,7 @@ const DashboardMultipleImagesPost = ({
   onDeleteClick,
   onDeleteConfirmClick,
   onEditClick,
+  onShareNowClick,
   retweetProfile,
   sent,
   text,
@@ -65,6 +66,7 @@ const DashboardMultipleImagesPost = ({
       onDeleteClick={onDeleteClick}
       onDeleteConfirmClick={onDeleteConfirmClick}
       onEditClick={onEditClick}
+      onShareNowClick={onShareNowClick}
       retweetProfile={retweetProfile}
       sent={sent}
       text={text}

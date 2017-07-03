@@ -50,6 +50,7 @@ const DashboardLinkPost = ({
   onDeleteClick,
   onDeleteConfirmClick,
   onEditClick,
+  onShareNowClick,
   postDetails,
   scheduledAt,
   sent,
@@ -117,6 +118,7 @@ const DashboardLinkPost = ({
       onDeleteClick={onDeleteClick}
       onDeleteConfirmClick={onDeleteConfirmClick}
       onEditClick={onEditClick}
+      onShareNowClick={onShareNowClick}
       postDetails={postDetails}
       scheduledAt={scheduledAt}
       sent={sent}

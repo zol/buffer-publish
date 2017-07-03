@@ -308,7 +308,7 @@ exports[`Snapshots DashboardImagePost error 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -635,7 +635,7 @@ exports[`Snapshots DashboardImagePost queued image post 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -1047,7 +1047,7 @@ exports[`Snapshots DashboardImagePost retweet 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -1527,7 +1527,7 @@ exports[`Snapshots DashboardImagePost square image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -1888,7 +1888,7 @@ exports[`Snapshots DashboardImagePost tag 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -2215,7 +2215,7 @@ exports[`Snapshots DashboardImagePost tall image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -2542,7 +2542,7 @@ exports[`Snapshots DashboardImagePost wide image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -3002,7 +3002,7 @@ exports[`Snapshots DashboardLinkPost error 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -3429,7 +3429,7 @@ exports[`Snapshots DashboardLinkPost queued link post 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -4109,7 +4109,7 @@ exports[`Snapshots DashboardLinkPost square image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -4536,7 +4536,7 @@ exports[`Snapshots DashboardLinkPost tall image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -4963,7 +4963,7 @@ exports[`Snapshots DashboardLinkPost wide image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -5423,7 +5423,7 @@ exports[`Snapshots DashboardMultipleImagesPost error 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -5850,7 +5850,7 @@ exports[`Snapshots DashboardMultipleImagesPost queued multiple image post 1`] = 
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -9239,6 +9239,4783 @@ exports[`Snapshots DashboardPostFooterDelete isConfirmingDelete 1`] = `
 </span>
 `;
 
+exports[`Snapshots DashboardPostList default 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        New thing
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Another thing, that is also new
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DashboardPostList image posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        New thing
+                      </span>
+                    </span>
+                    <div
+                      style={
+                        Object {
+                          "position": "relative",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                        style={
+                          Object {
+                            "borderRadius": "0.126rem",
+                            "height": undefined,
+                            "maxHeight": "20rem",
+                            "maxWidth": undefined,
+                            "minHeight": "10rem",
+                            "minWidth": undefined,
+                            "objectFit": "cover",
+                            "width": "15rem",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Another thing, that is also new
+                      </span>
+                    </span>
+                    <div
+                      style={
+                        Object {
+                          "position": "relative",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                        style={
+                          Object {
+                            "borderRadius": "0.126rem",
+                            "height": undefined,
+                            "maxHeight": "20rem",
+                            "maxWidth": undefined,
+                            "minHeight": "10rem",
+                            "minWidth": undefined,
+                            "objectFit": "cover",
+                            "width": "15rem",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DashboardPostList link posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "flexDirection": "column",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "paddingBottom": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        What is a Product Designer? An awesome story by @jgadapee over on Medium! 
+                        <a
+                          href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "color": "#168eea",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "textDecoration": "none",
+                            }
+                          }
+                          target="_blank"
+                        >
+                          http://buff.ly/1LTbUqv
+                        </a>
+                      </span>
+                    </div>
+                    <div>
+                      <a
+                        href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "color": "#168eea",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "textDecoration": "none",
+                          }
+                        }
+                        target="_blank"
+                      >
+                        <div
+                          onMouseEnter={undefined}
+                          onMouseLeave={undefined}
+                          style={
+                            Object {
+                              "backgroundColor": "#fff",
+                              "border": "0.063rem solid #e6ebef",
+                              "borderRadius": "0.126rem",
+                              "color": "#323b43",
+                              "fontSize": "0.9rem",
+                              "lineHeight": 1.5,
+                              "padding": 0,
+                              "transition": "box-shadow 0.1s linear",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "display": "flex",
+                                "flexDirection": "row",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "borderRadius": "0.126rem",
+                                  "height": "10rem",
+                                  "maxHeight": undefined,
+                                  "maxWidth": "15rem",
+                                  "minHeight": undefined,
+                                  "minWidth": "15rem",
+                                  "objectFit": "cover",
+                                  "width": "15rem",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": 1,
+                                  "minWidth": 0,
+                                  "padding": "1rem",
+                                }
+                              }
+                            >
+                              <div>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#59626a",
+                                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                                      "fontSize": "1rem",
+                                      "fontWeight": 400,
+                                    }
+                                  }
+                                >
+                                  What is a Product Designer?
+                                </span>
+                              </div>
+                              <div
+                                style={
+                                  Object {
+                                    "color": "rgba(50, 59, 67, 0.3)",
+                                    "margin": "0.25rem 1rem 1rem 0",
+                                    "overflow": "hidden",
+                                    "textOverflow": "ellipsis",
+                                    "whiteSpace": "nowrap",
+                                  }
+                                }
+                              >
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "rgba(50, 59, 67, 0.3)",
+                                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                                      "fontSize": "0.8rem",
+                                      "fontWeight": 400,
+                                    }
+                                  }
+                                >
+                                  https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x
+                                </span>
+                              </div>
+                              <div>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#59626a",
+                                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                                      "fontSize": "0.8rem",
+                                      "fontWeight": 400,
+                                    }
+                                  }
+                                >
+                                  A brief history at how history and markets influence design titles
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for 9:42pm (GMT)
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                        "flexDirection": "column",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "paddingBottom": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        What is a Product Designer? An awesome story by @jgadapee over on Medium! 
+                        <a
+                          href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "color": "#168eea",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "textDecoration": "none",
+                            }
+                          }
+                          target="_blank"
+                        >
+                          http://buff.ly/1LTbUqv
+                        </a>
+                      </span>
+                    </div>
+                    <div>
+                      <a
+                        href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "color": "#168eea",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "textDecoration": "none",
+                          }
+                        }
+                        target="_blank"
+                      >
+                        <div
+                          onMouseEnter={undefined}
+                          onMouseLeave={undefined}
+                          style={
+                            Object {
+                              "backgroundColor": "#fff",
+                              "border": "0.063rem solid #e6ebef",
+                              "borderRadius": "0.126rem",
+                              "color": "#323b43",
+                              "fontSize": "0.9rem",
+                              "lineHeight": 1.5,
+                              "padding": 0,
+                              "transition": "box-shadow 0.1s linear",
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "display": "flex",
+                                "flexDirection": "row",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "borderRadius": "0.126rem",
+                                  "height": "10rem",
+                                  "maxHeight": undefined,
+                                  "maxWidth": "15rem",
+                                  "minHeight": undefined,
+                                  "minWidth": "15rem",
+                                  "objectFit": "cover",
+                                  "width": "15rem",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": 1,
+                                  "minWidth": 0,
+                                  "padding": "1rem",
+                                }
+                              }
+                            >
+                              <div>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#59626a",
+                                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                                      "fontSize": "1rem",
+                                      "fontWeight": 400,
+                                    }
+                                  }
+                                >
+                                  What is a Product Designer?
+                                </span>
+                              </div>
+                              <div
+                                style={
+                                  Object {
+                                    "color": "rgba(50, 59, 67, 0.3)",
+                                    "margin": "0.25rem 1rem 1rem 0",
+                                    "overflow": "hidden",
+                                    "textOverflow": "ellipsis",
+                                    "whiteSpace": "nowrap",
+                                  }
+                                }
+                              >
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "rgba(50, 59, 67, 0.3)",
+                                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                                      "fontSize": "0.8rem",
+                                      "fontWeight": 400,
+                                    }
+                                  }
+                                >
+                                  https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x
+                                </span>
+                              </div>
+                              <div>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#59626a",
+                                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                                      "fontSize": "0.8rem",
+                                      "fontWeight": 400,
+                                    }
+                                  }
+                                >
+                                  A brief history at how history and markets influence design titles
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for 9:42pm (GMT)
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DashboardPostList missing type 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        New thing
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Another thing, that is also new
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DashboardPostList multiple image posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        New thing
+                      </span>
+                    </span>
+                    <div>
+                      <div
+                        style={
+                          Object {
+                            "borderRadius": "0.126rem",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "flexWrap": "wrap",
+                            "height": "15rem",
+                            "overflow": "hidden",
+                            "width": "20rem",
+                          }
+                        }
+                      >
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Another thing, that is also new
+                      </span>
+                    </span>
+                    <div>
+                      <div
+                        style={
+                          Object {
+                            "borderRadius": "0.126rem",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "flexWrap": "wrap",
+                            "height": "15rem",
+                            "overflow": "hidden",
+                            "width": "20rem",
+                          }
+                        }
+                      >
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          height="15rem"
+                          style={
+                            Object {
+                              "flexBasis": "50%",
+                              "flexGrow": 1,
+                              "height": "50%",
+                            }
+                          }
+                        >
+                          <img
+                            alt=""
+                            src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                            style={
+                              Object {
+                                "height": "100%",
+                                "maxHeight": undefined,
+                                "maxWidth": undefined,
+                                "minHeight": undefined,
+                                "minWidth": undefined,
+                                "objectFit": "cover",
+                                "verticalAlign": "bottom",
+                                "width": "100%",
+                              }
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DashboardPostList sent 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        New thing
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Another thing, that is also new
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DashboardPostList video posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+          "marginLeft": "0.5rem",
+          "marginTop": "1rem",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        List Header
+      </span>
+    </div>
+    <ul
+      style={
+        Object {
+          "listStyleType": "none",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        New thing
+                      </span>
+                    </span>
+                    <div
+                      style={
+                        Object {
+                          "position": "relative",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                        style={
+                          Object {
+                            "borderRadius": "0.126rem",
+                            "height": undefined,
+                            "maxHeight": "20rem",
+                            "maxWidth": undefined,
+                            "minHeight": "10rem",
+                            "minWidth": undefined,
+                            "objectFit": "cover",
+                            "width": "15rem",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "bottom": "0.7rem",
+                            "left": "0.7rem",
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "backgroundColor": "#000",
+                              "borderRadius": "0.126rem",
+                              "letterSpacing": "0.1rem",
+                              "opacity": "0.65",
+                              "padding": "0.1rem 0.4rem 0.1rem 0.4rem",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "color": "#fff",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "1rem",
+                                "fontWeight": 400,
+                              }
+                            }
+                          >
+                            VIDEO
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "minWidth": 0,
+                }
+              }
+            >
+              <div
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "border": "0.063rem solid #e6ebef",
+                    "borderRadius": "0.126rem",
+                    "color": "#323b43",
+                    "fontSize": "0.9rem",
+                    "lineHeight": 1.5,
+                    "padding": 0,
+                    "transition": "box-shadow 0.1s linear",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "flexGrow": 1,
+                          "paddingRight": "1rem",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.9rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Another thing, that is also new
+                      </span>
+                    </span>
+                    <div
+                      style={
+                        Object {
+                          "position": "relative",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                        style={
+                          Object {
+                            "borderRadius": "0.126rem",
+                            "height": undefined,
+                            "maxHeight": "20rem",
+                            "maxWidth": undefined,
+                            "minHeight": "10rem",
+                            "minWidth": undefined,
+                            "objectFit": "cover",
+                            "width": "15rem",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "bottom": "0.7rem",
+                            "left": "0.7rem",
+                            "position": "absolute",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "backgroundColor": "#000",
+                              "borderRadius": "0.126rem",
+                              "letterSpacing": "0.1rem",
+                              "opacity": "0.65",
+                              "padding": "0.1rem 0.4rem 0.1rem 0.4rem",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "color": "#fff",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "1rem",
+                                "fontWeight": 400,
+                              }
+                            }
+                          >
+                            VIDEO
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#fcfcfc",
+                      "borderTop": "0.063rem solid #e6ebef",
+                      "display": "flex",
+                      "padding": "0.5rem 1rem",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexGrow": 1,
+                      }
+                    }
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        This post is scheduled for May 3rd
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "marginLeft": "0.5rem",
+                            }
+                          }
+                        >
+                          <button
+                            disabled={undefined}
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "background": "none",
+                                "backgroundColor": "unset",
+                                "border": "none",
+                                "borderRadius": "unset",
+                                "color": "unset",
+                                "cursor": "pointer",
+                                "display": "unset",
+                                "fontFamily": "unset",
+                                "fontSize": "unset",
+                                "fontWeight": "unset",
+                                "lineHeight": "unset",
+                                "margin": "unset",
+                                "outline": "none",
+                                "padding": 0,
+                                "transition": "unset",
+                              }
+                            }
+                          >
+                            <span
+                              onMouseEnter={undefined}
+                              onMouseLeave={undefined}
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#000",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 400,
+                                  }
+                                }
+                              >
+                                Delete
+                              </span>
+                            </span>
+                          </button>
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "0.7rem",
+                          }
+                        }
+                      >
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Edit
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "borderLeft": "0.063rem solid transparent",
+                              "marginLeft": "0.7rem",
+                              "marginRight": "0.7rem",
+                            }
+                          }
+                        />
+                        <button
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#000",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Share Now
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
 exports[`Snapshots DashboardTextPost error 1`] = `
 <span>
   <div
@@ -9523,7 +14300,7 @@ exports[`Snapshots DashboardTextPost error 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -9826,7 +14603,7 @@ exports[`Snapshots DashboardTextPost queued text post 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -10214,7 +14991,7 @@ exports[`Snapshots DashboardTextPost retweet 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -10638,7 +15415,7 @@ exports[`Snapshots DashboardTextPost retweet with comment 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -11161,7 +15938,7 @@ exports[`Snapshots DashboardVideoPost error 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -11522,7 +16299,7 @@ exports[`Snapshots DashboardVideoPost queued video post 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -11968,7 +16745,7 @@ exports[`Snapshots DashboardVideoPost retweet 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -12516,7 +17293,7 @@ exports[`Snapshots DashboardVideoPost square image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -12877,7 +17654,7 @@ exports[`Snapshots DashboardVideoPost tall image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -13238,7 +18015,7 @@ exports[`Snapshots DashboardVideoPost wide image 1`] = `
                 <button
                   disabled={undefined}
                   onBlur={[Function]}
-                  onClick={undefined}
+                  onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}

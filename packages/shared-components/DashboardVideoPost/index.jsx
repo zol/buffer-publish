@@ -11,6 +11,7 @@ const DashboardVideoPost = ({
   onDeleteClick,
   onDeleteConfirmClick,
   onEditClick,
+  onShareNowClick,
   postDetails,
   text,
   tag,
@@ -30,6 +31,7 @@ const DashboardVideoPost = ({
     onDeleteClick={onDeleteClick}
     onDeleteConfirmClick={onDeleteConfirmClick}
     onEditClick={onEditClick}
+    onShareNowClick={onShareNowClick}
     retweetProfile={retweetProfile}
     sent={sent}
   />;

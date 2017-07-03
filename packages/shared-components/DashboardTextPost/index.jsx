@@ -24,6 +24,7 @@ const DashboardTextPost = ({
   onDeleteClick,
   onDeleteConfirmClick,
   onEditClick,
+  onShareNowClick,
   postDetails,
   text,
   retweetProfile,
@@ -57,6 +58,7 @@ const DashboardTextPost = ({
       onDeleteClick={onDeleteClick}
       onDeleteConfirmClick={onDeleteConfirmClick}
       onEditClick={onEditClick}
+      onShareNowClick={onShareNowClick}
       postDetails={postDetails}
       text={text}
       retweetProfile={retweetProfile}

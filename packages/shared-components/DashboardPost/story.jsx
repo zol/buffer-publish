@@ -59,6 +59,7 @@ storiesOf('DashboardPost')
       onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
       onShareNowClick={linkTo('DashboardPost', 'isWorking')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     >
       {children}

@@ -47,6 +47,7 @@ storiesOf('DashboardLinkPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -60,6 +61,7 @@ storiesOf('DashboardLinkPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent
     />
   ))
@@ -73,6 +75,7 @@ storiesOf('DashboardLinkPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -86,6 +89,7 @@ storiesOf('DashboardLinkPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -99,6 +103,7 @@ storiesOf('DashboardLinkPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -112,6 +117,7 @@ storiesOf('DashboardLinkPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ));

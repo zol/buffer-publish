@@ -53,6 +53,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -66,6 +67,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent
     />
   ))
@@ -79,6 +81,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -92,6 +95,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -105,6 +109,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -118,6 +123,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       retweetProfile={retweetProfile}
       sent={false}
     />
@@ -132,6 +138,7 @@ storiesOf('DashboardVideoPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ));

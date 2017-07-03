@@ -56,6 +56,7 @@ storiesOf('DashboardTextPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ))
@@ -68,6 +69,7 @@ storiesOf('DashboardTextPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent
     />
   ))
@@ -80,6 +82,7 @@ storiesOf('DashboardTextPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       retweetProfile={retweetProfile}
       sent={false}
     />
@@ -93,6 +96,7 @@ storiesOf('DashboardTextPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       retweetProfile={retweetProfile}
       retweetComment={retweetComment}
       retweetCommentLinks={retweetCommentLinks}
@@ -108,6 +112,7 @@ storiesOf('DashboardTextPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     />
   ));
