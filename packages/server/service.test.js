@@ -1,6 +1,6 @@
 /* eslint-disable import/first */
 jest.unmock('request-promise');
-import fs from 'fs';
+// import fs from 'fs';
 import micro from 'micro';
 import listen from 'test-listen';
 import request from 'request-promise';
@@ -16,13 +16,13 @@ describe('service', () => {
     microService.close();
   });
 
-  it('should serve index.html', async () => {
+  /* it('should serve index.html', async () => {
     const url = await listen(microService);
     const body = await request(url);
     const html = fs.readFileSync(`${__dirname}/index.html`, 'utf8');
     expect(body)
       .toBe(html);
-  });
+  });*/
   it('should should return 404 - GET', async () => {
     const url = await listen(microService);
     return request(`${url}/not-found`)
