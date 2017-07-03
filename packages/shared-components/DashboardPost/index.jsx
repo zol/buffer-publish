@@ -148,7 +148,7 @@ DashboardPost.commonPropTypes = {
       rawString: PropTypes.string,
       displayString: PropTypes.string,
       expandedUrl: PropTypes.string,
-      indices: PropTypes.arrayOf(React.PropTypes.number),
+      indices: PropTypes.arrayOf(PropTypes.number),
     }),
   ),
   sent: PropTypes.bool.isRequired,

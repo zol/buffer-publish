@@ -32,8 +32,8 @@ const selectStyle = {
   border: `${borderWidth} solid ${mystic}`,
   borderRadius,
   appearance: 'none',
-  '-webkit-appearance': 'none',
-  '-moz-appearance': 'none',
+  WebkitAppearance: 'none',
+  MozAppearance: 'none',
 };
 
 const iconStyle = {

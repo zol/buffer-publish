@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bufferapp/project-donut#readme",
   "devDependencies": {
+    "@bufferapp/react-keyframes": "0.2.4",
     "axe-core": "2.2.0",
     "babel-core": "6.24.0",
     "babel-eslint": "7.2.0",
@@ -45,7 +46,6 @@
     "react-day-picker": "5.5.1",
     "react-dom": "15.6.1",
     "react-hot-loader": "3.0.0-beta.7",
-    "react-keyframes": "0.2.2",
     "react-redux": "5.0.4",
     "react-router": "4.1.1",
     "react-router-redux": "5.0.0-alpha.6",

@@ -76,7 +76,7 @@ DashboardTextPost.propTypes = {
       rawString: PropTypes.string,
       displayString: PropTypes.string,
       expandedUrl: PropTypes.string,
-      indices: PropTypes.arrayOf(React.PropTypes.number),
+      indices: PropTypes.arrayOf(PropTypes.number),
     }),
   ).isRequired,
   retweetCommentLinks: PropTypes.arrayOf(
@@ -84,7 +84,7 @@ DashboardTextPost.propTypes = {
       rawString: PropTypes.string,
       displayString: PropTypes.string,
       expandedUrl: PropTypes.string,
-      indices: PropTypes.arrayOf(React.PropTypes.number),
+      indices: PropTypes.arrayOf(PropTypes.number),
     }),
   ),
   text: PropTypes.string.isRequired,
