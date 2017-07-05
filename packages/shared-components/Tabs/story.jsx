@@ -12,7 +12,7 @@ storiesOf('Tabs')
   .addDecorator(checkA11y)
   .add('default', () => (
     <Tabs
-      activeTab={'12345'}
+      activeTabId={''}
       onTabClick={action('on-tab-click')}
     >
       <Tab tabId={uuid()}>Queue (1)</Tab>
@@ -22,7 +22,7 @@ storiesOf('Tabs')
   ))
   .add('with one active tab', () => (
     <Tabs
-      activeTab={'12345'}
+      activeTabId={'12345'}
       onTabClick={action('on-tab-click')}
     >
       <Tab tabId={'12345'}>Queue (1)</Tab>

@@ -15,14 +15,14 @@ const Tabs = ({ children, activeTabId, onTabClick }) => (
         React.cloneElement(tab, {
           // pass props from `Tabs` to `Tab`
           active: tab.props.tabId === activeTabId,
-          onClick: () => onTabClick({ tabId: tab.props.tabId }),
+          onClick: () => onTabClick(tab.props.tabId),
         })
     ))}
   </div>
 );
 
 Tabs.propTypes = {
-  onTabClick: PropTypes.func,
+  onTabClick: PropTypes.func.isRequired,
   children: PropTypes.node,
   activeTabId: React.PropTypes.string,
 };
