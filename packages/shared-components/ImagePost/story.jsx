@@ -4,7 +4,7 @@ import {
   action,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardTextPost from './index';
+import ImagePost from './index';
 
 const links = [{
   rawString: 'http://buff.ly/1LTbUqv',
@@ -14,15 +14,6 @@ const links = [{
 }];
 
 const text = 'What is a Product Designer? An awesome story by @jgadapee over on Medium! http://buff.ly/1LTbUqv';
-
-const retweetComment = 'Awesome book news here: http://buff.ly/2oZYTnY';
-
-const retweetCommentLinks = [{
-  rawString: 'http://buff.ly/2oZYTnY',
-  displayString: 'http://buff.ly/2oZYTnY',
-  url: 'https://www.theguardian.com/books',
-  indices: [24, 46],
-}];
 
 const postDetails = {
   isRetweet: false,
@@ -36,7 +27,8 @@ const isARetweetPostDetails = {
 
 const postDetailsError = {
   ...postDetails,
-  error: 'Woops something went wrong. Try again?',
+  postAction: 'This post will be sent at 9:21 (GMT)',
+  error: 'Something went wrong. Try again?',
 };
 
 const retweetProfile = {
@@ -45,10 +37,16 @@ const retweetProfile = {
   avatarUrl: 'https://buffer-uploads.s3.amazonaws.com/503a5c8ffc99f72a7f00002e/f49c2ff693f1c307af5e1b3d84e581ca.png',
 };
 
-storiesOf('DashboardTextPost')
+const imageSrc = 'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg';
+const squareImage = 'http://lorempixel.com/400/400/cats/';
+const tallImage = 'http://lorempixel.com/400/900/cats/';
+const wideImage = 'http://lorempixel.com/900/400/cats/';
+
+storiesOf('ImagePost')
   .addDecorator(checkA11y)
-  .add('queued text post', () => (
-    <DashboardTextPost
+  .add('queued image post', () => (
+    <ImagePost
+      imageSrc={imageSrc}
       links={links}
       postDetails={postDetails}
       text={text}
@@ -60,8 +58,9 @@ storiesOf('DashboardTextPost')
       sent={false}
     />
   ))
-  .add('sent', () => (
-    <DashboardTextPost
+  .add('sent image post', () => (
+    <ImagePost
+      imageSrc={imageSrc}
       links={links}
       postDetails={postDetails}
       text={text}
@@ -73,22 +72,51 @@ storiesOf('DashboardTextPost')
       sent
     />
   ))
-  .add('retweet', () => (
-    <DashboardTextPost
+  .add('square image', () => (
+    <ImagePost
+      imageSrc={squareImage}
       links={links}
-      postDetails={isARetweetPostDetails}
+      postDetails={postDetails}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
-      retweetProfile={retweetProfile}
       sent={false}
     />
   ))
-  .add('retweet with comment', () => (
-    <DashboardTextPost
+  .add('tall image', () => (
+    <ImagePost
+      imageSrc={tallImage}
+      links={links}
+      postDetails={postDetails}
+      text={text}
+      onCancelConfirmClick={action('cancel-confirm-click')}
+      onDeleteClick={action('delete-click')}
+      onDeleteConfirmClick={action('delete-confirm-click')}
+      onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
+      sent={false}
+    />
+  ))
+  .add('wide image', () => (
+    <ImagePost
+      imageSrc={wideImage}
+      links={links}
+      postDetails={postDetails}
+      text={text}
+      onCancelConfirmClick={action('cancel-confirm-click')}
+      onDeleteClick={action('delete-click')}
+      onDeleteConfirmClick={action('delete-confirm-click')}
+      onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
+      sent={false}
+    />
+  ))
+  .add('retweet', () => (
+    <ImagePost
+      imageSrc={imageSrc}
       links={links}
       postDetails={isARetweetPostDetails}
       text={text}
@@ -98,16 +126,30 @@ storiesOf('DashboardTextPost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       retweetProfile={retweetProfile}
-      retweetComment={retweetComment}
-      retweetCommentLinks={retweetCommentLinks}
       sent={false}
     />
   ))
   .add('error', () => (
-    <DashboardTextPost
+    <ImagePost
+      imageSrc={imageSrc}
       links={links}
       postDetails={postDetailsError}
       text={text}
+      onCancelConfirmClick={action('cancel-confirm-click')}
+      onDeleteClick={action('delete-click')}
+      onDeleteConfirmClick={action('delete-confirm-click')}
+      onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
+      sent={false}
+    />
+  ))
+  .add('tag', () => (
+    <ImagePost
+      imageSrc={imageSrc}
+      links={links}
+      postDetails={postDetails}
+      text={text}
+      tag={'GIF'}
       onCancelConfirmClick={action('cancel-confirm-click')}
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}

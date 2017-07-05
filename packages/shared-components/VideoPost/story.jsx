@@ -4,7 +4,7 @@ import {
   action,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardImagePost from './index';
+import VideoPost from './index';
 
 const links = [{
   rawString: 'http://buff.ly/1LTbUqv',
@@ -27,8 +27,7 @@ const isARetweetPostDetails = {
 
 const postDetailsError = {
   ...postDetails,
-  postAction: 'This post will be sent at 9:21 (GMT)',
-  error: 'Something went wrong. Try again?',
+  error: 'Woops something went wrong. Try again?',
 };
 
 const retweetProfile = {
@@ -42,10 +41,10 @@ const squareImage = 'http://lorempixel.com/400/400/cats/';
 const tallImage = 'http://lorempixel.com/400/900/cats/';
 const wideImage = 'http://lorempixel.com/900/400/cats/';
 
-storiesOf('DashboardImagePost')
+storiesOf('VideoPost')
   .addDecorator(checkA11y)
-  .add('queued image post', () => (
-    <DashboardImagePost
+  .add('queued video post', () => (
+    <VideoPost
       imageSrc={imageSrc}
       links={links}
       postDetails={postDetails}
@@ -58,8 +57,8 @@ storiesOf('DashboardImagePost')
       sent={false}
     />
   ))
-  .add('sent image post', () => (
-    <DashboardImagePost
+  .add('sent', () => (
+    <VideoPost
       imageSrc={imageSrc}
       links={links}
       postDetails={postDetails}
@@ -73,7 +72,7 @@ storiesOf('DashboardImagePost')
     />
   ))
   .add('square image', () => (
-    <DashboardImagePost
+    <VideoPost
       imageSrc={squareImage}
       links={links}
       postDetails={postDetails}
@@ -87,7 +86,7 @@ storiesOf('DashboardImagePost')
     />
   ))
   .add('tall image', () => (
-    <DashboardImagePost
+    <VideoPost
       imageSrc={tallImage}
       links={links}
       postDetails={postDetails}
@@ -101,7 +100,7 @@ storiesOf('DashboardImagePost')
     />
   ))
   .add('wide image', () => (
-    <DashboardImagePost
+    <VideoPost
       imageSrc={wideImage}
       links={links}
       postDetails={postDetails}
@@ -115,7 +114,7 @@ storiesOf('DashboardImagePost')
     />
   ))
   .add('retweet', () => (
-    <DashboardImagePost
+    <VideoPost
       imageSrc={imageSrc}
       links={links}
       postDetails={isARetweetPostDetails}
@@ -130,26 +129,11 @@ storiesOf('DashboardImagePost')
     />
   ))
   .add('error', () => (
-    <DashboardImagePost
+    <VideoPost
       imageSrc={imageSrc}
       links={links}
       postDetails={postDetailsError}
       text={text}
-      onCancelConfirmClick={action('cancel-confirm-click')}
-      onDeleteClick={action('delete-click')}
-      onDeleteConfirmClick={action('delete-confirm-click')}
-      onEditClick={action('edit-click')}
-      onShareNowClick={action('share-now-click')}
-      sent={false}
-    />
-  ))
-  .add('tag', () => (
-    <DashboardImagePost
-      imageSrc={imageSrc}
-      links={links}
-      postDetails={postDetails}
-      text={text}
-      tag={'GIF'}
       onCancelConfirmClick={action('cancel-confirm-click')}
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}

@@ -4,7 +4,7 @@ import {
   action,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardVideoPost from './index';
+import LinkPost from './index';
 
 const links = [{
   rawString: 'http://buff.ly/1LTbUqv',
@@ -15,14 +15,15 @@ const links = [{
 
 const text = 'What is a Product Designer? An awesome story by @jgadapee over on Medium! http://buff.ly/1LTbUqv';
 
-const postDetails = {
-  isRetweet: false,
-  postAction: 'This post will be sent at 9:21 (GMT)',
+const linkAttachment = {
+  title: 'What is a Product Designer?',
+  description: 'A brief history at how history and markets influence design titles',
+  url: 'https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x',
+  thumbnailUrl: 'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
 };
 
-const isARetweetPostDetails = {
-  ...postDetails,
-  isRetweet: true,
+const postDetails = {
+  postAction: 'This post will be sent at 9:21 (GMT)',
 };
 
 const postDetailsError = {
@@ -30,23 +31,16 @@ const postDetailsError = {
   error: 'Woops something went wrong. Try again?',
 };
 
-const retweetProfile = {
-  name: 'Joel Gascoigne',
-  handle: '@joelgascoigne',
-  avatarUrl: 'https://buffer-uploads.s3.amazonaws.com/503a5c8ffc99f72a7f00002e/f49c2ff693f1c307af5e1b3d84e581ca.png',
-};
-
-const imageSrc = 'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg';
 const squareImage = 'http://lorempixel.com/400/400/cats/';
 const tallImage = 'http://lorempixel.com/400/900/cats/';
 const wideImage = 'http://lorempixel.com/900/400/cats/';
 
-storiesOf('DashboardVideoPost')
+storiesOf('LinkPost')
   .addDecorator(checkA11y)
-  .add('queued video post', () => (
-    <DashboardVideoPost
-      imageSrc={imageSrc}
+  .add('queued link post', () => (
+    <LinkPost
       links={links}
+      linkAttachment={linkAttachment}
       postDetails={postDetails}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}
@@ -58,9 +52,9 @@ storiesOf('DashboardVideoPost')
     />
   ))
   .add('sent', () => (
-    <DashboardVideoPost
-      imageSrc={imageSrc}
+    <LinkPost
       links={links}
+      linkAttachment={linkAttachment}
       postDetails={postDetails}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}
@@ -72,9 +66,9 @@ storiesOf('DashboardVideoPost')
     />
   ))
   .add('square image', () => (
-    <DashboardVideoPost
-      imageSrc={squareImage}
+    <LinkPost
       links={links}
+      linkAttachment={{ ...linkAttachment, thumbnailUrl: squareImage }}
       postDetails={postDetails}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}
@@ -86,9 +80,9 @@ storiesOf('DashboardVideoPost')
     />
   ))
   .add('tall image', () => (
-    <DashboardVideoPost
-      imageSrc={tallImage}
+    <LinkPost
       links={links}
+      linkAttachment={{ ...linkAttachment, thumbnailUrl: tallImage }}
       postDetails={postDetails}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}
@@ -100,9 +94,9 @@ storiesOf('DashboardVideoPost')
     />
   ))
   .add('wide image', () => (
-    <DashboardVideoPost
-      imageSrc={wideImage}
+    <LinkPost
       links={links}
+      linkAttachment={{ ...linkAttachment, thumbnailUrl: wideImage }}
       postDetails={postDetails}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}
@@ -113,25 +107,10 @@ storiesOf('DashboardVideoPost')
       sent={false}
     />
   ))
-  .add('retweet', () => (
-    <DashboardVideoPost
-      imageSrc={imageSrc}
-      links={links}
-      postDetails={isARetweetPostDetails}
-      text={text}
-      onCancelConfirmClick={action('cancel-confirm-click')}
-      onDeleteClick={action('delete-click')}
-      onDeleteConfirmClick={action('delete-confirm-click')}
-      onEditClick={action('edit-click')}
-      onShareNowClick={action('share-now-click')}
-      retweetProfile={retweetProfile}
-      sent={false}
-    />
-  ))
   .add('error', () => (
-    <DashboardVideoPost
-      imageSrc={imageSrc}
+    <LinkPost
       links={links}
+      linkAttachment={linkAttachment}
       postDetails={postDetailsError}
       text={text}
       onCancelConfirmClick={action('cancel-confirm-click')}

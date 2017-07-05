@@ -4,7 +4,7 @@ import {
   action,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardMultipleImagesPost from './index';
+import MultipleImagesPost from './index';
 
 const links = [{
   displayString: 'http://buff.ly/1LTbUqv',
@@ -31,10 +31,10 @@ const imageUrls = [
   'http://lorempixel.com/400/400/cats/',
 ];
 
-storiesOf('DashboardMultipleImagesPost')
+storiesOf('MultipleImagesPost')
   .addDecorator(checkA11y)
   .add('queued multiple image post', () => (
-    <DashboardMultipleImagesPost
+    <MultipleImagesPost
       postDetails={postDetails}
       links={links}
       imageUrls={imageUrls}
@@ -48,7 +48,7 @@ storiesOf('DashboardMultipleImagesPost')
     />
   ))
   .add('sent multiple image post', () => (
-    <DashboardMultipleImagesPost
+    <MultipleImagesPost
       postDetails={postDetails}
       links={links}
       imageUrls={imageUrls}
@@ -62,7 +62,7 @@ storiesOf('DashboardMultipleImagesPost')
     />
   ))
   .add('error', () => (
-    <DashboardMultipleImagesPost
+    <MultipleImagesPost
       postDetails={postDetailsError}
       links={links}
       imageUrls={imageUrls}

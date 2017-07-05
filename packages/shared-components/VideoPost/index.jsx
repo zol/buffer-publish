@@ -1,7 +1,7 @@
 import React from 'react';
-import DashboardImagePost from '../DashboardImagePost';
+import ImagePost from '../ImagePost';
 
-const DashboardVideoPost = ({
+const VideoPost = ({
   isConfirmingDelete,
   isDeleting,
   isWorking,
@@ -18,7 +18,7 @@ const DashboardVideoPost = ({
   retweetProfile,
   sent,
 }) =>
-  <DashboardImagePost
+  <ImagePost
     isConfirmingDelete={isConfirmingDelete}
     isDeleting={isDeleting}
     isWorking={isWorking}
@@ -36,11 +36,11 @@ const DashboardVideoPost = ({
     sent={sent}
   />;
 
-DashboardVideoPost.propTypes = DashboardImagePost.propTypes;
+VideoPost.propTypes = ImagePost.propTypes;
 
-DashboardVideoPost.defaultProps = {
-  ...DashboardImagePost.defaultProps,
+VideoPost.defaultProps = {
+  ...ImagePost.defaultProps,
   tag: 'VIDEO',
 };
 
-export default DashboardVideoPost;
+export default VideoPost;

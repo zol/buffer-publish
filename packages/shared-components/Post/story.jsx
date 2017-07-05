@@ -6,7 +6,7 @@ import {
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { Text } from '@bufferapp/components';
-import DashboardPost from './index';
+import Post from './index';
 
 const postDetails = {
   isRetweet: false,
@@ -49,94 +49,93 @@ const children = (
   </Text>
 );
 
-storiesOf('DashboardPost')
+storiesOf('Post')
   .addDecorator(checkA11y)
   .add('queued post', () => (
-    <DashboardPost
+    <Post
       postDetails={postDetails}
-      onCancelConfirmClick={linkTo('DashboardPost', 'hovered')}
-      onDeleteClick={linkTo('DashboardPost', 'isConfirmingDelete')}
-      onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onCancelConfirmClick={linkTo('Post', 'hovered')}
+      onDeleteClick={linkTo('Post', 'isConfirmingDelete')}
+      onDeleteConfirmClick={linkTo('Post', 'isDeleting')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       onEditClick={action('edit-click')}
-      onShareNowClick={action('share-now-click')}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('sent', () => (
-    <DashboardPost
+    <Post
       postDetails={sentPostDetails}
-      onCancelConfirmClick={linkTo('DashboardPost', 'hovered')}
-      onDeleteClick={linkTo('DashboardPost', 'isConfirmingDelete')}
-      onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
+      onCancelConfirmClick={linkTo('Post', 'hovered')}
+      onDeleteClick={linkTo('Post', 'isConfirmingDelete')}
+      onDeleteConfirmClick={linkTo('Post', 'isDeleting')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       sent
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('error', () => (
-    <DashboardPost
+    <Post
       onMouseEnter={action('on-mouse-enter')}
       onMouseLeave={action('on-mouse-leave')}
       onCancelConfirmClick={action('cancel-confirm-click')}
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       postDetails={postDetailsError}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('isConfirmingDelete', () => (
-    <DashboardPost
+    <Post
       isConfirmingDelete
-      onCancelConfirmClick={linkTo('DashboardPost', 'hovered')}
-      onDeleteClick={linkTo('DashboardPost', 'isConfirmingDelete')}
-      onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
+      onCancelConfirmClick={linkTo('Post', 'hovered')}
+      onDeleteClick={linkTo('Post', 'isConfirmingDelete')}
+      onDeleteConfirmClick={linkTo('Post', 'isDeleting')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       postDetails={postDetails}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('isDeleting', () => (
-    <DashboardPost
+    <Post
       isDeleting
-      onCancelConfirmClick={linkTo('DashboardPost', 'hovered')}
-      onDeleteClick={linkTo('DashboardPost', 'isConfirmingDelete')}
-      onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
+      onCancelConfirmClick={linkTo('Post', 'hovered')}
+      onDeleteClick={linkTo('Post', 'isConfirmingDelete')}
+      onDeleteConfirmClick={linkTo('Post', 'isDeleting')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       postDetails={postDetails}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('isWorking', () => (
-    <DashboardPost
+    <Post
       isWorking
-      onCancelConfirmClick={linkTo('DashboardPost', 'hovered')}
-      onDeleteClick={linkTo('DashboardPost', 'isConfirmingDelete')}
-      onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
+      onCancelConfirmClick={linkTo('Post', 'hovered')}
+      onDeleteClick={linkTo('Post', 'isConfirmingDelete')}
+      onDeleteConfirmClick={linkTo('Post', 'isDeleting')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       postDetails={postDetails}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('retweet', () => (
-    <DashboardPost
+    <Post
       postDetails={isARetweetPostDetails}
       onMouseEnter={action('mouse-enter')}
       onMouseLeave={action('mous-leave')}
@@ -144,15 +143,15 @@ storiesOf('DashboardPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       retweetProfile={retweetProfile}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ))
   .add('retweet with comment', () => (
-    <DashboardPost
+    <Post
       postDetails={isARetweetPostDetails}
       retweetCommentLinks={links}
       onMouseEnter={action('mouse-enter')}
@@ -161,11 +160,11 @@ storiesOf('DashboardPost')
       onDeleteClick={action('delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onEditClick={action('edit-click')}
-      onShareNowClick={linkTo('DashboardPost', 'isWorking')}
+      onShareNowClick={linkTo('Post', 'isWorking')}
       retweetProfile={retweetProfile}
       retweetComment={retweetComment}
       sent={false}
     >
       {children}
-    </DashboardPost>
+    </Post>
   ));

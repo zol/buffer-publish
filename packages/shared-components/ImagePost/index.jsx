@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  IdTag,
+  Image,
   LinkifiedText,
 } from '@bufferapp/components';
-import DashboardPost from '../DashboardPost';
+import Post from '../Post';
 
 const postContentStyle = {
   display: 'flex',
@@ -14,7 +16,27 @@ const postContentTextStyle = {
   flexGrow: 1,
 };
 
-const DashboardTextPost = ({
+const imageWrapperStyle = {
+  position: 'relative',
+};
+
+const imageTagStyle = {
+  position: 'absolute',
+  bottom: '0.7rem',
+  left: '0.7rem',
+};
+
+
+const renderTag = (tag) => {
+  if (!tag) return;
+  return (
+    <span style={imageTagStyle}>
+      <IdTag>{tag}</IdTag>
+    </span>
+  );
+};
+
+const ImagePost = ({
   isConfirmingDelete,
   isDeleting,
   isWorking,
@@ -26,11 +48,10 @@ const DashboardTextPost = ({
   onEditClick,
   onShareNowClick,
   postDetails,
-  text,
-  retweetProfile,
-  retweetComment,
-  retweetCommentLinks,
   sent,
+  text,
+  tag,
+  retweetProfile,
 }) => {
   const children = (
     <div style={postContentStyle}>
@@ -44,11 +65,23 @@ const DashboardTextPost = ({
           {text}
         </LinkifiedText>
       </span>
+      <div style={imageWrapperStyle}>
+        <Image
+          src={imageSrc}
+          width={'15rem'}
+          maxHeight={'20rem'}
+          minHeight={'10rem'}
+          border={'rounded'}
+          objectFit={'cover'}
+        />
+        { renderTag(tag) }
+      </div>
+
     </div>
   );
 
   return (
-    <DashboardPost
+    <Post
       isConfirmingDelete={isConfirmingDelete}
       isDeleting={isDeleting}
       isWorking={isWorking}
@@ -60,19 +93,18 @@ const DashboardTextPost = ({
       onEditClick={onEditClick}
       onShareNowClick={onShareNowClick}
       postDetails={postDetails}
+      sent={sent}
       text={text}
       retweetProfile={retweetProfile}
-      retweetComment={retweetComment}
-      retweetCommentLinks={retweetCommentLinks}
-      sent={sent}
     >
       {children}
-    </DashboardPost>
+    </Post>
   );
 };
 
-DashboardTextPost.propTypes = {
-  ...DashboardPost.commonPropTypes,
+ImagePost.propTypes = {
+  ...Post.commonPropTypes,
+  imageSrc: PropTypes.string.isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       rawString: PropTypes.string,
@@ -81,17 +113,10 @@ DashboardTextPost.propTypes = {
       indices: PropTypes.arrayOf(PropTypes.number),
     }),
   ).isRequired,
-  retweetCommentLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      rawString: PropTypes.string,
-      displayString: PropTypes.string,
-      expandedUrl: PropTypes.string,
-      indices: PropTypes.arrayOf(PropTypes.number),
-    }),
-  ),
   text: PropTypes.string.isRequired,
+  tag: PropTypes.string,
 };
 
-DashboardTextPost.defaultProps = DashboardPost.defaultProps;
+ImagePost.defaultProps = ImagePost.defaultProps;
 
-export default DashboardTextPost;
+export default ImagePost;

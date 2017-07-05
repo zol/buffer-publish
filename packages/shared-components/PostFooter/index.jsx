@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Button,
   Text,
   WarningIcon,
 } from '@bufferapp/components';
@@ -12,8 +11,7 @@ import {
   mystic,
 } from '@bufferapp/components/style/color';
 
-import DashboardPostFooterDelete from '../DashboardPostFooterDelete';
-import HoverableText from '../HoverableText';
+import PostFooterButtons from '../PostFooterButtons';
 
 const postDetailsStyle = {
   display: 'flex',
@@ -38,51 +36,12 @@ const postControlsStyle = {
   display: 'flex',
 };
 
-const postButtonEdit = {
-  marginLeft: '0.7rem',
-};
-
-const verticalLineStyle = {
-  marginRight: '0.7rem',
-  marginLeft: '0.7rem',
-  borderLeft: `${borderWidth} solid transparent`,
-};
-
 /* eslint-disable react/prop-types */
-
-const renderEdit = ({
-  onEditClick,
-}) =>
-  (<span style={postButtonEdit}>
-    <Button onClick={onEditClick} noStyle>
-      <HoverableText
-        size={'small'}
-        color={'black'}
-      >
-        Edit
-      </HoverableText>
-    </Button>
-  </span>);
 
 const renderIcon = () =>
   (<div style={postActionDetailsIconStyle}>
     <WarningIcon color={'torchRed'} />
   </div>);
-
-const renderShareNow = ({
-  onShareNowClick,
-}) =>
-  (<span>
-    <span style={verticalLineStyle} />
-    <Button onClick={onShareNowClick} noStyle>
-      <HoverableText
-        size={'small'}
-        color={'black'}
-      >
-        Share Now
-      </HoverableText>
-    </Button>
-  </span>);
 
 const renderText = ({
   postDetails,
@@ -96,50 +55,9 @@ const renderText = ({
     </Text>
   </span>);
 
-const renderControls = ({
-  isDeleting,
-  isConfirmingDelete,
-  isWorking,
-  onCancelConfirmClick,
-  onDeleteClick,
-  onEditClick,
-  onDeleteConfirmClick,
-  onShareNowClick,
-}) => {
-  if (isDeleting) {
-    return (
-      <Text size={'small'}> Deleting... </Text>
-    );
-  }
-
-  if (isWorking) {
-    return (
-      <Text size={'small'}> Sharing... </Text>
-    );
-  }
-
-  return (
-    <div>
-      <DashboardPostFooterDelete
-        color={'black'}
-        isConfirmingDelete={isConfirmingDelete}
-        onCancelConfirmClick={onCancelConfirmClick}
-        onDeleteConfirmClick={onDeleteConfirmClick}
-        onDeleteClick={onDeleteClick}
-      />
-      {renderEdit({
-        onEditClick,
-      })}
-      {renderShareNow({
-        onShareNowClick,
-      })}
-    </div>
-  );
-};
-
 /* eslint-enable react/prop-types */
 
-const DashboardPostFooter = ({
+const PostFooter = ({
   isDeleting,
   isConfirmingDelete,
   isWorking,
@@ -158,21 +76,21 @@ const DashboardPostFooter = ({
     </div>
     { !sent && (
       <div style={postControlsStyle}>
-        {renderControls({
-          isDeleting,
-          isConfirmingDelete,
-          isWorking,
-          onCancelConfirmClick,
-          onDeleteClick,
-          onEditClick,
-          onDeleteConfirmClick,
-          onShareNowClick,
-        })}
+        <PostFooterButtons
+          isDeleting={isDeleting}
+          isConfirmingDelete={isConfirmingDelete}
+          isWorking={isWorking}
+          onCancelConfirmClick={onCancelConfirmClick}
+          onDeleteClick={onDeleteClick}
+          onEditClick={onEditClick}
+          onDeleteConfirmClick={onDeleteConfirmClick}
+          onShareNowClick={onShareNowClick}
+        />
       </div>)
     }
   </div>);
 
-DashboardPostFooter.propTypes = {
+PostFooter.propTypes = {
   isDeleting: PropTypes.bool,
   isConfirmingDelete: PropTypes.bool,
   isWorking: PropTypes.bool,
@@ -188,10 +106,10 @@ DashboardPostFooter.propTypes = {
   sent: PropTypes.bool.isRequired,
 };
 
-DashboardPostFooter.defaultProps = {
+PostFooter.defaultProps = {
   isDeleting: false,
   isConfirmingDelete: false,
   isWorking: false,
 };
 
-export default DashboardPostFooter;
+export default PostFooter;

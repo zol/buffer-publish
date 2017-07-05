@@ -87,6 +87,9 @@ exports[`Snapshots App should render application 1`] = `
     >
       Logged Out...
     </span>
+    <h1>
+      Welcome to Buffer Publish!
+    </h1>
   </div>
 </span>
 `;

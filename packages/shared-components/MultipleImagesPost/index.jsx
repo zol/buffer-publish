@@ -5,7 +5,7 @@ import {
   MultipleImages,
 } from '@bufferapp/components';
 // import style from './style.css';
-import DashboardPost from '../DashboardPost';
+import Post from '../Post';
 
 const postContentStyle = {
   display: 'flex',
@@ -16,7 +16,7 @@ const postContentTextStyle = {
   flexGrow: 1,
 };
 
-const DashboardMultipleImagesPost = ({
+const MultipleImagesPost = ({
   postDetails,
   imageUrls,
   isConfirmingDelete,
@@ -56,7 +56,7 @@ const DashboardMultipleImagesPost = ({
   );
 
   return (
-    <DashboardPost
+    <Post
       postDetails={postDetails}
       isConfirmingDelete={isConfirmingDelete}
       isDeleting={isDeleting}
@@ -72,12 +72,12 @@ const DashboardMultipleImagesPost = ({
       text={text}
     >
       {children}
-    </DashboardPost>
+    </Post>
   );
 };
 
-DashboardMultipleImagesPost.propTypes = {
-  ...DashboardPost.commonPropTypes,
+MultipleImagesPost.propTypes = {
+  ...Post.commonPropTypes,
   imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
@@ -90,6 +90,6 @@ DashboardMultipleImagesPost.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-DashboardMultipleImagesPost.defaultProps = DashboardPost.defaultProps;
+MultipleImagesPost.defaultProps = Post.defaultProps;
 
-export default DashboardMultipleImagesPost;
+export default MultipleImagesPost;

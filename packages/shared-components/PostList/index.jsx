@@ -4,11 +4,11 @@ import {
   List,
   Text,
 } from '@bufferapp/components';
-import DashboardTextPost from '../DashboardTextPost';
-import DashboardImagePost from '../DashboardImagePost';
-import DashboardMultipleImagesPost from '../DashboardMultipleImagesPost';
-import DashboardLinkPost from '../DashboardLinkPost';
-import DashboardVideoPost from '../DashboardVideoPost';
+import TextPost from '../TextPost';
+import ImagePost from '../ImagePost';
+import MultipleImagesPost from '../MultipleImagesPost';
+import LinkPost from '../LinkPost';
+import VideoPost from '../VideoPost';
 
 const postStyle = {
   marginBottom: '2rem',
@@ -40,23 +40,23 @@ const renderPost = ({
   };
   switch (post.type) {
     case 'text':
-      return (<DashboardTextPost {...postWithEventHandlers} />);
+      return (<TextPost {...postWithEventHandlers} />);
     case 'image':
-      return (<DashboardImagePost {...postWithEventHandlers} />);
+      return (<ImagePost {...postWithEventHandlers} />);
     case 'multipleImage':
-      return (<DashboardMultipleImagesPost {...postWithEventHandlers} />);
+      return (<MultipleImagesPost {...postWithEventHandlers} />);
     case 'link':
-      return (<DashboardLinkPost {...postWithEventHandlers} />);
+      return (<LinkPost {...postWithEventHandlers} />);
     case 'video':
-      return (<DashboardVideoPost {...postWithEventHandlers} />);
+      return (<VideoPost {...postWithEventHandlers} />);
     default:
-      return (<DashboardTextPost {...postWithEventHandlers} />);
+      return (<TextPost {...postWithEventHandlers} />);
   }
 };
 
 /* eslint-enable react/prop-types */
 
-const DashboardPostList = ({
+const PostList = ({
   listHeader,
   posts,
   onCancelConfirmClick,
@@ -91,7 +91,7 @@ const DashboardPostList = ({
     />
   </div>;
 
-DashboardPostList.propTypes = {
+PostList.propTypes = {
   listHeader: PropTypes.string,
   posts: PropTypes.arrayOf(
     PropTypes.shape({
@@ -105,8 +105,8 @@ DashboardPostList.propTypes = {
   onShareNowClick: PropTypes.func,
 };
 
-DashboardPostList.defaultProps = {
+PostList.defaultProps = {
   posts: [],
 };
 
-export default DashboardPostList;
+export default PostList;

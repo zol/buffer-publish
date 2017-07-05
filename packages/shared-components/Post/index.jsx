@@ -4,7 +4,7 @@ import {
   Card,
   LinkifiedText,
 } from '@bufferapp/components';
-import DashboardPostFooter from '../DashboardPostFooter';
+import PostFooter from '../PostFooter';
 import RetweetPanel from '../RetweetPanel';
 
 const postContainerStyle = {
@@ -79,7 +79,7 @@ const renderContent = ({
 
 /* eslint-enable react/prop-types */
 
-const DashboardPost = ({
+const Post = ({
   children,
   isConfirmingDelete,
   isDeleting,
@@ -107,7 +107,7 @@ const DashboardPost = ({
           retweetComment,
           retweetCommentLinks,
         })}
-        <DashboardPostFooter
+        <PostFooter
           isDeleting={isDeleting}
           isConfirmingDelete={isConfirmingDelete}
           isWorking={isWorking}
@@ -123,7 +123,7 @@ const DashboardPost = ({
     </div>
   </div>);
 
-DashboardPost.commonPropTypes = {
+Post.commonPropTypes = {
   isConfirmingDelete: PropTypes.bool,
   isDeleting: PropTypes.bool,
   isWorking: PropTypes.bool,
@@ -154,15 +154,15 @@ DashboardPost.commonPropTypes = {
   sent: PropTypes.bool.isRequired,
 };
 
-DashboardPost.propTypes = {
-  ...DashboardPost.commonPropTypes,
+Post.propTypes = {
+  ...Post.commonPropTypes,
   children: PropTypes.node.isRequired,
 };
 
-DashboardPost.defaultProps = {
+Post.defaultProps = {
   isConfirmingDelete: false,
   isDeleting: false,
   isWorking: false,
 };
 
-export default DashboardPost;
+export default Post;

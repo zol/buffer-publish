@@ -4,7 +4,7 @@ import {
   action,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardPostList from './index';
+import PostList from './index';
 import {
   posts,
   linkPosts,
@@ -16,10 +16,10 @@ import {
   listHeader,
 } from './postData';
 
-storiesOf('DashboardPostList')
+storiesOf('PostList')
   .addDecorator(checkA11y)
   .add('default', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={posts}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -30,7 +30,7 @@ storiesOf('DashboardPostList')
     />
   ))
   .add('sent', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={sentPosts}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -41,7 +41,7 @@ storiesOf('DashboardPostList')
     />
   ))
   .add('missing type', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={missingTypePosts}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -52,7 +52,7 @@ storiesOf('DashboardPostList')
     />
   ))
   .add('link posts', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={linkPosts}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -63,7 +63,7 @@ storiesOf('DashboardPostList')
     />
   ))
   .add('image posts', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={imagePosts}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -74,7 +74,7 @@ storiesOf('DashboardPostList')
     />
   ))
   .add('multiple image posts', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={multipleImagePosts}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -85,7 +85,7 @@ storiesOf('DashboardPostList')
     />
   ))
   .add('video posts', () => (
-    <DashboardPostList
+    <PostList
       listHeader={listHeader}
       posts={videoPosts}
       onCancelConfirmClick={action('onCancelConfirmClick')}

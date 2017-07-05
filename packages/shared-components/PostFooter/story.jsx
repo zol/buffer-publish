@@ -5,7 +5,7 @@ import {
   storiesOf,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardPostFooter from './index';
+import PostFooter from './index';
 
 const postDetails = {
   postAction: 'This post will be sent at 9:21 (GMT)',
@@ -16,10 +16,10 @@ const postDetailsError = {
   error: 'Woops! Something went wrong. Try again?',
 };
 
-storiesOf('DashboardPostFooter')
+storiesOf('PostFooter')
   .addDecorator(checkA11y)
   .add('queued post', () => (
-    <DashboardPostFooter
+    <PostFooter
       onCancelConfirmClick={linkTo('PostFooter', 'queued post')}
       onDeleteClick={linkTo('PostFooter', 'isConfirmingDelete')}
       onDeleteConfirmClick={linkTo('PostFooter', 'isDeleting')}
@@ -30,13 +30,13 @@ storiesOf('DashboardPostFooter')
     />
   ))
   .add('sent post', () => (
-    <DashboardPostFooter
+    <PostFooter
       postDetails={postDetails}
       sent
     />
   ))
   .add('post with error', () => (
-    <DashboardPostFooter
+    <PostFooter
       onCancelConfirmClick={linkTo('PostFooter', 'queued post')}
       onDeleteClick={linkTo('PostFooter', 'isConfirmingDelete')}
       onDeleteConfirmClick={linkTo('PostFooter', 'isDeleting')}
@@ -47,7 +47,7 @@ storiesOf('DashboardPostFooter')
     />
   ))
   .add('isConfirmingDelete', () => (
-    <DashboardPostFooter
+    <PostFooter
       onDeleteClick={linkTo('PostFooter', 'isConfirmingDelete')}
       onDeleteConfirmClick={linkTo('PostFooter', 'isDeleting')}
       onCancelConfirmClick={linkTo('PostFooter', 'queued post')}
@@ -58,7 +58,7 @@ storiesOf('DashboardPostFooter')
     />
   ))
   .add('isDeleting', () => (
-    <DashboardPostFooter
+    <PostFooter
       onDeleteClick={linkTo('PostFooter', 'isConfirmingDelete')}
       onDeleteConfirmClick={linkTo('PostFooter', 'isDeleting')}
       onCancelConfirmClick={linkTo('PostFooter', 'queued post')}
@@ -69,7 +69,7 @@ storiesOf('DashboardPostFooter')
     />
   ))
   .add('isWorking', () => (
-    <DashboardPostFooter
+    <PostFooter
       onDeleteClick={linkTo('PostFooter', 'isConfirmingDelete')}
       onDeleteConfirmClick={linkTo('PostFooter', 'isDeleting')}
       onCancelConfirmClick={linkTo('PostFooter', 'queued post')}

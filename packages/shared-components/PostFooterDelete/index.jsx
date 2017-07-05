@@ -46,7 +46,7 @@ const renderDeleteButton = ({
 
 /* eslint-enable react/prop-types */
 
-const DashboardPostFooterDelete = ({
+const PostFooterDelete = ({
   color,
   isConfirmingDelete,
   onCancelConfirmClick,
@@ -66,7 +66,7 @@ const DashboardPostFooterDelete = ({
     })}
   </span>;
 
-DashboardPostFooterDelete.propTypes = {
+PostFooterDelete.propTypes = {
   isConfirmingDelete: PropTypes.bool,
   onCancelConfirmClick: PropTypes.func.isRequired,
   onDeleteConfirmClick: PropTypes.func.isRequired,
@@ -99,8 +99,8 @@ DashboardPostFooterDelete.propTypes = {
   ]),
 };
 
-DashboardPostFooterDelete.defaultProps = {
+PostFooterDelete.defaultProps = {
   isConfirmingDelete: false,
 };
 
-export default DashboardPostFooterDelete;
+export default PostFooterDelete;

@@ -5,19 +5,19 @@ import {
   storiesOf,
 } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import DashboardPostFooterDelete from './index';
+import PostFooterDelete from './index';
 
-storiesOf('DashboardPostFooterDelete')
+storiesOf('PostFooterDelete')
   .addDecorator(checkA11y)
   .add('default', () => (
-    <DashboardPostFooterDelete
+    <PostFooterDelete
       onCancelConfirmClick={linkTo('PostFooterDelete', 'default')}
       onDeleteClick={linkTo('PostFooterDelete', 'isConfirmingDelete')}
       onDeleteConfirmClick={action('delete-confirm-click')}
     />
   ))
   .add('black text', () => (
-    <DashboardPostFooterDelete
+    <PostFooterDelete
       color={'black'}
       onCancelConfirmClick={linkTo('PostFooterDelete', 'default')}
       onDeleteClick={linkTo('PostFooterDelete', 'isConfirmingDelete')}
@@ -25,7 +25,7 @@ storiesOf('DashboardPostFooterDelete')
     />
   ))
   .add('isConfirmingDelete', () => (
-    <DashboardPostFooterDelete
+    <PostFooterDelete
       onDeleteClick={action('on-delete-click')}
       onDeleteConfirmClick={action('delete-confirm-click')}
       onCancelConfirmClick={linkTo('PostFooterDelete', 'default')}

@@ -7,7 +7,7 @@ import {
   LinkifiedText,
   Text,
 } from '@bufferapp/components';
-import DashboardPost from '../DashboardPost';
+import Post from '../Post';
 
 const postContentStyle = {
   display: 'flex',
@@ -40,7 +40,7 @@ const linkUrlStyle = {
 };
 
 
-const DashboardLinkPost = ({
+const LinkPost = ({
   isConfirmingDelete,
   isDeleting,
   isWorking,
@@ -108,7 +108,7 @@ const DashboardLinkPost = ({
   );
 
   return (
-    <DashboardPost
+    <Post
       isConfirmingDelete={isConfirmingDelete}
       isDeleting={isDeleting}
       isWorking={isWorking}
@@ -125,12 +125,12 @@ const DashboardLinkPost = ({
       text={text}
     >
       {children}
-    </DashboardPost>
+    </Post>
   );
 };
 
-DashboardLinkPost.propTypes = {
-  ...DashboardPost.commonPropTypes,
+LinkPost.propTypes = {
+  ...Post.commonPropTypes,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       rawString: PropTypes.string,
@@ -148,6 +148,6 @@ DashboardLinkPost.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-DashboardLinkPost.defaultProps = DashboardPost.defaultProps;
+LinkPost.defaultProps = Post.defaultProps;
 
-export default DashboardLinkPost;
+export default LinkPost;
