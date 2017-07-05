@@ -177,7 +177,7 @@ exports[`Snapshots ImagePost error 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -545,7 +545,7 @@ exports[`Snapshots ImagePost queued image post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -964,7 +964,7 @@ exports[`Snapshots ImagePost retweet 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#000",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
                       "fontSize": "0.9rem",
                       "fontWeight": 400,
@@ -1300,7 +1300,7 @@ exports[`Snapshots ImagePost sent image post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -1453,7 +1453,7 @@ exports[`Snapshots ImagePost square image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -1788,7 +1788,7 @@ exports[`Snapshots ImagePost tag 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -2157,7 +2157,7 @@ exports[`Snapshots ImagePost tall image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -2492,7 +2492,7 @@ exports[`Snapshots ImagePost wide image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -2827,7 +2827,7 @@ exports[`Snapshots LinkPost error 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -3295,7 +3295,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -3730,7 +3730,7 @@ exports[`Snapshots LinkPost sent 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -3983,7 +3983,7 @@ exports[`Snapshots LinkPost square image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -4418,7 +4418,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -4853,7 +4853,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -5288,7 +5288,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -5756,7 +5756,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -6191,7 +6191,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -6429,7 +6429,7 @@ exports[`Snapshots Post error 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.9rem",
                 "fontWeight": 400,
@@ -6739,7 +6739,7 @@ exports[`Snapshots Post isConfirmingDelete 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.9rem",
                 "fontWeight": 400,
@@ -7070,7 +7070,7 @@ exports[`Snapshots Post isDeleting 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.9rem",
                 "fontWeight": 400,
@@ -7193,7 +7193,7 @@ exports[`Snapshots Post isWorking 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.9rem",
                 "fontWeight": 400,
@@ -7316,7 +7316,7 @@ exports[`Snapshots Post queued post 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.9rem",
                 "fontWeight": 400,
@@ -7677,7 +7677,7 @@ exports[`Snapshots Post retweet 1`] = `
             <span
               style={
                 Object {
-                  "color": "#59626a",
+                  "color": "#000",
                   "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "0.9rem",
                   "fontWeight": 400,
@@ -7962,7 +7962,7 @@ exports[`Snapshots Post retweet with comment 1`] = `
             <span
               style={
                 Object {
-                  "color": "#59626a",
+                  "color": "#000",
                   "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "0.9rem",
                   "fontWeight": 400,
@@ -8075,7 +8075,7 @@ exports[`Snapshots Post retweet with comment 1`] = `
             <span
               style={
                 Object {
-                  "color": "#59626a",
+                  "color": "#000",
                   "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "0.9rem",
                   "fontWeight": 400,
@@ -8353,7 +8353,7 @@ exports[`Snapshots Post sent 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.9rem",
                 "fontWeight": 400,
@@ -10131,7 +10131,7 @@ exports[`Snapshots PostList default 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -10436,7 +10436,7 @@ exports[`Snapshots PostList default 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -10780,7 +10780,7 @@ exports[`Snapshots PostList image posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -11109,7 +11109,7 @@ exports[`Snapshots PostList image posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -11477,7 +11477,7 @@ exports[`Snapshots PostList link posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -11923,7 +11923,7 @@ exports[`Snapshots PostList link posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -12408,7 +12408,7 @@ exports[`Snapshots PostList missing type 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -12713,7 +12713,7 @@ exports[`Snapshots PostList missing type 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -13057,7 +13057,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -13486,7 +13486,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -13954,7 +13954,7 @@ exports[`Snapshots PostList sent 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -14077,7 +14077,7 @@ exports[`Snapshots PostList sent 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -14239,7 +14239,7 @@ exports[`Snapshots PostList video posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -14602,7 +14602,7 @@ exports[`Snapshots PostList video posts 1`] = `
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#000",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
                             "fontSize": "0.9rem",
                             "fontWeight": 400,
@@ -15022,7 +15022,7 @@ exports[`Snapshots TextPost error 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -15366,7 +15366,7 @@ exports[`Snapshots TextPost queued text post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -15761,7 +15761,7 @@ exports[`Snapshots TextPost retweet 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#000",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
                       "fontSize": "0.9rem",
                       "fontWeight": 400,
@@ -16065,7 +16065,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
             <span
               style={
                 Object {
-                  "color": "#59626a",
+                  "color": "#000",
                   "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "0.9rem",
                   "fontWeight": 400,
@@ -16193,7 +16193,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#000",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
                       "fontSize": "0.9rem",
                       "fontWeight": 400,
@@ -16505,7 +16505,7 @@ exports[`Snapshots TextPost sent 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -16634,7 +16634,7 @@ exports[`Snapshots VideoPost error 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -17036,7 +17036,7 @@ exports[`Snapshots VideoPost queued video post 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -17489,7 +17489,7 @@ exports[`Snapshots VideoPost retweet 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#000",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
                       "fontSize": "0.9rem",
                       "fontWeight": 400,
@@ -17859,7 +17859,7 @@ exports[`Snapshots VideoPost sent 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -18046,7 +18046,7 @@ exports[`Snapshots VideoPost square image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -18415,7 +18415,7 @@ exports[`Snapshots VideoPost tall image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,
@@ -18784,7 +18784,7 @@ exports[`Snapshots VideoPost wide image 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "0.9rem",
                     "fontWeight": 400,

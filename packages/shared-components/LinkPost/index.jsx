@@ -60,6 +60,7 @@ const LinkPost = ({
     <div style={postContentStyle}>
       <div style={postContentTextStyle}>
         <LinkifiedText
+          color={'black'}
           links={links}
           size={'mini'}
           newTab

@@ -44,7 +44,7 @@ const links = [{
 const retweetComment = 'What is a Product Designer? An awesome story by @jgadapee over on Medium! http://buff.ly/1LTbUqv';
 
 const children = (
-  <Text size={'mini'}>
+  <Text size={'mini'} color={'black'}>
     {'Rubber baby buggy bumpers.'}
   </Text>
 );

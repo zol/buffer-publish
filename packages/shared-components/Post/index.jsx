@@ -41,6 +41,7 @@ const renderRetweetComment = ({
       newTab
       size={'mini'}
       unstyled
+      color={'black'}
     >
       { retweetComment }
     </LinkifiedText>
