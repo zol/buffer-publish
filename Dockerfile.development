@@ -1,16 +1,12 @@
-FROM node:7.7.3-slim
-
-RUN apt-get update && \
-    apt-get install git-core -y
+FROM node:8.1.2-slim
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+ENV NODE_ENV development
+
 RUN npm install -g nodemon
-RUN npm install -g micro
 
 EXPOSE 80
 
-ENV NODE_ENV development
-
-CMD nodemon --watch ./packages/server --exec 'cd ./packages/server/ && npm start -- -p 80'
+CMD nodemon --watch ./packages/server packages/server/index.js

@@ -15,7 +15,7 @@ const postDetails = {
 
 const postDetailsError = {
   isRetweet: false,
-  postAction: 'Sharing failed. Try again?',
+  postAction: 'This post will be sent at 9:21 (GMT)',
   error: 'Sharing failed. Try again?',
 };
 
@@ -59,6 +59,7 @@ storiesOf('DashboardPost')
       onDeleteConfirmClick={linkTo('DashboardPost', 'isDeleting')}
       onShareNowClick={linkTo('DashboardPost', 'isWorking')}
       onEditClick={action('edit-click')}
+      onShareNowClick={action('share-now-click')}
       sent={false}
     >
       {children}

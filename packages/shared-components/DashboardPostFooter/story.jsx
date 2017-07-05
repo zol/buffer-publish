@@ -12,7 +12,7 @@ const postDetails = {
 };
 
 const postDetailsError = {
-  postAction: 'Woops! Something went wrong. Try again?',
+  postAction: 'This post will be sent at 9:21 (GMT)',
   error: 'Woops! Something went wrong. Try again?',
 };
 

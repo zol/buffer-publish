@@ -6,7 +6,7 @@
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "npm run lint && jest --coverage",
+    "test": "npm run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
@@ -36,6 +36,7 @@
     "@storybook/addon-storyshots": "3.1.4",
     "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
-    "jest": "19.0.2"
+    "jest": "19.0.2",
+    "storybook-addon-a11y": "3.0.0"
   }
 }

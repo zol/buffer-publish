@@ -92,7 +92,7 @@ const renderText = ({
       size={'small'}
       color={postDetails.error ? 'torchRed' : 'black'}
     >
-      {postDetails.postAction}
+      {postDetails.error ? postDetails.error : postDetails.postAction}
     </Text>
   </span>);
 

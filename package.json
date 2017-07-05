@@ -8,7 +8,8 @@
     "test": "if [ -n \"$CI\" ]; then npm run init; fi && lerna run test",
     "init": "npm install && lerna bootstrap",
     "start": "cd ./packages/server/ && npm start",
-    "publish": "echo \"will eventually run: lerna publish\""
+    "publish": "echo \"will eventually run: lerna publish\"",
+    "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/bufferapp/project-donut#readme",
   "devDependencies": {
+    "@bufferapp/react-keyframes": "0.2.4",
     "axe-core": "2.2.0",
     "babel-core": "6.24.0",
     "babel-eslint": "7.2.0",
@@ -45,7 +47,6 @@
     "react-day-picker": "5.5.1",
     "react-dom": "15.6.1",
     "react-hot-loader": "3.0.0-beta.7",
-    "react-keyframes": "0.2.2",
     "react-redux": "5.0.4",
     "react-router": "4.1.1",
     "react-router-redux": "5.0.0-alpha.6",
@@ -54,7 +55,6 @@
     "redux-form": "6.6.3",
     "request": "2.81.0",
     "request-promise": "4.2.1",
-    "storybook-addon-a11y": "3.0.0",
     "style-loader": "0.15.0",
     "test-listen": "1.0.2",
     "uuid": "3.0.1",

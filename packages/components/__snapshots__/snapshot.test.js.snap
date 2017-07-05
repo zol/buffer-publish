@@ -16405,8 +16405,8 @@ exports[`Snapshots Select default 1`] = `
     <select
       style={
         Object {
-          "-moz-appearance": "none",
-          "-webkit-appearance": "none",
+          "MozAppearance": "none",
+          "WebkitAppearance": "none",
           "appearance": "none",
           "background": "transparent",
           "border": "0.063rem solid #e6ebef",

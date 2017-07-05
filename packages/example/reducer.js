@@ -1,6 +1,8 @@
 import Cookie from 'js-cookie';
 import { actionTypes as loginActionTypes } from '@bufferapp/login';
 
+export const actionTypes = {};
+
 const initialState = {
   loggedIn: !!Cookie.get('session', {
     domain: '.buffer.com',
@@ -24,3 +26,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export const actions = {};

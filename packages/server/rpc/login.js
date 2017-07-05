@@ -21,8 +21,8 @@ module.exports = method(
     method: 'POST',
     strictSSL: false,
     form: {
-      client_id: clientId,
-      client_secret: clientSecret,
+      client_id: clientId || process.env.CLIENT_ID,
+      client_secret: clientSecret || process.env.CLIENT_SECRET,
       email,
       password,
     },

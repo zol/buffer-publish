@@ -5,17 +5,17 @@
   "scripts": {
     "start": "micro",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "npm run lint && jest --coverage",
+    "test": "export TESTING=true npm run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch"
   },
   "jest": {
     "verbose": true,
     "coverageThreshold": {
       "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
+        "branches": 20,
+        "functions": 20,
+        "lines": 20,
+        "statements": 20
       }
     },
     "transformIgnorePatterns": [
@@ -27,9 +27,12 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/micro-rpc": "0.1.0",
+    "@bufferapp/micro-rpc": "0.1.1",
     "micro": "7.3.3",
-    "microrouter": "2.1.1"
+    "micro-rpc-client": "0.0.1",
+    "microrouter": "2.1.1",
+    "request": "2.81.0",
+    "request-promise": "4.2.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",
