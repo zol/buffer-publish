@@ -1,10 +1,12 @@
 /* eslint-disable import/first */
 jest.unmock('request-promise');
-// import fs from 'fs';
+import fs from 'fs';
+import { join } from 'path';
 import micro from 'micro';
 import listen from 'test-listen';
 import request from 'request-promise';
 import service from './service';
+import webpackConfig from './webpack.config.dev';
 
 describe('service', () => {
   let microService;
@@ -16,14 +18,19 @@ describe('service', () => {
     microService.close();
   });
 
-  /* it('should serve index.html', async () => {
+  it('should serve development index.html', async () => {
     const url = await listen(microService);
     const body = await request(url);
-    const html = fs.readFileSync(`${__dirname}/index.html`, 'utf8');
+    const webpackBundleLocation = join(
+      webpackConfig.output.publicPath,
+      webpackConfig.output.filename,
+    );
+    const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8').replace('{{{bundle}}}', webpackBundleLocation);
     expect(body)
       .toBe(html);
-  });*/
-  it('should should return 404 - GET', async () => {
+  });
+
+  it('should return 404 - GET', async () => {
     const url = await listen(microService);
     return request(`${url}/not-found`)
       .catch((err) => {
@@ -33,7 +40,7 @@ describe('service', () => {
           .toBe('not found');
       });
   });
-  it('should should return 404 - POST', async () => {
+  it('should return 404 - POST', async () => {
     const url = await listen(microService);
     return request({
       method: 'POST',
