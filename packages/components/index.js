@@ -1,6 +1,7 @@
 // if you need a component export it here
 export Button from './Button';
 export Card from './Card';
+export Divider from './Divider';
 export Icon from './Icon';
 export Input from './Input';
 export InputDate from './InputDate';
