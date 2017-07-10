@@ -9,3 +9,7 @@ export default connect(
     activeTabId: state.tabs.activeTabId,
   }),
 )(TabNavigation);
+
+// export reducer, actions and action types
+export reducer, { actions, actionTypes } from './reducer';
+export middleware from './middleware';
