@@ -48,17 +48,44 @@ const calulateLinkifiedText = (options, links, curString, calculatedElements = [
 
 const LinkifiedText = ({
   children,
+  color,
   links,
   newTab,
   size,
   unstyled,
 }) => {
   const options = { unstyled, newTab };
-  return <Text size={size}>{calulateLinkifiedText(options, links, children)}</Text>;
+  return <Text size={size} color={color}>{calulateLinkifiedText(options, links, children)}</Text>;
 };
 
 LinkifiedText.propTypes = {
   children: PropTypes.string,
+  color: PropTypes.oneOf([
+    'appdotnet',
+    'aquaHaze',
+    'black',
+    'curiousBlue',
+    'curiousBlueLight',
+    'curiousBlueUltraLight',
+    'denim',
+    'facebook',
+    'geyser',
+    'googleplus',
+    'linkedin',
+    'mystic',
+    'nevada',
+    'outerSpace',
+    'outerSpaceLight',
+    'outerSpaceUltraLight',
+    'pinterest',
+    'saffron',
+    'shamrock',
+    'shuttleGray',
+    'toryBlue',
+    'torchRed',
+    'twitter',
+    'white',
+  ]),
   links: PropTypes.arrayOf(
     PropTypes.shape({
       rawString: PropTypes.string,

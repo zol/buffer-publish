@@ -5,17 +5,17 @@
   "scripts": {
     "start": "micro",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "export TESTING=true npm run lint && sh ../../package_test.sh",
+    "test": "npm run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch"
   },
   "jest": {
     "verbose": true,
     "coverageThreshold": {
       "global": {
-        "branches": 20,
-        "functions": 20,
-        "lines": 20,
-        "statements": 20
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
       }
     },
     "transformIgnorePatterns": [

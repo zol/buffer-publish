@@ -2008,6 +2008,75 @@ exports[`Snapshots Card reducedPadding 1`] = `
 </span>
 `;
 
+exports[`Snapshots Divider default 1`] = `
+<span>
+  <div>
+    <hr
+      style={
+        Object {
+          "border": "0.063rem solid #e6ebef",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</span>
+`;
+
+exports[`Snapshots Divider with black text 1`] = `
+<span>
+  <div>
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      Text
+    </span>
+    <hr
+      style={
+        Object {
+          "border": "0.063rem solid #e6ebef",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</span>
+`;
+
+exports[`Snapshots Divider with text 1`] = `
+<span>
+  <div>
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      Text
+    </span>
+    <hr
+      style={
+        Object {
+          "border": "0.063rem solid #e6ebef",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</span>
+`;
+
 exports[`Snapshots Icon addMediaIcon 1`] = `
 <span>
   <svg
@@ -14652,6 +14721,41 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
       Buffer
     </a>
   </div>
+</span>
+`;
+
+exports[`Snapshots LinkifiedText black text, unstyled link 1`] = `
+<span>
+  <span
+    style={
+      Object {
+        "color": "#000",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "1rem",
+        "fontWeight": 400,
+      }
+    }
+  >
+    a 
+    <a
+      href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "color": "#168eea",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "textDecoration": "none",
+        }
+      }
+      target="_self"
+    >
+      blog.twitter.com/2011/05/twitte…
+    </a>
+     b
+  </span>
 </span>
 `;
 

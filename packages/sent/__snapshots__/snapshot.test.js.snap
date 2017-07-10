@@ -1,0 +1,2293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots SentPosts default 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1.5rem",
+          "width": "100%",
+        }
+      }
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Tuesday 20th June
+        </span>
+        <hr
+          style={
+            Object {
+              "border": "0.063rem solid #e6ebef",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "marginBottom": "1rem",
+            "marginLeft": "0.5rem",
+            "marginTop": "1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your sent posts for the last 30 days
+        </span>
+      </div>
+      <ul
+        style={
+          Object {
+            "listStyleType": "none",
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          New thing
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          Another thing, that is also new
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots SentPosts image posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1.5rem",
+          "width": "100%",
+        }
+      }
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Tuesday 20th June
+        </span>
+        <hr
+          style={
+            Object {
+              "border": "0.063rem solid #e6ebef",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "marginBottom": "1rem",
+            "marginLeft": "0.5rem",
+            "marginTop": "1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your sent posts for the last 30 days
+        </span>
+      </div>
+      <ul
+        style={
+          Object {
+            "listStyleType": "none",
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          New thing
+                        </span>
+                      </span>
+                      <div
+                        style={
+                          Object {
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <img
+                          alt=""
+                          src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                          style={
+                            Object {
+                              "borderRadius": "0.126rem",
+                              "height": undefined,
+                              "maxHeight": "20rem",
+                              "maxWidth": undefined,
+                              "minHeight": "10rem",
+                              "minWidth": undefined,
+                              "objectFit": "cover",
+                              "width": "15rem",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          Another thing, that is also new
+                        </span>
+                      </span>
+                      <div
+                        style={
+                          Object {
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <img
+                          alt=""
+                          src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                          style={
+                            Object {
+                              "borderRadius": "0.126rem",
+                              "height": undefined,
+                              "maxHeight": "20rem",
+                              "maxWidth": undefined,
+                              "minHeight": "10rem",
+                              "minWidth": undefined,
+                              "objectFit": "cover",
+                              "width": "15rem",
+                            }
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots SentPosts link posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1.5rem",
+          "width": "100%",
+        }
+      }
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Tuesday 20th June
+        </span>
+        <hr
+          style={
+            Object {
+              "border": "0.063rem solid #e6ebef",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "marginBottom": "1rem",
+            "marginLeft": "0.5rem",
+            "marginTop": "1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your sent posts for the last 30 days
+        </span>
+      </div>
+      <ul
+        style={
+          Object {
+            "listStyleType": "none",
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                          "flexDirection": "column",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "paddingBottom": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          What is a Product Designer? An awesome story by @jgadapee over on Medium! 
+                          <a
+                            href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "color": "#168eea",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "textDecoration": "none",
+                              }
+                            }
+                            target="_blank"
+                          >
+                            http://buff.ly/1LTbUqv
+                          </a>
+                        </span>
+                      </div>
+                      <div>
+                        <a
+                          href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "color": "#168eea",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "textDecoration": "none",
+                            }
+                          }
+                          target="_blank"
+                        >
+                          <div
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                            style={
+                              Object {
+                                "backgroundColor": "#fff",
+                                "border": "0.063rem solid #e6ebef",
+                                "borderRadius": "0.126rem",
+                                "color": "#323b43",
+                                "fontSize": "0.9rem",
+                                "lineHeight": 1.5,
+                                "padding": 0,
+                                "transition": "box-shadow 0.1s linear",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "flex",
+                                  "flexDirection": "row",
+                                }
+                              }
+                            >
+                              <img
+                                alt=""
+                                src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                                style={
+                                  Object {
+                                    "borderRadius": "0.126rem",
+                                    "height": "10rem",
+                                    "maxHeight": undefined,
+                                    "maxWidth": "15rem",
+                                    "minHeight": undefined,
+                                    "minWidth": "15rem",
+                                    "objectFit": "cover",
+                                    "width": "15rem",
+                                  }
+                                }
+                              />
+                              <div
+                                style={
+                                  Object {
+                                    "display": "flex",
+                                    "flexDirection": "column",
+                                    "flexGrow": 1,
+                                    "minWidth": 0,
+                                    "padding": "1rem",
+                                  }
+                                }
+                              >
+                                <div>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#59626a",
+                                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                                        "fontSize": "1rem",
+                                        "fontWeight": 400,
+                                      }
+                                    }
+                                  >
+                                    What is a Product Designer?
+                                  </span>
+                                </div>
+                                <div
+                                  style={
+                                    Object {
+                                      "color": "rgba(50, 59, 67, 0.3)",
+                                      "margin": "0.25rem 1rem 1rem 0",
+                                      "overflow": "hidden",
+                                      "textOverflow": "ellipsis",
+                                      "whiteSpace": "nowrap",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "rgba(50, 59, 67, 0.3)",
+                                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                                        "fontSize": "0.8rem",
+                                        "fontWeight": 400,
+                                      }
+                                    }
+                                  >
+                                    https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x
+                                  </span>
+                                </div>
+                                <div>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#59626a",
+                                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                                        "fontSize": "0.8rem",
+                                        "fontWeight": 400,
+                                      }
+                                    }
+                                  >
+                                    A brief history at how history and markets influence design titles
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for 9:42pm (GMT)
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                          "flexDirection": "column",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "paddingBottom": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          What is a Product Designer? An awesome story by @jgadapee over on Medium! 
+                          <a
+                            href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            style={
+                              Object {
+                                "color": "#168eea",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "textDecoration": "none",
+                              }
+                            }
+                            target="_blank"
+                          >
+                            http://buff.ly/1LTbUqv
+                          </a>
+                        </span>
+                      </div>
+                      <div>
+                        <a
+                          href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "color": "#168eea",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "textDecoration": "none",
+                            }
+                          }
+                          target="_blank"
+                        >
+                          <div
+                            onMouseEnter={undefined}
+                            onMouseLeave={undefined}
+                            style={
+                              Object {
+                                "backgroundColor": "#fff",
+                                "border": "0.063rem solid #e6ebef",
+                                "borderRadius": "0.126rem",
+                                "color": "#323b43",
+                                "fontSize": "0.9rem",
+                                "lineHeight": 1.5,
+                                "padding": 0,
+                                "transition": "box-shadow 0.1s linear",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "flex",
+                                  "flexDirection": "row",
+                                }
+                              }
+                            >
+                              <img
+                                alt=""
+                                src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                                style={
+                                  Object {
+                                    "borderRadius": "0.126rem",
+                                    "height": "10rem",
+                                    "maxHeight": undefined,
+                                    "maxWidth": "15rem",
+                                    "minHeight": undefined,
+                                    "minWidth": "15rem",
+                                    "objectFit": "cover",
+                                    "width": "15rem",
+                                  }
+                                }
+                              />
+                              <div
+                                style={
+                                  Object {
+                                    "display": "flex",
+                                    "flexDirection": "column",
+                                    "flexGrow": 1,
+                                    "minWidth": 0,
+                                    "padding": "1rem",
+                                  }
+                                }
+                              >
+                                <div>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#59626a",
+                                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                                        "fontSize": "1rem",
+                                        "fontWeight": 400,
+                                      }
+                                    }
+                                  >
+                                    What is a Product Designer?
+                                  </span>
+                                </div>
+                                <div
+                                  style={
+                                    Object {
+                                      "color": "rgba(50, 59, 67, 0.3)",
+                                      "margin": "0.25rem 1rem 1rem 0",
+                                      "overflow": "hidden",
+                                      "textOverflow": "ellipsis",
+                                      "whiteSpace": "nowrap",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "rgba(50, 59, 67, 0.3)",
+                                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                                        "fontSize": "0.8rem",
+                                        "fontWeight": 400,
+                                      }
+                                    }
+                                  >
+                                    https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x
+                                  </span>
+                                </div>
+                                <div>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#59626a",
+                                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                                        "fontSize": "0.8rem",
+                                        "fontWeight": 400,
+                                      }
+                                    }
+                                  >
+                                    A brief history at how history and markets influence design titles
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for 9:42pm (GMT)
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots SentPosts loading 1`] = `
+<span>
+  <div>
+    Loading...
+  </div>
+</span>
+`;
+
+exports[`Snapshots SentPosts multiple image posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1.5rem",
+          "width": "100%",
+        }
+      }
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Tuesday 20th June
+        </span>
+        <hr
+          style={
+            Object {
+              "border": "0.063rem solid #e6ebef",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "marginBottom": "1rem",
+            "marginLeft": "0.5rem",
+            "marginTop": "1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your sent posts for the last 30 days
+        </span>
+      </div>
+      <ul
+        style={
+          Object {
+            "listStyleType": "none",
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          New thing
+                        </span>
+                      </span>
+                      <div>
+                        <div
+                          style={
+                            Object {
+                              "borderRadius": "0.126rem",
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexWrap": "wrap",
+                              "height": "15rem",
+                              "overflow": "hidden",
+                              "width": "20rem",
+                            }
+                          }
+                        >
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          Another thing, that is also new
+                        </span>
+                      </span>
+                      <div>
+                        <div
+                          style={
+                            Object {
+                              "borderRadius": "0.126rem",
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexWrap": "wrap",
+                              "height": "15rem",
+                              "overflow": "hidden",
+                              "width": "20rem",
+                            }
+                          }
+                        >
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            height="15rem"
+                            style={
+                              Object {
+                                "flexBasis": "50%",
+                                "flexGrow": 1,
+                                "height": "50%",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "maxHeight": undefined,
+                                  "maxWidth": undefined,
+                                  "minHeight": undefined,
+                                  "minWidth": undefined,
+                                  "objectFit": "cover",
+                                  "verticalAlign": "bottom",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots SentPosts video posts 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1.5rem",
+          "width": "100%",
+        }
+      }
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Tuesday 20th June
+        </span>
+        <hr
+          style={
+            Object {
+              "border": "0.063rem solid #e6ebef",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "marginBottom": "1rem",
+            "marginLeft": "0.5rem",
+            "marginTop": "1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your sent posts for the last 30 days
+        </span>
+      </div>
+      <ul
+        style={
+          Object {
+            "listStyleType": "none",
+            "margin": 0,
+            "padding": 0,
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          New thing
+                        </span>
+                      </span>
+                      <div
+                        style={
+                          Object {
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <img
+                          alt=""
+                          src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                          style={
+                            Object {
+                              "borderRadius": "0.126rem",
+                              "height": undefined,
+                              "maxHeight": "20rem",
+                              "maxWidth": undefined,
+                              "minHeight": "10rem",
+                              "minWidth": undefined,
+                              "objectFit": "cover",
+                              "width": "15rem",
+                            }
+                          }
+                        />
+                        <span
+                          style={
+                            Object {
+                              "bottom": "0.7rem",
+                              "left": "0.7rem",
+                              "position": "absolute",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "backgroundColor": "#000",
+                                "borderRadius": "0.126rem",
+                                "letterSpacing": "0.1rem",
+                                "opacity": "0.65",
+                                "padding": "0.1rem 0.4rem 0.1rem 0.4rem",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#fff",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "1rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              VIDEO
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "flex",
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "flexGrow": 1,
+                    "minWidth": 0,
+                  }
+                }
+              >
+                <div
+                  onMouseEnter={undefined}
+                  onMouseLeave={undefined}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "0.063rem solid #e6ebef",
+                      "borderRadius": "0.126rem",
+                      "color": "#323b43",
+                      "fontSize": "0.9rem",
+                      "lineHeight": 1.5,
+                      "padding": 0,
+                      "transition": "box-shadow 0.1s linear",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": "1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "flexGrow": 1,
+                            "paddingRight": "1rem",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.9rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          Another thing, that is also new
+                        </span>
+                      </span>
+                      <div
+                        style={
+                          Object {
+                            "position": "relative",
+                          }
+                        }
+                      >
+                        <img
+                          alt=""
+                          src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+                          style={
+                            Object {
+                              "borderRadius": "0.126rem",
+                              "height": undefined,
+                              "maxHeight": "20rem",
+                              "maxWidth": undefined,
+                              "minHeight": "10rem",
+                              "minWidth": undefined,
+                              "objectFit": "cover",
+                              "width": "15rem",
+                            }
+                          }
+                        />
+                        <span
+                          style={
+                            Object {
+                              "bottom": "0.7rem",
+                              "left": "0.7rem",
+                              "position": "absolute",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "backgroundColor": "#000",
+                                "borderRadius": "0.126rem",
+                                "letterSpacing": "0.1rem",
+                                "opacity": "0.65",
+                                "padding": "0.1rem 0.4rem 0.1rem 0.4rem",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#fff",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "1rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              VIDEO
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": "#fcfcfc",
+                        "borderTop": "0.063rem solid #e6ebef",
+                        "display": "flex",
+                        "padding": "0.5rem 1rem",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "flexGrow": 1,
+                        }
+                      }
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "fontSize": "0.8rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          This post is scheduled for May 3rd
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
