@@ -30,6 +30,7 @@ const Tab = ({
   }, {
     active,
   });
+
   return (
     <div
       style={style}
