@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBar } from '@bufferapp/components';
 import LoggedIn from '@bufferapp/example';
-import { TabNavigation } from '@bufferapp/tabs';
+import TabNavigation from '@bufferapp/tabs';
 
 const onClick = () => console.log('hi');
 const App = () =>
