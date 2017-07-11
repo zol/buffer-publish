@@ -1,4 +1,8 @@
 // import { actionTypes as asyncDataActionTypes } from '@bufferapp/async-data-fetch';
+import {
+  imagePosts,
+  listHeader,
+} from './components/QueuedPosts/postData';
 
 export const actionTypes = {
   FETCH_POSTS_START: 'FETCH_POSTS_START',
@@ -13,9 +17,11 @@ export const actionTypes = {
   REQUESTING_POST_DELETE: 'REQUESTING_POST_DELETE',
 };
 
+// TODO: remove this inial stubbed data once we can actually fetch data.
 const initialState = {
+  listHeader,
   loading: false,
-  posts: [],
+  posts: imagePosts,
 };
 
 export default (state = initialState, action) => {

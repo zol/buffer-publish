@@ -6,6 +6,7 @@ import QueuedPosts from './components/QueuedPosts';
 // default export = container
 export default connect(
   state => ({
+    listHeader: state.queue.listHeader,
     loading: state.queue.loading,
     posts: state.queue.posts,
     translations: state.i18n.translations.example, // all package translations

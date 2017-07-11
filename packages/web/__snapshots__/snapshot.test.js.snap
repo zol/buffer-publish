@@ -242,7 +242,6 @@ exports[`Snapshots App should render application 1`] = `
         <div
           style={
             Object {
-              "background": "orange",
               "color": "white",
               "display": "flex",
               "flexDirection": "column",
@@ -270,6 +269,9 @@ exports[`Snapshots App should render application 1`] = `
             style={
               Object {
                 "flexGrow": 1,
+                "marginLeft": "1rem",
+                "marginRight": "1rem",
+                "marginTop": "1rem",
                 "overflowY": "auto",
               }
             }
@@ -2537,7 +2539,6 @@ exports[`Snapshots ProfilePage should render 1`] = `
     <div
       style={
         Object {
-          "background": "orange",
           "color": "white",
           "display": "flex",
           "flexDirection": "column",
@@ -2565,6 +2566,9 @@ exports[`Snapshots ProfilePage should render 1`] = `
         style={
           Object {
             "flexGrow": 1,
+            "marginLeft": "1rem",
+            "marginRight": "1rem",
+            "marginTop": "1rem",
             "overflowY": "auto",
           }
         }

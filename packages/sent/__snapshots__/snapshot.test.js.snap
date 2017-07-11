@@ -22,7 +22,7 @@ exports[`Snapshots SentPosts default 1`] = `
             }
           }
         >
-          Tuesday 20th June
+          Your sent posts for the last 30 days
         </span>
         <hr
           style={
@@ -54,7 +54,7 @@ exports[`Snapshots SentPosts default 1`] = `
             }
           }
         >
-          Your sent posts for the last 30 days
+          Tuesday 20th June
         </span>
       </div>
       <ul
@@ -340,7 +340,7 @@ exports[`Snapshots SentPosts image posts 1`] = `
             }
           }
         >
-          Tuesday 20th June
+          Your sent posts for the last 30 days
         </span>
         <hr
           style={
@@ -372,7 +372,7 @@ exports[`Snapshots SentPosts image posts 1`] = `
             }
           }
         >
-          Your sent posts for the last 30 days
+          Tuesday 20th June
         </span>
       </div>
       <ul
@@ -706,7 +706,7 @@ exports[`Snapshots SentPosts link posts 1`] = `
             }
           }
         >
-          Tuesday 20th June
+          Your sent posts for the last 30 days
         </span>
         <hr
           style={
@@ -738,7 +738,7 @@ exports[`Snapshots SentPosts link posts 1`] = `
             }
           }
         >
-          Your sent posts for the last 30 days
+          Tuesday 20th June
         </span>
       </div>
       <ul
@@ -1314,7 +1314,7 @@ exports[`Snapshots SentPosts multiple image posts 1`] = `
             }
           }
         >
-          Tuesday 20th June
+          Your sent posts for the last 30 days
         </span>
         <hr
           style={
@@ -1346,7 +1346,7 @@ exports[`Snapshots SentPosts multiple image posts 1`] = `
             }
           }
         >
-          Your sent posts for the last 30 days
+          Tuesday 20th June
         </span>
       </div>
       <ul
@@ -1880,7 +1880,7 @@ exports[`Snapshots SentPosts video posts 1`] = `
             }
           }
         >
-          Tuesday 20th June
+          Your sent posts for the last 30 days
         </span>
         <hr
           style={
@@ -1912,7 +1912,7 @@ exports[`Snapshots SentPosts video posts 1`] = `
             }
           }
         >
-          Your sent posts for the last 30 days
+          Tuesday 20th June
         </span>
       </div>
       <ul

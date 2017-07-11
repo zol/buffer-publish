@@ -6,6 +6,8 @@ import SentPosts from './components/SentPosts';
 // default export = container
 export default connect(
   state => ({
+    listHeader: state.sent.listHeader,
+    header: state.sent.header,
     loading: state.sent.loading,
     posts: state.sent.posts,
     translations: state.i18n.translations.sent, // all package translations
