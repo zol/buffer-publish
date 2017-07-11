@@ -2,9 +2,12 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
+import {
+  ConnectedRouter as Router,
+} from 'react-router-redux';
 import createStore, { history } from '@bufferapp/store';
 import { actions } from '@bufferapp/login';
-import Routes from './routes';
+import App from './components/App';
 
 const store = createStore();
 
@@ -23,22 +26,24 @@ window.login = ({
 window.logout = () => store.dispatch(actions.logout());
 
 
-const renderApp = (RoutesComponent) => {
+const renderApp = (AppComponent) => {
   render(
     <AppContainer>
       <Provider store={store}>
-        <RoutesComponent history={history} />
+        <Router history={history}>
+          <AppComponent />
+        </Router>
       </Provider>
     </AppContainer>,
     document.getElementById('root'),
   );
 };
 
-renderApp(Routes);
+renderApp(App);
 
 if (module.hot) {
-  module.hot.accept('./routes', () => {
-    const nextRoutes = require('./routes').default; // eslint-disable-line global-require
-    renderApp(nextRoutes);
+  module.hot.accept('./components/App', () => {
+    const newApp = require('./components/App').default; // eslint-disable-line global-require
+    renderApp(newApp);
   });
 }

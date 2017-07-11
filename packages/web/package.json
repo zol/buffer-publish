@@ -17,15 +17,7 @@
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
     ],
-    "verbose": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
+    "verbose": true
   },
   "dependencies": {
     "@bufferapp/components": "0.5.22",
