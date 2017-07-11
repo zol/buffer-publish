@@ -1,18 +1,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
+  name: {{ template "fullname" . }}
   labels:
-    app: publish
+    app: {{ template "fullname" . }}
     service: app
     track: stable
-  name: publish-app
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
   namespace: buffer
 spec:
   minReadySeconds: 10
-  replicas: 2
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: publish
+      app: {{ template "fullname" . }}
       service: app
       track: stable
   strategy:
@@ -24,24 +25,19 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: publish
+        app: {{ template "fullname" . }}
         service: app
         track: stable
     spec:
       containers:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: IfNotPresent
-        name: publish-app
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: {{ .Chart.Name }}
         ports:
         - containerPort: 80
           protocol: TCP
         resources:
-          limits:
-            cpu: 100m
-            memory: 150Mi
-          requests:
-            cpu: 100m
-            memory: 50Mi
+{{ toYaml .Values.resources | indent 11 }}
         terminationMessagePath: /dev/termination-log
       dnsPolicy: ClusterFirst
       imagePullSecrets:
@@ -49,8 +45,3 @@ spec:
       restartPolicy: Always
       securityContext: {}
       terminationGracePeriodSeconds: 30
-status:
-  availableReplicas: 2
-  observedGeneration: 16
-  replicas: 2
-  updatedReplicas: 2

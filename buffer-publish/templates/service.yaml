@@ -1,24 +1,28 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:980620087509:certificate/2ac9f9a7-b85d-4aa9-b1d1-398d7e2b8a3b
+  name: {{ template "fullname" . }}
   labels:
-    app: publish
+    app: {{ .Chart.Name }}
     service: web
-    track: stable
-  name: publish-app
-  namespace: buffer
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+  {{ if not .Values.ingress.enabled }}
+  annotations:
+    {{ range $key, $value := .Values.service.annotations }}
+      {{ $key }}: {{ $value | quote }}
+    {{ end }}
+  {{ end }}
 spec:
-  ports:
-  - name: https
-    nodePort: 30438
-    port: 443
-    protocol: TCP
-    targetPort: 80
-  selector:
-    app: publish
-    service: app
-  sessionAffinity: None
+  {{ if .Values.ingress.enabled }}
+  type: ClusterIP
+  {{ else }}
   type: LoadBalancer
+  {{ end }}
+  ports:
+  - port: {{ .Values.service.externalPort }}
+    targetPort: {{ .Values.service.internalPort }}
+    protocol: TCP
+    name: {{ .Values.service.name }}
+  selector:
+    app: {{ template "fullname" . }}
+    service: app
