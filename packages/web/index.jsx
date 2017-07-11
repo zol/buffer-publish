@@ -6,8 +6,9 @@ import {
   ConnectedRouter as Router,
 } from 'react-router-redux';
 import createStore, { history } from '@bufferapp/store';
-import { actions } from '@bufferapp/login';
+import { actions as dataActions } from '@bufferapp/async-data-fetch';
 import App from './components/App';
+
 
 const store = createStore();
 
@@ -17,14 +18,22 @@ window.login = ({
   password,
   clientId,
   clientSecret,
-}) => store.dispatch(actions.loginStart({
-  email,
-  password,
-  clientId,
-  clientSecret,
+}) => store.dispatch(dataActions.fetch({
+  name: 'login',
+  args: {
+    email,
+    password,
+    clientId,
+    clientSecret,
+  },
 }));
-window.logout = () => store.dispatch(actions.logout());
 
+window.logout = () => store.dispatch(dataActions.fetch({
+  name: 'logout',
+  args: {
+    token: store.getState().login.sessionToken,
+  },
+}));
 
 const renderApp = (AppComponent) => {
   render(

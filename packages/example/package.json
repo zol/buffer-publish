@@ -22,7 +22,8 @@
   "author": "hharnisc@gmail.com",
   "dependencies": {
     "@bufferapp/login": "0.0.1",
-    "@bufferapp/components": "0.5.22"
+    "@bufferapp/components": "0.5.22",
+    "@bufferapp/async-data-fetch": "0.0.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

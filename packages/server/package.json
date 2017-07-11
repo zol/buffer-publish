@@ -19,9 +19,9 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/micro-rpc": "0.1.1",
+    "@bufferapp/micro-rpc": "0.1.2",
     "micro": "7.3.3",
-    "micro-rpc-client": "0.0.1",
+    "micro-rpc-client": "0.1.0",
     "microrouter": "2.1.1",
     "request": "2.81.0",
     "request-promise": "4.2.1"

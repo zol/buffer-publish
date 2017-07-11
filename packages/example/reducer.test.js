@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze';
-import { actionTypes as loginActionTypes } from '@bufferapp/login';
+import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
 import reducer from './reducer';
 
 describe('reducer', () => {
@@ -20,14 +20,14 @@ describe('reducer', () => {
       loggedIn: true,
     };
     const action = {
-      type: loginActionTypes.LOGIN_SUCCESS,
+      type: `login_${asyncDataFetchActions.FETCH_SUCCESS}`,
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
       .toEqual(stateAfter);
   });
 
-  it('should handle LOGOUT actionType', () => {
+  it('should handle `logout_FETCH_START` actionType', () => {
     const stateBefore = {
       loggedIn: true,
     };
@@ -35,7 +35,7 @@ describe('reducer', () => {
       loggedIn: false,
     };
     const action = {
-      type: loginActionTypes.LOGOUT,
+      type: `logout_${asyncDataFetchActions.FETCH_START}`,
     };
     deepFreeze(stateBefore);
     deepFreeze(action);
@@ -43,7 +43,7 @@ describe('reducer', () => {
       .toEqual(stateAfter);
   });
 
-  it('should handle LOGIN_FAIL actionType', () => {
+  it('should handle login_FETCH_FAIL actionType', () => {
     const stateBefore = {
       loggedIn: true,
     };
@@ -51,7 +51,7 @@ describe('reducer', () => {
       loggedIn: false,
     };
     const action = {
-      type: loginActionTypes.LOGIN_FAIL,
+      type: `login_${asyncDataFetchActions.FETCH_FAIL}`,
     };
     deepFreeze(stateBefore);
     deepFreeze(action);

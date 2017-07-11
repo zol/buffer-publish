@@ -20,6 +20,9 @@
     }
   },
   "author": "hharnisc@gmail.com",
+  "dependencies": {
+    "@bufferapp/async-data-fetch": "0.0.1"
+  },
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2"

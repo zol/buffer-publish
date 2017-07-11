@@ -1,7 +1,7 @@
 {
-  "name": "@bufferapp/store",
+  "name": "@bufferapp/async-data-fetch",
   "version": "0.0.1",
-  "description": "",
+  "description": "Fetch data from RPC backend",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ignore-pattern coverage node_modules",
@@ -9,21 +9,20 @@
     "test-watch": "jest --watch"
   },
   "jest": {
-    "verbose": true,
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
     ],
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
     }
   },
   "author": "hharnisc@gmail.com",
-  "dependencies": {
-    "@bufferapp/login": "0.0.1",
-    "@bufferapp/example": "0.0.1",
-    "@bufferapp/publish-i18n": "0.0.1",
-    "@bufferapp/async-data-fetch": "0.0.1"
-  },
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2"
