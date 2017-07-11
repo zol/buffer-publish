@@ -9,20 +9,19 @@ const tabsStyle = {
   borderBottom: `1px solid ${geyser}`,
 };
 
-const Tabs = ({ children, activeTabId, onTabClick }) => (
+const Tabs = ({ children, activeTabId }) => (
   <div style={tabsStyle}>
     {React.Children.map(children, tab => (
         React.cloneElement(tab, {
           // pass props from `Tabs` to `Tab`
           active: tab.props.tabId === activeTabId,
-          onClick: () => onTabClick(tab.props.tabId),
+          onClick: tab.props.onClick,
         })
     ))}
   </div>
 );
 
 Tabs.propTypes = {
-  onTabClick: PropTypes.func.isRequired,
   children: PropTypes.node,
   activeTabId: React.PropTypes.string,
 };

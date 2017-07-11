@@ -14,11 +14,10 @@ const TabNavigation = ({
 }) =>
   <Tabs
     activeTabId={activeTabId}
-    onTabClick={onTabClick}
   >
-    <Tab tabId={'12345'}>Queue (1)</Tab>
-    <Tab tabId={uuid()}>Sent Posts</Tab>
-    <Tab tabId={uuid()}>Settings</Tab>
+    <Tab tabId={'12345'} active onTabClick={onTabClick}>Queue (1)</Tab>
+    <Tab tabId={uuid()} active onTabClick={onTabClick}>Sent Posts</Tab>
+    <Tab tabId={uuid()} active onTabClick={onTabClick}>Settings</Tab>
   </Tabs>;
 
 

@@ -76,7 +76,7 @@ exports[`Snapshots DropdownTab default 1`] = `
       <button
         disabled={undefined}
         onBlur={[Function]}
-        onClick={undefined}
+        onClick={[Function]}
         onFocus={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -299,7 +299,7 @@ exports[`Snapshots DropdownTab dropdown opened 1`] = `
       <button
         disabled={undefined}
         onBlur={[Function]}
-        onClick={undefined}
+        onClick={[Function]}
         onFocus={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -15921,7 +15921,7 @@ exports[`Snapshots Tabs with a dropdown tab 1`] = `
         <button
           disabled={undefined}
           onBlur={[Function]}
-          onClick={undefined}
+          onClick={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}

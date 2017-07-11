@@ -14,6 +14,7 @@ const DropdownTab = ({
   active,
   title,
   isDropdownShown,
+  onClick,
 }) => {
   const style = calculateStyles({
     default: {
@@ -39,7 +40,7 @@ const DropdownTab = ({
 
   return (
     <div style={containerStyle}>
-      <Tab active={active}>{title}</Tab>
+      <Tab active={active} onClick={onClick}>{title}</Tab>
       <ul style={style}>
         {React.Children.map(children, dropdownItem => (
             React.cloneElement(dropdownItem, {
@@ -56,6 +57,7 @@ DropdownTab.propTypes = {
   children: PropTypes.node,
   title: PropTypes.string.isRequired,
   isDropdownShown: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 DropdownTab.defaultProps = {

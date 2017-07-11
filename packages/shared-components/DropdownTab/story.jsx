@@ -14,6 +14,7 @@ storiesOf('DropdownTab')
       active={false}
       title={'Settings'}
       isDropdownShown={false}
+      onClick={action('on-tab-click')}
     >
       <DropdownItem onClick={action('on-click')}>Posting Schedule</DropdownItem>
       <DropdownItem onClick={action('on-click')}>Empty your Queue</DropdownItem>
@@ -25,6 +26,7 @@ storiesOf('DropdownTab')
       active
       title={'Settings'}
       isDropdownShown
+      onClick={action('on-tab-click')}
     >
       <DropdownItem onClick={action('on-click')}>Posting Schedule</DropdownItem>
       <DropdownItem onClick={action('on-click')}>Empty your Queue</DropdownItem>

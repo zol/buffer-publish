@@ -15,11 +15,10 @@ storiesOf('Tabs')
   .add('default', () => (
     <Tabs
       activeTabId={''}
-      onTabClick={action('on-tab-click')}
     >
-      <Tab tabId={uuid()}>Queue (1)</Tab>
-      <Tab tabId={uuid()}>Sent Posts</Tab>
-      <Tab tabId={uuid()}>Settings</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Queue (1)</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Sent Posts</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Settings</Tab>
     </Tabs>
   ))
   .add('with one active tab', () => (
@@ -27,22 +26,22 @@ storiesOf('Tabs')
       activeTabId={'12345'}
       onTabClick={action('on-tab-click')}
     >
-      <Tab tabId={'12345'}>Queue (1)</Tab>
-      <Tab tabId={uuid()}>Sent Posts</Tab>
-      <Tab tabId={uuid()}>Settings</Tab>
+      <Tab tabId={'12345'} active onClick={action('tab-click')}>Queue (1)</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Sent Posts</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Settings</Tab>
     </Tabs>
   ))
   .add('with a dropdown tab', () => (
     <Tabs
       activeTabId={'12345'}
-      onTabClick={action('on-tab-click')}
     >
-      <Tab tabId={uuid()}>Queue (1)</Tab>
-      <Tab tabId={uuid()}>Sent Posts</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Queue (1)</Tab>
+      <Tab tabId={uuid()} active onClick={action('tab-click')}>Sent Posts</Tab>
       <DropdownTab
         active
         title={'Settings'}
         isDropdownShown
+        onClick={action('on-click')}
       >
         <DropdownItem onClick={action('on-click')}>Posting Schedule</DropdownItem>
         <DropdownItem onClick={action('on-click')}>Empty your Queue</DropdownItem>
