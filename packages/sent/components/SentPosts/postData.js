@@ -79,5 +79,5 @@ export const videoPosts = posts.map(post => ({
   type: 'video',
 }));
 
-export const listHeader = 'Your sent posts for the last 30 days';
-export const header = 'Tuesday 20th June';
+export const listHeader = 'Tuesday 20th June';
+export const header = 'Your sent posts for the last 30 days';

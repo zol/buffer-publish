@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LoggedIn from '@bufferapp/example';
+import QueuedPosts from '@bufferapp/queue';
+import SentPosts from '@bufferapp/sent';
 
 const profilePageStyle = {
   display: 'flex',
@@ -18,7 +20,6 @@ const profileSideBarStyle = {
 
 const contentStyle = {
   flexGrow: 1,
-  background: 'orange',
   color: 'white',
   display: 'flex',
   flexDirection: 'column',
@@ -32,6 +33,9 @@ const tabStyle = {
 const tabContentStyle = {
   flexGrow: 1,
   overflowY: 'auto',
+  marginTop: '1rem',
+  marginLeft: '1rem',
+  marginRight: '1rem',
 };
 
 // TODO: this is only for testing content that is scrollable - delete this
@@ -54,11 +58,23 @@ const TabContent = ({ tabId }) => {
   switch (tabId) {
     case 'queue':
       return (
-        <div>Queue</div>
+        <QueuedPosts
+          listHeader
+          posts
+          onCancelConfirmClick={() => { console.log('cancel confirm click'); }}
+          onDeleteClick={() => { console.log('delete click'); }}
+          onDeleteConfirmClick={() => { console.log('delete click'); }}
+          onEditClick={() => { console.log('edit click'); }}
+          onShareNowClick={() => { console.log('share now click'); }}
+        />
       );
     case 'sent':
       return (
-        <div>Sent</div>
+        <SentPosts
+          header
+          listHeader
+          posts
+        />
       );
     case 'settings':
       return (

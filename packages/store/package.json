@@ -21,6 +21,8 @@
   "dependencies": {
     "@bufferapp/login": "0.0.1",
     "@bufferapp/example": "0.0.1",
+    "@bufferapp/queue": "0.0.1",
+    "@bufferapp/sent": "0.0.1",
     "@bufferapp/publish-i18n": "0.0.1",
     "@bufferapp/async-data-fetch": "0.0.1"
   },
