@@ -1,9 +1,9 @@
-const { method } = require('@bufferapp/micro-rpc');
+const { method, createError } = require('@bufferapp/micro-rpc');
 const RPCClient = require('micro-rpc-client');
 const rp = require('request-promise');
 
 const rpcClient = new RPCClient({
-  serverUrl: 'http://session-service',
+  url: 'http://session-service',
 });
 
 module.exports = method(
@@ -28,9 +28,16 @@ module.exports = method(
     },
     json: true,
   })
+    .catch((err) => {
+      throw createError({ message: err.error.error });
+    })
     .then(res => rpcClient.call('create', {
       session: {
         accessToken: res.token,
       },
     }))
-    .then(({ token }) => ({ token })));
+    .then(({ token }) => ({ token }))
+    .catch((err) => {
+      throw createError({ message: err.message });
+    }),
+);

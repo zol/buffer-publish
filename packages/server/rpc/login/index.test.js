@@ -3,7 +3,7 @@ jest.mock('micro-rpc-client');
 jest.mock('request-promise');
 import rp from 'request-promise';
 import RPCClient from 'micro-rpc-client';
-import login from './login';
+import login from './';
 
 describe('rpc/login', () => {
   it('should have the expected name', () => {

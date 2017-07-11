@@ -15,19 +15,14 @@
       "node_modules/(?!@bufferapp/*)"
     ],
     "verbose": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy"
     }
   },
   "author": "hharnisc@gmail.com",
+  "dependencies": {
+    "@bufferapp/async-data-fetch": "0.0.1"
+  },
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2"

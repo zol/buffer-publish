@@ -1,8 +1,6 @@
 import deepFreeze from 'deep-freeze';
-import reducer, {
-  actions,
-  actionTypes,
-} from './reducer';
+import { actionTypes } from '@bufferapp/async-data-fetch';
+import reducer from './reducer';
 
 describe('reducer', () => {
   it('should return initial state', () => {
@@ -15,15 +13,17 @@ describe('reducer', () => {
       .toEqual(stateAfter);
   });
 
-  it('should handle LOGIN_SUCCESS action', () => {
+  it('should handle `login_FETCH_SUCCESS` action', () => {
     const sessionToken = 'session token';
     const stateBefore = {};
     const stateAfter = {
       sessionToken,
     };
     const action = {
-      type: actionTypes.LOGIN_SUCCESS,
-      sessionToken,
+      type: `login_${actionTypes.FETCH_SUCCESS}`,
+      result: {
+        token: sessionToken,
+      },
     };
     deepFreeze(action);
     deepFreeze(stateBefore);
@@ -32,75 +32,19 @@ describe('reducer', () => {
       .toEqual(stateAfter);
   });
 
-  it('should handle LOGOUT action', () => {
+  it('should handle `logout_.FETCH_START` action', () => {
     const sessionToken = 'session token';
     const stateBefore = {
       sessionToken,
     };
     const stateAfter = {};
     const action = {
-      type: actionTypes.LOGOUT,
+      type: `logout_${actionTypes.FETCH_START}`,
     };
     deepFreeze(action);
     deepFreeze(stateBefore);
     deepFreeze(stateAfter);
     expect(reducer(stateBefore, action))
       .toEqual(stateAfter);
-  });
-
-  describe('actions', () => {
-    it('should create loginStart action', () => {
-      const email = 'test@test.com';
-      const password = 'password';
-      const clientId = 'clientId';
-      const clientSecret = 'clientSecret';
-
-      const actionAfter = {
-        type: actionTypes.LOGIN_START,
-        email,
-        password,
-        clientId,
-        clientSecret,
-      };
-      deepFreeze(actionAfter);
-      expect(actions.loginStart({
-        email,
-        password,
-        clientId,
-        clientSecret,
-      }))
-        .toEqual(actionAfter);
-    });
-
-    it('should create loginFail action', () => {
-      const errorMessage = 'something bad happend';
-      const actionAfter = {
-        type: actionTypes.LOGIN_FAIL,
-        errorMessage,
-      };
-      deepFreeze(actionAfter);
-      expect(actions.loginFail({ errorMessage }))
-        .toEqual(actionAfter);
-    });
-
-    it('should create loginSuccess action', () => {
-      const sessionToken = 'some session token';
-      const actionAfter = {
-        type: actionTypes.LOGIN_SUCCESS,
-        sessionToken,
-      };
-      deepFreeze(actionAfter);
-      expect(actions.loginSuccess({ sessionToken }))
-        .toEqual(actionAfter);
-    });
-
-    it('should create a logout action', () => {
-      const actionAfter = {
-        type: actionTypes.LOGOUT,
-      };
-      deepFreeze(actionAfter);
-      expect(actions.logout())
-        .toEqual(actionAfter);
-    });
   });
 });

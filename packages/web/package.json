@@ -17,22 +17,14 @@
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
     ],
-    "verbose": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
+    "verbose": true
   },
   "dependencies": {
     "@bufferapp/components": "0.5.22",
-    "@bufferapp/login": "0.0.1",
     "@bufferapp/store": "0.0.1",
     "@bufferapp/example": "0.0.1",
-    "@bufferapp/tabs": "0.0.1"
+    "@bufferapp/tabs": "0.0.1",
+    "@bufferapp/async-data-fetch": "0.0.1"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {

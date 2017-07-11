@@ -10,14 +10,6 @@
   },
   "jest": {
     "verbose": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
     ],
@@ -30,7 +22,8 @@
     "@bufferapp/login": "0.0.1",
     "@bufferapp/example": "0.0.1",
     "@bufferapp/publish-i18n": "0.0.1",
-    "@bufferapp/tabs": "0.0.1"
+    "@bufferapp/tabs": "0.0.1",
+    "@bufferapp/async-data-fetch": "0.0.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",

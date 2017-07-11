@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    app: {{ template "fullname" . }}
+    service: app
+    track: stable
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+  namespace: buffer
+spec:
+  minReadySeconds: 10
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "fullname" . }}
+      service: app
+      track: stable
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: {{ template "fullname" . }}
+        service: app
+        track: stable
+    spec:
+      containers:
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: {{ .Chart.Name }}
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources:
+{{ toYaml .Values.resources | indent 11 }}
+        terminationMessagePath: /dev/termination-log
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: dhbufferapp
+      restartPolicy: Always
+      securityContext: {}
+      terminationGracePeriodSeconds: 30

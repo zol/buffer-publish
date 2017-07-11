@@ -1,5 +1,5 @@
 import Cookie from 'js-cookie';
-import { actionTypes as loginActionTypes } from '@bufferapp/login';
+import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {};
 
@@ -11,13 +11,13 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case loginActionTypes.LOGIN_SUCCESS:
+    case `login_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loggedIn: true,
       };
-    case loginActionTypes.LOGOUT:
-    case loginActionTypes.LOGIN_FAIL:
+    case `logout_${asyncDataFetchActionTypes.FETCH_START}`:
+    case `login_${asyncDataFetchActionTypes.FETCH_FAIL}`:
       return {
         ...state,
         loggedIn: false,

@@ -1,50 +1,19 @@
-export const actionTypes = {
-  LOGIN_START: 'LOGIN_START',
-  LOGIN_FAIL: 'LOGIN_FAIL',
-  LOGIN_SUCCESS: 'LOGIN_SUCCESS',
-  LOGOUT: 'LOGOUT',
-};
+import { actionTypes } from '@bufferapp/async-data-fetch';
 
 const initialState = {};
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.LOGIN_SUCCESS:
+    case `login_${actionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
-        sessionToken: action.sessionToken,
+        sessionToken: action.result.token,
       };
-    case actionTypes.LOGOUT: {
+    case `logout_${actionTypes.FETCH_START}`: {
       const { sessionToken, ...newState } = state;
       return newState;
     }
     default:
       return state;
   }
-};
-
-export const actions = {
-  loginStart: ({
-    email,
-    password,
-    clientId,
-    clientSecret,
-  }) => ({
-    type: actionTypes.LOGIN_START,
-    email,
-    password,
-    clientId,
-    clientSecret,
-  }),
-  loginSuccess: ({ sessionToken }) => ({
-    type: actionTypes.LOGIN_SUCCESS,
-    sessionToken,
-  }),
-  loginFail: ({ errorMessage }) => ({
-    type: actionTypes.LOGIN_FAIL,
-    errorMessage,
-  }),
-  logout: () => ({
-    type: actionTypes.LOGOUT,
-  }),
 };

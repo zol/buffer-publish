@@ -4,6 +4,8 @@ RPCClient.prototype.call = jest.fn((name) => {
     return Promise.resolve({
       token: 'someSessionToken',
     });
+  } else if (name === 'destroy') {
+    return Promise.resolve();
   }
 });
 module.exports = RPCClient;
