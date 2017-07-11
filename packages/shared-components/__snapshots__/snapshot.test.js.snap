@@ -1,5 +1,510 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots DropdownItem default 1`] = `
+<span>
+  <li
+    style={
+      Object {
+        "padding": "2px",
+      }
+    }
+  >
+    <button
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        Posting Schedule
+      </span>
+    </button>
+  </li>
+</span>
+`;
+
+exports[`Snapshots DropdownTab default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Settings
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "padding": "2px",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Posting Schedule
+          </span>
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "padding": "2px",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Empty your Queue
+          </span>
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "padding": "2px",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Disconnect this account
+          </span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
+exports[`Snapshots DropdownTab dropdown opened 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "borderBottom": "2px solid #168eea",
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Settings
+          </span>
+        </span>
+      </button>
+    </div>
+    <ul
+      style={
+        Object {
+          "background": "white",
+          "border": "1px solid #ced7df",
+          "borderRadius": "2px",
+          "display": "table",
+          "listStyle": "none",
+          "marginTop": "-4px",
+          "padding": "4px",
+          "position": "absolute",
+        }
+      }
+    >
+      <li
+        style={
+          Object {
+            "padding": "2px",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Posting Schedule
+          </span>
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "padding": "2px",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Empty your Queue
+          </span>
+        </button>
+      </li>
+      <li
+        style={
+          Object {
+            "padding": "2px",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Disconnect this account
+          </span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</span>
+`;
+
 exports[`Snapshots Example default 1`] = `
 <span>
   <div>
@@ -14958,6 +15463,851 @@ exports[`Snapshots RetweetPanel default 1`] = `
       >
         @joelgascoigne
       </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tab active 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "2px solid #168eea",
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0 4px 16px 4px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+        }
+      }
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Sent
+        </span>
+      </span>
+    </button>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tab default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0 4px 16px 4px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+        }
+      }
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Queue
+        </span>
+      </span>
+    </button>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tabs default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ced7df",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Queue (1)
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Sent Posts
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Settings
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tabs with a dropdown tab 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ced7df",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Queue (1)
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Sent Posts
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "margin": "0 8px 0 8px",
+            "minWidth": "60px",
+            "padding": "0 4px 16px 4px",
+            "textAlign": "center",
+          }
+        }
+      >
+        <button
+          disabled={undefined}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "backgroundColor": "unset",
+              "border": "none",
+              "borderRadius": "unset",
+              "color": "unset",
+              "cursor": "pointer",
+              "display": "unset",
+              "fontFamily": "unset",
+              "fontSize": "unset",
+              "fontWeight": "unset",
+              "lineHeight": "unset",
+              "margin": "unset",
+              "outline": "none",
+              "padding": 0,
+              "transition": "unset",
+            }
+          }
+        >
+          <span
+            onMouseEnter={undefined}
+            onMouseLeave={undefined}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Settings
+            </span>
+          </span>
+        </button>
+      </div>
+      <ul
+        style={
+          Object {
+            "background": "white",
+            "border": "1px solid #ced7df",
+            "borderRadius": "2px",
+            "display": "table",
+            "listStyle": "none",
+            "marginTop": "-4px",
+            "padding": "4px",
+            "position": "absolute",
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "padding": "2px",
+            }
+          }
+        >
+          <button
+            disabled={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "none",
+                "backgroundColor": "unset",
+                "border": "none",
+                "borderRadius": "unset",
+                "color": "unset",
+                "cursor": "pointer",
+                "display": "unset",
+                "fontFamily": "unset",
+                "fontSize": "unset",
+                "fontWeight": "unset",
+                "lineHeight": "unset",
+                "margin": "unset",
+                "outline": "none",
+                "padding": 0,
+                "transition": "unset",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Posting Schedule
+            </span>
+          </button>
+        </li>
+        <li
+          style={
+            Object {
+              "padding": "2px",
+            }
+          }
+        >
+          <button
+            disabled={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "none",
+                "backgroundColor": "unset",
+                "border": "none",
+                "borderRadius": "unset",
+                "color": "unset",
+                "cursor": "pointer",
+                "display": "unset",
+                "fontFamily": "unset",
+                "fontSize": "unset",
+                "fontWeight": "unset",
+                "lineHeight": "unset",
+                "margin": "unset",
+                "outline": "none",
+                "padding": 0,
+                "transition": "unset",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Empty your Queue
+            </span>
+          </button>
+        </li>
+        <li
+          style={
+            Object {
+              "padding": "2px",
+            }
+          }
+        >
+          <button
+            disabled={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "none",
+                "backgroundColor": "unset",
+                "border": "none",
+                "borderRadius": "unset",
+                "color": "unset",
+                "cursor": "pointer",
+                "display": "unset",
+                "fontFamily": "unset",
+                "fontSize": "unset",
+                "fontWeight": "unset",
+                "lineHeight": "unset",
+                "margin": "unset",
+                "outline": "none",
+                "padding": 0,
+                "transition": "unset",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Disconnect this account
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tabs with one active tab 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderBottom": "1px solid #ced7df",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "borderBottom": "2px solid #168eea",
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Queue (1)
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Sent Posts
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "margin": "0 8px 0 8px",
+          "minWidth": "60px",
+          "padding": "0 4px 16px 4px",
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+          }
+        }
+      >
+        <span
+          onMouseEnter={undefined}
+          onMouseLeave={undefined}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Settings
+          </span>
+        </span>
+      </button>
     </div>
   </div>
 </span>
