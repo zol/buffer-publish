@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import LoggedIn from '@bufferapp/example';
 import QueuedPosts from '@bufferapp/queue';
 import SentPosts from '@bufferapp/sent';
+import TabNavigation from '@bufferapp/tabs';
 
 const profilePageStyle = {
   display: 'flex',
@@ -23,11 +24,6 @@ const contentStyle = {
   color: 'white',
   display: 'flex',
   flexDirection: 'column',
-};
-
-const tabStyle = {
-  background: 'green',
-  height: '4rem', // this might change when actual tabs are added
 };
 
 const tabContentStyle = {
@@ -107,10 +103,10 @@ const ProfilePage = ({ match: { params: { profileId, tabId } } }) =>
       <div>ProfileId: <strong>{profileId}</strong></div>
     </div>
     <div style={contentStyle}>
-      <div style={tabStyle}>
-        <div>Tabs</div>
-        TabId: <strong>{tabId}</strong>
-      </div>
+      <TabNavigation
+        onTabClick={() => { console.log('on tab click clicked'); }}
+        activeTabId={'12345'}
+      />
       <div style={tabContentStyle}>
         {TabContent({ tabId })}
       </div>

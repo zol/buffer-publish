@@ -15,11 +15,10 @@ const TabNavigation = ({
   <Tabs
     activeTabId={activeTabId}
   >
-    <Tab tabId={'12345'} active onTabClick={onTabClick}>Queue (1)</Tab>
-    <Tab tabId={uuid()} active onTabClick={onTabClick}>Sent Posts</Tab>
-    <Tab tabId={uuid()} active onTabClick={onTabClick}>Settings</Tab>
+    <Tab tabId={'12345'} active onClick={onTabClick}>Queue (1)</Tab>
+    <Tab tabId={uuid()} active onClick={onTabClick}>Sent Posts</Tab>
+    <Tab tabId={uuid()} active onClick={onTabClick}>Settings</Tab>
   </Tabs>;
-
 
 TabNavigation.propTypes = {
   onTabClick: PropTypes.func.isRequired,
