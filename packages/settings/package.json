@@ -1,35 +1,35 @@
 {
-  "name": "@bufferapp/store",
+  "name": "@bufferapp/settings",
   "version": "0.0.1",
-  "description": "",
+  "description": "Sent Posts package",
   "main": "index.js",
   "scripts": {
+    "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "npm run lint && sh ../../package_test.sh",
-    "test-watch": "jest --watch"
+    "test-watch": "jest --watch",
+    "test-update": "jest -u"
   },
   "jest": {
-    "verbose": true,
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
     ],
+    "verbose": true,
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy"
     }
   },
-  "author": "hharnisc@gmail.com",
+  "author": "melissa@buffer.com",
   "dependencies": {
     "@bufferapp/login": "0.0.1",
-    "@bufferapp/example": "0.0.1",
-    "@bufferapp/queue": "0.0.1",
-    "@bufferapp/sent": "0.0.1",
-    "@bufferapp/settings": "0.0.1",
-    "@bufferapp/publish-i18n": "0.0.1",
-    "@bufferapp/tabs": "0.0.1",
-    "@bufferapp/async-data-fetch": "0.0.1"
+    "@bufferapp/components": "0.5.22",
+    "@bufferapp/publish-shared-components": "0.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-storyshots": "3.1.4",
+    "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
-    "jest": "19.0.2"
+    "jest": "19.0.2",
+    "storybook-addon-a11y": "3.0.0"
   }
 }

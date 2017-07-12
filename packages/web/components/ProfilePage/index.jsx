@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import LoggedIn from '@bufferapp/example';
 import QueuedPosts from '@bufferapp/queue';
 import SentPosts from '@bufferapp/sent';
+import ProfileSettings from '@bufferapp/settings';
 import TabNavigation from '@bufferapp/tabs';
 
 const profilePageStyle = {
@@ -74,7 +75,9 @@ const TabContent = ({ tabId }) => {
       );
     case 'settings':
       return (
-        <div>Settings</div>
+        <ProfileSettings
+          settingsHeader
+        />
       );
     default:
       return (

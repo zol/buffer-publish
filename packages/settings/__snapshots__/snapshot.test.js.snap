@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots ProfileSettings default 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1.5rem",
+          "width": "100%",
+        }
+      }
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your posting schedule for @joelgascoigne
+        </span>
+        <hr
+          style={
+            Object {
+              "border": "0.063rem solid #e6ebef",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div>
+        Test copy
+      </div>
+    </div>
+  </div>
+</span>
+`;
