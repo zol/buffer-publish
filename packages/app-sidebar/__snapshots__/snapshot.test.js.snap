@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots AppSidebar should show app sidebar 1`] = `
+<span>
+  <span
+    style={
+      Object {
+        "color": "#59626a",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "1rem",
+        "fontWeight": 400,
+      }
+    }
+  >
+    This is the app AppSidebar!
+  </span>
+</span>
+`;

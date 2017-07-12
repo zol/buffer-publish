@@ -1,13 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import Example, {
+import {
   reducer,
   actions,
   actionTypes,
   middleware,
 } from './index';
-import LoggedIn from './components/LoggedIn';
+import AppSidebar from './components/AppSidebar';
 
 const storeFake = state => ({
   default: () => {},
@@ -19,24 +19,16 @@ const storeFake = state => ({
 describe('Example', () => {
   it('should render', () => {
     const store = storeFake({
-      example: {
-        loggedIn: false,
-      },
       i18n: {
-        translations: {
-          example: {
-            loggedIn: 'Logged In...',
-            loggedOut: 'Logged Out...',
-          },
-        },
+        translations: { },
       },
     });
     const wrapper = mount(
       <Provider store={store}>
-        <Example />
+        <AppSidebar />
       </Provider>,
     );
-    expect(wrapper.find(LoggedIn).length)
+    expect(wrapper.find(AppSidebar).length)
       .toBe(1);
   });
 
