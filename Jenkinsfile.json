@@ -2,8 +2,8 @@
   "app": {
     "name": "buffer-publish",
     "namespace": "buffer",
-    "deployment_url": "publish.buffer.com",
-    "test": true
+    "test": true,
+    "deployment_url": "publish.buffer.com"
   },
   "container_repo": {
     "repo": "bufferapp/buffer-publish",
