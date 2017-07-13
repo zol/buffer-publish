@@ -11,7 +11,6 @@ import {
 } from '../style/color';
 
 const matchValueToItem = (item, value) =>
-  item.toLowerCase().indexOf(value.toLowerCase()) !== -1 ||
   item.toLowerCase().indexOf(value.toLowerCase()) !== -1;
 
 const InputAutocomplete = ({

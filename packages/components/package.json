@@ -36,6 +36,6 @@
     "storybook-addon-a11y": "3.0.0"
   },
   "dependencies": {
-    "react-autocomplete": "^1.5.9"
+    "react-autocomplete": "1.5.9"
   }
 }
