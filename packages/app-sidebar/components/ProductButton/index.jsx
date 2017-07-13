@@ -31,7 +31,7 @@ class ProductButton extends PseudoClassComponent {
     const hoverableIcon = React.cloneElement(
       this.props.icon,
       {
-        color: this.state.hovered || this.props.active ? 'white' : '#7088A5',
+        color: this.state.hovered || this.props.active ? 'white' : 'sidebarIcon',
         size: { width: '20px', height: '20px' }
       }
     );
