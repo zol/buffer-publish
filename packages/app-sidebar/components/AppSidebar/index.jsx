@@ -16,10 +16,9 @@ import { sidebarBackgroundBlue } from '@bufferapp/components/style/color';
 const style = calculateStyles({
   default: {
     background: sidebarBackgroundBlue,
-    height: '100vh',
-    maxWidth: '65px',
     textAlign: 'center',
-    padding: '1rem 0 0 0'
+    padding: '1rem 0 0 0',
+    flex: '1'
   }
 });
 
