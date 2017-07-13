@@ -25,8 +25,8 @@ const Icon = ({
       height: '2rem',
     },
     customSize: {
-      width: size ? size.width : size.height,
-      height: size ? size.height : size.width,
+      width: size ? (size.width || size.height) : '1rem',
+      height: size ? (size.height || size.width) : '1rem',
     }
   }, {
     color,
@@ -57,32 +57,7 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   children: PropTypes.node,
-  color: PropTypes.oneOf([
-    'appdotnet',
-    'aquaHaze',
-    'black',
-    'curiousBlue',
-    'curiousBlueLight',
-    'curiousBlueUltraLight',
-    'denim',
-    'facebook',
-    'geyser',
-    'googleplus',
-    'linkedin',
-    'mystic',
-    'nevada',
-    'outerSpace',
-    'outerSpaceLight',
-    'outerSpaceUltraLight',
-    'pinterest',
-    'saffron',
-    'shamrock',
-    'shuttleGray',
-    'toryBlue',
-    'torchRed',
-    'twitter',
-    'white',
-  ]),
+  color: PropTypes.oneOf(Object.keys(colors)),
   size: PropTypes.oneOfType([
     PropTypes.oneOf(['small', 'large']),
     PropTypes.shape({
