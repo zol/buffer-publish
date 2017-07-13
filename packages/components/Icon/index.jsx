@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { calculateStyles } from '../lib/utils';
+import { calculateStyles, parseColor } from '../lib/utils';
 import colors from '../style/color';
 
 const Icon = ({
   children,
   color,
-  size,
+  size
 }) => {
   const style = calculateStyles({
     default: {
@@ -14,7 +14,7 @@ const Icon = ({
       height: '1rem',
     },
     color: {
-      fill: colors[color],
+      fill: parseColor(color),
     },
     small: {
       width: '0.75rem',
@@ -24,10 +24,15 @@ const Icon = ({
       width: '2rem',
       height: '2rem',
     },
+    customSize: {
+      width: size ? size.width : size.height,
+      height: size ? size.height : size.width,
+    }
   }, {
     color,
     small: size === 'small',
     large: size === 'large',
+    customSize: size && (size.width || size.height)
   });
   return (
     <svg
@@ -78,7 +83,13 @@ Icon.propTypes = {
     'twitter',
     'white',
   ]),
-  size: PropTypes.oneOf(['large', 'small']),
+  size: PropTypes.oneOfType([
+    PropTypes.oneOf(['small', 'large']),
+    PropTypes.shape({
+      width: PropTypes.string,
+      height: PropTypes.string
+    })
+  ]),
 };
 
 export default Icon;
