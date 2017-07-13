@@ -5261,6 +5261,45 @@ exports[`Snapshots Input with type = password 1`] = `
 </span>
 `;
 
+exports[`Snapshots InputAutocomplete default 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <input
+        aria-autocomplete="list"
+        aria-expanded={false}
+        autoComplete="off"
+        id="states-autocomplete"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="combobox"
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "border": "1px solid #e6ebef",
+            "borderRadius": "2px",
+            "fontSize": ".8rem",
+            "margin": "0 0 0 .5rem",
+            "padding": ".5rem",
+            "width": "318px",
+          }
+        }
+        value=""
+      />
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots InputDate default 1`] = `
 <span>
   <div>
