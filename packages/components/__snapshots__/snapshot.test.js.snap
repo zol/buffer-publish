@@ -4210,7 +4210,7 @@ exports[`Snapshots Icon refreshIcon 1`] = `
 </span>
 `;
 
-exports[`Snapshots Icon respondIcon 1`] = `
+exports[`Snapshots Icon replyIcon 1`] = `
 <span>
   <svg
     height="100%"
