@@ -9,6 +9,7 @@ storiesOf('AppSidebar')
   .addDecorator(checkA11y)
   .add('should show app sidebar', () => (
     <AppSidebar
+      activeProduct='publish'
       translations={translations}
     />
   ));
