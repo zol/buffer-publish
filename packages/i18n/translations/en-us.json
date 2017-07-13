@@ -2,5 +2,9 @@
   "example": {
     "loggedIn": "Logged In...",
     "loggedOut": "Logged Out..."
+  },
+  "profile-sidebar": {
+    "connectButton": "Connect a Social Account",
+    "lockedList": "Locked Social Accounts"
   }
 }

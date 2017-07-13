@@ -5,6 +5,7 @@ import QueuedPosts from '@bufferapp/queue';
 import SentPosts from '@bufferapp/sent';
 import ProfileSettings from '@bufferapp/settings';
 import TabNavigation from '@bufferapp/tabs';
+import ProfileSidebar from '@bufferapp/profile-sidebar';
 
 const profilePageStyle = {
   display: 'flex',
@@ -13,8 +14,6 @@ const profilePageStyle = {
 };
 
 const profileSideBarStyle = {
-  background: 'blue',
-  color: 'white',
   flexBasis: '16rem',
   width: '16rem',
   minWidth: '16rem',
@@ -99,11 +98,17 @@ TabContent.defaultProps = {
   tabId: '',
 };
 
-const ProfilePage = ({ match: { params: { profileId, tabId } } }) =>
+const ProfilePage = ({
+  match: {
+    params: {
+      profileId, // eslint-disable-line no-unused-vars
+      tabId,
+    },
+  },
+}) =>
   <div style={profilePageStyle}>
     <div style={profileSideBarStyle}>
-      <div>Profile Sidebar</div>
-      <div>ProfileId: <strong>{profileId}</strong></div>
+      <ProfileSidebar />
     </div>
     <div style={contentStyle}>
       <TabNavigation
