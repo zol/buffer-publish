@@ -4,7 +4,7 @@ import Text from '../Text';
 import {
   borderWidth,
 } from '../style/border';
-import {
+import colors, {
   mystic,
 } from '../style/color';
 
@@ -26,32 +26,7 @@ const Divider = ({
 
 Divider.propTypes = {
   children: PropTypes.string,
-  color: PropTypes.oneOf([
-    'appdotnet',
-    'aquaHaze',
-    'black',
-    'curiousBlue',
-    'curiousBlueLight',
-    'curiousBlueUltraLight',
-    'denim',
-    'facebook',
-    'geyser',
-    'googleplus',
-    'linkedin',
-    'mystic',
-    'nevada',
-    'outerSpace',
-    'outerSpaceLight',
-    'outerSpaceUltraLight',
-    'pinterest',
-    'saffron',
-    'shamrock',
-    'shuttleGray',
-    'toryBlue',
-    'torchRed',
-    'twitter',
-    'white',
-  ]),
+  color: PropTypes.oneOf(Object.keys(colors)),
   size: PropTypes.string,
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Text from '../Text';
 import Link from '../Link';
-
+import colors from '../style/color';
 
 const linkDataToElement = (options, link, key) =>
   <Link
@@ -60,32 +60,7 @@ const LinkifiedText = ({
 
 LinkifiedText.propTypes = {
   children: PropTypes.string,
-  color: PropTypes.oneOf([
-    'appdotnet',
-    'aquaHaze',
-    'black',
-    'curiousBlue',
-    'curiousBlueLight',
-    'curiousBlueUltraLight',
-    'denim',
-    'facebook',
-    'geyser',
-    'googleplus',
-    'linkedin',
-    'mystic',
-    'nevada',
-    'outerSpace',
-    'outerSpaceLight',
-    'outerSpaceUltraLight',
-    'pinterest',
-    'saffron',
-    'shamrock',
-    'shuttleGray',
-    'toryBlue',
-    'torchRed',
-    'twitter',
-    'white',
-  ]),
+  color: PropTypes.oneOf(Object.keys(colors)),
   links: PropTypes.arrayOf(
     PropTypes.shape({
       rawString: PropTypes.string,
