@@ -2,10 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PseudoClassComponent } from '@bufferapp/components';
 import { calculateStyles } from '@bufferapp/components/lib/utils';
-import { curiousBlue } from '@bufferapp/components/style/color';
+import { curiousBlue, curiousBlueLight } from '@bufferapp/components/style/color';
 import { borderRadius } from '@bufferapp/components/style/border';
+import Popover from '../Popover';
 
 class ProductButton extends PseudoClassComponent {
+  constructor() {
+    super();
+    this.onMouseLeaveTimeout = null;
+    this.state = {
+      ...this.state,
+      clicked: false
+    };
+  }
   render() {
     const style = calculateStyles({
       default: {
@@ -13,25 +22,33 @@ class ProductButton extends PseudoClassComponent {
         background: 'none',
         border: 0,
         padding: '6px',
-        margin: '16px 16px 32px 16px',
+        margin: '16px 16px 16px 16px',
         borderRadius,
-        cursor: 'pointer'
+        cursor: 'pointer',
+        position: 'relative'
       },
       active: {
         background: curiousBlue,
         color: 'white'
       },
+      focused: {
+        outline: 'none',
+        boxShadow: `0 0 2px 3px ${curiousBlueLight}`
+      },
       hovered: {
       }
     }, {
       hovered: this.state.hovered,
-      active: this.props.active
+      focused: this.state.focused,
+      active: this.props.active,
     });
 
+    const hoveredOrActiveOrFocused = this.state.hovered || this.props.active || this.state.focused;
+    const hoveredOrClicked = this.state.hovered || this.state.clicked;
     const hoverableIcon = React.cloneElement(
       this.props.icon,
       {
-        color: this.state.hovered || this.props.active ? 'white' : 'sidebarIcon',
+        color: hoveredOrActiveOrFocused ? 'white' : 'sidebarIcon',
         size: { width: '20px', height: '20px' }
       }
     );
@@ -39,12 +56,20 @@ class ProductButton extends PseudoClassComponent {
     return (
       <button
         style={style}
-        onMouseEnter={() => this.handleMouseEnter()}
-        onMouseLeave={() => this.handleMouseLeave()}
+        onMouseEnter={() => { clearTimeout(this.onMouseLeaveTimeout); this.handleMouseEnter(); }}
+        onMouseLeave={() => { this.onMouseLeaveTimeout = setTimeout(() => this.handleMouseLeave(), 250); }}
+        onClick={() => { this.setState({ clicked: !this.state.clicked }); }}
         onFocus={() => this.handleFocus()}
         onBlur={() => this.handleBlur()}
+        aria-haspopup={this.props.children ? true : false}
+        aria-expanded={hoveredOrClicked}
       >
         {hoverableIcon}
+        {this.props.children &&
+          <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}}>
+            {this.props.children}
+          </Popover>
+        }
       </button>
     );
   }
@@ -52,6 +77,7 @@ class ProductButton extends PseudoClassComponent {
 
 
 ProductButton.propTypes = {
+  active: PropTypes.bool
 };
 
 ProductButton.defaultProps = {

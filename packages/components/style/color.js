@@ -34,6 +34,7 @@ export const torchRed = '#ff1e1e';
 // Should they have cuter names?
 export const sidebarBackgroundBlue = '#192534';
 export const sidebarIcon = '#7088A5';
+export const sidebarPopover = '#2E435E';
 
 const colors = {
   curiousBlue,
@@ -65,6 +66,7 @@ const colors = {
   torchRed,
   sidebarBackgroundBlue,
   sidebarIcon,
+  sidebarPopover,
 };
 
 export default colors;
