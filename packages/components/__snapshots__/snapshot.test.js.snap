@@ -14483,6 +14483,249 @@ exports[`Snapshots InputTime with value set 1`] = `
 </span>
 `;
 
+exports[`Snapshots InputWeekday default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <select
+      disabled={undefined}
+      onChange={[Function]}
+      style={
+        Object {
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": "1rem",
+          "marginTop": 0,
+        }
+      }
+      value={undefined}
+    >
+      <optgroup
+        label="Choose days"
+      >
+        <option
+          value="everyday"
+        >
+          Every Day
+        </option>
+        <option
+          value="weekdays"
+        >
+          Weekdays
+        </option>
+        <option
+          value="weekends"
+        >
+          Weekends
+        </option>
+        <option
+          value="mon"
+        >
+          Monday
+        </option>
+        <option
+          value="tue"
+        >
+          Tuesday
+        </option>
+        <option
+          value="wed"
+        >
+          Wednesday
+        </option>
+        <option
+          value="thu"
+        >
+          Thursday
+        </option>
+        <option
+          value="fri"
+        >
+          Friday
+        </option>
+        <option
+          value="sat"
+        >
+          Saturday
+        </option>
+        <option
+          value="sun"
+        >
+          Sunday
+        </option>
+      </optgroup>
+    </select>
+  </div>
+</span>
+`;
+
+exports[`Snapshots InputWeekday with form submitting 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <select
+      disabled={true}
+      onChange={[Function]}
+      style={
+        Object {
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": "1rem",
+          "marginTop": 0,
+        }
+      }
+      value="wed"
+    >
+      <optgroup
+        label="Choose days"
+      >
+        <option
+          value="everyday"
+        >
+          Every Day
+        </option>
+        <option
+          value="weekdays"
+        >
+          Weekdays
+        </option>
+        <option
+          value="weekends"
+        >
+          Weekends
+        </option>
+        <option
+          value="mon"
+        >
+          Monday
+        </option>
+        <option
+          value="tue"
+        >
+          Tuesday
+        </option>
+        <option
+          value="wed"
+        >
+          Wednesday
+        </option>
+        <option
+          value="thu"
+        >
+          Thursday
+        </option>
+        <option
+          value="fri"
+        >
+          Friday
+        </option>
+        <option
+          value="sat"
+        >
+          Saturday
+        </option>
+        <option
+          value="sun"
+        >
+          Sunday
+        </option>
+      </optgroup>
+    </select>
+  </div>
+</span>
+`;
+
+exports[`Snapshots InputWeekday with value set 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <select
+      disabled={undefined}
+      onChange={[Function]}
+      style={
+        Object {
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": "1rem",
+          "marginTop": 0,
+        }
+      }
+      value="tue"
+    >
+      <optgroup
+        label="Choose days"
+      >
+        <option
+          value="everyday"
+        >
+          Every Day
+        </option>
+        <option
+          value="weekdays"
+        >
+          Weekdays
+        </option>
+        <option
+          value="weekends"
+        >
+          Weekends
+        </option>
+        <option
+          value="mon"
+        >
+          Monday
+        </option>
+        <option
+          value="tue"
+        >
+          Tuesday
+        </option>
+        <option
+          value="wed"
+        >
+          Wednesday
+        </option>
+        <option
+          value="thu"
+        >
+          Thursday
+        </option>
+        <option
+          value="fri"
+        >
+          Friday
+        </option>
+        <option
+          value="sat"
+        >
+          Saturday
+        </option>
+        <option
+          value="sun"
+        >
+          Sunday
+        </option>
+      </optgroup>
+    </select>
+  </div>
+</span>
+`;
+
 exports[`Snapshots Link default 1`] = `
 <span>
   <a

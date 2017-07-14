@@ -7,6 +7,7 @@ export Input from './Input';
 export InputDate from './InputDate';
 export InputEmail from './InputEmail';
 export InputPassword from './InputPassword';
+export InputWeekday from './InputWeekday';
 export InputTime from './InputTime';
 export * from './Icon/Icons';
 export IdTag from './IdTag';

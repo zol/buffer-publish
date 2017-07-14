@@ -125,7 +125,12 @@ const InputTime = ({
         {genArray(0, 59).map(min =>
           <option key={min} value={min}>{leftPadTimeUnit(min)}</option>)}
       </select>
-      { select24Hours ? null : renderAmPm({ disabled, noStyle, onChange, submitting, value }) }
+      {
+        select24Hours ?
+        null
+        :
+        renderAmPm({ disabled, noStyle, onChange, submitting, value })
+      }
     </div>
   );
 };
