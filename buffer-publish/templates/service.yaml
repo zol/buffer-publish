@@ -22,7 +22,7 @@ spec:
   - targetPort: {{ .Values.service.internalPort }}
   {{ if .Values.ingress.enabled }}
     port: {{ .Values.service.externalPort }}
-  {{ esle }}
+  {{ else }}
     port: {{ .Values.service.externalTLSPort }}
   {{ end }}
     protocol: TCP
