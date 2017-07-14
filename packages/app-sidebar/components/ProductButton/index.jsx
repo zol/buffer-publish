@@ -57,7 +57,7 @@ class ProductButton extends PseudoClassComponent {
       <button
         style={style}
         onMouseEnter={() => { clearTimeout(this.onMouseLeaveTimeout); this.handleMouseEnter(); }}
-        onMouseLeave={() => { this.onMouseLeaveTimeout = setTimeout(() => this.handleMouseLeave(), 250); }}
+        onMouseLeave={() => { this.onMouseLeaveTimeout = setTimeout(() => this.handleMouseLeave(), this.props.children ? 250 : 0); }}
         onClick={() => { this.setState({ clicked: !this.state.clicked }); }}
         onFocus={() => this.handleFocus()}
         onBlur={() => this.handleBlur()}

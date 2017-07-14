@@ -5,7 +5,8 @@ import {
   BufferIcon,
   PublishIcon,
   ReplyIcon,
-  AnalyzeIcon
+  AnalyzeIcon,
+  SupportIcon
 } from '@bufferapp/components';
 
 import ProductButton from '../ProductButton';
@@ -56,8 +57,7 @@ const AppSidebar = ({
     </ProductButton>
     <div style={{marginTop: 'auto'}}>
       <ProductButton
-        icon={<AnalyzeIcon />}
-        active={activeProduct === 'analyze'}
+        icon={<SupportIcon />}
       ></ProductButton>
     </div>
   </div>
