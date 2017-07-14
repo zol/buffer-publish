@@ -6,6 +6,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "test": "if [ -n \"$CI\" ]; then npm run init; fi && lerna run test",
+    "test-update": "lerna run test-update",
     "init": "npm install && lerna bootstrap",
     "start": "cd ./packages/server/ && npm start",
     "publish": "echo \"will eventually run: lerna publish\"",

@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Divider } from '@bufferapp/components';
+import {
+  Divider,
+  Text,
+} from '@bufferapp/components';
 
 const headerStyle = {
   marginBottom: '1.5rem',
@@ -17,7 +20,8 @@ const ProfileSettings = ({
   return (
     <div>
       <div style={headerStyle}>
-        <Divider color={'black'}>{settingsHeader}</Divider>
+        <Text>{settingsHeader}</Text>
+        <Divider />
         <div>Test copy</div>
       </div>
     </div>

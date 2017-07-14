@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { PostList } from '@bufferapp/publish-shared-components';
-import { Divider } from '@bufferapp/components';
+import {
+  Divider,
+  Text,
+} from '@bufferapp/components';
 
 const headerStyle = {
   marginBottom: '1.5rem',
@@ -20,7 +23,8 @@ const SentPosts = ({
   return (
     <div>
       <div style={headerStyle}>
-        <Divider color={'black'}>{header}</Divider>
+        <Text>{header}</Text>
+        <Divider />
       </div>
       <PostList
         listHeader={listHeader}

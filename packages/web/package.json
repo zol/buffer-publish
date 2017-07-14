@@ -27,7 +27,8 @@
     "@bufferapp/queue": "0.0.1",
     "@bufferapp/sent": "0.0.1",
     "@bufferapp/settings": "0.0.1",
-    "@bufferapp/async-data-fetch": "0.0.1"
+    "@bufferapp/async-data-fetch": "0.0.1",
+    "@bufferapp/profile-sidebar": "0.0.1"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {

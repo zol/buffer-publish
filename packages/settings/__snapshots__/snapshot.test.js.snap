@@ -11,28 +11,31 @@ exports[`Snapshots ProfileSettings default 1`] = `
         }
       }
     >
-      <div>
-        <span
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
           }
-        >
-          Your posting schedule for @joelgascoigne
-        </span>
-        <hr
-          style={
-            Object {
-              "border": "0.063rem solid #e6ebef",
-              "width": "100%",
-            }
+        }
+      >
+        Your posting schedule for @joelgascoigne
+      </span>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0.5rem",
+            "width": "100%",
           }
-        />
-      </div>
+        }
+      />
       <div>
         Test copy
       </div>

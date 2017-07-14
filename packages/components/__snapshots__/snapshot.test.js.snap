@@ -2008,72 +2008,80 @@ exports[`Snapshots Card reducedPadding 1`] = `
 </span>
 `;
 
+exports[`Snapshots Divider black divider 1`] = `
+<span>
+  <hr
+    style={
+      Object {
+        "background": "#000",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`Snapshots Divider bottom margin: 5rem 1`] = `
+<span>
+  <div>
+    <hr
+      style={
+        Object {
+          "background": "#e6ebef",
+          "border": "none",
+          "boxSizing": "border-box",
+          "height": "0.063rem",
+          "marginBottom": "5rem",
+          "marginTop": "0.5rem",
+          "width": "100%",
+        }
+      }
+    />
+    <div>
+      Next Thing
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots Divider default 1`] = `
 <span>
-  <div>
-    <hr
-      style={
-        Object {
-          "border": "0.063rem solid #e6ebef",
-          "width": "100%",
-        }
+  <hr
+    style={
+      Object {
+        "background": "#e6ebef",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
       }
-    />
-  </div>
+    }
+  />
 </span>
 `;
 
-exports[`Snapshots Divider with black text 1`] = `
+exports[`Snapshots Divider top margin: 5rem 1`] = `
 <span>
-  <div>
-    <span
-      style={
-        Object {
-          "color": "#000",
-          "fontFamily": "\\"Open Sans\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-        }
+  <hr
+    style={
+      Object {
+        "background": "#e6ebef",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "5rem",
+        "width": "100%",
       }
-    >
-      Text
-    </span>
-    <hr
-      style={
-        Object {
-          "border": "0.063rem solid #e6ebef",
-          "width": "100%",
-        }
-      }
-    />
-  </div>
-</span>
-`;
-
-exports[`Snapshots Divider with text 1`] = `
-<span>
-  <div>
-    <span
-      style={
-        Object {
-          "color": "#59626a",
-          "fontFamily": "\\"Open Sans\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-        }
-      }
-    >
-      Text
-    </span>
-    <hr
-      style={
-        Object {
-          "border": "0.063rem solid #e6ebef",
-          "width": "100%",
-        }
-      }
-    />
-  </div>
+    }
+  />
 </span>
 `;
 
@@ -5257,6 +5265,45 @@ exports[`Snapshots Input with type = password 1`] = `
       type="password"
       value="user123"
     />
+  </div>
+</span>
+`;
+
+exports[`Snapshots InputAutocomplete default 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <input
+        aria-autocomplete="list"
+        aria-expanded={false}
+        autoComplete="off"
+        id="states-autocomplete"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="combobox"
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "border": "1px solid #e6ebef",
+            "borderRadius": "2px",
+            "fontSize": ".8rem",
+            "margin": "0 0 0 .5rem",
+            "padding": ".5rem",
+            "width": "318px",
+          }
+        }
+        value=""
+      />
+    </div>
   </div>
 </span>
 `;
@@ -16663,7 +16710,7 @@ exports[`Snapshots Text extra small 1`] = `
 </span>
 `;
 
-exports[`Snapshots Text large 1`] = `
+exports[`Snapshots Text extra-large 1`] = `
 <span>
   <span
     style={
@@ -16671,6 +16718,23 @@ exports[`Snapshots Text large 1`] = `
         "color": "#59626a",
         "fontFamily": "\\"Open Sans\\", sans-serif",
         "fontSize": "2rem",
+        "fontWeight": 400,
+      }
+    }
+  >
+    The quick brown fox jumps over the lazy dog
+  </span>
+</span>
+`;
+
+exports[`Snapshots Text large 1`] = `
+<span>
+  <span
+    style={
+      Object {
+        "color": "#59626a",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "1.25rem",
         "fontWeight": 400,
       }
     }

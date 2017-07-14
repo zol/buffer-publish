@@ -1,31 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Text from '../Text';
 import {
   borderWidth,
 } from '../style/border';
-import {
-  mystic,
-} from '../style/color';
-
-const dividerStyle = {
-  border: `${borderWidth} solid ${mystic}`,
-  width: '100%',
-};
+import colors from '../style/color';
 
 const Divider = ({
-  children,
   color,
-  size,
+  marginTop,
+  marginBottom,
 }) =>
-  (<div>
-    {children && <Text size={size} color={color}>{children}</Text>}
-    <hr style={dividerStyle} />
-  </div>
-  );
+  <hr
+    style={{
+      border: 'none',
+      height: `${borderWidth}`,
+      background: colors[color],
+      width: '100%',
+      boxSizing: 'border-box',
+      marginTop,
+      marginBottom,
+    }}
+  />;
 
 Divider.propTypes = {
-  children: PropTypes.string,
   color: PropTypes.oneOf([
     'appdotnet',
     'aquaHaze',
@@ -52,13 +49,14 @@ Divider.propTypes = {
     'twitter',
     'white',
   ]),
-  size: PropTypes.string,
+  marginTop: PropTypes.string,
+  marginBottom: PropTypes.string,
 };
 
 Divider.defaultProps = {
-  children: undefined,
-  color: undefined,
-  size: undefined,
+  color: 'mystic',
+  marginTop: '0.5rem',
+  marginBottom: '0.5rem',
 };
 
 export default Divider;
