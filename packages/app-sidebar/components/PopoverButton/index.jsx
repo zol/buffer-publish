@@ -6,7 +6,7 @@ import { curiousBlue, curiousBlueLight } from '@bufferapp/components/style/color
 import { borderRadius } from '@bufferapp/components/style/border';
 import Popover from '../Popover';
 
-class ProductButton extends PseudoClassComponent {
+class PopoverButton extends PseudoClassComponent {
   constructor() {
     super();
     this.onMouseLeaveTimeout = null;
@@ -52,35 +52,45 @@ class ProductButton extends PseudoClassComponent {
         size: { width: '20px', height: '20px' }
       }
     );
+    const a11y = { 'aria-label': this.props.label };
+    if (this.props.children) {
+      a11y['aria-haspopup'] = 'true';
+      a11y['aria-expanded'] = hoveredOrClicked;
+    };
 
     return (
       <button
         style={style}
         onMouseEnter={() => { clearTimeout(this.onMouseLeaveTimeout); this.handleMouseEnter(); }}
-        onMouseLeave={() => { this.onMouseLeaveTimeout = setTimeout(() => this.handleMouseLeave(), this.props.children ? 250 : 0); }}
+        onMouseLeave={() => { this.onMouseLeaveTimeout = setTimeout(() => this.doMouseLeave(), this.props.children ? 250 : 0); }}
         onClick={() => { this.setState({ clicked: !this.state.clicked }); }}
         onFocus={() => this.handleFocus()}
         onBlur={() => this.handleBlur()}
-        aria-haspopup={this.props.children ? true : false}
-        aria-expanded={hoveredOrClicked}
+        {...a11y}
       >
         {hoverableIcon}
-        {this.props.children &&
-          <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}}>
-            {this.props.children}
-          </Popover>
-        }
+        <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}}>
+          {this.props.children ? this.props.children : this.props.label}
+        </Popover>
       </button>
     );
+  }
+  doMouseLeave() {
+    this.handleMouseLeave();
+    this.setState({ clicked: false });
   }
 }
 
 
-ProductButton.propTypes = {
-  active: PropTypes.bool
+PopoverButton.propTypes = {
+  active: PropTypes.bool,
+  icon: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  label: PropTypes.string
 };
 
-ProductButton.defaultProps = {
+PopoverButton.defaultProps = {
+  active: false
 };
 
-export default ProductButton;
+export default PopoverButton;

@@ -10,29 +10,13 @@ import { borderRadius } from '@bufferapp/components/style/border';
 
 const arrowHeight = 14;
 const arrowWidth = 8;
-const arrowStyle = {
-  position: 'absolute',
-  top: '.42rem',
-  left: -arrowWidth + 1,
-  width: 0,
-  height: 0,
-  backgroundColor: 'transparent',
-  borderStyle: 'solid',
-  borderTopWidth: arrowHeight/2.0,
-  borderRightWidth: arrowWidth,
-  borderBottomWidth: arrowHeight/2.0,
-  borderLeftWidth: 0,
-  borderTopColor: 'transparent',
-  borderRightColor: sidebarPopover,
-  borderBottomColor: 'transparent',
-  borderLeftColor: 'transparent',
-};
 
 const Popover = ({
   children,
   visible,
   offset,
-  oneLine
+  oneLine,
+  position
 }) => {
   const style = calculateStyles({
     default: {
@@ -43,7 +27,6 @@ const Popover = ({
       padding: '.25rem .75rem',
       position: 'absolute',
       left: '100%',
-      top: offset ? offset.top : 0,
       marginLeft: offset ? offset.left : 0,
       boxShadow: '0 1px 2px 0 rgba(0,0,0,0.50)'
     },
@@ -52,11 +35,50 @@ const Popover = ({
     },
     oneLine: {
       whiteSpace: 'nowrap'
+    },
+    positionAbove: {
+      bottom: '100%',
+      marginBottom: '-29px'
+    },
+    positionBelow: {
+      top: offset ? offset.top : 0,
     }
   }, {
     hidden: !visible,
+    positionAbove: position === 'above',
+    positionBelow: position === 'below',
     oneLine
   });
+
+  const arrowStyle = calculateStyles({
+    default: {
+      position: 'absolute',
+      left: -arrowWidth + 1,
+      width: 0,
+      height: 0,
+      backgroundColor: 'transparent',
+      borderStyle: 'solid',
+      borderTopWidth: arrowHeight/2.0,
+      borderRightWidth: arrowWidth,
+      borderBottomWidth: arrowHeight/2.0,
+      borderLeftWidth: 0,
+      borderTopColor: 'transparent',
+      borderRightColor: sidebarPopover,
+      borderBottomColor: 'transparent',
+      borderLeftColor: 'transparent',
+    },
+    positionAbove: {
+      top: '100%',
+      marginTop: '-20px'
+    },
+    positionBelow: {
+      top: '6px',
+    }
+  }, {
+    positionAbove: position === 'above',
+    positionBelow: position === 'below',
+  });
+
   return (
     <div style={style}>
       <span style={arrowStyle}></span>
@@ -73,12 +95,14 @@ Popover.propTypes = {
   offset: PropTypes.shape({
     left: PropTypes.string,
     top: PropTypes.string
-  })
+  }),
+  position: PropTypes.oneOf(['above', 'below'])
 };
 
 Popover.defaultProps = {
   visible: false,
-  oneLine: true
+  oneLine: true,
+  position: 'above'
 };
 
 export default Popover;

@@ -6,10 +6,10 @@ import {
   PublishIcon,
   ReplyIcon,
   AnalyzeIcon,
-  SupportIcon
+  QuestionIcon
 } from '@bufferapp/components';
 
-import ProductButton from '../ProductButton';
+import PopoverButton from '../PopoverButton';
 
 import { calculateStyles } from '@bufferapp/components/lib/utils';
 import { sidebarBackgroundBlue } from '@bufferapp/components/style/color';
@@ -30,37 +30,26 @@ const AppSidebar = ({
   translations,
   activeProduct
 }) => (
-  <div style={style}>
+  <nav style={style} aria-label='sidebar'>
+    {/* TODO: Move the following `div` into a SidebarLogo component to be more clean, handle linking, etc. */}
     <div style={{marginBottom: '1rem'}}>
       <BufferIcon
         color={'white'}
         size={{width: '27px', height: '27px'}}
       />
     </div>
-    <ProductButton
-      icon={<PublishIcon />}
-      active={activeProduct === 'publish'}
-    >
-      Publish
-    </ProductButton>
-    <ProductButton
-      icon={<ReplyIcon />}
-      active={activeProduct === 'reply'}
-    >
-      Reply
-    </ProductButton>
-    <ProductButton
-      icon={<AnalyzeIcon />}
-      active={activeProduct === 'analyze'}
-    >
-      Analyze (Coming Soon)
-    </ProductButton>
+
+    <PopoverButton icon={<PublishIcon />} active={activeProduct === 'publish'} label='Publish' />
+    <PopoverButton icon={<ReplyIcon />} active={activeProduct === 'reply'} label='Reply' />
+    <PopoverButton icon={<AnalyzeIcon />} active={activeProduct === 'analyze'} label='Analyze (Coming Soon)' />
+
+    {/* marginTop: auto ensures this section sticks to the bottom (flexbox) */}
     <div style={{marginTop: 'auto'}}>
-      <ProductButton
-        icon={<SupportIcon />}
-      ></ProductButton>
+      <PopoverButton icon={<QuestionIcon />} label='Help and Support'>
+        Wow, ok!
+      </PopoverButton>
     </div>
-  </div>
+  </nav>
 );
 
 AppSidebar.propTypes = {
