@@ -19,8 +19,12 @@ spec:
   type: LoadBalancer
   {{ end }}
   ports:
-  - port: {{ .Values.service.externalPort }}
-    targetPort: {{ .Values.service.internalPort }}
+  - targetPort: {{ .Values.service.internalPort }}
+  {{ if .Values.ingress.enabled }}
+    port: {{ .Values.service.externalPort }}
+  {{ else }}
+    port: {{ .Values.service.externalTLSPort }}
+  {{ end }}
     protocol: TCP
     name: {{ .Values.service.name }}
   selector:
