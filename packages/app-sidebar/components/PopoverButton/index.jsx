@@ -27,21 +27,22 @@ class PopoverButton extends PseudoClassComponent {
         cursor: 'pointer',
         position: 'relative'
       },
-      active: {
-        background: curiousBlue,
-        color: 'white'
-      },
       focused: {
         outline: 'none',
         boxShadow: `0 0 2px 3px ${curiousBlueLight}`
       },
-      hovered: {
+      active: {
+        background: curiousBlue,
+        color: 'white'
       }
     }, {
-      hovered: this.state.hovered,
       focused: this.state.focused,
-      active: this.props.active,
+      active: this.props.active
     });
+
+    const iconWrapperStyle = this.props.large ? {
+      transform: 'scale(1.5)'
+    } : {};
 
     const hoveredOrActiveOrFocused = this.state.hovered || this.props.active || this.state.focused;
     const hoveredOrClicked = this.state.hovered || this.state.clicked;
@@ -68,7 +69,9 @@ class PopoverButton extends PseudoClassComponent {
         onBlur={() => this.handleBlur()}
         {...a11y}
       >
-        {hoverableIcon}
+        <div style={iconWrapperStyle}>
+          {hoverableIcon}
+        </div>
         <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}}>
           {this.props.children ? this.props.children : this.props.label}
         </Popover>
@@ -86,11 +89,13 @@ PopoverButton.propTypes = {
   active: PropTypes.bool,
   icon: PropTypes.node.isRequired,
   children: PropTypes.node,
-  label: PropTypes.string
+  label: PropTypes.string,
+  large: PropTypes.bool
 };
 
 PopoverButton.defaultProps = {
-  active: false
+  active: false,
+  large: false
 };
 
 export default PopoverButton;

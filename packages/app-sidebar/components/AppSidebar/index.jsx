@@ -6,7 +6,8 @@ import {
   PublishIcon,
   ReplyIcon,
   AnalyzeIcon,
-  QuestionIcon
+  QuestionIcon,
+  AvatarIcon
 } from '@bufferapp/components';
 
 import PopoverButton from '../PopoverButton';
@@ -47,6 +48,9 @@ const AppSidebar = ({
     <div style={{marginTop: 'auto'}}>
       <PopoverButton icon={<QuestionIcon />} label='Help and Support'>
         Wow, ok!
+      </PopoverButton>
+      <PopoverButton icon={<AvatarIcon />} label='My Account' large>
+        This is my account stuff! ✌️
       </PopoverButton>
     </div>
   </nav>
