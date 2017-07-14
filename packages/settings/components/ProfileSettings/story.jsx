@@ -4,6 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import ProfileSettings from './index';
 import {
   settingsHeader,
+  days,
 } from './settingsData';
 
 storiesOf('ProfileSettings')
@@ -11,5 +12,6 @@ storiesOf('ProfileSettings')
   .add('default', () => (
     <ProfileSettings
       settingsHeader={settingsHeader}
+      days={days}
     />
   ));

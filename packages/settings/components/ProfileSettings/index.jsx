@@ -5,6 +5,9 @@ import {
   Text,
 } from '@bufferapp/components';
 
+import {
+  ScheduleTable,
+} from '@bufferapp/publish-shared-components';
 const headerStyle = {
   marginBottom: '1.5rem',
   width: '100%',
@@ -13,16 +16,19 @@ const headerStyle = {
 const ProfileSettings = ({
   settingsHeader,
   loading,
+  days
 }) => {
   if (loading) {
     return (<div>Loading...</div>);
   }
+  console.log('days', days);
   return (
     <div>
       <div style={headerStyle}>
         <Text>{settingsHeader}</Text>
         <Divider />
         <div>Test copy</div>
+        <ScheduleTable day={days} />
       </div>
     </div>
   );
