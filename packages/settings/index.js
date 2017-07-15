@@ -9,6 +9,7 @@ export default connect(
     loading: state.settings.loading,
     settingsHeader: state.settings.settingsHeader,
     translations: state.i18n.translations.settings, // all package translations
+    days: state.settings.days,
   }),
 )(ProfileSettings);
 

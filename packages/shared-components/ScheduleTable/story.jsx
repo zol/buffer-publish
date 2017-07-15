@@ -64,35 +64,35 @@ storiesOf('ScheduleTable')
   .addDecorator(checkA11y)
   .add('default', () => (
     <ScheduleTable
-      day={days}
+      days={days}
     />
   ))
   .add('disabled', () => (
     <ScheduleTable
-      day={days}
+      days={days}
       disabled
     />
   ))
   .add('24-hour time setting', () => (
     <ScheduleTable
-      day={days}
+      days={days}
       select24Hours
     />
   ))
   .add('24-hour time setting, disabled', () => (
     <ScheduleTable
-      day={days}
+      days={days}
       disabled
       select24Hours
     />
   ))
   .add('single time', () => (
     <ScheduleTable
-      day={daysSingleTime}
+      days={daysSingleTime}
     />
   ))
   .add('no times', () => (
     <ScheduleTable
-      day={daysNoTimes}
+      days={daysNoTimes}
     />
   ));

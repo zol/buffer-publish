@@ -6,9 +6,6 @@ import SentPosts from '@bufferapp/sent';
 import ProfileSettings from '@bufferapp/settings';
 import TabNavigation from '@bufferapp/tabs';
 import ProfileSidebar from '@bufferapp/profile-sidebar';
-import {
-  days,
-} from '@bufferapp/settings/components/ProfileSettings/settingsData';
 
 const profilePageStyle = {
   display: 'flex',
@@ -79,7 +76,7 @@ const TabContent = ({ tabId }) => {
       return (
         <ProfileSettings
           settingsHeader
-          day={days}
+          day
         />
       );
     default:

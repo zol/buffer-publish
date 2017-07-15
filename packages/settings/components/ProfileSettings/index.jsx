@@ -8,6 +8,7 @@ import {
 import {
   ScheduleTable,
 } from '@bufferapp/publish-shared-components';
+
 const headerStyle = {
   marginBottom: '1.5rem',
   width: '100%',
@@ -16,7 +17,7 @@ const headerStyle = {
 const ProfileSettings = ({
   settingsHeader,
   loading,
-  days
+  days,
 }) => {
   if (loading) {
     return (<div>Loading...</div>);
@@ -28,15 +29,22 @@ const ProfileSettings = ({
         <Text>{settingsHeader}</Text>
         <Divider />
         <div>Test copy</div>
-        <ScheduleTable day={days} />
+        <ScheduleTable days={days} />
       </div>
     </div>
   );
 };
 
+// TODO: finish filling out days propTypes
 ProfileSettings.propTypes = {
   settingsHeader: PropTypes.string.isRequired,
   loading: PropTypes.bool.isRequired,
+  days: PropTypes.arrayOf(
+    PropTypes.shape({
+      dayName: PropTypes.string,
+      postingTimesTotal: PropTypes.number,
+    }),
+  ).isRequired,
 };
 
 ProfileSettings.defaultProps = {

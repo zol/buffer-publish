@@ -21,13 +21,13 @@ const tableColumnWrapperStyle = {
 };
 
 const ScheduleTable = ({
-  day,
+  days,
   disabled,
   select24Hours,
 }) => (
   <div style={tableStyle}>
     {
-      day.map(({
+      days.map(({
         dayName,
         postingTimesTotal,
         times,
@@ -55,7 +55,7 @@ ScheduleTable.defaultProps = {
 };
 
 ScheduleTable.propTypes = {
-  day: PropTypes.arrayOf(
+  days: PropTypes.arrayOf(
     PropTypes.shape({
       dayName: PropTypes.string,
       postingTimesTotal: PropTypes.number,
