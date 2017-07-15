@@ -10,3 +10,4 @@ export MultipleImagesPost from './MultipleImagesPost';
 export PostList from './PostList';
 export TextPost from './TextPost';
 export VideoPost from './VideoPost';
+export ScheduleTable from './ScheduleTable';
