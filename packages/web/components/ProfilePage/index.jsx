@@ -76,6 +76,7 @@ const TabContent = ({ tabId }) => {
       return (
         <ProfileSettings
           settingsHeader
+          days
         />
       );
     default:

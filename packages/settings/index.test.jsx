@@ -10,6 +10,7 @@ import Settings, {
 import ProfileSettings from './components/ProfileSettings';
 import {
   settingsHeader,
+  days,
 } from './components/ProfileSettings/settingsData';
 
 const storeFake = state => ({
@@ -25,6 +26,7 @@ describe('Settings', () => {
       settings: {
         loading: false,
         settingsHeader,
+        days,
       },
       i18n: {
         translations: {

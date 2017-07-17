@@ -1,5 +1,6 @@
 // import { actionTypes as asyncDataActionTypes } from '@bufferapp/async-data-fetch';
 import {
+  days,
   settingsHeader,
 } from './components/ProfileSettings/settingsData';
 
@@ -10,6 +11,7 @@ export const actionTypes = {
 const initialState = {
   settingsHeader,
   loading: false,
+  days,
 };
 
 export default (state = initialState, action) => {

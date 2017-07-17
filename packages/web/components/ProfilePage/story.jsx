@@ -21,4 +21,14 @@ storiesOf('ProfilePage')
         },
       }}
     />
+  ))
+  .add('should render settings', () => (
+    <ProfilePage
+      match={{
+        params: {
+          profileId: 'someProfileId',
+          tabId: 'settings',
+        },
+      }}
+    />
   ));
