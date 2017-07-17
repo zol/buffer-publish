@@ -1,24 +1,21 @@
 
 export const settingsHeader = 'Your posting schedule for @joelgascoigne';
-
-const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
 const times = [
   {
     value: {
       hours: 9,
       minutes: 41,
     },
-    onChange: console.log('on-change'),
-    onRemoveTimeClick: console.log('on-remove-time-click'),
+    onChange: console.log('on-change'), //eslint-disable-line
+    onRemoveTimeClick: console.log('on-remove-time-click'), //eslint-disable-line
   },
   {
     value: {
       hours: 19,
       minutes: 0,
     },
-    onChange: console.log('on change'),
-    onRemoveTimeClick: console.log('on-remove-time-click'),
+    onChange: console.log('on change'), //eslint-disable-line
+    onRemoveTimeClick: console.log('on-remove-time-click'), //eslint-disable-line
   },
 ];
 export const days = [
