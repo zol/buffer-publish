@@ -5,10 +5,21 @@ export const actionTypes = {
   FETCH_FAIL: 'FETCH_FAIL',
 };
 
+// TODO: grab the token from the cookie at init
 const initialState = {};
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case `login_${actionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        token: action.result.token,
+      };
+    case `logout_${actionTypes.FETCH_SUCCESS}`:
+    case `logout_${actionTypes.FETCH_FAIL}`: {
+      const { token, ...newState } = state;
+      return newState;
+    }
     default:
       return state;
   }

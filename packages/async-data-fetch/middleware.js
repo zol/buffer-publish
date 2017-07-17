@@ -12,21 +12,27 @@ export default (store) => {
     switch (action.type) {
       case actionTypes.FETCH: {
         const id = counter++; // eslint-disable-line no-plusplus
+        const args = {
+          ...action.args,
+          // assumes using the asyncDataFetch key
+          // TODO: might want to think about exporting a key
+          token: store.getState().asyncDataFetch.token,
+        };
         store.dispatch(actions.fetchStart({
           name: action.name,
-          args: action.args,
+          args,
           id,
         }));
-        rpc.call(action.name, action.args)
+        rpc.call(action.name, args)
           .then(result => store.dispatch(actions.fetchSuccess({
             name: action.name,
-            args: action.args,
+            args,
             id,
             result,
           })))
           .catch(error => store.dispatch(actions.fetchFail({
             name: action.name,
-            args: action.args,
+            args,
             id,
             error: error.message,
           })));

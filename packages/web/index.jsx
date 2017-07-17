@@ -30,9 +30,6 @@ window.login = ({
 
 window.logout = () => store.dispatch(dataActions.fetch({
   name: 'logout',
-  args: {
-    token: store.getState().login.sessionToken,
-  },
 }));
 
 const renderApp = (AppComponent) => {
