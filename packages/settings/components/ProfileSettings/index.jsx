@@ -22,7 +22,6 @@ const ProfileSettings = ({
   if (loading) {
     return (<div>Loading...</div>);
   }
-  console.log('days', days);
   return (
     <div>
       <div style={headerStyle}>
