@@ -9,7 +9,12 @@ storiesOf('InputAutocomplete')
   .addDecorator(checkA11y)
   .add('default', () => (
     <InputAutocomplete
-      items={getStates()} onChange={action('change')} onSelect={action('select-item')}
-      value={''} sortItems={sortStates}
+      input={{
+        onChange: action('on-change'),
+        value: '',
+      }}
+      items={getStates()}
+      onSelect={action('select-item')}
+      sortItems={sortStates}
     />
   ));

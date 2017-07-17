@@ -1,7 +1,7 @@
 {
   "name": "@bufferapp/settings",
   "version": "0.0.1",
-  "description": "Sent Posts package",
+  "description": "Settings package",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",

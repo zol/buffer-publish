@@ -4,6 +4,7 @@ export Card from './Card';
 export Divider from './Divider';
 export Icon from './Icon';
 export Input from './Input';
+export InputAutocomplete from './InputAutocomplete';
 export InputDate from './InputDate';
 export InputEmail from './InputEmail';
 export InputPassword from './InputPassword';

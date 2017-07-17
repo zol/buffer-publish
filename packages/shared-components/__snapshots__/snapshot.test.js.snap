@@ -58938,6 +58938,99 @@ exports[`Snapshots TextPost sent 1`] = `
 </span>
 `;
 
+exports[`Snapshots TimezoneInputForm default 1`] = `
+<span>
+  <form>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "marginBottom": "0.5rem",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "marginBottom": "0.5rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#000",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 300,
+            }
+          }
+        >
+          Timezone
+        </span>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexGrow": 1,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexGrow": 1,
+            }
+          }
+        >
+          <div>
+            <div>
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-expanded={false}
+                  autoComplete="off"
+                  id="states-autocomplete"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  role="combobox"
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "border": "1px solid #e6ebef",
+                      "borderRadius": "2px",
+                      "fontSize": ".8rem",
+                      "margin": "0 0 0 0",
+                      "padding": ".5rem",
+                      "width": "318px",
+                    }
+                  }
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</span>
+`;
+
 exports[`Snapshots VideoPost error 1`] = `
 <span>
   <div

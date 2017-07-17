@@ -14,9 +14,11 @@ const matchValueToItem = (item, value) =>
   item.toLowerCase().indexOf(value.toLowerCase()) !== -1;
 
 const InputAutocomplete = ({
-  onChange,
+  input: {
+    value,
+    onChange,
+  },
   onSelect,
-  value,
   items,
   sortItems,
 }) => {
@@ -48,7 +50,7 @@ const InputAutocomplete = ({
 
   const inputStyle = {
     width: '318px',
-    margin: '0 0 0 .5rem',
+    margin: '0 0 0 0',
     padding: '.5rem',
     fontSize: '.8rem',
     backgroundColor: '#fff',
@@ -69,7 +71,7 @@ const InputAutocomplete = ({
         value={value}
         inputProps={{ id: 'states-autocomplete', style: inputStyle }}
         items={items}
-        getItemValue={(item) => item}
+        getItemValue={item => item}
         shouldItemRender={matchValueToItem}
         sortItems={sortItems}
         onChange={onChange}
@@ -82,10 +84,12 @@ const InputAutocomplete = ({
 };
 
 InputAutocomplete.propTypes = {
+  input: PropTypes.shape({
+    onChange: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+  }).isRequired,
   items: PropTypes.arrayOf(PropTypes.string),
-  onChange: PropTypes.func.isRequired,
   onSelect: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
   sortItems: PropTypes.func.isRequired,
 };
 
