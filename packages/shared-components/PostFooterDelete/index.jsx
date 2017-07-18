@@ -4,6 +4,7 @@ import {
   Button,
 } from '@bufferapp/components';
 import HoverableText from '../HoverableText';
+import colors from '@bufferapp/components/style/color';
 
 const postButtonDeleteStyle = {
   marginLeft: '0.5rem',
@@ -71,32 +72,7 @@ PostFooterDelete.propTypes = {
   onCancelConfirmClick: PropTypes.func.isRequired,
   onDeleteConfirmClick: PropTypes.func.isRequired,
   onDeleteClick: PropTypes.func.isRequired,
-  color: PropTypes.oneOf([
-    'appdotnet',
-    'aquaHaze',
-    'black',
-    'curiousBlue',
-    'curiousBlueLight',
-    'curiousBlueUltraLight',
-    'denim',
-    'facebook',
-    'geyser',
-    'googleplus',
-    'linkedin',
-    'mystic',
-    'nevada',
-    'outerSpace',
-    'outerSpaceLight',
-    'outerSpaceUltraLight',
-    'pinterest',
-    'saffron',
-    'shamrock',
-    'shuttleGray',
-    'toryBlue',
-    'torchRed',
-    'twitter',
-    'white',
-  ]),
+  color: PropTypes.oneOf(Object.keys(colors)),
 };
 
 PostFooterDelete.defaultProps = {
