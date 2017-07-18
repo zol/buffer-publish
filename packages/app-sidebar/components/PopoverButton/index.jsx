@@ -12,7 +12,7 @@ class PopoverButton extends PseudoClassComponent {
     this.onMouseLeaveTimeout = null;
     this.state = {
       ...this.state,
-      clicked: false
+      clicked: false,
     };
   }
   render() {
@@ -25,26 +25,26 @@ class PopoverButton extends PseudoClassComponent {
         margin: '16px 16px 16px 16px',
         borderRadius,
         cursor: 'pointer',
-        position: 'relative'
+        position: 'relative',
       },
       focused: {
         outline: 'none',
-        boxShadow: `0 0 0 2px ${sidebarBackgroundBlue}, 0 0 2px 3px ${curiousBlueLight}`
+        boxShadow: `0 0 0 2px ${sidebarBackgroundBlue}, 0 0 2px 3px ${curiousBlueLight}`,
       },
       active: {
         background: curiousBlue,
-        color: 'white'
-      }
+        color: 'white',
+      },
     }, {
       focused: this.state.focused,
-      active: this.props.active
+      active: this.props.active,
     });
 
     const iconWrapperStyle = this.props.large ? {
-      transform: 'scale(1.5)'
+      transform: 'scale(1.5)',
     } : {
       width: '20px',
-      height: '20px'
+      height: '20px',
     };
 
     const hoveredOrActiveOrFocused = this.state.hovered || this.props.active || this.state.focused;
@@ -53,20 +53,23 @@ class PopoverButton extends PseudoClassComponent {
       this.props.icon,
       {
         color: hoveredOrActiveOrFocused ? 'white' : 'sidebarIcon',
-        size: { width: '20px', height: '20px' }
-      }
+        size: { width: '20px', height: '20px' },
+      },
     );
     const a11y = { 'aria-label': this.props.label };
     if (this.props.children) {
       a11y['aria-haspopup'] = 'true';
       a11y['aria-expanded'] = hoveredOrClicked;
-    };
+    }
 
     return (
       <button
         style={style}
         onMouseEnter={() => { clearTimeout(this.onMouseLeaveTimeout); this.handleMouseEnter(); }}
-        onMouseLeave={() => { this.onMouseLeaveTimeout = setTimeout(() => this.doMouseLeave(), this.props.children ? 250 : 0); }}
+        onMouseLeave={() => {
+          this.onMouseLeaveTimeout =
+            setTimeout(() => this.doMouseLeave(), this.props.children ? 250 : 0);
+        }}
         onClick={() => { this.setState({ clicked: !this.state.clicked }); }}
         onFocus={() => this.handleFocus()}
         onBlur={() => this.handleBlur()}
@@ -75,7 +78,7 @@ class PopoverButton extends PseudoClassComponent {
         <div style={iconWrapperStyle}>
           {hoverableIcon}
         </div>
-        <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}} padded={!this.props.children}>
+        <Popover visible={hoveredOrClicked} offset={{ top: '3px', left: '10px' }} padded={!this.props.children}>
           {this.props.children ? this.props.children : this.props.label}
         </Popover>
       </button>
@@ -93,12 +96,12 @@ PopoverButton.propTypes = {
   icon: PropTypes.node.isRequired,
   children: PropTypes.node,
   label: PropTypes.string,
-  large: PropTypes.bool
+  large: PropTypes.bool,
 };
 
 PopoverButton.defaultProps = {
   active: false,
-  large: false
+  large: false,
 };
 
 export default PopoverButton;

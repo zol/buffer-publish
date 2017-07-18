@@ -8,10 +8,10 @@ const translations = {};
 storiesOf('AppSidebar')
   .addDecorator(checkA11y)
   .add('should show app sidebar', () => (
-  	<div style={{width: '65px', height: '100%', display: 'flex'}}>
-	    <AppSidebar
-	      activeProduct='publish'
-	      translations={translations}
-	    />
+    <div style={{ width: '65px', height: '100%', display: 'flex' }}>
+      <AppSidebar
+        activeProduct="publish"
+        translations={translations}
+      />
     </div>
   ));

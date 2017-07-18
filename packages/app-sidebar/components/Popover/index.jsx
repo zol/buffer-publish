@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Text
+  Text,
 } from '@bufferapp/components';
 
 import { calculateStyles } from '@bufferapp/components/lib/utils';
@@ -17,7 +17,7 @@ const Popover = ({
   offset,
   oneLine,
   position,
-  padded
+  padded,
 }) => {
   const style = calculateStyles({
     default: {
@@ -29,30 +29,30 @@ const Popover = ({
       left: '100%',
       marginLeft: offset ? offset.left : 0,
       boxShadow: '0 1px 2px 0 rgba(0,0,0,0.50)',
-      textAlign: 'left'
+      textAlign: 'left',
     },
     hidden: {
-      display: 'none'
+      display: 'none',
     },
     oneLine: {
-      whiteSpace: 'nowrap'
+      whiteSpace: 'nowrap',
     },
     positionAbove: {
       bottom: '100%',
-      marginBottom: '-29px'
+      marginBottom: '-29px',
     },
     positionBelow: {
       top: offset ? offset.top : 0,
     },
     padded: {
       padding: '.25rem .75rem',
-    }
+    },
   }, {
     hidden: !visible,
     positionAbove: position === 'above',
     positionBelow: position === 'below',
     oneLine,
-    padded
+    padded,
   });
 
   const arrowStyle = calculateStyles({
@@ -63,9 +63,9 @@ const Popover = ({
       height: 0,
       backgroundColor: 'transparent',
       borderStyle: 'solid',
-      borderTopWidth: arrowHeight/2.0,
+      borderTopWidth: arrowHeight / 2.0,
       borderRightWidth: arrowWidth,
-      borderBottomWidth: arrowHeight/2.0,
+      borderBottomWidth: arrowHeight / 2.0,
       borderLeftWidth: 0,
       borderTopColor: 'transparent',
       borderRightColor: sidebarPopover,
@@ -74,11 +74,11 @@ const Popover = ({
     },
     positionAbove: {
       top: '100%',
-      marginTop: '-20px'
+      marginTop: '-20px',
     },
     positionBelow: {
       top: '6px',
-    }
+    },
   }, {
     positionAbove: position === 'above',
     positionBelow: position === 'below',
@@ -86,11 +86,11 @@ const Popover = ({
 
   return (
     <div style={style}>
-      <span style={arrowStyle}></span>
+      <span style={arrowStyle} />
       <Text color="white" size="small">{children}</Text>
     </div>
   );
-}
+};
 
 Popover.propTypes = {
   // translations: PropTypes.shape({}),
@@ -99,17 +99,18 @@ Popover.propTypes = {
   oneLine: PropTypes.bool,
   offset: PropTypes.shape({
     left: PropTypes.string,
-    top: PropTypes.string
+    top: PropTypes.string,
   }),
   position: PropTypes.oneOf(['above', 'below']),
-  padded: PropTypes.bool
+  padded: PropTypes.bool,
 };
 
 Popover.defaultProps = {
   visible: false,
   oneLine: true,
+  offset: { left: '0', top: '0' },
   position: 'above',
-  padded: true
+  padded: true,
 };
 
 export default Popover;

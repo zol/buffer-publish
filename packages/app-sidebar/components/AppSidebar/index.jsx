@@ -7,16 +7,17 @@ import {
   AnalyzeIcon,
   QuestionIcon,
   AvatarIcon,
-  Divider
+  Divider,
 } from '@bufferapp/components';
+
+import { calculateStyles } from '@bufferapp/components/lib/utils';
+import { sidebarBackgroundBlue } from '@bufferapp/components/style/color';
+import { navbar } from '@bufferapp/components/style/zIndex';
 
 import PopoverButton from '../PopoverButton';
 import BufferLogo from '../BufferLogo';
 import PopoverMenu from '../PopoverMenu';
 import PopoverMenuItem from '../PopoverMenuItem';
-
-import { calculateStyles } from '@bufferapp/components/lib/utils';
-import { sidebarBackgroundBlue } from '@bufferapp/components/style/color';
 
 const style = calculateStyles({
   default: {
@@ -25,25 +26,26 @@ const style = calculateStyles({
     padding: '1rem 0 0 0',
     display: 'flex',
     flex: '1',
-    flexDirection:'column',
+    flexDirection: 'column',
     justifyContent: 'center',
-  }
+    maxWidth: '65px',
+    zIndex: navbar,
+  },
 });
 
 const AppSidebar = ({
-  translations,
-  activeProduct
+  activeProduct,
 }) => (
-  <nav style={style} aria-label='sidebar' role='menubar'>
+  <nav style={style} aria-label="sidebar" role="menubar">
     <BufferLogo />
 
-    <PopoverButton icon={<PublishIcon />} active={activeProduct === 'publish'} label='Publish' />
-    <PopoverButton icon={<ReplyIcon />} active={activeProduct === 'reply'} label='Reply' />
-    <PopoverButton icon={<AnalyzeIcon />} active={activeProduct === 'analyze'} label='Analyze (Coming Soon)' />
+    <PopoverButton icon={<PublishIcon />} active={activeProduct === 'publish'} label="Publish" />
+    <PopoverButton icon={<ReplyIcon />} active={activeProduct === 'reply'} label="Reply" />
+    <PopoverButton icon={<AnalyzeIcon />} active={activeProduct === 'analyze'} label="Analyze (Coming Soon)" />
 
     {/* marginTop: auto ensures this section sticks to the bottom (flexbox) */}
-    <div style={{marginTop: 'auto'}}>
-      <PopoverButton icon={<QuestionIcon />} label='Help and Support'>
+    <div style={{ marginTop: 'auto' }}>
+      <PopoverButton icon={<QuestionIcon />} label="Help and Support">
         <PopoverMenu title="Help & Support">
           <PopoverMenuItem href="https://faq.buffer.com">FAQ</PopoverMenuItem>
           <PopoverMenuItem href="http://status.buffer.com/">Status</PopoverMenuItem>
@@ -51,11 +53,11 @@ const AppSidebar = ({
           <PopoverMenuItem href="https://buffer.com/wishlist">Wishlist</PopoverMenuItem>
         </PopoverMenu>
       </PopoverButton>
-      <PopoverButton icon={<AvatarIcon />} label='My Account' large>
+      <PopoverButton icon={<AvatarIcon />} label="My Account" large>
         <PopoverMenu>
           <PopoverMenuItem href="https://buffer.com/pricing" subtitle="Email & passwords, upgrades&hellip;">My Account</PopoverMenuItem>
           <PopoverMenuItem href="https://buffer.com/wishlist" subtitle="Notifications, time & date, apps&hellip;">Preferences</PopoverMenuItem>
-          <Divider color='sidebarBackgroundBlue' />
+          <Divider color="sidebarBackgroundBlue" />
           <PopoverMenuItem href="/logout">Sign out</PopoverMenuItem>
         </PopoverMenu>
       </PopoverButton>
@@ -65,11 +67,11 @@ const AppSidebar = ({
 
 AppSidebar.propTypes = {
   // translations: PropTypes.shape({}),
-  activeProduct: PropTypes.string.isRequired
+  activeProduct: PropTypes.string.isRequired,
 };
 
 AppSidebar.defaultProps = {
-  activeProduct: 'publish'
+  activeProduct: 'publish',
 };
 
 export default AppSidebar;

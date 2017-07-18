@@ -24,8 +24,8 @@ const PopoverMenu = ({ title, label, children }) => (
   <div style={style}>
     {title &&
       <div style={headingStyle}>
-        <Text color='white'>{title}</Text>
-        <Divider color='sidebarBackgroundBlue' marginBottom='.25rem' />
+        <Text color="white">{title}</Text>
+        <Divider color="sidebarBackgroundBlue" marginBottom=".25rem" />
       </div>
     }
     <ul role="menu" aria-label={label || title} style={listStyle}>
@@ -37,7 +37,12 @@ const PopoverMenu = ({ title, label, children }) => (
 PopoverMenu.propTypes = {
   title: PropTypes.string,
   label: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+};
+
+PopoverMenu.defaultProps = {
+  title: null,
+  label: null,
 };
 
 export default PopoverMenu;
