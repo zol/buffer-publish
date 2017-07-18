@@ -6,22 +6,16 @@ import {
 } from '@bufferapp/publish-shared-components';
 
 const TabNavigation = ({
-  activeTabId,
   profileId,
 }) =>
-  <Tabs activeTabId={activeTabId}>
-    <Tab route={`/profile/${profileId}/tab/queue`} active>Queue</Tab>
-    <Tab route={`/profile/${profileId}/tab/sent`} active>Sent Posts</Tab>
-    <Tab route={`/profile/${profileId}/tab/settings`} active>Settings</Tab>
+  <Tabs>
+    <Tab route={`/profile/${profileId}/tab/queue`}>Queue</Tab>
+    <Tab route={`/profile/${profileId}/tab/sent`}>Sent Posts</Tab>
+    <Tab route={`/profile/${profileId}/tab/settings`}>Settings</Tab>
   </Tabs>;
 
 TabNavigation.propTypes = {
-  activeTabId: PropTypes.string.isRequired,
   profileId: PropTypes.string.isRequired,
-};
-
-TabNavigation.defaultProps = {
-  activeTabId: '',
 };
 
 export default TabNavigation;

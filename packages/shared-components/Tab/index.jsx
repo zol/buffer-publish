@@ -8,7 +8,6 @@ import HoverableText from '../HoverableText';
 
 const Tab = ({
   children,
-  active,
   route,
 }) => {
   const style = {
@@ -43,13 +42,8 @@ const Tab = ({
 };
 
 Tab.propTypes = {
-  active: PropTypes.bool.isRequired,
   children: PropTypes.node,
   route: PropTypes.string.isRequired,
-};
-
-Tab.defaultProps = {
-  active: false,
 };
 
 export default Tab;
