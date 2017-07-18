@@ -3,6 +3,7 @@ import reducer from './reducer';
 import {
   settingsHeader,
   days,
+  timezones,
 } from './components/ProfileSettings/settingsData';
 
 // TODO: revert test back to unstubbed data once async data is coming in
@@ -12,6 +13,7 @@ describe('reducer', () => {
       settingsHeader,
       loading: false,
       days,
+      items: timezones,
     };
     const action = {
       type: 'INIT',

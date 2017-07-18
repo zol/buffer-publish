@@ -55,3 +55,13 @@ export const days = [
     times,
   },
 ];
+
+export const timezones = [
+  'Pacific/Midway',
+  'America/Adak',
+  'America/Anchorage',
+  'Pacific/Gambier',
+  'America/Dawson_Creek',
+  'Pacific/Auckland',
+  'Pacific/Chatham',
+];

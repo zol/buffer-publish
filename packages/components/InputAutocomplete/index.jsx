@@ -49,13 +49,13 @@ const InputAutocomplete = ({
   };
 
   const inputStyle = {
-    width: '318px',
     margin: '0 0 0 0',
     padding: '.5rem',
     fontSize: '.8rem',
     backgroundColor: '#fff',
     border: '1px solid #e6ebef',
     borderRadius: '2px',
+    width: '100%',
   };
 
   const menuStyle = {
@@ -64,7 +64,16 @@ const InputAutocomplete = ({
     border: '1px solid #e6ebef',
     borderRadius: '2px',
     boxShadow: '0 1px 2px rgba(50, 59, 67, 0.3)',
+    width: '100%',
+    position: 'absolute',
   };
+
+  const wrapperStyle = {
+    display: 'flex',
+    // flexDirection: 'column',
+    width: '100%',
+  };
+
   return (
     <div>
       <Autocomplete
@@ -78,6 +87,7 @@ const InputAutocomplete = ({
         onSelect={onSelect}
         renderItem={renderItem}
         menuStyle={menuStyle}
+        wrapperStyle={wrapperStyle}
       />
     </div>
   );

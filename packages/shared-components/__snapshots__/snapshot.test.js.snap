@@ -58988,12 +58988,19 @@ exports[`Snapshots TimezoneInputForm default 1`] = `
             }
           }
         >
-          <div>
+          <div
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
             <div>
               <div
                 style={
                   Object {
-                    "display": "inline-block",
+                    "display": "flex",
+                    "width": "100%",
                   }
                 }
               >
@@ -59016,7 +59023,7 @@ exports[`Snapshots TimezoneInputForm default 1`] = `
                       "fontSize": ".8rem",
                       "margin": "0 0 0 0",
                       "padding": ".5rem",
-                      "width": "318px",
+                      "width": "100%",
                     }
                   }
                   value=""

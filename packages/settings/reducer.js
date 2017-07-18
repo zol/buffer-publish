@@ -2,6 +2,7 @@
 import {
   days,
   settingsHeader,
+  timezones,
 } from './components/ProfileSettings/settingsData';
 
 export const actionTypes = {
@@ -12,6 +13,7 @@ const initialState = {
   settingsHeader,
   loading: false,
   days,
+  items: timezones,
 };
 
 export default (state = initialState, action) => {
