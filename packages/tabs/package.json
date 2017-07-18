@@ -30,9 +30,7 @@
   "author": "emily@buffer.com",
   "dependencies": {
     "@bufferapp/publish-shared-components": "0.0.1",
-    "@bufferapp/store": "0.0.1",
-    "react-router-dom": "^4.1.2",
-    "react-router-redux": "^4.0.8"
+    "@bufferapp/store": "0.0.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

@@ -1,16 +1,17 @@
 
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 // load the presentational component
 import TabNavigation from './components/TabNavigation';
 
 
 // default export = container
-export default connect(
+export default withRouter(connect(
   state => ({
     activeTabId: state.tabs.activeTabId,
     profileId: state.tabs.profileId,
   }),
-)(TabNavigation);
+)(TabNavigation));
 
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
