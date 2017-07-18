@@ -8,9 +8,15 @@ storiesOf('Divider')
   .add('default', () => (
     <Divider />
   ))
-  .add('with text', () => (
-    <Divider>Text</Divider>
+  .add('black divider', () => (
+    <Divider color={'black'} />
   ))
-  .add('with black text', () => (
-    <Divider color={'black'}>Text</Divider>
+  .add('top margin: 5rem', () => (
+    <Divider marginTop={'5rem'} />
+  ))
+  .add('bottom margin: 5rem', () => (
+    <div>
+      <Divider marginBottom={'5rem'} />
+      <div>Next Thing</div>
+    </div>
   ));

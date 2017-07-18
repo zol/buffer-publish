@@ -2008,72 +2008,80 @@ exports[`Snapshots Card reducedPadding 1`] = `
 </span>
 `;
 
+exports[`Snapshots Divider black divider 1`] = `
+<span>
+  <hr
+    style={
+      Object {
+        "background": "#000",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`Snapshots Divider bottom margin: 5rem 1`] = `
+<span>
+  <div>
+    <hr
+      style={
+        Object {
+          "background": "#e6ebef",
+          "border": "none",
+          "boxSizing": "border-box",
+          "height": "0.063rem",
+          "marginBottom": "5rem",
+          "marginTop": "0.5rem",
+          "width": "100%",
+        }
+      }
+    />
+    <div>
+      Next Thing
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots Divider default 1`] = `
 <span>
-  <div>
-    <hr
-      style={
-        Object {
-          "border": "0.063rem solid #e6ebef",
-          "width": "100%",
-        }
+  <hr
+    style={
+      Object {
+        "background": "#e6ebef",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "0.5rem",
+        "width": "100%",
       }
-    />
-  </div>
+    }
+  />
 </span>
 `;
 
-exports[`Snapshots Divider with black text 1`] = `
+exports[`Snapshots Divider top margin: 5rem 1`] = `
 <span>
-  <div>
-    <span
-      style={
-        Object {
-          "color": "#000",
-          "fontFamily": "\\"Open Sans\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-        }
+  <hr
+    style={
+      Object {
+        "background": "#e6ebef",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0.5rem",
+        "marginTop": "5rem",
+        "width": "100%",
       }
-    >
-      Text
-    </span>
-    <hr
-      style={
-        Object {
-          "border": "0.063rem solid #e6ebef",
-          "width": "100%",
-        }
-      }
-    />
-  </div>
-</span>
-`;
-
-exports[`Snapshots Divider with text 1`] = `
-<span>
-  <div>
-    <span
-      style={
-        Object {
-          "color": "#59626a",
-          "fontFamily": "\\"Open Sans\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-        }
-      }
-    >
-      Text
-    </span>
-    <hr
-      style={
-        Object {
-          "border": "0.063rem solid #e6ebef",
-          "width": "100%",
-        }
-      }
-    />
-  </div>
+    }
+  />
 </span>
 `;
 
@@ -5257,6 +5265,45 @@ exports[`Snapshots Input with type = password 1`] = `
       type="password"
       value="user123"
     />
+  </div>
+</span>
+`;
+
+exports[`Snapshots InputAutocomplete default 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <input
+        aria-autocomplete="list"
+        aria-expanded={false}
+        autoComplete="off"
+        id="states-autocomplete"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        role="combobox"
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "border": "1px solid #e6ebef",
+            "borderRadius": "2px",
+            "fontSize": ".8rem",
+            "margin": "0 0 0 0",
+            "padding": ".5rem",
+            "width": "318px",
+          }
+        }
+        value=""
+      />
+    </div>
   </div>
 </span>
 `;
@@ -14436,6 +14483,249 @@ exports[`Snapshots InputTime with value set 1`] = `
 </span>
 `;
 
+exports[`Snapshots InputWeekday default 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <select
+      disabled={undefined}
+      onChange={[Function]}
+      style={
+        Object {
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": "1rem",
+          "marginTop": 0,
+        }
+      }
+      value={undefined}
+    >
+      <optgroup
+        label="Choose days"
+      >
+        <option
+          value="everyday"
+        >
+          Every Day
+        </option>
+        <option
+          value="weekdays"
+        >
+          Weekdays
+        </option>
+        <option
+          value="weekends"
+        >
+          Weekends
+        </option>
+        <option
+          value="mon"
+        >
+          Monday
+        </option>
+        <option
+          value="tue"
+        >
+          Tuesday
+        </option>
+        <option
+          value="wed"
+        >
+          Wednesday
+        </option>
+        <option
+          value="thu"
+        >
+          Thursday
+        </option>
+        <option
+          value="fri"
+        >
+          Friday
+        </option>
+        <option
+          value="sat"
+        >
+          Saturday
+        </option>
+        <option
+          value="sun"
+        >
+          Sunday
+        </option>
+      </optgroup>
+    </select>
+  </div>
+</span>
+`;
+
+exports[`Snapshots InputWeekday with form submitting 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <select
+      disabled={true}
+      onChange={[Function]}
+      style={
+        Object {
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": "1rem",
+          "marginTop": 0,
+        }
+      }
+      value="wed"
+    >
+      <optgroup
+        label="Choose days"
+      >
+        <option
+          value="everyday"
+        >
+          Every Day
+        </option>
+        <option
+          value="weekdays"
+        >
+          Weekdays
+        </option>
+        <option
+          value="weekends"
+        >
+          Weekends
+        </option>
+        <option
+          value="mon"
+        >
+          Monday
+        </option>
+        <option
+          value="tue"
+        >
+          Tuesday
+        </option>
+        <option
+          value="wed"
+        >
+          Wednesday
+        </option>
+        <option
+          value="thu"
+        >
+          Thursday
+        </option>
+        <option
+          value="fri"
+        >
+          Friday
+        </option>
+        <option
+          value="sat"
+        >
+          Saturday
+        </option>
+        <option
+          value="sun"
+        >
+          Sunday
+        </option>
+      </optgroup>
+    </select>
+  </div>
+</span>
+`;
+
+exports[`Snapshots InputWeekday with value set 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <select
+      disabled={undefined}
+      onChange={[Function]}
+      style={
+        Object {
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": "1rem",
+          "marginTop": 0,
+        }
+      }
+      value="tue"
+    >
+      <optgroup
+        label="Choose days"
+      >
+        <option
+          value="everyday"
+        >
+          Every Day
+        </option>
+        <option
+          value="weekdays"
+        >
+          Weekdays
+        </option>
+        <option
+          value="weekends"
+        >
+          Weekends
+        </option>
+        <option
+          value="mon"
+        >
+          Monday
+        </option>
+        <option
+          value="tue"
+        >
+          Tuesday
+        </option>
+        <option
+          value="wed"
+        >
+          Wednesday
+        </option>
+        <option
+          value="thu"
+        >
+          Thursday
+        </option>
+        <option
+          value="fri"
+        >
+          Friday
+        </option>
+        <option
+          value="sat"
+        >
+          Saturday
+        </option>
+        <option
+          value="sun"
+        >
+          Sunday
+        </option>
+      </optgroup>
+    </select>
+  </div>
+</span>
+`;
+
 exports[`Snapshots Link default 1`] = `
 <span>
   <a
@@ -16663,7 +16953,7 @@ exports[`Snapshots Text extra small 1`] = `
 </span>
 `;
 
-exports[`Snapshots Text large 1`] = `
+exports[`Snapshots Text extra-large 1`] = `
 <span>
   <span
     style={
@@ -16671,6 +16961,23 @@ exports[`Snapshots Text large 1`] = `
         "color": "#59626a",
         "fontFamily": "\\"Open Sans\\", sans-serif",
         "fontSize": "2rem",
+        "fontWeight": 400,
+      }
+    }
+  >
+    The quick brown fox jumps over the lazy dog
+  </span>
+</span>
+`;
+
+exports[`Snapshots Text large 1`] = `
+<span>
+  <span
+    style={
+      Object {
+        "color": "#59626a",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "1.25rem",
         "fontWeight": 400,
       }
     }

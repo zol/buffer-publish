@@ -10,10 +10,11 @@ service:
   name: nginx
   type: ClusterIP
   externalPort: 80
+  externalTLSPort: 443
   internalPort: 80
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:980620087509:certificate/2ac9f9a7-b85d-4aa9-b1d1-398d7e2b8a3b
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert:  arn:aws:acm:us-east-1:980620087509:certificate/6501b96a-0a79-4898-b0a5-ec2f30015de8
 ingress:
   enabled: true
   # Used to create Ingress record (should used with service.type: ClusterIP).
@@ -35,4 +36,3 @@ resources:
     cpu: 100m
     memory: 50Mi
 branchName: master
-

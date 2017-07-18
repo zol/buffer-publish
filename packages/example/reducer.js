@@ -1,12 +1,9 @@
-import Cookie from 'js-cookie';
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {};
 
 const initialState = {
-  loggedIn: !!Cookie.get('session', {
-    domain: '.buffer.com',
-  }),
+  loggedIn: false,
 };
 
 export default (state = initialState, action) => {

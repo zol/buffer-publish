@@ -21,6 +21,9 @@ describe('middleware', () => {
     };
     const store = {
       dispatch: jest.fn(),
+      getState: () => ({
+        asyncDataFetch: {},
+      }),
     };
     const action = {
       type: actionTypes.FETCH,
@@ -43,6 +46,9 @@ describe('middleware', () => {
     };
     const store = {
       dispatch: jest.fn(),
+      getState: () => ({
+        asyncDataFetch: {},
+      }),
     };
     const action = {
       type: actionTypes.FETCH,
@@ -78,13 +84,22 @@ describe('middleware', () => {
       name,
       args,
     };
-    middleware({ dispatch: () => {} })(() => {})(action);
+    const store = {
+      dispatch: () => {},
+      getState: () => ({
+        asyncDataFetch: {},
+      }),
+    };
+    middleware(store)(() => {})(action);
     expect(RPCClient.prototype.call)
       .toBeCalledWith(name, args);
   });
   it('should dispatch a FETCH_SUCCESS action', async () => {
     const store = {
       dispatch: jest.fn(),
+      getState: () => ({
+        asyncDataFetch: {},
+      }),
     };
     const name = 'fake rpc';
     const args = {
@@ -109,6 +124,9 @@ describe('middleware', () => {
   it('should dispatch a FETCH_FAIL action', async () => {
     const store = {
       dispatch: jest.fn(),
+      getState: () => ({
+        asyncDataFetch: {},
+      }),
     };
     const name = 'fail';
     const args = {
@@ -128,6 +146,39 @@ describe('middleware', () => {
         args,
         id: 0,
         error: RPCClient.fakeError,
+      });
+  });
+  it('should pass along token if it is set', async () => {
+    const token = 'session token';
+    const store = {
+      dispatch: jest.fn(),
+      getState: () => ({
+        asyncDataFetch: {
+          token,
+        },
+      }),
+    };
+    const name = 'fake rpc';
+    const args = {
+      test: 'yes',
+    };
+    const action = {
+      type: actionTypes.FETCH,
+      name,
+      args,
+    };
+    middleware(store)(() => {})(action);
+    await sleep(); // give the event loop a chance to process promise
+    expect(store.dispatch)
+      .toBeCalledWith({
+        type: `${name}_${actionTypes.FETCH_SUCCESS}`,
+        name,
+        args: {
+          ...args,
+          token,
+        },
+        id: 0,
+        result: RPCClient.fakeResult,
       });
   });
 });
