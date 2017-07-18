@@ -8,18 +8,16 @@ import {
 const TabNavigation = ({
   activeTabId,
   profileId,
-  onTabClick,
 }) =>
   <Tabs activeTabId={activeTabId}>
-    <Tab onClick={() => onTabClick('queue', profileId)} active>Queue</Tab>
-    <Tab onClick={() => onTabClick('sent', profileId)} active>Sent Posts</Tab>
-    <Tab onClick={() => onTabClick('settings', profileId)} active>Settings</Tab>
+    <Tab route={`/profile/${profileId}/tab/queue`} active>Queue</Tab>
+    <Tab route={`/profile/${profileId}/tab/sent`} active>Sent Posts</Tab>
+    <Tab route={`/profile/${profileId}/tab/settings`} active>Settings</Tab>
   </Tabs>;
 
 TabNavigation.propTypes = {
   activeTabId: PropTypes.string.isRequired,
   profileId: PropTypes.string.isRequired,
-  onTabClick: PropTypes.func.isRequired,
 };
 
 TabNavigation.defaultProps = {

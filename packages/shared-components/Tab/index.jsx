@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import {
   curiousBlue,
 } from '@bufferapp/components/style/color';
-import {
-  Button,
-} from '@bufferapp/components';
 import {
   calculateStyles,
 } from '@bufferapp/components/lib/utils';
@@ -14,7 +12,7 @@ import HoverableText from '../HoverableText';
 const Tab = ({
   children,
   active,
-  onClick,
+  route,
 }) => {
   const style = calculateStyles({
     default: {
@@ -31,25 +29,29 @@ const Tab = ({
     active,
   });
 
+  const linkStyle = {
+    textDecoration: 'none',
+  };
+
   return (
     <div
       style={style}
     >
-      <Button noStyle onClick={onClick}>
+      <Link to={route} style={linkStyle}>
         <HoverableText
           hoverColor={'black'}
         >
           {children}
         </HoverableText>
-      </Button>
+      </Link>
     </div>
   );
 };
 
 Tab.propTypes = {
   active: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired,
   children: PropTypes.node,
+  route: PropTypes.string.isRequired,
 };
 
 Tab.defaultProps = {

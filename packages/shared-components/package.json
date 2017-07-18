@@ -21,7 +21,8 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/components": "0.5.22"
+    "@bufferapp/components": "0.5.22",
+    "react-router-dom": "^4.1.2"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
