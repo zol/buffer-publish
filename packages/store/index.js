@@ -27,13 +27,15 @@ const configureStore = (initialstate) => {
     reducers,
     initialstate,
     composeEnhancers(
+      // utitlity middlewares (producers)
+      applyMiddleware(routerMiddleware(history)),
+      applyMiddleware(asyncDataFetchMiddleware),
       applyMiddleware(loginMiddleware),
       applyMiddleware(i18nMiddleware),
+      // package middlewares (consumers)
       applyMiddleware(queueMiddleware),
       applyMiddleware(sentMiddleware),
       applyMiddleware(settingsMiddleware),
-      applyMiddleware(asyncDataFetchMiddleware),
-      applyMiddleware(routerMiddleware(history)),
       applyMiddleware(tabsMiddleware),
       applyMiddleware(exampleMiddleware),
     ),
