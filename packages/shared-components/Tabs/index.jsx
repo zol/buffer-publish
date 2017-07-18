@@ -6,6 +6,7 @@ import {
 
 const tabsStyle = {
   borderBottom: `1px solid ${geyser}`,
+  paddingTop: '21px',
 };
 
 const Tabs = ({ children }) => (

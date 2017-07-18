@@ -11,7 +11,7 @@ const Tab = ({
   route,
 }) => {
   const style = {
-    padding: '0 4px 16px 4px',
+    padding: '0px 4px 16px',
     margin: '0 8px 0 8px',
     display: 'inline-block',
     minWidth: '60px',
@@ -20,6 +20,7 @@ const Tab = ({
 
   const linkStyle = {
     textDecoration: 'none',
+    padding: '0 4px 16px',
   };
 
   const linkActiveStyle = {
