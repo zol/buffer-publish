@@ -21,8 +21,10 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
           "flex": "1",
           "flexDirection": "column",
           "justifyContent": "center",
+          "maxWidth": "65px",
           "padding": "1rem 0 0 0",
           "textAlign": "center",
+          "zIndex": 1000,
         }
       }
     >
@@ -759,7 +761,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
                 }
               >
                 <ul
-                  aria-label={undefined}
+                  aria-label={null}
                   role="menu"
                   style={
                     Object {
@@ -921,7 +923,7 @@ exports[`Snapshots Popover default 1`] = `
           "display": "inline-block",
           "left": "100%",
           "marginBottom": "-29px",
-          "marginLeft": 0,
+          "marginLeft": "0",
           "padding": ".25rem .75rem",
           "position": "absolute",
           "textAlign": "left",
