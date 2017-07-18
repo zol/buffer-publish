@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { calculateStyles } from '@bufferapp/components/lib/utils';
-import { geyser, sidebarBackgroundBlue, curiousBlueLight } from '@bufferapp/components/style/color';
+import { geyser } from '@bufferapp/components/style/color';
 import { PseudoClassComponent } from '@bufferapp/components';
 
 class PopoverMenuItem extends PseudoClassComponent {
@@ -10,30 +10,28 @@ class PopoverMenuItem extends PseudoClassComponent {
     const mainLinkStyle = {
       display: 'block',
       color: '#fff',
-      fontSize: '0.9rem'
+      fontSize: '0.9rem',
     };
     const subtitleStyle = {
       display: 'block',
       fontSize: '.7rem',
-      paddingTop: '.25rem'
+      paddingTop: '.25rem',
     };
     const style = calculateStyles({
       default: {
         display: 'block',
         color: `${geyser}`,
-        display: 'block',
         textDecoration: 'none',
         padding: '.5rem 1rem',
       },
       hovered: {
-        color: '#fff'
-      }
+        color: '#fff',
+      },
     }, {
-      hovered: this.state.hovered
+      hovered: this.state.hovered,
     });
     return (
       <li
-        role="none"
         onMouseEnter={() => this.handleMouseEnter()}
         onMouseLeave={() => this.handleMouseLeave()}
         onFocus={() => this.handleFocus()}
@@ -41,9 +39,9 @@ class PopoverMenuItem extends PseudoClassComponent {
       >
         {subtitle
           ? <a role="menuitem" href={href} style={style}>
-              <span style={mainLinkStyle}>{children}</span>
-              <span style={subtitleStyle}>{subtitle}</span>
-            </a>
+            <span style={mainLinkStyle}>{children}</span>
+            <span style={subtitleStyle}>{subtitle}</span>
+          </a>
           : <a role="menuitem" href={href} style={style}>{children}</a>
         }
       </li>

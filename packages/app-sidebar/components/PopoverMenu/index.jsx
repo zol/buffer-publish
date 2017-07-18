@@ -3,28 +3,21 @@ import PropTypes from 'prop-types';
 
 import {
   Text,
-  Divider
+  Divider,
 } from '@bufferapp/components';
 
 const style = {
-  padding: '.5rem 0'
+  padding: '.5rem 0',
 };
 
 const headingStyle = {
-  padding: '.5rem 1rem 0 1rem'
+  padding: '.5rem 1rem 0 1rem',
 };
 
 const listStyle = {
   margin: 0,
   padding: 0,
-  listStyle: 'none'
-};
-
-const popoverMenuLinkStyle = {
-  color: '#fff',
-  display: 'block',
-  textDecoration: 'none',
-  paddingBottom: '.5rem'
+  listStyle: 'none',
 };
 
 const PopoverMenu = ({ title, label, children }) => (
