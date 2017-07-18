@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PseudoClassComponent } from '@bufferapp/components';
 import { calculateStyles } from '@bufferapp/components/lib/utils';
-import { curiousBlue, curiousBlueLight } from '@bufferapp/components/style/color';
+import { curiousBlue, curiousBlueLight, sidebarBackgroundBlue } from '@bufferapp/components/style/color';
 import { borderRadius } from '@bufferapp/components/style/border';
 import Popover from '../Popover';
 
@@ -29,7 +29,7 @@ class PopoverButton extends PseudoClassComponent {
       },
       focused: {
         outline: 'none',
-        boxShadow: `0 0 2px 3px ${curiousBlueLight}`
+        boxShadow: `0 0 0 2px ${sidebarBackgroundBlue}, 0 0 2px 3px ${curiousBlueLight}`
       },
       active: {
         background: curiousBlue,
@@ -42,7 +42,10 @@ class PopoverButton extends PseudoClassComponent {
 
     const iconWrapperStyle = this.props.large ? {
       transform: 'scale(1.5)'
-    } : {};
+    } : {
+      width: '20px',
+      height: '20px'
+    };
 
     const hoveredOrActiveOrFocused = this.state.hovered || this.props.active || this.state.focused;
     const hoveredOrClicked = this.state.hovered || this.state.clicked;
@@ -72,7 +75,7 @@ class PopoverButton extends PseudoClassComponent {
         <div style={iconWrapperStyle}>
           {hoverableIcon}
         </div>
-        <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}}>
+        <Popover visible={hoveredOrClicked} offset={{top: '3px', left: '10px'}} padded={!this.props.children}>
           {this.props.children ? this.props.children : this.props.label}
         </Popover>
       </button>

@@ -1,16 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
-  Text,
-  BufferIcon,
   PublishIcon,
   ReplyIcon,
   AnalyzeIcon,
   QuestionIcon,
-  AvatarIcon
+  AvatarIcon,
+  Divider
 } from '@bufferapp/components';
 
 import PopoverButton from '../PopoverButton';
+import BufferLogo from '../BufferLogo';
+import PopoverMenu from '../PopoverMenu';
+import PopoverMenuItem from '../PopoverMenuItem';
 
 import { calculateStyles } from '@bufferapp/components/lib/utils';
 import { sidebarBackgroundBlue } from '@bufferapp/components/style/color';
@@ -31,14 +34,8 @@ const AppSidebar = ({
   translations,
   activeProduct
 }) => (
-  <nav style={style} aria-label='sidebar'>
-    {/* TODO: Move the following `div` into a SidebarLogo component to be more clean, handle linking, etc. */}
-    <div style={{marginBottom: '1rem'}}>
-      <BufferIcon
-        color={'white'}
-        size={{width: '27px', height: '27px'}}
-      />
-    </div>
+  <nav style={style} aria-label='sidebar' role='menubar'>
+    <BufferLogo />
 
     <PopoverButton icon={<PublishIcon />} active={activeProduct === 'publish'} label='Publish' />
     <PopoverButton icon={<ReplyIcon />} active={activeProduct === 'reply'} label='Reply' />
@@ -47,10 +44,20 @@ const AppSidebar = ({
     {/* marginTop: auto ensures this section sticks to the bottom (flexbox) */}
     <div style={{marginTop: 'auto'}}>
       <PopoverButton icon={<QuestionIcon />} label='Help and Support'>
-        Wow, ok!
+        <PopoverMenu title="Help & Support">
+          <PopoverMenuItem href="https://faq.buffer.com">FAQ</PopoverMenuItem>
+          <PopoverMenuItem href="http://status.buffer.com/">Status</PopoverMenuItem>
+          <PopoverMenuItem href="https://buffer.com/pricing">Pricing &amp; Plans</PopoverMenuItem>
+          <PopoverMenuItem href="https://buffer.com/wishlist">Wishlist</PopoverMenuItem>
+        </PopoverMenu>
       </PopoverButton>
       <PopoverButton icon={<AvatarIcon />} label='My Account' large>
-        This is my account stuff! ✌️
+        <PopoverMenu>
+          <PopoverMenuItem href="https://buffer.com/pricing" subtitle="Email & passwords, upgrades&hellip;">My Account</PopoverMenuItem>
+          <PopoverMenuItem href="https://buffer.com/wishlist" subtitle="Notifications, time & date, apps&hellip;">Preferences</PopoverMenuItem>
+          <Divider color='sidebarBackgroundBlue' />
+          <PopoverMenuItem href="/logout">Sign out</PopoverMenuItem>
+        </PopoverMenu>
       </PopoverButton>
     </div>
   </nav>

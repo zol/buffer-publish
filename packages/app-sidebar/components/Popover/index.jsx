@@ -16,7 +16,8 @@ const Popover = ({
   visible,
   offset,
   oneLine,
-  position
+  position,
+  padded
 }) => {
   const style = calculateStyles({
     default: {
@@ -24,11 +25,11 @@ const Popover = ({
       color: '#fff',
       display: 'inline-block',
       borderRadius,
-      padding: '.25rem .75rem',
       position: 'absolute',
       left: '100%',
       marginLeft: offset ? offset.left : 0,
-      boxShadow: '0 1px 2px 0 rgba(0,0,0,0.50)'
+      boxShadow: '0 1px 2px 0 rgba(0,0,0,0.50)',
+      textAlign: 'left'
     },
     hidden: {
       display: 'none'
@@ -42,12 +43,16 @@ const Popover = ({
     },
     positionBelow: {
       top: offset ? offset.top : 0,
+    },
+    padded: {
+      padding: '.25rem .75rem',
     }
   }, {
     hidden: !visible,
     positionAbove: position === 'above',
     positionBelow: position === 'below',
-    oneLine
+    oneLine,
+    padded
   });
 
   const arrowStyle = calculateStyles({
@@ -96,13 +101,15 @@ Popover.propTypes = {
     left: PropTypes.string,
     top: PropTypes.string
   }),
-  position: PropTypes.oneOf(['above', 'below'])
+  position: PropTypes.oneOf(['above', 'below']),
+  padded: PropTypes.bool
 };
 
 Popover.defaultProps = {
   visible: false,
   oneLine: true,
-  position: 'above'
+  position: 'above',
+  padded: true
 };
 
 export default Popover;
