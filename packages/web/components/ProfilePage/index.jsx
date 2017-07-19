@@ -112,10 +112,7 @@ const ProfilePage = ({
       <ProfileSidebar />
     </div>
     <div style={contentStyle}>
-      <TabNavigation
-        onTabClick={() => { console.log('on tab click clicked'); }}
-        activeTabId={'12345'}
-      />
+      <TabNavigation profileId />
       <div style={tabContentStyle}>
         {TabContent({ tabId })}
       </div>

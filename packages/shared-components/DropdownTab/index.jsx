@@ -6,15 +6,13 @@ import {
 import {
   calculateStyles,
 } from '@bufferapp/components/lib/utils';
-import Tab from '../Tab/index';
+import { Button } from '@bufferapp/components';
 
 
 const DropdownTab = ({
   children,
-  active,
   title,
   isDropdownShown,
-  onClick,
 }) => {
   const style = calculateStyles({
     default: {
@@ -40,24 +38,18 @@ const DropdownTab = ({
 
   return (
     <div style={containerStyle}>
-      <Tab active={active} onClick={onClick}>{title}</Tab>
+      <Button>{title}</Button>
       <ul style={style}>
-        {React.Children.map(children, dropdownItem => (
-            React.cloneElement(dropdownItem, {
-              onClick: () => dropdownItem.props.onClick,
-            })
-        ))}
+        {children}
       </ul>
     </div>
   );
 };
 
 DropdownTab.propTypes = {
-  active: PropTypes.bool.isRequired,
   children: PropTypes.node,
   title: PropTypes.string.isRequired,
   isDropdownShown: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired,
 };
 
 DropdownTab.defaultProps = {

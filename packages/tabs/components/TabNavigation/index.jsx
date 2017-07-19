@@ -1,32 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import uuid from 'uuid';
 import {
   Tabs,
   Tab,
 } from '@bufferapp/publish-shared-components';
 
-
-// TODO: Add composer placeholder
 const TabNavigation = ({
-  onTabClick,
-  activeTabId,
+  profileId,
 }) =>
-  <Tabs
-    activeTabId={activeTabId}
-  >
-    <Tab tabId={'12345'} active onClick={onTabClick}>Queue (1)</Tab>
-    <Tab tabId={uuid()} active onClick={onTabClick}>Sent Posts</Tab>
-    <Tab tabId={uuid()} active onClick={onTabClick}>Settings</Tab>
+  <Tabs>
+    <Tab routeTo={`/profile/${profileId}/tab/queue`}>Queue</Tab>
+    <Tab routeTo={`/profile/${profileId}/tab/sent`}>Sent Posts</Tab>
+    <Tab routeTo={`/profile/${profileId}/tab/settings`}>Settings</Tab>
   </Tabs>;
 
 TabNavigation.propTypes = {
-  onTabClick: PropTypes.func.isRequired,
-  activeTabId: PropTypes.string.isRequired,
-};
-
-TabNavigation.defaultProps = {
-  activeTabId: '',
+  profileId: PropTypes.string.isRequired,
 };
 
 export default TabNavigation;
