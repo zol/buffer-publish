@@ -10,6 +10,7 @@ export default connect(
     settingsHeader: state.settings.settingsHeader,
     translations: state.i18n.translations.settings, // all package translations
     days: state.settings.days,
+    items: state.settings.items,
   }),
 )(ProfileSettings);
 

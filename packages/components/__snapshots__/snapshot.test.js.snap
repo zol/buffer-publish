@@ -4218,7 +4218,7 @@ exports[`Snapshots Icon refreshIcon 1`] = `
 </span>
 `;
 
-exports[`Snapshots Icon respondIcon 1`] = `
+exports[`Snapshots Icon replyIcon 1`] = `
 <span>
   <svg
     height="100%"
@@ -5275,7 +5275,8 @@ exports[`Snapshots InputAutocomplete default 1`] = `
     <div
       style={
         Object {
-          "display": "inline-block",
+          "display": "flex",
+          "width": "100%",
         }
       }
     >
@@ -5298,7 +5299,7 @@ exports[`Snapshots InputAutocomplete default 1`] = `
             "fontSize": ".8rem",
             "margin": "0 0 0 0",
             "padding": ".5rem",
-            "width": "318px",
+            "width": "100%",
           }
         }
         value=""

@@ -23,32 +23,7 @@ const Divider = ({
   />;
 
 Divider.propTypes = {
-  color: PropTypes.oneOf([
-    'appdotnet',
-    'aquaHaze',
-    'black',
-    'curiousBlue',
-    'curiousBlueLight',
-    'curiousBlueUltraLight',
-    'denim',
-    'facebook',
-    'geyser',
-    'googleplus',
-    'linkedin',
-    'mystic',
-    'nevada',
-    'outerSpace',
-    'outerSpaceLight',
-    'outerSpaceUltraLight',
-    'pinterest',
-    'saffron',
-    'shamrock',
-    'shuttleGray',
-    'toryBlue',
-    'torchRed',
-    'twitter',
-    'white',
-  ]),
+  color: PropTypes.oneOf(Object.keys(colors)),
   marginTop: PropTypes.string,
   marginBottom: PropTypes.string,
 };

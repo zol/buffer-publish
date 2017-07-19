@@ -24,3 +24,4 @@ export Popover from './Popover';
 export SectionHeader from './SectionHeader';
 export Select from './Select';
 export Text from './Text';
+export PseudoClassComponent from './PseudoClassComponent';

@@ -28,6 +28,10 @@ const chooseTimezoneStyle = {
   flexGrow: 1,
 };
 
+const fieldStyle = {
+  width: '100%',
+};
+
 const TimezoneInputForm = ({
   items,
   handleSubmit,
@@ -46,7 +50,7 @@ const TimezoneInputForm = ({
       </div>
       <div style={formStyle}>
         <div style={chooseTimezoneStyle}>
-          <div>
+          <div style={fieldStyle}>
             <Field
               name={'timezone'}
               component={InputAutocomplete}

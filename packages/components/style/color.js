@@ -30,6 +30,12 @@ export const shamrock = '#2fd566';
 export const saffron = '#f1cb3a';
 export const torchRed = '#ff1e1e';
 
+// TODO: Do we need to keep these colors here?
+// Should they have cuter names?
+export const sidebarBackgroundBlue = '#192534';
+export const sidebarIcon = '#7088A5';
+export const sidebarPopover = '#2E435E';
+
 const colors = {
   curiousBlue,
   curiousBlueLight,
@@ -58,6 +64,9 @@ const colors = {
   shamrock,
   saffron,
   torchRed,
+  sidebarBackgroundBlue,
+  sidebarIcon,
+  sidebarPopover,
 };
 
 export default colors;
