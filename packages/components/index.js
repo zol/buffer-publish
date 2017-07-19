@@ -20,6 +20,7 @@ export ListItem from './ListItem';
 export NavBar from './NavBar';
 export MultipleImages from './MultipleImages';
 export Overlay from './Overlay';
+export ArrowPopover from './ArrowPopover';
 export Popover from './Popover';
 export SectionHeader from './SectionHeader';
 export Select from './Select';

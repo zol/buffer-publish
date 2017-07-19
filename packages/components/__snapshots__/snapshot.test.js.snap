@@ -1,5 +1,274 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots ArrowPopover default tooltip 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "margin": "5rem",
+        "overflow": "visible",
+        "position": "relative",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      I have a Popover tooltip!
+    </span>
+    <div
+      style={
+        Object {
+          "background": "#2E435E",
+          "borderRadius": "0.126rem",
+          "boxShadow": "0 1px 2px 0 rgba(0,0,0,0.50)",
+          "color": "#fff",
+          "display": "inline-block",
+          "left": "100%",
+          "padding": ".25rem .75rem",
+          "position": "absolute",
+          "textAlign": "left",
+          "transform": "translate(8px, 0px)",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderBottomColor": "transparent",
+            "borderBottomWidth": 7,
+            "borderLeftColor": "transparent",
+            "borderLeftWidth": 0,
+            "borderRightColor": "#2E435E",
+            "borderRightWidth": 8,
+            "borderStyle": "solid",
+            "borderTopColor": "transparent",
+            "borderTopWidth": 7,
+            "height": 0,
+            "left": -8,
+            "position": "absolute",
+            "top": "50%",
+            "transform": "translate(0, -50%)",
+            "width": 0,
+          }
+        }
+      />
+      <span
+        style={
+          Object {
+            "color": "#fff",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        This is a simple tooltip style Popover!
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ArrowPopover larger popover: above 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "margin": "5rem",
+        "overflow": "visible",
+        "position": "relative",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      I have a Popover!
+    </span>
+    <div
+      style={
+        Object {
+          "background": "#2E435E",
+          "borderRadius": "0.126rem",
+          "bottom": 0,
+          "boxShadow": "0 1px 2px 0 rgba(0,0,0,0.50)",
+          "color": "#fff",
+          "display": "inline-block",
+          "left": "100%",
+          "padding": ".25rem .75rem",
+          "position": "absolute",
+          "textAlign": "left",
+          "transform": "translate(8px, 0px)",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderBottomColor": "transparent",
+            "borderBottomWidth": 7,
+            "borderLeftColor": "transparent",
+            "borderLeftWidth": 0,
+            "borderRightColor": "#2E435E",
+            "borderRightWidth": 8,
+            "borderStyle": "solid",
+            "borderTopColor": "transparent",
+            "borderTopWidth": 7,
+            "bottom": "6px",
+            "height": 0,
+            "left": -8,
+            "position": "absolute",
+            "top": "none",
+            "transform": "none",
+            "width": 0,
+          }
+        }
+      />
+      <span
+        style={
+          Object {
+            "color": "#fff",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "padding": " .5rem .25rem",
+            }
+          }
+        >
+          Look at me!
+          <br />
+          I'm so far above the rest! ✈️
+          <br />
+          Later! ✌️
+        </div>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ArrowPopover larger popover: below 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "margin": "5rem",
+        "overflow": "visible",
+        "position": "relative",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      I have a Popover!
+    </span>
+    <div
+      style={
+        Object {
+          "background": "#2E435E",
+          "borderRadius": "0.126rem",
+          "boxShadow": "none",
+          "color": "#fff",
+          "display": "inline-block",
+          "left": "100%",
+          "padding": ".25rem .75rem",
+          "position": "absolute",
+          "textAlign": "left",
+          "top": 0,
+          "transform": "translate(8px, 0px)",
+          "width": "300px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderBottomColor": "transparent",
+            "borderBottomWidth": 7,
+            "borderLeftColor": "transparent",
+            "borderLeftWidth": 0,
+            "borderRightColor": "#2E435E",
+            "borderRightWidth": 8,
+            "borderStyle": "solid",
+            "borderTopColor": "transparent",
+            "borderTopWidth": 7,
+            "height": 0,
+            "left": -8,
+            "position": "absolute",
+            "top": "6px",
+            "transform": "none",
+            "width": 0,
+          }
+        }
+      />
+      <span
+        style={
+          Object {
+            "color": "#fff",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "padding": ".5rem .25rem",
+            }
+          }
+        >
+          Your posting schedule tells Buffer when to send out posts in your Queue (under the Content tab).
+          <br />
+          <br />
+          For example, the next 10 posts you add to your Queue will go out in the next 10 upcoming time/date slots you decide below. 
+          <br />
+          <br />
+          You can change this schedule at any time!
+        </div>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots Button default 1`] = `
 <span>
   <button
