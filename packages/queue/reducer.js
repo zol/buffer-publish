@@ -1,13 +1,10 @@
-// import { actionTypes as asyncDataActionTypes } from '@bufferapp/async-data-fetch';
+import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import {
-  imagePosts,
   listHeader,
 } from './components/QueuedPosts/postData';
+import postsMapper from './utils/postParser';
 
 export const actionTypes = {
-  FETCH_POSTS_START: 'FETCH_POSTS_START',
-  FETCH_POSTS_SUCCESS: 'FETCH_POSTS_SUCCESS',
-  FETCH_POSTS_ERROR: 'FETCH_POSTS_ERROR',
   POST_CREATED: 'POST_CREATED',
   POST_UPDATED: 'POST_UPDATED',
   POST_CONFIRM_DELETE: 'POST_CONFIRM_DELETE',
@@ -20,25 +17,24 @@ export const actionTypes = {
 // TODO: remove this inial stubbed data once we can actually fetch data.
 const initialState = {
   listHeader,
-  loading: false,
-  posts: imagePosts,
+  loading: true,
+  posts: [],
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    // asyncDataActionTypes.FETCH_POSTS_START
-    case actionTypes.FETCH_POSTS_START:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_START}`:
       return {
         ...state,
         loading: true,
       };
-    case actionTypes.FETCH_POSTS_SUCCESS:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
-        posts: action.posts,
+        posts: action.result.updates.map(postsMapper),
       };
-    case actionTypes.FETCH_POSTS_ERROR:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;
     case actionTypes.POST_CREATED:
       return state;
