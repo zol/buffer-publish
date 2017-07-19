@@ -11,11 +11,7 @@ const tabsStyle = {
 
 const Tabs = ({ children }) => (
   <div style={tabsStyle}>
-    {React.Children.map(children, tab => (
-        React.cloneElement(tab, {
-          route: tab.props.route,
-        })
-    ))}
+    {children}
   </div>
 );
 

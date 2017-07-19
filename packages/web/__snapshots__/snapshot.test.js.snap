@@ -4951,45 +4951,29 @@ exports[`Snapshots ProfilePage should render 1`] = `
         style={
           Object {
             "borderBottom": "1px solid #ced7df",
+            "paddingTop": "21px",
           }
         }
       >
         <div
           style={
             Object {
-              "borderBottom": "2px solid #168eea",
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
-              "padding": "0 4px 16px 4px",
+              "padding": "0px 4px 16px",
               "textAlign": "center",
             }
           }
         >
-          <button
-            disabled={undefined}
-            onBlur={[Function]}
+          <a
+            className={undefined}
+            href="#/profile/12345/tab/queue"
             onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
+                "padding": "0 4px 16px",
+                "textDecoration": "none",
               }
             }
           >
@@ -5007,10 +4991,10 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   }
                 }
               >
-                Queue (1)
+                Queue
               </span>
             </span>
-          </button>
+          </a>
         </div>
         <div
           style={
@@ -5018,35 +5002,19 @@ exports[`Snapshots ProfilePage should render 1`] = `
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
-              "padding": "0 4px 16px 4px",
+              "padding": "0px 4px 16px",
               "textAlign": "center",
             }
           }
         >
-          <button
-            disabled={undefined}
-            onBlur={[Function]}
+          <a
+            className={undefined}
+            href="#/profile/12345/tab/sent"
             onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
+                "padding": "0 4px 16px",
+                "textDecoration": "none",
               }
             }
           >
@@ -5067,7 +5035,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                 Sent Posts
               </span>
             </span>
-          </button>
+          </a>
         </div>
         <div
           style={
@@ -5075,35 +5043,19 @@ exports[`Snapshots ProfilePage should render 1`] = `
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
-              "padding": "0 4px 16px 4px",
+              "padding": "0px 4px 16px",
               "textAlign": "center",
             }
           }
         >
-          <button
-            disabled={undefined}
-            onBlur={[Function]}
+          <a
+            className={undefined}
+            href="#/profile/12345/tab/settings"
             onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
+                "padding": "0 4px 16px",
+                "textDecoration": "none",
               }
             }
           >
@@ -5124,7 +5076,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                 Settings
               </span>
             </span>
-          </button>
+          </a>
         </div>
       </div>
       <div
@@ -8206,45 +8158,29 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
         style={
           Object {
             "borderBottom": "1px solid #ced7df",
+            "paddingTop": "21px",
           }
         }
       >
         <div
           style={
             Object {
-              "borderBottom": "2px solid #168eea",
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
-              "padding": "0 4px 16px 4px",
+              "padding": "0px 4px 16px",
               "textAlign": "center",
             }
           }
         >
-          <button
-            disabled={undefined}
-            onBlur={[Function]}
+          <a
+            className={undefined}
+            href="#/profile/12345/tab/queue"
             onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
+                "padding": "0 4px 16px",
+                "textDecoration": "none",
               }
             }
           >
@@ -8262,10 +8198,10 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   }
                 }
               >
-                Queue (1)
+                Queue
               </span>
             </span>
-          </button>
+          </a>
         </div>
         <div
           style={
@@ -8273,35 +8209,19 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
-              "padding": "0 4px 16px 4px",
+              "padding": "0px 4px 16px",
               "textAlign": "center",
             }
           }
         >
-          <button
-            disabled={undefined}
-            onBlur={[Function]}
+          <a
+            className={undefined}
+            href="#/profile/12345/tab/sent"
             onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
+                "padding": "0 4px 16px",
+                "textDecoration": "none",
               }
             }
           >
@@ -8322,7 +8242,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                 Sent Posts
               </span>
             </span>
-          </button>
+          </a>
         </div>
         <div
           style={
@@ -8330,35 +8250,19 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
-              "padding": "0 4px 16px 4px",
+              "padding": "0px 4px 16px",
               "textAlign": "center",
             }
           }
         >
-          <button
-            disabled={undefined}
-            onBlur={[Function]}
+          <a
+            className={undefined}
+            href="#/profile/12345/tab/settings"
             onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
+                "padding": "0 4px 16px",
+                "textDecoration": "none",
               }
             }
           >
@@ -8379,7 +8283,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                 Settings
               </span>
             </span>
-          </button>
+          </a>
         </div>
       </div>
       <div

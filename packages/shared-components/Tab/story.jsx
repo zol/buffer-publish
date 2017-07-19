@@ -8,8 +8,8 @@ import Tab from './index';
 storiesOf('Tab')
   .addDecorator(checkA11y)
   .add('default', () => (
-    <Tab route={'/'}>Queue</Tab>
+    <Tab routeTo={'/'}>Queue</Tab>
   ))
   .add('active', () => (
-    <Tab route={'/'}>Sent</Tab>
+    <Tab routeTo={'/'}>Sent</Tab>
   ));

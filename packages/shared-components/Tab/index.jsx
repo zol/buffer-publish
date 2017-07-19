@@ -8,7 +8,7 @@ import HoverableText from '../HoverableText';
 
 const Tab = ({
   children,
-  route,
+  routeTo,
 }) => {
   const style = {
     padding: '0px 4px 16px',
@@ -31,7 +31,7 @@ const Tab = ({
     <div
       style={style}
     >
-      <NavLink to={route} style={linkStyle} activeStyle={linkActiveStyle}>
+      <NavLink to={routeTo} style={linkStyle} activeStyle={linkActiveStyle}>
         <HoverableText
           hoverColor={'black'}
         >
@@ -44,7 +44,7 @@ const Tab = ({
 
 Tab.propTypes = {
   children: PropTypes.node,
-  route: PropTypes.string.isRequired,
+  routeTo: PropTypes.string.isRequired,
 };
 
 export default Tab;
