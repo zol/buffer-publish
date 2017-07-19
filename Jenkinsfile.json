@@ -3,7 +3,7 @@
     "name": "buffer-publish",
     "namespace": "buffer",
     "deployment_url": "publish.buffer.com",
-    "test": false
+    "test": true
   },
   "container_repo": {
     "repo": "bufferapp/buffer-publish",
