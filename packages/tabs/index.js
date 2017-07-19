@@ -8,7 +8,6 @@ import TabNavigation from './components/TabNavigation';
 // default export = container
 export default withRouter(connect(
   state => ({
-    activeTabId: state.tabs.activeTabId,
     profileId: state.tabs.profileId,
   }),
 )(TabNavigation));

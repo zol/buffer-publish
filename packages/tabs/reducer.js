@@ -2,7 +2,6 @@
 
 // TODO: remove this inial stubbed data once we can actually fetch data.
 const initialState = {
-  activeTabId: '12345',
   profileId: '12345',
 };
 
