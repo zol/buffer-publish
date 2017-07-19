@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PseudoClassComponent } from '@bufferapp/components';
+import { PseudoClassComponent, ArrowPopover } from '@bufferapp/components';
 import { calculateStyles } from '@bufferapp/components/lib/utils';
 import { curiousBlue, curiousBlueLight, sidebarBackgroundBlue } from '@bufferapp/components/style/color';
 import { borderRadius } from '@bufferapp/components/style/border';
-import Popover from '../Popover';
 
 class PopoverButton extends PseudoClassComponent {
   constructor() {
@@ -62,6 +61,10 @@ class PopoverButton extends PseudoClassComponent {
       a11y['aria-expanded'] = hoveredOrClicked;
     }
 
+    const popoverOffset = this.props.popoverPosition === 'above'
+      ? { top: -4, left: 3 }
+      : { top: -3, left: 3 };
+
     return (
       <button
         style={style}
@@ -75,12 +78,18 @@ class PopoverButton extends PseudoClassComponent {
         onBlur={() => this.handleBlur()}
         {...a11y}
       >
+        <ArrowPopover
+          visible={hoveredOrClicked}
+          padded={!this.props.children}
+          shadow
+          position={this.props.popoverPosition}
+          offset={popoverOffset}
+        >
+          {this.props.children ? this.props.children : this.props.label}
+        </ArrowPopover>
         <div style={iconWrapperStyle}>
           {hoverableIcon}
         </div>
-        <Popover visible={hoveredOrClicked} offset={{ top: '3px', left: '10px' }} padded={!this.props.children}>
-          {this.props.children ? this.props.children : this.props.label}
-        </Popover>
       </button>
     );
   }
@@ -97,11 +106,13 @@ PopoverButton.propTypes = {
   children: PropTypes.node,
   label: PropTypes.string,
   large: PropTypes.bool,
+  popoverPosition: PropTypes.oneOf(['none', 'above', 'below']),
 };
 
 PopoverButton.defaultProps = {
   active: false,
   large: false,
+  popoverPosition: 'none',
 };
 
 export default PopoverButton;

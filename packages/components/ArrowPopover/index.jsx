@@ -1,35 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Text,
-} from '@bufferapp/components';
 
-import { calculateStyles } from '@bufferapp/components/lib/utils';
-import { sidebarPopover } from '@bufferapp/components/style/color';
-import { borderRadius } from '@bufferapp/components/style/border';
+import { calculateStyles, parseColor } from '../lib/utils';
+import { darkPopover } from '../style/color';
+import { borderRadius } from '../style/border';
+
+import Text from '../Text';
 
 const arrowHeight = 14;
 const arrowWidth = 8;
 
-const Popover = ({
+const ArrowPopover = ({
   children,
   visible,
   offset,
   oneLine,
   position,
   padded,
+  color,
+  backgroundColor,
+  shadow,
+  width,
 }) => {
   const style = calculateStyles({
     default: {
-      background: sidebarPopover,
-      color: '#fff',
+      transform: `translate(${arrowWidth + offset.left}px, ${offset.top}px)`,
+      background: parseColor(backgroundColor),
+      color: parseColor(color),
       display: 'inline-block',
       borderRadius,
+      boxShadow: shadow ? '0 1px 2px 0 rgba(0,0,0,0.50)' : 'none',
+      textAlign: 'left',
       position: 'absolute',
       left: '100%',
-      marginLeft: offset ? offset.left : 0,
-      boxShadow: '0 1px 2px 0 rgba(0,0,0,0.50)',
-      textAlign: 'left',
     },
     hidden: {
       display: 'none',
@@ -38,27 +41,30 @@ const Popover = ({
       whiteSpace: 'nowrap',
     },
     positionAbove: {
-      bottom: '100%',
-      marginBottom: '-29px',
+      bottom: 0,
     },
     positionBelow: {
-      top: offset ? offset.top : 0,
+      top: 0,
     },
     padded: {
       padding: '.25rem .75rem',
+    },
+    fixedWidth: {
+      width,
     },
   }, {
     hidden: !visible,
     positionAbove: position === 'above',
     positionBelow: position === 'below',
-    oneLine,
+    oneLine: oneLine && width === 'none',
     padded,
+    fixedWidth: width !== 'none',
   });
 
   const arrowStyle = calculateStyles({
     default: {
       position: 'absolute',
-      left: -arrowWidth + 1,
+      left: -arrowWidth,
       width: 0,
       height: 0,
       backgroundColor: 'transparent',
@@ -68,18 +74,25 @@ const Popover = ({
       borderBottomWidth: arrowHeight / 2.0,
       borderLeftWidth: 0,
       borderTopColor: 'transparent',
-      borderRightColor: sidebarPopover,
+      borderRightColor: backgroundColor,
       borderBottomColor: 'transparent',
       borderLeftColor: 'transparent',
     },
+    positionNormal: {
+      top: '50%',
+      transform: 'translate(0, -50%)',
+    },
     positionAbove: {
-      top: '100%',
-      marginTop: '-20px',
+      top: 'none',
+      bottom: '6px',
+      transform: 'none',
     },
     positionBelow: {
       top: '6px',
+      transform: 'none',
     },
   }, {
+    positionNormal: true,
     positionAbove: position === 'above',
     positionBelow: position === 'below',
   });
@@ -87,30 +100,37 @@ const Popover = ({
   return (
     <div style={style}>
       <span style={arrowStyle} />
-      <Text color="white" size="small">{children}</Text>
+      <Text color={color} size="small">{children}</Text>
     </div>
   );
 };
 
-Popover.propTypes = {
-  // translations: PropTypes.shape({}),
+ArrowPopover.propTypes = {
   children: PropTypes.node.isRequired,
   visible: PropTypes.bool,
   oneLine: PropTypes.bool,
   offset: PropTypes.shape({
-    left: PropTypes.string,
-    top: PropTypes.string,
+    top: PropTypes.number,
+    left: PropTypes.number,
   }),
-  position: PropTypes.oneOf(['above', 'below']),
+  position: PropTypes.oneOf(['above', 'below', 'none']),
   padded: PropTypes.bool,
+  color: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  shadow: PropTypes.bool,
+  width: PropTypes.string,
 };
 
-Popover.defaultProps = {
+ArrowPopover.defaultProps = {
   visible: false,
   oneLine: true,
-  offset: { left: '0', top: '0' },
-  position: 'above',
+  offset: { left: 0, top: 0 },
+  position: 'none',
   padded: true,
+  color: 'white',
+  backgroundColor: darkPopover,
+  shadow: false,
+  width: 'none',
 };
 
-export default Popover;
+export default ArrowPopover;

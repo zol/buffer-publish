@@ -45,7 +45,7 @@ const AppSidebar = ({
 
     {/* marginTop: auto ensures this section sticks to the bottom (flexbox) */}
     <div style={{ marginTop: 'auto' }}>
-      <PopoverButton icon={<QuestionIcon />} label="Help and Support">
+      <PopoverButton icon={<QuestionIcon />} label="Help and Support" popoverPosition="above">
         <PopoverMenu title="Help & Support">
           <PopoverMenuItem href="https://faq.buffer.com">FAQ</PopoverMenuItem>
           <PopoverMenuItem href="http://status.buffer.com/">Status</PopoverMenuItem>
@@ -53,7 +53,7 @@ const AppSidebar = ({
           <PopoverMenuItem href="https://buffer.com/wishlist">Wishlist</PopoverMenuItem>
         </PopoverMenu>
       </PopoverButton>
-      <PopoverButton icon={<AvatarIcon />} label="My Account" large>
+      <PopoverButton icon={<AvatarIcon />} label="My Account" large popoverPosition="above">
         <PopoverMenu>
           <PopoverMenuItem href="https://buffer.com/pricing" subtitle="Email & passwords, upgrades&hellip;">My Account</PopoverMenuItem>
           <PopoverMenuItem href="https://buffer.com/wishlist" subtitle="Notifications, time & date, apps&hellip;">Preferences</PopoverMenuItem>
