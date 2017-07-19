@@ -40,11 +40,7 @@ const DropdownTab = ({
     <div style={containerStyle}>
       <Button>{title}</Button>
       <ul style={style}>
-        {React.Children.map(children, dropdownItem => (
-            React.cloneElement(dropdownItem, {
-              onClick: () => dropdownItem.props.onClick,
-            })
-        ))}
+        {children}
       </ul>
     </div>
   );
