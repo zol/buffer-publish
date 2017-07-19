@@ -9,6 +9,7 @@ export default (store) => {
   let counter = 0;
   const rpc = new RPCClient({ url: '/rpc' });
   return next => (action) => {
+    next(action);
     switch (action.type) {
       case actionTypes.FETCH: {
         const id = counter++; // eslint-disable-line no-plusplus
@@ -41,6 +42,5 @@ export default (store) => {
       default:
         break;
     }
-    return next(action);
   };
 };

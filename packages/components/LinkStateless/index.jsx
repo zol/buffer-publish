@@ -25,6 +25,7 @@ const Link = ({
   onMouseLeave,
   onFocus,
   onBlur,
+  onClick,
 }) => {
   const style = calculateStyles({
     default: {
@@ -53,6 +54,7 @@ const Link = ({
       onMouseLeave={onMouseLeave}
       onFocus={onFocus}
       onBlur={onBlur}
+      onClick={onClick}
     >
       {children}
     </a>
@@ -70,6 +72,7 @@ Link.propTypes = {
   onMouseLeave: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
+  onClick: PropTypes.func,
 };
 
 export default Link;

@@ -693,6 +693,7 @@ exports[`Snapshots ImagePost error 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -1061,6 +1062,7 @@ exports[`Snapshots ImagePost queued image post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -1480,6 +1482,7 @@ exports[`Snapshots ImagePost retweet 1`] = `
                   <a
                     href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                     onBlur={[Function]}
+                    onClick={undefined}
                     onFocus={[Function]}
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
@@ -1816,6 +1819,7 @@ exports[`Snapshots ImagePost sent image post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -1969,6 +1973,7 @@ exports[`Snapshots ImagePost square image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -2304,6 +2309,7 @@ exports[`Snapshots ImagePost tag 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -2673,6 +2679,7 @@ exports[`Snapshots ImagePost tall image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -3008,6 +3015,7 @@ exports[`Snapshots ImagePost wide image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -3343,6 +3351,7 @@ exports[`Snapshots LinkPost error 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -3363,6 +3372,7 @@ exports[`Snapshots LinkPost error 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -3811,6 +3821,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -3831,6 +3842,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -4246,6 +4258,7 @@ exports[`Snapshots LinkPost sent 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -4266,6 +4279,7 @@ exports[`Snapshots LinkPost sent 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -4499,6 +4513,7 @@ exports[`Snapshots LinkPost square image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -4519,6 +4534,7 @@ exports[`Snapshots LinkPost square image 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -4934,6 +4950,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -4954,6 +4971,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -5369,6 +5387,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -5389,6 +5408,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -5804,6 +5824,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -6272,6 +6293,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -6707,6 +6729,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -8478,6 +8501,7 @@ exports[`Snapshots Post retweet with comment 1`] = `
               <a
                 href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -11993,6 +12017,7 @@ exports[`Snapshots PostList link posts 1`] = `
                         <a
                           href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                           onBlur={[Function]}
+                          onClick={undefined}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
@@ -12013,6 +12038,7 @@ exports[`Snapshots PostList link posts 1`] = `
                       <a
                         href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                         onBlur={[Function]}
+                        onClick={undefined}
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         onMouseLeave={[Function]}
@@ -12439,6 +12465,7 @@ exports[`Snapshots PostList link posts 1`] = `
                         <a
                           href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                           onBlur={[Function]}
+                          onClick={undefined}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
@@ -12459,6 +12486,7 @@ exports[`Snapshots PostList link posts 1`] = `
                       <a
                         href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                         onBlur={[Function]}
+                        onClick={undefined}
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         onMouseLeave={[Function]}
@@ -57396,6 +57424,7 @@ exports[`Snapshots TextPost error 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -57740,6 +57769,7 @@ exports[`Snapshots TextPost queued text post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -58135,6 +58165,7 @@ exports[`Snapshots TextPost retweet 1`] = `
                   <a
                     href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                     onBlur={[Function]}
+                    onClick={undefined}
                     onFocus={[Function]}
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
@@ -58439,6 +58470,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
               <a
                 href="https://www.theguardian.com/books"
                 onBlur={[Function]}
+                onClick={undefined}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -58567,6 +58599,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
                   <a
                     href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                     onBlur={[Function]}
+                    onClick={undefined}
                     onFocus={[Function]}
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
@@ -58879,6 +58912,7 @@ exports[`Snapshots TextPost sent 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -59108,6 +59142,7 @@ exports[`Snapshots VideoPost error 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -59510,6 +59545,7 @@ exports[`Snapshots VideoPost queued video post 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -59963,6 +59999,7 @@ exports[`Snapshots VideoPost retweet 1`] = `
                   <a
                     href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                     onBlur={[Function]}
+                    onClick={undefined}
                     onFocus={[Function]}
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
@@ -60333,6 +60370,7 @@ exports[`Snapshots VideoPost sent 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -60520,6 +60558,7 @@ exports[`Snapshots VideoPost square image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -60889,6 +60928,7 @@ exports[`Snapshots VideoPost tall image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -61258,6 +61298,7 @@ exports[`Snapshots VideoPost wide image 1`] = `
                 <a
                   href="https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x"
                   onBlur={[Function]}
+                  onClick={undefined}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { checkA11y } from 'storybook-addon-a11y';
 import ProfileListItem from './index';
 
@@ -12,6 +13,7 @@ storiesOf('ProfileListItem')
       avatarUrl={avatarUrl}
       type={'twitter'}
       handle={'joelgascoigne'}
+      onClick={action('profile click')}
     />
   ))
   .add('should display number of notifications', () => (
@@ -20,6 +22,7 @@ storiesOf('ProfileListItem')
       type={'twitter'}
       handle={'joelgascoigne'}
       notifications={1}
+      onClick={action('profile click')}
     />
   ))
   .add('should display locked', () => (
@@ -29,6 +32,7 @@ storiesOf('ProfileListItem')
       handle={'joelgascoigne'}
       notifications={1}
       locked
+      onClick={action('profile click')}
     />
   ))
   .add('should display selected', () => (
@@ -38,5 +42,6 @@ storiesOf('ProfileListItem')
       handle={'joelgascoigne'}
       notifications={1}
       selected
+      onClick={action('profile click')}
     />
   ));

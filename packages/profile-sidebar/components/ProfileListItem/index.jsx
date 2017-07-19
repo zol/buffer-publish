@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   Text,
   LockIcon,
+  Link,
 } from '@bufferapp/components';
 import {
   calculateStyles,
@@ -44,38 +45,48 @@ const ProfileSidebar = ({
   handle,
   locked,
   selected,
+  onClick,
 }) =>
-  <div
-    style={calculateStyles({
-      default: {
-        display: 'flex',
-        alignItems: 'center',
-        padding: '0.5rem',
-        opacity: 0.6,
-      },
-      selected: {
-        background: curiousBlueUltraLight,
-        opacity: 1,
-      },
-    }, {
-      selected,
-    })}
+  <Link
+    href={'#'}
+    onClick={(e) => {
+      e.preventDefault();
+      onClick();
+    }}
+    unstyled
   >
-    <div style={profileBadgeWrapperStyle}>
-      <ProfileBadge
-        avatarUrl={avatarUrl}
-        type={type}
-      />
-    </div>
-    <Text
-      size={'small'}
+    <div
+      style={calculateStyles({
+        default: {
+          display: 'flex',
+          alignItems: 'center',
+          padding: '0.5rem',
+          opacity: 0.6,
+        },
+        selected: {
+          background: curiousBlueUltraLight,
+          opacity: 1,
+        },
+      }, {
+        selected,
+      })}
     >
-      {handle}
-    </Text>
-    <div style={notificationsStyle}>
-      { locked ? <LockIcon /> : <Notifications notifications={notifications} />}
+      <div style={profileBadgeWrapperStyle}>
+        <ProfileBadge
+          avatarUrl={avatarUrl}
+          type={type}
+        />
+      </div>
+      <Text
+        size={'small'}
+      >
+        {handle}
+      </Text>
+      <div style={notificationsStyle}>
+        { locked ? <LockIcon /> : <Notifications notifications={notifications} />}
+      </div>
     </div>
-  </div>;
+  </Link>;
 
 ProfileSidebar.propTypes = {
   ...Notifications.propTypes,

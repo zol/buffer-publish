@@ -1383,6 +1383,7 @@ exports[`Snapshots Card default 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1400,6 +1401,7 @@ exports[`Snapshots Card default 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1439,6 +1441,7 @@ exports[`Snapshots Card doublePadding 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1456,6 +1459,7 @@ exports[`Snapshots Card doublePadding 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1498,6 +1502,7 @@ exports[`Snapshots Card empty + hovered 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1515,6 +1520,7 @@ exports[`Snapshots Card empty + hovered 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1580,6 +1586,7 @@ exports[`Snapshots Card faded 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1597,6 +1604,7 @@ exports[`Snapshots Card faded 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1637,6 +1645,7 @@ exports[`Snapshots Card failed 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1654,6 +1663,7 @@ exports[`Snapshots Card failed 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1694,6 +1704,7 @@ exports[`Snapshots Card hovered 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1711,6 +1722,7 @@ exports[`Snapshots Card hovered 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1750,6 +1762,7 @@ exports[`Snapshots Card noBorder 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1767,6 +1780,7 @@ exports[`Snapshots Card noBorder 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1806,6 +1820,7 @@ exports[`Snapshots Card noPadding 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1823,6 +1838,7 @@ exports[`Snapshots Card noPadding 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1862,6 +1878,7 @@ exports[`Snapshots Card off-white background color 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1879,6 +1896,7 @@ exports[`Snapshots Card off-white background color 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1918,6 +1936,7 @@ exports[`Snapshots Card onMouseEnter + onMouseLeave 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1935,6 +1954,7 @@ exports[`Snapshots Card onMouseEnter + onMouseLeave 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1974,6 +1994,7 @@ exports[`Snapshots Card reducedPadding 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -1991,6 +2012,7 @@ exports[`Snapshots Card reducedPadding 1`] = `
     <a
       href="#"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -14732,6 +14754,7 @@ exports[`Snapshots Link default 1`] = `
   <a
     href="https://twitter.com"
     onBlur={[Function]}
+    onClick={undefined}
     onFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -14748,11 +14771,35 @@ exports[`Snapshots Link default 1`] = `
 </span>
 `;
 
+exports[`Snapshots Link onClick 1`] = `
+<span>
+  <a
+    href="#"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "color": "#168eea",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "textDecoration": "none",
+      }
+    }
+    target="_self"
+  >
+    Twitter
+  </a>
+</span>
+`;
+
 exports[`Snapshots Link unstyled 1`] = `
 <span>
   <a
     href="https://twitter.com"
     onBlur={[Function]}
+    onClick={undefined}
     onFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -14776,6 +14823,7 @@ exports[`Snapshots LinkStateless default 1`] = `
     <a
       href="https://twitter.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14793,6 +14841,7 @@ exports[`Snapshots LinkStateless default 1`] = `
     <a
       href="https://buffer.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14815,6 +14864,7 @@ exports[`Snapshots LinkStateless focused 1`] = `
   <a
     href="https://twitter.com"
     onBlur={undefined}
+    onClick={undefined}
     onFocus={undefined}
     onMouseEnter={undefined}
     onMouseLeave={undefined}
@@ -14838,6 +14888,7 @@ exports[`Snapshots LinkStateless hovered 1`] = `
     <a
       href="https://twitter.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14855,6 +14906,7 @@ exports[`Snapshots LinkStateless hovered 1`] = `
     <a
       href="https://buffer.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14878,6 +14930,7 @@ exports[`Snapshots LinkStateless newTab 1`] = `
     <a
       href="https://twitter.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14895,6 +14948,7 @@ exports[`Snapshots LinkStateless newTab 1`] = `
     <a
       href="https://buffer.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14912,11 +14966,34 @@ exports[`Snapshots LinkStateless newTab 1`] = `
 </span>
 `;
 
+exports[`Snapshots LinkStateless onClick 1`] = `
+<span>
+  <a
+    href={undefined}
+    onBlur={undefined}
+    onClick={[Function]}
+    onFocus={undefined}
+    onMouseEnter={undefined}
+    onMouseLeave={undefined}
+    style={
+      Object {
+        "color": "#168eea",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+      }
+    }
+    target="_self"
+  >
+    Twitter
+  </a>
+</span>
+`;
+
 exports[`Snapshots LinkStateless onFocus + onBlur 1`] = `
 <span>
   <a
     href="https://twitter.com"
     onBlur={[Function]}
+    onClick={undefined}
     onFocus={[Function]}
     onMouseEnter={undefined}
     onMouseLeave={undefined}
@@ -14939,6 +15016,7 @@ exports[`Snapshots LinkStateless onMouseEnter + onMouseLeave 1`] = `
     <a
       href="https://twitter.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -14956,6 +15034,7 @@ exports[`Snapshots LinkStateless onMouseEnter + onMouseLeave 1`] = `
     <a
       href="https://buffer.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -14979,6 +15058,7 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
     <a
       href="https://twitter.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -14997,6 +15077,7 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
     <a
       href="https://buffer.com"
       onBlur={undefined}
+      onClick={undefined}
       onFocus={undefined}
       onMouseEnter={undefined}
       onMouseLeave={undefined}
@@ -15031,6 +15112,7 @@ exports[`Snapshots LinkifiedText black text, unstyled link 1`] = `
     <a
       href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -15066,6 +15148,7 @@ exports[`Snapshots LinkifiedText default 1`] = `
     <a
       href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -15115,6 +15198,7 @@ exports[`Snapshots LinkifiedText newTab 1`] = `
     <a
       href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -15166,6 +15250,7 @@ exports[`Snapshots LinkifiedText size: small 1`] = `
     <a
       href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -15200,6 +15285,7 @@ exports[`Snapshots LinkifiedText two links 1`] = `
     <a
       href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -15217,6 +15303,7 @@ exports[`Snapshots LinkifiedText two links 1`] = `
     <a
       href="https://buffer.com"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -15251,6 +15338,7 @@ exports[`Snapshots LinkifiedText unstyled 1`] = `
     <a
       href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
       onBlur={[Function]}
+      onClick={undefined}
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}

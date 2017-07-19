@@ -7,6 +7,8 @@ import ProfileListItem from '../ProfileListItem';
 
 const ProfileList = ({
   profiles,
+  selectedProfileId,
+  onProfileClick,
 }) =>
   <List
     items={profiles.map(profile =>
@@ -15,20 +17,24 @@ const ProfileList = ({
         type={profile.type}
         handle={profile.handle}
         notifications={profile.notifications}
-        selected={profile.selected}
+        selected={profile.id === selectedProfileId}
         locked={profile.locked}
+        onClick={() => onProfileClick(profile.id)}
       />,
     )}
   />;
 
 ProfileList.propTypes = {
+  onProfileClick: PropTypes.func.isRequired,
   profiles: PropTypes.arrayOf(
     PropTypes.shape(ProfileListItem.propTypes),
   ),
+  selectedProfileId: PropTypes.string,
 };
 
 ProfileList.defaultProps = {
   profiles: [],
+  selectedProfileId: undefined,
 };
 
 export default ProfileList;

@@ -32,6 +32,10 @@ window.logout = () => store.dispatch(dataActions.fetch({
   name: 'logout',
 }));
 
+store.dispatch({
+  type: 'APP_INIT',
+});
+
 const renderApp = (AppComponent) => {
   render(
     <AppContainer>

@@ -26,6 +26,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
         <a
           href="http://blog.twitter.com/2011/05/twitter-for-mac-update.html"
           onBlur={[Function]}
+          onClick={undefined}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
