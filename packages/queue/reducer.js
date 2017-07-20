@@ -2,7 +2,6 @@ import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch
 import {
   listHeader,
 } from './components/QueuedPosts/postData';
-import postsMapper from './utils/postParser';
 
 export const actionTypes = {
   POST_CREATED: 'POST_CREATED',
@@ -32,7 +31,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        posts: action.result.updates.map(postsMapper),
+        posts: action.result,
       };
     case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;

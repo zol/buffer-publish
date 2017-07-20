@@ -25,7 +25,8 @@
     "micro-rpc-client": "0.1.0",
     "microrouter": "2.1.1",
     "request": "2.81.0",
-    "request-promise": "4.2.1"
+    "request-promise": "4.2.1",
+    "moment-timezone": "0.5.12"
   },
   "devDependencies": {
     "eslint": "3.19.0",
