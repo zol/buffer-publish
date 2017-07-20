@@ -5,6 +5,7 @@ const logoutMethod = require('./logout');
 const profilesMethod = require('./profiles');
 const queuedPostsMethod = require('./queuedPosts');
 const sentPostsMethod = require('./sentPosts');
+const profileSettingsMethod = require('./profileSettings');
 
 module.exports = checkToken(rpc(
   loginMethod,
@@ -12,4 +13,5 @@ module.exports = checkToken(rpc(
   profilesMethod,
   queuedPostsMethod,
   sentPostsMethod,
+  profileSettingsMethod,
 ));
