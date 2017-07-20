@@ -23,13 +23,13 @@ export default (state = initialState, action) => {
         ...state,
         loading: true,
       };
-    case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
+    case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
         posts: action.result,
       };
-    case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
+    case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;
     default:
       return state;
