@@ -1,4 +1,4 @@
-// import { actionTypes as asyncDataActionTypes } from '@bufferapp/async-data-fetch';
+import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import {
   header,
   imagePosts,
@@ -18,11 +18,19 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    // case asyncDataActionTypes.FETCH_POSTS_START:
-    //   return {
-    //     ...state,
-    //     loading: true,
-    //   };
+    case `sentPosts_${dataFetchActionTypes.FETCH_START}`:
+      return {
+        ...state,
+        loading: true,
+      };
+    case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        loading: false,
+        posts: action.result,
+      };
+    case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
+      return state;
     default:
       return state;
   }

@@ -102,7 +102,7 @@ module.exports = {
       retweetComment,
       retweetCommentLinks: [], // TODO: parseTwitterLinks(retweetComment),
       retweetProfile: getRetweetProfileInfo(post),
-      sent: false,
+      sent: post.status === 'sent',
       text,
       type: getPostType({ post }),
     };
