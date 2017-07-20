@@ -1,8 +1,17 @@
-export default store => next => (action) => { // eslint-disable-line no-unused-vars
-  /* eslint-disable no-console */
-  console.group();
-  console.log('action', action);
-  console.groupEnd();
-  /* eslint-enable no-console */
-  return next(action);
+import {
+  actionTypes as dataFetchActionTypes,
+  actions as dataFetchActions,
+} from '@bufferapp/async-data-fetch';
+
+export default ({ dispatch }) => next => (action) => {
+  next(action);
+  switch (action.type) {
+    case `login_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      dispatch(dataFetchActions.fetch({
+        name: 'user',
+      }));
+      break;
+    default:
+      break;
+  }
 };

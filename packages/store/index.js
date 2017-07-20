@@ -12,6 +12,7 @@ import { middleware as queueMiddleware } from '@bufferapp/queue';
 import { middleware as sentMiddleware } from '@bufferapp/sent';
 import { middleware as settingsMiddleware } from '@bufferapp/settings';
 import { middleware as profileSidebarMiddleware } from '@bufferapp/profile-sidebar';
+import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/publish-i18n';
 import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
 import reducers from './reducers';
@@ -34,6 +35,7 @@ const configureStore = (initialstate) => {
         loginMiddleware,
         i18nMiddleware,
         profileSidebarMiddleware,
+        appSidebarMiddleware,
         queueMiddleware,
         sentMiddleware,
         settingsMiddleware,

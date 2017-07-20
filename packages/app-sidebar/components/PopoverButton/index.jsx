@@ -17,7 +17,7 @@ class PopoverButton extends PseudoClassComponent {
   render() {
     const style = calculateStyles({
       default: {
-        display: 'block',
+        display: 'inline-block',
         background: 'none',
         border: 0,
         padding: '6px',
@@ -34,13 +34,18 @@ class PopoverButton extends PseudoClassComponent {
         background: curiousBlue,
         color: 'white',
       },
+      large: {
+        margin: 0,
+      },
     }, {
       focused: this.state.focused,
       active: this.props.active,
+      large: this.props.large,
     });
 
-    const iconWrapperStyle = this.props.large ? {
-      transform: 'scale(1.5)',
+    const sizeStyles = this.props.large ? {
+      width: '27px',
+      height: '27px',
     } : {
       width: '20px',
       height: '20px',
@@ -52,7 +57,7 @@ class PopoverButton extends PseudoClassComponent {
       this.props.icon,
       {
         color: hoveredOrActiveOrFocused ? 'white' : 'sidebarIcon',
-        size: { width: '20px', height: '20px' },
+        size: sizeStyles,
       },
     );
     const a11y = { 'aria-label': this.props.label };
@@ -87,7 +92,7 @@ class PopoverButton extends PseudoClassComponent {
         >
           {this.props.children ? this.props.children : this.props.label}
         </ArrowPopover>
-        <div style={iconWrapperStyle}>
+        <div style={sizeStyles}>
           {hoverableIcon}
         </div>
       </button>
