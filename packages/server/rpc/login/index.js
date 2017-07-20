@@ -28,9 +28,6 @@ module.exports = method(
     },
     json: true,
   })
-    .catch((err) => {
-      throw createError({ message: err.error.error });
-    })
     .then(res => rpcClient.call('create', {
       session: {
         accessToken: res.token,
