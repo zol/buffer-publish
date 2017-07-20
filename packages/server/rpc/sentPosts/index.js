@@ -1,3 +1,4 @@
+const { postsMapper } = require('../utils/postParser');
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
 
@@ -13,5 +14,6 @@ module.exports = method(
         access_token: session.accessToken,
       },
     })
-      .then(result => JSON.parse(result)),
+      .then(result => JSON.parse(result))
+      .then(parsedResult => parsedResult.updates.map(postsMapper)),
 );
