@@ -3,7 +3,7 @@ const RPCClient = require('micro-rpc-client');
 const rp = require('request-promise');
 
 const rpcClient = new RPCClient({
-  url: 'http://session-service',
+  url: `http://${process.env.SESSION_SVC_HOST}`,
 });
 
 module.exports = method(

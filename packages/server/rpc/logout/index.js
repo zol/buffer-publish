@@ -2,7 +2,7 @@ const RPCClient = require('micro-rpc-client');
 const { method, createError } = require('@bufferapp/micro-rpc');
 
 const rpcClient = new RPCClient({
-  url: 'http://session-service',
+  url: `http://${process.env.SESSION_SVC_HOST}`,
 });
 
 module.exports = method(

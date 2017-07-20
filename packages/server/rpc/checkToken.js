@@ -6,7 +6,7 @@ const {
 const RPCClient = require('micro-rpc-client');
 
 const rpcClient = new RPCClient({
-  url: 'http://session-service',
+  url: `http://${process.env.SESSION_SVC_HOST}`,
 });
 
 const whitelistedRPCNames = [

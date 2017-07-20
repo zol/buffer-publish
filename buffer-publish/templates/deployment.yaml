@@ -36,6 +36,9 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+        env:
+        - name: SESSION_SVC_HOST
+          value: session-service-1
         resources:
 {{ toYaml .Values.resources | indent 11 }}
         terminationMessagePath: /dev/termination-log
