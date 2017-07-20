@@ -39,6 +39,8 @@ spec:
         env:
         - name: SESSION_SVC_HOST
           value: session-service-1
+        - name: API_ADDR
+          value: https://api.bufferapp.com
         resources:
 {{ toYaml .Values.resources | indent 11 }}
         terminationMessagePath: /dev/termination-log
