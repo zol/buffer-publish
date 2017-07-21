@@ -1,13 +1,12 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import {
+import AppSidebar, {
   reducer,
   actions,
   actionTypes,
   middleware,
 } from './index';
-import AppSidebar from './components/AppSidebar';
 
 const storeFake = state => ({
   default: () => {},
@@ -19,6 +18,15 @@ const storeFake = state => ({
 describe('Example', () => {
   it('should render', () => {
     const store = storeFake({
+      appSidebar: {
+        user: {
+          loading: false,
+          id: '1234',
+          name: 'Hamish Macpherson',
+          email: '...',
+          avatar: '',
+        },
+      },
       i18n: {
         translations: { },
       },

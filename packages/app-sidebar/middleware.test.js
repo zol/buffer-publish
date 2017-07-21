@@ -1,3 +1,7 @@
+import {
+  actionTypes as dataFetchActionTypes,
+  actions as dataFetchActions,
+} from '@bufferapp/async-data-fetch';
 import middleware from './middleware';
 
 describe('middleware', () => {
@@ -6,20 +10,17 @@ describe('middleware', () => {
     global.console.log = jest.fn();
     global.console.groupEnd = jest.fn();
   });
-  it('should handle action', () => {
+  it('should fetch user after login', () => {
     const next = jest.fn();
+    const dispatch = jest.fn();
     const action = {
-      type: 'type',
+      type: `login_${dataFetchActionTypes.FETCH_SUCCESS}`,
     };
-    middleware(undefined)(next)(action);
+    middleware({ dispatch })(next)(action);
     expect(next)
       .toBeCalledWith(action);
-    expect(global.console.group)
-      .toHaveBeenCalled();
-    expect(global.console.log)
-      .toHaveBeenCalledWith('action', action);
-    expect(global.console.groupEnd)
-      .toHaveBeenCalled();
+    expect(dispatch)
+      .toBeCalledWith(dataFetchActions.fetch({ name: 'user' }));
   });
   afterEach(() => {
     global.console.group.mockRestore();
