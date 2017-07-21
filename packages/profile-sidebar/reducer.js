@@ -7,7 +7,7 @@ export const actionTypes = {
 };
 
 const initialState = {
-  selectedProfile: null,
+  selectedProfileId: null,
   profiles,
   lockedProfiles,
 };
@@ -38,7 +38,7 @@ export default (state = initialState, action) => {
     case actionTypes.SELECT_PROFILE:
       return {
         ...state,
-        selectedProfile: action.profile,
+        selectedProfileId: action.id,
       };
     default:
       return state;

@@ -772,9 +772,8 @@ exports[`Snapshots App should render application 1`] = `
                       style={
                         Object {
                           "alignItems": "center",
-                          "background": "rgba(22, 142, 234, .1)",
                           "display": "flex",
-                          "opacity": 1,
+                          "opacity": 0.6,
                           "padding": "0.5rem",
                         }
                       }
@@ -4053,9 +4052,8 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   style={
                     Object {
                       "alignItems": "center",
-                      "background": "rgba(22, 142, 234, .1)",
                       "display": "flex",
-                      "opacity": 1,
+                      "opacity": 0.6,
                       "padding": "0.5rem",
                     }
                   }
@@ -7332,9 +7330,8 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   style={
                     Object {
                       "alignItems": "center",
-                      "background": "rgba(22, 142, 234, .1)",
                       "display": "flex",
-                      "opacity": 1,
+                      "opacity": 0.6,
                       "padding": "0.5rem",
                     }
                   }

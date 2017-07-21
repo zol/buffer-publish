@@ -6,7 +6,7 @@ import lockedProfiles from './mockData/lockedProfiles';
 describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
-      selectedProfile: null,
+      selectedProfileId: null,
       profiles,
       lockedProfiles,
     };
