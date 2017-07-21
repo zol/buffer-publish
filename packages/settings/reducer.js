@@ -1,20 +1,17 @@
-import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
+
+import { actionTypes } from '@bufferapp/profile-sidebar';
 import {
-  days,
   settingsHeader,
   timezones,
 } from './components/ProfileSettings/settingsData';
-
-export const actionTypes = {
-};
+import transformSchedules from './utils/transformSchedule';
 
 // TODO remove stubbed data once we have real data coming in
 const initialState = {
   settingsHeader,
   loading: false,
-  days,
+  days: [],
   items: timezones,
-  selectedProfile: null,
 };
 
 export default (state = initialState, action) => {
@@ -23,7 +20,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        selectedProfile: action.result,
+        days: transformSchedules(action.profile.schedules),
       };
     default:
       return state;
