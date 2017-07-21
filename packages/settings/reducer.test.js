@@ -2,7 +2,6 @@ import deepFreeze from 'deep-freeze';
 import reducer from './reducer';
 import {
   settingsHeader,
-  days,
   timezones,
 } from './components/ProfileSettings/settingsData';
 
@@ -12,7 +11,7 @@ describe('reducer', () => {
     const stateAfter = {
       settingsHeader,
       loading: false,
-      days,
+      days: [],
       items: timezones,
     };
     const action = {

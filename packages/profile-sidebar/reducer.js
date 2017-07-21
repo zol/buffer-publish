@@ -18,6 +18,8 @@ const profileMapper = profile => ({
   type: profile.service,
   handle: profile.service_username,
   notifications: profile.counts.pending,
+  timezone: profile.timezone,
+  schedules: profile.schedules,
 });
 
 export default (state = initialState, action) => {
@@ -44,8 +46,9 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  selectProfile: ({ id }) => ({
+  selectProfile: ({ profile }) => ({
     type: actionTypes.SELECT_PROFILE,
-    id,
+    profile,
+    id: profile.id,
   }),
 };

@@ -17,11 +17,11 @@ export default ({ dispatch, getState }) => next => (action) => {
     case `profiles_${dataFetchActionTypes.FETCH_SUCCESS}`:
       // if no profile is selected, select one!
       if (
-        !getState().profileSidebar.selectedProfileId &&
+        !getState().profileSidebar.selectedProfile &&
         action.result.length > 0
       ) {
         dispatch(actions.selectProfile({
-          id: action.result[0].id,
+          profile: action.result[0],
         }));
       }
       break;

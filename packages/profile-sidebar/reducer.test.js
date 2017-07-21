@@ -19,11 +19,12 @@ describe('reducer', () => {
   });
 
   it('should generate a selectProfile action', () => {
-    const id = '123';
-    expect(actions.selectProfile({ id }))
+    const profile = profiles[0];
+    expect(actions.selectProfile({ profile }))
       .toEqual({
         type: actionTypes.SELECT_PROFILE,
-        id,
+        profile,
+        id: '1234',
       });
   });
 });

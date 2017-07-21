@@ -8,7 +8,7 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
       dispatch(dataFetchActions.fetch({
         name: 'queuedPosts',
         args: {
-          profileId: action.id,
+          profileId: action.profile.id,
         },
       }));
       break;

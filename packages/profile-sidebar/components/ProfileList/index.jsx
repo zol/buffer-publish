@@ -19,7 +19,7 @@ const ProfileList = ({
         notifications={profile.notifications}
         selected={profile.id === selectedProfileId}
         locked={profile.locked}
-        onClick={() => onProfileClick(profile.id)}
+        onClick={() => onProfileClick(profile)}
       />,
     )}
   />;

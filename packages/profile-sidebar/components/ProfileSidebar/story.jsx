@@ -31,5 +31,6 @@ storiesOf('ProfileSidebar')
       lockedProfiles={lotsOfProfiles()}
       translations={translations}
       onProfileClick={action('profile click')}
+      selectedProfile={profiles[0]}
     />
   ));
