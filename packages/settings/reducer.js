@@ -1,4 +1,4 @@
-// import { actionTypes as asyncDataActionTypes } from '@bufferapp/async-data-fetch';
+import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import {
   days,
   settingsHeader,
@@ -14,15 +14,17 @@ const initialState = {
   loading: false,
   days,
   items: timezones,
+  selectedProfile: null,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    // case asyncDataActionTypes.FETCH_POSTS_START:
-    //   return {
-    //     ...state,
-    //     loading: true,
-    //   };
+    case actionTypes.SELECT_PROFILE:
+      return {
+        ...state,
+        loading: false,
+        selectedProfile: action.result,
+      };
     default:
       return state;
   }

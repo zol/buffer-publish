@@ -18,7 +18,7 @@ storiesOf('ProfileSidebar')
   .addDecorator(checkA11y)
   .add('should display a list of profiles', () => (
     <ProfileSidebar
-      selectedProfileId={'1234'}
+      selectedProfile={profiles[0]}
       profiles={profiles}
       lockedProfiles={lockedProfiles}
       translations={translations}

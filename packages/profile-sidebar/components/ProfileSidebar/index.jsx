@@ -51,7 +51,7 @@ const buttonDividerStyle = {
 };
 
 const ProfileSidebar = ({
-  selectedProfileId,
+  selectedProfile,
   profiles,
   lockedProfiles,
   translations,
@@ -78,7 +78,7 @@ const ProfileSidebar = ({
     </div>
     <div style={profileListStyle}>
       <ProfileList
-        selectedProfileId={selectedProfileId}
+        selectedProfile={selectedProfile}
         profiles={profiles}
         onProfileClick={onProfileClick}
       />
@@ -92,7 +92,7 @@ const ProfileSidebar = ({
       </div>
       <Divider />
       <ProfileList
-        selectedProfileId={selectedProfileId}
+        selectedProfile={selectedProfile}
         profiles={lockedProfiles}
         onProfileClick={onProfileClick}
       />
@@ -112,7 +112,7 @@ const ProfileSidebar = ({
 
 ProfileSidebar.propTypes = {
   onProfileClick: ProfileList.propTypes.onProfileClick,
-  selectedProfileId: ProfileList.propTypes.selectedProfileId,
+  selectedProfile: PropTypes.shape(ProfileListItem.propTypes),
   profiles: PropTypes.arrayOf(
     PropTypes.shape(ProfileListItem.propTypes),
   ),
@@ -127,7 +127,7 @@ ProfileSidebar.propTypes = {
 
 ProfileSidebar.defaultProps = {
   onProfileClick: ProfileList.defaultProps.onProfileClick,
-  selectedProfileId: ProfileList.defaultProps.selectedProfileId,
+  selectedProfile: ProfileList.defaultProps.selectedProfile,
   profiles: [],
   lockedProfiles: [],
 };
