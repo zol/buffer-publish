@@ -10,7 +10,7 @@ storiesOf('ProfileList')
   .add('should display a list of profiles', () => (
     <ProfileList
       profiles={profiles}
-      selectedProfileId={'1234'}
+      selectedProfile={profiles[0]}
       onProfileClick={action('profile click')}
     />
   ));
