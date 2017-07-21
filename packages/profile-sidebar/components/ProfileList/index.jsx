@@ -7,7 +7,7 @@ import ProfileListItem from '../ProfileListItem';
 
 const ProfileList = ({
   profiles,
-  selectedProfile,
+  selectedProfileId,
   onProfileClick,
 }) =>
   <List
@@ -17,7 +17,7 @@ const ProfileList = ({
         type={profile.type}
         handle={profile.handle}
         notifications={profile.notifications}
-        selected={profile.id === selectedProfile.id}
+        selected={profile.id === selectedProfileId}
         locked={profile.locked}
         onClick={() => onProfileClick(profile)}
       />,
@@ -29,12 +29,12 @@ ProfileList.propTypes = {
   profiles: PropTypes.arrayOf(
     PropTypes.shape(ProfileListItem.propTypes),
   ),
-  selectedProfile: PropTypes.shape(ProfileListItem.propTypes),
+  selectedProfileId: PropTypes.string,
 };
 
 ProfileList.defaultProps = {
   profiles: [],
-  selectedProfile: undefined,
+  selectedProfileId: undefined,
 };
 
 export default ProfileList;

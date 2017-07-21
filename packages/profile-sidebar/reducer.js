@@ -7,7 +7,7 @@ export const actionTypes = {
 };
 
 const initialState = {
-  selectedProfile: profiles[0],
+  selectedProfile: null,
   profiles,
   lockedProfiles,
 };
@@ -49,5 +49,6 @@ export const actions = {
   selectProfile: ({ profile }) => ({
     type: actionTypes.SELECT_PROFILE,
     profile,
+    id: profile.id,
   }),
 };
