@@ -7,7 +7,7 @@ export const actionTypes = {
 };
 
 const initialState = {
-  selectedProfile: null,
+  selectedProfile: profiles[0],
   profiles,
   lockedProfiles,
 };
