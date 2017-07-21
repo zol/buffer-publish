@@ -32,6 +32,7 @@ const renderPost = ({
 }) => {
   const postWithEventHandlers = {
     ...post,
+    key: post.id,
     onCancelConfirmClick: () => onCancelConfirmClick({ post }),
     onDeleteClick: () => onDeleteClick({ post }),
     onDeleteConfirmClick: () => onDeleteConfirmClick({ post }),
