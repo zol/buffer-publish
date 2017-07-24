@@ -25,7 +25,7 @@ export default ({ dispatch, getState }) => next => (action) => {
       });
       if (params && params.profileId) {
         dispatch(actions.selectProfile({
-          id: params.profileId,
+          profile: action.result.find(profile => profile.id === params.profileId),
         }));
       } else if (action.result.length > 0) {
         const selectedProfile = action.result[0];

@@ -1,5 +1,6 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
+const profileParser = require('../utils/profileParser');
 
 module.exports = method(
   'profiles',
@@ -15,5 +16,6 @@ module.exports = method(
         locked: true,
       },
     })
-      .then(result => JSON.parse(result)),
+      .then(result => JSON.parse(result))
+      .then(profiles => profiles.map(profileParser)),
 );

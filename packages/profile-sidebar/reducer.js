@@ -11,27 +11,15 @@ const initialState = {
   lockedProfiles,
 };
 
-const profileMapper = profile => ({
-  id: profile.id,
-  avatarUrl: profile.avatar,
-  type: profile.service,
-  handle: profile.service_username,
-  notifications: profile.counts.pending,
-  timezone: profile.timezone,
-  schedules: profile.schedules,
-});
-
 export default (state = initialState, action) => {
   switch (action.type) {
     case `profiles_${dataFetchActionTypes.FETCH_SUCCESS}`: {
       return {
         ...state,
         profiles: action.result
-          .filter(profile => !profile.locked)
-          .map(profileMapper),
+          .filter(profile => !profile.locked),
         lockedProfiles: action.result
-          .filter(profile => profile.locked)
-          .map(profileMapper),
+          .filter(profile => profile.locked),
       };
     }
     default:
