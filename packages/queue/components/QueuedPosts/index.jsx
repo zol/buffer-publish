@@ -4,7 +4,7 @@ import {
   Input,
 } from '@bufferapp/components';
 import {
-  PostList,
+  PostLists,
 } from '@bufferapp/publish-shared-components';
 
 const composerStyle = {
@@ -12,9 +12,8 @@ const composerStyle = {
 };
 
 const QueuedPosts = ({
-  listHeader,
   loading,
-  posts,
+  postLists,
   onCancelConfirmClick,
   onDeleteClick,
   onDeleteConfirmClick,
@@ -24,6 +23,7 @@ const QueuedPosts = ({
   if (loading) {
     return (<div>Loading...</div>);
   }
+
   return (
     <div>
       <div style={composerStyle}>
@@ -31,9 +31,8 @@ const QueuedPosts = ({
           placeholder={'What would you like to share?'}
         />
       </div>
-      <PostList
-        listHeader={listHeader}
-        posts={posts}
+      <PostLists
+        postLists={postLists}
         onCancelConfirmClick={onCancelConfirmClick}
         onDeleteClick={onDeleteClick}
         onDeleteConfirmClick={onDeleteConfirmClick}
@@ -45,23 +44,27 @@ const QueuedPosts = ({
 };
 
 QueuedPosts.propTypes = {
-  listHeader: PropTypes.string,
   loading: PropTypes.bool.isRequired,
   onCancelConfirmClick: PropTypes.func.isRequired,
   onDeleteClick: PropTypes.func.isRequired,
   onDeleteConfirmClick: PropTypes.func.isRequired,
   onEditClick: PropTypes.func.isRequired,
   onShareNowClick: PropTypes.func.isRequired,
-  posts: PropTypes.arrayOf(
+  postLists: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.string,
+      listHeader: PropTypes.string,
+      posts: PropTypes.arrayOf(
+        PropTypes.shape({
+          text: PropTypes.string,
+        }),
+      ),
     }),
   ).isRequired,
 };
 
 QueuedPosts.defaultProps = {
-  listHeader: null,
   loading: false,
+  postLists: [],
 };
 
 export default QueuedPosts;

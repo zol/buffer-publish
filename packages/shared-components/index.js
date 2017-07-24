@@ -8,6 +8,7 @@ export ImagePost from './ImagePost';
 export LinkPost from './LinkPost';
 export MultipleImagesPost from './MultipleImagesPost';
 export PostList from './PostList';
+export PostLists from './PostLists';
 export PostingTimeForm from './PostingTimeForm';
 export TextPost from './TextPost';
 export TimezoneInputForm from './TimezoneInputForm';

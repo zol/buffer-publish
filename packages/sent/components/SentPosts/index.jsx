@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PostList } from '@bufferapp/publish-shared-components';
+import { PostLists } from '@bufferapp/publish-shared-components';
 import {
   Divider,
   Text,
@@ -13,9 +13,8 @@ const headerStyle = {
 
 const SentPosts = ({
   header,
-  listHeader,
   loading,
-  posts,
+  postLists,
 }) => {
   if (loading) {
     return (<div>Loading...</div>);
@@ -23,12 +22,11 @@ const SentPosts = ({
   return (
     <div>
       <div style={headerStyle}>
-        <Text>{header}</Text>
+        <Text color={'black'}>{header}</Text>
         <Divider />
       </div>
-      <PostList
-        listHeader={listHeader}
-        posts={posts}
+      <PostLists
+        postLists={postLists}
       />
     </div>
   );
@@ -36,19 +34,23 @@ const SentPosts = ({
 
 SentPosts.propTypes = {
   header: PropTypes.string,
-  listHeader: PropTypes.string,
   loading: PropTypes.bool.isRequired,
-  posts: PropTypes.arrayOf(
+  postLists: PropTypes.arrayOf(
     PropTypes.shape({
-      text: PropTypes.string,
+      listHeader: PropTypes.string,
+      posts: PropTypes.arrayOf(
+        PropTypes.shape({
+          text: PropTypes.string,
+        }),
+      ),
     }),
   ).isRequired,
 };
 
 SentPosts.defaultProps = {
   header: null,
-  listHeader: null,
   loading: false,
+  postLists: [],
 };
 
 export default SentPosts;

@@ -10,6 +10,7 @@ export const actionTypes = {
   POST_DELETED: 'POST_DELETED',
   POST_DELETE_CANCELED: 'POST_DELETE_CANCELED',
   POST_ERROR: 'POST_ERROR',
+  QUEUED_POSTS_FORMATTED: 'QUEUED_POSTS_FORMATTED',
   REQUESTING_POST_DELETE: 'REQUESTING_POST_DELETE',
 };
 
@@ -17,7 +18,7 @@ export const actionTypes = {
 const initialState = {
   listHeader,
   loading: true,
-  posts: [],
+  postLists: [],
 };
 
 export default (state = initialState, action) => {
@@ -27,11 +28,11 @@ export default (state = initialState, action) => {
         ...state,
         loading: true,
       };
-    case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
+    case actionTypes.QUEUED_POSTS_FORMATTED:
       return {
         ...state,
         loading: false,
-        posts: action.result,
+        postLists: action.postLists,
       };
     case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;
@@ -54,4 +55,9 @@ export default (state = initialState, action) => {
   }
 };
 
-export const actions = {};
+export const actions = {
+  postListFormatted: ({ postLists }) => ({
+    type: actionTypes.QUEUED_POSTS_FORMATTED,
+    postLists,
+  }),
+};

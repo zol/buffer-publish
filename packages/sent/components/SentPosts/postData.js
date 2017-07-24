@@ -1,83 +1,82 @@
-export const posts = [
+export const postLists = [
   {
-    id: '590a365d749c2018007b23c6',
-    isConfirmingDelete: false,
-    isDeleting: false,
-    isWorking: false,
-    imageUrls: [],
-    links: [],
-    linkAttachment: {},
-    postDetails: {
-      postAction: 'This post is scheduled for May 3rd',
-      isRetweet: false,
-    },
-    retweetCommentLinks: [],
-    sent: true,
-    text: 'New thing',
-    type: 'text',
+    listHeader: 'Today',
+    posts: [
+      {
+        id: '590a365d749c2018007b23c6',
+        isConfirmingDelete: false,
+        isDeleting: false,
+        isWorking: false,
+        imageUrls: [],
+        links: [],
+        linkAttachment: {},
+        postDetails: {
+          postAction: 'This post is scheduled for May 2nd',
+          isRetweet: false,
+        },
+        retweetCommentLinks: [],
+        sent: true,
+        text: 'New thing',
+        type: 'text',
+      },
+      {
+        id: '590a3693749c200e007b23c7',
+        isConfirmingDelete: false,
+        isDeleting: false,
+        isWorking: false,
+        imageUrls: [],
+        links: [],
+        linkAttachment: {},
+        postDetails: {
+          postAction: 'This post is scheduled for May 2nd',
+          isRetweet: false,
+        },
+        retweetCommentLinks: [],
+        sent: true,
+        text: 'Another thing, that is also new',
+        type: 'text',
+      },
+    ],
   },
   {
-    id: '590a3693749c200e007b23c7',
-    isConfirmingDelete: false,
-    isDeleting: false,
-    isWorking: false,
-    imageUrls: [],
-    links: [],
-    linkAttachment: {},
-    postDetails: {
-      postAction: 'This post is scheduled for May 3rd',
-      isRetweet: false,
-    },
-    retweetCommentLinks: [],
-    sent: true,
-    text: 'Another thing, that is also new',
-    type: 'text',
+    listHeader: 'Tuesday May 3rd',
+    posts: [
+      {
+        id: '590a365d749c2018007b23c6',
+        isConfirmingDelete: false,
+        isDeleting: false,
+        isWorking: false,
+        imageUrls: [],
+        links: [],
+        linkAttachment: {},
+        postDetails: {
+          postAction: 'This post is scheduled for May 3rd',
+          isRetweet: false,
+        },
+        retweetCommentLinks: [],
+        sent: true,
+        text: 'New thing',
+        type: 'text',
+      },
+      {
+        id: '590a3693749c200e007b23c7',
+        isConfirmingDelete: false,
+        isDeleting: false,
+        isWorking: false,
+        imageUrls: [],
+        links: [],
+        linkAttachment: {},
+        postDetails: {
+          postAction: 'This post is scheduled for May 3rd',
+          isRetweet: false,
+        },
+        retweetCommentLinks: [],
+        sent: true,
+        text: 'Another thing, that is also new',
+        type: 'text',
+      },
+    ],
   },
 ];
 
-export const linkPosts = posts.map(post => ({
-  ...post,
-  links: [{
-    rawString: 'http://buff.ly/1LTbUqv',
-    displayString: 'http://buff.ly/1LTbUqv',
-    url: 'https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x',
-    indices: [74, 96],
-  }],
-  linkAttachment: {
-    title: 'What is a Product Designer?',
-    description: 'A brief history at how history and markets influence design titles',
-    url: 'https://austinstartups.com/what-is-a-product-designer-who-cares-eb38fc7afa7b#.i3r34a75x',
-    thumbnailUrl: 'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-  },
-  postDetails: {
-    postAction: 'This post is scheduled for 9:42pm (GMT)',
-  },
-  text: 'What is a Product Designer? An awesome story by @jgadapee over on Medium! http://buff.ly/1LTbUqv',
-  type: 'link',
-}));
-
-export const imagePosts = posts.map(post => ({
-  ...post,
-  imageSrc: 'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-  type: 'image',
-}));
-
-export const multipleImagePosts = posts.map(post => ({
-  ...post,
-  imageUrls: [
-    'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-    'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-    'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-    'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-  ],
-  type: 'multipleImage',
-}));
-
-export const videoPosts = posts.map(post => ({
-  ...post,
-  imageSrc: 'https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg',
-  type: 'video',
-}));
-
-export const listHeader = 'Tuesday 20th June';
 export const header = 'Your sent posts for the last 30 days';

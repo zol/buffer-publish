@@ -80,6 +80,7 @@ module.exports = {
       text = post.text;
     }
     return {
+      day: post.day,
       id: post.id,
       isConfirmingDelete: post.isDeleting && !post.requestingDraftAction,
       isDeleting: post.isDeleting && post.requestingDraftAction,

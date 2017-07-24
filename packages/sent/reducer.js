@@ -1,19 +1,17 @@
 import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import {
   header,
-  imagePosts,
-  listHeader,
 } from './components/SentPosts/postData';
 
 export const actionTypes = {
+  SENT_POSTS_FORMATTED: 'SENT_POSTS_FORMATTED',
 };
 
 // TODO remove stubbed data once we have real data coming in
 const initialState = {
   header,
-  listHeader,
   loading: false,
-  posts: imagePosts,
+  postLists: [],
 };
 
 export default (state = initialState, action) => {
@@ -23,11 +21,11 @@ export default (state = initialState, action) => {
         ...state,
         loading: true,
       };
-    case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
+    case actionTypes.SENT_POSTS_FORMATTED:
       return {
         ...state,
         loading: false,
-        posts: action.result,
+        postLists: action.postLists,
       };
     case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;
@@ -36,4 +34,9 @@ export default (state = initialState, action) => {
   }
 };
 
-export const actions = {};
+export const actions = {
+  postListFormatted: ({ postLists }) => ({
+    type: actionTypes.SENT_POSTS_FORMATTED,
+    postLists,
+  }),
+};

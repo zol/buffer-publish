@@ -8,7 +8,7 @@ export default connect(
   state => ({
     listHeader: state.queue.listHeader,
     loading: state.queue.loading,
-    posts: state.queue.posts,
+    postLists: state.queue.postLists,
     translations: state.i18n.translations.example, // all package translations
   }),
 )(QueuedPosts);
