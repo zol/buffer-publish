@@ -4,7 +4,6 @@ import {
 } from './components/SentPosts/postData';
 
 export const actionTypes = {
-  SENT_POSTS_FORMATTED: 'SENT_POSTS_FORMATTED',
 };
 
 // TODO remove stubbed data once we have real data coming in
@@ -14,6 +13,24 @@ const initialState = {
   postLists: [],
 };
 
+const formatPostLists = (posts) => {
+  const postLists = [];
+  let day;
+  let newList;
+
+  for (let i = 0; i < posts.length; i++) { // eslint-disable-line
+    if (posts[i].day !== day) {
+      day = posts[i].day;
+      newList = { listHeader: day, posts: [posts[i]] };
+      postLists.push(newList);
+    } else { // if same day add to posts array of current list
+      newList.posts.push(posts[i]);
+    }
+  }
+
+  return postLists;
+};
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case `sentPosts_${dataFetchActionTypes.FETCH_START}`:
@@ -21,11 +38,11 @@ export default (state = initialState, action) => {
         ...state,
         loading: true,
       };
-    case actionTypes.SENT_POSTS_FORMATTED:
+    case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
-        postLists: action.postLists,
+        postLists: formatPostLists(action.result),
       };
     case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;
@@ -35,8 +52,4 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  postListFormatted: ({ postLists }) => ({
-    type: actionTypes.SENT_POSTS_FORMATTED,
-    postLists,
-  }),
 };

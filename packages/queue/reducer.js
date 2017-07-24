@@ -10,7 +10,6 @@ export const actionTypes = {
   POST_DELETED: 'POST_DELETED',
   POST_DELETE_CANCELED: 'POST_DELETE_CANCELED',
   POST_ERROR: 'POST_ERROR',
-  QUEUED_POSTS_FORMATTED: 'QUEUED_POSTS_FORMATTED',
   REQUESTING_POST_DELETE: 'REQUESTING_POST_DELETE',
 };
 
@@ -21,6 +20,24 @@ const initialState = {
   postLists: [],
 };
 
+const formatPostLists = (posts) => {
+  const postLists = [];
+  let day;
+  let newList;
+
+  for (let i = 0; i < posts.length; i++) { // eslint-disable-line
+    if (posts[i].day !== day) {
+      day = posts[i].day;
+      newList = { listHeader: day, posts: [posts[i]] };
+      postLists.push(newList);
+    } else { // if same day add to posts array of current list
+      newList.posts.push(posts[i]);
+    }
+  }
+
+  return postLists;
+};
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case `queuedPosts_${dataFetchActionTypes.FETCH_START}`:
@@ -28,11 +45,11 @@ export default (state = initialState, action) => {
         ...state,
         loading: true,
       };
-    case actionTypes.QUEUED_POSTS_FORMATTED:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
-        postLists: action.postLists,
+        postLists: formatPostLists(action.result),
       };
     case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;
@@ -56,8 +73,4 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  postListFormatted: ({ postLists }) => ({
-    type: actionTypes.QUEUED_POSTS_FORMATTED,
-    postLists,
-  }),
 };
