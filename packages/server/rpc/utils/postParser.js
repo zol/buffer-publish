@@ -1,4 +1,5 @@
 const { getDateString } = require('../utils/date');
+const { parseTwitterLinks } = require('./linkParsing');
 
 const getImageUrls = (post) => {
   if (!(post.media && post.media.picture && post.extra_media)) return [];
@@ -87,7 +88,7 @@ module.exports = {
       isWorking: !post.isDeleting && post.requestingDraftAction,
       imageSrc: isVideo ? media.thumbnail : media.picture,
       imageUrls: getImageUrls(post),
-      links: [], // TODO: parseTwitterLinks(text),
+      links: parseTwitterLinks(text),
       profileTimezone: 'Europe/London', // TODO: get timezone from profile
       linkAttachment: {
         title: media.title,
@@ -101,7 +102,7 @@ module.exports = {
         twentyFourHourTime: false, // TODO: get from user
       }),
       retweetComment,
-      retweetCommentLinks: [], // TODO: parseTwitterLinks(retweetComment),
+      retweetCommentLinks: parseTwitterLinks(retweetComment),
       retweetProfile: getRetweetProfileInfo(post),
       sent: post.status === 'sent',
       text,
