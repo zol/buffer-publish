@@ -1565,7 +1565,6 @@ exports[`Snapshots ProfilePage should render 1`] = `
       <div
         style={
           Object {
-            "borderBottom": "1px solid #ced7df",
             "paddingTop": "21px",
           }
         }
@@ -1582,15 +1581,20 @@ exports[`Snapshots ProfilePage should render 1`] = `
           }
         >
           <a
-            className={undefined}
-            href="#/profile/12345/tab/queue"
+            href="#"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
-                "padding": "0 4px 16px",
+                "color": "#168eea",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "textDecoration": "none",
               }
             }
+            target="_self"
           >
             <span
               onMouseEnter={undefined}
@@ -1623,15 +1627,20 @@ exports[`Snapshots ProfilePage should render 1`] = `
           }
         >
           <a
-            className={undefined}
-            href="#/profile/12345/tab/sent"
+            href="#"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
-                "padding": "0 4px 16px",
+                "color": "#168eea",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "textDecoration": "none",
               }
             }
+            target="_self"
           >
             <span
               onMouseEnter={undefined}
@@ -1664,15 +1673,20 @@ exports[`Snapshots ProfilePage should render 1`] = `
           }
         >
           <a
-            className={undefined}
-            href="#/profile/12345/tab/settings"
+            href="#"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
-                "padding": "0 4px 16px",
+                "color": "#168eea",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "textDecoration": "none",
               }
             }
+            target="_self"
           >
             <span
               onMouseEnter={undefined}
@@ -1693,6 +1707,19 @@ exports[`Snapshots ProfilePage should render 1`] = `
             </span>
           </a>
         </div>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "0",
+              "marginTop": "0",
+              "width": "100%",
+            }
+          }
+        />
       </div>
       <div
         style={
@@ -4843,7 +4870,6 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
       <div
         style={
           Object {
-            "borderBottom": "1px solid #ced7df",
             "paddingTop": "21px",
           }
         }
@@ -4860,15 +4886,20 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           }
         >
           <a
-            className={undefined}
-            href="#/profile/12345/tab/queue"
+            href="#"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
-                "padding": "0 4px 16px",
+                "color": "#168eea",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "textDecoration": "none",
               }
             }
+            target="_self"
           >
             <span
               onMouseEnter={undefined}
@@ -4901,15 +4932,20 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           }
         >
           <a
-            className={undefined}
-            href="#/profile/12345/tab/sent"
+            href="#"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
-                "padding": "0 4px 16px",
+                "color": "#168eea",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "textDecoration": "none",
               }
             }
+            target="_self"
           >
             <span
               onMouseEnter={undefined}
@@ -4933,6 +4969,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
         <div
           style={
             Object {
+              "borderBottom": "2px solid #168eea",
               "display": "inline-block",
               "margin": "0 8px 0 8px",
               "minWidth": "60px",
@@ -4942,15 +4979,20 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           }
         >
           <a
-            className={undefined}
-            href="#/profile/12345/tab/settings"
+            href="#"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
-                "padding": "0 4px 16px",
+                "color": "#168eea",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "textDecoration": "none",
               }
             }
+            target="_self"
           >
             <span
               onMouseEnter={undefined}
@@ -4971,6 +5013,19 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
             </span>
           </a>
         </div>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "0",
+              "marginTop": "0",
+              "width": "100%",
+            }
+          }
+        />
       </div>
       <div
         style={

@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots TabNavigation default 1`] = `
+<div
+  style={
+    Object {
+      "paddingTop": "21px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "borderBottom": "2px solid #168eea",
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0px 4px 16px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <a
+      href="#"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "color": "#168eea",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "textDecoration": "none",
+        }
+      }
+      target="_self"
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Queue
+        </span>
+      </span>
+    </a>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0px 4px 16px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <a
+      href="#"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "color": "#168eea",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "textDecoration": "none",
+        }
+      }
+      target="_self"
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Sent Posts
+        </span>
+      </span>
+    </a>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "margin": "0 8px 0 8px",
+        "minWidth": "60px",
+        "padding": "0px 4px 16px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <a
+      href="#"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "color": "#168eea",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "textDecoration": "none",
+        }
+      }
+      target="_self"
+    >
+      <span
+        onMouseEnter={undefined}
+        onMouseLeave={undefined}
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Settings
+        </span>
+      </span>
+    </a>
+  </div>
+  <hr
+    style={
+      Object {
+        "background": "#e6ebef",
+        "border": "none",
+        "boxSizing": "border-box",
+        "height": "0.063rem",
+        "marginBottom": "0",
+        "marginTop": "0",
+        "width": "100%",
+      }
+    }
+  />
+</div>
+`;

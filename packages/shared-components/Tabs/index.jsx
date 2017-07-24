@@ -1,22 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
+  Divider,
+} from '@bufferapp/components';
 
 const tabsStyle = {
-  borderBottom: `1px solid ${geyser}`,
   paddingTop: '21px',
 };
 
-const Tabs = ({ children }) => (
+const Tabs = ({
+  children,
+  selectedTabId,
+  onTabClick,
+}) => (
   <div style={tabsStyle}>
-    {children}
+    {React.Children.map(children, tab => React.cloneElement(tab, {
+      selected: selectedTabId === tab.props.tabId,
+      onClick: onTabClick,
+    }))}
+    <Divider marginTop={'0'} marginBottom={'0'} />
   </div>
 );
 
 Tabs.propTypes = {
   children: PropTypes.node,
+  selectedTabId: PropTypes.string,
+  onTabClick: PropTypes.func,
 };
 
 export default Tabs;

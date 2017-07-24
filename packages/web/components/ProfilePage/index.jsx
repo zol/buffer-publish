@@ -115,7 +115,10 @@ const ProfilePage = ({
       />
     </div>
     <div style={contentStyle}>
-      <TabNavigation profileId />
+      <TabNavigation
+        profileId={profileId}
+        tabId={tabId}
+      />
       <div style={tabContentStyle}>
         {TabContent({ tabId })}
       </div>
