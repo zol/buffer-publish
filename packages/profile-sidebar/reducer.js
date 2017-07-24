@@ -7,7 +7,6 @@ export const actionTypes = {
 };
 
 const initialState = {
-  selectedProfileId: null,
   profiles,
   lockedProfiles,
 };
@@ -35,11 +34,6 @@ export default (state = initialState, action) => {
           .map(profileMapper),
       };
     }
-    case actionTypes.SELECT_PROFILE:
-      return {
-        ...state,
-        selectedProfileId: action.id,
-      };
     default:
       return state;
   }
@@ -49,6 +43,5 @@ export const actions = {
   selectProfile: ({ profile }) => ({
     type: actionTypes.SELECT_PROFILE,
     profile,
-    id: profile.id,
   }),
 };

@@ -1,3 +1,8 @@
+import { push } from 'react-router-redux';
+import {
+  generateProfilePageRoute,
+  getProfilePageParams,
+} from '@bufferapp/publish-routes';
 import {
   actionTypes as dataFetchActionTypes,
   actions as dataFetchActions,
@@ -14,17 +19,26 @@ export default ({ dispatch, getState }) => next => (action) => {
         name: 'profiles',
       }));
       break;
-    case `profiles_${dataFetchActionTypes.FETCH_SUCCESS}`:
-      // if no profile is selected, select one!
-      if (
-        !getState().profileSidebar.selectedProfile &&
-        action.result.length > 0
-      ) {
+    case `profiles_${dataFetchActionTypes.FETCH_SUCCESS}`: {
+      const params = getProfilePageParams({
+        path: getState().router.location.pathname,
+      });
+      if (params && params.profileId) {
         dispatch(actions.selectProfile({
-          profile: action.result[0],
+          id: params.profileId,
         }));
+      } else if (action.result.length > 0) {
+        const selectedProfile = action.result[0];
+        dispatch(actions.selectProfile({
+          profile: selectedProfile,
+        }));
+        dispatch(push(generateProfilePageRoute({
+          profileId: selectedProfile.id,
+          tabId: 'queue',
+        })));
       }
       break;
+    }
     default:
       break;
   }

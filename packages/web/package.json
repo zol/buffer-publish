@@ -29,7 +29,8 @@
     "@bufferapp/settings": "0.0.1",
     "@bufferapp/async-data-fetch": "0.0.1",
     "@bufferapp/profile-sidebar": "0.0.1",
-    "@bufferapp/app-sidebar": "0.0.1"
+    "@bufferapp/app-sidebar": "0.0.1",
+    "@bufferapp/publish-routes": "0.0.1"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {

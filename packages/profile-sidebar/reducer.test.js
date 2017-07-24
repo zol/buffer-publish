@@ -6,7 +6,6 @@ import lockedProfiles from './mockData/lockedProfiles';
 describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
-      selectedProfileId: null,
       profiles,
       lockedProfiles,
     };
@@ -24,7 +23,6 @@ describe('reducer', () => {
       .toEqual({
         type: actionTypes.SELECT_PROFILE,
         profile,
-        id: '1234',
       });
   });
 });

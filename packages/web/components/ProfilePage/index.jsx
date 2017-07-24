@@ -109,7 +109,10 @@ const ProfilePage = ({
 }) =>
   <div style={profilePageStyle}>
     <div style={profileSideBarStyle}>
-      <ProfileSidebar />
+      <ProfileSidebar
+        profileId={profileId}
+        tabId={tabId}
+      />
     </div>
     <div style={contentStyle}>
       <TabNavigation profileId />
