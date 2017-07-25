@@ -11,6 +11,8 @@ export default connect(
     translations: state.i18n.translations.settings, // all package translations
     days: state.settings.days,
     items: state.settings.items,
+    profileTimezone: state.settings.profileTimezone,
+    hasTwentyFourHourTimeFormat: state.settings.hasTwentyFourHourTimeFormat,
   }),
 )(ProfileSettings);
 

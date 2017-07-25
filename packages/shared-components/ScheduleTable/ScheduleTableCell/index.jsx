@@ -82,6 +82,7 @@ ScheduleTableCell.defaultProps = {
   select24Hours: false,
 };
 
+// TODO: onChange and onRemoveTimeClick required when app is not read-only
 ScheduleTableCell.propTypes = {
   disabled: PropTypes.bool.isRequired,
   select24Hours: PropTypes.bool.isRequired,
@@ -93,8 +94,8 @@ ScheduleTableCell.propTypes = {
       }),
       PropTypes.string,
     ]),
-    onChange: PropTypes.func.isRequired,
-    onRemoveTimeClick: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
+    onRemoveTimeClick: PropTypes.func,
   }).isRequired,
 };
 

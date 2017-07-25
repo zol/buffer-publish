@@ -14,6 +14,9 @@ import ProfileSettings from './index';
 import {
   settingsHeader,
   days,
+  initialValues,
+  profileTimezone,
+  timezones,
 } from './settingsData';
 
 
@@ -33,5 +36,9 @@ storiesOf('ProfileSettings')
     <ProfileSettings
       settingsHeader={settingsHeader}
       days={days}
+      hasTwentyFourHourTimeFormat={false}
+      initialValues={initialValues}
+      items={timezones}
+      profileTimezone={profileTimezone}
     />
   ));

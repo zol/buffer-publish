@@ -11,6 +11,7 @@ import ProfileSettings from './components/ProfileSettings';
 import {
   settingsHeader,
   days,
+  timezones,
 } from './components/ProfileSettings/settingsData';
 
 const storeFake = state => ({
@@ -27,6 +28,9 @@ describe('Settings', () => {
         loading: false,
         settingsHeader,
         days,
+        profileTimezone: 'Europe/London',
+        hasTwentyFourHourTimeFormat: false,
+        items: timezones,
       },
       i18n: {
         translations: {

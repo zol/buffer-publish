@@ -13,6 +13,8 @@ describe('reducer', () => {
       loading: false,
       days: [],
       items: timezones,
+      profileTimezone: 'Europe/London',
+      hasTwentyFourHourTimeFormat: false,
     };
     const action = {
       type: 'INIT',

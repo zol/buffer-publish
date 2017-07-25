@@ -13,6 +13,8 @@ import {
 
 import SettingsTooltip from '../SettingsTooltip';
 
+const moment = require('moment-timezone');
+
 const headerStyle = {
   marginTop: '0.5rem',
   marginBottom: '0.5rem',
@@ -48,19 +50,24 @@ const ProfileSettings = ({
   items,
   loading,
   settingsHeader,
+  profileTimezone,
+  hasTwentyFourHourTimeFormat,
+  initialValues,
 }) => {
   if (loading) {
     return (<div>Loading...</div>);
   }
-  // TODO: set initial time to current time in profile timezones
-  // const now = moment().tz(timezone);
-  const initialValues = {
-    time: {
-      hours: 14, // now.hour()
-      minutes: 20, // now.minute()
-    },
-  };
 
+  const now = moment().tz(profileTimezone);
+  if (!initialValues) {
+    initialValues = {
+      time: {
+        hours: now.hour(),
+        minutes: now.minute(),
+      },
+    };
+  }
+  console.log('initial values: ', initialValues); // eslint-disable-line
   const links = [{
     rawString: '@joelgascoigne',
     displayString: '@joelgascoigne',
@@ -94,33 +101,58 @@ const ProfileSettings = ({
         <PostingTimeForm
           initialValues={initialValues}
           handleSubmit={() => { console.log('posting time submit'); }}
-          twentyfourHourTime
+          twentyfourHourTime={hasTwentyFourHourTimeFormat}
         />
       </div>
       <Divider />
       <div style={sectionStyle}>
         <SettingsTooltip />
-        <ScheduleTable days={days} />
+        <ScheduleTable
+          days={days}
+          select24Hours={hasTwentyFourHourTimeFormat}
+        />
       </div>
     </div>
   );
 };
 
-// TODO: finish filling out days propTypes
+// TODO: onChange and onRemoveTimeClick required when app is not read-only
 ProfileSettings.propTypes = {
   days: PropTypes.arrayOf(
     PropTypes.shape({
       dayName: PropTypes.string,
       postingTimesTotal: PropTypes.number,
+      times: PropTypes.arrayOf(
+        PropTypes.shape({
+          value: PropTypes.oneOfType([
+            PropTypes.shape({
+              hours: PropTypes.number.isRequired,
+              minutes: PropTypes.number.isRequired,
+            }),
+            PropTypes.string,
+          ]),
+          onChange: PropTypes.func,
+          onRemoveTimeClick: PropTypes.func,
+        }).isRequired,
+      ).isRequired,
     }),
   ).isRequired,
+  hasTwentyFourHourTimeFormat: PropTypes.bool.isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  initialValues: PropTypes.shape({
+    time: PropTypes.shape({
+      hours: PropTypes.number,
+      minutes: PropTypes.number,
+    }),
+  }),
   loading: PropTypes.bool.isRequired,
+  profileTimezone: PropTypes.string.isRequired,
   settingsHeader: PropTypes.string.isRequired,
 };
 
 ProfileSettings.defaultProps = {
   loading: false,
+  initialValues: undefined,
 };
 
 export default ProfileSettings;

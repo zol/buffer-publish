@@ -1,5 +1,6 @@
 
 import { actionTypes as profileActionTypes } from '@bufferapp/profile-sidebar';
+import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import {
   settingsHeader,
   timezones,
@@ -14,6 +15,8 @@ const initialState = {
   loading: false,
   days: [],
   items: timezones,
+  profileTimezone: 'Europe/London',
+  hasTwentyFourHourTimeFormat: false,
 };
 
 export default (state = initialState, action) => {
@@ -23,6 +26,12 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         days: transformSchedules(action.profile.schedules),
+        profileTimezone: action.profile.timezone,
+      };
+    case `user_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        hasTwentyFourHourTimeFormat: action.result.hasTwentyFourHourTimeFormat,
       };
     default:
       return state;

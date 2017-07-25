@@ -10,6 +10,12 @@ import { checkA11y } from 'storybook-addon-a11y';
 import ProfilePage from './index';
 
 const history = createHistory();
+const initialValues = {
+  time: {
+    hours: 14,
+    minutes: 20,
+  },
+};
 
 storiesOf('ProfilePage')
   .addDecorator(checkA11y)

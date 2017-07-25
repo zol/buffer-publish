@@ -1,21 +1,24 @@
 
 export const settingsHeader = 'Your posting schedule for @joelgascoigne';
+const onChange = () => { console.log('on-change'); }; // eslint-disable-line
+const onRemoveTimeClick = () => { console.log('on-remove-time-click'); }; // eslint-disable-line
+
 const times = [
   {
     value: {
       hours: 9,
       minutes: 41,
     },
-    onChange: console.log('on-change'), //eslint-disable-line
-    onRemoveTimeClick: console.log('on-remove-time-click'), //eslint-disable-line
+    onChange,
+    onRemoveTimeClick,
   },
   {
     value: {
       hours: 19,
       minutes: 0,
     },
-    onChange: console.log('on change'), //eslint-disable-line
-    onRemoveTimeClick: console.log('on-remove-time-click'), //eslint-disable-line
+    onChange,
+    onRemoveTimeClick,
   },
 ];
 export const days = [
@@ -65,3 +68,12 @@ export const timezones = [
   'Pacific/Auckland',
   'Pacific/Chatham',
 ];
+
+export const profileTimezone = 'Pacific/Midway';
+
+export const initialValues = {
+  time: {
+    hours: 14,
+    minutes: 20,
+  },
+};

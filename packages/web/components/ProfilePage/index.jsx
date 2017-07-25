@@ -50,7 +50,7 @@ const ScrollableGarbage = () =>
   );
 
 
-const TabContent = ({ tabId }) => {
+const TabContent = ({ tabId, initialValues, }) => {
   switch (tabId) {
     case 'queue':
       return (
@@ -77,6 +77,10 @@ const TabContent = ({ tabId }) => {
         <ProfileSettings
           settingsHeader
           days
+          items
+          profileTimezone
+          hasTwentyFourHourTimeFormat
+          initialValues
         />
       );
     default:
@@ -93,10 +97,17 @@ const TabContent = ({ tabId }) => {
 
 TabContent.propTypes = {
   tabId: PropTypes.string,
+  initialValues: PropTypes.shape({
+    time: PropTypes.shape({
+      hours: PropTypes.number,
+      minutes: PropTypes.number,
+    }),
+  }),
 };
 
 TabContent.defaultProps = {
   tabId: '',
+  initialValues: undefined,
 };
 
 const ProfilePage = ({
@@ -106,6 +117,7 @@ const ProfilePage = ({
       tabId,
     },
   },
+  initialValues,
 }) =>
   <div style={profilePageStyle}>
     <div style={profileSideBarStyle}>
@@ -120,7 +132,7 @@ const ProfilePage = ({
         tabId={tabId}
       />
       <div style={tabContentStyle}>
-        {TabContent({ tabId })}
+        {TabContent({ tabId, initialValues })}
       </div>
     </div>
   </div>;
@@ -132,6 +144,16 @@ ProfilePage.propTypes = {
       profileId: PropTypes.string,
     }),
   }).isRequired,
+  initialValues: PropTypes.shape({
+    time: PropTypes.shape({
+      hours: PropTypes.number,
+      minutes: PropTypes.number,
+    }),
+  }),
+};
+
+ProfilePage.defaultProps = {
+  initialValues: undefined,
 };
 
 export default ProfilePage;
