@@ -3,6 +3,7 @@ import { profilePageRoute } from '@bufferapp/publish-routes';
 import { Route, Switch } from 'react-router';
 import AppSidebar from '@bufferapp/app-sidebar';
 import ProfilePage from '../ProfilePage';
+import DefaultPage from '../DefaultPage';
 
 const appStyle = {
   display: 'flex',
@@ -22,6 +23,7 @@ export default () =>
           path={profilePageRoute}
           component={ProfilePage}
         />
+        <Route component={DefaultPage} />
       </Switch>
     </div>
   </div>;
