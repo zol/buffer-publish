@@ -648,7 +648,53 @@ exports[`Snapshots App should render application 1`] = `
           "flexGrow": 1,
         }
       }
-    />
+    >
+      <div
+        style={
+          Object {
+            "padding": "1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1.25rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Welcome to Buffer Publish 🎉
+        </span>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "0.5rem",
+              "marginTop": "0.5rem",
+              "width": "100%",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Looks like you are logged in!
+        </span>
+      </div>
+    </div>
   </div>
 </span>
 `;
