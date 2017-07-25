@@ -1,2 +1,2 @@
 export middleware from './middleware';
-export reducer from './reducer';
+export reducer, { actions } from './reducer';

@@ -1,5 +1,11 @@
-import { actionTypes, actions } from '@bufferapp/async-data-fetch';
+import {
+  actionTypes as asyncActionTypes,
+  actions as asyncActions,
+} from '@bufferapp/async-data-fetch';
+
 import Cookie from 'js-cookie';
+
+import { actions } from './index';
 
 export default ({ dispatch }) => next => (action) => {
   next(action);
@@ -11,7 +17,7 @@ export default ({ dispatch }) => next => (action) => {
       const parsedSession = session ? JSON.parse(session) : {};
       // simulate a succesful login with the token from the cookie
       if (parsedSession.token) {
-        dispatch(actions.fetchSuccess({
+        dispatch(asyncActions.fetchSuccess({
           name: 'login',
           args: 'simulated',
           id: 'simulated',
@@ -20,18 +26,19 @@ export default ({ dispatch }) => next => (action) => {
           },
         }));
       }
+      dispatch(actions.checkedCookie());
       // TODO: else dispatch a route change to login service
       break;
     }
-    case `login_${actionTypes.FETCH_SUCCESS}`:
+    case `login_${asyncActionTypes.FETCH_SUCCESS}`:
       Cookie.set('session', {
         token: action.result.token,
       }, {
         domain: '.buffer.com',
       });
       break;
-    case `login_${actionTypes.FETCH_FAIL}`:
-    case `logout_${actionTypes.FETCH_START}`:
+    case `login_${asyncActionTypes.FETCH_FAIL}`:
+    case `logout_${asyncActionTypes.FETCH_START}`:
       if (action.error) {
         console.error(action.error.error); // eslint-disable-line no-console
       }
