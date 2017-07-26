@@ -21,8 +21,8 @@ const Tab = ({
   <div
     style={calculateStyles({
       default: {
-        padding: '0px 4px 16px',
-        margin: '0 8px 0 8px',
+        transform: 'translate(0, 1px)',
+        margin: '0 42px 0 0',
         display: 'inline-block',
         minWidth: '60px',
         textAlign: 'center',
@@ -35,6 +35,8 @@ const Tab = ({
     })}
   >
     <Link
+      padding="18px 13px 17px 13px"
+      block
       href={'#'}
       onClick={(e) => {
         e.preventDefault();
@@ -43,7 +45,9 @@ const Tab = ({
       unstyled
     >
       <HoverableText
-        hoverColor={'black'}
+        color={selected ? 'black' : 'shuttleGray'}
+        hoverColor="black"
+        size="mini"
       >
         {children}
       </HoverableText>

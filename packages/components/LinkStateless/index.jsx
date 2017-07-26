@@ -26,11 +26,14 @@ const Link = ({
   onFocus,
   onBlur,
   onClick,
+  padding,
+  block,
 }) => {
   const style = calculateStyles({
     default: {
       color: curiousBlue,
       fontFamily,
+      padding,
     },
     hovered: {
       color: denim,
@@ -38,11 +41,15 @@ const Link = ({
     unstyled: {
       textDecoration: 'none',
     },
+    block: {
+      display: 'block',
+    },
     focused: focusedStyle,
   }, {
     hovered,
     unstyled,
     focused,
+    block,
   });
 
   return (
@@ -73,6 +80,13 @@ Link.propTypes = {
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
   onClick: PropTypes.func,
+  padding: PropTypes.string,
+  block: PropTypes.bool,
+};
+
+Link.defaultProps = {
+  padding: '0',
+  block: false,
 };
 
 export default Link;
