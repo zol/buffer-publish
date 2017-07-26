@@ -1660,6 +1660,7 @@ exports[`Snapshots Card default 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1678,6 +1679,7 @@ exports[`Snapshots Card default 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1718,6 +1720,7 @@ exports[`Snapshots Card doublePadding 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1736,6 +1739,7 @@ exports[`Snapshots Card doublePadding 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1779,6 +1783,7 @@ exports[`Snapshots Card empty + hovered 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1797,6 +1802,7 @@ exports[`Snapshots Card empty + hovered 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1863,6 +1869,7 @@ exports[`Snapshots Card faded 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1881,6 +1888,7 @@ exports[`Snapshots Card faded 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1922,6 +1930,7 @@ exports[`Snapshots Card failed 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1940,6 +1949,7 @@ exports[`Snapshots Card failed 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1981,6 +1991,7 @@ exports[`Snapshots Card hovered 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -1999,6 +2010,7 @@ exports[`Snapshots Card hovered 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2039,6 +2051,7 @@ exports[`Snapshots Card noBorder 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2057,6 +2070,7 @@ exports[`Snapshots Card noBorder 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2097,6 +2111,7 @@ exports[`Snapshots Card noPadding 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2115,6 +2130,7 @@ exports[`Snapshots Card noPadding 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2155,6 +2171,7 @@ exports[`Snapshots Card off-white background color 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2173,6 +2190,7 @@ exports[`Snapshots Card off-white background color 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2213,6 +2231,7 @@ exports[`Snapshots Card onMouseEnter + onMouseLeave 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2231,6 +2250,7 @@ exports[`Snapshots Card onMouseEnter + onMouseLeave 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2271,6 +2291,7 @@ exports[`Snapshots Card reducedPadding 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -2289,6 +2310,7 @@ exports[`Snapshots Card reducedPadding 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15031,6 +15053,7 @@ exports[`Snapshots Link default 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
       }
     }
     target="_self"
@@ -15053,6 +15076,7 @@ exports[`Snapshots Link onClick 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
         "textDecoration": "none",
       }
     }
@@ -15076,6 +15100,7 @@ exports[`Snapshots Link unstyled 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
         "textDecoration": "none",
       }
     }
@@ -15100,6 +15125,7 @@ exports[`Snapshots LinkStateless default 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15118,6 +15144,7 @@ exports[`Snapshots LinkStateless default 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15142,6 +15169,7 @@ exports[`Snapshots LinkStateless focused 1`] = `
         "boxShadow": "0 0 0.25rem #168eea",
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
       }
     }
     target="_self"
@@ -15165,6 +15193,7 @@ exports[`Snapshots LinkStateless hovered 1`] = `
         Object {
           "color": "#137ac9",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15183,6 +15212,7 @@ exports[`Snapshots LinkStateless hovered 1`] = `
         Object {
           "color": "#137ac9",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15207,6 +15237,7 @@ exports[`Snapshots LinkStateless newTab 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_blank"
@@ -15225,6 +15256,7 @@ exports[`Snapshots LinkStateless newTab 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_blank"
@@ -15248,6 +15280,7 @@ exports[`Snapshots LinkStateless onClick 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
       }
     }
     target="_self"
@@ -15270,6 +15303,7 @@ exports[`Snapshots LinkStateless onFocus + onBlur 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
       }
     }
     target="_self"
@@ -15293,6 +15327,7 @@ exports[`Snapshots LinkStateless onMouseEnter + onMouseLeave 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15311,6 +15346,7 @@ exports[`Snapshots LinkStateless onMouseEnter + onMouseLeave 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15335,6 +15371,7 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
           "textDecoration": "none",
         }
       }
@@ -15354,6 +15391,7 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
           "textDecoration": "none",
         }
       }
@@ -15389,6 +15427,7 @@ exports[`Snapshots LinkifiedText black text, unstyled link 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
           "textDecoration": "none",
         }
       }
@@ -15425,6 +15464,7 @@ exports[`Snapshots LinkifiedText default 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15475,6 +15515,7 @@ exports[`Snapshots LinkifiedText newTab 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_blank"
@@ -15527,6 +15568,7 @@ exports[`Snapshots LinkifiedText size: small 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15562,6 +15604,7 @@ exports[`Snapshots LinkifiedText two links 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15580,6 +15623,7 @@ exports[`Snapshots LinkifiedText two links 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
         }
       }
       target="_self"
@@ -15615,6 +15659,7 @@ exports[`Snapshots LinkifiedText unstyled 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "0",
           "textDecoration": "none",
         }
       }
