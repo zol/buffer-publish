@@ -11,6 +11,5 @@ export PostList from './PostList';
 export PostLists from './PostLists';
 export PostingTimeForm from './PostingTimeForm';
 export TextPost from './TextPost';
-export TimezoneInputForm from './TimezoneInputForm';
 export VideoPost from './VideoPost';
 export ScheduleTable from './ScheduleTable';
