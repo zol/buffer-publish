@@ -5,15 +5,14 @@ import { checkA11y } from 'storybook-addon-a11y';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import {
-  reducer as formReducer,
+  reducer as form,
 } from 'redux-form';
+
 import TimezoneInputForm from './index';
 
-const initialValues = {
-  value: 'Type city name...',
-};
+const settings = (state, _) => ({ profileTimezone: 'America/Vancouver' }); // eslint-disable-line
+const store = createStore(combineReducers({ form, settings }));
 
-const store = createStore(combineReducers({ form: formReducer }));
 const items = [
   'Alabama',
   'Alaska',
@@ -88,7 +87,6 @@ storiesOf('TimezoneInputForm')
   )
   .add('default', () => (
     <TimezoneInputForm
-      initialValues={initialValues}
       handleSubmit={action('on-submit-action')}
       items={items}
       onChange={action('on-change-action')}

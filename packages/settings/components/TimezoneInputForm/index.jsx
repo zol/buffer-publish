@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
 import {
   InputAutocomplete,
   Text,
@@ -11,6 +12,7 @@ const editTimezoneStyle = {
   flex: 1,
   flexDirection: 'column',
   marginBottom: '0.5rem',
+  width: '200px',
 };
 
 const textWrapperStyle = {
@@ -32,18 +34,29 @@ const fieldStyle = {
   width: '100%',
 };
 
-const TimezoneInputForm = ({
+const sortItems = (a, b, value) => {
+  const aLower = a.toLowerCase();
+  const bLower = b.toLowerCase();
+  const valueLower = value.toLowerCase();
+  const queryPosA = aLower.indexOf(valueLower);
+  const queryPosB = bLower.indexOf(valueLower);
+  if (queryPosA !== queryPosB) {
+    return queryPosA - queryPosB;
+  }
+  return aLower < bLower ? -1 : 1;
+};
+
+let TimezoneInputForm = ({
   items,
   handleSubmit,
-  sortItems,
 }) => (
   <form>
     <div style={editTimezoneStyle}>
       <div style={textWrapperStyle}>
         <Text
-          size={'small'}
-          color={'black'}
-          weight={'thin'}
+          size="small"
+          color="black"
+          weight="thin"
         >
           Timezone
         </Text>
@@ -52,7 +65,7 @@ const TimezoneInputForm = ({
         <div style={chooseTimezoneStyle}>
           <div style={fieldStyle}>
             <Field
-              name={'timezone'}
+              name="timezone"
               component={InputAutocomplete}
               items={items}
               onSelect={handleSubmit}
@@ -66,14 +79,26 @@ const TimezoneInputForm = ({
   );
 
 TimezoneInputForm.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.string),
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
   handleSubmit: PropTypes.func.isRequired,
-  sortItems: PropTypes.func.isRequired,
 };
 
 TimezoneInputForm.defaultProps = {
 };
 
-export default reduxForm({
+
+TimezoneInputForm = reduxForm({
   form: 'timezone-input',
+  enableReinitialize: true,
 })(TimezoneInputForm);
+
+TimezoneInputForm = connect(
+  ({ settings }) => ({
+    initialValues: {
+      timezone: settings ? settings.profileTimezone : '',
+    },
+  }),
+)(TimezoneInputForm);
+
+export default TimezoneInputForm;
+

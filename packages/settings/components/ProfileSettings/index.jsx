@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import {
   Divider,
   LinkifiedText,
+  Text,
 } from '@bufferapp/components';
 
 import {
   PostingTimeForm,
   ScheduleTable,
-  TimezoneInputForm,
 } from '@bufferapp/publish-shared-components';
 
-import SettingsTooltip from '../SettingsTooltip';
+import TimezoneInputForm from '../TimezoneInputForm';
 
 const moment = require('moment-timezone');
 
@@ -31,18 +31,6 @@ const sectionStyle = {
   marginTop: '1.5rem',
   marginBottom: '1.5rem',
   width: '100%',
-};
-
-const sortItems = (a, b, value) => {
-  const aLower = a.toLowerCase();
-  const bLower = b.toLowerCase();
-  const valueLower = value.toLowerCase();
-  const queryPosA = aLower.indexOf(valueLower);
-  const queryPosB = bLower.indexOf(valueLower);
-  if (queryPosA !== queryPosB) {
-    return queryPosA - queryPosB;
-  }
-  return aLower < bLower ? -1 : 1;
 };
 
 const ProfileSettings = ({
@@ -67,7 +55,6 @@ const ProfileSettings = ({
       },
     };
   }
-  console.log('initial values: ', initialValues); // eslint-disable-line
   const links = [{
     rawString: '@joelgascoigne',
     displayString: '@joelgascoigne',
@@ -80,7 +67,7 @@ const ProfileSettings = ({
       <div style={headerStyle}>
         <LinkifiedText
           links={links}
-          color={'black'}
+          color="black"
           unstyled
         >
           {`${settingsHeader}`}
@@ -93,7 +80,6 @@ const ProfileSettings = ({
           items={items}
           onChange={() => { console.log('on change'); }}
           onSelect={() => { console.log('on select action'); }}
-          sortItems={sortItems}
         />
       </div>
       <Divider />
@@ -106,7 +92,14 @@ const ProfileSettings = ({
       </div>
       <Divider />
       <div style={sectionStyle}>
-        <SettingsTooltip />
+        <Text
+          color="black"
+          weight="thin"
+          size="small"
+        >
+          Posting times
+        </Text>
+        <Divider color="white" />
         <ScheduleTable
           days={days}
           select24Hours={hasTwentyFourHourTimeFormat}

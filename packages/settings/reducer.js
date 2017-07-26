@@ -15,7 +15,7 @@ const initialState = {
   loading: false,
   days: [],
   items: timezones,
-  profileTimezone: 'Europe/London',
+  profileTimezone: '',
   hasTwentyFourHourTimeFormat: false,
 };
 
