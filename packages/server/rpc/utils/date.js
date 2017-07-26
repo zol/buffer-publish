@@ -1,8 +1,9 @@
 const moment = require('moment-timezone');
 
 const getOrdinalSuffix = (dayNumber) => {
-  const possibleSuffix = [0, 'st', 'nd', 'rd'];
-  return `${possibleSuffix[((dayNumber = Math.abs(dayNumber % 100)) - 20) % 10] || possibleSuffix[dayNumber] || 'th'}`;
+  const possibleSuffix = [false, 'st', 'nd', 'rd'];
+  const overTwentyOnesDigit = ((dayNumber = Math.abs(dayNumber % 100)) - 20) % 10;
+  return possibleSuffix[overTwentyOnesDigit] || possibleSuffix[dayNumber] || 'th';
 };
 
 const isToday = ({ date, profileTimezone }) => {
