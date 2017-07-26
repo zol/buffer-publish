@@ -25,7 +25,9 @@ describe('service', () => {
       webpackConfig.output.publicPath,
       webpackConfig.output.filename,
     );
-    const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8').replace('{{{bundle}}}', webpackBundleLocation);
+    const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
+                    .replace('{{{bundle}}}', webpackBundleLocation)
+                    .replace('{{{bugsnagScript}}}', '');
     expect(body)
       .toBe(html);
   });
