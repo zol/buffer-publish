@@ -768,6 +768,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -924,6 +925,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -1161,6 +1163,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -1330,6 +1333,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -1559,24 +1563,20 @@ exports[`Snapshots ProfilePage should render 1`] = `
           "display": "flex",
           "flexDirection": "column",
           "flexGrow": 1,
+          "marginLeft": "1rem",
+          "marginRight": "1rem",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "paddingTop": "21px",
-          }
-        }
-      >
+      <div>
         <div
           style={
             Object {
               "display": "inline-block",
-              "margin": "0 8px 0 8px",
+              "margin": "0 42px 0 0",
               "minWidth": "60px",
-              "padding": "0px 4px 16px",
               "textAlign": "center",
+              "transform": "translate(0, 1px)",
             }
           }
         >
@@ -1590,7 +1590,9 @@ exports[`Snapshots ProfilePage should render 1`] = `
             style={
               Object {
                 "color": "#168eea",
+                "display": "block",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "18px 13px 17px 13px",
                 "textDecoration": "none",
               }
             }
@@ -1605,7 +1607,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#59626a",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "1rem",
+                    "fontSize": "0.9rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1619,10 +1621,10 @@ exports[`Snapshots ProfilePage should render 1`] = `
           style={
             Object {
               "display": "inline-block",
-              "margin": "0 8px 0 8px",
+              "margin": "0 42px 0 0",
               "minWidth": "60px",
-              "padding": "0px 4px 16px",
               "textAlign": "center",
+              "transform": "translate(0, 1px)",
             }
           }
         >
@@ -1636,7 +1638,9 @@ exports[`Snapshots ProfilePage should render 1`] = `
             style={
               Object {
                 "color": "#168eea",
+                "display": "block",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "18px 13px 17px 13px",
                 "textDecoration": "none",
               }
             }
@@ -1651,7 +1655,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#59626a",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "1rem",
+                    "fontSize": "0.9rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1665,10 +1669,10 @@ exports[`Snapshots ProfilePage should render 1`] = `
           style={
             Object {
               "display": "inline-block",
-              "margin": "0 8px 0 8px",
+              "margin": "0 42px 0 0",
               "minWidth": "60px",
-              "padding": "0px 4px 16px",
               "textAlign": "center",
+              "transform": "translate(0, 1px)",
             }
           }
         >
@@ -1682,7 +1686,9 @@ exports[`Snapshots ProfilePage should render 1`] = `
             style={
               Object {
                 "color": "#168eea",
+                "display": "block",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "18px 13px 17px 13px",
                 "textDecoration": "none",
               }
             }
@@ -1697,7 +1703,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#59626a",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "1rem",
+                    "fontSize": "0.9rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1725,8 +1731,6 @@ exports[`Snapshots ProfilePage should render 1`] = `
         style={
           Object {
             "flexGrow": 1,
-            "marginLeft": "1rem",
-            "marginRight": "1rem",
             "marginTop": "1rem",
             "overflowY": "auto",
           }
@@ -4073,6 +4077,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4229,6 +4234,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4466,6 +4472,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4635,6 +4642,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4864,24 +4872,20 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           "display": "flex",
           "flexDirection": "column",
           "flexGrow": 1,
+          "marginLeft": "1rem",
+          "marginRight": "1rem",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "paddingTop": "21px",
-          }
-        }
-      >
+      <div>
         <div
           style={
             Object {
               "display": "inline-block",
-              "margin": "0 8px 0 8px",
+              "margin": "0 42px 0 0",
               "minWidth": "60px",
-              "padding": "0px 4px 16px",
               "textAlign": "center",
+              "transform": "translate(0, 1px)",
             }
           }
         >
@@ -4895,7 +4899,9 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
             style={
               Object {
                 "color": "#168eea",
+                "display": "block",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "18px 13px 17px 13px",
                 "textDecoration": "none",
               }
             }
@@ -4910,7 +4916,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#59626a",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "1rem",
+                    "fontSize": "0.9rem",
                     "fontWeight": 400,
                   }
                 }
@@ -4924,10 +4930,10 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           style={
             Object {
               "display": "inline-block",
-              "margin": "0 8px 0 8px",
+              "margin": "0 42px 0 0",
               "minWidth": "60px",
-              "padding": "0px 4px 16px",
               "textAlign": "center",
+              "transform": "translate(0, 1px)",
             }
           }
         >
@@ -4941,7 +4947,9 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
             style={
               Object {
                 "color": "#168eea",
+                "display": "block",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "18px 13px 17px 13px",
                 "textDecoration": "none",
               }
             }
@@ -4956,7 +4964,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#59626a",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "1rem",
+                    "fontSize": "0.9rem",
                     "fontWeight": 400,
                   }
                 }
@@ -4971,10 +4979,10 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
             Object {
               "borderBottom": "2px solid #168eea",
               "display": "inline-block",
-              "margin": "0 8px 0 8px",
+              "margin": "0 42px 0 0",
               "minWidth": "60px",
-              "padding": "0px 4px 16px",
               "textAlign": "center",
+              "transform": "translate(0, 1px)",
             }
           }
         >
@@ -4988,7 +4996,9 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
             style={
               Object {
                 "color": "#168eea",
+                "display": "block",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "18px 13px 17px 13px",
                 "textDecoration": "none",
               }
             }
@@ -5001,9 +5011,9 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#000",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "1rem",
+                    "fontSize": "0.9rem",
                     "fontWeight": 400,
                   }
                 }
@@ -5031,8 +5041,6 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
         style={
           Object {
             "flexGrow": 1,
-            "marginLeft": "1rem",
-            "marginRight": "1rem",
             "marginTop": "1rem",
             "overflowY": "auto",
           }
@@ -5070,6 +5078,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }

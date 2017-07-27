@@ -640,6 +640,7 @@ exports[`Snapshots ImagePost error 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -1009,6 +1010,7 @@ exports[`Snapshots ImagePost queued image post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -1429,6 +1431,7 @@ exports[`Snapshots ImagePost retweet 1`] = `
                       Object {
                         "color": "#168eea",
                         "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "padding": "0",
                         "textDecoration": "none",
                       }
                     }
@@ -1766,6 +1769,7 @@ exports[`Snapshots ImagePost sent image post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -1920,6 +1924,7 @@ exports[`Snapshots ImagePost square image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -2256,6 +2261,7 @@ exports[`Snapshots ImagePost tag 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -2626,6 +2632,7 @@ exports[`Snapshots ImagePost tall image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -2962,6 +2969,7 @@ exports[`Snapshots ImagePost wide image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -3298,6 +3306,7 @@ exports[`Snapshots LinkPost error 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -3319,6 +3328,7 @@ exports[`Snapshots LinkPost error 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -3768,6 +3778,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -3789,6 +3800,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4205,6 +4217,7 @@ exports[`Snapshots LinkPost sent 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -4226,6 +4239,7 @@ exports[`Snapshots LinkPost sent 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4460,6 +4474,7 @@ exports[`Snapshots LinkPost square image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -4481,6 +4496,7 @@ exports[`Snapshots LinkPost square image 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -4897,6 +4913,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -4918,6 +4935,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -5334,6 +5352,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -5355,6 +5374,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -5771,6 +5791,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -6240,6 +6261,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -6676,6 +6698,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -8448,6 +8471,7 @@ exports[`Snapshots Post retweet with comment 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -11964,6 +11988,7 @@ exports[`Snapshots PostList link posts 1`] = `
                             Object {
                               "color": "#168eea",
                               "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "padding": "0",
                               "textDecoration": "none",
                             }
                           }
@@ -11985,6 +12010,7 @@ exports[`Snapshots PostList link posts 1`] = `
                           Object {
                             "color": "#168eea",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "padding": "0",
                             "textDecoration": "none",
                           }
                         }
@@ -12412,6 +12438,7 @@ exports[`Snapshots PostList link posts 1`] = `
                             Object {
                               "color": "#168eea",
                               "fontFamily": "\\"Open Sans\\", sans-serif",
+                              "padding": "0",
                               "textDecoration": "none",
                             }
                           }
@@ -12433,6 +12460,7 @@ exports[`Snapshots PostList link posts 1`] = `
                           Object {
                             "color": "#168eea",
                             "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "padding": "0",
                             "textDecoration": "none",
                           }
                         }
@@ -57751,10 +57779,10 @@ exports[`Snapshots Tab default 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "margin": "0 8px 0 8px",
+        "margin": "0 42px 0 0",
         "minWidth": "60px",
-        "padding": "0px 4px 16px",
         "textAlign": "center",
+        "transform": "translate(0, 1px)",
       }
     }
   >
@@ -57768,7 +57796,9 @@ exports[`Snapshots Tab default 1`] = `
       style={
         Object {
           "color": "#168eea",
+          "display": "block",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "18px 13px 17px 13px",
           "textDecoration": "none",
         }
       }
@@ -57783,7 +57813,7 @@ exports[`Snapshots Tab default 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -57803,10 +57833,10 @@ exports[`Snapshots Tab selected 1`] = `
       Object {
         "borderBottom": "2px solid #168eea",
         "display": "inline-block",
-        "margin": "0 8px 0 8px",
+        "margin": "0 42px 0 0",
         "minWidth": "60px",
-        "padding": "0px 4px 16px",
         "textAlign": "center",
+        "transform": "translate(0, 1px)",
       }
     }
   >
@@ -57820,7 +57850,9 @@ exports[`Snapshots Tab selected 1`] = `
       style={
         Object {
           "color": "#168eea",
+          "display": "block",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "18px 13px 17px 13px",
           "textDecoration": "none",
         }
       }
@@ -57833,9 +57865,9 @@ exports[`Snapshots Tab selected 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#000",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -57864,22 +57896,16 @@ exports[`Snapshots TableCell default 1`] = `
 
 exports[`Snapshots Tabs default 1`] = `
 <span>
-  <div
-    style={
-      Object {
-        "paddingTop": "21px",
-      }
-    }
-  >
+  <div>
     <div
       style={
         Object {
           "borderBottom": "2px solid #168eea",
           "display": "inline-block",
-          "margin": "0 8px 0 8px",
+          "margin": "0 42px 0 0",
           "minWidth": "60px",
-          "padding": "0px 4px 16px",
           "textAlign": "center",
+          "transform": "translate(0, 1px)",
         }
       }
     >
@@ -57893,7 +57919,9 @@ exports[`Snapshots Tabs default 1`] = `
         style={
           Object {
             "color": "#168eea",
+            "display": "block",
             "fontFamily": "\\"Open Sans\\", sans-serif",
+            "padding": "18px 13px 17px 13px",
             "textDecoration": "none",
           }
         }
@@ -57906,9 +57934,9 @@ exports[`Snapshots Tabs default 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#000",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
+                "fontSize": "0.9rem",
                 "fontWeight": 400,
               }
             }
@@ -57922,10 +57950,10 @@ exports[`Snapshots Tabs default 1`] = `
       style={
         Object {
           "display": "inline-block",
-          "margin": "0 8px 0 8px",
+          "margin": "0 42px 0 0",
           "minWidth": "60px",
-          "padding": "0px 4px 16px",
           "textAlign": "center",
+          "transform": "translate(0, 1px)",
         }
       }
     >
@@ -57939,7 +57967,9 @@ exports[`Snapshots Tabs default 1`] = `
         style={
           Object {
             "color": "#168eea",
+            "display": "block",
             "fontFamily": "\\"Open Sans\\", sans-serif",
+            "padding": "18px 13px 17px 13px",
             "textDecoration": "none",
           }
         }
@@ -57954,7 +57984,7 @@ exports[`Snapshots Tabs default 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
+                "fontSize": "0.9rem",
                 "fontWeight": 400,
               }
             }
@@ -58059,6 +58089,7 @@ exports[`Snapshots TextPost error 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -58404,6 +58435,7 @@ exports[`Snapshots TextPost queued text post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -58800,6 +58832,7 @@ exports[`Snapshots TextPost retweet 1`] = `
                       Object {
                         "color": "#168eea",
                         "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "padding": "0",
                         "textDecoration": "none",
                       }
                     }
@@ -59105,6 +59138,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "padding": "0",
                     "textDecoration": "none",
                   }
                 }
@@ -59234,6 +59268,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
                       Object {
                         "color": "#168eea",
                         "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "padding": "0",
                         "textDecoration": "none",
                       }
                     }
@@ -59547,6 +59582,7 @@ exports[`Snapshots TextPost sent 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -59677,6 +59713,7 @@ exports[`Snapshots VideoPost error 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -60080,6 +60117,7 @@ exports[`Snapshots VideoPost queued video post 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -60534,6 +60572,7 @@ exports[`Snapshots VideoPost retweet 1`] = `
                       Object {
                         "color": "#168eea",
                         "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "padding": "0",
                         "textDecoration": "none",
                       }
                     }
@@ -60905,6 +60944,7 @@ exports[`Snapshots VideoPost sent 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -61093,6 +61133,7 @@ exports[`Snapshots VideoPost square image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -61463,6 +61504,7 @@ exports[`Snapshots VideoPost tall image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }
@@ -61833,6 +61875,7 @@ exports[`Snapshots VideoPost wide image 1`] = `
                     Object {
                       "color": "#168eea",
                       "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "padding": "0",
                       "textDecoration": "none",
                     }
                   }

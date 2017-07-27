@@ -24,14 +24,14 @@ const contentStyle = {
   color: 'white',
   display: 'flex',
   flexDirection: 'column',
+  marginLeft: '1rem',
+  marginRight: '1rem',
 };
 
 const tabContentStyle = {
   flexGrow: 1,
   overflowY: 'auto',
   marginTop: '1rem',
-  marginLeft: '1rem',
-  marginRight: '1rem',
 };
 
 // TODO: this is only for testing content that is scrollable - delete this

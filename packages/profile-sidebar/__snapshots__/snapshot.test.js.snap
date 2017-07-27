@@ -299,6 +299,7 @@ exports[`Snapshots ProfileList should display a list of profiles 1`] = `
           Object {
             "color": "#168eea",
             "fontFamily": "\\"Open Sans\\", sans-serif",
+            "padding": "0",
             "textDecoration": "none",
           }
         }
@@ -456,6 +457,7 @@ exports[`Snapshots ProfileList should display a list of profiles 1`] = `
           Object {
             "color": "#168eea",
             "fontFamily": "\\"Open Sans\\", sans-serif",
+            "padding": "0",
             "textDecoration": "none",
           }
         }
@@ -613,6 +615,7 @@ exports[`Snapshots ProfileListItem should display locked 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
         "textDecoration": "none",
       }
     }
@@ -779,6 +782,7 @@ exports[`Snapshots ProfileListItem should display number of notifications 1`] = 
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
         "textDecoration": "none",
       }
     }
@@ -934,6 +938,7 @@ exports[`Snapshots ProfileListItem should display selected 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
         "textDecoration": "none",
       }
     }
@@ -1090,6 +1095,7 @@ exports[`Snapshots ProfileListItem should display twitter profile list item 1`] 
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "padding": "0",
         "textDecoration": "none",
       }
     }
@@ -1327,6 +1333,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -1484,6 +1491,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -1721,6 +1729,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -1890,6 +1899,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -2211,6 +2221,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -2367,6 +2378,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -2604,6 +2616,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -2774,6 +2787,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -2959,6 +2973,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -3129,6 +3144,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -3314,6 +3330,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -3484,6 +3501,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -3669,6 +3687,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -3839,6 +3858,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -4024,6 +4044,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -4194,6 +4215,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -4379,6 +4401,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -4549,6 +4572,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -4734,6 +4758,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -4904,6 +4929,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -5089,6 +5115,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -5259,6 +5286,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -5444,6 +5472,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -5614,6 +5643,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -5799,6 +5829,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }
@@ -5969,6 +6000,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
               Object {
                 "color": "#168eea",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
+                "padding": "0",
                 "textDecoration": "none",
               }
             }

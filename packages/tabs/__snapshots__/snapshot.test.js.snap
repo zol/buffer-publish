@@ -1,22 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshots TabNavigation default 1`] = `
-<div
-  style={
-    Object {
-      "paddingTop": "21px",
-    }
-  }
->
+<div>
   <div
     style={
       Object {
         "borderBottom": "2px solid #168eea",
         "display": "inline-block",
-        "margin": "0 8px 0 8px",
+        "margin": "0 42px 0 0",
         "minWidth": "60px",
-        "padding": "0px 4px 16px",
         "textAlign": "center",
+        "transform": "translate(0, 1px)",
       }
     }
   >
@@ -30,7 +24,9 @@ exports[`Snapshots TabNavigation default 1`] = `
       style={
         Object {
           "color": "#168eea",
+          "display": "block",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "18px 13px 17px 13px",
           "textDecoration": "none",
         }
       }
@@ -43,9 +39,9 @@ exports[`Snapshots TabNavigation default 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#000",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -59,10 +55,10 @@ exports[`Snapshots TabNavigation default 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "margin": "0 8px 0 8px",
+        "margin": "0 42px 0 0",
         "minWidth": "60px",
-        "padding": "0px 4px 16px",
         "textAlign": "center",
+        "transform": "translate(0, 1px)",
       }
     }
   >
@@ -76,7 +72,9 @@ exports[`Snapshots TabNavigation default 1`] = `
       style={
         Object {
           "color": "#168eea",
+          "display": "block",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "18px 13px 17px 13px",
           "textDecoration": "none",
         }
       }
@@ -91,7 +89,7 @@ exports[`Snapshots TabNavigation default 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -105,10 +103,10 @@ exports[`Snapshots TabNavigation default 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "margin": "0 8px 0 8px",
+        "margin": "0 42px 0 0",
         "minWidth": "60px",
-        "padding": "0px 4px 16px",
         "textAlign": "center",
+        "transform": "translate(0, 1px)",
       }
     }
   >
@@ -122,7 +120,9 @@ exports[`Snapshots TabNavigation default 1`] = `
       style={
         Object {
           "color": "#168eea",
+          "display": "block",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "padding": "18px 13px 17px 13px",
           "textDecoration": "none",
         }
       }
@@ -137,7 +137,7 @@ exports[`Snapshots TabNavigation default 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }

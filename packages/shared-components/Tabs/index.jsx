@@ -4,16 +4,12 @@ import {
   Divider,
 } from '@bufferapp/components';
 
-const tabsStyle = {
-  paddingTop: '21px',
-};
-
 const Tabs = ({
   children,
   selectedTabId,
   onTabClick,
 }) => (
-  <div style={tabsStyle}>
+  <div>
     {React.Children.map(children, tab => React.cloneElement(tab, {
       selected: selectedTabId === tab.props.tabId,
       onClick: onTabClick,
