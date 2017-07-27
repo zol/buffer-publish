@@ -1,5 +1,6 @@
 const http = require('http');
 const express = require('express');
+const logMiddleware = require('@bufferapp/logger/middleware');
 const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
@@ -50,6 +51,8 @@ if (!isProduction) {
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
                 .replace('{{{bundle}}}', staticAssets['bundle.js'])
                 .replace('{{{bugsnagScript}}}', bugsnagScript);
+
+app.use(logMiddleware({ name: 'BufferPublish' }));
 
 app.get('/', (req, res) => res.send(html));
 
