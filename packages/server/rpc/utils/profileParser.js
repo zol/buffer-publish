@@ -6,4 +6,5 @@ module.exports = profile => ({
   notifications: profile.counts.pending,
   timezone: profile.timezone,
   schedules: profile.schedules,
+  serviceUsername: profile.service_username,
 });

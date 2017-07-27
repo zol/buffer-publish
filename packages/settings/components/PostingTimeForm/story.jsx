@@ -9,16 +9,6 @@ import {
 } from 'redux-form';
 import PostingTimeForm from './index';
 
-const initialValues = {
-  day: {
-    day: 'fri',
-  },
-  time: {
-    hours: 14,
-    minutes: 20,
-  },
-};
-
 const store = createStore(combineReducers({ form: formReducer }));
 
 storiesOf('PostingTimeForm')
@@ -30,13 +20,11 @@ storiesOf('PostingTimeForm')
   )
   .add('default', () => (
     <PostingTimeForm
-      initialValues={initialValues}
       handleSubmit={action('on-submit-action')}
     />
   ))
   .add('with 24hour time', () => (
     <PostingTimeForm
-      initialValues={initialValues}
       handleSubmit={action('on-submit-action')}
       twentyfourHourTime
     />
