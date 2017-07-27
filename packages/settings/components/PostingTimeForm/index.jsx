@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment-timezone';
+import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import {
   Button,
@@ -102,9 +104,27 @@ PostingTimeForm.propTypes = {
 };
 
 PostingTimeForm.defaultProps = {
+  submitting: false,
   twentyfourHourTime: false,
 };
 
-export default reduxForm({
-  form: 'posting-time',
-})(PostingTimeForm);
+const mapStateToProps = (state) => {
+  const timezone = state.settings ? state.settings.profileTimezone : null;
+  const now = moment().tz(timezone);
+  const time = now ? {
+    hours: now.hour(),
+    minutes: now.minute(),
+  } : {
+    hours: 12,
+    minutes: 0,
+  };
+  return {
+    initialValues: {
+      time,
+    },
+  };
+};
+
+const formConfig = { form: 'posting-time' };
+
+export default connect(mapStateToProps)(reduxForm(formConfig)(PostingTimeForm));

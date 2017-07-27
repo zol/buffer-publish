@@ -2,21 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Divider,
-  LinkifiedText,
   Text,
 } from '@bufferapp/components';
 
 import {
-  PostingTimeForm,
   ScheduleTable,
 } from '@bufferapp/publish-shared-components';
 
+import PostingTimeForm from '../PostingTimeForm';
 import TimezoneInputForm from '../TimezoneInputForm';
 
-const moment = require('moment-timezone');
-
 const headerStyle = {
-  marginTop: '0.5rem',
   marginBottom: '0.5rem',
   width: '100%',
 };
@@ -33,45 +29,21 @@ const sectionStyle = {
   width: '100%',
 };
 
+/* eslint no-console: 0 */
 const ProfileSettings = ({
   days,
   items,
   loading,
   settingsHeader,
-  profileTimezone,
   hasTwentyFourHourTimeFormat,
-  initialValues,
 }) => {
   if (loading) {
     return (<div>Loading...</div>);
   }
-
-  const now = moment().tz(profileTimezone);
-  if (!initialValues) {
-    initialValues = {
-      time: {
-        hours: now.hour(),
-        minutes: now.minute(),
-      },
-    };
-  }
-  const links = [{
-    rawString: '@joelgascoigne',
-    displayString: '@joelgascoigne',
-    url: 'http://blog.twitter.com/2011/05/twitter-for-mac-update.html',
-    indices: [26, 40],
-  }];
-
   return (
     <div>
       <div style={headerStyle}>
-        <LinkifiedText
-          links={links}
-          color="black"
-          unstyled
-        >
-          {`${settingsHeader}`}
-        </LinkifiedText>
+        <Text color="black">{settingsHeader}</Text>
       </div>
       <Divider />
       <div style={timezoneStyle}>
@@ -85,7 +57,6 @@ const ProfileSettings = ({
       <Divider />
       <div style={sectionStyle}>
         <PostingTimeForm
-          initialValues={initialValues}
           handleSubmit={() => { console.log('posting time submit'); }}
           twentyfourHourTime={hasTwentyFourHourTimeFormat}
         />
@@ -132,20 +103,12 @@ ProfileSettings.propTypes = {
   ).isRequired,
   hasTwentyFourHourTimeFormat: PropTypes.bool.isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
-  initialValues: PropTypes.shape({
-    time: PropTypes.shape({
-      hours: PropTypes.number,
-      minutes: PropTypes.number,
-    }),
-  }),
   loading: PropTypes.bool.isRequired,
-  profileTimezone: PropTypes.string.isRequired,
   settingsHeader: PropTypes.string.isRequired,
 };
 
 ProfileSettings.defaultProps = {
   loading: false,
-  initialValues: undefined,
 };
 
 export default ProfileSettings;
