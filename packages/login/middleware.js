@@ -7,12 +7,19 @@ import Cookie from 'js-cookie';
 
 import { actions } from './index';
 
+const getCookieDomain = () => {
+  if (window.location.hostname.indexOf('.local') > -1) {
+    return '.local.buffer.com';
+  }
+  return '.buffer.com';
+};
+
 export default ({ dispatch }) => next => (action) => {
   next(action);
   switch (action.type) {
     case 'APP_INIT': {
       const session = Cookie.get('session', {
-        domain: '.buffer.com',
+        domain: getCookieDomain(),
       });
       const parsedSession = session ? JSON.parse(session) : {};
       // simulate a succesful login with the token from the cookie
@@ -34,7 +41,7 @@ export default ({ dispatch }) => next => (action) => {
       Cookie.set('session', {
         token: action.result.token,
       }, {
-        domain: '.buffer.com',
+        domain: getCookieDomain(),
       });
       break;
     case `login_${asyncActionTypes.FETCH_FAIL}`:
@@ -44,7 +51,7 @@ export default ({ dispatch }) => next => (action) => {
       }
       console.log('Removing Session Cookie'); // eslint-disable-line no-console
       Cookie.remove('session', {
-        domain: '.buffer.com',
+        domain: getCookieDomain(),
       });
       break;
     default:
