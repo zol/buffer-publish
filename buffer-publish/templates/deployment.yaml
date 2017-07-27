@@ -56,6 +56,14 @@ spec:
             secretKeyRef:
               key: bugsnag
               name: buffer-publish-keys
+        livenessProbe:
+          httpGet:
+            path: /health-check
+            port: 80
+          initialDelaySeconds: 15
+          periodSeconds: 5
+          failureThreshold: 2
+          timeoutSeconds: 1
         resources:
 {{ toYaml .Values.resources | indent 11 }}
         terminationMessagePath: /dev/termination-log
