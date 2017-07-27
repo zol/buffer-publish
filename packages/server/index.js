@@ -1,11 +1,15 @@
+const http = require('http');
 const express = require('express');
 const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
+const shutdownHelper = require('@bufferapp/shutdown-helper');
 const { apiError } = require('./middleware');
+const controller = require('./lib/controller');
 const rpc = require('./rpc');
 
 const app = express();
+const server = http.createServer(app);
 
 let staticAssets = {
   'bundle.js': '/static/bundle.js',
@@ -55,8 +59,10 @@ app.post('/rpc', (req, res, next) => {
     .catch(err => next(err));
 });
 
+app.get('/health-check', controller.healthCheck);
+
 app.use(apiError);
 
-app.listen(80, () => {
-  console.log('listening on port 80');
-});
+server.listen(80, () => console.log('listening on port 80'));
+
+shutdownHelper.init({ server });
