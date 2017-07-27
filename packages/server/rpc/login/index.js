@@ -28,13 +28,17 @@ module.exports = method(
     },
     json: true,
   })
+    .catch((err) => {
+      if (err.error && err.error.error) {
+        throw createError({ message: err.error.error });
+      } else {
+        throw err;
+      }
+    })
     .then(res => rpcClient.call('create', {
       session: {
         accessToken: res.token,
       },
     }))
-    .then(({ token }) => ({ token }))
-    .catch((err) => {
-      throw createError({ message: err.message });
-    }),
+    .then(({ token }) => ({ token })),
 );

@@ -51,6 +51,11 @@ spec:
               name: buffer-publish-buffer-api-client
         - name: API_ADDR
           value: https://api.bufferapp.com
+        - name: BUGSNAG_KEY
+          valueFrom:
+            secretKeyRef:
+              key: bugsnag
+              name: buffer-publish-keys
         resources:
 {{ toYaml .Values.resources | indent 11 }}
         terminationMessagePath: /dev/termination-log
