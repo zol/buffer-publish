@@ -1,3 +1,5 @@
+import Cookie from 'js-cookie';
+
 export const actionTypes = {
   FETCH: 'FETCH',
   FETCH_START: 'FETCH_START',
@@ -5,8 +7,16 @@ export const actionTypes = {
   FETCH_FAIL: 'FETCH_FAIL',
 };
 
-// TODO: grab the token from the cookie at init
-const initialState = {};
+const getCookieDomain = () => {
+  if (window.location.hostname.indexOf('.local') > -1) {
+    return '.local.buffer.com';
+  }
+  return '.buffer.com';
+};
+
+const initialState = {
+  token: Cookie.get('session', { domain: getCookieDomain() }),
+};
 
 export default (state = initialState, action) => {
   switch (action.type) {

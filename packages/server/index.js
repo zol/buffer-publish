@@ -2,10 +2,13 @@ const http = require('http');
 const express = require('express');
 const logMiddleware = require('@bufferapp/logger/middleware');
 const bugsnag = require('bugsnag');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 const fs = require('fs');
 const { join } = require('path');
 const shutdownHelper = require('@bufferapp/shutdown-helper');
 const { apiError } = require('./middleware');
+const session = require('./lib/session');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
 
@@ -53,14 +56,19 @@ const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
                 .replace('{{{bugsnagScript}}}', bugsnagScript);
 
 app.use(logMiddleware({ name: 'BufferPublish' }));
-
-app.get('/', (req, res) => res.send(html));
+app.use(cookieParser());
+app.get('/', session.middleware, (req, res) => res.send(html));
 
 app.post('/rpc', (req, res, next) => {
   rpc(req, res)
     // catch any unexpected errors
     .catch(err => next(err));
 });
+
+app.use('/login', bodyParser.urlencoded({ extended: true }));
+app.get('/login', controller.login);
+app.post('/login', controller.handleLogin);
+app.post('/signout', controller.signout);
 
 app.get('/health-check', controller.healthCheck);
 

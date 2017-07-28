@@ -18,18 +18,19 @@ export default ({ dispatch }) => next => (action) => {
   next(action);
   switch (action.type) {
     case 'APP_INIT': {
-      const session = Cookie.get('session', {
+      // TODO - Remove this duplicate code - this cookie is now
+      // loaded in the async data fetch's reducer
+      const sessionToken = Cookie.get('session', {
         domain: getCookieDomain(),
       });
-      const parsedSession = session ? JSON.parse(session) : {};
       // simulate a succesful login with the token from the cookie
-      if (parsedSession.token) {
+      if (sessionToken) {
         dispatch(asyncActions.fetchSuccess({
           name: 'login',
           args: 'simulated',
           id: 'simulated',
           result: {
-            token: parsedSession.token,
+            token: sessionToken,
           },
         }));
       }
@@ -38,9 +39,7 @@ export default ({ dispatch }) => next => (action) => {
       break;
     }
     case `login_${asyncActionTypes.FETCH_SUCCESS}`:
-      Cookie.set('session', {
-        token: action.result.token,
-      }, {
+      Cookie.set('session', action.result.token, {
         domain: getCookieDomain(),
       });
       break;
