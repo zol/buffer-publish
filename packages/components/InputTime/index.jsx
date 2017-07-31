@@ -86,14 +86,14 @@ const InputTime = ({
         options={genArray(
           select24Hours || value.hours < 12 ? 0 : 12,
           select24Hours || value.hours > 11 ? 23 : 11,
-        ).map(hour => leftPadTimeUnit(displayHour(hour, select24Hours)))}
+        ).map(hour => leftPadTimeUnit(displayHour(hour, select24Hours).toString()))}
         label={'Hour'}
       />
       <Select
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, minutes: parseInt(e.target.value, 10) })}
         value={value.minutes}
-        options={genArray(0, 59).map(min => leftPadTimeUnit(min))}
+        options={genArray(0, 59).map(min => leftPadTimeUnit(min).toString())}
         label={'Minute'}
       />
       {

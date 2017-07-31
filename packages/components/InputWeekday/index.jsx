@@ -41,6 +41,7 @@ const InputWeekday = ({
       onChange={e => onChange({ ...value, day: e.target.value })}
       options={scheduleTypes.map(type => type.name)}
       value={value.day}
+      label={'choose days'}
     />
   </div>
 );
