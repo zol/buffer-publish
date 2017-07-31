@@ -43,9 +43,13 @@ const iconStyle = {
   alignItems: 'center',
 };
 
-const Select = ({ options }) => (
+const Select = ({ options, onChange, disabled }) => (
   <div style={selectWrapperStyle}>
-    <select style={selectStyle}>
+    <select
+      style={selectStyle}
+      onChange={onChange}
+      disabled={disabled}
+    >
       {
         options.map(option =>
           <option key={option.toString()}>
@@ -62,6 +66,13 @@ const Select = ({ options }) => (
 
 Select.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool,
+};
+
+Select.defaultProps = {
+  onChange: () => {},
+  disabled: false,
 };
 
 export default Select;
