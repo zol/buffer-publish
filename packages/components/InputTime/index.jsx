@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Select from '../Select';
 import { calculateStyles } from '../lib/utils';
 
 // generate array of numbers (inclusive)
@@ -14,40 +15,20 @@ const renderAmPm = ({
   onChange,
   submitting,
   value,
-}) => {
-  const style = calculateStyles({
-    default: {
-      marginRight: '0.25rem',
-    },
-    noStyle: {
-      border: 0,
-      background: 'transparent',
-      margin: 0,
-      padding: 0,
-      WebkitAppearance: 'none',
-      MozAppearance: 'none',
-    },
-  }, {
-    noStyle,
-  });
-
-  return (
-    <select
-      disabled={disabled || submitting}
-      onChange={e => onChange({
-        ...value,
-        hours: e.target.value === 'AM'
-        ? value.hours - 12
-        : value.hours + 12,
-      })}
-      style={style}
-      value={value.hours < 12 ? 'AM' : 'PM'}
-    >
-      <option value="AM">AM</option>
-      <option value="PM">PM</option>
-    </select>
-  );
-};
+}) => (
+  <Select
+    disabled={disabled || submitting}
+    onChange={e => onChange({
+      ...value,
+      hours: e.target.value === 'AM'
+      ? value.hours - 12
+      : value.hours + 12,
+    })}
+    noStyle={noStyle}
+    value={value.hours < 12 ? 'AM' : 'PM'}
+    options={['AM', 'PM']}
+  />
+);
 
 /* eslint-enable react/prop-types */
 
@@ -98,33 +79,21 @@ const InputTime = ({
   }
   return (
     <div style={style}>
-      <select
+      <Select
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, hours: parseInt(e.target.value, 10) })}
-        style={style}
         value={value.hours}
-      >
-        {genArray(
+        options={genArray(
           select24Hours || value.hours < 12 ? 0 : 12,
           select24Hours || value.hours > 11 ? 23 : 11,
-        ).map(hour =>
-          <option
-            key={hour}
-            value={hour}
-          >
-            {leftPadTimeUnit(displayHour(hour, select24Hours))}
-          </option>)
-        }
-      </select>
-      <select
+        ).map(hour => leftPadTimeUnit(displayHour(hour, select24Hours)))}
+      />
+      <Select
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, minutes: parseInt(e.target.value, 10) })}
-        style={style}
         value={value.minutes}
-      >
-        {genArray(0, 59).map(min =>
-          <option key={min} value={min}>{leftPadTimeUnit(min)}</option>)}
-      </select>
+        options={genArray(0, 59).map(min => leftPadTimeUnit(min))}
+      />
       {
         select24Hours ?
         null

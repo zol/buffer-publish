@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { calculateStyles } from '../lib/utils';
 import {
   transparent,
   mystic,
@@ -20,20 +21,7 @@ const selectWrapperStyle = {
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'row',
-};
-
-const selectStyle = {
-  zIndex: tooltip,
-  height: '2rem',
   paddingRight: '0.5rem',
-  paddingLeft: '0.5rem',
-  fontSize: fontSizeSmall,
-  background: transparent,
-  border: `${borderWidth} solid ${mystic}`,
-  borderRadius,
-  appearance: 'none',
-  WebkitAppearance: 'none',
-  MozAppearance: 'none',
 };
 
 const iconStyle = {
@@ -43,36 +31,65 @@ const iconStyle = {
   alignItems: 'center',
 };
 
-const Select = ({ options, onChange, disabled }) => (
-  <div style={selectWrapperStyle}>
-    <select
-      style={selectStyle}
-      onChange={onChange}
-      disabled={disabled}
-    >
-      {
-        options.map(option =>
-          <option key={option.toString()}>
-            {option}
-          </option>,
-          )
-      }
-    </select>
-    <span style={iconStyle}>
-      <ArrowDownIcon />
-    </span>
-  </div>
-);
+const Select = ({ options, onChange, disabled, noStyle }) => {
+  const selectStyle = calculateStyles({
+    default: {
+      zIndex: tooltip,
+      height: '2rem',
+      paddingRight: '1.5rem',
+      paddingLeft: '0.5rem',
+      fontSize: fontSizeSmall,
+      background: transparent,
+      border: `${borderWidth} solid ${mystic}`,
+      borderRadius,
+      appearance: 'none',
+      WebkitAppearance: 'none',
+      MozAppearance: 'none',
+    },
+    noStyle: {
+      border: 0,
+      background: 'transparent',
+      margin: 0,
+      padding: 0,
+      WebkitAppearance: 'none',
+      MozAppearance: 'none',
+    },
+  }, {
+    noStyle,
+  });
+  return (
+    <div style={selectWrapperStyle}>
+      <select
+        style={selectStyle}
+        onChange={onChange}
+        disabled={disabled}
+      >
+        {
+          options.map(option =>
+            <option key={option.toString()}>
+              {option}
+            </option>,
+            )
+        }
+      </select>
+      <span style={iconStyle}>
+        <ArrowDownIcon />
+      </span>
+    </div>
+  );
+};
 
 Select.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
+  noStyle: PropTypes.bool,
 };
 
 Select.defaultProps = {
   onChange: () => {},
   disabled: false,
+  noStyle: false,
 };
 
 export default Select;
