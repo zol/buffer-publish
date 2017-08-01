@@ -123,7 +123,7 @@ class PopoverButton extends PseudoClassComponent {
     );
   }
   componentDidMount() {
-    if (this.props.children) {
+    if (this.props.children && this.el) {
       const menuItems = this.el.querySelectorAll('[role="menuitem"]');
       this.menuItemFocus = {
         total: menuItems.length,
