@@ -45,6 +45,10 @@ const addPostingTimeStyle = {
   flexGrow: 1,
 };
 
+const dayContainerStyle = {
+  marginRight: '1rem',
+};
+
 const PostingTimeForm = ({
   handleSubmit,
   submitting,
@@ -63,7 +67,7 @@ const PostingTimeForm = ({
       </div>
       <div style={formStyle}>
         <div style={chooseDaysAndTimeStyle}>
-          <div>
+          <div style={dayContainerStyle}>
             <Field
               name={'day'}
               component={InputWeekday}
@@ -74,7 +78,7 @@ const PostingTimeForm = ({
             color={'black'}
             weight={'thin'}
           >
-            Choose time
+            Choose times
           </Text>
           <div style={inputTimeWrapper}>
             <Field

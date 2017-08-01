@@ -17,17 +17,10 @@ import {
 } from '../style/zIndex';
 import ArrowDownIcon from '../Icon/Icons/ArrowDownIcon';
 
-const selectWrapperStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  flexDirection: 'row',
-  paddingRight: '0.5rem',
-};
-
 const iconStyle = {
   zIndex: 0,
   display: 'flex',
-  marginLeft: '-1.5rem',
+  marginLeft: '-2rem',
   alignItems: 'center',
 };
 
@@ -38,6 +31,7 @@ const Select = ({ options, onChange, disabled, noStyle, label }) => {
       height: '2rem',
       paddingRight: '1.5rem',
       paddingLeft: '0.5rem',
+      marginRight: '0.5rem',
       fontSize: fontSizeSmall,
       background: transparent,
       border: `${borderWidth} solid ${mystic}`,
@@ -53,6 +47,22 @@ const Select = ({ options, onChange, disabled, noStyle, label }) => {
       padding: 0,
       WebkitAppearance: 'none',
       MozAppearance: 'none',
+    },
+  }, {
+    noStyle,
+  });
+  const selectWrapperStyle = calculateStyles({
+    default: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'row',
+      paddingRight: '1.5rem',
+    },
+    noStyle: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'row',
+      paddingRight: '0.5rem',
     },
   }, {
     noStyle,
