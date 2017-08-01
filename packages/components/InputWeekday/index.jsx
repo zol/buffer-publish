@@ -39,7 +39,7 @@ const InputWeekday = ({
     <Select
       disabled={submitting}
       onChange={e => onChange({ ...value, day: e.target.value })}
-      options={scheduleTypes.map(type => type.name)}
+      options={scheduleTypes}
       value={value.day}
       label={'choose days'}
     />

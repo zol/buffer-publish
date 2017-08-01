@@ -26,7 +26,7 @@ const renderAmPm = ({
     })}
     noStyle={noStyle}
     value={value.hours < 12 ? 'AM' : 'PM'}
-    options={['AM', 'PM']}
+    options={[{ value: 'AM', name: 'AM' }, { value: 'PM', name: 'PM' }]}
   />
 );
 
@@ -41,6 +41,24 @@ const displayHour = (hour, select24Hours) => {
   const modHour = hour % 12;
   return modHour === 0 ? 12 : modHour;
 };
+
+const generateHours = (select24Hours, value) => {
+  const timeArray = genArray(
+    select24Hours || value.hours < 12 ? 0 : 12,
+    select24Hours || value.hours > 11 ? 23 : 11,
+  );
+  return timeArray.map((hour) => {
+    const time = leftPadTimeUnit(displayHour(hour, select24Hours).toString());
+    return { value: time, name: time };
+  });
+};
+
+const generateMinutes = () => (
+  genArray(0, 59).map((min) => {
+    const minString = leftPadTimeUnit(min).toString();
+    return { value: minString, name: minString };
+  })
+);
 
 const InputTime = ({
   disabled,
@@ -83,10 +101,7 @@ const InputTime = ({
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, hours: parseInt(e.target.value, 10) })}
         value={value.hours}
-        options={genArray(
-          select24Hours || value.hours < 12 ? 0 : 12,
-          select24Hours || value.hours > 11 ? 23 : 11,
-        ).map(hour => leftPadTimeUnit(displayHour(hour, select24Hours).toString()))}
+        options={generateHours(select24Hours, value)}
         label={'Hour'}
         noStyle={noStyle}
       />
@@ -94,7 +109,7 @@ const InputTime = ({
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, minutes: parseInt(e.target.value, 10) })}
         value={value.minutes}
-        options={genArray(0, 59).map(min => leftPadTimeUnit(min).toString())}
+        options={generateMinutes()}
         label={'Minute'}
         noStyle={noStyle}
       />

@@ -77,8 +77,8 @@ const Select = ({ options, onChange, disabled, noStyle, label }) => {
       >
         {
           options.map(option =>
-            <option key={option.toString()}>
-              {option}
+            <option key={option.value.toString()} value={option.value}>
+              {option.name}
             </option>,
             )
         }
@@ -93,7 +93,10 @@ const Select = ({ options, onChange, disabled, noStyle, label }) => {
 };
 
 Select.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.string,
+    name: PropTypes.string,
+  })).isRequired,
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
   noStyle: PropTypes.bool,

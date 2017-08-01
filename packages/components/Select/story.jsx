@@ -4,11 +4,11 @@ import { checkA11y } from 'storybook-addon-a11y';
 import Select from './index';
 
 const options = [
-  'London',
-  'New York',
-  'San Francisco',
-  'Tokyo',
-  'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch', // http://www.fun-with-words.com/longest_place_names.html
+  { name: 'London', value: 'London' },
+  { name: 'New York', value: 'New York' },
+  { name: 'San Francisco', value: 'San Francisco' },
+  { name: 'Tokyo', value: 'Tokyo' },
+  { name: 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch', value: 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch' }, // http://www.fun-with-words.com/longest_place_names.html
 ];
 
 storiesOf('Select')
