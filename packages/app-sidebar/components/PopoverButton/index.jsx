@@ -5,10 +5,28 @@ import { calculateStyles } from '@bufferapp/components/lib/utils';
 import { curiousBlue, curiousBlueLight, sidebarBackgroundBlue } from '@bufferapp/components/style/color';
 import { borderRadius } from '@bufferapp/components/style/border';
 
+const KEY_SPACE = 32;
+const KEY_ENTER = 13;
+const KEY_ESCAPE = 27;
+const KEY_LEFT = 37;
+const KEY_UP = 38;
+const KEY_RIGHT = 39;
+const KEY_DOWN = 40;
+const KEY_TAB = 9;
+
 class PopoverButton extends PseudoClassComponent {
   constructor() {
     super();
+
     this.onMouseLeaveTimeout = null;
+    this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.updateMenuFocus = this.updateMenuFocus.bind(this);
+    this.handleMenuBlur = this.handleMenuBlur.bind(this);
+    this.menuItemFocus = {
+      current: 0,
+      total: 0,
+    };
+
     this.state = {
       ...this.state,
       clicked: false,
@@ -70,8 +88,13 @@ class PopoverButton extends PseudoClassComponent {
       ? { top: -4, left: 3 }
       : { top: -3, left: 3 };
 
+    const ContainerElement = this.props.children ? 'div' : 'button';
+
     return (
-      <button
+      <ContainerElement
+        ref={(el) => { this.el = el; }}
+        role={this.props.children ? 'submenu' : 'button'}
+        tabIndex="0"
         style={style}
         onMouseEnter={() => { clearTimeout(this.onMouseLeaveTimeout); this.handleMouseEnter(); }}
         onMouseLeave={() => {
@@ -79,8 +102,9 @@ class PopoverButton extends PseudoClassComponent {
             setTimeout(() => this.doMouseLeave(), this.props.children ? 250 : 0);
         }}
         onClick={() => { this.setState({ clicked: !this.state.clicked }); }}
+        onKeyDown={this.handleKeyDown}
         onFocus={() => this.handleFocus()}
-        onBlur={() => this.handleBlur()}
+        onBlur={this.handleMenuBlur}
         {...a11y}
       >
         <ArrowPopover
@@ -95,8 +119,71 @@ class PopoverButton extends PseudoClassComponent {
         <div style={sizeStyles}>
           {hoverableIcon}
         </div>
-      </button>
+      </ContainerElement>
     );
+  }
+  componentDidMount() {
+    if (this.props.children && this.el) {
+      const menuItems = this.el.querySelectorAll('[role="menuitem"]');
+      this.menuItemFocus = {
+        total: menuItems.length,
+        current: 0,
+      };
+    }
+  }
+  handleKeyDown(e) {
+    switch (e.keyCode) {
+      case KEY_ENTER:
+      case KEY_SPACE:
+        this.setState({ clicked: !this.state.clicked }, () => {
+          this.updateMenuFocus();
+        });
+        break;
+      case KEY_RIGHT:
+        this.setState({ clicked: true }, () => {
+          this.updateMenuFocus();
+        });
+        break;
+      case KEY_LEFT:
+      case KEY_ESCAPE:
+        this.setState({ clicked: false }, () => {
+          this.el.focus();
+        });
+        break;
+      case KEY_DOWN:
+        this.updateMenuFocus(1);
+        break;
+      case KEY_UP:
+        this.updateMenuFocus(-1);
+        break;
+      case KEY_TAB:
+        this.setState({ clicked: false });
+        break;
+      default:
+        return true;
+    }
+  }
+  handleMenuBlur() {
+    this.handleBlur();
+  }
+  updateMenuFocus(moveFocus) {
+    if (this.state.clicked) {
+      const menuItems = this.el.querySelectorAll('[role="menuitem"]');
+      if (menuItems.length) {
+        if (moveFocus) {
+          const { current, total } = this.menuItemFocus;
+          const nextFocus = current + moveFocus;
+          this.menuItemFocus.current = (nextFocus >= total) ? 0 : nextFocus;
+        }
+        /**
+         * Use 'roving tabIndex'
+         * https://www.w3.org/TR/wai-aria-practices-1.1/#kbd_roving_tabindex
+         */
+        menuItems.forEach(item => item.setAttribute('tabIndex', '-1'));
+        menuItems[this.menuItemFocus.current].setAttribute('tabIndex', '0');
+        menuItems[this.menuItemFocus.current].focus();
+      }
+    }
   }
   doMouseLeave() {
     this.handleMouseLeave();

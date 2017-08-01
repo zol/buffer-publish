@@ -64,8 +64,10 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
+        role="button"
         style={
           Object {
             "background": "#168eea",
@@ -79,6 +81,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
             "position": "relative",
           }
         }
+        tabIndex="0"
       >
         <div
           style={
@@ -170,8 +173,10 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
+        role="button"
         style={
           Object {
             "background": "none",
@@ -184,6 +189,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
             "position": "relative",
           }
         }
+        tabIndex="0"
       >
         <div
           style={
@@ -282,8 +288,10 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
+        role="button"
         style={
           Object {
             "background": "none",
@@ -296,6 +304,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
             "position": "relative",
           }
         }
+        tabIndex="0"
       >
         <div
           style={
@@ -394,15 +403,17 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
           }
         }
       >
-        <button
+        <div
           aria-expanded={false}
           aria-haspopup="true"
           aria-label="Help and Support"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
+          onKeyDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          role="submenu"
           style={
             Object {
               "background": "none",
@@ -415,6 +426,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               "position": "relative",
             }
           }
+          tabIndex="0"
         >
           <div
             style={
@@ -508,7 +520,6 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
                 </div>
                 <ul
                   aria-label="Help & Support"
-                  role="menu"
                   style={
                     Object {
                       "listStyle": "none",
@@ -640,16 +651,18 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               </g>
             </svg>
           </div>
-        </button>
-        <button
+        </div>
+        <div
           aria-expanded={false}
           aria-haspopup="true"
           aria-label="My Account"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
+          onKeyDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          role="submenu"
           style={
             Object {
               "background": "none",
@@ -662,6 +675,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               "position": "relative",
             }
           }
+          tabIndex="0"
         >
           <div
             style={
@@ -722,7 +736,6 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               >
                 <ul
                   aria-label={null}
-                  role="menu"
                   style={
                     Object {
                       "listStyle": "none",
@@ -925,7 +938,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </div>
       </div>
     </nav>
   </div>
