@@ -1,15 +1,15 @@
 import deepFreeze from 'deep-freeze';
 import reducer from './reducer';
-import {
-  listHeader,
-} from './components/QueuedPosts/postData';
 
 describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'INIT',
@@ -21,13 +21,19 @@ describe('reducer', () => {
 
   it('should handle queuedPosts_FETCH_START action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'queuedPosts_FETCH_START',
-      postLists: [],
+      posts: [],
+      args: {
+        isFetchingMore: false,
+      },
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
@@ -36,9 +42,12 @@ describe('reducer', () => {
 
   it('should handle FETCH_POSTS_ERROR action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'FETCH_POSTS_ERROR',
@@ -51,9 +60,12 @@ describe('reducer', () => {
 
   it('should handle POST_CREATED action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'POST_CREATED',
@@ -66,13 +78,16 @@ describe('reducer', () => {
 
   it('should handle POST_UPDATED action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'POST_UPDATED',
-      postLists: [],
+      posts: [],
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
@@ -81,13 +96,16 @@ describe('reducer', () => {
 
   it('should handle POST_CONFIRM_DELETE action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'POST_CONFIRM_DELETE',
-      postLists: [],
+      posts: [],
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
@@ -96,13 +114,16 @@ describe('reducer', () => {
 
   it('should handle POST_DELETED action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'POST_DELETED',
-      postLists: [],
+      posts: [],
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
@@ -111,13 +132,16 @@ describe('reducer', () => {
 
   it('should handle POST_DELETE_CANCELED action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'POST_DELETE_CANCELED',
-      postLists: [],
+      posts: [],
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
@@ -126,13 +150,16 @@ describe('reducer', () => {
 
   it('should handle POST_ERROR action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'POST_ERROR',
-      postLists: [],
+      posts: [],
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
@@ -141,13 +168,16 @@ describe('reducer', () => {
 
   it('should handle REQUESTING_POST_DELETE action type', () => {
     const stateAfter = {
-      listHeader,
       loading: true,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'REQUESTING_POST_DELETE',
-      postLists: [],
+      posts: [],
     };
     deepFreeze(action);
     expect(reducer(undefined, action))

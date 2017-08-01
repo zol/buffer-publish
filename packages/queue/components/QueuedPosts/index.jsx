@@ -4,6 +4,11 @@ import {
   Input,
 } from '@bufferapp/components';
 import {
+  geyser,
+  fillColor,
+  curiousBlue,
+} from '@bufferapp/components/style/color';
+import {
   PostLists,
 } from '@bufferapp/publish-shared-components';
 
@@ -11,8 +16,19 @@ const composerStyle = {
   marginBottom: '1.5rem',
 };
 
+const loadMoreStyle = {
+  border: `1px solid ${geyser}`,
+  width: '100%',
+  padding: '10px',
+  position: 'relative',
+  textAlign: 'center',
+  backgroundColor: fillColor,
+  color: curiousBlue,
+};
+
 const QueuedPosts = ({
   loading,
+  loadingMore,
   postLists,
   onCancelConfirmClick,
   onDeleteClick,
@@ -39,12 +55,18 @@ const QueuedPosts = ({
         onEditClick={onEditClick}
         onShareNowClick={onShareNowClick}
       />
+      {
+        loadingMore ?
+          <div style={loadMoreStyle}>{'Loading...'}</div>
+          : ''
+      }
     </div>
   );
 };
 
 QueuedPosts.propTypes = {
   loading: PropTypes.bool.isRequired,
+  loadingMore: PropTypes.bool.isRequired,
   onCancelConfirmClick: PropTypes.func.isRequired,
   onDeleteClick: PropTypes.func.isRequired,
   onDeleteConfirmClick: PropTypes.func.isRequired,
@@ -63,8 +85,8 @@ QueuedPosts.propTypes = {
 };
 
 QueuedPosts.defaultProps = {
-  loading: false,
   postLists: [],
+  loadingMore: false,
 };
 
 export default QueuedPosts;

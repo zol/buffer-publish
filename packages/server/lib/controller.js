@@ -19,7 +19,7 @@ controller.handleLogin = (req, res, next) => {
     email: req.body.email,
     password: req.body.password,
   }) // response is { token, user }
-    .then((apiRes) =>{ console.log(apiRes.token, apiRes.user._id); return apiRes; }) // debug line
+    .then((apiRes) => { console.log(apiRes.token, apiRes.user._id); return apiRes; }) // debug line
     .then(response => session.create({ accessToken: response.token }))
     .then((jwt) => {
       session.writeCookie(jwt, res);

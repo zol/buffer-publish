@@ -9,6 +9,7 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
         name: 'queuedPosts',
         args: {
           profileId: action.profile.id,
+          isFetchingMore: false,
         },
       }));
       break;
