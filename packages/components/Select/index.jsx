@@ -73,9 +73,11 @@ const Select = ({ options, onChange, disabled, noStyle, label }) => {
             )
         }
       </select>
-      <span style={iconStyle}>
-        <ArrowDownIcon />
-      </span>
+      {!noStyle &&
+        <span style={iconStyle}>
+          <ArrowDownIcon />
+        </span>
+      }
     </div>
   );
 };

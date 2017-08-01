@@ -88,6 +88,7 @@ const InputTime = ({
           select24Hours || value.hours > 11 ? 23 : 11,
         ).map(hour => leftPadTimeUnit(displayHour(hour, select24Hours).toString()))}
         label={'Hour'}
+        noStyle={noStyle}
       />
       <Select
         disabled={disabled || submitting}
@@ -95,6 +96,7 @@ const InputTime = ({
         value={value.minutes}
         options={genArray(0, 59).map(min => leftPadTimeUnit(min).toString())}
         label={'Minute'}
+        noStyle={noStyle}
       />
       {
         select24Hours ?
