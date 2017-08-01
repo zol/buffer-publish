@@ -28,7 +28,7 @@ const PopoverMenu = ({ title, label, children }) => (
         <Divider color="sidebarBackgroundBlue" marginBottom=".25rem" />
       </div>
     }
-    <ul role="menu" aria-label={label || title} style={listStyle}>
+    <ul aria-label={label || title} style={listStyle}>
       {children}
     </ul>
   </div>
