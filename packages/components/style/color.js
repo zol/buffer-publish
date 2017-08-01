@@ -13,6 +13,7 @@ export const twitter = '#55acee';
 
 export const aquaHaze = '#f4f7f9';
 export const geyser = '#ced7df';
+export const fillColor = '#eaeff2';
 export const mystic = '#e6ebef';
 export const nevada = '#666c72';
 export const outerSpace = '#323b43';

@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { Redirect } from 'react-router';
@@ -8,6 +9,7 @@ import SentPosts from '@bufferapp/sent';
 import ProfileSettings from '@bufferapp/settings';
 import TabNavigation from '@bufferapp/tabs';
 import ProfileSidebar from '@bufferapp/profile-sidebar';
+import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
 
 const profilePageStyle = {
   display: 'flex',
@@ -28,6 +30,7 @@ const contentStyle = {
   flexDirection: 'column',
   marginLeft: '1rem',
   marginRight: '1rem',
+  height: '100vh',
 };
 
 const tabContentStyle = {
@@ -71,6 +74,44 @@ TabContent.defaultProps = {
   tabId: '',
 };
 
+// Returns a function - as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing. Taken from underscore.js
+function debounce(func, wait, immediate) {
+  let timeout;
+  return function() {
+    const context = this;
+    const args = arguments; // eslint-disable-line
+    const later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+const onScroll = ({
+  ev,
+  handleScroll,
+  profileId,
+  page,
+  tabId,
+  loadingMore,
+  moreToLoad,
+}) => {
+  const element = ev.target;
+  const isBottomOfPage = element.scrollHeight - element.scrollTop === element.clientHeight;
+  if (isBottomOfPage && !loadingMore && moreToLoad) {
+    handleScroll({ profileId, page, tabId });
+  }
+};
+
+const debouncedOnScroll = debounce(onScroll, 500);
+
 const ProfilePage = ({
   match: {
     params: {
@@ -78,6 +119,10 @@ const ProfilePage = ({
       tabId,
     },
   },
+  handleScroll,
+  loadingMore,
+  moreToLoad,
+  page,
 }) =>
   <div style={profilePageStyle}>
     <div style={profileSideBarStyle}>
@@ -91,7 +136,21 @@ const ProfilePage = ({
         profileId={profileId}
         tabId={tabId}
       />
-      <div style={tabContentStyle}>
+      <div
+        style={tabContentStyle}
+        onScroll={(ev) => {
+          ev.persist();
+          debouncedOnScroll({
+            ev,
+            handleScroll,
+            profileId,
+            page,
+            tabId,
+            loadingMore,
+            moreToLoad,
+          });
+        }}
+      >
         {TabContent({ tabId })}
       </div>
     </div>
@@ -104,6 +163,34 @@ ProfilePage.propTypes = {
       profileId: PropTypes.string,
     }),
   }).isRequired,
+  handleScroll: PropTypes.func.isRequired,
+  loadingMore: PropTypes.bool.isRequired,
+  moreToLoad: PropTypes.bool.isRequired,
+  page: PropTypes.number.isRequired,
 };
 
-export default ProfilePage;
+export default connect(
+  state => ({
+    loading: state.queue.loading,
+    loadingMore: state.queue.loadingMore,
+    moreToLoad: state.queue.moreToLoad,
+    page: state.queue.page,
+    posts: state.queue.posts,
+    total: state.queue.total,
+    translations: state.i18n.translations.example, // all package translations
+  }),
+  dispatch => ({
+    handleScroll: ({ profileId, page, tabId }) => {
+      dispatch(
+        dataFetchActions.fetch({
+          name: `${tabId === 'queue' ? 'queued' : 'sent'}Posts`,
+          args: {
+            profileId,
+            page,
+            isFetchingMore: true,
+          },
+        }),
+      );
+    },
+  }),
+)(ProfilePage);

@@ -1,3 +1,7 @@
+import {
+  List,
+} from '@bufferapp/components';
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import PostList from '../PostList';
@@ -40,21 +44,20 @@ const PostLists = ({
   onEditClick,
   onShareNowClick,
 }) =>
-  <div>
-    {
-      postLists.map((postList, index) =>
-        renderPostList({
-          index,
-          postList,
-          onCancelConfirmClick,
-          onDeleteClick,
-          onDeleteConfirmClick,
-          onEditClick,
-          onShareNowClick,
-        }),
-    )
-  }
-  </div>;
+  <List
+    items={postLists.map((postList, index) =>
+      renderPostList({
+        index,
+        postList,
+        onCancelConfirmClick,
+        onDeleteClick,
+        onDeleteConfirmClick,
+        onEditClick,
+        onShareNowClick,
+      }),
+    )}
+    fillContainer
+  />;
 
 PostLists.propTypes = {
   postLists: PropTypes.arrayOf(

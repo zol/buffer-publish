@@ -3,12 +3,33 @@ import { connect } from 'react-redux';
 // load the presentational component
 import QueuedPosts from './components/QueuedPosts';
 
+const formatPostLists = (posts) => {
+  const postLists = [];
+  let day;
+  let newList;
+
+  posts.forEach((post) => {
+    if (post.day !== day) {
+      day = post.day;
+      newList = { listHeader: day, posts: [post] };
+      postLists.push(newList);
+    } else { // if same day add to posts array of current list
+      newList.posts.push(post);
+    }
+  });
+
+  return postLists;
+};
+
 // default export = container
 export default connect(
   state => ({
-    listHeader: state.queue.listHeader,
     loading: state.queue.loading,
-    postLists: state.queue.postLists,
+    loadingMore: state.queue.loadingMore,
+    moreToLoad: state.queue.moreToLoad,
+    page: state.queue.page,
+    postLists: formatPostLists(state.queue.posts),
+    total: state.queue.total,
     translations: state.i18n.translations.example, // all package translations
   }),
 )(QueuedPosts);
