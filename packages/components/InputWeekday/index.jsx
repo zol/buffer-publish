@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Select from '../Select';
 
 const style = {
   display: 'flex',
@@ -35,25 +36,13 @@ const InputWeekday = ({
   },
 }) => (
   <div style={style}>
-    <select
+    <Select
       disabled={submitting}
       onChange={e => onChange({ ...value, day: e.target.value })}
-      style={chooseDaysStyle}
+      options={scheduleTypes}
       value={value.day}
-    >
-      <optgroup label="Choose days">
-        {
-          scheduleTypes.map(type =>
-            <option
-              key={`type${type.value}`}
-              value={type.value}
-            >
-              {type.name}
-            </option>,
-          )
-        }
-      </optgroup>
-    </select>
+      label={'choose days'}
+    />
   </div>
 );
 

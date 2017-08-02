@@ -1,18 +1,29 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { checkA11y } from 'storybook-addon-a11y';
 import Select from './index';
 
 const options = [
-  'London',
-  'New York',
-  'San Francisco',
-  'Tokyo',
-  'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch', // http://www.fun-with-words.com/longest_place_names.html
+  { name: 'London', value: 'London' },
+  { name: 'New York', value: 'New York' },
+  { name: 'San Francisco', value: 'San Francisco' },
+  { name: 'Tokyo', value: 'Tokyo' },
+  { name: 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch', value: 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch' }, // http://www.fun-with-words.com/longest_place_names.html
 ];
 
 storiesOf('Select')
   .addDecorator(checkA11y)
   .add('default', () => (
-    <Select options={options} />
+    <Select
+      options={options}
+      onChange={action('on-change')}
+    />
+  ))
+  .add('with value set', () => (
+    <Select
+      options={options}
+      value={'Tokyo'}
+      onChange={action('on-change')}
+    />
   ));

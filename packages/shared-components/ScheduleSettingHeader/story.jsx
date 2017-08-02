@@ -7,10 +7,10 @@ const profileName = 'Buffer Admin';
 const profileService = 'Twitter';
 const profileServiceType = 'Profile';
 const timezoneOptions = [
-  'London',
-  'New York',
-  'San Francisco',
-  'Tokyo',
+  { value: 'London', name: 'London' },
+  { value: 'New York', name: 'New York' },
+  { value: 'San Francisco', name: 'San Francisco' },
+  { value: 'Tokyo', name: 'Tokyo' },
 ];
 
 storiesOf('ScheduleSettingHeader')

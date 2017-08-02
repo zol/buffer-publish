@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Select from '../Select';
 import { calculateStyles } from '../lib/utils';
 
 // generate array of numbers (inclusive)
@@ -14,40 +15,20 @@ const renderAmPm = ({
   onChange,
   submitting,
   value,
-}) => {
-  const style = calculateStyles({
-    default: {
-      marginRight: '0.25rem',
-    },
-    noStyle: {
-      border: 0,
-      background: 'transparent',
-      margin: 0,
-      padding: 0,
-      WebkitAppearance: 'none',
-      MozAppearance: 'none',
-    },
-  }, {
-    noStyle,
-  });
-
-  return (
-    <select
-      disabled={disabled || submitting}
-      onChange={e => onChange({
-        ...value,
-        hours: e.target.value === 'AM'
-        ? value.hours - 12
-        : value.hours + 12,
-      })}
-      style={style}
-      value={value.hours < 12 ? 'AM' : 'PM'}
-    >
-      <option value="AM">AM</option>
-      <option value="PM">PM</option>
-    </select>
-  );
-};
+}) => (
+  <Select
+    disabled={disabled || submitting}
+    onChange={e => onChange({
+      ...value,
+      hours: e.target.value === 'AM'
+      ? value.hours - 12
+      : value.hours + 12,
+    })}
+    noStyle={noStyle}
+    value={value.hours < 12 ? 'AM' : 'PM'}
+    options={[{ value: 'AM', name: 'AM' }, { value: 'PM', name: 'PM' }]}
+  />
+);
 
 /* eslint-enable react/prop-types */
 
@@ -60,6 +41,24 @@ const displayHour = (hour, select24Hours) => {
   const modHour = hour % 12;
   return modHour === 0 ? 12 : modHour;
 };
+
+const generateHours = (select24Hours, value) => {
+  const timeArray = genArray(
+    select24Hours || value.hours < 12 ? 0 : 12,
+    select24Hours || value.hours > 11 ? 23 : 11,
+  );
+  return timeArray.map((hour) => {
+    const displaytime = leftPadTimeUnit(displayHour(hour, select24Hours)).toString();
+    return { value: hour, name: displaytime };
+  });
+};
+
+const generateMinutes = () => (
+  genArray(0, 59).map((min) => {
+    const displayMin = leftPadTimeUnit(min).toString();
+    return { value: min, name: displayMin };
+  })
+);
 
 const InputTime = ({
   disabled,
@@ -98,33 +97,22 @@ const InputTime = ({
   }
   return (
     <div style={style}>
-      <select
+      <Select
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, hours: parseInt(e.target.value, 10) })}
-        style={style}
         value={value.hours}
-      >
-        {genArray(
-          select24Hours || value.hours < 12 ? 0 : 12,
-          select24Hours || value.hours > 11 ? 23 : 11,
-        ).map(hour =>
-          <option
-            key={hour}
-            value={hour}
-          >
-            {leftPadTimeUnit(displayHour(hour, select24Hours))}
-          </option>)
-        }
-      </select>
-      <select
+        options={generateHours(select24Hours, value)}
+        label={'Hour'}
+        noStyle={noStyle}
+      />
+      <Select
         disabled={disabled || submitting}
         onChange={e => onChange({ ...value, minutes: parseInt(e.target.value, 10) })}
-        style={style}
         value={value.minutes}
-      >
-        {genArray(0, 59).map(min =>
-          <option key={min} value={min}>{leftPadTimeUnit(min)}</option>)}
-      </select>
+        options={generateMinutes()}
+        label={'Minute'}
+        noStyle={noStyle}
+      />
       {
         select24Hours ?
         null
