@@ -102,14 +102,20 @@ const Select = ({
 
 Select.propTypes = {
   options: PropTypes.arrayOf(PropTypes.shape({
-    value: PropTypes.string,
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
     name: PropTypes.string,
   })).isRequired,
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
   noStyle: PropTypes.bool,
   label: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
 };
 
 Select.defaultProps = {

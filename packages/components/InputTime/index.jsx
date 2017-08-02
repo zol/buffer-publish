@@ -48,15 +48,15 @@ const generateHours = (select24Hours, value) => {
     select24Hours || value.hours > 11 ? 23 : 11,
   );
   return timeArray.map((hour) => {
-    const time = leftPadTimeUnit(displayHour(hour, select24Hours)).toString();
-    return { value: time, name: time };
+    const displaytime = leftPadTimeUnit(displayHour(hour, select24Hours)).toString();
+    return { value: hour, name: displaytime };
   });
 };
 
 const generateMinutes = () => (
   genArray(0, 59).map((min) => {
-    const minString = leftPadTimeUnit(min).toString();
-    return { value: minString, name: minString };
+    const displayMin = leftPadTimeUnit(min).toString();
+    return { value: min, name: displayMin };
   })
 );
 
