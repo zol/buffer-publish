@@ -6,8 +6,6 @@ import {
 import { routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createHashHistory';
 import { middleware as loginMiddleware } from '@bufferapp/login';
-import { middleware as exampleMiddleware } from '@bufferapp/example';
-import { middleware as tabsMiddleware } from '@bufferapp/tabs';
 import { middleware as queueMiddleware } from '@bufferapp/queue';
 import { middleware as sentMiddleware } from '@bufferapp/sent';
 import { middleware as settingsMiddleware } from '@bufferapp/settings';
@@ -39,8 +37,6 @@ const configureStore = (initialstate) => {
         queueMiddleware,
         sentMiddleware,
         settingsMiddleware,
-        tabsMiddleware,
-        exampleMiddleware,
       ),
     ),
   );
