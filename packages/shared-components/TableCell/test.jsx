@@ -4,7 +4,7 @@ import TableCell from './index';
 
 describe('TableCell', () => {
   it('should have children', () => {
-    const wrapper = mount(<TableCell />);
+    const wrapper = mount(<TableCell>I Love Buffer</TableCell>);
     expect(wrapper.find(TableCell).length).toBe(1);
   });
 });

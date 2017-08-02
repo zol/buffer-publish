@@ -34,7 +34,14 @@ describe('Queue', () => {
     });
     const wrapper = mount(
       <Provider store={store}>
-        <Queue />
+        <Queue
+          postLists={[]}
+          onCancelConfirmClick={jest.fn()}
+          onDeleteClick={jest.fn()}
+          onDeleteConfirmClick={jest.fn()}
+          onEditClick={jest.fn()}
+          onShareNowClick={jest.fn()}
+        />
       </Provider>,
     );
     expect(wrapper.find(QueuedPosts).length)
