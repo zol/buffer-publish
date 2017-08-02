@@ -24,7 +24,14 @@ const iconStyle = {
   alignItems: 'center',
 };
 
-const Select = ({ options, onChange, disabled, noStyle, label }) => {
+const Select = ({
+  options,
+  onChange,
+  disabled,
+  noStyle,
+  label,
+  value,
+}) => {
   const selectStyle = calculateStyles({
     default: {
       zIndex: tooltip,
@@ -74,6 +81,7 @@ const Select = ({ options, onChange, disabled, noStyle, label }) => {
         onChange={onChange}
         disabled={disabled}
         aria-label={label}
+        value={value}
       >
         {
           options.map(option =>
@@ -101,6 +109,7 @@ Select.propTypes = {
   disabled: PropTypes.bool,
   noStyle: PropTypes.bool,
   label: PropTypes.string,
+  value: PropTypes.string,
 };
 
 Select.defaultProps = {
@@ -108,6 +117,7 @@ Select.defaultProps = {
   disabled: false,
   noStyle: false,
   label: null,
+  value: undefined,
 };
 
 export default Select;
