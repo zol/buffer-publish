@@ -5,11 +5,6 @@ import {
 import middleware from './middleware';
 
 describe('middleware', () => {
-  beforeEach(() => {
-    global.console.group = jest.fn();
-    global.console.log = jest.fn();
-    global.console.groupEnd = jest.fn();
-  });
   it('should fetch user after login', () => {
     const next = jest.fn();
     const dispatch = jest.fn();
@@ -21,10 +16,5 @@ describe('middleware', () => {
       .toBeCalledWith(action);
     expect(dispatch)
       .toBeCalledWith(dataFetchActions.fetch({ name: 'user' }));
-  });
-  afterEach(() => {
-    global.console.group.mockRestore();
-    global.console.log.mockRestore();
-    global.console.groupEnd.mockRestore();
   });
 });

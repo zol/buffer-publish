@@ -1,8 +1,6 @@
 import React from 'react';
-import {
-  storiesOf,
-  action,
-} from '@storybook/react';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { checkA11y } from 'storybook-addon-a11y';
 import QueuedPosts from './index';
 import postLists from './postData';
@@ -11,6 +9,7 @@ storiesOf('QueuedPosts')
   .addDecorator(checkA11y)
   .add('default', () => (
     <QueuedPosts
+      loading={false}
       postLists={postLists}
       onCancelConfirmClick={action('onCancelConfirmClick')}
       onDeleteClick={action('onDeleteClick')}

@@ -306,7 +306,6 @@ exports[`Snapshots ProfileList should display a list of profiles 1`] = `
         target="_self"
       >
         <div
-          hovered={false}
           style={
             Object {
               "alignItems": "center",
@@ -464,7 +463,6 @@ exports[`Snapshots ProfileList should display a list of profiles 1`] = `
         target="_self"
       >
         <div
-          hovered={false}
           style={
             Object {
               "alignItems": "center",
@@ -622,7 +620,6 @@ exports[`Snapshots ProfileListItem should display locked 1`] = `
     target="_self"
   >
     <div
-      hovered={false}
       style={
         Object {
           "alignItems": "center",
@@ -789,7 +786,6 @@ exports[`Snapshots ProfileListItem should display number of notifications 1`] = 
     target="_self"
   >
     <div
-      hovered={false}
       style={
         Object {
           "alignItems": "center",
@@ -945,7 +941,6 @@ exports[`Snapshots ProfileListItem should display selected 1`] = `
     target="_self"
   >
     <div
-      hovered={false}
       style={
         Object {
           "alignItems": "center",
@@ -1102,7 +1097,6 @@ exports[`Snapshots ProfileListItem should display twitter profile list item 1`] 
     target="_self"
   >
     <div
-      hovered={false}
       style={
         Object {
           "alignItems": "center",
@@ -1340,7 +1334,6 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -1498,7 +1491,6 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -1736,7 +1728,6 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -1906,7 +1897,6 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -2228,7 +2218,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -2385,7 +2374,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -2623,7 +2611,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -2794,7 +2781,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -2980,7 +2966,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -3151,7 +3136,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -3337,7 +3321,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -3508,7 +3491,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -3694,7 +3676,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -3865,7 +3846,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -4051,7 +4031,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -4222,7 +4201,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -4408,7 +4386,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -4579,7 +4556,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -4765,7 +4741,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -4936,7 +4911,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -5122,7 +5096,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -5293,7 +5266,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -5479,7 +5451,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -5650,7 +5621,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -5836,7 +5806,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
@@ -6007,7 +5976,6 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             target="_self"
           >
             <div
-              hovered={false}
               style={
                 Object {
                   "alignItems": "center",
