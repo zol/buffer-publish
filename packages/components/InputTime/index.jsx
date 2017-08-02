@@ -48,7 +48,7 @@ const generateHours = (select24Hours, value) => {
     select24Hours || value.hours > 11 ? 23 : 11,
   );
   return timeArray.map((hour) => {
-    const time = leftPadTimeUnit(displayHour(hour, select24Hours).toString());
+    const time = leftPadTimeUnit(displayHour(hour, select24Hours)).toString();
     return { value: time, name: time };
   });
 };
