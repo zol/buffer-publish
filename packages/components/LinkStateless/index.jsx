@@ -44,7 +44,7 @@ const Link = ({
     block: {
       display: 'block',
     },
-    focused: focusedStyle,
+    focused: unstyled ? '' : focusedStyle,
   }, {
     hovered,
     unstyled,
