@@ -5,15 +5,20 @@ const rp = require('request-promise');
 module.exports = method(
   'sentPosts',
   'fetch sent posts',
-  ({ profileId }, { session }) =>
+  ({ profileId, page }, { session }) =>
     rp({
       uri: `${process.env.API_ADDR}/1/profiles/${profileId}/updates/sent.json`,
       method: 'GET',
       strictSSL: !(process.env.NODE_ENV === 'development'),
       qs: {
         access_token: session.accessToken,
+        page,
+        count: 5,
       },
     })
       .then(result => JSON.parse(result))
-      .then(parsedResult => parsedResult.updates.map(postsMapper)),
+      .then(parsedResult => ({
+        total: parsedResult.total,
+        updates: parsedResult.updates.map(postsMapper),
+      })),
 );

@@ -10,7 +10,11 @@ describe('reducer', () => {
     const stateAfter = {
       header,
       loading: false,
-      postLists: [],
+      loadingMore: false,
+      moreToLoad: false,
+      page: 1,
+      posts: [],
+      total: 0,
     };
     const action = {
       type: 'INIT',

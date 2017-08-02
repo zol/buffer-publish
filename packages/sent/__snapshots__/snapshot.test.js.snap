@@ -639,6 +639,7 @@ exports[`Snapshots SentPosts default 1`] = `
         </div>
       </li>
     </ul>
+    
   </div>
 </span>
 `;

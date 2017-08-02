@@ -10,17 +10,21 @@ import { checkA11y } from 'storybook-addon-a11y';
 import ProfilePage from './index';
 
 const history = createHistory();
-const initialValues = {
-  time: {
-    hours: 14,
-    minutes: 20,
-  },
+const store = createStore();
+// TODO: Use MemoryRouter for testing?
+// https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/MemoryRouter.md
+const stubbedHistory = {
+  location: {
+    pathname: '/1234/queue',
+    search: '',
+    hash: '',
+    state: {} },
 };
 
 storiesOf('ProfilePage')
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
-    <Provider store={createStore()}>
+    <Provider store={store}>
       <Router history={history}>
         {getStory()}
       </Router>
@@ -34,6 +38,7 @@ storiesOf('ProfilePage')
           tabId: 'someTabId',
         },
       }}
+      history={stubbedHistory}
     />
   ))
   .add('should render settings', () => (
@@ -44,5 +49,6 @@ storiesOf('ProfilePage')
           tabId: 'settings',
         },
       }}
+      history={stubbedHistory}
     />
   ));

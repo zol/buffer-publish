@@ -9,6 +9,7 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
         name: 'sentPosts',
         args: {
           profileId: action.profile.id,
+          isFetchingMore: false,
         },
       }));
       break;

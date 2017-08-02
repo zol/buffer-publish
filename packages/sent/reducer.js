@@ -10,39 +10,46 @@ export const actionTypes = {
 const initialState = {
   header,
   loading: false,
-  postLists: [],
+  loadingMore: false,
+  moreToLoad: false,
+  page: 1,
+  posts: [],
+  total: 0,
 };
 
-const formatPostLists = (posts) => {
-  const postLists = [];
-  let day;
-  let newList;
-
-  for (let i = 0; i < posts.length; i++) { // eslint-disable-line
-    if (posts[i].day !== day) {
-      day = posts[i].day;
-      newList = { listHeader: day, posts: [posts[i]] };
-      postLists.push(newList);
-    } else { // if same day add to posts array of current list
-      newList.posts.push(posts[i]);
-    }
+const handlePosts = (action, currentPosts) => {
+  let posts = action.result.updates;
+  if (action.args.isFetchingMore) {
+    posts = [...currentPosts, ...posts];
   }
-
-  return postLists;
+  return posts;
 };
+
+const increasePageCount = (page) => {
+  page += 1;
+  return page;
+};
+
+const determineIfMoreToLoad = (action, currentPosts) =>
+  (action.result.total > (currentPosts.length + action.result.updates.length));
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case `sentPosts_${dataFetchActionTypes.FETCH_START}`:
       return {
         ...state,
-        loading: true,
+        loading: !action.args.isFetchingMore,
+        loadingMore: action.args.isFetchingMore,
       };
     case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
-        postLists: formatPostLists(action.result),
+        loadingMore: false,
+        moreToLoad: determineIfMoreToLoad(action, state.posts),
+        page: increasePageCount(state.page),
+        posts: handlePosts(action, state.posts),
+        total: action.result.total,
       };
     case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
       return state;

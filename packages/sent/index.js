@@ -3,12 +3,33 @@ import { connect } from 'react-redux';
 // load the presentational component
 import SentPosts from './components/SentPosts';
 
+const formatPostLists = (posts) => {
+  const postLists = [];
+  let day;
+  let newList;
+
+  posts.forEach((post) => {
+    if (post.day !== day) {
+      day = post.day;
+      newList = { listHeader: day, posts: [post] };
+      postLists.push(newList);
+    } else { // if same day add to posts array of current list
+      newList.posts.push(post);
+    }
+  });
+
+  return postLists;
+};
+
 // default export = container
 export default connect(
   state => ({
     header: state.sent.header,
     loading: state.sent.loading,
-    postLists: state.sent.postLists,
+    loadingMore: state.sent.loadingMore,
+    page: state.sent.page,
+    postLists: formatPostLists(state.sent.posts),
+    total: state.sent.total,
     translations: state.i18n.translations.sent, // all package translations
   }),
 )(SentPosts);

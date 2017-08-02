@@ -5,15 +5,31 @@ import {
   Divider,
   Text,
 } from '@bufferapp/components';
+import {
+  geyser,
+  fillColor,
+  curiousBlue,
+} from '@bufferapp/components/style/color';
 
 const headerStyle = {
   marginBottom: '1.5rem',
   width: '100%',
 };
 
+const loadMoreStyle = {
+  border: `1px solid ${geyser}`,
+  width: '100%',
+  padding: '10px',
+  position: 'relative',
+  textAlign: 'center',
+  backgroundColor: fillColor,
+  color: curiousBlue,
+};
+
 const SentPosts = ({
   header,
   loading,
+  loadingMore,
   postLists,
 }) => {
   if (loading) {
@@ -28,6 +44,11 @@ const SentPosts = ({
       <PostLists
         postLists={postLists}
       />
+      {
+        loadingMore ?
+          <div style={loadMoreStyle}>{'Loading...'}</div>
+          : ''
+      }
     </div>
   );
 };
@@ -35,6 +56,7 @@ const SentPosts = ({
 SentPosts.propTypes = {
   header: PropTypes.string,
   loading: PropTypes.bool.isRequired,
+  loadingMore: PropTypes.bool.isRequired,
   postLists: PropTypes.arrayOf(
     PropTypes.shape({
       listHeader: PropTypes.string,
@@ -50,6 +72,7 @@ SentPosts.propTypes = {
 SentPosts.defaultProps = {
   header: null,
   loading: false,
+  loadingMore: false,
   postLists: [],
 };
 

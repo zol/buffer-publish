@@ -74,10 +74,7 @@ TabContent.defaultProps = {
   tabId: '',
 };
 
-// Returns a function - as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing. Taken from underscore.js
+// Taken from underscore.js
 function debounce(func, wait, immediate) {
   let timeout;
   return function() {
@@ -170,15 +167,19 @@ ProfilePage.propTypes = {
 };
 
 export default connect(
-  state => ({
-    loading: state.queue.loading,
-    loadingMore: state.queue.loadingMore,
-    moreToLoad: state.queue.moreToLoad,
-    page: state.queue.page,
-    posts: state.queue.posts,
-    total: state.queue.total,
-    translations: state.i18n.translations.example, // all package translations
-  }),
+  (state, ownProps) => {
+    const splitPath = ownProps.history.location.pathname.split('/');
+    const tabId = splitPath.pop();
+    return ({
+      loading: state[tabId].loading,
+      loadingMore: state[tabId].loadingMore,
+      moreToLoad: state[tabId].moreToLoad,
+      page: state[tabId].page,
+      posts: state[tabId].posts,
+      total: state[tabId].total,
+      translations: state.i18n.translations.example, // all package translations
+    });
+  },
   dispatch => ({
     handleScroll: ({ profileId, page, tabId }) => {
       dispatch(
