@@ -35,7 +35,7 @@ const productTitleStyle = {
 
 const profileListStyle = {
   flexGrow: 1,
-  overflow: 'hidden',
+  overflowY: 'scroll',
 };
 
 const lockedAccountHeaderStyle = {
