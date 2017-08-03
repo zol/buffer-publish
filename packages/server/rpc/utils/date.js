@@ -53,4 +53,9 @@ module.exports = {
     const now = new Date();
     return date < now;
   },
+  daysAgoTimestamp: (days) => {
+    const date = new Date();
+    date.setDate(date.getDate() - days);
+    return Math.ceil(date.getTime() / 1000);
+  },
 };
