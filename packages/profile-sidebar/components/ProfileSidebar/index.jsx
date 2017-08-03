@@ -31,6 +31,7 @@ const profileSidebarStyle = {
 
 const productTitleStyle = {
   marginRight: '0.25rem',
+  letterSpacing: '-0.01rem',
 };
 
 const profileListStyle = {
@@ -68,7 +69,6 @@ const ProfileSidebar = ({
         </Text>
       </span>
       <Text
-        weight={'bold'}
         size={'large'}
       >
         Free

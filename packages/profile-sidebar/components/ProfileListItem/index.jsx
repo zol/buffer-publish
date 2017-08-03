@@ -83,6 +83,7 @@ const ProfileSidebar = ({
       </div>
       <Text
         size={'small'}
+        color={selected ? 'black' : 'shuttleGray'}
       >
         {handle}
       </Text>
