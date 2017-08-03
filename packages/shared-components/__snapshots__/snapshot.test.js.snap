@@ -451,7 +451,6 @@ exports[`Snapshots EmptyState default 1`] = `
       Object {
         "display": "flex",
         "justifyContent": "center",
-        "marginTop": "7rem",
       }
     }
   >
@@ -459,7 +458,7 @@ exports[`Snapshots EmptyState default 1`] = `
       style={
         Object {
           "textAlign": "center",
-          "width": "60%",
+          "width": "65%",
         }
       }
     >
@@ -469,6 +468,7 @@ exports[`Snapshots EmptyState default 1`] = `
         style={
           Object {
             "marginBottom": "1.5rem",
+            "maxWidth": "25rem",
           }
         }
       />
