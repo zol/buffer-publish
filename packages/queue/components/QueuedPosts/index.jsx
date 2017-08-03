@@ -27,6 +27,17 @@ const loadMoreStyle = {
   color: curiousBlue,
 };
 
+const imgStyle = {
+  width: '45px',
+  marginTop: '5rem',
+};
+
+const loadingContainerStyle = {
+  width: '100%',
+  height: '100%',
+  textAlign: 'center',
+};
+
 const QueuedPosts = ({
   total,
   loading,
@@ -39,7 +50,11 @@ const QueuedPosts = ({
   onShareNowClick,
 }) => {
   if (loading) {
-    return (<div>Loading...</div>);
+    return (
+      <div style={loadingContainerStyle}>
+        <img style={imgStyle} alt="" src="https://s3.amazonaws.com/buffer-publish/images/black-loading-gif-small.gif" />
+      </div>
+    );
   }
   return (
     <div>
