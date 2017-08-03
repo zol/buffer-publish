@@ -13,11 +13,11 @@ const EmptyState = ({ title, subtitle, heroImg }) => {
   const wrapperStyle = {
     display: 'flex',
     justifyContent: 'center',
-    marginTop: '7rem',
   };
 
   const imageStyle = {
     marginBottom: '1.5rem',
+    maxWidth: '25rem',
   };
 
   const headerStyle = {
