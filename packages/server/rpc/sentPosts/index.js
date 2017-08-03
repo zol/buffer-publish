@@ -1,5 +1,6 @@
 const { postsMapper } = require('../utils/postParser');
 const { method } = require('@bufferapp/micro-rpc');
+const { daysAgoTimestamp } = require('../utils/date');
 const rp = require('request-promise');
 
 module.exports = method(
@@ -13,7 +14,8 @@ module.exports = method(
       qs: {
         access_token: session.accessToken,
         page,
-        count: 5,
+        count: 20,
+        since: daysAgoTimestamp(30),
       },
     })
       .then(result => JSON.parse(result))

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import {
   Divider,
   Text,
+  QuestionIcon,
+  IconArrowPopover,
 } from '@bufferapp/components';
 
 import {
@@ -69,6 +71,17 @@ const ProfileSettings = ({
           size="small"
         >
           Posting times
+          {/* Need to move the tooltip a bit for visual accuracy! */}
+          <div style={{ display: 'inline-block', position: 'relative', top: '4px', left: '5px' }}>
+            <IconArrowPopover icon={<QuestionIcon />} position="below" shadow oneLine={false} width="320px" label="Posting Times">
+              <div style={{ padding: '.5rem .25rem' }}>
+                {/* eslint-disable max-len */}
+                Your posting schedule tells Buffer when to send out posts in your Queue. <br /><br />
+                For example, the next 10 posts you add to your Queue will go out in the next 10 upcoming time/date slots you
+                decide below. You can change this schedule at any time!
+              </div>
+            </IconArrowPopover>
+          </div>
         </Text>
         <Divider color="white" />
         <ScheduleTable

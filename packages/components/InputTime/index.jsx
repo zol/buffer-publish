@@ -126,7 +126,7 @@ const InputTime = ({
 InputTime.propTypes = {
   disabled: PropTypes.bool,
   input: PropTypes.shape({
-    onChange: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
     value: PropTypes.oneOfType([
       PropTypes.shape({
         hours: PropTypes.number.isRequired,

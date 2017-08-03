@@ -14,7 +14,7 @@ module.exports = method(
       qs: {
         access_token: session.accessToken,
         page,
-        count: 5,
+        count: 20,
       },
     })
       .then(result => JSON.parse(result))

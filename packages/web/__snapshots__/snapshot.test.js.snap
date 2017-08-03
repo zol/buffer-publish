@@ -83,6 +83,7 @@ exports[`Snapshots App should render application 1`] = `
         tabIndex="0"
       >
         <div
+          id=""
           style={
             Object {
               "background": "#2E435E",
@@ -96,6 +97,7 @@ exports[`Snapshots App should render application 1`] = `
               "textAlign": "left",
               "transform": "translate(11px, -3px)",
               "whiteSpace": "nowrap",
+              "zIndex": 4000,
             }
           }
         >
@@ -191,6 +193,7 @@ exports[`Snapshots App should render application 1`] = `
         tabIndex="0"
       >
         <div
+          id=""
           style={
             Object {
               "background": "#2E435E",
@@ -204,6 +207,7 @@ exports[`Snapshots App should render application 1`] = `
               "textAlign": "left",
               "transform": "translate(11px, -3px)",
               "whiteSpace": "nowrap",
+              "zIndex": 4000,
             }
           }
         >
@@ -306,6 +310,7 @@ exports[`Snapshots App should render application 1`] = `
         tabIndex="0"
       >
         <div
+          id=""
           style={
             Object {
               "background": "#2E435E",
@@ -319,6 +324,7 @@ exports[`Snapshots App should render application 1`] = `
               "textAlign": "left",
               "transform": "translate(11px, -3px)",
               "whiteSpace": "nowrap",
+              "zIndex": 4000,
             }
           }
         >
@@ -428,6 +434,7 @@ exports[`Snapshots App should render application 1`] = `
           tabIndex="0"
         >
           <div
+            id=""
             style={
               Object {
                 "background": "#2E435E",
@@ -439,8 +446,9 @@ exports[`Snapshots App should render application 1`] = `
                 "left": "100%",
                 "position": "absolute",
                 "textAlign": "left",
-                "transform": "translate(11px, -4px)",
+                "transform": "translate(11px, 4px)",
                 "whiteSpace": "nowrap",
+                "zIndex": 4000,
               }
             }
           >
@@ -748,7 +756,6 @@ exports[`Snapshots ProfilePage should render 1`] = `
           style={
             Object {
               "flexGrow": 1,
-              "overflowY": "auto",
             }
           }
         >
@@ -1105,32 +1112,115 @@ exports[`Snapshots ProfilePage should render 1`] = `
                 Locked Social Accounts
               </span>
             </div>
-            <svg
-              height="100%"
+            <div
+              aria-describedby="tooltip_PostingTimes"
+              aria-label="Posting Times"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="tooltip"
               style={
                 Object {
-                  "fill": "#59626a",
-                  "height": "1rem",
-                  "width": "1rem",
+                  "display": "inline-block",
+                  "height": "16px",
+                  "position": "relative",
+                  "width": "16px",
                 }
               }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+              tabIndex="0"
             >
-              <g
-                className="shuttleGray"
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <path
-                  d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z"
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z"
+                  />
+                  <path
+                    d="M6.95019531,9.36035156 L6.95019531,8.96289062 C6.95019531,8.61913891 7.02359953,8.32015101 7.17041016,8.06591797 C7.31722079,7.81168493 7.58577279,7.54134258 7.97607422,7.25488281 C8.35205266,6.98632678 8.60001568,6.76790449 8.7199707,6.59960938 C8.83992573,6.43131426 8.89990234,6.24332786 8.89990234,6.03564453 C8.89990234,5.80289597 8.8139657,5.62565165 8.64208984,5.50390625 C8.47021398,5.38216085 8.23030753,5.32128906 7.92236328,5.32128906 C7.38525122,5.32128906 6.77295266,5.49674304 6.08544922,5.84765625 L5.5,4.67138672 C6.2985066,4.22379333 7.14534058,4 8.04052734,4 C8.77816124,4 9.36449978,4.17724432 9.79956055,4.53173828 C10.2346213,4.88623224 10.4521484,5.35888376 10.4521484,5.94970703 C10.4521484,6.34358921 10.3626311,6.68375508 10.1835938,6.97021484 C10.0045564,7.25667461 9.66439053,7.57893701 9.16308594,7.93701172 C8.81933422,8.19124476 8.6018071,8.3846022 8.51049805,8.51708984 C8.419189,8.64957749 8.37353516,8.82324111 8.37353516,9.03808594 L8.37353516,9.36035156 L6.95019531,9.36035156 Z M6.77832031,11.1972656 C6.77832031,10.8964829 6.85888591,10.6691088 7.02001953,10.5151367 C7.18115315,10.3611646 7.41568856,10.2841797 7.72363281,10.2841797 C8.02083482,10.2841797 8.25089437,10.3629549 8.41381836,10.5205078 C8.57674235,10.6780607 8.65820312,10.9036444 8.65820312,11.1972656 C8.65820312,11.4801446 8.57584718,11.7030428 8.41113281,11.8659668 C8.24641845,12.0288908 8.01725407,12.1103516 7.72363281,12.1103516 C7.42285006,12.1103516 7.19010499,12.0306811 7.02539062,11.8713379 C6.86067626,11.7119946 6.77832031,11.4873061 6.77832031,11.1972656 Z"
+                  />
+                </g>
+              </svg>
+              <div
+                aria-hidden={true}
+                id="tooltip_PostingTimes"
+                role="tooltip"
+                style={
+                  Object {
+                    "background": "#2E435E",
+                    "borderRadius": "0.126rem",
+                    "bottom": 0,
+                    "boxShadow": "0 1px 2px 0 rgba(0,0,0,0.50)",
+                    "color": "#fff",
+                    "display": "none",
+                    "left": "100%",
+                    "padding": ".25rem .75rem",
+                    "position": "absolute",
+                    "textAlign": "left",
+                    "transform": "translate(11px, 4px)",
+                    "width": "320px",
+                    "zIndex": 4000,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderBottomColor": "transparent",
+                      "borderBottomWidth": 7,
+                      "borderLeftColor": "transparent",
+                      "borderLeftWidth": 0,
+                      "borderRightColor": "#2E435E",
+                      "borderRightWidth": 8,
+                      "borderStyle": "solid",
+                      "borderTopColor": "transparent",
+                      "borderTopWidth": 7,
+                      "bottom": "6px",
+                      "height": 0,
+                      "left": -8,
+                      "position": "absolute",
+                      "top": "none",
+                      "transform": "none",
+                      "width": 0,
+                    }
+                  }
                 />
-                <path
-                  d="M6.95019531,9.36035156 L6.95019531,8.96289062 C6.95019531,8.61913891 7.02359953,8.32015101 7.17041016,8.06591797 C7.31722079,7.81168493 7.58577279,7.54134258 7.97607422,7.25488281 C8.35205266,6.98632678 8.60001568,6.76790449 8.7199707,6.59960938 C8.83992573,6.43131426 8.89990234,6.24332786 8.89990234,6.03564453 C8.89990234,5.80289597 8.8139657,5.62565165 8.64208984,5.50390625 C8.47021398,5.38216085 8.23030753,5.32128906 7.92236328,5.32128906 C7.38525122,5.32128906 6.77295266,5.49674304 6.08544922,5.84765625 L5.5,4.67138672 C6.2985066,4.22379333 7.14534058,4 8.04052734,4 C8.77816124,4 9.36449978,4.17724432 9.79956055,4.53173828 C10.2346213,4.88623224 10.4521484,5.35888376 10.4521484,5.94970703 C10.4521484,6.34358921 10.3626311,6.68375508 10.1835938,6.97021484 C10.0045564,7.25667461 9.66439053,7.57893701 9.16308594,7.93701172 C8.81933422,8.19124476 8.6018071,8.3846022 8.51049805,8.51708984 C8.419189,8.64957749 8.37353516,8.82324111 8.37353516,9.03808594 L8.37353516,9.36035156 L6.95019531,9.36035156 Z M6.77832031,11.1972656 C6.77832031,10.8964829 6.85888591,10.6691088 7.02001953,10.5151367 C7.18115315,10.3611646 7.41568856,10.2841797 7.72363281,10.2841797 C8.02083482,10.2841797 8.25089437,10.3629549 8.41381836,10.5205078 C8.57674235,10.6780607 8.65820312,10.9036444 8.65820312,11.1972656 C8.65820312,11.4801446 8.57584718,11.7030428 8.41113281,11.8659668 C8.24641845,12.0288908 8.01725407,12.1103516 7.72363281,12.1103516 C7.42285006,12.1103516 7.19010499,12.0306811 7.02539062,11.8713379 C6.86067626,11.7119946 6.77832031,11.4873061 6.77832031,11.1972656 Z"
-                />
-              </g>
-            </svg>
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": ".5rem .25rem",
+                      }
+                    }
+                  >
+                    Sorry, the free plan lets you access up to two social accounts at the same time (and any business accounts you’re a team member on). We’ll keep these other ones safe and sound until you’re ready to upgrade!
+                  </div>
+                </span>
+              </div>
+            </div>
           </div>
           <hr
             style={
@@ -1834,7 +1924,6 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           style={
             Object {
               "flexGrow": 1,
-              "overflowY": "auto",
             }
           }
         >
@@ -2191,32 +2280,115 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                 Locked Social Accounts
               </span>
             </div>
-            <svg
-              height="100%"
+            <div
+              aria-describedby="tooltip_PostingTimes"
+              aria-label="Posting Times"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="tooltip"
               style={
                 Object {
-                  "fill": "#59626a",
-                  "height": "1rem",
-                  "width": "1rem",
+                  "display": "inline-block",
+                  "height": "16px",
+                  "position": "relative",
+                  "width": "16px",
                 }
               }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+              tabIndex="0"
             >
-              <g
-                className="shuttleGray"
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <path
-                  d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z"
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z"
+                  />
+                  <path
+                    d="M6.95019531,9.36035156 L6.95019531,8.96289062 C6.95019531,8.61913891 7.02359953,8.32015101 7.17041016,8.06591797 C7.31722079,7.81168493 7.58577279,7.54134258 7.97607422,7.25488281 C8.35205266,6.98632678 8.60001568,6.76790449 8.7199707,6.59960938 C8.83992573,6.43131426 8.89990234,6.24332786 8.89990234,6.03564453 C8.89990234,5.80289597 8.8139657,5.62565165 8.64208984,5.50390625 C8.47021398,5.38216085 8.23030753,5.32128906 7.92236328,5.32128906 C7.38525122,5.32128906 6.77295266,5.49674304 6.08544922,5.84765625 L5.5,4.67138672 C6.2985066,4.22379333 7.14534058,4 8.04052734,4 C8.77816124,4 9.36449978,4.17724432 9.79956055,4.53173828 C10.2346213,4.88623224 10.4521484,5.35888376 10.4521484,5.94970703 C10.4521484,6.34358921 10.3626311,6.68375508 10.1835938,6.97021484 C10.0045564,7.25667461 9.66439053,7.57893701 9.16308594,7.93701172 C8.81933422,8.19124476 8.6018071,8.3846022 8.51049805,8.51708984 C8.419189,8.64957749 8.37353516,8.82324111 8.37353516,9.03808594 L8.37353516,9.36035156 L6.95019531,9.36035156 Z M6.77832031,11.1972656 C6.77832031,10.8964829 6.85888591,10.6691088 7.02001953,10.5151367 C7.18115315,10.3611646 7.41568856,10.2841797 7.72363281,10.2841797 C8.02083482,10.2841797 8.25089437,10.3629549 8.41381836,10.5205078 C8.57674235,10.6780607 8.65820312,10.9036444 8.65820312,11.1972656 C8.65820312,11.4801446 8.57584718,11.7030428 8.41113281,11.8659668 C8.24641845,12.0288908 8.01725407,12.1103516 7.72363281,12.1103516 C7.42285006,12.1103516 7.19010499,12.0306811 7.02539062,11.8713379 C6.86067626,11.7119946 6.77832031,11.4873061 6.77832031,11.1972656 Z"
+                  />
+                </g>
+              </svg>
+              <div
+                aria-hidden={true}
+                id="tooltip_PostingTimes"
+                role="tooltip"
+                style={
+                  Object {
+                    "background": "#2E435E",
+                    "borderRadius": "0.126rem",
+                    "bottom": 0,
+                    "boxShadow": "0 1px 2px 0 rgba(0,0,0,0.50)",
+                    "color": "#fff",
+                    "display": "none",
+                    "left": "100%",
+                    "padding": ".25rem .75rem",
+                    "position": "absolute",
+                    "textAlign": "left",
+                    "transform": "translate(11px, 4px)",
+                    "width": "320px",
+                    "zIndex": 4000,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderBottomColor": "transparent",
+                      "borderBottomWidth": 7,
+                      "borderLeftColor": "transparent",
+                      "borderLeftWidth": 0,
+                      "borderRightColor": "#2E435E",
+                      "borderRightWidth": 8,
+                      "borderStyle": "solid",
+                      "borderTopColor": "transparent",
+                      "borderTopWidth": 7,
+                      "bottom": "6px",
+                      "height": 0,
+                      "left": -8,
+                      "position": "absolute",
+                      "top": "none",
+                      "transform": "none",
+                      "width": 0,
+                    }
+                  }
                 />
-                <path
-                  d="M6.95019531,9.36035156 L6.95019531,8.96289062 C6.95019531,8.61913891 7.02359953,8.32015101 7.17041016,8.06591797 C7.31722079,7.81168493 7.58577279,7.54134258 7.97607422,7.25488281 C8.35205266,6.98632678 8.60001568,6.76790449 8.7199707,6.59960938 C8.83992573,6.43131426 8.89990234,6.24332786 8.89990234,6.03564453 C8.89990234,5.80289597 8.8139657,5.62565165 8.64208984,5.50390625 C8.47021398,5.38216085 8.23030753,5.32128906 7.92236328,5.32128906 C7.38525122,5.32128906 6.77295266,5.49674304 6.08544922,5.84765625 L5.5,4.67138672 C6.2985066,4.22379333 7.14534058,4 8.04052734,4 C8.77816124,4 9.36449978,4.17724432 9.79956055,4.53173828 C10.2346213,4.88623224 10.4521484,5.35888376 10.4521484,5.94970703 C10.4521484,6.34358921 10.3626311,6.68375508 10.1835938,6.97021484 C10.0045564,7.25667461 9.66439053,7.57893701 9.16308594,7.93701172 C8.81933422,8.19124476 8.6018071,8.3846022 8.51049805,8.51708984 C8.419189,8.64957749 8.37353516,8.82324111 8.37353516,9.03808594 L8.37353516,9.36035156 L6.95019531,9.36035156 Z M6.77832031,11.1972656 C6.77832031,10.8964829 6.85888591,10.6691088 7.02001953,10.5151367 C7.18115315,10.3611646 7.41568856,10.2841797 7.72363281,10.2841797 C8.02083482,10.2841797 8.25089437,10.3629549 8.41381836,10.5205078 C8.57674235,10.6780607 8.65820312,10.9036444 8.65820312,11.1972656 C8.65820312,11.4801446 8.57584718,11.7030428 8.41113281,11.8659668 C8.24641845,12.0288908 8.01725407,12.1103516 7.72363281,12.1103516 C7.42285006,12.1103516 7.19010499,12.0306811 7.02539062,11.8713379 C6.86067626,11.7119946 6.77832031,11.4873061 6.77832031,11.1972656 Z"
-                />
-              </g>
-            </svg>
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "padding": ".5rem .25rem",
+                      }
+                    }
+                  >
+                    Sorry, the free plan lets you access up to two social accounts at the same time (and any business accounts you’re a team member on). We’ll keep these other ones safe and sound until you’re ready to upgrade!
+                  </div>
+                </span>
+              </div>
+            </div>
           </div>
           <hr
             style={
@@ -3087,7 +3259,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                                 "marginRight": "0.5rem",
                                 "paddingLeft": "0.5rem",
                                 "paddingRight": "1.5rem",
-                                "zIndex": 4000,
+                                "zIndex": 2000,
                               }
                             }
                             value={undefined}
@@ -3236,7 +3408,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                                 "marginRight": "0.5rem",
                                 "paddingLeft": "0.5rem",
                                 "paddingRight": "1.5rem",
-                                "zIndex": 4000,
+                                "zIndex": 2000,
                               }
                             }
                             value={12}
@@ -3365,7 +3537,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                                 "marginRight": "0.5rem",
                                 "paddingLeft": "0.5rem",
                                 "paddingRight": "1.5rem",
-                                "zIndex": 4000,
+                                "zIndex": 2000,
                               }
                             }
                             value={0}
@@ -3734,7 +3906,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                                 "marginRight": "0.5rem",
                                 "paddingLeft": "0.5rem",
                                 "paddingRight": "1.5rem",
-                                "zIndex": 4000,
+                                "zIndex": 2000,
                               }
                             }
                             value="PM"
@@ -3862,6 +4034,128 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
               }
             >
               Posting times
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "left": "5px",
+                    "position": "relative",
+                    "top": "4px",
+                  }
+                }
+              >
+                <div
+                  aria-describedby="tooltip_PostingTimes"
+                  aria-label="Posting Times"
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  role="tooltip"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "16px",
+                      "position": "relative",
+                      "width": "16px",
+                    }
+                  }
+                  tabIndex="0"
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#59626a",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shuttleGray"
+                    >
+                      <path
+                        d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z"
+                      />
+                      <path
+                        d="M6.95019531,9.36035156 L6.95019531,8.96289062 C6.95019531,8.61913891 7.02359953,8.32015101 7.17041016,8.06591797 C7.31722079,7.81168493 7.58577279,7.54134258 7.97607422,7.25488281 C8.35205266,6.98632678 8.60001568,6.76790449 8.7199707,6.59960938 C8.83992573,6.43131426 8.89990234,6.24332786 8.89990234,6.03564453 C8.89990234,5.80289597 8.8139657,5.62565165 8.64208984,5.50390625 C8.47021398,5.38216085 8.23030753,5.32128906 7.92236328,5.32128906 C7.38525122,5.32128906 6.77295266,5.49674304 6.08544922,5.84765625 L5.5,4.67138672 C6.2985066,4.22379333 7.14534058,4 8.04052734,4 C8.77816124,4 9.36449978,4.17724432 9.79956055,4.53173828 C10.2346213,4.88623224 10.4521484,5.35888376 10.4521484,5.94970703 C10.4521484,6.34358921 10.3626311,6.68375508 10.1835938,6.97021484 C10.0045564,7.25667461 9.66439053,7.57893701 9.16308594,7.93701172 C8.81933422,8.19124476 8.6018071,8.3846022 8.51049805,8.51708984 C8.419189,8.64957749 8.37353516,8.82324111 8.37353516,9.03808594 L8.37353516,9.36035156 L6.95019531,9.36035156 Z M6.77832031,11.1972656 C6.77832031,10.8964829 6.85888591,10.6691088 7.02001953,10.5151367 C7.18115315,10.3611646 7.41568856,10.2841797 7.72363281,10.2841797 C8.02083482,10.2841797 8.25089437,10.3629549 8.41381836,10.5205078 C8.57674235,10.6780607 8.65820312,10.9036444 8.65820312,11.1972656 C8.65820312,11.4801446 8.57584718,11.7030428 8.41113281,11.8659668 C8.24641845,12.0288908 8.01725407,12.1103516 7.72363281,12.1103516 C7.42285006,12.1103516 7.19010499,12.0306811 7.02539062,11.8713379 C6.86067626,11.7119946 6.77832031,11.4873061 6.77832031,11.1972656 Z"
+                      />
+                    </g>
+                  </svg>
+                  <div
+                    aria-hidden={true}
+                    id="tooltip_PostingTimes"
+                    role="tooltip"
+                    style={
+                      Object {
+                        "background": "#2E435E",
+                        "borderRadius": "0.126rem",
+                        "boxShadow": "0 1px 2px 0 rgba(0,0,0,0.50)",
+                        "color": "#fff",
+                        "display": "none",
+                        "left": "100%",
+                        "padding": ".25rem .75rem",
+                        "position": "absolute",
+                        "textAlign": "left",
+                        "top": 0,
+                        "transform": "translate(11px, -4px)",
+                        "width": "320px",
+                        "zIndex": 4000,
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "transparent",
+                          "borderBottomWidth": 7,
+                          "borderLeftColor": "transparent",
+                          "borderLeftWidth": 0,
+                          "borderRightColor": "#2E435E",
+                          "borderRightWidth": 8,
+                          "borderStyle": "solid",
+                          "borderTopColor": "transparent",
+                          "borderTopWidth": 7,
+                          "height": 0,
+                          "left": -8,
+                          "position": "absolute",
+                          "top": "6px",
+                          "transform": "none",
+                          "width": 0,
+                        }
+                      }
+                    />
+                    <span
+                      style={
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "0.8rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "padding": ".5rem .25rem",
+                          }
+                        }
+                      >
+                        Your posting schedule tells Buffer when to send out posts in your Queue. 
+                        <br />
+                        <br />
+                        For example, the next 10 posts you add to your Queue will go out in the next 10 upcoming time/date slots you decide below. You can change this schedule at any time!
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </span>
             <hr
               style={

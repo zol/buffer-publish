@@ -1,4 +1,5 @@
 // if you need a component export it here
+export EmptyState from './EmptyState';
 export Example from './Example';
 export Tabs from './Tabs';
 export Tab from './Tab';
