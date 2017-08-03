@@ -42,9 +42,9 @@ const SentPosts = ({
   if (total < 1) {
     return (
       <EmptyState
-        title={'You haven’t published any posts with this account in the past 30 days!'}
-        subtitle={'Once a post has gone live via Buffer, you can track it’s performance here to learn what works best with your audience!'}
-        heroImg={'https://s3.amazonaws.com/buffer-publish/images/empty-sent2x.png'}
+        title="You haven’t published any posts with this account in the past 30 days!"
+        subtitle="Once a post has gone live via Buffer, you can track it’s performance here to learn what works best with your audience!"
+        heroImg="https://s3.amazonaws.com/buffer-publish/images/empty-sent2x.png"
       />
     );
   }

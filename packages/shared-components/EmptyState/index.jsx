@@ -31,7 +31,7 @@ const EmptyState = ({ title, subtitle, heroImg }) => {
           <img style={imageStyle} alt="" src={heroImg} />}
         {title &&
           <div style={headerStyle}>
-            <Text size={'large'} weight={'bold'}>
+            <Text size="large" weight="bold">
               {title}
             </Text>
           </div>}
