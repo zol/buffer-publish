@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
-import { Text, Divider } from '@bufferapp/components';
+import {
+  Text,
+  Divider,
+  LoadingAnimation,
+} from '@bufferapp/components';
 
 const defaultPageStyle = {
   padding: '1rem',
@@ -18,16 +21,12 @@ const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
     message = 'Please wait...';
   }
 
-  const imgStyle = {
-    width: '45px',
-    marginTop: '5rem',
-  };
   return (
     checkedCookie && <div style={defaultPageStyle}>
       <Text size="large">Welcome to Buffer Publish 🎉</Text>
       <Divider />
       {loggingIn && <Text>{message}</Text>}
-      {loggedIn && <img style={imgStyle} alt="" src="https://s3.amazonaws.com/buffer-publish/images/black-loading-gif-small.gif" />}
+      {loggedIn && <LoadingAnimation />}
     </div>
   );
 };

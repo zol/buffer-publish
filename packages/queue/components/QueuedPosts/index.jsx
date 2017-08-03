@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Input,
+  LoadingAnimation,
 } from '@bufferapp/components';
 import {
   geyser,
@@ -27,15 +28,11 @@ const loadMoreStyle = {
   color: curiousBlue,
 };
 
-const imgStyle = {
-  width: '45px',
-  marginTop: '5rem',
-};
-
 const loadingContainerStyle = {
   width: '100%',
   height: '100%',
   textAlign: 'center',
+  paddingTop: '5rem',
 };
 
 const QueuedPosts = ({
@@ -52,7 +49,7 @@ const QueuedPosts = ({
   if (loading) {
     return (
       <div style={loadingContainerStyle}>
-        <img style={imgStyle} alt="" src="https://s3.amazonaws.com/buffer-publish/images/black-loading-gif-small.gif" />
+        <LoadingAnimation />
       </div>
     );
   }
