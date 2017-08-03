@@ -21,7 +21,7 @@ import ProfileList from '../ProfileList';
 const profileSidebarStyle = {
   display: 'flex',
   flexDirection: 'column',
-  height: '100%',
+  minHeight: '100vh',
   padding: '1rem',
   boxSizing: 'border-box',
   background: offWhite,
