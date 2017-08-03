@@ -6,6 +6,7 @@ import { Text, Divider } from '@bufferapp/components';
 
 const defaultPageStyle = {
   padding: '1rem',
+  textAlign: 'center',
 };
 
 const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
@@ -16,11 +17,17 @@ const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
   if (loggingIn) {
     message = 'Please wait...';
   }
+
+  const imgStyle = {
+    width: '45px',
+    marginTop: '5rem',
+  };
   return (
     checkedCookie && <div style={defaultPageStyle}>
       <Text size="large">Welcome to Buffer Publish 🎉</Text>
       <Divider />
-      <Text>{message}</Text>
+      {loggingIn && <Text>{message}</Text>}
+      {loggedIn && <img style={imgStyle} alt="" src="https://s3.amazonaws.com/buffer-publish/images/black-loading-gif-small.gif" />}
     </div>
   );
 };
