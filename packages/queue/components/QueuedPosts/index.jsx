@@ -10,6 +10,7 @@ import {
 } from '@bufferapp/components/style/color';
 import {
   PostLists,
+  EmptyState,
 } from '@bufferapp/publish-shared-components';
 
 const composerStyle = {
@@ -27,6 +28,7 @@ const loadMoreStyle = {
 };
 
 const QueuedPosts = ({
+  total,
   loading,
   loadingMore,
   postLists,
@@ -39,7 +41,6 @@ const QueuedPosts = ({
   if (loading) {
     return (<div>Loading...</div>);
   }
-
   return (
     <div>
       <div style={composerStyle}>
@@ -47,6 +48,13 @@ const QueuedPosts = ({
           placeholder={'What would you like to share?'}
         />
       </div>
+      {total < 1 &&
+        <EmptyState
+          title={'It looks like you haven\'t got any posts in your queue!'}
+          subtitle={'Click the box above to add a post to your queue :)'}
+          heroImg={'https://s3.amazonaws.com/buffer-publish/images/fresh-queue.png'}
+        />
+      }
       <PostLists
         postLists={postLists}
         onCancelConfirmClick={onCancelConfirmClick}
@@ -65,6 +73,7 @@ const QueuedPosts = ({
 };
 
 QueuedPosts.propTypes = {
+  total: PropTypes.number.isRequired,
   loading: PropTypes.bool.isRequired,
   loadingMore: PropTypes.bool.isRequired,
   onCancelConfirmClick: PropTypes.func.isRequired,

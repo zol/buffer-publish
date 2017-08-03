@@ -1,0 +1,15 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { checkA11y } from 'storybook-addon-a11y';
+import EmptyState from './index';
+
+
+storiesOf('EmptyState')
+  .addDecorator(checkA11y)
+  .add('default', () => (
+    <EmptyState
+      title={'It looks like you haven\'t got any posts in your queue!'}
+      subtitle={'Click the box above to add a post to your queue :)'}
+      heroImg={'https://s3.amazonaws.com/buffer-publish/images/fresh-queue.png'}
+    />
+  ));
