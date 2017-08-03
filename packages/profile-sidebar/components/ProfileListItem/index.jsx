@@ -11,6 +11,9 @@ import {
 import {
   curiousBlueUltraLight,
 } from '@bufferapp/components/style/color';
+import {
+  borderRadius,
+} from '@bufferapp/components/style/border';
 import ProfileBadge from '../ProfileBadge';
 
 const profileBadgeWrapperStyle = {
@@ -25,7 +28,7 @@ const notificationsStyle = {
 const Notifications = ({
   notifications,
 }) =>
-  <Text>{notifications}</Text>;
+  <Text size="mini">{notifications}</Text>;
 
 Notifications.propTypes = {
   notifications: PropTypes.oneOfType([
@@ -66,6 +69,7 @@ const ProfileSidebar = ({
         selected: {
           background: curiousBlueUltraLight,
           opacity: 1,
+          borderRadius,
         },
       }, {
         selected,
@@ -79,6 +83,7 @@ const ProfileSidebar = ({
       </div>
       <Text
         size={'small'}
+        color={selected ? 'black' : 'shuttleGray'}
       >
         {handle}
       </Text>
