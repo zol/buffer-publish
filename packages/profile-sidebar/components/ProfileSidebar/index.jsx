@@ -22,6 +22,7 @@ const profileSidebarStyle = {
   display: 'flex',
   flexDirection: 'column',
   minHeight: '100vh',
+  maxHeight: '100vh',
   padding: '1rem',
   boxSizing: 'border-box',
   background: offWhite,
@@ -34,6 +35,7 @@ const productTitleStyle = {
 
 const profileListStyle = {
   flexGrow: 1,
+  overflow: 'scroll',
 };
 
 const lockedAccountHeaderStyle = {
