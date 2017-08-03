@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { calculateStyles, parseColor } from '../lib/utils';
 import { darkPopover } from '../style/color';
 import { borderRadius } from '../style/border';
+import { tooltip as tooltipZIndex } from '../style/zIndex';
 
 import Text from '../Text';
 
@@ -21,10 +22,13 @@ const ArrowPopover = ({
   backgroundColor,
   shadow,
   width,
+  isTooltip,
+  id,
 }) => {
+  const offsetTop = position === 'above' ? offset.top : -offset.top;
   const style = calculateStyles({
     default: {
-      transform: `translate(${arrowWidth + offset.left}px, ${offset.top}px)`,
+      transform: `translate(${arrowWidth + offset.left}px, ${offsetTop}px)`,
       background: parseColor(backgroundColor),
       color: parseColor(color),
       display: 'inline-block',
@@ -33,6 +37,7 @@ const ArrowPopover = ({
       textAlign: 'left',
       position: 'absolute',
       left: '100%',
+      zIndex: tooltipZIndex,
     },
     hidden: {
       display: 'none',
@@ -97,8 +102,13 @@ const ArrowPopover = ({
     positionBelow: position === 'below',
   });
 
+  const aria = isTooltip ? {
+    role: 'tooltip',
+    'aria-hidden': !visible,
+  } : {};
+
   return (
-    <div style={style}>
+    <div style={style} id={id} {...aria}>
       <span style={arrowStyle} />
       <Text color={color} size="small">{children}</Text>
     </div>
@@ -119,6 +129,8 @@ ArrowPopover.propTypes = {
   backgroundColor: PropTypes.string,
   shadow: PropTypes.bool,
   width: PropTypes.string,
+  isTooltip: PropTypes.bool,
+  id: PropTypes.string,
 };
 
 ArrowPopover.defaultProps = {
@@ -131,6 +143,8 @@ ArrowPopover.defaultProps = {
   backgroundColor: darkPopover,
   shadow: false,
   width: 'none',
+  isTooltip: false,
+  id: '',
 };
 
 export default ArrowPopover;
