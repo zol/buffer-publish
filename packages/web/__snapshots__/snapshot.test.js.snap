@@ -1221,20 +1221,20 @@ exports[`Snapshots ProfilePage should render 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-          <hr
-            style={
-              Object {
-                "background": "#e6ebef",
-                "border": "none",
-                "boxSizing": "border-box",
-                "height": "0.063rem",
-                "marginBottom": "0.5rem",
-                "marginTop": "0.5rem",
-                "width": "100%",
+            <hr
+              style={
+                Object {
+                  "background": "#e6ebef",
+                  "border": "none",
+                  "boxSizing": "border-box",
+                  "height": "0.063rem",
+                  "marginBottom": "0.5rem",
+                  "marginTop": "0.5rem",
+                  "width": "100%",
+                }
               }
-            }
-          />
+            />
+          </div>
           <ul
             style={
               Object {
@@ -2389,20 +2389,20 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-          <hr
-            style={
-              Object {
-                "background": "#e6ebef",
-                "border": "none",
-                "boxSizing": "border-box",
-                "height": "0.063rem",
-                "marginBottom": "0.5rem",
-                "marginTop": "0.5rem",
-                "width": "100%",
+            <hr
+              style={
+                Object {
+                  "background": "#e6ebef",
+                  "border": "none",
+                  "boxSizing": "border-box",
+                  "height": "0.063rem",
+                  "marginBottom": "0.5rem",
+                  "marginTop": "0.5rem",
+                  "width": "100%",
+                }
               }
-            }
-          />
+            />
+          </div>
           <ul
             style={
               Object {
