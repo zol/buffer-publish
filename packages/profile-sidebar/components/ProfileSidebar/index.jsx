@@ -5,6 +5,7 @@ import {
   Button,
   Divider,
   QuestionIcon,
+  IconArrowPopover,
 } from '@bufferapp/components';
 import {
   offWhite,
@@ -33,7 +34,6 @@ const productTitleStyle = {
 
 const profileListStyle = {
   flexGrow: 1,
-  overflowY: 'auto',
 };
 
 const lockedAccountHeaderStyle = {
@@ -88,7 +88,12 @@ const ProfileSidebar = ({
             {translations.lockedList}
           </Text>
         </div>
-        <QuestionIcon />
+        <IconArrowPopover icon={<QuestionIcon />} position="above" shadow oneLine={false} width="320px" label="Posting Times">
+          <div style={{ padding: '.5rem .25rem' }}>
+            {/* eslint-disable max-len */}
+            {translations.lockedListTooltip}
+          </div>
+        </IconArrowPopover>
       </div>
       <Divider />
       <ProfileList
@@ -122,6 +127,7 @@ ProfileSidebar.propTypes = {
   translations: PropTypes.shape({
     connectButton: PropTypes.string,
     lockedList: PropTypes.string,
+    lockedListTooltip: PropTypes.string,
   }).isRequired,
 };
 

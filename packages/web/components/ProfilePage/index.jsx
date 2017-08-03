@@ -166,6 +166,15 @@ ProfilePage.propTypes = {
   page: PropTypes.number.isRequired,
 };
 
+ProfilePage.defaultProps = {
+  loading: false,
+  loadingMore: false,
+  moreToLoad: false,
+  page: 1,
+  posts: [],
+  total: 0,
+};
+
 export default connect(
   (state, ownProps) => {
     const splitPath = ownProps.history.location.pathname.split('/');

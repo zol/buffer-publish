@@ -3,6 +3,7 @@ export Button from './Button';
 export Card from './Card';
 export Divider from './Divider';
 export Icon from './Icon';
+export IconArrowPopover from './IconArrowPopover';
 export Input from './Input';
 export InputAutocomplete from './InputAutocomplete';
 export InputDate from './InputDate';

@@ -51,7 +51,13 @@ ScheduleSettingHeader.propTypes = {
   profileName: PropTypes.string.isRequired,
   profileService: PropTypes.string.isRequired,
   profileServiceType: PropTypes.string.isRequired,
-  timezoneOptions: PropTypes.arrayOf(PropTypes.string).isRequired,
+  timezoneOptions: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
+    name: PropTypes.string,
+  })).isRequired,
 };
 
 export default ScheduleSettingHeader;

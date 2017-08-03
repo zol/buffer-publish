@@ -13,7 +13,7 @@ import {
   borderWidth,
 } from '../style/border';
 import {
-  tooltip,
+  overlay,
 } from '../style/zIndex';
 import ArrowDownIcon from '../Icon/Icons/ArrowDownIcon';
 
@@ -34,7 +34,7 @@ const Select = ({
 }) => {
   const selectStyle = calculateStyles({
     default: {
-      zIndex: tooltip,
+      zIndex: overlay,
       height: '2rem',
       paddingRight: '1.5rem',
       paddingLeft: '0.5rem',
