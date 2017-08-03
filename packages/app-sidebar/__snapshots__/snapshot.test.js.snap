@@ -84,6 +84,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
         tabIndex="0"
       >
         <div
+          id=""
           style={
             Object {
               "background": "#2E435E",
@@ -97,6 +98,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               "textAlign": "left",
               "transform": "translate(11px, -3px)",
               "whiteSpace": "nowrap",
+              "zIndex": 4000,
             }
           }
         >
@@ -192,6 +194,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
         tabIndex="0"
       >
         <div
+          id=""
           style={
             Object {
               "background": "#2E435E",
@@ -205,6 +208,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               "textAlign": "left",
               "transform": "translate(11px, -3px)",
               "whiteSpace": "nowrap",
+              "zIndex": 4000,
             }
           }
         >
@@ -307,6 +311,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
         tabIndex="0"
       >
         <div
+          id=""
           style={
             Object {
               "background": "#2E435E",
@@ -320,6 +325,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               "textAlign": "left",
               "transform": "translate(11px, -3px)",
               "whiteSpace": "nowrap",
+              "zIndex": 4000,
             }
           }
         >
@@ -429,6 +435,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
           tabIndex="0"
         >
           <div
+            id=""
             style={
               Object {
                 "background": "#2E435E",
@@ -440,8 +447,9 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
                 "left": "100%",
                 "position": "absolute",
                 "textAlign": "left",
-                "transform": "translate(11px, -4px)",
+                "transform": "translate(11px, 4px)",
                 "whiteSpace": "nowrap",
+                "zIndex": 4000,
               }
             }
           >
@@ -678,6 +686,7 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
           tabIndex="0"
         >
           <div
+            id=""
             style={
               Object {
                 "background": "#2E435E",
@@ -689,8 +698,9 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
                 "left": "100%",
                 "position": "absolute",
                 "textAlign": "left",
-                "transform": "translate(11px, -4px)",
+                "transform": "translate(11px, 4px)",
                 "whiteSpace": "nowrap",
+                "zIndex": 4000,
               }
             }
           >

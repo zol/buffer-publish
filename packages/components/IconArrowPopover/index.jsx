@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import uuid from 'uuid';
 
 import ArrowPopover from '../ArrowPopover';
 
@@ -14,10 +13,14 @@ const containerStyle = {
 class IconArrowPopover extends Component {
   constructor() {
     super();
-    this.id = `tooltip_${uuid()}`;
     this.state = {
       hovered: false,
     };
+  }
+
+  componentWillMount() {
+    const uuid = this.props.label.replace(/\s/g, '');
+    this.id = `tooltip_${uuid}`;
   }
 
   render() {
