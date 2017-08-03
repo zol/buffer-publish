@@ -10,6 +10,7 @@ import {
 } from '@bufferapp/components/style/color';
 import {
   PostLists,
+  EmptyState,
 } from '@bufferapp/publish-shared-components';
 
 const composerStyle = {
@@ -29,6 +30,8 @@ const loadMoreStyle = {
 const QueuedPosts = ({
   loading,
   loadingMore,
+  hasSentPosts,
+  total,
   postLists,
   onCancelConfirmClick,
   onDeleteClick,
@@ -39,7 +42,6 @@ const QueuedPosts = ({
   if (loading) {
     return (<div>Loading...</div>);
   }
-
   return (
     <div>
       <div style={composerStyle}>
@@ -47,6 +49,20 @@ const QueuedPosts = ({
           placeholder={'What would you like to share?'}
         />
       </div>
+      {hasSentPosts && (total < 1) &&
+        <EmptyState
+          title={'Wahoo! All your posts have been published.'}
+          subtitle={'Great work! Just click the box above to add more posts to your queue and let’s keep the momentum going!'}
+          heroImg={'https://s3.amazonaws.com/buffer-publish/images/empty-queue.png'}
+        />
+      }
+      {!hasSentPosts && (total < 1) &&
+        <EmptyState
+          title={'You’re in! Click in the box above to add your first post.'}
+          subtitle={'If you don’t have a post in mind right away, you can use the Buffer Button to add content directly from your favorite sites!'}
+          heroImg={'https://s3.amazonaws.com/buffer-publish/images/fresh-queue.png'}
+        />
+      }
       <PostLists
         postLists={postLists}
         onCancelConfirmClick={onCancelConfirmClick}
@@ -65,6 +81,8 @@ const QueuedPosts = ({
 };
 
 QueuedPosts.propTypes = {
+  hasSentPosts: PropTypes.bool.isRequired,
+  total: PropTypes.number.isRequired,
   loading: PropTypes.bool.isRequired,
   loadingMore: PropTypes.bool.isRequired,
   onCancelConfirmClick: PropTypes.func.isRequired,

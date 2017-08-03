@@ -12,3 +12,4 @@ export PostLists from './PostLists';
 export TextPost from './TextPost';
 export VideoPost from './VideoPost';
 export ScheduleTable from './ScheduleTable';
+export EmptyState from './EmptyState';
