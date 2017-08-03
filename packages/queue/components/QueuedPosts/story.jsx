@@ -9,6 +9,7 @@ storiesOf('QueuedPosts')
   .addDecorator(checkA11y)
   .add('default', () => (
     <QueuedPosts
+      total={10}
       loading={false}
       postLists={postLists}
       onCancelConfirmClick={action('onCancelConfirmClick')}
@@ -20,6 +21,7 @@ storiesOf('QueuedPosts')
   ))
   .add('loading', () => (
     <QueuedPosts
+      total={0}
       loading
       postLists={postLists}
       onCancelConfirmClick={action('onCancelConfirmClick')}

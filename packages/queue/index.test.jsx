@@ -22,6 +22,7 @@ describe('Queue', () => {
       queue: {
         loading: false,
         posts: [],
+        total: 0,
       },
       i18n: {
         translations: {
