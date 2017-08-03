@@ -13,9 +13,9 @@ const defaultPageStyle = {
 };
 
 const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
-  let message = 'You are not logged in.';
-  if (loggedIn) {
-    message = 'You are logged in. Fetching data...';
+  let message;
+  if (!loggedIn) {
+    message = 'You are not logged in.';
   }
   if (loggingIn) {
     message = 'Please wait...';
@@ -25,7 +25,7 @@ const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
     checkedCookie && <div style={defaultPageStyle}>
       <Text size="large">Welcome to Buffer Publish 🎉</Text>
       <Divider />
-      {loggingIn && <Text>{message}</Text>}
+      {!loggedIn && <Text>{message}</Text>}
       {loggedIn && <LoadingAnimation />}
     </div>
   );
