@@ -1762,20 +1762,20 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
             </span>
           </div>
         </div>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "0.5rem",
-            "marginTop": "0.5rem",
-            "width": "100%",
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "0.5rem",
+              "marginTop": "0.5rem",
+              "width": "100%",
+            }
           }
-        }
-      />
+        />
+      </div>
       <ul
         style={
           Object {
@@ -2727,20 +2727,20 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             </span>
           </div>
         </div>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "0.5rem",
-            "marginTop": "0.5rem",
-            "width": "100%",
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "0.5rem",
+              "marginTop": "0.5rem",
+              "width": "100%",
+            }
           }
-        }
-      />
+        />
+      </div>
       <ul
         style={
           Object {

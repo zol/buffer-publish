@@ -82,20 +82,21 @@ const ProfileSidebar = ({
         profiles={profiles}
         onProfileClick={onProfileClick}
       />
-      <div style={lockedAccountHeaderStyle}>
-        <div style={lockedAccountTextStyle}>
-          <Text size={'small'}>
-            {translations.lockedList}
-          </Text>
-        </div>
-        <IconArrowPopover icon={<QuestionIcon />} position="above" shadow oneLine={false} width="320px" label="Posting Times">
-          <div style={{ padding: '.5rem .25rem' }}>
-            {/* eslint-disable max-len */}
-            {translations.lockedListTooltip}
+      {lockedProfiles.length > 0 &&
+        <div style={lockedAccountHeaderStyle}>
+          <div style={lockedAccountTextStyle}>
+            <Text size={'small'}>
+              {translations.lockedList}
+            </Text>
           </div>
-        </IconArrowPopover>
-      </div>
-      <Divider />
+          <IconArrowPopover icon={<QuestionIcon />} position="above" shadow oneLine={false} width="320px" label="Posting Times">
+            <div style={{ padding: '.5rem .25rem' }}>
+              {/* eslint-disable max-len */}
+              {translations.lockedListTooltip}
+            </div>
+          </IconArrowPopover>
+          <Divider />
+        </div>}
       <ProfileList
         selectedProfileId={selectedProfileId}
         profiles={lockedProfiles}
