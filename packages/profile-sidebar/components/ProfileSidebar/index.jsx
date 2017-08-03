@@ -91,7 +91,7 @@ const ProfileSidebar = ({
               {translations.lockedList}
             </Text>
           </div>
-          <IconArrowPopover icon={<QuestionIcon />} position="above" shadow oneLine={false} width="320px" label="Posting Times">
+          <IconArrowPopover icon={<QuestionIcon />} position="above" shadow oneLine={false} width="320px" label={translations.lockedList}>
             <div style={{ padding: '.5rem .25rem' }}>
               {/* eslint-disable max-len */}
               {translations.lockedListTooltip}
