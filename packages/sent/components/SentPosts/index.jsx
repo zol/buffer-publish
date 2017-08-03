@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PostLists } from '@bufferapp/publish-shared-components';
+import {
+  PostLists,
+  EmptyState,
+} from '@bufferapp/publish-shared-components';
 import {
   Divider,
   Text,
@@ -26,23 +29,9 @@ const loadMoreStyle = {
   color: curiousBlue,
 };
 
-const containerStyle = {
-  textAlign: 'center',
-  width: '60%',
-};
-
-const wrapperStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: '7rem',
-};
-
-const imageStyle = {
-  marginBottom: '1.5rem',
-};
-
 const SentPosts = ({
   header,
+  total,
   loading,
   loadingMore,
   postLists,
@@ -50,25 +39,13 @@ const SentPosts = ({
   if (loading) {
     return (<div>Loading...</div>);
   }
-  if (postLists.length < 1) {
+  if (total < 1) {
     return (
-      <div style={wrapperStyle}>
-        <div style={containerStyle}>
-          <img style={imageStyle} alt="" src={'https://s3.amazonaws.com/buffer-publish/images/empty-sent.png'} />
-          <div style={headerStyle}>
-            <Text size={'large'} weight={'bold'}>
-              You haven’t published any posts with this account yet!
-            </Text>
-          </div>
-          <div>
-            <Text>
-              Once a post has gone live via Buffer, you can
-              track it’s performance here to learn what works
-              best with your audience!
-            </Text>
-          </div>
-        </div>
-      </div>
+      <EmptyState
+        title={'You haven’t published any posts with this account in the past 30 days!'}
+        subtitle={'Once a post has gone live via Buffer, you can track it’s performance here to learn what works best with your audience!'}
+        heroImg={'https://s3.amazonaws.com/buffer-publish/images/empty-sent.png'}
+      />
     );
   }
   return (
@@ -90,6 +67,7 @@ const SentPosts = ({
 };
 
 SentPosts.propTypes = {
+  total: PropTypes.number.isRequired,
   header: PropTypes.string,
   loading: PropTypes.bool.isRequired,
   loadingMore: PropTypes.bool.isRequired,
