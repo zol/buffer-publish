@@ -29,7 +29,6 @@ export default connect(
     moreToLoad: state.queue.moreToLoad,
     page: state.queue.page,
     postLists: formatPostLists(state.queue.posts),
-    hasSentPosts: state.sent.total > 0,
     total: state.queue.total,
     translations: state.i18n.translations.example, // all package translations
   }),

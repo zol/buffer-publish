@@ -1,4 +1,5 @@
 // if you need a component export it here
+export EmptyState from './EmptyState';
 export Example from './Example';
 export Tabs from './Tabs';
 export Tab from './Tab';
@@ -12,4 +13,3 @@ export PostLists from './PostLists';
 export TextPost from './TextPost';
 export VideoPost from './VideoPost';
 export ScheduleTable from './ScheduleTable';
-export EmptyState from './EmptyState';

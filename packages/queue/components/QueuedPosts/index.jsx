@@ -28,10 +28,9 @@ const loadMoreStyle = {
 };
 
 const QueuedPosts = ({
+  total,
   loading,
   loadingMore,
-  hasSentPosts,
-  total,
   postLists,
   onCancelConfirmClick,
   onDeleteClick,
@@ -49,17 +48,10 @@ const QueuedPosts = ({
           placeholder={'What would you like to share?'}
         />
       </div>
-      {hasSentPosts && (total < 1) &&
+      {total < 1 &&
         <EmptyState
-          title={'Wahoo! All your posts have been published.'}
-          subtitle={'Great work! Just click the box above to add more posts to your queue and let’s keep the momentum going!'}
-          heroImg={'https://s3.amazonaws.com/buffer-publish/images/empty-queue.png'}
-        />
-      }
-      {!hasSentPosts && (total < 1) &&
-        <EmptyState
-          title={'You’re in! Click in the box above to add your first post.'}
-          subtitle={'If you don’t have a post in mind right away, you can use the Buffer Button to add content directly from your favorite sites!'}
+          title={'It looks like you haven\'t got any posts in your queue!'}
+          subtitle={'Click the box above to add a post to your queue!'}
           heroImg={'https://s3.amazonaws.com/buffer-publish/images/fresh-queue.png'}
         />
       }
@@ -81,7 +73,6 @@ const QueuedPosts = ({
 };
 
 QueuedPosts.propTypes = {
-  hasSentPosts: PropTypes.bool.isRequired,
   total: PropTypes.number.isRequired,
   loading: PropTypes.bool.isRequired,
   loadingMore: PropTypes.bool.isRequired,
