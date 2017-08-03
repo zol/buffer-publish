@@ -35,17 +35,14 @@ const productTitleStyle = {
 
 const profileListStyle = {
   flexGrow: 1,
-  overflow: 'scroll',
+  overflow: 'hidden',
 };
 
 const lockedAccountHeaderStyle = {
-  margin: '1rem 0.5rem',
+  margin: '1rem 0 0.5rem 0',
   display: 'flex',
   alignItems: 'center',
-};
-
-const lockedAccountTextStyle = {
-  flexGrow: 1,
+  flexDirection: 'row',
 };
 
 const buttonDividerStyle = {
@@ -86,19 +83,26 @@ const ProfileSidebar = ({
       />
       {lockedProfiles.length > 0 &&
         <div style={lockedAccountHeaderStyle}>
-          <div style={lockedAccountTextStyle}>
-            <Text size={'small'}>
-              {translations.lockedList}
-            </Text>
+          <Text size={'small'}>
+            {translations.lockedList}
+          </Text>
+          <div style={{ marginLeft: 'auto' }}>
+            <IconArrowPopover
+              icon={<QuestionIcon />}
+              position="above"
+              shadow
+              oneLine={false}
+              width="320px"
+              label={translations.lockedList}
+            >
+              <div style={{ padding: '.5rem .25rem' }}>
+                {translations.lockedListTooltip}
+              </div>
+            </IconArrowPopover>
           </div>
-          <IconArrowPopover icon={<QuestionIcon />} position="above" shadow oneLine={false} width="320px" label={translations.lockedList}>
-            <div style={{ padding: '.5rem .25rem' }}>
-              {/* eslint-disable max-len */}
-              {translations.lockedListTooltip}
-            </div>
-          </IconArrowPopover>
-          <Divider />
-        </div>}
+        </div>
+      }
+      {lockedProfiles.length > 0 && <Divider />}
       <ProfileList
         selectedProfileId={selectedProfileId}
         profiles={lockedProfiles}
