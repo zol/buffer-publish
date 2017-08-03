@@ -5,6 +5,7 @@ import {
   Text,
   QuestionIcon,
   IconArrowPopover,
+  LoadingAnimation,
 } from '@bufferapp/components';
 
 import {
@@ -31,6 +32,13 @@ const sectionStyle = {
   width: '100%',
 };
 
+const loadingContainerStyle = {
+  width: '100%',
+  height: '100%',
+  textAlign: 'center',
+  paddingTop: '5rem',
+};
+
 /* eslint no-console: 0 */
 const ProfileSettings = ({
   days,
@@ -40,7 +48,11 @@ const ProfileSettings = ({
   hasTwentyFourHourTimeFormat,
 }) => {
   if (loading) {
-    return (<div>Loading...</div>);
+    return (
+      <div style={loadingContainerStyle}>
+        <LoadingAnimation />
+      </div>
+    );
   }
   return (
     <div>
