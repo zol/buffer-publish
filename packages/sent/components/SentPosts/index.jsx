@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PostLists } from '@bufferapp/publish-shared-components';
+import {
+  PostLists,
+  EmptyState,
+} from '@bufferapp/publish-shared-components';
 import {
   Divider,
   Text,
@@ -28,12 +31,22 @@ const loadMoreStyle = {
 
 const SentPosts = ({
   header,
+  total,
   loading,
   loadingMore,
   postLists,
 }) => {
   if (loading) {
     return (<div>Loading...</div>);
+  }
+  if (total < 1) {
+    return (
+      <EmptyState
+        title={'You haven’t published any posts with this account in the past 30 days!'}
+        subtitle={'Once a post has gone live via Buffer, you can track it’s performance here to learn what works best with your audience!'}
+        heroImg={'https://s3.amazonaws.com/buffer-publish/images/empty-sent.png'}
+      />
+    );
   }
   return (
     <div>
@@ -54,6 +67,7 @@ const SentPosts = ({
 };
 
 SentPosts.propTypes = {
+  total: PropTypes.number.isRequired,
   header: PropTypes.string,
   loading: PropTypes.bool.isRequired,
   loadingMore: PropTypes.bool.isRequired,
