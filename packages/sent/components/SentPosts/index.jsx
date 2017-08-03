@@ -28,6 +28,17 @@ const loadMoreStyle = {
 
 const containerStyle = {
   textAlign: 'center',
+  width: '60%',
+};
+
+const wrapperStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '7rem',
+};
+
+const imageStyle = {
+  marginBottom: '1.5rem',
 };
 
 const SentPosts = ({
@@ -41,19 +52,21 @@ const SentPosts = ({
   }
   if (postLists.length < 1) {
     return (
-      <div style={containerStyle}>
-        <img alt="" src="./empty-sent.png" />
-        <div style={headerStyle}>
-          <Text size={'large'} weight={'bold'}>
-            You haven’t published any posts with this account yet!
-          </Text>
-        </div>
-        <div>
-          <Text>
-            Once a post has gone live via Buffer, you can
-            track it’s performance here to learn what works
-            best with your audience!
-          </Text>
+      <div style={wrapperStyle}>
+        <div style={containerStyle}>
+          <img style={imageStyle} alt="" src={'https://s3.amazonaws.com/buffer-publish/images/empty-sent.png'} />
+          <div style={headerStyle}>
+            <Text size={'large'} weight={'bold'}>
+              You haven’t published any posts with this account yet!
+            </Text>
+          </div>
+          <div>
+            <Text>
+              Once a post has gone live via Buffer, you can
+              track it’s performance here to learn what works
+              best with your audience!
+            </Text>
+          </div>
         </div>
       </div>
     );
