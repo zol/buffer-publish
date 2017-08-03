@@ -1371,8 +1371,33 @@ exports[`Snapshots QueuedPosts default 1`] = `
 
 exports[`Snapshots QueuedPosts loading 1`] = `
 <span>
-  <div>
-    Loading...
+  <div
+    style={
+      Object {
+        "height": "100%",
+        "paddingTop": "5rem",
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <img
+      alt=""
+      src="https://s3.amazonaws.com/buffer-publish/images/black-loading-gif-small.gif"
+      style={
+        Object {
+          "height": undefined,
+          "marginBottom": undefined,
+          "marginTop": "5rem",
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "objectFit": undefined,
+          "width": "45px",
+        }
+      }
+    />
   </div>
 </span>
 `;

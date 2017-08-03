@@ -825,6 +825,8 @@ exports[`Snapshots ProfilePage should render 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -981,6 +983,8 @@ exports[`Snapshots ProfilePage should render 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -1301,6 +1305,8 @@ exports[`Snapshots ProfilePage should render 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -1470,6 +1476,8 @@ exports[`Snapshots ProfilePage should render 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -1993,6 +2001,8 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -2149,6 +2159,8 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -2469,6 +2481,8 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,
@@ -2638,6 +2652,8 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                           Object {
                             "borderRadius": "50%",
                             "height": "100%",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": undefined,
                             "maxWidth": undefined,
                             "minHeight": undefined,

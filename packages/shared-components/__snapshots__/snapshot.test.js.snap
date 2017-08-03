@@ -732,6 +732,8 @@ exports[`Snapshots ImagePost error 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -1102,6 +1104,8 @@ exports[`Snapshots ImagePost queued image post 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -1417,6 +1421,8 @@ exports[`Snapshots ImagePost retweet 1`] = `
                     Object {
                       "borderRadius": "50%",
                       "height": "2rem",
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": undefined,
                       "maxWidth": undefined,
                       "minHeight": undefined,
@@ -1523,6 +1529,8 @@ exports[`Snapshots ImagePost retweet 1`] = `
                     Object {
                       "borderRadius": "0.126rem",
                       "height": undefined,
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": "20rem",
                       "maxWidth": undefined,
                       "minHeight": "10rem",
@@ -1861,6 +1869,8 @@ exports[`Snapshots ImagePost sent image post 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -2016,6 +2026,8 @@ exports[`Snapshots ImagePost square image 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -2353,6 +2365,8 @@ exports[`Snapshots ImagePost tag 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -2724,6 +2738,8 @@ exports[`Snapshots ImagePost tall image 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -3061,6 +3077,8 @@ exports[`Snapshots ImagePost wide image 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -3433,6 +3451,8 @@ exports[`Snapshots LinkPost error 1`] = `
                         Object {
                           "borderRadius": "0.126rem",
                           "height": "10rem",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
                           "maxHeight": undefined,
                           "maxWidth": "15rem",
                           "minHeight": undefined,
@@ -3905,6 +3925,8 @@ exports[`Snapshots LinkPost queued link post 1`] = `
                         Object {
                           "borderRadius": "0.126rem",
                           "height": "10rem",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
                           "maxHeight": undefined,
                           "maxWidth": "15rem",
                           "minHeight": undefined,
@@ -4344,6 +4366,8 @@ exports[`Snapshots LinkPost sent 1`] = `
                         Object {
                           "borderRadius": "0.126rem",
                           "height": "10rem",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
                           "maxHeight": undefined,
                           "maxWidth": "15rem",
                           "minHeight": undefined,
@@ -4601,6 +4625,8 @@ exports[`Snapshots LinkPost square image 1`] = `
                         Object {
                           "borderRadius": "0.126rem",
                           "height": "10rem",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
                           "maxHeight": undefined,
                           "maxWidth": "15rem",
                           "minHeight": undefined,
@@ -5040,6 +5066,8 @@ exports[`Snapshots LinkPost tall image 1`] = `
                         Object {
                           "borderRadius": "0.126rem",
                           "height": "10rem",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
                           "maxHeight": undefined,
                           "maxWidth": "15rem",
                           "minHeight": undefined,
@@ -5479,6 +5507,8 @@ exports[`Snapshots LinkPost wide image 1`] = `
                         Object {
                           "borderRadius": "0.126rem",
                           "height": "10rem",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
                           "maxHeight": undefined,
                           "maxWidth": "15rem",
                           "minHeight": undefined,
@@ -5899,6 +5929,8 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5926,6 +5958,8 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5953,6 +5987,8 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5980,6 +6016,8 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6369,6 +6407,8 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6396,6 +6436,8 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6423,6 +6465,8 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6450,6 +6494,8 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6806,6 +6852,8 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6833,6 +6881,8 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6860,6 +6910,8 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6887,6 +6939,8 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     style={
                       Object {
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -8187,6 +8241,8 @@ exports[`Snapshots Post retweet 1`] = `
                     Object {
                       "borderRadius": "50%",
                       "height": "2rem",
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": undefined,
                       "maxWidth": undefined,
                       "minHeight": undefined,
@@ -8587,6 +8643,8 @@ exports[`Snapshots Post retweet with comment 1`] = `
                     Object {
                       "borderRadius": "50%",
                       "height": "2rem",
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": undefined,
                       "maxWidth": undefined,
                       "minHeight": undefined,
@@ -11364,6 +11422,8 @@ exports[`Snapshots PostList image posts 1`] = `
                           Object {
                             "borderRadius": "0.126rem",
                             "height": undefined,
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": "20rem",
                             "maxWidth": undefined,
                             "minHeight": "10rem",
@@ -11693,6 +11753,8 @@ exports[`Snapshots PostList image posts 1`] = `
                           Object {
                             "borderRadius": "0.126rem",
                             "height": undefined,
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": "20rem",
                             "maxWidth": undefined,
                             "minHeight": "10rem",
@@ -12115,6 +12177,8 @@ exports[`Snapshots PostList link posts 1`] = `
                                 Object {
                                   "borderRadius": "0.126rem",
                                   "height": "10rem",
+                                  "marginBottom": undefined,
+                                  "marginTop": undefined,
                                   "maxHeight": undefined,
                                   "maxWidth": "15rem",
                                   "minHeight": undefined,
@@ -12565,6 +12629,8 @@ exports[`Snapshots PostList link posts 1`] = `
                                 Object {
                                   "borderRadius": "0.126rem",
                                   "height": "10rem",
+                                  "marginBottom": undefined,
+                                  "marginTop": undefined,
                                   "maxHeight": undefined,
                                   "maxWidth": "15rem",
                                   "minHeight": undefined,
@@ -13665,6 +13731,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -13692,6 +13760,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -13719,6 +13789,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -13746,6 +13818,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -14094,6 +14168,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -14121,6 +14197,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -14148,6 +14226,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -14175,6 +14255,8 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             style={
                               Object {
                                 "height": "100%",
+                                "marginBottom": undefined,
+                                "marginTop": undefined,
                                 "maxHeight": undefined,
                                 "maxWidth": undefined,
                                 "minHeight": undefined,
@@ -14831,6 +14913,8 @@ exports[`Snapshots PostList video posts 1`] = `
                           Object {
                             "borderRadius": "0.126rem",
                             "height": undefined,
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": "20rem",
                             "maxWidth": undefined,
                             "minHeight": "10rem",
@@ -15194,6 +15278,8 @@ exports[`Snapshots PostList video posts 1`] = `
                           Object {
                             "borderRadius": "0.126rem",
                             "height": undefined,
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
                             "maxHeight": "20rem",
                             "maxWidth": undefined,
                             "minHeight": "10rem",
@@ -16819,6 +16905,8 @@ exports[`Snapshots RetweetPanel default 1`] = `
         Object {
           "borderRadius": "50%",
           "height": "2rem",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -60220,6 +60308,8 @@ exports[`Snapshots TextPost retweet 1`] = `
                     Object {
                       "borderRadius": "50%",
                       "height": "2rem",
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": undefined,
                       "maxWidth": undefined,
                       "minHeight": undefined,
@@ -60656,6 +60746,8 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
                     Object {
                       "borderRadius": "50%",
                       "height": "2rem",
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": undefined,
                       "maxWidth": undefined,
                       "minHeight": undefined,
@@ -61207,6 +61299,8 @@ exports[`Snapshots VideoPost error 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -61611,6 +61705,8 @@ exports[`Snapshots VideoPost queued video post 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -61960,6 +62056,8 @@ exports[`Snapshots VideoPost retweet 1`] = `
                     Object {
                       "borderRadius": "50%",
                       "height": "2rem",
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": undefined,
                       "maxWidth": undefined,
                       "minHeight": undefined,
@@ -62066,6 +62164,8 @@ exports[`Snapshots VideoPost retweet 1`] = `
                     Object {
                       "borderRadius": "0.126rem",
                       "height": undefined,
+                      "marginBottom": undefined,
+                      "marginTop": undefined,
                       "maxHeight": "20rem",
                       "maxWidth": undefined,
                       "minHeight": "10rem",
@@ -62438,6 +62538,8 @@ exports[`Snapshots VideoPost sent 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -62627,6 +62729,8 @@ exports[`Snapshots VideoPost square image 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -62998,6 +63102,8 @@ exports[`Snapshots VideoPost tall image 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",
@@ -63369,6 +63475,8 @@ exports[`Snapshots VideoPost wide image 1`] = `
                   Object {
                     "borderRadius": "0.126rem",
                     "height": undefined,
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": "20rem",
                     "maxWidth": undefined,
                     "minHeight": "10rem",

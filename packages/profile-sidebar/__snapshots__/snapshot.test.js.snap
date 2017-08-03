@@ -18,6 +18,8 @@ exports[`Snapshots ProfileBadge should display facebook profile 1`] = `
         Object {
           "borderRadius": "50%",
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -103,6 +105,8 @@ exports[`Snapshots ProfileBadge should display instagram profile 1`] = `
         Object {
           "borderRadius": "50%",
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -203,6 +207,8 @@ exports[`Snapshots ProfileBadge should display twitter profile 1`] = `
         Object {
           "borderRadius": "50%",
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -339,6 +345,8 @@ exports[`Snapshots ProfileList should display a list of profiles 1`] = `
                   Object {
                     "borderRadius": "50%",
                     "height": "100%",
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": undefined,
                     "maxWidth": undefined,
                     "minHeight": undefined,
@@ -495,6 +503,8 @@ exports[`Snapshots ProfileList should display a list of profiles 1`] = `
                   Object {
                     "borderRadius": "50%",
                     "height": "100%",
+                    "marginBottom": undefined,
+                    "marginTop": undefined,
                     "maxHeight": undefined,
                     "maxWidth": undefined,
                     "minHeight": undefined,
@@ -652,6 +662,8 @@ exports[`Snapshots ProfileListItem should display locked 1`] = `
               Object {
                 "borderRadius": "50%",
                 "height": "100%",
+                "marginBottom": undefined,
+                "marginTop": undefined,
                 "maxHeight": undefined,
                 "maxWidth": undefined,
                 "minHeight": undefined,
@@ -818,6 +830,8 @@ exports[`Snapshots ProfileListItem should display number of notifications 1`] = 
               Object {
                 "borderRadius": "50%",
                 "height": "100%",
+                "marginBottom": undefined,
+                "marginTop": undefined,
                 "maxHeight": undefined,
                 "maxWidth": undefined,
                 "minHeight": undefined,
@@ -974,6 +988,8 @@ exports[`Snapshots ProfileListItem should display selected 1`] = `
               Object {
                 "borderRadius": "50%",
                 "height": "100%",
+                "marginBottom": undefined,
+                "marginTop": undefined,
                 "maxHeight": undefined,
                 "maxWidth": undefined,
                 "minHeight": undefined,
@@ -1129,6 +1145,8 @@ exports[`Snapshots ProfileListItem should display twitter profile list item 1`] 
               Object {
                 "borderRadius": "50%",
                 "height": "100%",
+                "marginBottom": undefined,
+                "marginTop": undefined,
                 "maxHeight": undefined,
                 "maxWidth": undefined,
                 "minHeight": undefined,
@@ -1366,6 +1384,8 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -1522,6 +1542,8 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -1842,6 +1864,8 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -2011,6 +2035,8 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -2331,6 +2357,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -2487,6 +2515,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -2808,6 +2838,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -2978,6 +3010,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -3163,6 +3197,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -3333,6 +3369,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -3518,6 +3556,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -3688,6 +3728,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -3873,6 +3915,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -4043,6 +4087,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -4228,6 +4274,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -4398,6 +4446,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -4583,6 +4633,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -4753,6 +4805,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -4938,6 +4992,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5108,6 +5164,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5293,6 +5351,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5463,6 +5523,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5648,6 +5710,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -5818,6 +5882,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6003,6 +6069,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
@@ -6173,6 +6241,8 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
                       Object {
                         "borderRadius": "50%",
                         "height": "100%",
+                        "marginBottom": undefined,
+                        "marginTop": undefined,
                         "maxHeight": undefined,
                         "maxWidth": undefined,
                         "minHeight": undefined,
