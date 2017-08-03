@@ -12,13 +12,6 @@ const containerStyle = {
 };
 
 class IconArrowPopover extends Component {
-  static propTypes = {
-    ...ArrowPopover.propTypes,
-    icon: PropTypes.node.isRequired,
-    children: PropTypes.node.isRequired,
-    label: PropTypes.string.isRequired,
-  }
-
   constructor() {
     super();
     this.id = `tooltip_${uuid()}`;
@@ -53,5 +46,12 @@ class IconArrowPopover extends Component {
     );
   }
 }
+
+IconArrowPopover.propTypes = {
+  ...ArrowPopover.propTypes,
+  icon: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
+  label: PropTypes.string.isRequired,
+};
 
 export default IconArrowPopover;
