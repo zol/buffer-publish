@@ -7,7 +7,7 @@ import {
 const EmptyState = ({ title, subtitle, heroImg }) => {
   const containerStyle = {
     textAlign: 'center',
-    width: '60%',
+    width: '65%',
   };
 
   const wrapperStyle = {
