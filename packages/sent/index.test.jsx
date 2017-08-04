@@ -20,6 +20,7 @@ describe('Sent', () => {
   it('should render', () => {
     const store = storeFake({
       sent: {
+        total: 0,
         loading: false,
         posts: [],
       },

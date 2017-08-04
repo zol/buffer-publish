@@ -5,6 +5,7 @@ import {
   CircleTwitterIcon,
   CircleFacebookIcon,
   CircleInstagramIcon,
+  CircleLinkedInIcon,
 } from '@bufferapp/components';
 
 const profileBadgeStyle = {
@@ -32,7 +33,7 @@ const profileBadgeBackgroundStyle = {
   width: '0.90rem',
 };
 
-const badgeTypes = PropTypes.oneOf(['twitter', 'facebook', 'instagram']);
+const badgeTypes = PropTypes.oneOf(['twitter', 'facebook', 'instagram', 'linkedin']);
 
 const ProfileBadgeIcon = ({ type }) => {
   switch (type) {
@@ -43,6 +44,8 @@ const ProfileBadgeIcon = ({ type }) => {
     case 'instagram':
       // TODO: need instagram color
       return <CircleInstagramIcon color={'torchRed'} />;
+    case 'linkedin':
+      return <CircleLinkedInIcon color={'linkedin'} />;
     default:
       return null;
   }

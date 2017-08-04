@@ -11,6 +11,7 @@ storiesOf('SentPosts')
   .addDecorator(checkA11y)
   .add('default', () => (
     <SentPosts
+      total={0}
       header={header}
       postLists={postLists}
     />

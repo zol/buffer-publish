@@ -11,5 +11,6 @@ storiesOf('EmptyState')
       title={'It looks like you haven\'t got any posts in your queue!'}
       subtitle={'Click the box above to add a post to your queue :)'}
       heroImg={'https://s3.amazonaws.com/buffer-publish/images/fresh-queue.png'}
+      heroImgSize={{ width: '229px', height: '196px' }}
     />
   ));
