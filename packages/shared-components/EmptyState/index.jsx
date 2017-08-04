@@ -8,19 +8,25 @@ import {
 const EmptyState = ({ title, subtitle, heroImg, heroImgSize }) => {
   const containerStyle = {
     textAlign: 'center',
-    width: '65%',
+    width: '700px',
     alignSelf: 'center',
   };
 
   const wrapperStyle = {
     display: 'flex',
     justifyContent: 'center',
-    height: '50vh',
+    height: '70vh',
   };
 
   const headerStyle = {
     marginBottom: '1.5rem',
     width: '100%',
+  };
+
+
+  const subtitleStyle = {
+    display: 'inline-block',
+    width: '500px',
   };
 
   return (
@@ -35,7 +41,7 @@ const EmptyState = ({ title, subtitle, heroImg, heroImgSize }) => {
             </Text>
           </div>}
         {subtitle &&
-          <div>
+          <div style={subtitleStyle}>
             <Text>
               {subtitle}
             </Text>
