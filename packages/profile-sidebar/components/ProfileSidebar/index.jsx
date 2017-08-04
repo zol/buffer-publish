@@ -75,7 +75,7 @@ const ProfileSidebar = ({
       </Text>
       <Divider marginTop={'1rem'} />
     </div>
-    <div style={profileListStyle}>
+    <div style={profileListStyle} data-hide-scrollbar>
       <ProfileList
         selectedProfileId={selectedProfileId}
         profiles={profiles}
