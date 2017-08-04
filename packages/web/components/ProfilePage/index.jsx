@@ -44,11 +44,11 @@ const TabContent = ({ tabId }) => {
     case 'queue':
       return (
         <QueuedPosts
-          onCancelConfirmClick={() => { console.log('cancel confirm click'); }}
-          onDeleteClick={() => { console.log('delete click'); }}
-          onDeleteConfirmClick={() => { console.log('delete click'); }}
-          onEditClick={() => { console.log('edit click'); }}
-          onShareNowClick={() => { console.log('share now click'); }}
+          onCancelConfirmClick={() => { }}
+          onDeleteClick={() => { }}
+          onDeleteConfirmClick={() => { }}
+          onEditClick={() => { }}
+          onShareNowClick={() => { }}
         />
       );
     case 'sent':
