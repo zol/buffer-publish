@@ -5067,6 +5067,8 @@ exports[`Snapshots Image Default 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5087,6 +5089,8 @@ exports[`Snapshots Image MH=10em 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": "10em",
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5107,6 +5111,8 @@ exports[`Snapshots Image MW=10em 1`] = `
     style={
       Object {
         "height": "14em",
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": "10em",
         "minHeight": undefined,
@@ -5127,6 +5133,8 @@ exports[`Snapshots Image MinH=14em 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": "14em",
@@ -5147,6 +5155,8 @@ exports[`Snapshots Image MinW=14em 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5167,6 +5177,8 @@ exports[`Snapshots Image W=10em H=10em 1`] = `
     style={
       Object {
         "height": "10em",
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5187,6 +5199,8 @@ exports[`Snapshots Image W=40px H=40px 1`] = `
     style={
       Object {
         "height": "40px",
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5207,6 +5221,8 @@ exports[`Snapshots Image W=100% 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5227,6 +5243,8 @@ exports[`Snapshots Image alt 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5248,6 +5266,8 @@ exports[`Snapshots Image border: circle 1`] = `
       Object {
         "borderRadius": "50%",
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5269,6 +5289,8 @@ exports[`Snapshots Image border: rounded 1`] = `
       Object {
         "borderRadius": "0.126rem",
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5289,6 +5311,8 @@ exports[`Snapshots Image small image 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": "10em",
         "maxWidth": "10em",
         "minHeight": undefined,
@@ -5309,6 +5333,8 @@ exports[`Snapshots Image tall image 1`] = `
     style={
       Object {
         "height": "10em",
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": "10em",
         "maxWidth": "10em",
         "minHeight": undefined,
@@ -5329,6 +5355,8 @@ exports[`Snapshots Image verticalAlignBottom 1`] = `
     style={
       Object {
         "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": undefined,
         "maxWidth": undefined,
         "minHeight": undefined,
@@ -5350,6 +5378,8 @@ exports[`Snapshots Image wide image 1`] = `
     style={
       Object {
         "height": "10em",
+        "marginBottom": undefined,
+        "marginTop": undefined,
         "maxHeight": "10em",
         "maxWidth": "10em",
         "minHeight": undefined,
@@ -17371,6 +17401,8 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17398,6 +17430,8 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17425,6 +17459,8 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17452,6 +17488,8 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17495,6 +17533,8 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17522,6 +17562,8 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17549,6 +17591,8 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17576,6 +17620,8 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17619,6 +17665,8 @@ exports[`Snapshots MultipleImages oneImage 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17662,6 +17710,8 @@ exports[`Snapshots MultipleImages threeImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17689,6 +17739,8 @@ exports[`Snapshots MultipleImages threeImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17716,6 +17768,8 @@ exports[`Snapshots MultipleImages threeImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17759,6 +17813,8 @@ exports[`Snapshots MultipleImages twoImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17786,6 +17842,8 @@ exports[`Snapshots MultipleImages twoImages 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17829,6 +17887,8 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17856,6 +17916,8 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17883,6 +17945,8 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -17910,6 +17974,8 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       style={
         Object {
           "height": "100%",
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -18093,6 +18159,8 @@ exports[`Snapshots Overlay default 1`] = `
       style={
         Object {
           "height": undefined,
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,
@@ -18136,6 +18204,8 @@ exports[`Snapshots Overlay transparent=true 1`] = `
       style={
         Object {
           "height": undefined,
+          "marginBottom": undefined,
+          "marginTop": undefined,
           "maxHeight": undefined,
           "maxWidth": undefined,
           "minHeight": undefined,

@@ -18,6 +18,7 @@ export Link from './Link';
 export LinkifiedText from './LinkifiedText';
 export List from './List';
 export ListItem from './ListItem';
+export LoadingAnimation from './LoadingAnimation';
 export NavBar from './NavBar';
 export MultipleImages from './MultipleImages';
 export Overlay from './Overlay';

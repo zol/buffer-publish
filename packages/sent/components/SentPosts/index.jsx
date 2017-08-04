@@ -7,6 +7,7 @@ import {
 import {
   Divider,
   Text,
+  LoadingAnimation,
 } from '@bufferapp/components';
 import {
   geyser,
@@ -29,6 +30,13 @@ const loadMoreStyle = {
   color: curiousBlue,
 };
 
+const loadingContainerStyle = {
+  width: '100%',
+  height: '100%',
+  textAlign: 'center',
+  paddingTop: '5rem',
+};
+
 const SentPosts = ({
   header,
   total,
@@ -37,7 +45,11 @@ const SentPosts = ({
   postLists,
 }) => {
   if (loading) {
-    return (<div>Loading...</div>);
+    return (
+      <div style={loadingContainerStyle}>
+        <LoadingAnimation />
+      </div>
+    );
   }
   if (total < 1) {
     return (
