@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  Text,
   Input,
   LoadingAnimation,
 } from '@bufferapp/components';
@@ -16,16 +17,6 @@ import {
 
 const composerStyle = {
   marginBottom: '1.5rem',
-};
-
-const loadMoreStyle = {
-  border: `1px solid ${geyser}`,
-  width: '100%',
-  padding: '10px',
-  position: 'relative',
-  textAlign: 'center',
-  backgroundColor: fillColor,
-  color: curiousBlue,
 };
 
 const loadingContainerStyle = {
@@ -53,6 +44,18 @@ const QueuedPosts = ({
       </div>
     );
   }
+  const loadMoreStyle = {
+    border: `1px solid ${geyser}`,
+    width: '100%',
+    padding: '1rem',
+    margin: '0 0 2rem 0',
+    position: 'relative',
+    textAlign: 'center',
+    backgroundColor: fillColor,
+    color: curiousBlue,
+    opacity: loadingMore ? '1' : '1',
+    boxSizing: 'border-box',
+  };
   return (
     <div>
       <div style={composerStyle}>
@@ -76,11 +79,7 @@ const QueuedPosts = ({
         onEditClick={onEditClick}
         onShareNowClick={onShareNowClick}
       />
-      {
-        loadingMore ?
-          <div style={loadMoreStyle}>{'Loading...'}</div>
-          : ''
-      }
+      <div style={loadMoreStyle}><Text>Loading&hellip;</Text></div>
     </div>
   );
 };

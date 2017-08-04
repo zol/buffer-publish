@@ -20,16 +20,6 @@ const headerStyle = {
   width: '100%',
 };
 
-const loadMoreStyle = {
-  border: `1px solid ${geyser}`,
-  width: '100%',
-  padding: '10px',
-  position: 'relative',
-  textAlign: 'center',
-  backgroundColor: fillColor,
-  color: curiousBlue,
-};
-
 const loadingContainerStyle = {
   width: '100%',
   height: '100%',
@@ -61,6 +51,17 @@ const SentPosts = ({
       />
     );
   }
+  const loadMoreStyle = {
+    border: `1px solid ${geyser}`,
+    width: '100%',
+    padding: '1rem',
+    margin: '1rem 0',
+    position: 'relative',
+    textAlign: 'center',
+    backgroundColor: fillColor,
+    color: curiousBlue,
+    opacity: loadingMore ? '1' : '0',
+  };
   return (
     <div>
       <div style={headerStyle}>
@@ -70,11 +71,7 @@ const SentPosts = ({
       <PostLists
         postLists={postLists}
       />
-      {
-        loadingMore ?
-          <div style={loadMoreStyle}>{'Loading...'}</div>
-          : ''
-      }
+      <div style={loadMoreStyle}><Text>Loading&hellip;</Text></div>
     </div>
   );
 };
