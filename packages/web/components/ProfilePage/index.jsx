@@ -9,7 +9,10 @@ import SentPosts from '@bufferapp/sent';
 import ProfileSettings from '@bufferapp/settings';
 import TabNavigation from '@bufferapp/tabs';
 import ProfileSidebar from '@bufferapp/profile-sidebar';
+
 import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
+
+import { ScrollableContainer } from '@bufferapp/publish-shared-components';
 
 const profilePageStyle = {
   display: 'flex',
@@ -31,12 +34,6 @@ const contentStyle = {
   marginLeft: '1rem',
   marginRight: '1rem',
   height: '100vh',
-};
-
-const tabContentStyle = {
-  flexGrow: 1,
-  overflowY: 'auto',
-  marginTop: '1rem',
 };
 
 const TabContent = ({ tabId }) => {
@@ -74,40 +71,19 @@ TabContent.defaultProps = {
   tabId: '',
 };
 
-// Taken from underscore.js
-function debounce(func, wait, immediate) {
-  let timeout;
-  return function() {
-    const context = this;
-    const args = arguments; // eslint-disable-line
-    const later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    const callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
-const onScroll = ({
-  ev,
-  handleScroll,
+const handleLoadMore = ({
   profileId,
   page,
   tabId,
   loadingMore,
   moreToLoad,
+  handleScroll,
 }) => {
-  const element = ev.target;
-  const isBottomOfPage = element.scrollHeight - element.scrollTop === element.clientHeight;
-  if (isBottomOfPage && !loadingMore && moreToLoad) {
+  const isPostsTab = ['queue', 'sent'].includes(tabId);
+  if (!loadingMore && moreToLoad && isPostsTab) {
     handleScroll({ profileId, page, tabId });
   }
 };
-
-const debouncedOnScroll = debounce(onScroll, 500);
 
 const ProfilePage = ({
   match: {
@@ -133,23 +109,19 @@ const ProfilePage = ({
         profileId={profileId}
         tabId={tabId}
       />
-      <div
-        style={tabContentStyle}
-        onScroll={(ev) => {
-          ev.persist();
-          debouncedOnScroll({
-            ev,
-            handleScroll,
-            profileId,
-            page,
-            tabId,
-            loadingMore,
-            moreToLoad,
-          });
-        }}
+      <ScrollableContainer
+        tabId={tabId}
+        onReachBottom={() => handleLoadMore({
+          profileId,
+          page,
+          tabId,
+          loadingMore,
+          moreToLoad,
+          handleScroll,
+        })}
       >
         {TabContent({ tabId })}
-      </div>
+      </ScrollableContainer>
     </div>
   </div>;
 
