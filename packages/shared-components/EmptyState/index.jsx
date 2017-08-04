@@ -8,13 +8,12 @@ import {
 const EmptyState = ({ title, subtitle, heroImg }) => {
   const containerStyle = {
     textAlign: 'center',
-    width: '60%',
+    width: '65%',
   };
 
   const wrapperStyle = {
     display: 'flex',
     justifyContent: 'center',
-    marginTop: '7rem',
   };
 
   const headerStyle = {
@@ -28,7 +27,7 @@ const EmptyState = ({ title, subtitle, heroImg }) => {
           <Image marginBottom="1.5rem" alt="" src={heroImg} />}
         {title &&
           <div style={headerStyle}>
-            <Text size={'large'} weight={'bold'}>
+            <Text size="large" weight="bold">
               {title}
             </Text>
           </div>}
