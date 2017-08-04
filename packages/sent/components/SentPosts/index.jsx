@@ -55,12 +55,13 @@ const SentPosts = ({
     border: `1px solid ${geyser}`,
     width: '100%',
     padding: '1rem',
-    margin: '1rem 0',
+    margin: '0 0 2rem 0',
     position: 'relative',
     textAlign: 'center',
     backgroundColor: fillColor,
     color: curiousBlue,
-    opacity: loadingMore ? '1' : '0',
+    opacity: loadingMore ? '1' : '1',
+    boxSizing: 'border-box',
   };
   return (
     <div>
