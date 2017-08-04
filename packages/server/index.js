@@ -51,13 +51,13 @@ if (!isProduction) {
   }
 }
 
-const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
-                .replace('{{{bundle}}}', staticAssets['bundle.js'])
-                .replace('{{{bugsnagScript}}}', bugsnagScript);
+const getHtml = () => fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
+                                    .replace('{{{bundle}}}', staticAssets['bundle.js'])
+                                    .replace('{{{bugsnagScript}}}', bugsnagScript);
 
 app.use(logMiddleware({ name: 'BufferPublish' }));
 app.use(cookieParser());
-app.get('/', session.middleware, (req, res) => res.send(html));
+app.get('/', session.middleware, (req, res) => res.send(getHtml()));
 
 app.post('/rpc', (req, res, next) => {
   rpc(req, res)

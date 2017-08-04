@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@bufferapp/components": "0.5.22",
+    "@bufferapp/publish-shared-components": "0.0.1",
     "@bufferapp/store": "0.0.1",
     "@bufferapp/example": "0.0.1",
     "@bufferapp/tabs": "0.0.1",
