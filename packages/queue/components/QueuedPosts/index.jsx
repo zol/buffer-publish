@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Input,
+  LoadingAnimation,
 } from '@bufferapp/components';
 import {
   geyser,
@@ -27,6 +28,13 @@ const loadMoreStyle = {
   color: curiousBlue,
 };
 
+const loadingContainerStyle = {
+  width: '100%',
+  height: '100%',
+  textAlign: 'center',
+  paddingTop: '5rem',
+};
+
 const QueuedPosts = ({
   total,
   loading,
@@ -39,7 +47,11 @@ const QueuedPosts = ({
   onShareNowClick,
 }) => {
   if (loading) {
-    return (<div>Loading...</div>);
+    return (
+      <div style={loadingContainerStyle}>
+        <LoadingAnimation />
+      </div>
+    );
   }
   return (
     <div>
