@@ -11,31 +11,24 @@ const getImageUrls = (post) => {
   return imageUrls;
 };
 
-const getPostActionString = ({ post, profileTimezone, twentyFourHourTime }) => {
-  if (post.due_at) {
-    const dateString = getDateString(
-      post.due_at,
-      profileTimezone,
-      {
-        twentyFourHourTime,
-      },
-    );
-    return `This post will be sent ${dateString}.`;
-  } else if (post.shared_next) {
-    return 'This post will be shared next.';
+const getPostActionString = ({ post }) => {
+  const timestampToConvert = post.sent_at || post.due_at;
+  // due_at set to 0 when user has no scheduled posting times
+  if (timestampToConvert === 0) {
+    return 'NO TIME SET';
   }
+  const dateString = getDateString(
+    timestampToConvert,
+    post.profile_timezone,
+    {
+      twentyFourHourTime: post.twentyfour_hour_time,
+    },
+  );
+  return `This post ${post.sent_at ? 'was' : 'will be'} sent ${dateString}.`;
 };
 
-const getPostDetails = ({
-  post,
-  profileTimezone,
-  twentyFourHourTime,
-}) => ({
-  postAction: getPostActionString({
-    post,
-    profileTimezone,
-    twentyFourHourTime,
-  }),
+const getPostDetails = ({ post }) => ({
+  postAction: getPostActionString({ post }),
   isRetweet: post.retweet !== undefined,
 });
 
@@ -89,18 +82,14 @@ module.exports = {
       imageSrc: isVideo ? media.thumbnail : media.picture,
       imageUrls: getImageUrls(post),
       links: parseTwitterLinks(text),
-      profileTimezone: 'Europe/London', // TODO: get timezone from profile
+      profileTimezone: post.profile_timezone,
       linkAttachment: {
         title: media.title,
         url: media.expanded_link,
         description: media.description,
         thumbnailUrl: media.preview,
       },
-      postDetails: getPostDetails({
-        post,
-        profileTimezone: 'Europe/London', // TODO: get from profile
-        twentyFourHourTime: false, // TODO: get from user
-      }),
+      postDetails: getPostDetails({ post }),
       retweetComment,
       retweetCommentLinks: parseTwitterLinks(retweetComment),
       retweetProfile: getRetweetProfileInfo(post),
