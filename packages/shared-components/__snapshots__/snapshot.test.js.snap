@@ -468,7 +468,15 @@ exports[`Snapshots EmptyState default 1`] = `
         src="https://s3.amazonaws.com/buffer-publish/images/fresh-queue.png"
         style={
           Object {
+            "height": undefined,
             "marginBottom": "1.5rem",
+            "marginTop": undefined,
+            "maxHeight": undefined,
+            "maxWidth": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "objectFit": undefined,
+            "width": undefined,
           }
         }
       />

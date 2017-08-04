@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Text,
+  Image,
 } from '@bufferapp/components';
 
 const EmptyState = ({ title, subtitle, heroImg }) => {
@@ -16,10 +17,6 @@ const EmptyState = ({ title, subtitle, heroImg }) => {
     marginTop: '7rem',
   };
 
-  const imageStyle = {
-    marginBottom: '1.5rem',
-  };
-
   const headerStyle = {
     marginBottom: '1.5rem',
     width: '100%',
@@ -28,7 +25,7 @@ const EmptyState = ({ title, subtitle, heroImg }) => {
     <div style={wrapperStyle}>
       <div style={containerStyle}>
         {heroImg &&
-          <img style={imageStyle} alt="" src={heroImg} />}
+          <Image marginBottom="1.5rem" alt="" src={heroImg} />}
         {title &&
           <div style={headerStyle}>
             <Text size={'large'} weight={'bold'}>
