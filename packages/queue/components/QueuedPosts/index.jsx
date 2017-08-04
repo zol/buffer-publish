@@ -62,9 +62,10 @@ const QueuedPosts = ({
       </div>
       {total < 1 &&
         <EmptyState
-          title="It looks like you haven\'t got any posts in your queue!"
+          title="It looks like you haven't got any posts in your queue!"
           subtitle="Click the box above to add a post to your queue :)"
           heroImg="https://s3.amazonaws.com/buffer-publish/images/fresh-queue%402x.png"
+          heroImgSize={{ width: '229px', height: '196px' }}
         />
       }
       <PostLists

@@ -5,26 +5,29 @@ import {
   Image,
 } from '@bufferapp/components';
 
-const EmptyState = ({ title, subtitle, heroImg }) => {
+const EmptyState = ({ title, subtitle, heroImg, heroImgSize }) => {
   const containerStyle = {
     textAlign: 'center',
     width: '65%',
+    alignSelf: 'center',
   };
 
   const wrapperStyle = {
     display: 'flex',
     justifyContent: 'center',
+    height: '50vh',
   };
 
   const headerStyle = {
     marginBottom: '1.5rem',
     width: '100%',
   };
+
   return (
     <div style={wrapperStyle}>
       <div style={containerStyle}>
         {heroImg &&
-          <Image marginBottom="1.5rem" alt="" src={heroImg} />}
+          <Image marginBottom="1.5rem" alt="" src={heroImg} width={heroImgSize.width} height={heroImgSize.height} />}
         {title &&
           <div style={headerStyle}>
             <Text size="large" weight="bold">
@@ -46,12 +49,10 @@ EmptyState.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   heroImg: PropTypes.string,
-};
-
-EmptyState.defaultProps = {
-  title: undefined,
-  subtitle: undefined,
-  heroImg: undefined,
+  heroImgSize: PropTypes.shape({
+    width: PropTypes.string,
+    height: PropTypes.string,
+  }).isRequired,
 };
 
 export default EmptyState;
