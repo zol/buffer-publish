@@ -32,7 +32,9 @@ class ScrollableContainer extends Component {
     this.debouncedHandleScroll = debounce(this.handleScroll, 500);
   }
   componentDidMount() {
-    this.containerEl.addEventListener('scroll', this.debouncedHandleScroll);
+    if (this.containerEl) {
+      this.containerEl.addEventListener('scroll', this.debouncedHandleScroll);
+    }
   }
   componentDidUpdate(prevProps) {
     if (this.props.tabId !== prevProps.tabId) {

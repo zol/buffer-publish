@@ -1315,6 +1315,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
       />
     </div>
     <div
+      data-hide-scrollbar={true}
       style={
         Object {
           "flexGrow": 1,
@@ -2294,6 +2295,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
       />
     </div>
     <div
+      data-hide-scrollbar={true}
       style={
         Object {
           "flexGrow": 1,

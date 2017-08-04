@@ -755,6 +755,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
           />
         </div>
         <div
+          data-hide-scrollbar={true}
           style={
             Object {
               "flexGrow": 1,
@@ -1838,12 +1839,12 @@ exports[`Snapshots ProfilePage should render 1`] = `
         />
       </div>
       <div
-        onScroll={[Function]}
         style={
           Object {
             "flexGrow": 1,
             "marginTop": "1rem",
             "overflowY": "auto",
+            "paddingRight": "1rem",
           }
         }
       />
@@ -1935,6 +1936,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
           />
         </div>
         <div
+          data-hide-scrollbar={true}
           style={
             Object {
               "flexGrow": 1,
@@ -3019,12 +3021,12 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
         />
       </div>
       <div
-        onScroll={[Function]}
         style={
           Object {
             "flexGrow": 1,
             "marginTop": "1rem",
             "overflowY": "auto",
+            "paddingRight": "1rem",
           }
         }
       >

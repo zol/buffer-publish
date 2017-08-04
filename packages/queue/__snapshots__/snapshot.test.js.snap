@@ -1364,7 +1364,35 @@ exports[`Snapshots QueuedPosts default 1`] = `
         </div>
       </li>
     </ul>
-    
+    <div
+      style={
+        Object {
+          "backgroundColor": "#eaeff2",
+          "border": "1px solid #ced7df",
+          "boxSizing": "border-box",
+          "color": "#168eea",
+          "margin": "0 0 2rem 0",
+          "opacity": "1",
+          "padding": "1rem",
+          "position": "relative",
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        Loading…
+      </span>
+    </div>
   </div>
 </span>
 `;
