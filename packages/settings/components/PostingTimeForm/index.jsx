@@ -38,6 +38,7 @@ const chooseDaysAndTimeStyle = {
 const inputTimeWrapper = {
   marginLeft: '0.5rem',
   marginRight: '1rem',
+  width: '11rem',
 };
 
 const addPostingTimeStyle = {

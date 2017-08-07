@@ -26,4 +26,69 @@ storiesOf('Select')
       value={'Tokyo'}
       onChange={action('on-change')}
     />
+  ))
+  .add('noStyle', () => (
+    <Select
+      options={options}
+      value={'Tokyo'}
+      onChange={action('on-change')}
+      noStyle
+    />
+  ))
+  .add('short numbers', () => (
+    <Select
+      options={[{
+        name: 1,
+        value: 1,
+      }, {
+        name: 2,
+        value: 2,
+      }]}
+      value={2}
+      onChange={action('on-change')}
+    />
+  ))
+  .add('center text', () => (
+    <Select
+      options={[{
+        name: 1,
+        value: 1,
+      }, {
+        name: 2,
+        value: 2,
+      }]}
+      value={2}
+      onChange={action('on-change')}
+      centerText
+      noStyle
+    />
+  ))
+  .add('rangeSelector', () => (
+    <Select
+      options={[{
+        name: 1,
+        value: 1,
+      }, {
+        name: 2,
+        value: 2,
+      }]}
+      value={2}
+      onChange={action('on-change')}
+      rangeSelector
+    />
+  ))
+  .add('rangeSelector centerText', () => (
+    <Select
+      options={[{
+        name: 1,
+        value: 1,
+      }, {
+        name: 2,
+        value: 2,
+      }]}
+      value={2}
+      onChange={action('on-change')}
+      centerText
+      rangeSelector
+    />
   ));

@@ -5,62 +5,58 @@ import {
   CloseIcon,
   InputTime,
 } from '@bufferapp/components';
-import { calculateStyles } from '@bufferapp/components/lib/utils';
 import TableCell from '../../TableCell';
 
+const style = {
+  position: 'relative',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
+const buttonStyle = {
+  position: 'absolute',
+  right: '0.5rem',
+};
+
+const iconWrapperStyle = {
+  marginTop: '0.1rem',
+};
+
 /* eslint-disable react/prop-types */
+
+const RemoveButton = ({ onRemoveTimeClick }) =>
+  <div style={buttonStyle}>
+    <Button onClick={onRemoveTimeClick} noStyle>
+      <div style={iconWrapperStyle}>
+        <CloseIcon size={'small'} />
+      </div>
+    </Button>
+  </div>;
+
 const TableCellContents = ({
   disabled,
   hovered,
   select24Hours,
   time,
-}) => {
-  const style = calculateStyles({
-    default: {
-      position: 'relative',
-      display: 'flex',
-      height: '2rem',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-  });
-
-  const buttonStyle = calculateStyles({
-    default: {
-      position: 'absolute',
-      right: '0.5rem',
-    },
-  });
-
-  const iconWrapperStyle = {
-    marginTop: '0.1rem',
-  };
-
-  let removeButton = '';
-
-  if (hovered && !disabled) {
-    removeButton = (
-      <div style={buttonStyle}>
-        <Button onClick={time.onRemoveTimeClick} noStyle>
-          <div style={iconWrapperStyle}>
-            <CloseIcon size={'small'} />
-          </div>
-        </Button>
-      </div>);
-  }
-
-  return (
-    <div style={style}>
-      {removeButton}
+}) =>
+  <div style={style}>
+    {hovered && !disabled ? RemoveButton(time) : null}
+    <div
+      style={{
+        width: '4.5rem',
+      }}
+    >
       <InputTime
         disabled={disabled}
         input={time}
-        noStyle
         select24Hours={select24Hours}
+        minimal
+        centerText
+        displayTimeColon
       />
     </div>
-  );
-};
+  </div>;
 /* eslint-enable react/prop-types */
 
 const ScheduleTableCell = ({

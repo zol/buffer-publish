@@ -4,6 +4,7 @@ import { calculateStyles } from '../lib/utils';
 import {
   transparent,
   mystic,
+  shuttleGray,
 } from '../style/color';
 import {
   fontSizeSmall,
@@ -11,18 +12,77 @@ import {
 import {
   borderRadius,
   borderWidth,
+  borderWidthNumber,
 } from '../style/border';
-import {
-  overlay,
-} from '../style/zIndex';
 import ArrowDownIcon from '../Icon/Icons/ArrowDownIcon';
+import ArrowUpIcon from '../Icon/Icons/ArrowUpIcon';
 
-const iconStyle = {
-  zIndex: 0,
-  display: 'flex',
-  marginLeft: '-2rem',
-  alignItems: 'center',
+const height = 2;
+
+const defaultIconStyle = {
+  position: 'absolute',
+  top: '0.5rem',
+  right: '0.5rem',
+  pointerEvents: 'none',
 };
+
+const selectWrapperStyle = {
+  position: 'relative',
+};
+
+const RangeIcon = () =>
+  <div
+    style={{
+      position: 'absolute',
+      top: borderWidth,
+      right: borderWidth,
+      display: 'flex',
+      flexDirection: 'column',
+      pointerEvents: 'none',
+      height: `${height - (borderWidthNumber * 2)}rem`,
+      backgroundColor: '#fcfcfc',
+      borderLeft: `${borderWidth} solid ${mystic}`,
+      borderRadiusTopRight: borderRadius,
+      borderRadiusBottomRight: borderRadius,
+      width: '1rem',
+      alignItems: 'center',
+    }}
+  >
+    <div
+      style={{
+        height: `${(height / 2) - (borderWidthNumber)}rem`,
+      }}
+    >
+      <ArrowUpIcon size={'small'} />
+    </div>
+    <div
+      style={{
+        height: `${(height / 2) - (borderWidthNumber)}rem`,
+      }}
+    >
+      <ArrowDownIcon size={'small'} />
+    </div>
+  </div>;
+
+const DefaultIcon = () =>
+  <div style={defaultIconStyle}>
+    <ArrowDownIcon />
+  </div>;
+
+/* eslint-disable react/prop-types */
+const SelectIcon = ({ noStyle, rangeSelector }) => {
+  if (noStyle) {
+    return null;
+  } else if (rangeSelector) {
+    return (
+      <RangeIcon />
+    );
+  }
+  return (
+    <DefaultIcon />
+  );
+};
+/* eslint-enable react/prop-types */
 
 const Select = ({
   options,
@@ -31,14 +91,13 @@ const Select = ({
   noStyle,
   label,
   value,
+  centerText,
+  rangeSelector,
 }) => {
   const selectStyle = calculateStyles({
     default: {
-      zIndex: overlay,
-      height: '2rem',
-      paddingRight: '1.5rem',
-      paddingLeft: '0.5rem',
-      marginRight: '0.5rem',
+      height: `${height}rem`,
+      padding: '0 1.5rem 0 0.5rem',
       fontSize: fontSizeSmall,
       background: transparent,
       border: `${borderWidth} solid ${mystic}`,
@@ -46,34 +105,29 @@ const Select = ({
       appearance: 'none',
       WebkitAppearance: 'none',
       MozAppearance: 'none',
+      width: '100%',
+      color: shuttleGray,
     },
     noStyle: {
+      height: 'auto',
       border: 0,
       background: 'transparent',
       margin: 0,
       padding: 0,
-      WebkitAppearance: 'none',
-      MozAppearance: 'none',
+    },
+    centerText: {
+      textAlignLast: 'center',
+      paddingLeft: 0,
+    },
+    rangeSelector: {
+      paddingRight: '1rem',
     },
   }, {
     noStyle,
+    centerText,
+    rangeSelector,
   });
-  const selectWrapperStyle = calculateStyles({
-    default: {
-      display: 'flex',
-      alignItems: 'center',
-      flexDirection: 'row',
-      paddingRight: '1.5rem',
-    },
-    noStyle: {
-      display: 'flex',
-      alignItems: 'center',
-      flexDirection: 'row',
-      paddingRight: '0.5rem',
-    },
-  }, {
-    noStyle,
-  });
+
   return (
     <div style={selectWrapperStyle}>
       <select
@@ -91,11 +145,10 @@ const Select = ({
             )
         }
       </select>
-      {!noStyle &&
-        <span style={iconStyle}>
-          <ArrowDownIcon />
-        </span>
-      }
+      <SelectIcon
+        noStyle={noStyle}
+        rangeSelector={rangeSelector}
+      />
     </div>
   );
 };
@@ -106,7 +159,10 @@ Select.propTypes = {
       PropTypes.string,
       PropTypes.number,
     ]),
-    name: PropTypes.string,
+    name: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
   })).isRequired,
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
@@ -116,6 +172,8 @@ Select.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
+  centerText: PropTypes.bool,
+  rangeSelector: PropTypes.bool,
 };
 
 Select.defaultProps = {
@@ -124,6 +182,8 @@ Select.defaultProps = {
   noStyle: false,
   label: null,
   value: undefined,
+  centerText: false,
+  rangeSelector: false,
 };
 
 export default Select;

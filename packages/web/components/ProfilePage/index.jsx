@@ -28,7 +28,6 @@ const profileSideBarStyle = {
 
 const contentStyle = {
   flexGrow: 1,
-  color: 'white',
   display: 'flex',
   flexDirection: 'column',
   marginLeft: '1rem',
