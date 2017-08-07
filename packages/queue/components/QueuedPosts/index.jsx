@@ -53,7 +53,7 @@ const QueuedPosts = ({
     textAlign: 'center',
     backgroundColor: fillColor,
     color: curiousBlue,
-    opacity: loadingMore ? '1' : '1',
+    opacity: loadingMore ? '1' : '0',
     boxSizing: 'border-box',
   };
   return (

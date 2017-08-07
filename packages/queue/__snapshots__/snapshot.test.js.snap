@@ -1372,7 +1372,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
           "boxSizing": "border-box",
           "color": "#168eea",
           "margin": "0 0 2rem 0",
-          "opacity": "1",
+          "opacity": "0",
           "padding": "1rem",
           "position": "relative",
           "textAlign": "center",
