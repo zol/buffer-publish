@@ -101,7 +101,7 @@ class PopoverButton extends PseudoClassComponent {
           this.onMouseLeaveTimeout =
             setTimeout(() => this.doMouseLeave(), this.props.children ? 250 : 0);
         }}
-        onClick={() => { this.setState({ clicked: !this.state.clicked }); }}
+        onClick={(e) => { this.setState({ clicked: !this.state.clicked }); this.handleOnClick(e); }}
         onKeyDown={this.handleKeyDown}
         onFocus={() => this.handleFocus()}
         onBlur={this.handleMenuBlur}
@@ -129,6 +129,12 @@ class PopoverButton extends PseudoClassComponent {
         total: menuItems.length,
         current: 0,
       };
+    }
+  }
+  handleOnClick(e) {
+    if (this.props.href) {
+      e.preventDefault();
+      window.open(this.props.href, '_blank');
     }
   }
   handleKeyDown(e) {
@@ -199,6 +205,7 @@ PopoverButton.propTypes = {
   label: PropTypes.string,
   large: PropTypes.bool,
   popoverPosition: PropTypes.oneOf(['none', 'above', 'below']),
+  href: PropTypes.string,
 };
 
 PopoverButton.defaultProps = {
