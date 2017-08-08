@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 ENV NODE_ENV production
 
 COPY packages/server/package.json /usr/src/app
-RUN npm install
+RUN yarn install
 
 COPY packages/server /usr/src/app
 COPY staticAssets.json /usr/src/app

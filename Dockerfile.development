@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 ENV NODE_ENV development
 
-RUN npm install -g nodemon
+RUN yarn install -g nodemon
 
 EXPOSE 80
 

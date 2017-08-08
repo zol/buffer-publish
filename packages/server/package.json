@@ -5,7 +5,7 @@
   "scripts": {
     "start": "micro",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "npm run lint && sh ../../package_test.sh",
+    "test": "yarn run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch"
   },
   "jest": {
