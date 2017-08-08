@@ -20,15 +20,14 @@ describe('Queue', () => {
   it('should render', () => {
     const store = storeFake({
       queue: {
-        loading: false,
-        posts: [],
-        total: 0,
-      },
-      i18n: {
-        translations: {
-          example: {
-            loggedIn: 'Logged In...',
-            loggedOut: 'Logged Out...',
+        profilesById: {
+          abc: {
+            loading: true,
+            loadingMore: false,
+            moreToLoad: false,
+            page: 1,
+            posts: [],
+            total: 0,
           },
         },
       },
@@ -36,6 +35,7 @@ describe('Queue', () => {
     const wrapper = mount(
       <Provider store={store}>
         <Queue
+          profileId="abc"
           postLists={[]}
           onCancelConfirmClick={jest.fn()}
           onDeleteClick={jest.fn()}
