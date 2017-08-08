@@ -1,15 +1,12 @@
 import deepFreeze from 'deep-freeze';
 import reducer from './reducer';
 
+const profileId = '123456';
+
 describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
+      profilesById: {},
     };
     const action = {
       type: 'INIT',
@@ -21,16 +18,20 @@ describe('reducer', () => {
 
   it('should handle queuedPosts_FETCH_START action type', () => {
     const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
+      profilesById: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: [],
+          total: 0,
+        },
+      },
     };
     const action = {
+      profileId,
       type: 'queuedPosts_FETCH_START',
-      posts: [],
       args: {
         isFetchingMore: false,
       },
@@ -40,144 +41,52 @@ describe('reducer', () => {
       .toEqual(stateAfter);
   });
 
-  it('should handle FETCH_POSTS_ERROR action type', () => {
+  it('should handle queuedPosts_FETCH_SUCCESS action type', () => {
+    const post = { id: 'foo', text: 'i love buffer' };
     const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
+      profilesById: {
+        [profileId]: {
+          loading: false,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 2,
+          posts: [post],
+          total: 1,
+        },
+      },
     };
     const action = {
-      type: 'FETCH_POSTS_ERROR',
-      postLists: [],
+      profileId,
+      type: 'queuedPosts_FETCH_SUCCESS',
+      result: {
+        updates: [post],
+        total: 1,
+      },
+      args: {
+        isFetchingMore: false,
+      },
     };
     deepFreeze(action);
     expect(reducer(undefined, action))
       .toEqual(stateAfter);
   });
 
-  it('should handle POST_CREATED action type', () => {
+  it('should handle queuedPosts_FETCH_FAIL action type', () => {
     const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
+      profilesById: {
+        [profileId]: {
+          loading: false,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: [],
+          total: 0,
+        },
+      },
     };
     const action = {
-      type: 'POST_CREATED',
-      postLists: [],
-    };
-    deepFreeze(action);
-    expect(reducer(undefined, action))
-      .toEqual(stateAfter);
-  });
-
-  it('should handle POST_UPDATED action type', () => {
-    const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
-    };
-    const action = {
-      type: 'POST_UPDATED',
-      posts: [],
-    };
-    deepFreeze(action);
-    expect(reducer(undefined, action))
-      .toEqual(stateAfter);
-  });
-
-  it('should handle POST_CONFIRM_DELETE action type', () => {
-    const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
-    };
-    const action = {
-      type: 'POST_CONFIRM_DELETE',
-      posts: [],
-    };
-    deepFreeze(action);
-    expect(reducer(undefined, action))
-      .toEqual(stateAfter);
-  });
-
-  it('should handle POST_DELETED action type', () => {
-    const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
-    };
-    const action = {
-      type: 'POST_DELETED',
-      posts: [],
-    };
-    deepFreeze(action);
-    expect(reducer(undefined, action))
-      .toEqual(stateAfter);
-  });
-
-  it('should handle POST_DELETE_CANCELED action type', () => {
-    const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
-    };
-    const action = {
-      type: 'POST_DELETE_CANCELED',
-      posts: [],
-    };
-    deepFreeze(action);
-    expect(reducer(undefined, action))
-      .toEqual(stateAfter);
-  });
-
-  it('should handle POST_ERROR action type', () => {
-    const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
-    };
-    const action = {
-      type: 'POST_ERROR',
-      posts: [],
-    };
-    deepFreeze(action);
-    expect(reducer(undefined, action))
-      .toEqual(stateAfter);
-  });
-
-  it('should handle REQUESTING_POST_DELETE action type', () => {
-    const stateAfter = {
-      loading: true,
-      loadingMore: false,
-      moreToLoad: false,
-      page: 1,
-      posts: [],
-      total: 0,
-    };
-    const action = {
-      type: 'REQUESTING_POST_DELETE',
-      posts: [],
+      profileId,
+      type: 'queuedPosts_FETCH_FAIL',
     };
     deepFreeze(action);
     expect(reducer(undefined, action))

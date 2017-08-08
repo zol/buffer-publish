@@ -22,6 +22,7 @@ describe('reducer', () => {
     expect(actions.selectProfile({ profile }))
       .toEqual({
         type: actionTypes.SELECT_PROFILE,
+        profileId: profile.id,
         profile,
       });
   });

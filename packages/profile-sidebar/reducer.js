@@ -30,6 +30,7 @@ export default (state = initialState, action) => {
 export const actions = {
   selectProfile: ({ profile }) => ({
     type: actionTypes.SELECT_PROFILE,
+    profileId: profile.id,
     profile,
   }),
 };

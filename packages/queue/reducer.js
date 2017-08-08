@@ -1,4 +1,5 @@
 import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import { actionTypes as profileSidebarActionTypes } from '@bufferapp/profile-sidebar';
 
 export const actionTypes = {
   POST_CREATED: 'POST_CREATED',
@@ -10,8 +11,7 @@ export const actionTypes = {
   REQUESTING_POST_DELETE: 'REQUESTING_POST_DELETE',
 };
 
-// TODO: remove this inial stubbed data once we can actually fetch data.
-const initialState = {
+const profileInitialState = {
   loading: true,
   loadingMore: false,
   moreToLoad: false,
@@ -36,8 +36,10 @@ const increasePageCount = (page) => {
 const determineIfMoreToLoad = (action, currentPosts) =>
   (action.result.total > (currentPosts.length + action.result.updates.length));
 
-export default (state = initialState, action) => {
+const profileReducer = (state = profileInitialState, action) => {
   switch (action.type) {
+    case profileSidebarActionTypes.SELECT_PROFILE:
+      return profileInitialState;
     case `queuedPosts_${dataFetchActionTypes.FETCH_START}`:
       return {
         ...state,
@@ -55,7 +57,10 @@ export default (state = initialState, action) => {
         total: action.result.total,
       };
     case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
-      return state;
+      return {
+        ...state,
+        loading: false,
+      };
     case actionTypes.POST_CREATED:
       return state;
     case actionTypes.POST_UPDATED:
@@ -69,6 +74,45 @@ export default (state = initialState, action) => {
     case actionTypes.POST_ERROR:
       return state;
     case actionTypes.REQUESTING_POST_DELETE:
+      return state;
+    default:
+      return state;
+  }
+};
+
+const initialState = {
+  profilesById: {},
+};
+
+const getProfileId = (action) => {
+  if (action.profileId) { return action.profileId; }
+  if (action.args) { return action.args.profileId; }
+  if (action.profile) { return action.profile.id; }
+};
+
+export default (state = initialState, action) => {
+  let profileId;
+  switch (action.type) {
+    case profileSidebarActionTypes.SELECT_PROFILE:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_START}`:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
+    case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
+    case actionTypes.POST_CREATED:
+    case actionTypes.POST_UPDATED:
+    case actionTypes.POST_CONFIRM_DELETE:
+    case actionTypes.POST_DELETED:
+    case actionTypes.POST_DELETE_CANCELED:
+    case actionTypes.POST_ERROR:
+    case actionTypes.REQUESTING_POST_DELETE:
+      profileId = getProfileId(action);
+      if (profileId) {
+        return {
+          profilesById: {
+            ...state.profilesById,
+            [profileId]: profileReducer(state.profilesById[profileId], action),
+          },
+        };
+      }
       return state;
     default:
       return state;

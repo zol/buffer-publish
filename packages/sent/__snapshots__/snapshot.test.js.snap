@@ -5,81 +5,30 @@ exports[`Snapshots SentPosts default 1`] = `
   <div
     style={
       Object {
-        "display": "flex",
-        "height": "70vh",
-        "justifyContent": "center",
+        "height": "100%",
+        "paddingTop": "5rem",
+        "textAlign": "center",
+        "width": "100%",
       }
     }
   >
-    <div
+    <img
+      alt=""
+      src="https://s3.amazonaws.com/buffer-publish/images/black-loading-gif-small.gif"
       style={
         Object {
-          "alignSelf": "center",
-          "textAlign": "center",
-          "width": "700px",
+          "height": undefined,
+          "marginBottom": undefined,
+          "marginTop": "5rem",
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "objectFit": undefined,
+          "width": "45px",
         }
       }
-    >
-      <img
-        alt=""
-        src="https://s3.amazonaws.com/buffer-publish/images/empty-sent2x.png"
-        style={
-          Object {
-            "height": "150px",
-            "marginBottom": "1.5rem",
-            "marginTop": undefined,
-            "maxHeight": undefined,
-            "maxWidth": undefined,
-            "minHeight": undefined,
-            "minWidth": undefined,
-            "objectFit": undefined,
-            "width": "270px",
-          }
-        }
-      />
-      <div
-        style={
-          Object {
-            "marginBottom": "1.5rem",
-            "width": "100%",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
-              "fontWeight": 600,
-            }
-          }
-        >
-          You haven’t published any posts with this account in the past 30 days!
-        </span>
-      </div>
-      <div
-        style={
-          Object {
-            "display": "inline-block",
-            "width": "500px",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Once a post has gone live via Buffer, you can track it’s performance here to learn what works best with your audience!
-        </span>
-      </div>
-    </div>
+    />
   </div>
 </span>
 `;
