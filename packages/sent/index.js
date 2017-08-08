@@ -25,7 +25,7 @@ const formatPostLists = (posts) => {
 export default connect(
   (state, ownProps) => {
     const profileId = ownProps.profileId;
-    const currentProfile = state.sent.profilesById[profileId];
+    const currentProfile = state.sent.byProfileId[profileId];
     if (currentProfile) {
       return {
         header: currentProfile.header,

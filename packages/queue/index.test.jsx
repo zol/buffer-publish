@@ -20,7 +20,7 @@ describe('Queue', () => {
   it('should render', () => {
     const store = storeFake({
       queue: {
-        profilesById: {
+        byProfileId: {
           abc: {
             loading: true,
             loadingMore: false,

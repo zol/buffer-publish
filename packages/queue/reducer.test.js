@@ -6,7 +6,7 @@ const profileId = '123456';
 describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
-      profilesById: {},
+      byProfileId: {},
     };
     const action = {
       type: 'INIT',
@@ -18,7 +18,7 @@ describe('reducer', () => {
 
   it('should handle queuedPosts_FETCH_START action type', () => {
     const stateAfter = {
-      profilesById: {
+      byProfileId: {
         [profileId]: {
           loading: true,
           loadingMore: false,
@@ -44,7 +44,7 @@ describe('reducer', () => {
   it('should handle queuedPosts_FETCH_SUCCESS action type', () => {
     const post = { id: 'foo', text: 'i love buffer' };
     const stateAfter = {
-      profilesById: {
+      byProfileId: {
         [profileId]: {
           loading: false,
           loadingMore: false,
@@ -73,7 +73,7 @@ describe('reducer', () => {
 
   it('should handle queuedPosts_FETCH_FAIL action type', () => {
     const stateAfter = {
-      profilesById: {
+      byProfileId: {
         [profileId]: {
           loading: false,
           loadingMore: false,

@@ -20,7 +20,7 @@ describe('Sent', () => {
   it('should render', () => {
     const store = storeFake({
       sent: {
-        profilesById: {
+        byProfileId: {
           abc: {
             loading: true,
             loadingMore: false,

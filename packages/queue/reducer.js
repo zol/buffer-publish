@@ -81,7 +81,7 @@ const profileReducer = (state = profileInitialState, action) => {
 };
 
 const initialState = {
-  profilesById: {},
+  byProfileId: {},
 };
 
 const getProfileId = (action) => {
@@ -107,9 +107,9 @@ export default (state = initialState, action) => {
       profileId = getProfileId(action);
       if (profileId) {
         return {
-          profilesById: {
-            ...state.profilesById,
-            [profileId]: profileReducer(state.profilesById[profileId], action),
+          byProfileId: {
+            ...state.byProfileId,
+            [profileId]: profileReducer(state.byProfileId[profileId], action),
           },
         };
       }

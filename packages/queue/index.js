@@ -25,7 +25,7 @@ const formatPostLists = (posts) => {
 export default connect(
   (state, ownProps) => {
     const profileId = ownProps.profileId;
-    const currentProfile = state.queue.profilesById[profileId];
+    const currentProfile = state.queue.byProfileId[profileId];
     if (currentProfile) {
       return {
         loading: currentProfile.loading,
