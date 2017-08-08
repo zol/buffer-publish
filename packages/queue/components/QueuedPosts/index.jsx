@@ -85,14 +85,10 @@ const QueuedPosts = ({
 };
 
 QueuedPosts.propTypes = {
-  total: PropTypes.number.isRequired,
-  loading: PropTypes.bool.isRequired,
-  loadingMore: PropTypes.bool.isRequired,
-  onCancelConfirmClick: PropTypes.func.isRequired,
-  onDeleteClick: PropTypes.func.isRequired,
-  onDeleteConfirmClick: PropTypes.func.isRequired,
-  onEditClick: PropTypes.func.isRequired,
-  onShareNowClick: PropTypes.func.isRequired,
+  loading: PropTypes.bool,
+  loadingMore: PropTypes.bool,
+  moreToLoad: PropTypes.bool, // eslint-disable-line
+  page: PropTypes.number, // eslint-disable-line
   postLists: PropTypes.arrayOf(
     PropTypes.shape({
       listHeader: PropTypes.string,
@@ -103,11 +99,21 @@ QueuedPosts.propTypes = {
       ),
     }),
   ).isRequired,
+  total: PropTypes.number,
+  onCancelConfirmClick: PropTypes.func.isRequired,
+  onDeleteClick: PropTypes.func.isRequired,
+  onDeleteConfirmClick: PropTypes.func.isRequired,
+  onEditClick: PropTypes.func.isRequired,
+  onShareNowClick: PropTypes.func.isRequired,
 };
 
 QueuedPosts.defaultProps = {
-  postLists: [],
+  loading: true,
   loadingMore: false,
+  moreToLoad: false,
+  page: 1,
+  postLists: [],
+  total: 0,
 };
 
 export default QueuedPosts;

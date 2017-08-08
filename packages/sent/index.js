@@ -23,15 +23,22 @@ const formatPostLists = (posts) => {
 
 // default export = container
 export default connect(
-  state => ({
-    header: state.sent.header,
-    loading: state.sent.loading,
-    loadingMore: state.sent.loadingMore,
-    page: state.sent.page,
-    postLists: formatPostLists(state.sent.posts),
-    total: state.sent.total,
-    translations: state.i18n.translations.sent, // all package translations
-  }),
+  (state, ownProps) => {
+    const profileId = ownProps.profileId;
+    const currentProfile = state.sent.byProfileId[profileId];
+    if (currentProfile) {
+      return {
+        header: currentProfile.header,
+        loading: currentProfile.loading,
+        loadingMore: currentProfile.loadingMore,
+        moreToLoad: currentProfile.moreToLoad,
+        page: currentProfile.page,
+        postLists: formatPostLists(currentProfile.posts),
+        total: currentProfile.total,
+      };
+    }
+    return {};
+  },
 )(SentPosts);
 
 // export reducer, actions and action types

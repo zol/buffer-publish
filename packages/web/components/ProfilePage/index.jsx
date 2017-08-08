@@ -35,11 +35,12 @@ const contentStyle = {
   height: '100vh',
 };
 
-const TabContent = ({ tabId }) => {
+const TabContent = ({ tabId, profileId }) => {
   switch (tabId) {
     case 'queue':
       return (
         <QueuedPosts
+          profileId={profileId}
           onCancelConfirmClick={() => { }}
           onDeleteClick={() => { }}
           onDeleteConfirmClick={() => { }}
@@ -49,7 +50,9 @@ const TabContent = ({ tabId }) => {
       );
     case 'sent':
       return (
-        <SentPosts />
+        <SentPosts
+          profileId={profileId}
+        />
       );
     case 'settings':
       return (
@@ -64,6 +67,7 @@ const TabContent = ({ tabId }) => {
 
 TabContent.propTypes = {
   tabId: PropTypes.string,
+  profileId: PropTypes.string.isRequired,
 };
 
 TabContent.defaultProps = {
@@ -119,7 +123,7 @@ const ProfilePage = ({
           handleScroll,
         })}
       >
-        {TabContent({ tabId })}
+        {TabContent({ tabId, profileId })}
       </ScrollableContainer>
     </div>
   </div>;

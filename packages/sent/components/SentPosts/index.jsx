@@ -78,10 +78,11 @@ const SentPosts = ({
 };
 
 SentPosts.propTypes = {
-  total: PropTypes.number.isRequired,
   header: PropTypes.string,
-  loading: PropTypes.bool.isRequired,
-  loadingMore: PropTypes.bool.isRequired,
+  loading: PropTypes.bool,
+  loadingMore: PropTypes.bool,
+  moreToLoad: PropTypes.bool, // eslint-disable-line
+  page: PropTypes.number, // eslint-disable-line
   postLists: PropTypes.arrayOf(
     PropTypes.shape({
       listHeader: PropTypes.string,
@@ -91,14 +92,18 @@ SentPosts.propTypes = {
         }),
       ),
     }),
-  ).isRequired,
+  ),
+  total: PropTypes.number,
 };
 
 SentPosts.defaultProps = {
   header: null,
-  loading: false,
+  loading: true,
   loadingMore: false,
+  moreToLoad: false,
+  page: 1,
   postLists: [],
+  total: 0,
 };
 
 export default SentPosts;

@@ -20,22 +20,23 @@ describe('Sent', () => {
   it('should render', () => {
     const store = storeFake({
       sent: {
-        total: 0,
-        loading: false,
-        posts: [],
-      },
-      i18n: {
-        translations: {
-          example: {
-            loggedIn: 'Logged In...',
-            loggedOut: 'Logged Out...',
+        byProfileId: {
+          abc: {
+            loading: true,
+            loadingMore: false,
+            moreToLoad: false,
+            page: 1,
+            posts: [],
+            total: 0,
           },
         },
       },
     });
     const wrapper = mount(
       <Provider store={store}>
-        <Sent />
+        <Sent
+          profileId="abc"
+        />
       </Provider>,
     );
     expect(wrapper.find(SentPosts).length)
