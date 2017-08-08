@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "test": "if [ -n \"$CI\" ]; then npm run init; fi && lerna run test",
+    "test": "if [ -n \"$CI\" ]; then npm run init; fi && jest --config=jestrc.json",
     "test-update": "lerna run test-update",
     "init": "npm install && lerna bootstrap --loglevel verbose",
     "start": "cd ./packages/server/ && npm start",
@@ -23,6 +23,8 @@
   "homepage": "https://github.com/bufferapp/project-donut#readme",
   "devDependencies": {
     "@bufferapp/react-keyframes": "0.2.4",
+    "@storybook/addon-storyshots": "3.1.4",
+    "@storybook/react": "3.1.3",
     "axe-core": "2.2.0",
     "babel-core": "6.24.0",
     "babel-eslint": "7.2.0",
@@ -40,6 +42,7 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.10.3",
     "identity-obj-proxy": "3.0.0",
+    "jest": "19.0.2",
     "js-cookie": "2.1.4",
     "lerna": "2.0.0-rc.5",
     "micro-rpc-client": "0.1.1",
@@ -57,6 +60,7 @@
     "redux-form": "6.6.3",
     "request": "2.81.0",
     "request-promise": "4.2.1",
+    "storybook-addon-a11y": "3.0.0",
     "style-loader": "0.15.0",
     "test-listen": "1.0.2",
     "then-sleep": "1.0.1",
