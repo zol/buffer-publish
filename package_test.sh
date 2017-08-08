@@ -1,1 +1,1 @@
-if [ -n \"$CI\" ]; then jest --runInBand; else jest; fi
+if [ -n \"$CI\" ]; then jest --maxWorkers=4; else jest; fi

@@ -3,9 +3,13 @@
 start_time=`date +%s`
 for d in ./packages/*/ ; do
     pushd $d
-    npm run test
+    if [ "$1" == "-u" ]; then
+      npm run test-update
+    else
+      npm run test
+    fi
     RESULT=$?
-    if [ $RESULT -ne 0 ]; then
+    if [ $RESULT -ne 0 ] && [ "$1" != "-u" ]; then
       exit $RESULT
     fi
     popd
