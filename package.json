@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "test": "if [ -n \"$CI\" ]; then npm run init; fi && lerna run test",
+    "test": "if [ -n \"$CI\" ]; then npm run init; fi && ./test.sh",
     "test-update": "lerna run test-update",
     "init": "npm install && lerna bootstrap --loglevel verbose",
     "start": "cd ./packages/server/ && npm start",
