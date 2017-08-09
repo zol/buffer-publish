@@ -57,7 +57,6 @@ const getHtml = () => fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
 
 app.use(logMiddleware({ name: 'BufferPublish' }));
 app.use(cookieParser());
-app.get('/', session.middleware, (req, res) => res.send(getHtml()));
 
 app.post('/rpc', (req, res, next) => {
   rpc(req, res)
@@ -65,9 +64,22 @@ app.post('/rpc', (req, res, next) => {
     .catch(err => next(err));
 });
 
-app.use('/login', bodyParser.urlencoded({ extended: true }));
-app.get('/login', controller.login);
-app.post('/login', controller.handleLogin);
+// All routes after this have access to the user session
+app.use(session.middleware);
+
+app.get('/', (req, res) => {
+  if (!req.session || !req.session.accessToken) {
+    return res.redirect('/login');
+  }
+  res.send(getHtml());
+});
+
+app.route('/login')
+  .get(controller.login)
+  .post(bodyParser.urlencoded({ extended: true }), controller.handleLogin);
+app.route('/login/tfa')
+  .get(controller.tfa)
+  .post(bodyParser.urlencoded({ extended: true }), controller.handleTfa);
 app.post('/signout', controller.signout);
 
 app.get('/health-check', controller.healthCheck);

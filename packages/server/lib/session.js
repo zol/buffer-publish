@@ -11,30 +11,23 @@ const client = new RPCClient({
   url: `http://${process.env.SESSION_SVC_HOST}`,
 });
 
-const session = module.exports;
+exports = module.exports;
 
 // returns the encoded session jwt
-session.create = ({
-  accessToken,
-  userId,
-}) =>
-  client.call('create', {
-    session: {
-      userId,
-      accessToken,
-    },
-  })
-  .then(({ token }) => token);
+exports.create = session =>
+  client.call('create', { session })
+    .then(({ token }) => ({ token, session }));
 
 // Given a jwt return the session object
-session.get = sessionCooke =>
-  client.call('get', {
-    token: sessionCooke,
-  })
-  .then(({ token }) => jwt.decode(token));
+exports.get = sessionCookie =>
+  client.call('get', { token: sessionCookie })
+    .then(({ token }) => jwt.decode(token));
+
+exports.update = ({ token, session }) =>
+  client.call('update', { token, session });
 
 // Given a jwt and the response object, set the session cookie
-session.writeCookie = (token, res) => {
+exports.writeCookie = (token, res) => {
   res.cookie(COOKIE_NAME, token, {
     domain: COOKIE_DOMAIN,
     maxAge: 365 * 24 * 60 * 60 * 1000, // 1 year
@@ -44,13 +37,15 @@ session.writeCookie = (token, res) => {
   });
 };
 
-session.middleware = (req, res, next) => {
-  const sessionCookie = req.cookies[COOKIE_NAME];
+exports.getCookie = req => req.cookies[COOKIE_NAME];
+
+exports.middleware = (req, res, next) => {
+  const sessionCookie = exports.getCookie(req);
   if (!sessionCookie) {
-    return res.redirect('/login');
+    return next();
   }
 
-  session.get(sessionCookie)
+  exports.get(sessionCookie)
     .then((decodedSession) => {
       req.session = decodedSession;
       next();

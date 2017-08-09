@@ -2,7 +2,7 @@ const { join } = require('path');
 const RPCClient = require('micro-rpc-client');
 const { isShutingDown } = require('@bufferapp/shutdown-helper');
 const bufferApi = require('./bufferApi');
-const session = require('./session');
+const sessionUtils = require('./session');
 
 const controller = module.exports;
 
@@ -12,19 +12,57 @@ controller.login = (req, res) => {
 
 controller.handleLogin = (req, res, next) => {
   if (!req.body.email || !req.body.password) {
-    res.send('missing required fields');
+    return res.send('missing required fields');
   }
 
   bufferApi.signin({
     email: req.body.email,
     password: req.body.password,
-  }) // response is { token, user }
-    .then((apiRes) => { console.log(apiRes.token, apiRes.user._id); return apiRes; }) // debug line
-    .then(response => session.create({ accessToken: response.token }))
-    .then((jwt) => {
-      session.writeCookie(jwt, res);
-      res.redirect('/');
+  })
+    .then(({ token, user, twostep }) => {
+      const newSession = {
+        userId: user._id,
+        accessToken: token,
+      };
+      if (twostep) {
+        newSession.tfa = twostep;
+      }
+      return sessionUtils.create(newSession);
     })
+    .then(({ session, token }) => {
+      sessionUtils.writeCookie(token, res);
+      const redirectURL = session.tfa ? '/login/tfa' : '/';
+      res.redirect(redirectURL);
+    })
+    .catch(next);
+};
+
+controller.tfa = (req, res) => {
+  if (!req.session.tfa) {
+    return res.redirect('/');
+  }
+  res.sendFile(join(__dirname, '../views/tfa.html'));
+};
+
+controller.handleTfa = (req, res, next) => {
+  if (!req.session.tfa || (req.session.tfa && !req.session.userId)) {
+    return res.redirect('/login');
+  }
+  if (!req.body.code) {
+    return res.send('missing required fields');
+  }
+
+  bufferApi.tfa({
+    userId: req.session.userId,
+    code: req.body.code,
+  })
+    .then(({ token }) => {
+      req.session.accessToken = token;
+      delete req.session.tfa;
+      const sessionToken = sessionUtils.getCookie(req);
+      return sessionUtils.update({ token: sessionToken, session: req.session });
+    })
+    .then(() => res.redirect('/'))
     .catch(next);
 };
 
