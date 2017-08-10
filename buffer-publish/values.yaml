@@ -36,4 +36,5 @@ resources:
     cpu: 100m
     memory: 50Mi
 branchName: master
+branchSubdomain: ''
 track: stable
