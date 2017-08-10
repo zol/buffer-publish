@@ -5,6 +5,8 @@ metadata:
   labels:
     app: {{ .Chart.Name }}
     service: web
+    branch: {{ .Values.branchName }}
+    track: {{ .Values.track }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
   {{ if not .Values.ingress.enabled }}
   annotations:

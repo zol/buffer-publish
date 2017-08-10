@@ -3,10 +3,11 @@ kind: Deployment
 metadata:
   name: {{ template "fullname" . }}
   labels:
-    app: {{ template "fullname" . }}
+    app: {{ .Chart.Name }}
     service: app
-    track: stable
+    track: {{ .Values.track }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+    branch: {{ .Values.branchName }}
   namespace: buffer
 spec:
   minReadySeconds: 10
@@ -15,7 +16,7 @@ spec:
     matchLabels:
       app: {{ template "fullname" . }}
       service: app
-      track: stable
+      track: {{ .Values.track }}
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -27,7 +28,7 @@ spec:
       labels:
         app: {{ template "fullname" . }}
         service: app
-        track: stable
+        track: {{ .Values.track }}
     spec:
       containers:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

@@ -4,8 +4,8 @@
 replicaCount: 1
 image:
   repository: bufferapp/buffer-publish
-  tag: stable
-  pullPolicy: IfNotPresent
+  tag: latest
+  pullPolicy: Always
 service:
   name: nginx
   type: ClusterIP
@@ -36,3 +36,5 @@ resources:
     cpu: 100m
     memory: 50Mi
 branchName: master
+branchSubdomain: ''
+track: stable
