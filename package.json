@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "🍩",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean",
     "test": "if [ -n \"$CI\" ]; then yarn run init; fi && lerna run test",
     "test-update": "lerna run test-update",
-    "init": "yarn install && lerna bootstrap --loglevel verbose",
+    "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
     "start": "cd ./packages/server/ && yarn run start",
     "publish": "echo \"will eventually run: lerna publish\"",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
