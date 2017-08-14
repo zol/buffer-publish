@@ -10,15 +10,6 @@
     "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
-  "jest": {
-    "transformIgnorePatterns": [
-      "node_modules/(?!@bufferapp/*)"
-    ],
-    "verbose": true,
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
   "author": "melissa@buffer.com",
   "dependencies": {
     "@bufferapp/publish-profile-sidebar": "0.0.1",

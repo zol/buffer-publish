@@ -8,15 +8,6 @@
     "test": "yarn run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch"
   },
-  "jest": {
-    "verbose": true,
-    "transformIgnorePatterns": [
-      "node_modules/(?!@bufferapp/*)"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
   "author": "hharnisc@gmail.com",
   "dependencies": {
     "@bufferapp/logger": "0.7.0",

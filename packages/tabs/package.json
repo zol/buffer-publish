@@ -10,23 +10,6 @@
     "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
-  "jest": {
-    "transformIgnorePatterns": [
-      "node_modules/(?!@bufferapp/*)"
-    ],
-    "verbose": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
   "author": "emily@buffer.com",
   "dependencies": {
     "@bufferapp/publish-shared-components": "0.0.1",

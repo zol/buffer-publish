@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bufferapp/project-donut#readme",
   "devDependencies": {
-    "@bufferapp/react-keyframes": "0.2.4",
+    "@bufferapp/react-keyframes": "0.2.5-beta01",
     "axe-core": "2.2.0",
     "babel-core": "6.24.0",
     "babel-eslint": "7.2.0",

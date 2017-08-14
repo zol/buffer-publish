@@ -14,9 +14,9 @@
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.6.tgz#104417af8c4940c92d45164cc097d5d38fd7d957"
 
-"@bufferapp/react-keyframes@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.4.tgz#32d9ff1b2c27121bafe40ec285a56bb310141116"
+"@bufferapp/react-keyframes@0.2.5-beta01":
+  version "0.2.5-beta01"
+  resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5-beta01.tgz#96ae17b1461f18346b43a70f44ef4dcf262a4321"
 
 "@bufferapp/shutdown-helper@0.2.0":
   version "0.2.0"
@@ -6316,8 +6316,8 @@ react-simple-di@^1.2.0:
     hoist-non-react-statics "1.x.x"
 
 react-split-pane@^0.1.65:
-  version "0.1.65"
-  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.65.tgz#37c0b5ea5c960827e7f3621d0a114b0f8c9c8918"
+  version "0.1.66"
+  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.66.tgz#369085dd07ec1237bda123e73813dcc7dc6502c1"
   dependencies:
     inline-style-prefixer "^3.0.6"
     prop-types "^15.5.10"

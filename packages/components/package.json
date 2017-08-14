@@ -10,11 +10,6 @@
     "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bufferapp/buffer-components.git"
