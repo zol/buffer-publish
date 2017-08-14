@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/profile-sidebar",
+  "name": "@bufferapp/publish-profile-sidebar",
   "version": "0.0.1",
   "description": "Load and display a list of profiles",
   "main": "index.js",

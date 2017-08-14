@@ -1,5 +1,5 @@
 import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
-import { actionTypes as profileSidebarActionTypes } from '@bufferapp/profile-sidebar';
+import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-profile-sidebar';
 import {
   header,
 } from './components/SentPosts/postData';

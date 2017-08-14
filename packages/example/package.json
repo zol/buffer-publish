@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/example",
+  "name": "@bufferapp/publish-example",
   "version": "0.0.1",
   "description": "An example UI package",
   "main": "index.js",
@@ -21,7 +21,6 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/login": "0.0.1",
     "@bufferapp/components": "0.5.22",
     "@bufferapp/async-data-fetch": "0.0.1"
   },

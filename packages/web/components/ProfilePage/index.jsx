@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 import { Redirect } from 'react-router';
 
-import QueuedPosts from '@bufferapp/queue';
-import SentPosts from '@bufferapp/sent';
-import ProfileSettings from '@bufferapp/settings';
-import TabNavigation from '@bufferapp/tabs';
-import ProfileSidebar from '@bufferapp/profile-sidebar';
+import QueuedPosts from '@bufferapp/publish-queue';
+import SentPosts from '@bufferapp/publish-sent';
+import ProfileSettings from '@bufferapp/publish-settings';
+import TabNavigation from '@bufferapp/publish-tabs';
+import ProfileSidebar from '@bufferapp/publish-profile-sidebar';
 
 import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
 

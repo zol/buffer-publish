@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/web",
+  "name": "@bufferapp/publish-web",
   "version": "0.0.1",
   "description": "Buffer Web Dashboard",
   "main": "index.jsx",
@@ -22,14 +22,14 @@
   "dependencies": {
     "@bufferapp/components": "0.5.22",
     "@bufferapp/publish-shared-components": "0.0.1",
-    "@bufferapp/store": "0.0.1",
-    "@bufferapp/example": "0.0.1",
-    "@bufferapp/tabs": "0.0.1",
-    "@bufferapp/queue": "0.0.1",
-    "@bufferapp/sent": "0.0.1",
-    "@bufferapp/settings": "0.0.1",
+    "@bufferapp/publish-store": "0.0.1",
+    "@bufferapp/publish-example": "0.0.1",
+    "@bufferapp/publish-tabs": "0.0.1",
+    "@bufferapp/publish-queue": "0.0.1",
+    "@bufferapp/publish-sent": "0.0.1",
+    "@bufferapp/publish-settings": "0.0.1",
     "@bufferapp/async-data-fetch": "0.0.1",
-    "@bufferapp/profile-sidebar": "0.0.1",
+    "@bufferapp/publish-profile-sidebar": "0.0.1",
     "@bufferapp/app-sidebar": "0.0.1",
     "@bufferapp/publish-routes": "0.0.1"
   },

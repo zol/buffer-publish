@@ -1,5 +1,5 @@
 import React from 'react';
-import createStore from '@bufferapp/store';
+import createStore from '@bufferapp/publish-store';
 import {
   ConnectedRouter as Router,
 } from 'react-router-redux';

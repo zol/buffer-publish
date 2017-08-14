@@ -1,4 +1,4 @@
-# @bufferapp/example
+# @bufferapp/publish-example
 
 An example UI package that implements a [container](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0), [reducer](http://redux.js.org/docs/basics/Reducers.html) and [middleware](http://redux.js.org/docs/advanced/Middleware.html).
 
@@ -85,7 +85,7 @@ This is the main package file, it's default export should be the container.
 Imagine another package is trying to use the package you're building. The package API should look like this:
 
 ```js
-import Example, { actions, actionTypes, middleware, reducer } from '@bufferapp/example';
+import Example, { actions, actionTypes, middleware, reducer } from '@bufferapp/publish-example';
 ```
 
 ### components/

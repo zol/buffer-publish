@@ -21,7 +21,6 @@
   },
   "author": "hamstu@gmail.com",
   "dependencies": {
-    "@bufferapp/login": "0.0.1",
     "@bufferapp/components": "0.5.22",
     "@bufferapp/async-data-fetch": "0.0.1"
   },

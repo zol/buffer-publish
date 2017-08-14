@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/tabs",
+  "name": "@bufferapp/publish-tabs",
   "version": "0.0.1",
   "description": "Buffer Tabs Package",
   "main": "index.js",

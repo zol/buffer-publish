@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/sent",
+  "name": "@bufferapp/publish-sent",
   "version": "0.0.1",
   "description": "Sent Posts package",
   "main": "index.js",
@@ -21,10 +21,9 @@
   },
   "author": "melissa@buffer.com",
   "dependencies": {
-    "@bufferapp/login": "0.0.1",
     "@bufferapp/components": "0.5.22",
     "@bufferapp/publish-shared-components": "0.0.1",
-    "@bufferapp/profile-sidebar": "0.0.1",
+    "@bufferapp/publish-profile-sidebar": "0.0.1",
     "@bufferapp/async-data-fetch": "0.0.1"
 
   },

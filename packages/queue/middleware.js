@@ -1,4 +1,4 @@
-import { actionTypes } from '@bufferapp/profile-sidebar';
+import { actionTypes } from '@bufferapp/publish-profile-sidebar';
 import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
 
 export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars

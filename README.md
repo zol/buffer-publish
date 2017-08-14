@@ -145,7 +145,7 @@ If you need to listen to another packages events, import the actionTypes into th
 
 
 ```js
-//reducer.js - in @bufferapp/example package
+//reducer.js - in @bufferapp/publish-example package
 import { actionTypes, loginActionTypes } from '@bufferapp/login';
 
 // handle login event
