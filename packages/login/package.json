@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/login",
-  "version": "0.5.24-beta.1",
+  "version": "0.5.25",
   "description": "Buffer Login Package",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/async-data-fetch": "^0.5.24-beta.1"
+    "@bufferapp/async-data-fetch": "0.5.25"
   },
   "devDependencies": {
     "eslint": "3.19.0",
