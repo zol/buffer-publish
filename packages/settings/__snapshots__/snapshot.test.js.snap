@@ -371,6 +371,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -403,6 +404,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -867,6 +869,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -899,6 +902,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -1073,6 +1077,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -1105,6 +1110,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -1647,6 +1653,7 @@ exports[`Snapshots PostingTimeForm with 24hour time 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -1679,6 +1686,7 @@ exports[`Snapshots PostingTimeForm with 24hour time 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -2143,6 +2151,7 @@ exports[`Snapshots PostingTimeForm with 24hour time 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -2175,6 +2184,7 @@ exports[`Snapshots PostingTimeForm with 24hour time 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -2657,6 +2667,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -2689,6 +2700,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -3153,6 +3165,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -3185,6 +3198,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -3359,6 +3373,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -3391,6 +3406,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                     <div
                       style={
                         Object {
+                          "fontFamily": "none",
                           "height": "0.937rem",
                         }
                       }
@@ -4036,6 +4052,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                         <div
                           style={
                             Object {
+                              "fontFamily": "none",
                               "height": "0.937rem",
                             }
                           }
@@ -4068,6 +4085,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                         <div
                           style={
                             Object {
+                              "fontFamily": "none",
                               "height": "0.937rem",
                             }
                           }
@@ -4532,6 +4550,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                         <div
                           style={
                             Object {
+                              "fontFamily": "none",
                               "height": "0.937rem",
                             }
                           }
@@ -4564,6 +4583,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                         <div
                           style={
                             Object {
+                              "fontFamily": "none",
                               "height": "0.937rem",
                             }
                           }
@@ -4738,6 +4758,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                         <div
                           style={
                             Object {
+                              "fontFamily": "none",
                               "height": "0.937rem",
                             }
                           }
@@ -4770,6 +4791,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                         <div
                           style={
                             Object {
+                              "fontFamily": "none",
                               "height": "0.937rem",
                             }
                           }

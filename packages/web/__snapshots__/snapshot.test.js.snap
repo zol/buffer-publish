@@ -3560,6 +3560,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                               <div
                                 style={
                                   Object {
+                                    "fontFamily": "none",
                                     "height": "0.937rem",
                                   }
                                 }
@@ -3592,6 +3593,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                               <div
                                 style={
                                   Object {
+                                    "fontFamily": "none",
                                     "height": "0.937rem",
                                   }
                                 }
@@ -4056,6 +4058,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                               <div
                                 style={
                                   Object {
+                                    "fontFamily": "none",
                                     "height": "0.937rem",
                                   }
                                 }
@@ -4088,6 +4091,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                               <div
                                 style={
                                   Object {
+                                    "fontFamily": "none",
                                     "height": "0.937rem",
                                   }
                                 }
@@ -4262,6 +4266,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                               <div
                                 style={
                                   Object {
+                                    "fontFamily": "none",
                                     "height": "0.937rem",
                                   }
                                 }
@@ -4294,6 +4299,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                               <div
                                 style={
                                   Object {
+                                    "fontFamily": "none",
                                     "height": "0.937rem",
                                   }
                                 }
