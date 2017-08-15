@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-web",
-  "version": "0.5.25",
+  "version": "0.5.26",
   "description": "Buffer Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -11,18 +11,18 @@
     "test-update": "jest -u"
   },
   "dependencies": {
-    "@bufferapp/app-sidebar": "0.5.25",
+    "@bufferapp/app-sidebar": "0.5.26",
     "@bufferapp/async-data-fetch": "0.5.25",
-    "@bufferapp/components": "0.5.25",
-    "@bufferapp/publish-example": "0.5.25",
-    "@bufferapp/publish-profile-sidebar": "0.5.25",
-    "@bufferapp/publish-queue": "0.5.25",
+    "@bufferapp/components": "0.5.26",
+    "@bufferapp/publish-example": "0.5.26",
+    "@bufferapp/publish-profile-sidebar": "0.5.26",
+    "@bufferapp/publish-queue": "0.5.26",
     "@bufferapp/publish-routes": "0.5.25",
-    "@bufferapp/publish-sent": "0.5.25",
-    "@bufferapp/publish-settings": "0.5.25",
-    "@bufferapp/publish-shared-components": "0.5.25",
-    "@bufferapp/publish-store": "0.5.25",
-    "@bufferapp/publish-tabs": "0.5.25"
+    "@bufferapp/publish-sent": "0.5.26",
+    "@bufferapp/publish-settings": "0.5.26",
+    "@bufferapp/publish-shared-components": "0.5.26",
+    "@bufferapp/publish-store": "0.5.26",
+    "@bufferapp/publish-tabs": "0.5.26"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {
