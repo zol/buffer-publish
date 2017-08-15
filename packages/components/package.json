@@ -33,5 +33,8 @@
   "dependencies": {
     "react-autocomplete": "1.5.9",
     "react-day-picker": "5.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
