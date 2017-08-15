@@ -31,6 +31,7 @@
     "storybook-addon-a11y": "3.0.0"
   },
   "dependencies": {
+    "@bufferapp/react-keyframes": "0.2.5",
     "react-autocomplete": "1.5.9",
     "react-day-picker": "5.5.1"
   },
