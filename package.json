@@ -9,7 +9,7 @@
     "test-update": "lerna run test-update",
     "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
     "start": "cd ./packages/server/ && yarn run start",
-    "publish": "echo \"will eventually run: lerna publish\"",
+    "publish": "lerna publish",
     "publish-beta": "lerna publish --npm-tag=beta",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`",
     "updated": "lerna updated"
