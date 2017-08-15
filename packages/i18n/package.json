@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-i18n",
-  "version": "0.0.1",
+  "version": "0.5.24-beta.0",
   "description": "Buffer Login Package",
   "main": "index.js",
   "scripts": {
