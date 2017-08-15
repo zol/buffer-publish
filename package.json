@@ -9,8 +9,8 @@
     "test-update": "lerna run test-update",
     "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
     "start": "cd ./packages/server/ && yarn run start",
-    "publish": "lerna publish",
-    "publish-beta": "lerna publish --npm-tag=beta",
+    "publish": "lerna publish --exact",
+    "publish-beta": "lerna publish --npm-tag=beta --exact",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`",
     "updated": "lerna updated"
   },
