@@ -211,7 +211,7 @@ const InputTime = ({
         <TimeColonWrapper
           minimal={minimal}
         >
-          <Text>:</Text>
+          <Text size={'small'}>:</Text>
         </TimeColonWrapper>
         : null }
       <SelectWrapper

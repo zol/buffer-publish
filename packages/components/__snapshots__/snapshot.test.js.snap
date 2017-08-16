@@ -13277,7 +13277,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           Object {
             "color": "#59626a",
             "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
+            "fontSize": "0.8rem",
             "fontWeight": 400,
           }
         }
@@ -14197,7 +14197,7 @@ exports[`Snapshots InputTime displayTimeColon minimal 1`] = `
           Object {
             "color": "#59626a",
             "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
+            "fontSize": "0.8rem",
             "fontWeight": 400,
           }
         }
