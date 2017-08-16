@@ -1,19 +1,19 @@
 {
   "name": "@bufferapp/publish-tabs",
-  "version": "0.0.1",
+  "version": "0.5.27",
   "description": "Buffer Tabs Package",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
-    "test-watch": "jest --watch",
-    "test-update": "jest -u"
+    "test-update": "jest --watch --config=../../.jestrc.json",
+    "test-update": "jest -u --config=../../.jestrc.json"
   },
   "author": "emily@buffer.com",
   "dependencies": {
-    "@bufferapp/publish-shared-components": "0.0.1",
-    "@bufferapp/publish-routes": "0.0.1"
+    "@bufferapp/publish-routes": "0.5.25",
+    "@bufferapp/publish-shared-components": "0.5.27"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
@@ -21,5 +21,8 @@
     "eslint": "3.19.0",
     "jest": "19.0.2",
     "storybook-addon-a11y": "3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

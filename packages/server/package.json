@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-server",
-  "version": "0.0.1",
+  "version": "0.5.25",
   "description": "",
   "scripts": {
     "start": "micro",
@@ -28,5 +28,8 @@
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

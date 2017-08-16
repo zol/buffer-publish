@@ -14,9 +14,9 @@
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.6.tgz#104417af8c4940c92d45164cc097d5d38fd7d957"
 
-"@bufferapp/react-keyframes@0.2.5-beta01":
-  version "0.2.5-beta01"
-  resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5-beta01.tgz#96ae17b1461f18346b43a70f44ef4dcf262a4321"
+"@bufferapp/react-keyframes@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5.tgz#fed847849f170c440ad6ea683224352e4b882b92"
 
 "@bufferapp/shutdown-helper@0.2.0":
   version "0.2.0"

@@ -51,6 +51,7 @@ const RangeIcon = () =>
     <div
       style={{
         height: `${(height / 2) - (borderWidthNumber)}rem`,
+        fontFamily: 'none',
       }}
     >
       <ArrowUpIcon size={'small'} />
@@ -58,6 +59,7 @@ const RangeIcon = () =>
     <div
       style={{
         height: `${(height / 2) - (borderWidthNumber)}rem`,
+        fontFamily: 'none',
       }}
     >
       <ArrowDownIcon size={'small'} />

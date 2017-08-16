@@ -11167,6 +11167,7 @@ exports[`Snapshots InputTime default 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -11199,6 +11200,7 @@ exports[`Snapshots InputTime default 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -11663,6 +11665,7 @@ exports[`Snapshots InputTime default 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -11695,6 +11698,7 @@ exports[`Snapshots InputTime default 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -11869,6 +11873,7 @@ exports[`Snapshots InputTime default 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -11901,6 +11906,7 @@ exports[`Snapshots InputTime default 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -12139,6 +12145,7 @@ exports[`Snapshots InputTime disabled 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -12171,6 +12178,7 @@ exports[`Snapshots InputTime disabled 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -12635,6 +12643,7 @@ exports[`Snapshots InputTime disabled 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -12667,6 +12676,7 @@ exports[`Snapshots InputTime disabled 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -12841,6 +12851,7 @@ exports[`Snapshots InputTime disabled 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -12873,6 +12884,7 @@ exports[`Snapshots InputTime disabled 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -13111,6 +13123,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -13143,6 +13156,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -13631,6 +13645,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -13663,6 +13678,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -13837,6 +13853,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -13869,6 +13886,7 @@ exports[`Snapshots InputTime displayTimeColon 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -16321,6 +16339,7 @@ exports[`Snapshots InputTime with 24 hour selection 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -16353,6 +16372,7 @@ exports[`Snapshots InputTime with 24 hour selection 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -16817,6 +16837,7 @@ exports[`Snapshots InputTime with 24 hour selection 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -16849,6 +16870,7 @@ exports[`Snapshots InputTime with 24 hour selection 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -17087,6 +17109,7 @@ exports[`Snapshots InputTime with afternoon value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -17119,6 +17142,7 @@ exports[`Snapshots InputTime with afternoon value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -17583,6 +17607,7 @@ exports[`Snapshots InputTime with afternoon value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -17615,6 +17640,7 @@ exports[`Snapshots InputTime with afternoon value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -17789,6 +17815,7 @@ exports[`Snapshots InputTime with afternoon value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -17821,6 +17848,7 @@ exports[`Snapshots InputTime with afternoon value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -18119,6 +18147,7 @@ exports[`Snapshots InputTime with afternoon value set and 24 hour selection 1`] 
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -18151,6 +18180,7 @@ exports[`Snapshots InputTime with afternoon value set and 24 hour selection 1`] 
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -18615,6 +18645,7 @@ exports[`Snapshots InputTime with afternoon value set and 24 hour selection 1`] 
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -18647,6 +18678,7 @@ exports[`Snapshots InputTime with afternoon value set and 24 hour selection 1`] 
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -18885,6 +18917,7 @@ exports[`Snapshots InputTime with form submitting 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -18917,6 +18950,7 @@ exports[`Snapshots InputTime with form submitting 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -19381,6 +19415,7 @@ exports[`Snapshots InputTime with form submitting 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -19413,6 +19448,7 @@ exports[`Snapshots InputTime with form submitting 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -19587,6 +19623,7 @@ exports[`Snapshots InputTime with form submitting 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -19619,6 +19656,7 @@ exports[`Snapshots InputTime with form submitting 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -19857,6 +19895,7 @@ exports[`Snapshots InputTime with value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -19889,6 +19928,7 @@ exports[`Snapshots InputTime with value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -20353,6 +20393,7 @@ exports[`Snapshots InputTime with value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -20385,6 +20426,7 @@ exports[`Snapshots InputTime with value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -20559,6 +20601,7 @@ exports[`Snapshots InputTime with value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -20591,6 +20634,7 @@ exports[`Snapshots InputTime with value set 1`] = `
           <div
             style={
               Object {
+                "fontFamily": "none",
                 "height": "0.937rem",
               }
             }
@@ -23501,6 +23545,7 @@ exports[`Snapshots Select rangeSelector 1`] = `
       <div
         style={
           Object {
+            "fontFamily": "none",
             "height": "0.937rem",
           }
         }
@@ -23533,6 +23578,7 @@ exports[`Snapshots Select rangeSelector 1`] = `
       <div
         style={
           Object {
+            "fontFamily": "none",
             "height": "0.937rem",
           }
         }
@@ -23633,6 +23679,7 @@ exports[`Snapshots Select rangeSelector centerText 1`] = `
       <div
         style={
           Object {
+            "fontFamily": "none",
             "height": "0.937rem",
           }
         }
@@ -23665,6 +23712,7 @@ exports[`Snapshots Select rangeSelector centerText 1`] = `
       <div
         style={
           Object {
+            "fontFamily": "none",
             "height": "0.937rem",
           }
         }
