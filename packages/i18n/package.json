@@ -1,13 +1,12 @@
 {
   "name": "@bufferapp/publish-i18n",
-  "version": "0.5.25",
+  "version": "0.5.28",
   "description": "Buffer Login Package",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
-    "test-update": "jest --watch --config=../../.jestrc.json",
     "test-update": "jest -u --config=../../.jestrc.json"
   },
   "author": "hharnisc@gmail.com",

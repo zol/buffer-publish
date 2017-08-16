@@ -1,21 +1,20 @@
 {
   "name": "@bufferapp/publish-queue",
-  "version": "0.5.27",
+  "version": "0.5.28",
   "description": "Queue UI package",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
-    "test-update": "jest --watch --config=../../.jestrc.json",
     "test-update": "jest -u --config=../../.jestrc.json"
   },
   "author": "melissa@buffer.com",
   "dependencies": {
     "@bufferapp/async-data-fetch": "0.5.25",
-    "@bufferapp/components": "0.5.27",
-    "@bufferapp/publish-profile-sidebar": "0.5.27",
-    "@bufferapp/publish-shared-components": "0.5.27",
+    "@bufferapp/components": "0.5.28",
+    "@bufferapp/publish-profile-sidebar": "0.5.28",
+    "@bufferapp/publish-shared-components": "0.5.28",
     "moment-timezone": "0.5.12"
   },
   "devDependencies": {

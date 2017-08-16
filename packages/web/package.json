@@ -1,28 +1,27 @@
 {
   "name": "@bufferapp/publish-web",
-  "version": "0.5.27",
+  "version": "0.5.28",
   "description": "Buffer Web Dashboard",
   "main": "index.jsx",
   "scripts": {
     "start": "start-storybook -p 9003",
     "lint": "eslint . --ignore-pattern coverage .storybook node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
-    "test-update": "jest --watch --config=../../.jestrc.json",
     "test-update": "jest -u --config=../../.jestrc.json"
   },
   "dependencies": {
-    "@bufferapp/app-sidebar": "0.5.27",
+    "@bufferapp/app-sidebar": "0.5.28",
     "@bufferapp/async-data-fetch": "0.5.25",
-    "@bufferapp/components": "0.5.27",
-    "@bufferapp/publish-example": "0.5.27",
-    "@bufferapp/publish-profile-sidebar": "0.5.27",
-    "@bufferapp/publish-queue": "0.5.27",
+    "@bufferapp/components": "0.5.28",
+    "@bufferapp/publish-example": "0.5.28",
+    "@bufferapp/publish-profile-sidebar": "0.5.28",
+    "@bufferapp/publish-queue": "0.5.28",
     "@bufferapp/publish-routes": "0.5.25",
-    "@bufferapp/publish-sent": "0.5.27",
-    "@bufferapp/publish-settings": "0.5.27",
-    "@bufferapp/publish-shared-components": "0.5.27",
-    "@bufferapp/publish-store": "0.5.27",
-    "@bufferapp/publish-tabs": "0.5.27"
+    "@bufferapp/publish-sent": "0.5.28",
+    "@bufferapp/publish-settings": "0.5.28",
+    "@bufferapp/publish-shared-components": "0.5.28",
+    "@bufferapp/publish-store": "0.5.28",
+    "@bufferapp/publish-tabs": "0.5.28"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {
