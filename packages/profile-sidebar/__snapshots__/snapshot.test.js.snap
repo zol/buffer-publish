@@ -2197,6 +2197,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
         />
       </div>
       <button
+        aria-label={null}
         disabled={undefined}
         onBlur={[Function]}
         onClick={undefined}
@@ -6428,6 +6429,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
         />
       </div>
       <button
+        aria-label={null}
         disabled={undefined}
         onBlur={[Function]}
         onClick={undefined}

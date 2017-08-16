@@ -230,6 +230,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   >
                                     <button
+                                      aria-label={null}
                                       disabled={undefined}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -284,6 +285,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                   }
                                 >
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -340,6 +342,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   />
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -535,6 +538,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   >
                                     <button
+                                      aria-label={null}
                                       disabled={undefined}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -589,6 +593,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                   }
                                 >
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -645,6 +650,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   />
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -890,6 +896,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   >
                                     <button
+                                      aria-label={null}
                                       disabled={undefined}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -944,6 +951,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                   }
                                 >
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -1000,6 +1008,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   />
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -1195,6 +1204,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   >
                                     <button
+                                      aria-label={null}
                                       disabled={undefined}
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -1249,6 +1259,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                   }
                                 >
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -1305,6 +1316,7 @@ exports[`Snapshots QueuedPosts default 1`] = `
                                     }
                                   />
                                   <button
+                                    aria-label={null}
                                     disabled={undefined}
                                     onBlur={[Function]}
                                     onClick={[Function]}

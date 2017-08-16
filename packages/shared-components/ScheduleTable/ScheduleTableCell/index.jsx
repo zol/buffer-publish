@@ -5,6 +5,7 @@ import {
   CloseIcon,
   InputTime,
 } from '@bufferapp/components';
+import { calculateStyles } from '@bufferapp/components/lib/utils';
 import TableCell from '../../TableCell';
 
 const style = {
@@ -14,20 +15,15 @@ const style = {
   alignItems: 'center',
 };
 
-const buttonStyle = {
-  position: 'absolute',
-  right: '0.5rem',
-};
-
 const iconWrapperStyle = {
   marginTop: '0.1rem',
 };
 
 /* eslint-disable react/prop-types */
 
-const RemoveButton = ({ onRemoveTimeClick }) =>
+const RemoveButton = ({ onRemoveTimeClick }, buttonStyle) =>
   <div style={buttonStyle}>
-    <Button onClick={onRemoveTimeClick} noStyle>
+    <Button onClick={onRemoveTimeClick} noStyle label="remove time">
       <div style={iconWrapperStyle}>
         <CloseIcon size={'small'} />
       </div>
@@ -39,24 +35,43 @@ const TableCellContents = ({
   hovered,
   select24Hours,
   time,
-}) =>
-  <div style={style}>
-    {hovered && !disabled ? RemoveButton(time) : null}
-    <div
-      style={{
-        width: '4.5rem',
-      }}
-    >
-      <InputTime
-        disabled={disabled}
-        input={time}
-        select24Hours={select24Hours}
-        minimal
-        centerText
-        displayTimeColon
-      />
+}) => {
+  const buttonStyle = calculateStyles({
+    default: {
+      opacity: 0,
+      position: 'absolute',
+      right: '0.5rem',
+    },
+    hovered: {
+      opacity: '1',
+    },
+    disabled: {
+      opacity: '0',
+    }
+  }, {
+    hovered,
+    disabled,
+  });
+  return (
+    <div style={style}>
+      <div
+        style={{
+          width: '4.5rem',
+        }}
+      >
+        <InputTime
+          disabled={disabled}
+          input={time}
+          select24Hours={select24Hours}
+          minimal
+          centerText
+          displayTimeColon
+        />
+      </div>
+      {RemoveButton(time, buttonStyle)}
     </div>
-  </div>;
+  );
+};
 /* eslint-enable react/prop-types */
 
 const ScheduleTableCell = ({
