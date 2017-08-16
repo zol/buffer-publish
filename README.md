@@ -7,6 +7,7 @@ Previously Project Donut 🍩
 ## Table of contents
 
 - [Quick Start](#quick-start)
+- [Publishing Packages](#publishing-packages)
 - [NPM Commands](#npm-commands)
 - [Adding New Dependencies](#adding-new-dependencies)
 - [How Packages Communicate](#how-packages-communicate)
@@ -53,11 +54,60 @@ Type this in the Javascript Console:
 logout();
 ```
 
+## Publishing Packages
+
+**Login**
+- Login to your NPM user who has access to a Buffer NPM Organization. If you're not sure if you're part of the Buffer NPM Organization check this list: https://www.npmjs.com/org/bufferapp/members
+
+```sh
+npm login
+```
+**Make Package Changes**
+
+Make changes in a branch and get them reviewed in PR (our current flow)
+
+**Bring Changes Into Master**
+
+Rebase (or merge if you're more comfortable with that flow) the reviewed branch into master (our current flow)
+
+**Publish**
+
+*Important* - this command *must* be run with `npm run publish` - otherwise it doesn't pick up the logged in NPM user
+
+```
+npm run publish
+```
+
+After running this command you'll be prompted with the following menu
+
+```sh
+lerna info Comparing with tag v0.5.27
+? Select a new version (currently 0.5.27) (Use arrow keys)
+❯ Patch (0.5.28)
+  Minor (0.6.0)
+  Major (1.0.0)
+  Prepatch (0.5.28-0)
+  Preminor (0.6.0-0)
+  Premajor (1.0.0-0)
+  Prerelease
+  Custom
+```
+
+Under most cases you'll likely use a Patch. If you're unsure, this is a great question to ask the team.
+
+This picks up all changed packages and updates versions *automatically*. It also pushes the version tag to Git. For more info on the publish command: https://github.com/lerna/lerna#publish
+
+### Issues Seen
+
+#### vundefined
+
+If you run `git tags` you'll see `vundefined` listed as a tag. This happened when trying to do a publish on a branch that had git hashes changed due to a rebase. This also blocks publishing complaining about a git hash missing. To fix this one just delete the `vundefined` and undoing the related version update commits. This is a great one to ask for help!
+
 ## NPM Commands
 
 ### bootstrap
 
-This runs `npm` install on each package and symlinks local packages.
+This runs `yarn` (to install) on each package and symlinks local packages.
 
 ### clean
 
@@ -65,11 +115,15 @@ Deletes all `node_modules` from all packages. Use this first if you see any odd 
 
 ### test
 
-Runs `npm test` on all packages
+Runs `yarn test` on all packages
+
+### test-update
+
+Runs `yarn run test-update` on all packages to update all snapshot tests
 
 ### init
 
-Runs `npm install` on the top level package and then runs `npm run bootstrap` to setup all packages.
+Runs `yarn` on the top level package and then runs `yarn run bootstrap` to setup all packages.
 
 ### start
 
@@ -77,11 +131,7 @@ Start up the publish service (dev mode starts up webpack with hot module reloadi
 
 ### publish
 
-**Coming Soon** This publishes the packages on NPM
-
-### build
-
-**Coming Soon** Use webpack to create a production build
+This publishes the changed packages on NPM - **Important** this command *must* be run with `npm run publish` - otherwise it doesn't pick up the logged in NPM user
 
 ## Adding New Dependencies
 
