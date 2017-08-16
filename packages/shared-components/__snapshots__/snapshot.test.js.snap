@@ -17318,10 +17318,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -18933,10 +18936,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -20548,10 +20554,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -22163,10 +22172,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -23778,10 +23790,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -25393,10 +25408,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -27008,10 +27026,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -28639,10 +28660,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -30254,10 +30278,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -31869,10 +31896,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -33484,10 +33514,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -35099,10 +35132,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -36714,10 +36750,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -38329,10 +38368,13 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -39960,10 +40002,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -41707,10 +41752,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -43454,10 +43502,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -45201,10 +45252,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -46948,10 +47002,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -48695,10 +48752,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -50442,10 +50502,13 @@ exports[`Snapshots ScheduleTable default 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -52205,10 +52268,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -53952,10 +54018,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -55699,10 +55768,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -57446,10 +57518,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -59193,10 +59268,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -60940,10 +61018,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -62687,10 +62768,13 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64451,10 +64535,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64504,10 +64591,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64557,10 +64647,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64610,10 +64703,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64663,10 +64759,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64716,10 +64815,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64769,10 +64871,13 @@ exports[`Snapshots ScheduleTable no times 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -64837,10 +64942,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -65737,10 +65845,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -66637,10 +66748,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -67537,10 +67651,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -68437,10 +68554,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -69337,10 +69457,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -70237,10 +70360,13 @@ exports[`Snapshots ScheduleTable single time 1`] = `
           style={
             Object {
               "borderBottom": "0.063rem solid #e6ebef",
+              "cursor": "default",
+              "outline": "none",
               "paddingBottom": "1rem",
               "paddingTop": "1rem",
             }
           }
+          tabIndex="0"
         >
           <span
             style={
@@ -74410,10 +74536,13 @@ exports[`Snapshots ScheduleTableColumn 24-hour time setting 1`] = `
       style={
         Object {
           "borderBottom": "0.063rem solid #e6ebef",
+          "cursor": "default",
+          "outline": "none",
           "paddingBottom": "1rem",
           "paddingTop": "1rem",
         }
       }
+      tabIndex="0"
     >
       <span
         style={
@@ -76020,10 +76149,13 @@ exports[`Snapshots ScheduleTableColumn 24-hour time setting, disabled 1`] = `
       style={
         Object {
           "borderBottom": "0.063rem solid #e6ebef",
+          "cursor": "default",
+          "outline": "none",
           "paddingBottom": "1rem",
           "paddingTop": "1rem",
         }
       }
+      tabIndex="0"
     >
       <span
         style={
@@ -77630,10 +77762,13 @@ exports[`Snapshots ScheduleTableColumn default 1`] = `
       style={
         Object {
           "borderBottom": "0.063rem solid #e6ebef",
+          "cursor": "default",
+          "outline": "none",
           "paddingBottom": "1rem",
           "paddingTop": "1rem",
         }
       }
+      tabIndex="0"
     >
       <span
         style={
@@ -79372,10 +79507,13 @@ exports[`Snapshots ScheduleTableColumn disabled 1`] = `
       style={
         Object {
           "borderBottom": "0.063rem solid #e6ebef",
+          "cursor": "default",
+          "outline": "none",
           "paddingBottom": "1rem",
           "paddingTop": "1rem",
         }
       }
+      tabIndex="0"
     >
       <span
         style={
@@ -81114,10 +81252,13 @@ exports[`Snapshots ScheduleTableColumn single time 1`] = `
       style={
         Object {
           "borderBottom": "0.063rem solid #e6ebef",
+          "cursor": "default",
+          "outline": "none",
           "paddingBottom": "1rem",
           "paddingTop": "1rem",
         }
       }
+      tabIndex="0"
     >
       <span
         style={
@@ -82010,10 +82151,13 @@ exports[`Snapshots ScheduleTableColumn without times 1`] = `
       style={
         Object {
           "borderBottom": "0.063rem solid #e6ebef",
+          "cursor": "default",
+          "outline": "none",
           "paddingBottom": "1rem",
           "paddingTop": "1rem",
         }
       }
+      tabIndex="0"
     >
       <span
         style={
@@ -82046,10 +82190,13 @@ exports[`Snapshots ScheduleTableHeader default 1`] = `
     style={
       Object {
         "borderBottom": "0.063rem solid #e6ebef",
+        "cursor": "default",
+        "outline": "none",
         "paddingBottom": "1rem",
         "paddingTop": "1rem",
       }
     }
+    tabIndex="0"
   >
     <span
       style={

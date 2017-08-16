@@ -8,12 +8,14 @@ const headerStyle = {
   paddingTop: '1rem',
   paddingBottom: '1rem',
   borderBottom: `${borderWidth} solid ${mystic}`,
+  cursor: 'default',
+  outline: 'none',
 };
 
 const ScheduleTableHeader = ({
   dayName,
 }) => (
-  <div style={headerStyle}>
+  <div style={headerStyle} tabIndex="0">
     <Text
       color={'outerSpace'}
       size={'small'}

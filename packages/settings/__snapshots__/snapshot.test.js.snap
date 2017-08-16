@@ -5108,10 +5108,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
@@ -6855,10 +6858,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
@@ -8602,10 +8608,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
@@ -10349,10 +10358,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
@@ -12096,10 +12108,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
@@ -13843,10 +13858,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
@@ -15590,10 +15608,13 @@ exports[`Snapshots ProfileSettings default 1`] = `
               style={
                 Object {
                   "borderBottom": "0.063rem solid #e6ebef",
+                  "cursor": "default",
+                  "outline": "none",
                   "paddingBottom": "1rem",
                   "paddingTop": "1rem",
                 }
               }
+              tabIndex="0"
             >
               <span
                 style={
