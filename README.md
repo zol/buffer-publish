@@ -70,6 +70,14 @@ Make changes in a branch and get them reviewed in PR (our current flow)
 
 Rebase (or merge if you're more comfortable with that flow) the reviewed branch into master (our current flow)
 
+**Pull Master**
+
+Sanity check to make sure you've got the latest changes
+
+```
+git pull
+```
+
 **Publish**
 
 *Important* - this command *must* be run with `npm run publish` - otherwise it doesn't pick up the logged in NPM user
