@@ -1635,6 +1635,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
             />
           </div>
           <button
+            aria-label={null}
             disabled={undefined}
             onBlur={[Function]}
             onClick={undefined}
@@ -2815,6 +2816,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
             />
           </div>
           <button
+            aria-label={null}
             disabled={undefined}
             onBlur={[Function]}
             onClick={undefined}
@@ -4377,6 +4379,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                       }
                     >
                       <button
+                        aria-label={null}
                         disabled={false}
                         onBlur={[Function]}
                         onClick={[Function]}

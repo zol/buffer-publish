@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@bufferapp/react-keyframes@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5.tgz#fed847849f170c440ad6ea683224352e4b882b92"
+
 "@storybook/addon-actions@^3.1.2", "@storybook/addon-actions@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.2.0.tgz#e5d7f63fec89cae1b98bbc124694153b7409317f"
