@@ -40,6 +40,7 @@ const Link = ({
     },
     unstyled: {
       textDecoration: 'none',
+      outline: 'none',
     },
     block: {
       display: 'block',

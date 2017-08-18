@@ -790,6 +790,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -948,6 +949,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -1271,6 +1273,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -1442,6 +1445,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -1679,164 +1683,171 @@ exports[`Snapshots ProfilePage should render 1`] = `
         }
       }
     >
-      <div>
-        <div
-          style={
-            Object {
-              "display": "inline-block",
-              "margin": "0 42px 0 0",
-              "minWidth": "60px",
-              "textAlign": "center",
-              "transform": "translate(0, 1px)",
-            }
-          }
-        >
-          <a
-            href="#"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+      <div
+        id="tabs"
+      >
+        <div>
+          <div
             style={
               Object {
-                "color": "#168eea",
-                "display": "block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "padding": "18px 13px 17px 13px",
-                "textDecoration": "none",
+                "display": "inline-block",
+                "margin": "0 42px 0 0",
+                "minWidth": "60px",
+                "textAlign": "center",
+                "transform": "translate(0, 1px)",
               }
             }
-            target="_self"
           >
-            <span
-              onMouseEnter={undefined}
-              onMouseLeave={undefined}
+            <a
+              href="#"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "display": "block",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "outline": "none",
+                  "padding": "18px 13px 17px 13px",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
             >
               <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
-                  }
-                }
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
               >
-                Queue
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Queue
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-        <div
-          style={
-            Object {
-              "display": "inline-block",
-              "margin": "0 42px 0 0",
-              "minWidth": "60px",
-              "textAlign": "center",
-              "transform": "translate(0, 1px)",
-            }
-          }
-        >
-          <a
-            href="#"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+            </a>
+          </div>
+          <div
             style={
               Object {
-                "color": "#168eea",
-                "display": "block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "padding": "18px 13px 17px 13px",
-                "textDecoration": "none",
+                "display": "inline-block",
+                "margin": "0 42px 0 0",
+                "minWidth": "60px",
+                "textAlign": "center",
+                "transform": "translate(0, 1px)",
               }
             }
-            target="_self"
           >
-            <span
-              onMouseEnter={undefined}
-              onMouseLeave={undefined}
+            <a
+              href="#"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "display": "block",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "outline": "none",
+                  "padding": "18px 13px 17px 13px",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
             >
               <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
-                  }
-                }
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
               >
-                Sent Posts
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Sent Posts
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-        <div
-          style={
-            Object {
-              "display": "inline-block",
-              "margin": "0 42px 0 0",
-              "minWidth": "60px",
-              "textAlign": "center",
-              "transform": "translate(0, 1px)",
-            }
-          }
-        >
-          <a
-            href="#"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+            </a>
+          </div>
+          <div
             style={
               Object {
-                "color": "#168eea",
-                "display": "block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "padding": "18px 13px 17px 13px",
-                "textDecoration": "none",
+                "display": "inline-block",
+                "margin": "0 42px 0 0",
+                "minWidth": "60px",
+                "textAlign": "center",
+                "transform": "translate(0, 1px)",
               }
             }
-            target="_self"
           >
-            <span
-              onMouseEnter={undefined}
-              onMouseLeave={undefined}
+            <a
+              href="#"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "display": "block",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "outline": "none",
+                  "padding": "18px 13px 17px 13px",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
             >
               <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
-                  }
-                }
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
               >
-                Settings
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Settings
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-        <hr
-          style={
-            Object {
-              "background": "#e6ebef",
-              "border": "none",
-              "boxSizing": "border-box",
-              "height": "0.063rem",
-              "marginBottom": "0",
-              "marginTop": "0",
-              "width": "100%",
+            </a>
+          </div>
+          <hr
+            style={
+              Object {
+                "background": "#e6ebef",
+                "border": "none",
+                "boxSizing": "border-box",
+                "height": "0.063rem",
+                "marginBottom": "0",
+                "marginTop": "0",
+                "width": "100%",
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
       <div
         style={
@@ -1971,6 +1982,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -2129,6 +2141,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -2452,6 +2465,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -2623,6 +2637,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                   Object {
                     "color": "#168eea",
                     "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "outline": "none",
                     "padding": "0",
                     "textDecoration": "none",
                   }
@@ -2860,165 +2875,172 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
         }
       }
     >
-      <div>
-        <div
-          style={
-            Object {
-              "display": "inline-block",
-              "margin": "0 42px 0 0",
-              "minWidth": "60px",
-              "textAlign": "center",
-              "transform": "translate(0, 1px)",
-            }
-          }
-        >
-          <a
-            href="#"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+      <div
+        id="tabs"
+      >
+        <div>
+          <div
             style={
               Object {
-                "color": "#168eea",
-                "display": "block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "padding": "18px 13px 17px 13px",
-                "textDecoration": "none",
+                "display": "inline-block",
+                "margin": "0 42px 0 0",
+                "minWidth": "60px",
+                "textAlign": "center",
+                "transform": "translate(0, 1px)",
               }
             }
-            target="_self"
           >
-            <span
-              onMouseEnter={undefined}
-              onMouseLeave={undefined}
+            <a
+              href="#"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "display": "block",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "outline": "none",
+                  "padding": "18px 13px 17px 13px",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
             >
               <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
-                  }
-                }
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
               >
-                Queue
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Queue
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-        <div
-          style={
-            Object {
-              "display": "inline-block",
-              "margin": "0 42px 0 0",
-              "minWidth": "60px",
-              "textAlign": "center",
-              "transform": "translate(0, 1px)",
-            }
-          }
-        >
-          <a
-            href="#"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+            </a>
+          </div>
+          <div
             style={
               Object {
-                "color": "#168eea",
-                "display": "block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "padding": "18px 13px 17px 13px",
-                "textDecoration": "none",
+                "display": "inline-block",
+                "margin": "0 42px 0 0",
+                "minWidth": "60px",
+                "textAlign": "center",
+                "transform": "translate(0, 1px)",
               }
             }
-            target="_self"
           >
-            <span
-              onMouseEnter={undefined}
-              onMouseLeave={undefined}
+            <a
+              href="#"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "display": "block",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "outline": "none",
+                  "padding": "18px 13px 17px 13px",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
             >
               <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
-                  }
-                }
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
               >
-                Sent Posts
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Sent Posts
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-        <div
-          style={
-            Object {
-              "borderBottom": "2px solid #168eea",
-              "display": "inline-block",
-              "margin": "0 42px 0 0",
-              "minWidth": "60px",
-              "textAlign": "center",
-              "transform": "translate(0, 1px)",
-            }
-          }
-        >
-          <a
-            href="#"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+            </a>
+          </div>
+          <div
             style={
               Object {
-                "color": "#168eea",
-                "display": "block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "padding": "18px 13px 17px 13px",
-                "textDecoration": "none",
+                "borderBottom": "2px solid #168eea",
+                "display": "inline-block",
+                "margin": "0 42px 0 0",
+                "minWidth": "60px",
+                "textAlign": "center",
+                "transform": "translate(0, 1px)",
               }
             }
-            target="_self"
           >
-            <span
-              onMouseEnter={undefined}
-              onMouseLeave={undefined}
+            <a
+              href="#"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "display": "block",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "outline": "none",
+                  "padding": "18px 13px 17px 13px",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
             >
               <span
-                style={
-                  Object {
-                    "color": "#000",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
-                  }
-                }
+                onMouseEnter={undefined}
+                onMouseLeave={undefined}
               >
-                Settings
+                <span
+                  style={
+                    Object {
+                      "color": "#000",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Settings
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-        <hr
-          style={
-            Object {
-              "background": "#e6ebef",
-              "border": "none",
-              "boxSizing": "border-box",
-              "height": "0.063rem",
-              "marginBottom": "0",
-              "marginTop": "0",
-              "width": "100%",
+            </a>
+          </div>
+          <hr
+            style={
+              Object {
+                "background": "#e6ebef",
+                "border": "none",
+                "boxSizing": "border-box",
+                "height": "0.063rem",
+                "marginBottom": "0",
+                "marginTop": "0",
+                "width": "100%",
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
       <div
         style={

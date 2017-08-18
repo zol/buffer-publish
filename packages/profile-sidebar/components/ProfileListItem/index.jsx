@@ -49,49 +49,58 @@ const ProfileSidebar = ({
   locked,
   selected,
   onClick,
-}) =>
-  <Link
-    href={'#'}
-    onClick={(e) => {
-      e.preventDefault();
-      onClick();
-    }}
-    unstyled
-  >
-    <div
-      style={calculateStyles({
-        default: {
-          display: 'flex',
-          alignItems: 'center',
-          padding: '0.5rem',
-          opacity: 0.6,
-        },
-        selected: {
-          background: curiousBlueUltraLight,
-          opacity: 1,
-          borderRadius,
-        },
-      }, {
-        selected,
-      })}
+}) => {
+  const handleClick = () => {
+    onClick();
+    /* move focus to tabs after selecting profile */
+    const queueTab = document.querySelector('#tabs a');
+    if (queueTab) queueTab.focus();
+  };
+  return (
+    <Link
+      href={'#'}
+      onClick={(e) => {
+        e.preventDefault();
+        handleClick();
+      }}
+      unstyled
     >
-      <div style={profileBadgeWrapperStyle}>
-        <ProfileBadge
-          avatarUrl={avatarUrl}
-          type={type}
-        />
-      </div>
-      <Text
-        size={'small'}
-        color={selected ? 'black' : 'shuttleGray'}
+      <div
+        style={calculateStyles({
+          default: {
+            display: 'flex',
+            alignItems: 'center',
+            padding: '0.5rem',
+            opacity: 0.6,
+          },
+          selected: {
+            background: curiousBlueUltraLight,
+            opacity: 1,
+            borderRadius,
+          },
+        }, {
+          selected,
+        })}
       >
-        {handle}
-      </Text>
-      <div style={notificationsStyle}>
-        { locked ? <LockIcon /> : <Notifications notifications={notifications} />}
+        <div style={profileBadgeWrapperStyle}>
+          <ProfileBadge
+            avatarUrl={avatarUrl}
+            type={type}
+          />
+        </div>
+        <Text
+          size={'small'}
+          color={selected ? 'black' : 'shuttleGray'}
+        >
+          {handle}
+        </Text>
+        <div style={notificationsStyle}>
+          { locked ? <LockIcon /> : <Notifications notifications={notifications} />}
+        </div>
       </div>
-    </div>
-  </Link>;
+    </Link>
+  );
+};
 
 ProfileSidebar.propTypes = {
   ...Notifications.propTypes,

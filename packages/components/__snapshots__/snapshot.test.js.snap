@@ -21163,6 +21163,7 @@ exports[`Snapshots Link onClick 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "outline": "none",
         "padding": "0",
         "textDecoration": "none",
       }
@@ -21187,6 +21188,7 @@ exports[`Snapshots Link unstyled 1`] = `
       Object {
         "color": "#168eea",
         "fontFamily": "\\"Open Sans\\", sans-serif",
+        "outline": "none",
         "padding": "0",
         "textDecoration": "none",
       }
@@ -21458,6 +21460,7 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "outline": "none",
           "padding": "0",
           "textDecoration": "none",
         }
@@ -21478,6 +21481,7 @@ exports[`Snapshots LinkStateless unstyled 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "outline": "none",
           "padding": "0",
           "textDecoration": "none",
         }
@@ -21514,6 +21518,7 @@ exports[`Snapshots LinkifiedText black text, unstyled link 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "outline": "none",
           "padding": "0",
           "textDecoration": "none",
         }
@@ -21746,6 +21751,7 @@ exports[`Snapshots LinkifiedText unstyled 1`] = `
         Object {
           "color": "#168eea",
           "fontFamily": "\\"Open Sans\\", sans-serif",
+          "outline": "none",
           "padding": "0",
           "textDecoration": "none",
         }
