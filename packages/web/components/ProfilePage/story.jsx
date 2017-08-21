@@ -15,7 +15,7 @@ const store = createStore();
 // https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/MemoryRouter.md
 const stubbedHistory = {
   location: {
-    pathname: '/1234/queue',
+    pathname: '/profile/1234/tab/queue',
     search: '',
     hash: '',
     state: {} },
