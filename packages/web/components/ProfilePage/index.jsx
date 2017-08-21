@@ -11,8 +11,8 @@ import TabNavigation from '@bufferapp/publish-tabs';
 import ProfileSidebar from '@bufferapp/publish-profile-sidebar';
 
 import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
-
 import { ScrollableContainer } from '@bufferapp/publish-shared-components';
+import { getProfilePageParams } from '@bufferapp/publish-routes';
 
 const profilePageStyle = {
   display: 'flex',
@@ -74,20 +74,6 @@ TabContent.defaultProps = {
   tabId: '',
 };
 
-const handleLoadMore = ({
-  profileId,
-  page,
-  tabId,
-  loadingMore,
-  moreToLoad,
-  handleScroll,
-}) => {
-  const isPostsTab = ['queue', 'sent'].includes(tabId);
-  if (!loadingMore && moreToLoad && isPostsTab) {
-    handleScroll({ profileId, page, tabId });
-  }
-};
-
 const ProfilePage = ({
   match: {
     params: {
@@ -114,14 +100,12 @@ const ProfilePage = ({
       />
       <ScrollableContainer
         tabId={tabId}
-        onReachBottom={() => handleLoadMore({
-          profileId,
-          page,
-          tabId,
-          loadingMore,
-          moreToLoad,
-          handleScroll,
-        })}
+        onReachBottom={() => {
+          const isPostsTab = ['queue', 'sent'].includes(tabId);
+          if (!loadingMore && moreToLoad && isPostsTab) {
+            handleScroll({ profileId, page, tabId });
+          }
+        }}
       >
         {TabContent({ tabId, profileId })}
       </ScrollableContainer>
@@ -152,17 +136,20 @@ ProfilePage.defaultProps = {
 
 export default connect(
   (state, ownProps) => {
-    const splitPath = ownProps.history.location.pathname.split('/');
-    const tabId = splitPath.pop();
-    return ({
-      loading: state[tabId].loading,
-      loadingMore: state[tabId].loadingMore,
-      moreToLoad: state[tabId].moreToLoad,
-      page: state[tabId].page,
-      posts: state[tabId].posts,
-      total: state[tabId].total,
-      translations: state.i18n.translations.example, // all package translations
-    });
+    const { tabId, profileId } =
+      getProfilePageParams({ path: ownProps.history.location.pathname }) || {};
+    if (state[tabId].byProfileId[profileId]) {
+      return ({
+        loading: state[tabId].byProfileId[profileId].loading,
+        loadingMore: state[tabId].byProfileId[profileId].loadingMore,
+        moreToLoad: state[tabId].byProfileId[profileId].moreToLoad,
+        page: state[tabId].byProfileId[profileId].page,
+        posts: state[tabId].byProfileId[profileId].posts,
+        total: state[tabId].byProfileId[profileId].total,
+        translations: state.i18n.translations.example, // all package translations
+      });
+    }
+    return {};
   },
   dispatch => ({
     handleScroll: ({ profileId, page, tabId }) => {
