@@ -138,7 +138,7 @@ export default connect(
   (state, ownProps) => {
     const { tabId, profileId } =
       getProfilePageParams({ path: ownProps.history.location.pathname }) || {};
-    if (state[tabId].byProfileId[profileId]) {
+    if (state[tabId] && state[tabId].byProfileId && state[tabId].byProfileId[profileId]) {
       return ({
         loading: state[tabId].byProfileId[profileId].loading,
         loadingMore: state[tabId].byProfileId[profileId].loadingMore,
