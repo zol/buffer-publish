@@ -4,10 +4,10 @@ import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-pro
 const PUSHER_APP_KEY = 'bd9ba9324ece3341976e';
 
 const profileEventActionMap = {
-  added_update: 'UPDATE_CREATED',
-  sent_update: 'UPDATE_SENT',
-  deleted_update: 'UPDATE_DELETED',
-  updated_update: 'UPDATE_UPDATED',
+  added_update: 'POST_CREATED',
+  sent_update: 'POST_SENT',
+  deleted_update: 'POST_DELETED',
+  updated_update: 'POST_UPDATED',
   // collaboration_draft_approved: '',
   // collaboration_draft_updated: '',
 };

@@ -58,7 +58,7 @@ describe('middleware', () => {
     const update = { id: '00012345', text: 'Hello, world.' };
     Pusher.simulate('private-updates-12345', 'added_update', update);
     expect(store.dispatch).toHaveBeenCalledWith({
-      type: 'UPDATE_CREATED',
+      type: 'POST_CREATED',
       payload: update,
     });
   });
