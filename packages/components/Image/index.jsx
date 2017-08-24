@@ -18,6 +18,7 @@ const Image = ({ src,
   border,
   objectFit,
   verticalAlignBottom,
+  pad,
 }) => {
   const style = calculateStyles({
     default: {
@@ -40,10 +41,14 @@ const Image = ({ src,
     verticalAlignBottom: {
       verticalAlign: 'bottom',
     },
+    pad: {
+      border: '0.2rem solid white',
+    },
   }, {
     circle: border === 'circle',
     rounded: border === 'rounded',
     verticalAlignBottom,
+    pad,
   });
 
   return (
@@ -100,10 +105,12 @@ Image.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
+  pad: PropTypes.bool,
 };
 
 Image.defaultProps = {
   alt: '',
+  pad: false,
 };
 
 export default Image;
