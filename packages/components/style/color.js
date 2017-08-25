@@ -7,6 +7,7 @@ export const toryBlue = '#0f63a4';
 export const appdotnet = '#4a484c';
 export const facebook = '#3b5998';
 export const googleplus = '#dd4b39';
+export const instagram = '#e53c5f';
 export const linkedin = '#007bb6';
 export const pinterest = '#bd081c';
 export const twitter = '#55acee';
@@ -46,6 +47,7 @@ const colors = {
   appdotnet,
   facebook,
   googleplus,
+  instagram,
   linkedin,
   pinterest,
   twitter,
