@@ -4,11 +4,11 @@ import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-pro
 export const actionTypes = {
   POST_CREATED: 'POST_CREATED',
   POST_UPDATED: 'POST_UPDATED',
-  POST_CONFIRM_DELETE: 'POST_CONFIRM_DELETE',
+  POST_CLICKED_DELETE: 'POST_CLICKED_DELETE',
+  POST_CONFIRMED_DELETE: 'POST_CONFIRMED_DELETE',
   POST_DELETED: 'POST_DELETED',
-  POST_DELETE_CANCELED: 'POST_DELETE_CANCELED',
+  POST_CANCELED_DELETE: 'POST_CANCELED_DELETE',
   POST_ERROR: 'POST_ERROR',
-  REQUESTING_POST_DELETE: 'REQUESTING_POST_DELETE',
 };
 
 const profileInitialState = {
@@ -16,14 +16,14 @@ const profileInitialState = {
   loadingMore: false,
   moreToLoad: false,
   page: 1,
-  posts: [],
+  posts: {},
   total: 0,
 };
 
 const handlePosts = (action, currentPosts) => {
   let posts = action.result.updates;
   if (action.args.isFetchingMore) {
-    posts = [...currentPosts, ...posts];
+    posts = { ...currentPosts, ...posts };
   }
   return posts;
 };
@@ -33,8 +33,59 @@ const increasePageCount = (page) => {
   return page;
 };
 
-const determineIfMoreToLoad = (action, currentPosts) =>
-  (action.result.total > (currentPosts.length + action.result.updates.length));
+const determineIfMoreToLoad = (action, currentPosts) => {
+  const currentPostCount = Object.keys(currentPosts).length;
+  const resultUpdatesCount = Object.keys(action.result.updates).length;
+  return (action.result.total > (currentPostCount + resultUpdatesCount));
+};
+
+const postReducer = (state, action) => {
+  switch (action.type) {
+    case actionTypes.POST_CLICKED_DELETE:
+      state.isConfirmingDelete = true;
+      return state;
+    case actionTypes.POST_CONFIRMED_DELETE:
+      state.isConfirmingDelete = false;
+      state.isDeleting = true;
+      return state;
+    case actionTypes.POST_DELETED:
+      var { [action.updateId]: deleted, ...currentState } = state; //eslint-disable-line
+      currentState.isDeleting = false;
+      return currentState;
+    case actionTypes.POST_CANCELED_DELETE:
+      state.isConfirmingDelete = false;
+      return state;
+    default:
+      return state;
+  }
+};
+
+const postsReducer = (state, action) => {
+  switch (action.type) {
+    case actionTypes.POST_CLICKED_DELETE:
+      return {
+        ...state,
+        [action.updateId]: postReducer(state[action.updateId], action),
+      };
+    case actionTypes.POST_CONFIRMED_DELETE:
+      return {
+        ...state,
+        [action.updateId]: postReducer(state[action.updateId], action),
+      };
+    case actionTypes.POST_DELETED:
+      return {
+        ...state,
+        [action.updateId]: postReducer(state[action.updateId], action),
+      };
+    case actionTypes.POST_CANCELED_DELETE:
+      return {
+        ...state,
+        [action.updateId]: postReducer(state[action.updateId], action),
+      };
+    default:
+      return state;
+  }
+};
 
 const profileReducer = (state = profileInitialState, action) => {
   switch (action.type) {
@@ -65,15 +116,27 @@ const profileReducer = (state = profileInitialState, action) => {
       return state;
     case actionTypes.POST_UPDATED:
       return state;
-    case actionTypes.POST_CONFIRM_DELETE:
-      return state;
+    case actionTypes.POST_CLICKED_DELETE:
+      return {
+        ...state,
+        posts: postsReducer(state.posts, action),
+      };
+    case actionTypes.POST_CONFIRMED_DELETE:
+      return {
+        ...state,
+        posts: postsReducer(state.posts, action),
+      };
     case actionTypes.POST_DELETED:
-      return state;
-    case actionTypes.POST_DELETE_CANCELED:
-      return state;
+      return {
+        ...state,
+        posts: postsReducer(state.posts, action),
+      };
+    case actionTypes.POST_CANCELED_DELETE:
+      return {
+        ...state,
+        posts: postsReducer(state.posts, action),
+      };
     case actionTypes.POST_ERROR:
-      return state;
-    case actionTypes.REQUESTING_POST_DELETE:
       return state;
     default:
       return state;
@@ -99,11 +162,7 @@ export default (state = initialState, action) => {
     case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
     case actionTypes.POST_CREATED:
     case actionTypes.POST_UPDATED:
-    case actionTypes.POST_CONFIRM_DELETE:
-    case actionTypes.POST_DELETED:
-    case actionTypes.POST_DELETE_CANCELED:
-    case actionTypes.POST_ERROR:
-    case actionTypes.REQUESTING_POST_DELETE:
+    case actionTypes.POST_CLICKED_DELETE:
       profileId = getProfileId(action);
       if (profileId) {
         return {
@@ -114,9 +173,64 @@ export default (state = initialState, action) => {
         };
       }
       return state;
+    case actionTypes.POST_CONFIRMED_DELETE:
+      profileId = getProfileId(action);
+      if (profileId) {
+        return {
+          byProfileId: {
+            ...state.byProfileId,
+            [profileId]: profileReducer(state.byProfileId[profileId], action),
+          },
+        };
+      }
+      return state;
+    case actionTypes.POST_DELETED:
+      profileId = getProfileId(action);
+      if (profileId) {
+        return {
+          byProfileId: {
+            ...state.byProfileId,
+            [profileId]: profileReducer(state.byProfileId[profileId], action),
+          },
+        };
+      }
+      return state;
+    case actionTypes.POST_CANCELED_DELETE:
+      profileId = getProfileId(action);
+      if (profileId) {
+        return {
+          byProfileId: {
+            ...state.byProfileId,
+            [profileId]: profileReducer(state.byProfileId[profileId], action),
+          },
+        };
+      }
+      return state;
+    case actionTypes.POST_ERROR:
     default:
       return state;
   }
 };
 
-export const actions = {};
+export const actions = {
+  handleDeleteClick: ({ post, profileId }) => ({
+    type: actionTypes.POST_CLICKED_DELETE,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+
+  handleDeleteConfirmClick: ({ post, profileId }) => ({
+    type: actionTypes.POST_CONFIRMED_DELETE,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+
+  handleCancelConfirmClick: ({ post, profileId }) => ({
+    type: actionTypes.POST_CANCELED_DELETE,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+};

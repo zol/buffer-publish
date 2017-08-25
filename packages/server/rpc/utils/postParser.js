@@ -76,9 +76,9 @@ module.exports = {
     return {
       day: post.day,
       id: post.id,
-      isConfirmingDelete: post.isDeleting && !post.requestingDraftAction,
-      isDeleting: post.isDeleting && post.requestingDraftAction,
-      isWorking: !post.isDeleting && post.requestingDraftAction,
+      isConfirmingDelete: post.isDeleting && !post.requestingAction,
+      isDeleting: post.isDeleting && post.requestingAction,
+      isWorking: !post.isDeleting && post.requestingAction,
       imageSrc: isVideo ? media.thumbnail : media.picture,
       imageUrls: getImageUrls(post),
       links: parseTwitterLinks(text),
@@ -97,5 +97,12 @@ module.exports = {
       text,
       type: getPostType({ post }),
     };
+  },
+  buildPostMap: (posts) => {
+    const postMap = {};
+    posts.forEach((post) => {
+      postMap[post.id] = post;
+    });
+    return postMap;
   },
 };

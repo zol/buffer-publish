@@ -1,4 +1,7 @@
-const { postsMapper } = require('../utils/postParser');
+const {
+  postsMapper,
+  buildPostMap,
+} = require('../utils/postParser');
 
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
@@ -18,8 +21,12 @@ module.exports = method(
       },
     })
       .then(result => JSON.parse(result))
-      .then(parsedResult => ({
-        total: parsedResult.total,
-        updates: parsedResult.updates.map(postsMapper),
-      })),
+      .then((parsedResult) => {
+        const updates = parsedResult.updates.map(postsMapper);
+        const mappedUpdates = buildPostMap(updates);
+        return {
+          total: parsedResult.total,
+          updates: mappedUpdates,
+        };
+      }),
 );

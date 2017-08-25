@@ -2,19 +2,21 @@
 import { connect } from 'react-redux';
 // load the presentational component
 import QueuedPosts from './components/QueuedPosts';
+import { actions } from './reducer';
 
 const formatPostLists = (posts) => {
   const postLists = [];
   let day;
   let newList;
+  const postIds = Object.keys(posts);
 
-  posts.forEach((post) => {
-    if (post.day !== day) {
-      day = post.day;
-      newList = { listHeader: day, posts: [post] };
+  postIds.forEach((postId) => {
+    if (posts[postId].day !== day) {
+      day = posts[postId].day;
+      newList = { listHeader: day, posts: [posts[postId]] };
       postLists.push(newList);
     } else { // if same day add to posts array of current list
-      newList.posts.push(post);
+      newList.posts.push(posts[postId]);
     }
   });
 
@@ -38,6 +40,26 @@ export default connect(
     }
     return {};
   },
+  (dispatch, ownProps) => ({
+    onDeleteClick: (post) => {
+      dispatch(actions.handleDeleteClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onDeleteConfirmClick: (post) => {
+      dispatch(actions.handleDeleteConfirmClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onCancelConfirmClick: (post) => {
+      dispatch(actions.handleCancelConfirmClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+  }),
 )(QueuedPosts);
 
 // export reducer, actions and action types
