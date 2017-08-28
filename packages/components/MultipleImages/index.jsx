@@ -56,6 +56,7 @@ const MultipleImages = ({ border,
               src={url}
               verticalAlignBottom
               width={'100%'}
+              pad
             />
           </div>,
         )

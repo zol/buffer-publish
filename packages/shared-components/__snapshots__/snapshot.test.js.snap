@@ -6010,6 +6010,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6039,6 +6040,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6068,6 +6070,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6097,6 +6100,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6492,6 +6496,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6521,6 +6526,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6550,6 +6556,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6579,6 +6586,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6941,6 +6949,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6970,6 +6979,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -6999,6 +7009,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -7028,6 +7039,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
                     src="http://lorempixel.com/400/400/cats/"
                     style={
                       Object {
+                        "border": "0.2rem solid white",
                         "height": "100%",
                         "marginBottom": undefined,
                         "marginTop": undefined,
@@ -13886,6 +13898,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -13915,6 +13928,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -13944,6 +13958,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -13973,6 +13988,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -14326,6 +14342,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -14355,6 +14372,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -14384,6 +14402,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,
@@ -14413,6 +14432,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                             src="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
                             style={
                               Object {
+                                "border": "0.2rem solid white",
                                 "height": "100%",
                                 "marginBottom": undefined,
                                 "marginTop": undefined,

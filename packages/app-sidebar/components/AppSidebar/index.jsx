@@ -40,9 +40,25 @@ const AppSidebar = ({
   <nav style={style} aria-label="sidebar" role="menubar">
     <BufferLogo />
 
-    <PopoverButton icon={<PublishIcon />} active={activeProduct === 'publish'} label="Publish" href="/" />
-    <PopoverButton icon={<ReplyIcon />} active={activeProduct === 'reply'} label="Reply" href="https://reply.buffer.com/" />
-    <PopoverButton icon={<AnalyzeIcon />} active={activeProduct === 'analyze'} label="Analyze (Coming Soon)" href="https://buffer.com/analyze" />
+    <PopoverButton
+      icon={<PublishIcon />}
+      active={activeProduct === 'publish'}
+      label="Publish"
+      href="/"
+    />
+    <PopoverButton
+      icon={<ReplyIcon />}
+      active={activeProduct === 'reply'}
+      label="Reply" href="https://reply.buffer.com/"
+      newWindow
+    />
+    <PopoverButton
+      icon={<AnalyzeIcon />}
+      active={activeProduct === 'analyze'}
+      label="Analyze (Coming Soon)"
+      href="https://buffer.com/analyze"
+      newWindow
+    />
 
     {/* marginTop: auto ensures this section sticks to the bottom (flexbox) */}
     <div style={{ marginTop: 'auto', textAlign: 'center' }}>

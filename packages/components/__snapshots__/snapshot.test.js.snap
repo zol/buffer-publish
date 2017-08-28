@@ -5341,6 +5341,29 @@ exports[`Snapshots Image border: rounded 1`] = `
 </span>
 `;
 
+exports[`Snapshots Image pad 1`] = `
+<span>
+  <img
+    alt=""
+    src="http://lorempixel.com/400/400/cats/"
+    style={
+      Object {
+        "border": "0.2rem solid white",
+        "height": undefined,
+        "marginBottom": undefined,
+        "marginTop": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "objectFit": undefined,
+        "width": undefined,
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots Image small image 1`] = `
 <span>
   <img
@@ -22025,6 +22048,7 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22054,6 +22078,7 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22083,6 +22108,7 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22112,6 +22138,7 @@ exports[`Snapshots MultipleImages border=rounded 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22157,6 +22184,7 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22186,6 +22214,7 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22215,6 +22244,7 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22244,6 +22274,7 @@ exports[`Snapshots MultipleImages fourImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22289,6 +22320,7 @@ exports[`Snapshots MultipleImages oneImage 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22334,6 +22366,7 @@ exports[`Snapshots MultipleImages threeImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22363,6 +22396,7 @@ exports[`Snapshots MultipleImages threeImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22392,6 +22426,7 @@ exports[`Snapshots MultipleImages threeImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22437,6 +22472,7 @@ exports[`Snapshots MultipleImages twoImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22466,6 +22502,7 @@ exports[`Snapshots MultipleImages twoImages 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22511,6 +22548,7 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22540,6 +22578,7 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22569,6 +22608,7 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,
@@ -22598,6 +22638,7 @@ exports[`Snapshots MultipleImages width=30rem, height=30rem 1`] = `
       src="http://lorempixel.com/400/400/cats/"
       style={
         Object {
+          "border": "0.2rem solid white",
           "height": "100%",
           "marginBottom": undefined,
           "marginTop": undefined,

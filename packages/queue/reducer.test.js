@@ -24,7 +24,7 @@ describe('reducer', () => {
           loadingMore: false,
           moreToLoad: false,
           page: 1,
-          posts: [],
+          posts: {},
           total: 0,
         },
       },
@@ -42,7 +42,7 @@ describe('reducer', () => {
   });
 
   it('should handle queuedPosts_FETCH_SUCCESS action type', () => {
-    const post = { id: 'foo', text: 'i love buffer' };
+    const post = { post: { id: 'foo', text: 'i love buffer' } };
     const stateAfter = {
       byProfileId: {
         [profileId]: {
@@ -79,7 +79,7 @@ describe('reducer', () => {
           loadingMore: false,
           moreToLoad: false,
           page: 1,
-          posts: [],
+          posts: {},
           total: 0,
         },
       },

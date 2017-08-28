@@ -134,9 +134,14 @@ class PopoverButton extends PseudoClassComponent {
   handleOnClick(e) {
     if (this.props.href) {
       e.preventDefault();
-      window.open(this.props.href, '_blank');
+      if (this.props.newWindow) {
+        window.open(this.props.href, '_blank');
+      } else {
+        window.location = this.props.href;
+      }
     }
   }
+
   handleKeyDown(e) {
     switch (e.keyCode) {
       case KEY_ENTER:
@@ -205,6 +210,7 @@ PopoverButton.propTypes = {
   label: PropTypes.string,
   large: PropTypes.bool,
   popoverPosition: PropTypes.oneOf(['none', 'above', 'below']),
+  newWindow: PropTypes.bool,
   href: PropTypes.string,
 };
 
@@ -212,6 +218,7 @@ PopoverButton.defaultProps = {
   active: false,
   large: false,
   popoverPosition: 'none',
+  newWindow: false,
 };
 
 export default PopoverButton;
