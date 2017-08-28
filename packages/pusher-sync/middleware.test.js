@@ -1,6 +1,7 @@
 // import sleep from 'then-sleep';
 import Pusher from 'pusher-js';
 import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-profile-sidebar';
+import { postParser } from '@bufferapp/publish-utils';
 
 import middleware from './middleware';
 
@@ -56,10 +57,11 @@ describe('middleware', () => {
   it('should dispatch when a subscribed pusher event happens', () => {
     middleware(store)(next)(selectProfileAction);
     const update = { id: '00012345', text: 'Hello, world.' };
-    Pusher.simulate('private-updates-12345', 'added_update', update);
+    Pusher.simulate('private-updates-12345', 'added_update', { update });
     expect(store.dispatch).toHaveBeenCalledWith({
       type: 'POST_CREATED',
-      payload: update,
+      profileId: '12345',
+      post: postParser(update),
     });
   });
 });
