@@ -19,7 +19,7 @@ const bindProfileEvents = (channel, profileId, dispatch) => {
     channel.bind(pusherEvent, (data) => {
       dispatch({
         type: actionType,
-        profileId: data.profile_id,
+        profileId,
         post: postParser(data.update),
       });
     });
