@@ -62,7 +62,11 @@ const profileReducer = (state = profileInitialState, action) => {
         loading: false,
       };
     case actionTypes.POST_CREATED:
-      return state;
+      return {
+        ...state,
+        posts: [...state.posts, action.post],
+        total: state.total + 1,
+      };
     case actionTypes.POST_UPDATED:
       return state;
     case actionTypes.POST_CONFIRM_DELETE:

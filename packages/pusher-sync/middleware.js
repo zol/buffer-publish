@@ -1,5 +1,6 @@
 import Pusher from 'pusher-js';
 import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-profile-sidebar';
+import { postParser } from '@bufferapp/publish-utils';
 
 const PUSHER_APP_KEY = 'bd9ba9324ece3341976e';
 
@@ -18,7 +19,8 @@ const bindProfileEvents = (channel, profileId, dispatch) => {
     channel.bind(pusherEvent, (data) => {
       dispatch({
         type: actionType,
-        payload: data,
+        profileId: data.profile_id,
+        post: postParser(data.update),
       });
     });
   });
