@@ -1,4 +1,4 @@
-const { getDateString } = require('../utils/date');
+const { getDateString } = require('./date');
 const { parseTwitterLinks } = require('./linkParsing');
 
 const getImageUrls = (post) => {
@@ -60,42 +60,40 @@ const getPostType = ({ post }) => {
   return 'text';
 };
 
-module.exports = {
-  postsMapper: (post) => {
-    const media = post.media || {};
-    const isVideo = media.video;
-    let retweetComment;
-    let text;
+module.exports = (post) => {
+  const media = post.media || {};
+  const isVideo = media.video;
+  let retweetComment;
+  let text;
 
-    if (post.retweet) {
-      text = post.retweet.text;
-      retweetComment = post.retweet.comment;
-    } else {
-      text = post.text;
-    }
-    return {
-      day: post.day,
-      id: post.id,
-      isConfirmingDelete: post.isDeleting && !post.requestingDraftAction,
-      isDeleting: post.isDeleting && post.requestingDraftAction,
-      isWorking: !post.isDeleting && post.requestingDraftAction,
-      imageSrc: isVideo ? media.thumbnail : media.picture,
-      imageUrls: getImageUrls(post),
-      links: parseTwitterLinks(text),
-      profileTimezone: post.profile_timezone,
-      linkAttachment: {
-        title: media.title,
-        url: media.expanded_link,
-        description: media.description,
-        thumbnailUrl: media.preview,
-      },
-      postDetails: getPostDetails({ post }),
-      retweetComment,
-      retweetCommentLinks: parseTwitterLinks(retweetComment),
-      retweetProfile: getRetweetProfileInfo(post),
-      sent: post.status === 'sent',
-      text,
-      type: getPostType({ post }),
-    };
-  },
+  if (post.retweet) {
+    text = post.retweet.text;
+    retweetComment = post.retweet.comment;
+  } else {
+    text = post.text;
+  }
+  return {
+    day: post.day,
+    id: post.id,
+    isConfirmingDelete: post.isDeleting && !post.requestingDraftAction,
+    isDeleting: post.isDeleting && post.requestingDraftAction,
+    isWorking: !post.isDeleting && post.requestingDraftAction,
+    imageSrc: isVideo ? media.thumbnail : media.picture,
+    imageUrls: getImageUrls(post),
+    links: parseTwitterLinks(text),
+    profileTimezone: post.profile_timezone,
+    linkAttachment: {
+      title: media.title,
+      url: media.expanded_link,
+      description: media.description,
+      thumbnailUrl: media.preview,
+    },
+    postDetails: getPostDetails({ post }),
+    retweetComment,
+    retweetCommentLinks: parseTwitterLinks(retweetComment),
+    retweetProfile: getRetweetProfileInfo(post),
+    sent: post.status === 'sent',
+    text,
+    type: getPostType({ post }),
+  };
 };

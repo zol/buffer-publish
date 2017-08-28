@@ -1,6 +1,6 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
-const profileParser = require('../utils/profileParser');
+const { profileParser } = require('@bufferapp/publish-utils');
 
 module.exports = method(
   'profiles',

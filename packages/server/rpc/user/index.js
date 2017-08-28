@@ -1,6 +1,6 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
-const parseUser = require('../utils/parseUser');
+const { userParser } = require('@bufferapp/publish-utils');
 
 module.exports = method(
   'user',
@@ -17,6 +17,6 @@ module.exports = method(
     })
       .then((result) => {
         const userData = JSON.parse(result);
-        return parseUser(userData);
+        return userParser(userData);
       }),
 );
