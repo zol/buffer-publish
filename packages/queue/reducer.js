@@ -42,19 +42,14 @@ const determineIfMoreToLoad = (action, currentPosts) => {
 const postReducer = (state, action) => {
   switch (action.type) {
     case actionTypes.POST_CLICKED_DELETE:
-      state.isConfirmingDelete = true;
-      return state;
+      return { ...state, isConfirmingDelete: true };
     case actionTypes.POST_CONFIRMED_DELETE:
-      state.isConfirmingDelete = false;
-      state.isDeleting = true;
-      return state;
+      return {...state, isConfirmingDelete: false, isDeleting: true};
     case actionTypes.POST_DELETED:
       var { [action.updateId]: deleted, ...currentState } = state; //eslint-disable-line
-      currentState.isDeleting = false;
-      return currentState;
+      return { ...currentState, isDeleting: false };
     case actionTypes.POST_CANCELED_DELETE:
-      state.isConfirmingDelete = false;
-      return state;
+      return { ...state, isConfirmingDelete: false };
     default:
       return state;
   }
