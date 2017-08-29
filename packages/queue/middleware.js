@@ -1,11 +1,11 @@
-import { actionTypes } from '@bufferapp/publish-profile-sidebar';
+import { actionTypes as profileActionTypes } from '@bufferapp/publish-profile-sidebar';
 import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
-import { actionTypes as queueActionTypes } from './reducer';
+import { actionTypes } from './reducer';
 
 export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars
   next(action);
   switch (action.type) {
-    case actionTypes.SELECT_PROFILE:
+    case profileActionTypes.SELECT_PROFILE:
       dispatch(dataFetchActions.fetch({
         name: 'queuedPosts',
         args: {
@@ -14,7 +14,7 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
         },
       }));
       break;
-    case queueActionTypes.POST_CONFIRMED_DELETE:
+    case actionTypes.POST_CONFIRMED_DELETE:
       dispatch(dataFetchActions.fetch({
         name: 'deletePost',
         args: {

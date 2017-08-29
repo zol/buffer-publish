@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-utils",
-  "version": "0.5.28",
+  "version": "0.5.29",
   "description": "Misc. utils for dates, parsing, etc.",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
     "access": "public"
   },
   "dependencies": {
-    "moment-timezone": "^0.5.13"
+    "moment-timezone": "0.5.12"
   }
 }

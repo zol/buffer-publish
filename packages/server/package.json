@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-server",
-  "version": "0.5.25",
+  "version": "0.5.29",
   "description": "",
   "scripts": {
     "start": "micro",
