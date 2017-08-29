@@ -17,6 +17,6 @@
     "access": "public"
   },
   "dependencies": {
-    "moment-timezone": "^0.5.13"
+    "moment-timezone": "0.5.12"
   }
 }
