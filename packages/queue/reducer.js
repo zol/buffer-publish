@@ -44,7 +44,7 @@ const postReducer = (state, action) => {
     case actionTypes.POST_CLICKED_DELETE:
       return { ...state, isConfirmingDelete: true };
     case actionTypes.POST_CONFIRMED_DELETE:
-      return {...state, isConfirmingDelete: false, isDeleting: true};
+      return { ...state, isConfirmingDelete: false, isDeleting: true };
     case actionTypes.POST_DELETED:
       var { [action.updateId]: deleted, ...currentState } = state; //eslint-disable-line
       return { ...currentState, isDeleting: false };
