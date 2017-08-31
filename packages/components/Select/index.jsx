@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { calculateStyles } from '../lib/utils';
-import {
+import colors, {
   transparent,
   mystic,
   shuttleGray,
@@ -95,6 +95,8 @@ const Select = ({
   value,
   centerText,
   rangeSelector,
+  color,
+  hovered,
 }) => {
   const selectStyle = calculateStyles({
     default: {
@@ -108,7 +110,7 @@ const Select = ({
       WebkitAppearance: 'none',
       MozAppearance: 'none',
       width: '100%',
-      color: shuttleGray,
+      color: colors[color],
     },
     noStyle: {
       height: 'auto',
@@ -124,10 +126,14 @@ const Select = ({
     rangeSelector: {
       paddingRight: '1rem',
     },
+    hovered: {
+      cursor: 'pointer',
+    },
   }, {
     noStyle,
     centerText,
     rangeSelector,
+    hovered,
   });
 
   return (
@@ -176,6 +182,8 @@ Select.propTypes = {
   ]),
   centerText: PropTypes.bool,
   rangeSelector: PropTypes.bool,
+  color: PropTypes.oneOf(Object.keys(colors)),
+  hovered: PropTypes.bool,
 };
 
 Select.defaultProps = {
@@ -186,6 +194,7 @@ Select.defaultProps = {
   value: undefined,
   centerText: false,
   rangeSelector: false,
+  color: 'shuttleGray',
 };
 
 export default Select;

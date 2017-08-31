@@ -91,4 +91,12 @@ storiesOf('Select')
       centerText
       rangeSelector
     />
+  ))
+  .add('with text color', () => (
+    <Select
+      options={options}
+      value={'Tokyo'}
+      onChange={action('on-change')}
+      color={'curiousBlue'}
+    />
   ));
