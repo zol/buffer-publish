@@ -13550,8 +13550,8 @@ exports[`Snapshots InputTime displayTimeColon minimal 1`] = `
           "alignItems": "center",
           "display": "flex",
           "flex": 0,
-          "marginLeft": "0.1rem",
-          "marginRight": "0.1rem",
+          "marginLeft": 0,
+          "marginRight": 0,
         }
       }
     >
@@ -13579,7 +13579,7 @@ exports[`Snapshots InputTime displayTimeColon minimal 1`] = `
           "flex": 1,
           "flexDirection": "column",
           "marginLeft": 0,
-          "marginRight": "0.25rem",
+          "marginRight": 0,
           "position": "relative",
         }
       }
@@ -14112,8 +14112,8 @@ exports[`Snapshots InputTime minimal 1`] = `
           "display": "flex",
           "flex": 1,
           "flexDirection": "column",
-          "marginLeft": "0.25rem",
-          "marginRight": "0.25rem",
+          "marginLeft": 0,
+          "marginRight": 0,
           "position": "relative",
         }
       }
@@ -14706,8 +14706,8 @@ exports[`Snapshots InputTime minimal with 24 hour selection 1`] = `
           "display": "flex",
           "flex": 1,
           "flexDirection": "column",
-          "marginLeft": "0.25rem",
-          "marginRight": "0.25rem",
+          "marginLeft": 0,
+          "marginRight": 0,
           "position": "relative",
         }
       }

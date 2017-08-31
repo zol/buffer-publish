@@ -4560,8 +4560,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -4589,7 +4589,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -5212,8 +5212,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -5241,7 +5241,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -5920,8 +5920,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -5949,7 +5949,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -6572,8 +6572,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -6601,7 +6601,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -7280,8 +7280,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -7309,7 +7309,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -7932,8 +7932,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -7961,7 +7961,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -8640,8 +8640,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -8669,7 +8669,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -9292,8 +9292,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -9321,7 +9321,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -10000,8 +10000,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -10029,7 +10029,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -10652,8 +10652,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -10681,7 +10681,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -11360,8 +11360,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -11389,7 +11389,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -12012,8 +12012,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -12041,7 +12041,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -12720,8 +12720,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -12749,7 +12749,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
@@ -13372,8 +13372,8 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "alignItems": "center",
                             "display": "flex",
                             "flex": 0,
-                            "marginLeft": "0.1rem",
-                            "marginRight": "0.1rem",
+                            "marginLeft": 0,
+                            "marginRight": 0,
                           }
                         }
                       >
@@ -13401,7 +13401,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                             "flex": 1,
                             "flexDirection": "column",
                             "marginLeft": 0,
-                            "marginRight": "0.25rem",
+                            "marginRight": 0,
                             "position": "relative",
                           }
                         }
