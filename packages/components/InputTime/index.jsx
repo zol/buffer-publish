@@ -4,36 +4,12 @@ import Select from '../Select';
 import Text from '../Text';
 import { calculateStyles } from '../lib/utils';
 import PseudoClassComponent from '../PseudoClassComponent';
-import ArrowUpIcon from '../Icon/Icons/ArrowUpIcon';
-import ArrowDownIcon from '../Icon/Icons/ArrowDownIcon';
 
 // generate array of numbers (inclusive)
 const genArray = (start, end) => [...Array(end + 1).keys()].slice(start);
 const leftPadTimeUnit = timeUnit => (timeUnit < 10 ? `0${timeUnit}` : timeUnit);
 
 /* eslint-disable react/prop-types */
-const TopArrow = ({ visible }) =>
-  <div
-    style={{
-      opacity: visible ? 1 : 0,
-      alignSelf: 'center',
-      display: 'flex',
-    }}
-  >
-    <ArrowUpIcon size={'small'} />
-  </div>;
-
-const BottomArrow = ({ visible }) =>
-  <div
-    style={{
-      opacity: visible ? 1 : 0,
-      alignSelf: 'center',
-      display: 'flex',
-    }}
-  >
-    <ArrowDownIcon size={'small'} />
-  </div>;
-
 const selectWrapperStyle = ({
   minimal,
   marginLeft = 0,
@@ -59,22 +35,26 @@ const SelectWrapperStateless = ({
   marginLeft,
   marginRight,
   hovered,
+  focused,
   onMouseEnter,
   onMouseLeave,
+  onFocus,
+  onBlur,
 }) =>
   <div
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
+    onFocus={onFocus}
+    onBlur={onBlur}
     style={selectWrapperStyle({
       minimal,
       marginLeft,
       marginRight,
       hovered,
+      focused,
     })}
   >
-    <TopArrow visible={hovered && minimal} />
     {children}
-    <BottomArrow visible={hovered && minimal} />
   </div>;
 
 class SelectWrapper extends PseudoClassComponent {
@@ -85,7 +65,13 @@ class SelectWrapper extends PseudoClassComponent {
     if (React.isValidElement(children)) {
       hoveredChildren = React.cloneElement(
         children,
-        { hovered: this.state.hovered },
+        {
+          hovered: this.state.hovered,
+          color:
+            this.props.minimal &&
+            this.state.hovered &&
+            !this.state.focused ? 'curiousBlue' : undefined,
+        },
       );
     }
     return (
@@ -94,6 +80,8 @@ class SelectWrapper extends PseudoClassComponent {
         hovered={this.state.hovered}
         onMouseEnter={() => this.handleMouseEnter()}
         onMouseLeave={() => this.handleMouseLeave()}
+        onFocus={() => this.handleFocus()}
+        onBlur={() => this.handleBlur()}
       >
         {hoveredChildren}
       </SelectWrapperStateless>

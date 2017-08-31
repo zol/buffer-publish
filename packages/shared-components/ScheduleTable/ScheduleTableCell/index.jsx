@@ -47,7 +47,7 @@ const TableCellContents = ({
     },
     disabled: {
       opacity: '0',
-    }
+    },
   }, {
     hovered,
     disabled,
@@ -57,6 +57,9 @@ const TableCellContents = ({
       <div
         style={{
           width: '4.5rem',
+          display: 'flex',
+          height: '2rem',
+          alignItems: 'center',
         }}
       >
         <InputTime
