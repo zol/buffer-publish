@@ -42,7 +42,11 @@ const testComponentA11y = (app, config = []) => {
   const node = findDOMNode(wrapper.component);
 
   if (typeof config === 'function') {
-    config = {};
+    config = {
+      rules: {
+        'color-contrast': { enabled: false },
+      },
+    };
   }
   document.body.removeChild(div); //eslint-disable-line
   const oldNode = global.Node;
