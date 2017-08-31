@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-web",
-  "version": "0.5.30",
+  "version": "0.5.31",
   "description": "Buffer Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -10,18 +10,18 @@
     "test-update": "jest -u --config=../../.jestrc.json"
   },
   "dependencies": {
-    "@bufferapp/app-sidebar": "0.5.30",
+    "@bufferapp/app-sidebar": "0.5.31",
     "@bufferapp/async-data-fetch": "0.5.25",
-    "@bufferapp/components": "0.5.30",
-    "@bufferapp/publish-example": "0.5.30",
-    "@bufferapp/publish-profile-sidebar": "0.5.30",
-    "@bufferapp/publish-queue": "0.5.30",
+    "@bufferapp/components": "0.5.31",
+    "@bufferapp/publish-example": "0.5.31",
+    "@bufferapp/publish-profile-sidebar": "0.5.31",
+    "@bufferapp/publish-queue": "0.5.31",
     "@bufferapp/publish-routes": "0.5.25",
-    "@bufferapp/publish-sent": "0.5.30",
-    "@bufferapp/publish-settings": "0.5.30",
-    "@bufferapp/publish-shared-components": "0.5.30",
-    "@bufferapp/publish-store": "0.5.30",
-    "@bufferapp/publish-tabs": "0.5.30"
+    "@bufferapp/publish-sent": "0.5.31",
+    "@bufferapp/publish-settings": "0.5.31",
+    "@bufferapp/publish-shared-components": "0.5.31",
+    "@bufferapp/publish-store": "0.5.31",
+    "@bufferapp/publish-tabs": "0.5.31"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {
