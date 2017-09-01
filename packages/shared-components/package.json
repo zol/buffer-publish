@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-shared-components",
-  "version": "0.5.31",
+  "version": "0.5.32",
   "description": "Buffer Publish Shared Components",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/components": "0.5.31"
+    "@bufferapp/components": "0.5.32"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

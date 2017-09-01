@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-sent",
-  "version": "0.5.31",
+  "version": "0.5.32",
   "description": "Sent Posts package",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,9 @@
   "author": "melissa@buffer.com",
   "dependencies": {
     "@bufferapp/async-data-fetch": "0.5.25",
-    "@bufferapp/components": "0.5.31",
-    "@bufferapp/publish-profile-sidebar": "0.5.31",
-    "@bufferapp/publish-shared-components": "0.5.31"
+    "@bufferapp/components": "0.5.32",
+    "@bufferapp/publish-profile-sidebar": "0.5.32",
+    "@bufferapp/publish-shared-components": "0.5.32"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
