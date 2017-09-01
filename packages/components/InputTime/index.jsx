@@ -5,8 +5,10 @@ import Text from '../Text';
 import { calculateStyles } from '../lib/utils';
 import PseudoClassComponent from '../PseudoClassComponent';
 
-// generate array of numbers (inclusive)
-const genArray = (start, end) => [...Array(end + 1).keys()].slice(start);
+// generate array of numbers (inclusive) - IE 11 compatible
+const genArray = (start, end) =>
+  Array.apply(null, { length: end + 1 }) // eslint-disable-line prefer-spread
+  .map(Number.call, Number).slice(start);
 const leftPadTimeUnit = timeUnit => (timeUnit < 10 ? `0${timeUnit}` : timeUnit);
 
 /* eslint-disable react/prop-types */

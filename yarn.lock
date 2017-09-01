@@ -6121,14 +6121,14 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-pusher-js@^4.1.0:
+pusher-js@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-4.1.0.tgz#5297973de935994ba65c2048ccf3b8c007247341"
   dependencies:
     faye-websocket "0.9.4"
     xmlhttprequest "^1.8.0"
 
-pusher@^1.5.1:
+pusher@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/pusher/-/pusher-1.5.1.tgz#8186cf16e5b124b51da6c83001a4c36a2ad42b44"
   dependencies:
