@@ -89,19 +89,30 @@ class SelectWrapper extends PseudoClassComponent {
   }
 }
 
-const timeColonWrapperStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  flex: 0,
-  marginLeft: '0.1rem',
-  marginRight: '0.1rem',
-};
+const timeColonWrapperStyle = ({
+  minimal,
+}) => calculateStyles({
+  default: {
+    display: 'flex',
+    alignItems: 'center',
+    flex: 0,
+    marginLeft: '0.1rem',
+    marginRight: '0.1rem',
+  },
+  minimal: {
+    marginLeft: 0,
+    marginRight: 0,
+  },
+}, {
+  minimal,
+});
 
 const TimeColonWrapper = ({
   children,
+  minimal,
 }) =>
   <div
-    style={timeColonWrapperStyle}
+    style={timeColonWrapperStyle({ minimal })}
   >
     {children}
   </div>;
@@ -204,8 +215,8 @@ const InputTime = ({
         : null }
       <SelectWrapper
         minimal={minimal}
-        marginLeft={displayTimeColon ? 0 : '0.25rem'}
-        marginRight={'0.25rem'}
+        marginLeft={minimal || displayTimeColon ? 0 : '0.25rem'}
+        marginRight={!minimal ? '0.25rem' : undefined}
       >
         <Select
           disabled={disabled || submitting}
