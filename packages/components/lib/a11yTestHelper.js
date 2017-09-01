@@ -34,20 +34,17 @@ const report = (results) => {
  * @param {function} callback - A callback function to execute when aXe returns.
  */
  /* istanbul ignore next */
-const testComponentA11y = (app, config = []) => {
+const testComponentA11y = (app) => {
   const div = document.createElement('div'); //eslint-disable-line
   document.body.appendChild(div); //eslint-disable-line
 
   const wrapper = mount(app, { attachTo: div });
   const node = findDOMNode(wrapper.component);
-
-  if (typeof config === 'function') {
-    config = {
-      rules: {
-        'color-contrast': { enabled: false },
-      },
-    };
-  }
+  const config = {
+    rules: {
+      'color-contrast': { enabled: false },
+    },
+  };
   document.body.removeChild(div); //eslint-disable-line
   const oldNode = global.Node;
   global.Node = node.ownerDocument.defaultView.Node;
