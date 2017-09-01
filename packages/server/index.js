@@ -11,6 +11,7 @@ const { apiError } = require('./middleware');
 const session = require('./lib/session');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
+const pusher = require('./lib/pusher');
 
 const app = express();
 const server = http.createServer(app);
@@ -84,8 +85,20 @@ app.post('/signout', controller.signout);
 
 app.get('/health-check', controller.healthCheck);
 
+// Pusher Auth
+app.post('/pusher/auth',
+  bodyParser.json(),
+  bodyParser.urlencoded({ extended: false }),
+  (req, res) => {
+    const socketId = req.body.socket_id;
+    const channel = req.body.channel_name;
+    const auth = pusher.authenticate(socketId, channel);
+    res.send(auth);
+  },
+);
+
 app.use(apiError);
 
-server.listen(80, () => console.log('listening on port 80'));
+server.listen(80, () => console.log('listening on port 80')); // eslint-disable-line
 
 shutdownHelper.init({ server });

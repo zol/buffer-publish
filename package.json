@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "clean": "lerna clean",
-    "test": "if [ -n \"$CI\" ]; then yarn run init; fi && ./test.sh",
+    "test": "if [ -n \"$CI\" ]; then yarn run init; fi && lerna run test",
     "test-update": "lerna run test-update",
     "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
     "start": "cd ./packages/server/ && yarn run start",

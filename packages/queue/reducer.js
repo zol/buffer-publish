@@ -11,6 +11,10 @@ export const actionTypes = {
   POST_ERROR: 'POST_ERROR',
 };
 
+const initialState = {
+  byProfileId: {},
+};
+
 const profileInitialState = {
   loading: true,
   loadingMore: false,
@@ -20,62 +24,72 @@ const profileInitialState = {
   total: 0,
 };
 
-const handlePosts = (action, currentPosts) => {
-  let posts = action.result.updates;
-  if (action.args.isFetchingMore) {
-    posts = { ...currentPosts, ...posts };
-  }
-  return posts;
-};
-
-const increasePageCount = (page) => {
-  page += 1;
-  return page;
-};
-
 const determineIfMoreToLoad = (action, currentPosts) => {
   const currentPostCount = Object.keys(currentPosts).length;
   const resultUpdatesCount = Object.keys(action.result.updates).length;
   return (action.result.total > (currentPostCount + resultUpdatesCount));
 };
 
+const getProfileId = (action) => {
+  if (action.profileId) { return action.profileId; }
+  if (action.args) { return action.args.profileId; }
+  if (action.profile) { return action.profile.id; }
+};
+
+/**
+ * Reducers
+ */
+
 const postReducer = (state, action) => {
   switch (action.type) {
+    case actionTypes.POST_CREATED:
+    case actionTypes.POST_UPDATED:
+      return action.post;
     case actionTypes.POST_CLICKED_DELETE:
-      return { ...state, isConfirmingDelete: true };
+      return {
+        ...state,
+        isConfirmingDelete: true,
+      };
     case actionTypes.POST_CONFIRMED_DELETE:
-      return { ...state, isConfirmingDelete: false, isDeleting: true };
-    case actionTypes.POST_DELETED:
-      var { [action.updateId]: deleted, ...currentState } = state; //eslint-disable-line
-      return { ...currentState, isDeleting: false };
+      return {
+        ...state,
+        isConfirmingDelete: false,
+        isDeleting: true,
+      };
     case actionTypes.POST_CANCELED_DELETE:
-      return { ...state, isConfirmingDelete: false };
+      return {
+        ...state,
+        isConfirmingDelete: false,
+      };
+    case actionTypes.POST_ERROR:
+      return state;
     default:
       return state;
   }
 };
 
-const postsReducer = (state, action) => {
+const postsReducer = (state = {}, action) => {
   switch (action.type) {
+    case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`: {
+      const { updates } = action.result;
+      if (action.args.isFetchingMore) {
+        return { ...state, ...updates };
+      }
+      return updates;
+    }
+    case actionTypes.POST_DELETED: {
+      const { [action.post.id]: deleted, ...currentState } = state;
+      return currentState;
+    }
+    case actionTypes.POST_CREATED:
+    case actionTypes.POST_UPDATED:
     case actionTypes.POST_CLICKED_DELETE:
-      return {
-        ...state,
-        [action.updateId]: postReducer(state[action.updateId], action),
-      };
     case actionTypes.POST_CONFIRMED_DELETE:
-      return {
-        ...state,
-        [action.updateId]: postReducer(state[action.updateId], action),
-      };
-    case actionTypes.POST_DELETED:
-      return {
-        ...state,
-        [action.updateId]: postReducer(state[action.updateId], action),
-      };
     case actionTypes.POST_CANCELED_DELETE:
+    case actionTypes.POST_ERROR:
       return {
         ...state,
-        [action.updateId]: postReducer(state[action.updateId], action),
+        [action.post.id]: postReducer(state[action.post.id], action),
       };
     default:
       return state;
@@ -84,8 +98,6 @@ const postsReducer = (state, action) => {
 
 const profileReducer = (state = profileInitialState, action) => {
   switch (action.type) {
-    case profileSidebarActionTypes.SELECT_PROFILE:
-      return profileInitialState;
     case `queuedPosts_${dataFetchActionTypes.FETCH_START}`:
       return {
         ...state,
@@ -98,8 +110,8 @@ const profileReducer = (state = profileInitialState, action) => {
         loading: false,
         loadingMore: false,
         moreToLoad: determineIfMoreToLoad(action, state.posts),
-        page: increasePageCount(state.page),
-        posts: handlePosts(action, state.posts),
+        page: state.page + 1,
+        posts: postsReducer(state.posts, action),
         total: action.result.total,
       };
     case `queuedPosts_${dataFetchActionTypes.FETCH_FAIL}`:
@@ -108,44 +120,27 @@ const profileReducer = (state = profileInitialState, action) => {
         loading: false,
       };
     case actionTypes.POST_CREATED:
-      return state;
     case actionTypes.POST_UPDATED:
-      return state;
     case actionTypes.POST_CLICKED_DELETE:
-      return {
-        ...state,
-        posts: postsReducer(state.posts, action),
-      };
     case actionTypes.POST_CONFIRMED_DELETE:
-      return {
-        ...state,
-        posts: postsReducer(state.posts, action),
-      };
     case actionTypes.POST_DELETED:
-      return {
-        ...state,
-        posts: postsReducer(state.posts, action),
-      };
     case actionTypes.POST_CANCELED_DELETE:
+    case actionTypes.POST_ERROR: {
+      let adjustTotal = 0;
+      if (action.type === actionTypes.POST_CREATED) {
+        adjustTotal = 1;
+      } else if (action.type === actionTypes.POST_DELETED) {
+        adjustTotal = -1;
+      }
       return {
         ...state,
         posts: postsReducer(state.posts, action),
+        total: state.total + adjustTotal,
       };
-    case actionTypes.POST_ERROR:
-      return state;
+    }
     default:
       return state;
   }
-};
-
-const initialState = {
-  byProfileId: {},
-};
-
-const getProfileId = (action) => {
-  if (action.profileId) { return action.profileId; }
-  if (action.args) { return action.args.profileId; }
-  if (action.profile) { return action.profile.id; }
 };
 
 export default (state = initialState, action) => {
@@ -158,39 +153,10 @@ export default (state = initialState, action) => {
     case actionTypes.POST_CREATED:
     case actionTypes.POST_UPDATED:
     case actionTypes.POST_CLICKED_DELETE:
-      profileId = getProfileId(action);
-      if (profileId) {
-        return {
-          byProfileId: {
-            ...state.byProfileId,
-            [profileId]: profileReducer(state.byProfileId[profileId], action),
-          },
-        };
-      }
-      return state;
     case actionTypes.POST_CONFIRMED_DELETE:
-      profileId = getProfileId(action);
-      if (profileId) {
-        return {
-          byProfileId: {
-            ...state.byProfileId,
-            [profileId]: profileReducer(state.byProfileId[profileId], action),
-          },
-        };
-      }
-      return state;
     case actionTypes.POST_DELETED:
-      profileId = getProfileId(action);
-      if (profileId) {
-        return {
-          byProfileId: {
-            ...state.byProfileId,
-            [profileId]: profileReducer(state.byProfileId[profileId], action),
-          },
-        };
-      }
-      return state;
     case actionTypes.POST_CANCELED_DELETE:
+    case actionTypes.POST_ERROR:
       profileId = getProfileId(action);
       if (profileId) {
         return {
@@ -201,7 +167,6 @@ export default (state = initialState, action) => {
         };
       }
       return state;
-    case actionTypes.POST_ERROR:
     default:
       return state;
   }

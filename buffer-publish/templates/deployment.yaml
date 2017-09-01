@@ -57,6 +57,26 @@ spec:
             secretKeyRef:
               key: bugsnag
               name: buffer-publish-keys
+        - name: PUSHER_APP_ID
+          valueFrom:
+            secretKeyRef:
+              key: pusher-app-id
+              name: buffer-publish-keys
+        - name: PUSHER_APP_KEY
+          valueFrom:
+            secretKeyRef:
+              key: pusher-app-key
+              name: buffer-publish-keys
+        - name: PUSHER_APP_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: pusher-app-secret
+              name: buffer-publish-keys
+        - name: PUSHER_CLUSTER
+          valueFrom:
+            secretKeyRef:
+              key: pusher-cluster
+              name: buffer-publish-keys
         livenessProbe:
           httpGet:
             path: /health-check

@@ -92,4 +92,216 @@ describe('reducer', () => {
     expect(reducer(undefined, action))
       .toEqual(stateAfter);
   });
+
+  it('should handle POST_CREATED action type', () => {
+    const postCreated = { id: '12345', text: 'i love buffer so much' };
+    const stateAfter = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: postCreated },
+          total: 1,
+        },
+      },
+    };
+    const action = {
+      type: 'POST_CREATED',
+      profileId,
+      post: postCreated,
+    };
+    deepFreeze(action);
+    expect(reducer(undefined, action))
+      .toEqual(stateAfter);
+  });
+
+  it('should handle POST_UPDATED action type', () => {
+    const post = { id: '12345', text: 'i heart buffer' };
+    const postEdited = { id: '12345', text: 'twitter is fun' };
+    const stateBefore = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: post },
+          total: 1,
+        },
+      },
+    };
+    const stateAfter = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: postEdited },
+          total: 1,
+        },
+      },
+    };
+    const action = {
+      type: 'POST_UPDATED',
+      profileId,
+      post: postEdited,
+    };
+    deepFreeze(action);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
+
+  // POST_CLICKED_DELETE
+  it('should handle POST_CLICKED_DELETE action type', () => {
+    const post = { id: '12345', text: 'i heart buffer', isConfirmingDelete: false };
+    const postAfter = { ...post, isConfirmingDelete: true };
+    const stateBefore = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: post },
+          total: 1,
+        },
+      },
+    };
+    const stateAfter = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: postAfter },
+          total: 1,
+        },
+      },
+    };
+    const action = {
+      type: 'POST_CLICKED_DELETE',
+      profileId,
+      post: postAfter,
+    };
+    deepFreeze(action);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
+
+  // POST_CONFIRMED_DELETE
+  it('should handle POST_CONFIRMED_DELETE action type', () => {
+    const post = { id: '12345', text: 'i heart buffer', isConfirmingDelete: true, isDeleting: false };
+    const postAfter = { ...post, isConfirmingDelete: false, isDeleting: true };
+    const stateBefore = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: post },
+          total: 1,
+        },
+      },
+    };
+    const stateAfter = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: postAfter },
+          total: 1,
+        },
+      },
+    };
+    const action = {
+      type: 'POST_CONFIRMED_DELETE',
+      profileId,
+      post: postAfter,
+    };
+    deepFreeze(action);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
+
+  // POST_DELETED
+  it('should handle POST_DELETED action type', () => {
+    const post = { id: '12345', text: 'i heart buffer', isConfirmingDelete: true, isDeleting: true };
+    const stateBefore = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: post },
+          total: 1,
+        },
+      },
+    };
+    const stateAfter = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { },
+          total: 0,
+        },
+      },
+    };
+    const action = {
+      type: 'POST_DELETED',
+      profileId,
+      post,
+    };
+    deepFreeze(action);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
+
+  // POST_CANCELED_DELETE
+  it('should handle POST_CANCELED_DELETE action type', () => {
+    const post = { id: '12345', text: 'i heart buffer', isConfirmingDelete: true, isDeleting: false };
+    const postAfter = { ...post, isConfirmingDelete: false, isDeleting: false };
+    const stateBefore = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: post },
+          total: 1,
+        },
+      },
+    };
+    const stateAfter = {
+      byProfileId: {
+        [profileId]: {
+          loading: true,
+          loadingMore: false,
+          moreToLoad: false,
+          page: 1,
+          posts: { 12345: postAfter },
+          total: 1,
+        },
+      },
+    };
+    const action = {
+      type: 'POST_CANCELED_DELETE',
+      profileId,
+      post: postAfter,
+    };
+    deepFreeze(action);
+    expect(reducer(stateBefore, action))
+      .toEqual(stateAfter);
+  });
 });
