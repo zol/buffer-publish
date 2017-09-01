@@ -1,4 +1,3 @@
-// import sleep from 'then-sleep';
 import Pusher from 'pusher-js';
 import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-profile-sidebar';
 import { postParser } from '@bufferapp/publish-utils';

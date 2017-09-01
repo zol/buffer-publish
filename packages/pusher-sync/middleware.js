@@ -9,8 +9,6 @@ const profileEventActionMap = {
   sent_update: 'POST_SENT',
   deleted_update: 'POST_DELETED',
   updated_update: 'POST_UPDATED',
-  // collaboration_draft_approved: '',
-  // collaboration_draft_updated: '',
 };
 
 
