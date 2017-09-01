@@ -17,8 +17,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@bufferapp/publish-profile-sidebar": "0.5.29",
+    "@bufferapp/publish-profile-sidebar": "0.5.31",
     "@bufferapp/publish-utils": "0.5.29",
-    "pusher-js": "^4.1.0"
+    "pusher-js": "4.1.0"
   }
 }
