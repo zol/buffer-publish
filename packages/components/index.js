@@ -20,6 +20,7 @@ export List from './List';
 export ListItem from './ListItem';
 export LoadingAnimation from './LoadingAnimation';
 export NavBar from './NavBar';
+export Notification from './Notification';
 export MultipleImages from './MultipleImages';
 export Overlay from './Overlay';
 export ArrowPopover from './ArrowPopover';

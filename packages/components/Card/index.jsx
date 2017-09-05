@@ -25,6 +25,7 @@ import {
 } from '../style/animation';
 import {
   boxShadowLevelOne,
+  boxShadowLevelTwo,
 } from '../style/dropShadow';
 
 const Card = ({
@@ -40,6 +41,7 @@ const Card = ({
   onMouseEnter,
   onMouseLeave,
   reducedPadding,
+  shadowHeight,
 }) => {
   const style = calculateStyles({
     default: {
@@ -81,6 +83,12 @@ const Card = ({
     reducedPadding: {
       padding: '1rem',
     },
+    shadowHeightOne: {
+      boxShadow: boxShadowLevelOne,
+    },
+    shadowHeightTwo: {
+      boxShadow: boxShadowLevelTwo,
+    },
   }, {
     doublePadding,
     empty,
@@ -91,6 +99,8 @@ const Card = ({
     hovered,
     color,
     reducedPadding,
+    shadowHeightOne: shadowHeight === 1,
+    shadowHeightTwo: shadowHeight === 2,
   });
   return (
     <div
@@ -116,6 +126,11 @@ Card.propTypes = {
   onMouseEnter: PropTypes.func,
   onMouseLeave: PropTypes.func,
   reducedPadding: PropTypes.bool,
+  shadowHeight: PropTypes.oneOf([0, 1, 2]),
+};
+
+Card.defaultProps = {
+  shadowHeight: 0,
 };
 
 export default Card;
