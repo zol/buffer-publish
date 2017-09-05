@@ -1,6 +1,6 @@
 module.exports = profile => ({
   id: profile.id,
-  avatarUrl: profile.avatar,
+  avatarUrl: profile.avatar_https,
   avatar_https: profile.avatar_https,
   type: profile.service,
   handle: profile.service_username,
