@@ -9,10 +9,14 @@ export const actionTypes = {
   POST_DELETED: 'POST_DELETED',
   POST_CANCELED_DELETE: 'POST_CANCELED_DELETE',
   POST_ERROR: 'POST_ERROR',
+  OPEN_COMPOSER: 'OPEN_COMPOSER',
+  HIDE_COMPOSER: 'HIDE_COMPOSER',
 };
 
 const initialState = {
   byProfileId: {},
+  showComposer: false,
+  enabledApplicationModes: [],
 };
 
 const profileInitialState = {
@@ -167,6 +171,21 @@ export default (state = initialState, action) => {
         };
       }
       return state;
+    case `enabledApplicationModes_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        enabledApplicationModes: action.result.application_modes,
+      };
+    case actionTypes.OPEN_COMPOSER:
+      return {
+        ...state,
+        showComposer: true,
+      };
+    case actionTypes.HIDE_COMPOSER:
+      return {
+        ...state,
+        showComposer: false,
+      };
     default:
       return state;
   }
@@ -192,5 +211,11 @@ export const actions = {
     updateId: post.id,
     post,
     profileId,
+  }),
+  handleComposerPlaceholderClick: () => ({
+    type: actionTypes.OPEN_COMPOSER,
+  }),
+  handleComposerCreateSuccess: () => ({
+    type: actionTypes.HIDE_COMPOSER,
   }),
 };

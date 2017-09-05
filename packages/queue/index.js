@@ -24,6 +24,7 @@ const formatPostLists = (posts) => {
 };
 
 // default export = container
+// TODO: get enabledApplicationModes in the connect
 export default connect(
   (state, ownProps) => {
     const profileId = ownProps.profileId;
@@ -36,6 +37,8 @@ export default connect(
         page: currentProfile.page,
         postLists: formatPostLists(currentProfile.posts),
         total: currentProfile.total,
+        enabledApplicationModes: state.queue.enabledApplicationModes,
+        showComposer: state.queue.showComposer,
       };
     }
     return {};
@@ -58,6 +61,12 @@ export default connect(
         post: post.post,
         profileId: ownProps.profileId,
       }));
+    },
+    onComposerPlaceholderClick: () => {
+      dispatch(actions.handleComposerPlaceholderClick());
+    },
+    onComposerCreateSuccess: () => {
+      dispatch(actions.handleComposerCreateSuccess());
     },
   }),
 )(QueuedPosts);

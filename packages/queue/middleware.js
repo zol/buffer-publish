@@ -1,10 +1,18 @@
 import { actionTypes as profileActionTypes } from '@bufferapp/publish-profile-sidebar';
-import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
+import {
+  actions as dataFetchActions,
+  actionTypes as dataFetchActionTypes,
+} from '@bufferapp/async-data-fetch';
 import { actionTypes } from './reducer';
 
 export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars
   next(action);
   switch (action.type) {
+    case `user_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      dispatch(dataFetchActions.fetch({
+        name: 'enabledApplicationModes',
+      }));
+      break;
     case profileActionTypes.SELECT_PROFILE:
       dispatch(dataFetchActions.fetch({
         name: 'queuedPosts',

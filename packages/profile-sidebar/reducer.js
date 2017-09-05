@@ -22,6 +22,16 @@ export default (state = initialState, action) => {
           .filter(profile => profile.locked),
       };
     }
+    case actionTypes.SELECT_PROFILE: {
+      return {
+        ...state,
+        profiles: state.profiles
+          .map(profile => ({
+            ...profile,
+            open: profile.id === action.profileId,
+          })),
+      };
+    }
     default:
       return state;
   }

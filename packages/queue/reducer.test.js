@@ -7,6 +7,8 @@ describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
       byProfileId: {},
+      enabledApplicationModes: [],
+      showComposer: false,
     };
     const action = {
       type: 'INIT',

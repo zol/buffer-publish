@@ -26,6 +26,7 @@ const bindProfileEvents = (channel, profileId, dispatch) => {
 
 export default ({ dispatch }) => {
   const pusher = new Pusher(PUSHER_APP_KEY, { authEndpoint: '/pusher/auth' }); // eslint-disable-line
+  window.__pusher = pusher;
   const channelsByProfileId = {};
 
   return next => (action) => {

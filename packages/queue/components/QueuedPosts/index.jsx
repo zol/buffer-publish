@@ -14,6 +14,7 @@ import {
   PostLists,
   EmptyState,
 } from '@bufferapp/publish-shared-components';
+import ComposerWrapper from '../ComposerWrapper';
 
 const composerStyle = {
   marginBottom: '1.5rem',
@@ -31,11 +32,14 @@ const QueuedPosts = ({
   loading,
   loadingMore,
   postLists,
+  onComposerPlaceholderClick,
+  onComposerCreateSuccess,
   onCancelConfirmClick,
   onDeleteClick,
   onDeleteConfirmClick,
   onEditClick,
   onShareNowClick,
+  showComposer,
 }) => {
   if (loading) {
     return (
@@ -56,12 +60,20 @@ const QueuedPosts = ({
     opacity: loadingMore ? '1' : '0',
     boxSizing: 'border-box',
   };
+
   return (
     <div>
       <div style={composerStyle}>
-        <Input
-          placeholder={'What would you like to share?'}
-        />
+        {showComposer ?
+          <ComposerWrapper
+            onSave={onComposerCreateSuccess}
+          />
+          :
+          <Input
+            placeholder={'What would you like to share?'}
+            onFocus={onComposerPlaceholderClick}
+          />
+        }
       </div>
       {total < 1 &&
         <EmptyState
@@ -100,11 +112,14 @@ QueuedPosts.propTypes = {
     }),
   ).isRequired,
   total: PropTypes.number,
+  onComposerPlaceholderClick: PropTypes.func.isRequired,
+  onComposerCreateSuccess: PropTypes.func.isRequired,
   onCancelConfirmClick: PropTypes.func.isRequired,
   onDeleteClick: PropTypes.func.isRequired,
   onDeleteConfirmClick: PropTypes.func.isRequired,
   onEditClick: PropTypes.func.isRequired,
   onShareNowClick: PropTypes.func.isRequired,
+  showComposer: PropTypes.bool,
 };
 
 QueuedPosts.defaultProps = {
@@ -113,7 +128,9 @@ QueuedPosts.defaultProps = {
   moreToLoad: false,
   page: 1,
   postLists: [],
+  showComposer: false,
   total: 0,
+  enabledApplicationModes: [],
 };
 
 export default QueuedPosts;
