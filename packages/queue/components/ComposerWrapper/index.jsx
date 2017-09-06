@@ -13,7 +13,7 @@ const ComposerWrapper = ({
 }) => {
   const options = {
     canSelectProfiles: true,
-    saveButtons: ['ADD_TO_QUEUE', 'SHARE_NEXT', 'SCHEDULE_POST'],
+    saveButtons: ['ADD_TO_QUEUE', 'SHARE_NOW'],
     position: { top: '10rem', left: '10rem' },
     onSave,
   };
