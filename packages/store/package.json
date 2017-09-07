@@ -21,7 +21,8 @@
     "@bufferapp/publish-routes": "0.5.25",
     "@bufferapp/publish-sent": "0.5.33",
     "@bufferapp/publish-settings": "0.5.33",
-    "@bufferapp/publish-tabs": "0.5.33"
+    "@bufferapp/publish-tabs": "0.5.33",
+    "@bufferapp/notifications": "0.5.32"
   },
   "devDependencies": {
     "eslint": "3.19.0",

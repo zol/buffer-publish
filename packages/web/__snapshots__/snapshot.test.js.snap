@@ -669,6 +669,27 @@ exports[`Snapshots App should render application 1`] = `
         }
       }
     />
+    <div
+      style={
+        Object {
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "marginRight": "1rem",
+            "marginTop": "1rem",
+            "width": "25rem",
+          }
+        }
+      />
+    </div>
   </div>
 </span>
 `;
@@ -1662,7 +1683,7 @@ exports[`Snapshots ProfilePage should render 1`] = `
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.5rem 2rem",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
@@ -2854,7 +2875,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.5rem 2rem",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
@@ -4225,7 +4246,7 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
                             "margin": "0",
                             "outline": "none",
                             "padding": "0.5rem 2rem",
-                            "transition": "background-color 0.1s linear",
+                            "transition": "background-color 0.2s linear",
                           }
                         }
                       >

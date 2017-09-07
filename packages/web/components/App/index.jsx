@@ -2,6 +2,7 @@ import React from 'react';
 import { profilePageRoute } from '@bufferapp/publish-routes';
 import { Route, Switch } from 'react-router';
 import AppSidebar from '@bufferapp/app-sidebar';
+import Notifications from '@bufferapp/notifications';
 import ProfilePage from '../ProfilePage';
 import DefaultPage from '../DefaultPage';
 
@@ -26,4 +27,5 @@ export default () =>
         <Route component={DefaultPage} />
       </Switch>
     </div>
+    <Notifications />
   </div>;

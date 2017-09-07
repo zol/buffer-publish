@@ -85,7 +85,7 @@ exports[`Snapshots DropdownTab default 1`] = `
           "margin": "0",
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -281,7 +281,7 @@ exports[`Snapshots DropdownTab dropdown opened 1`] = `
           "margin": "0",
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -685,7 +685,7 @@ exports[`Snapshots ImagePost error 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -1061,7 +1061,7 @@ exports[`Snapshots ImagePost queued image post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -1404,7 +1404,7 @@ exports[`Snapshots ImagePost retweet 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -1428,7 +1428,7 @@ exports[`Snapshots ImagePost retweet 1`] = `
                 "fontSize": "0.9rem",
                 "lineHeight": 1.5,
                 "padding": "1rem",
-                "transition": "box-shadow 0.1s linear",
+                "transition": "box-shadow 0.2s linear",
               }
             }
           >
@@ -1834,7 +1834,7 @@ exports[`Snapshots ImagePost sent image post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -1992,7 +1992,7 @@ exports[`Snapshots ImagePost square image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -2335,7 +2335,7 @@ exports[`Snapshots ImagePost tag 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -2712,7 +2712,7 @@ exports[`Snapshots ImagePost tall image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -3055,7 +3055,7 @@ exports[`Snapshots ImagePost wide image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -3398,7 +3398,7 @@ exports[`Snapshots LinkPost error 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -3488,7 +3488,7 @@ exports[`Snapshots LinkPost error 1`] = `
                       "fontSize": "0.9rem",
                       "lineHeight": 1.5,
                       "padding": 0,
-                      "transition": "box-shadow 0.1s linear",
+                      "transition": "box-shadow 0.2s linear",
                     }
                   }
                 >
@@ -3877,7 +3877,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -3967,7 +3967,7 @@ exports[`Snapshots LinkPost queued link post 1`] = `
                       "fontSize": "0.9rem",
                       "lineHeight": 1.5,
                       "padding": 0,
-                      "transition": "box-shadow 0.1s linear",
+                      "transition": "box-shadow 0.2s linear",
                     }
                   }
                 >
@@ -4323,7 +4323,7 @@ exports[`Snapshots LinkPost sent 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -4413,7 +4413,7 @@ exports[`Snapshots LinkPost sent 1`] = `
                       "fontSize": "0.9rem",
                       "lineHeight": 1.5,
                       "padding": 0,
-                      "transition": "box-shadow 0.1s linear",
+                      "transition": "box-shadow 0.2s linear",
                     }
                   }
                 >
@@ -4584,7 +4584,7 @@ exports[`Snapshots LinkPost square image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -4674,7 +4674,7 @@ exports[`Snapshots LinkPost square image 1`] = `
                       "fontSize": "0.9rem",
                       "lineHeight": 1.5,
                       "padding": 0,
-                      "transition": "box-shadow 0.1s linear",
+                      "transition": "box-shadow 0.2s linear",
                     }
                   }
                 >
@@ -5030,7 +5030,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -5120,7 +5120,7 @@ exports[`Snapshots LinkPost tall image 1`] = `
                       "fontSize": "0.9rem",
                       "lineHeight": 1.5,
                       "padding": 0,
-                      "transition": "box-shadow 0.1s linear",
+                      "transition": "box-shadow 0.2s linear",
                     }
                   }
                 >
@@ -5476,7 +5476,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -5566,7 +5566,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
                       "fontSize": "0.9rem",
                       "lineHeight": 1.5,
                       "padding": 0,
-                      "transition": "box-shadow 0.1s linear",
+                      "transition": "box-shadow 0.2s linear",
                     }
                   }
                 >
@@ -5922,7 +5922,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -6408,7 +6408,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -6861,7 +6861,7 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -7129,7 +7129,7 @@ exports[`Snapshots Post error 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -7442,7 +7442,7 @@ exports[`Snapshots Post isConfirmingDelete 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -7777,7 +7777,7 @@ exports[`Snapshots Post isDeleting 1`] = `
             "lineHeight": 1.5,
             "opacity": 0.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -7900,7 +7900,7 @@ exports[`Snapshots Post isWorking 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -8023,7 +8023,7 @@ exports[`Snapshots Post queued post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -8303,7 +8303,7 @@ exports[`Snapshots Post retweet 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -8327,7 +8327,7 @@ exports[`Snapshots Post retweet 1`] = `
                 "fontSize": "0.9rem",
                 "lineHeight": 1.5,
                 "padding": "1rem",
-                "transition": "box-shadow 0.1s linear",
+                "transition": "box-shadow 0.2s linear",
               }
             }
           >
@@ -8670,7 +8670,7 @@ exports[`Snapshots Post retweet with comment 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -8733,7 +8733,7 @@ exports[`Snapshots Post retweet with comment 1`] = `
                 "fontSize": "0.9rem",
                 "lineHeight": 1.5,
                 "padding": "1rem",
-                "transition": "box-shadow 0.1s linear",
+                "transition": "box-shadow 0.2s linear",
               }
             }
           >
@@ -9076,7 +9076,7 @@ exports[`Snapshots Post sent 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -10860,7 +10860,7 @@ exports[`Snapshots PostList default 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -11168,7 +11168,7 @@ exports[`Snapshots PostList default 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -11515,7 +11515,7 @@ exports[`Snapshots PostList image posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -11849,7 +11849,7 @@ exports[`Snapshots PostList image posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -12222,7 +12222,7 @@ exports[`Snapshots PostList link posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -12312,7 +12312,7 @@ exports[`Snapshots PostList link posts 1`] = `
                               "fontSize": "0.9rem",
                               "lineHeight": 1.5,
                               "padding": 0,
-                              "transition": "box-shadow 0.1s linear",
+                              "transition": "box-shadow 0.2s linear",
                             }
                           }
                         >
@@ -12679,7 +12679,7 @@ exports[`Snapshots PostList link posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -12769,7 +12769,7 @@ exports[`Snapshots PostList link posts 1`] = `
                               "fontSize": "0.9rem",
                               "lineHeight": 1.5,
                               "padding": 0,
-                              "transition": "box-shadow 0.1s linear",
+                              "transition": "box-shadow 0.2s linear",
                             }
                           }
                         >
@@ -13175,7 +13175,7 @@ exports[`Snapshots PostList missing type 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -13483,7 +13483,7 @@ exports[`Snapshots PostList missing type 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -13830,7 +13830,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -14274,7 +14274,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -14757,7 +14757,7 @@ exports[`Snapshots PostList sent 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -14880,7 +14880,7 @@ exports[`Snapshots PostList sent 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -15042,7 +15042,7 @@ exports[`Snapshots PostList video posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -15410,7 +15410,7 @@ exports[`Snapshots PostList video posts 1`] = `
                     "fontSize": "0.9rem",
                     "lineHeight": 1.5,
                     "padding": 0,
-                    "transition": "box-shadow 0.1s linear",
+                    "transition": "box-shadow 0.2s linear",
                   }
                 }
               >
@@ -15840,7 +15840,7 @@ exports[`Snapshots PostLists default 1`] = `
                           "fontSize": "0.9rem",
                           "lineHeight": 1.5,
                           "padding": 0,
-                          "transition": "box-shadow 0.1s linear",
+                          "transition": "box-shadow 0.2s linear",
                         }
                       }
                     >
@@ -16148,7 +16148,7 @@ exports[`Snapshots PostLists default 1`] = `
                           "fontSize": "0.9rem",
                           "lineHeight": 1.5,
                           "padding": 0,
-                          "transition": "box-shadow 0.1s linear",
+                          "transition": "box-shadow 0.2s linear",
                         }
                       }
                     >
@@ -16506,7 +16506,7 @@ exports[`Snapshots PostLists default 1`] = `
                           "fontSize": "0.9rem",
                           "lineHeight": 1.5,
                           "padding": 0,
-                          "transition": "box-shadow 0.1s linear",
+                          "transition": "box-shadow 0.2s linear",
                         }
                       }
                     >
@@ -16814,7 +16814,7 @@ exports[`Snapshots PostLists default 1`] = `
                           "fontSize": "0.9rem",
                           "lineHeight": 1.5,
                           "padding": 0,
-                          "transition": "box-shadow 0.1s linear",
+                          "transition": "box-shadow 0.2s linear",
                         }
                       }
                     >
@@ -69958,7 +69958,7 @@ exports[`Snapshots TextPost error 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -70308,7 +70308,7 @@ exports[`Snapshots TextPost queued text post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -70625,7 +70625,7 @@ exports[`Snapshots TextPost retweet 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -70649,7 +70649,7 @@ exports[`Snapshots TextPost retweet 1`] = `
                 "fontSize": "0.9rem",
                 "lineHeight": 1.5,
                 "padding": "1rem",
-                "transition": "box-shadow 0.1s linear",
+                "transition": "box-shadow 0.2s linear",
               }
             }
           >
@@ -71029,7 +71029,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -71092,7 +71092,7 @@ exports[`Snapshots TextPost retweet with comment 1`] = `
                 "fontSize": "0.9rem",
                 "lineHeight": 1.5,
                 "padding": "1rem",
-                "transition": "box-shadow 0.1s linear",
+                "transition": "box-shadow 0.2s linear",
               }
             }
           >
@@ -71472,7 +71472,7 @@ exports[`Snapshots TextPost sent 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -71604,7 +71604,7 @@ exports[`Snapshots VideoPost error 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -72014,7 +72014,7 @@ exports[`Snapshots VideoPost queued video post 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -72391,7 +72391,7 @@ exports[`Snapshots VideoPost retweet 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -72415,7 +72415,7 @@ exports[`Snapshots VideoPost retweet 1`] = `
                 "fontSize": "0.9rem",
                 "lineHeight": 1.5,
                 "padding": "1rem",
-                "transition": "box-shadow 0.1s linear",
+                "transition": "box-shadow 0.2s linear",
               }
             }
           >
@@ -72855,7 +72855,7 @@ exports[`Snapshots VideoPost sent 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -73047,7 +73047,7 @@ exports[`Snapshots VideoPost square image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -73424,7 +73424,7 @@ exports[`Snapshots VideoPost tall image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -73801,7 +73801,7 @@ exports[`Snapshots VideoPost wide image 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": 0,
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >

@@ -21,7 +21,8 @@
     "@bufferapp/publish-settings": "0.5.33",
     "@bufferapp/publish-shared-components": "0.5.33",
     "@bufferapp/publish-store": "0.5.33",
-    "@bufferapp/publish-tabs": "0.5.33"
+    "@bufferapp/publish-tabs": "0.5.33",
+    "@bufferapp/notifications": "0.5.32"
   },
   "author": "Harrison Harnisch <hharnisc@gmail.com> (http://hharnisc.github.io)",
   "devDependencies": {

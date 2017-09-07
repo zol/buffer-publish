@@ -299,7 +299,7 @@ exports[`Snapshots Button default 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -333,7 +333,7 @@ exports[`Snapshots Button warning button 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -494,7 +494,7 @@ exports[`Snapshots ButtonStateless Default 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -527,7 +527,7 @@ exports[`Snapshots ButtonStateless borderless 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -565,7 +565,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -599,7 +599,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -633,7 +633,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -668,7 +668,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -702,7 +702,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.25rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -737,7 +737,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -772,7 +772,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -807,7 +807,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -839,7 +839,7 @@ exports[`Snapshots ButtonStateless disabled 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -924,7 +924,7 @@ exports[`Snapshots ButtonStateless fillContainer 1`] = `
           "margin": "0",
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
           "width": "100%",
         }
       }
@@ -961,7 +961,7 @@ exports[`Snapshots ButtonStateless focused 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -999,7 +999,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1033,7 +1033,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1067,7 +1067,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1102,7 +1102,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1136,7 +1136,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.25rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1171,7 +1171,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1206,7 +1206,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1241,7 +1241,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "outline": "none",
           "padding": "0.5rem 2rem",
           "textDecoration": "none",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1273,7 +1273,7 @@ exports[`Snapshots ButtonStateless hovered 1`] = `
           "opacity": 0.3,
           "outline": "none",
           "padding": "0.5rem 2rem",
-          "transition": "background-color 0.1s linear",
+          "transition": "background-color 0.2s linear",
         }
       }
     >
@@ -1351,7 +1351,7 @@ exports[`Snapshots ButtonStateless large 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1430,7 +1430,7 @@ exports[`Snapshots ButtonStateless onClick event 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1463,7 +1463,7 @@ exports[`Snapshots ButtonStateless onFocus + onBlur 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1496,7 +1496,7 @@ exports[`Snapshots ButtonStateless onMouseEnter + onMouseLeave 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1530,7 +1530,7 @@ exports[`Snapshots ButtonStateless quaternary 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1564,7 +1564,7 @@ exports[`Snapshots ButtonStateless secondary 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1597,7 +1597,7 @@ exports[`Snapshots ButtonStateless small 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.25rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1631,7 +1631,7 @@ exports[`Snapshots ButtonStateless tertiary 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1665,7 +1665,7 @@ exports[`Snapshots ButtonStateless warning 1`] = `
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.1s linear",
+        "transition": "background-color 0.2s linear",
       }
     }
   >
@@ -1688,7 +1688,7 @@ exports[`Snapshots Card default 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -1748,7 +1748,7 @@ exports[`Snapshots Card doublePadding 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "3rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -1811,7 +1811,7 @@ exports[`Snapshots Card empty + hovered 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -1873,7 +1873,7 @@ exports[`Snapshots Card empty 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -1897,7 +1897,7 @@ exports[`Snapshots Card faded 1`] = `
         "lineHeight": 1.5,
         "opacity": 0.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -1958,7 +1958,7 @@ exports[`Snapshots Card failed 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2019,7 +2019,7 @@ exports[`Snapshots Card hovered 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2079,7 +2079,7 @@ exports[`Snapshots Card noBorder 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2139,7 +2139,7 @@ exports[`Snapshots Card noPadding 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": 0,
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2199,7 +2199,7 @@ exports[`Snapshots Card off-white background color 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2259,7 +2259,7 @@ exports[`Snapshots Card onMouseEnter + onMouseLeave 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2319,7 +2319,7 @@ exports[`Snapshots Card reducedPadding 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2380,7 +2380,7 @@ exports[`Snapshots Card shadowHeight=1 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -2441,7 +2441,7 @@ exports[`Snapshots Card shadowHeight=2 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": "1.5rem",
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -20967,7 +20967,7 @@ exports[`Snapshots Notification default 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": 0,
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -21111,7 +21111,7 @@ exports[`Snapshots Notification error 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": 0,
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -21255,7 +21255,7 @@ exports[`Snapshots Notification handle close click 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": 0,
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -21399,7 +21399,7 @@ exports[`Snapshots Notification long text 1`] = `
         "fontSize": "0.9rem",
         "lineHeight": 1.5,
         "padding": 0,
-        "transition": "box-shadow 0.1s linear",
+        "transition": "box-shadow 0.2s linear",
       }
     }
   >
@@ -21645,7 +21645,7 @@ exports[`Snapshots Popover bottom = 10rem 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -21698,7 +21698,7 @@ exports[`Snapshots Popover bottom = 10rem right = 10rem 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -21752,7 +21752,7 @@ exports[`Snapshots Popover default 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -21805,7 +21805,7 @@ exports[`Snapshots Popover left = 10rem 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -21858,7 +21858,7 @@ exports[`Snapshots Popover right = 10rem 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -21911,7 +21911,7 @@ exports[`Snapshots Popover top = 10rem 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -21964,7 +21964,7 @@ exports[`Snapshots Popover top = 10rem left = 10rem 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >
@@ -22018,7 +22018,7 @@ exports[`Snapshots Popover transparent Overlay 1`] = `
             "fontSize": "0.9rem",
             "lineHeight": 1.5,
             "padding": "1.5rem",
-            "transition": "box-shadow 0.1s linear",
+            "transition": "box-shadow 0.2s linear",
           }
         }
       >

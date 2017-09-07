@@ -14,6 +14,7 @@ import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/publish-i18n';
 import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
 import { middleware as pusherSyncMiddleware } from '@bufferapp/publish-pusher-sync';
+import { middleware as notificationsMiddleware } from '@bufferapp/notifications';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -39,6 +40,7 @@ const configureStore = (initialstate) => {
         sentMiddleware,
         settingsMiddleware,
         pusherSyncMiddleware,
+        notificationsMiddleware,
       ),
     ),
   );

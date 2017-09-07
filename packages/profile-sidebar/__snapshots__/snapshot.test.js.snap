@@ -2229,7 +2229,7 @@ exports[`Snapshots ProfileSidebar should display a list of profiles 1`] = `
             "margin": "0",
             "outline": "none",
             "padding": "0.5rem 2rem",
-            "transition": "background-color 0.1s linear",
+            "transition": "background-color 0.2s linear",
             "width": "100%",
           }
         }
@@ -6483,7 +6483,7 @@ exports[`Snapshots ProfileSidebar should display a long list of profiles 1`] = `
             "margin": "0",
             "outline": "none",
             "padding": "0.5rem 2rem",
-            "transition": "background-color 0.1s linear",
+            "transition": "background-color 0.2s linear",
             "width": "100%",
           }
         }

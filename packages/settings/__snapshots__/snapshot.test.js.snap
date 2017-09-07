@@ -1011,7 +1011,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                   "margin": "0",
                   "outline": "none",
                   "padding": "0.5rem 2rem",
-                  "transition": "background-color 0.1s linear",
+                  "transition": "background-color 0.2s linear",
                 }
               }
             >
@@ -1954,7 +1954,7 @@ exports[`Snapshots PostingTimeForm with 24hour time 1`] = `
                   "margin": "0",
                   "outline": "none",
                   "padding": "0.5rem 2rem",
-                  "transition": "background-color 0.1s linear",
+                  "transition": "background-color 0.2s linear",
                 }
               }
             >
@@ -2979,7 +2979,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                   "margin": "0",
                   "outline": "none",
                   "padding": "0.5rem 2rem",
-                  "transition": "background-color 0.1s linear",
+                  "transition": "background-color 0.2s linear",
                 }
               }
             >
@@ -4167,7 +4167,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                       "margin": "0",
                       "outline": "none",
                       "padding": "0.5rem 2rem",
-                      "transition": "background-color 0.1s linear",
+                      "transition": "background-color 0.2s linear",
                     }
                   }
                 >
