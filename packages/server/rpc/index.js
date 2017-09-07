@@ -9,6 +9,7 @@ const userMethod = require('./user');
 const deletePostMethod = require('./deletePost');
 const enabledApplicationModesMethod = require('./enabledApplicationModes');
 const apiWrapperMethod = require('./apiWrapper');
+const environmentMethod = require('./environment');
 
 module.exports = checkToken(rpc(
   loginMethod,
@@ -20,4 +21,5 @@ module.exports = checkToken(rpc(
   deletePostMethod,
   enabledApplicationModesMethod,
   apiWrapperMethod,
+  environmentMethod,
 ));

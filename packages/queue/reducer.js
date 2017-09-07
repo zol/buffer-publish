@@ -17,6 +17,7 @@ const initialState = {
   byProfileId: {},
   showComposer: false,
   enabledApplicationModes: [],
+  environment: 'production',
 };
 
 const profileInitialState = {
@@ -164,6 +165,7 @@ export default (state = initialState, action) => {
       profileId = getProfileId(action);
       if (profileId) {
         return {
+          ...state,
           byProfileId: {
             ...state.byProfileId,
             [profileId]: profileReducer(state.byProfileId[profileId], action),
@@ -175,6 +177,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         enabledApplicationModes: action.result.application_modes,
+      };
+    case `environment_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        environment: action.result.environment,
       };
     case actionTypes.OPEN_COMPOSER:
       return {

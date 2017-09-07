@@ -10,6 +10,7 @@ const ComposerWrapper = ({
   enabledApplicationModes,
   accessToken,
   onSave,
+  environment,
 }) => {
   const options = {
     canSelectProfiles: true,
@@ -20,12 +21,13 @@ const ComposerWrapper = ({
 
   const metaData = {
     application: 'WEB_DASHBOARD',
-    environment: 'local', // TODO: update this
+    environment: `${environment === 'development' ? 'local' : 'production'}`,
     should_enable_fb_autocomplete:
       userData.features && userData.features.includes('mc_facebook_autocomplete'),
     should_show_twitter_alt_text:
       userData.features && userData.features.includes('twitter_alt_text'),
-    should_use_new_twitter_autocomplete: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
+    // TODO: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
+    should_use_new_twitter_autocomplete: false,
   };
 
   const formattedData = formatInputData({
@@ -71,6 +73,7 @@ ComposerWrapper.propTypes = {
   enabledApplicationModes: PropTypes.arrayOf(PropTypes.string),
   accessToken: PropTypes.string.isRequired,
   onSave: PropTypes.func.isRequired,
+  environment: PropTypes.string.isRequired,
 };
 
 ComposerWrapper.defaultProps = {
@@ -86,6 +89,7 @@ export default connect(
         userData: state.appSidebar.user,
         profiles: state.profileSidebar.profiles,
         enabledApplicationModes: state.queue.enabledApplicationModes,
+        environment: state.queue.environment,
         accessToken: state.login.sessionToken,
       });
     }

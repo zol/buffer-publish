@@ -24,7 +24,6 @@ const formatPostLists = (posts) => {
 };
 
 // default export = container
-// TODO: get enabledApplicationModes in the connect
 export default connect(
   (state, ownProps) => {
     const profileId = ownProps.profileId;
@@ -39,6 +38,7 @@ export default connect(
         total: currentProfile.total,
         enabledApplicationModes: state.queue.enabledApplicationModes,
         showComposer: state.queue.showComposer,
+        environment: state.queue.environment,
       };
     }
     return {};

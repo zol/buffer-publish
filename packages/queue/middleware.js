@@ -8,6 +8,11 @@ import { actionTypes } from './reducer';
 export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars
   next(action);
   switch (action.type) {
+    case 'APP_INIT':
+      dispatch(dataFetchActions.fetch({
+        name: 'environment',
+      }));
+      break;
     case `user_${dataFetchActionTypes.FETCH_SUCCESS}`:
       dispatch(dataFetchActions.fetch({
         name: 'enabledApplicationModes',

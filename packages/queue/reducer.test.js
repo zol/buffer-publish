@@ -9,6 +9,7 @@ describe('reducer', () => {
       byProfileId: {},
       enabledApplicationModes: [],
       showComposer: false,
+      environment: 'production',
     };
     const action = {
       type: 'INIT',
@@ -30,6 +31,9 @@ describe('reducer', () => {
           total: 0,
         },
       },
+      enabledApplicationModes: [],
+      showComposer: false,
+      environment: 'production',
     };
     const action = {
       profileId,
@@ -56,6 +60,9 @@ describe('reducer', () => {
           total: 1,
         },
       },
+      enabledApplicationModes: [],
+      showComposer: false,
+      environment: 'production',
     };
     const action = {
       profileId,
@@ -85,6 +92,9 @@ describe('reducer', () => {
           total: 0,
         },
       },
+      enabledApplicationModes: [],
+      showComposer: false,
+      environment: 'production',
     };
     const action = {
       profileId,
@@ -108,6 +118,9 @@ describe('reducer', () => {
           total: 1,
         },
       },
+      enabledApplicationModes: [],
+      showComposer: false,
+      environment: 'production',
     };
     const action = {
       type: 'POST_CREATED',
@@ -133,6 +146,9 @@ describe('reducer', () => {
           total: 1,
         },
       },
+      enabledApplicationModes: [],
+      showComposer: false,
+      environment: 'production',
     };
     const stateAfter = {
       byProfileId: {
@@ -145,6 +161,9 @@ describe('reducer', () => {
           total: 1,
         },
       },
+      enabledApplicationModes: [],
+      showComposer: false,
+      environment: 'production',
     };
     const action = {
       type: 'POST_UPDATED',
