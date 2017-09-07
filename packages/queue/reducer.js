@@ -176,7 +176,7 @@ export default (state = initialState, action) => {
     case `enabledApplicationModes_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
-        enabledApplicationModes: action.result.application_modes,
+        enabledApplicationModes: action.result.enabledApplicationModes,
       };
     case `environment_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
