@@ -1,6 +1,7 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
 
+// MC expects enabledApplicationModes to be array of strings
 const getEnabledApplicationModes = (result) => {
   const applicationModes = result.application_modes;
   if (!applicationModes) return [];
