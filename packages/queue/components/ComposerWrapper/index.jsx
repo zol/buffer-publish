@@ -26,8 +26,7 @@ const ComposerWrapper = ({
       userData.features && userData.features.includes('mc_facebook_autocomplete'),
     should_show_twitter_alt_text:
       userData.features && userData.features.includes('twitter_alt_text'),
-    // TODO: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
-    should_use_new_twitter_autocomplete: false,
+    should_use_new_twitter_autocomplete: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
   };
 
   const formattedData = formatInputData({
