@@ -4,6 +4,7 @@ import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-pro
 export const actionTypes = {
   POST_CREATED: 'POST_CREATED',
   POST_UPDATED: 'POST_UPDATED',
+  // POST_CLICKED_EDIT: 'POST_CLICKED_EDIT',
   POST_CLICKED_DELETE: 'POST_CLICKED_DELETE',
   POST_CONFIRMED_DELETE: 'POST_CONFIRMED_DELETE',
   POST_DELETED: 'POST_DELETED',
@@ -254,11 +255,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         showComposer: true,
+        editMode: action.editMode,
       };
     case actionTypes.HIDE_COMPOSER:
       return {
         ...state,
         showComposer: false,
+        editMode: false,
       };
     default:
       return state;
@@ -266,6 +269,13 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
+  handleEditClick: ({ post, profileId }) => ({
+    type: actionTypes.OPEN_COMPOSER,
+    updateId: post.id,
+    editMode: true,
+    post,
+    profileId,
+  }),
   handleDeleteClick: ({ post, profileId }) => ({
     type: actionTypes.POST_CLICKED_DELETE,
     updateId: post.id,

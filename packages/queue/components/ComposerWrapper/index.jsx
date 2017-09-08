@@ -35,8 +35,8 @@ const ComposerWrapper = ({
       profiles,
       userData,
       metaData,
-      csrfToken: '1234',
-      update: {},
+      csrfToken: '1234', // dummy string for now since MC requires csrfToken
+      update: {}, // post
       imageDimensionsKey: userData.imageDimensionsKey,
     },
   });
@@ -73,12 +73,14 @@ ComposerWrapper.propTypes = {
   accessToken: PropTypes.string.isRequired,
   onSave: PropTypes.func.isRequired,
   environment: PropTypes.string.isRequired,
+  // post: PropTypes.shape({}),
 };
 
 ComposerWrapper.defaultProps = {
   profiles: [],
   enabledApplicationModes: [],
   csrfToken: '1234',
+  // post: {},
 };
 
 export default connect(
@@ -90,6 +92,8 @@ export default connect(
         enabledApplicationModes: state.queue.enabledApplicationModes,
         environment: state.queue.environment,
         accessToken: state.login.sessionToken,
+        editMode: state.queue.editMode,
+        // post: state.queue.byProfileId[profileId].posts[postId],
       });
     }
     return {};

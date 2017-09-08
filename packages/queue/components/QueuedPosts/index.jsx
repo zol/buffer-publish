@@ -15,6 +15,7 @@ import {
   EmptyState,
 } from '@bufferapp/publish-shared-components';
 import ComposerWrapper from '../ComposerWrapper';
+import ComposerPopover from '../ComposerPopover';
 
 const composerStyle = {
   marginBottom: '1.5rem',
@@ -44,6 +45,7 @@ const QueuedPosts = ({
   onImageClickPrev,
   onImageClose,
   showComposer,
+  editMode,
 }) => {
   if (loading) {
     return (
@@ -86,6 +88,9 @@ const QueuedPosts = ({
           heroImg="https://s3.amazonaws.com/buffer-publish/images/fresh-queue%402x.png"
           heroImgSize={{ width: '229px', height: '196px' }}
         />
+      }
+      {showComposer && editMode &&
+        <ComposerPopover onSave={onComposerCreateSuccess} />
       }
       <PostLists
         postLists={postLists}
@@ -132,6 +137,7 @@ QueuedPosts.propTypes = {
   onImageClickPrev: PropTypes.func,
   onImageClose: PropTypes.func,
   showComposer: PropTypes.bool,
+  editMode: PropTypes.bool,
 };
 
 QueuedPosts.defaultProps = {
@@ -143,6 +149,7 @@ QueuedPosts.defaultProps = {
   showComposer: false,
   total: 0,
   enabledApplicationModes: [],
+  editMode: false,
 };
 
 export default QueuedPosts;

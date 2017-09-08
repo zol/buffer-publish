@@ -44,6 +44,12 @@ export default connect(
     return {};
   },
   (dispatch, ownProps) => ({
+    onEditClick: (post) => {
+      dispatch(actions.handleEditClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
     onDeleteClick: (post) => {
       dispatch(actions.handleDeleteClick({
         post: post.post,
