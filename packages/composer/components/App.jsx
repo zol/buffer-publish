@@ -193,8 +193,6 @@ class App extends React.Component {
     AppActionCreators.trackUserAction(['viewed'], {
       timeToRender: (new Date() - window.pageStartTime),
     });
-
-    window.addEventListener('click', this.onDocumentClick);
   }
 
   componentDidMount() {
@@ -224,16 +222,8 @@ class App extends React.Component {
     NotificationStore.removeChangeListener(this.onStoreChange);
     window.removeEventListener('drop', (e) => e.preventDefault());
     window.removeEventListener('dragover', (e) => e.preventDefault());
-    window.removeEventListener('click', this.onDocumentClick);
 
     if (this.dragMe) this.dragMe.cleanup();
-  }
-
-  onDocumentClick = (ev) => {
-    // on document click, if not from MC or Edit button, execute callback from options
-    if (!this.appElement.contains(ev.target) && ev.target.innerText !== 'Edit') {
-      AppStore.getOptions().onSave();
-    }
   }
 
   onStoreChange = () => this.setState(getState());

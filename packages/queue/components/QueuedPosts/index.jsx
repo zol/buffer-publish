@@ -70,16 +70,17 @@ const QueuedPosts = ({
   return (
     <div>
       <div style={composerStyle}>
-        {showComposer && !editMode ?
-          <ComposerWrapper
+        {showComposer && !editMode &&
+          <ComposerPopover
             onSave={onComposerCreateSuccess}
-          />
-          :
-          <Input
-            placeholder={'What would you like to share?'}
-            onFocus={onComposerPlaceholderClick}
+            transparentOverlay
+            onOverlayClick={onComposerCreateSuccess}
           />
         }
+        <Input
+          placeholder={'What would you like to share?'}
+          onFocus={onComposerPlaceholderClick}
+        />
       </div>
       {total < 1 &&
         <EmptyState
