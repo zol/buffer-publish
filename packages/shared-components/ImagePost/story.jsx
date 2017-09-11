@@ -56,6 +56,11 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('sent image post', () => (
@@ -70,6 +75,11 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('square image', () => (
@@ -84,6 +94,11 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('tall image', () => (
@@ -98,6 +113,11 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('wide image', () => (
@@ -112,6 +132,11 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('retweet', () => (
@@ -127,6 +152,11 @@ storiesOf('ImagePost')
       onShareNowClick={action('share-now-click')}
       retweetProfile={retweetProfile}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('error', () => (
@@ -141,6 +171,11 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ))
   .add('tag', () => (
@@ -156,5 +191,10 @@ storiesOf('ImagePost')
       onEditClick={action('edit-click')}
       onShareNowClick={action('share-now-click')}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      isLightboxOpen={false}
     />
   ));

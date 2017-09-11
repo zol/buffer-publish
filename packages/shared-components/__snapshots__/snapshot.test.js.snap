@@ -162,6 +162,7 @@ exports[`Snapshots ImagePost error 1`] = `
 <span>
   <ImagePost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -179,6 +180,10 @@ exports[`Snapshots ImagePost error 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -197,6 +202,7 @@ exports[`Snapshots ImagePost queued image post 1`] = `
 <span>
   <ImagePost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -214,6 +220,10 @@ exports[`Snapshots ImagePost queued image post 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -231,6 +241,7 @@ exports[`Snapshots ImagePost retweet 1`] = `
 <span>
   <ImagePost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -248,6 +259,10 @@ exports[`Snapshots ImagePost retweet 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -272,6 +287,7 @@ exports[`Snapshots ImagePost sent image post 1`] = `
 <span>
   <ImagePost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -289,6 +305,10 @@ exports[`Snapshots ImagePost sent image post 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -306,6 +326,7 @@ exports[`Snapshots ImagePost square image 1`] = `
 <span>
   <ImagePost
     imageSrc="http://lorempixel.com/400/400/cats/"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -323,6 +344,10 @@ exports[`Snapshots ImagePost square image 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -340,6 +365,7 @@ exports[`Snapshots ImagePost tag 1`] = `
 <span>
   <ImagePost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -357,6 +383,10 @@ exports[`Snapshots ImagePost tag 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -375,6 +405,7 @@ exports[`Snapshots ImagePost tall image 1`] = `
 <span>
   <ImagePost
     imageSrc="http://lorempixel.com/400/900/cats/"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -392,6 +423,10 @@ exports[`Snapshots ImagePost tall image 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -409,6 +444,7 @@ exports[`Snapshots ImagePost wide image 1`] = `
 <span>
   <ImagePost
     imageSrc="http://lorempixel.com/900/400/cats/"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -426,6 +462,10 @@ exports[`Snapshots ImagePost wide image 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -701,6 +741,7 @@ exports[`Snapshots LinkPost wide image 1`] = `
 exports[`Snapshots MultipleImagesPost error 1`] = `
 <span>
   <MultipleImagesPost
+    currentImage={0}
     imageUrls={
       Array [
         "http://lorempixel.com/400/400/cats/",
@@ -729,6 +770,10 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -745,6 +790,7 @@ exports[`Snapshots MultipleImagesPost error 1`] = `
 exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
 <span>
   <MultipleImagesPost
+    currentImage={0}
     imageUrls={
       Array [
         "http://lorempixel.com/400/400/cats/",
@@ -773,6 +819,10 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -788,6 +838,7 @@ exports[`Snapshots MultipleImagesPost queued multiple image post 1`] = `
 exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
 <span>
   <MultipleImagesPost
+    currentImage={0}
     imageUrls={
       Array [
         "http://lorempixel.com/400/400/cats/",
@@ -816,6 +867,10 @@ exports[`Snapshots MultipleImagesPost sent multiple image post 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -1315,6 +1370,10 @@ exports[`Snapshots PostList default 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1323,6 +1382,7 @@ exports[`Snapshots PostList default 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1340,6 +1400,7 @@ exports[`Snapshots PostList default 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1366,6 +1427,10 @@ exports[`Snapshots PostList image posts 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1375,6 +1440,7 @@ exports[`Snapshots PostList image posts 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1393,6 +1459,7 @@ exports[`Snapshots PostList image posts 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1419,6 +1486,10 @@ exports[`Snapshots PostList link posts 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1427,6 +1498,7 @@ exports[`Snapshots PostList link posts 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {
             "description": "A brief history at how history and markets influence design titles",
@@ -1458,6 +1530,7 @@ exports[`Snapshots PostList link posts 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {
             "description": "A brief history at how history and markets influence design titles",
@@ -1498,6 +1571,10 @@ exports[`Snapshots PostList missing type 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1506,6 +1583,7 @@ exports[`Snapshots PostList missing type 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1523,6 +1601,7 @@ exports[`Snapshots PostList missing type 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1549,6 +1628,10 @@ exports[`Snapshots PostList multiple image posts 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1562,6 +1645,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
           ],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1584,6 +1668,7 @@ exports[`Snapshots PostList multiple image posts 1`] = `
           ],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1610,6 +1695,10 @@ exports[`Snapshots PostList sent 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1618,6 +1707,7 @@ exports[`Snapshots PostList sent 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1635,6 +1725,7 @@ exports[`Snapshots PostList sent 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1661,6 +1752,10 @@ exports[`Snapshots PostList video posts 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     posts={
       Array [
@@ -1670,6 +1765,7 @@ exports[`Snapshots PostList video posts 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -1688,6 +1784,7 @@ exports[`Snapshots PostList video posts 1`] = `
           "imageUrls": Array [],
           "isConfirmingDelete": false,
           "isDeleting": false,
+          "isLightboxOpen": false,
           "isWorking": false,
           "linkAttachment": Object {},
           "links": Array [],
@@ -3171,6 +3268,7 @@ exports[`Snapshots VideoPost error 1`] = `
 <span>
   <VideoPost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3188,6 +3286,10 @@ exports[`Snapshots VideoPost error 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -3207,6 +3309,7 @@ exports[`Snapshots VideoPost queued video post 1`] = `
 <span>
   <VideoPost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3224,6 +3327,10 @@ exports[`Snapshots VideoPost queued video post 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -3242,6 +3349,7 @@ exports[`Snapshots VideoPost retweet 1`] = `
 <span>
   <VideoPost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3259,6 +3367,10 @@ exports[`Snapshots VideoPost retweet 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -3284,6 +3396,7 @@ exports[`Snapshots VideoPost sent 1`] = `
 <span>
   <VideoPost
     imageSrc="https://cdn-images-1.medium.com/max/2000/1*1Kua7bNJfvLlTxWqgxVKfw.jpeg"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3301,6 +3414,10 @@ exports[`Snapshots VideoPost sent 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -3319,6 +3436,7 @@ exports[`Snapshots VideoPost square image 1`] = `
 <span>
   <VideoPost
     imageSrc="http://lorempixel.com/400/400/cats/"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3336,6 +3454,10 @@ exports[`Snapshots VideoPost square image 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -3354,6 +3476,7 @@ exports[`Snapshots VideoPost tall image 1`] = `
 <span>
   <VideoPost
     imageSrc="http://lorempixel.com/400/900/cats/"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3371,6 +3494,10 @@ exports[`Snapshots VideoPost tall image 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {
@@ -3389,6 +3516,7 @@ exports[`Snapshots VideoPost wide image 1`] = `
 <span>
   <VideoPost
     imageSrc="http://lorempixel.com/900/400/cats/"
+    isLightboxOpen={false}
     links={
       Array [
         Object {
@@ -3406,6 +3534,10 @@ exports[`Snapshots VideoPost wide image 1`] = `
     onDeleteClick={[Function]}
     onDeleteConfirmClick={[Function]}
     onEditClick={[Function]}
+    onImageClick={[Function]}
+    onImageClickNext={[Function]}
+    onImageClickPrev={[Function]}
+    onImageClose={[Function]}
     onShareNowClick={[Function]}
     postDetails={
       Object {

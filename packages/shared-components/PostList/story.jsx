@@ -27,6 +27,10 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ))
   .add('sent', () => (
@@ -38,6 +42,10 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ))
   .add('missing type', () => (
@@ -49,6 +57,10 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ))
   .add('link posts', () => (
@@ -60,6 +72,10 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ))
   .add('image posts', () => (
@@ -71,6 +87,10 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ))
   .add('multiple image posts', () => (
@@ -82,6 +102,10 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ))
   .add('video posts', () => (
@@ -93,5 +117,9 @@ storiesOf('PostList')
       onDeleteConfirmClick={action('onDeleteConfirmClick')}
       onEditClick={action('onEditClick')}
       onShareNowClick={action('onShareNowClick')}
+      onImageClick={action('onImageClick')}
+      onImageClickNext={action('onImageClickNext')}
+      onImageClickPrev={action('onImageClickPrev')}
+      onImageClose={action('onImageClose')}
     />
   ));

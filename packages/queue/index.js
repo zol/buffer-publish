@@ -62,6 +62,30 @@ export default connect(
         profileId: ownProps.profileId,
       }));
     },
+    onImageClick: (post) => {
+      dispatch(actions.handleImageClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onImageClose: (post) => {
+      dispatch(actions.handleImageClose({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onImageClickNext: (post) => {
+      dispatch(actions.handleImageClickNext({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onImageClickPrev: (post) => {
+      dispatch(actions.handleImageClickPrev({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
     onComposerPlaceholderClick: () => {
       dispatch(actions.handleComposerPlaceholderClick());
     },

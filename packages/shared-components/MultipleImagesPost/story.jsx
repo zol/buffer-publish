@@ -45,6 +45,11 @@ storiesOf('MultipleImagesPost')
       onShareNowClick={action('share-now-click')}
       text={text}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      currentImage={0}
     />
   ))
   .add('sent multiple image post', () => (
@@ -59,6 +64,11 @@ storiesOf('MultipleImagesPost')
       onShareNowClick={action('share-now-click')}
       text={text}
       sent
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      currentImage={0}
     />
   ))
   .add('error', () => (
@@ -73,5 +83,10 @@ storiesOf('MultipleImagesPost')
       onShareNowClick={action('share-now-click')}
       text={text}
       sent={false}
+      onImageClick={action('image-click')}
+      onImageClickNext={action('image-click-next')}
+      onImageClickPrev={action('image-click-prev')}
+      onImageClose={action('image-close')}
+      currentImage={0}
     />
   ));

@@ -29,6 +29,10 @@ const renderPost = ({
   onDeleteConfirmClick,
   onEditClick,
   onShareNowClick,
+  onImageClick,
+  onImageClickNext,
+  onImageClickPrev,
+  onImageClose,
 }) => {
   const postWithEventHandlers = {
     ...post,
@@ -38,6 +42,12 @@ const renderPost = ({
     onDeleteConfirmClick: () => onDeleteConfirmClick({ post }),
     onEditClick: () => onEditClick({ post }),
     onShareNowClick: () => onShareNowClick({ post }),
+    onImageClick: () => onImageClick({ post }),
+    isLightboxOpen: post.isLightboxOpen,
+    currentImage: post.currentImage,
+    onImageClickNext: () => onImageClickNext({ post }),
+    onImageClickPrev: () => onImageClickPrev({ post }),
+    onImageClose: () => onImageClose({ post }),
   };
   switch (post.type) {
     case 'text':
@@ -65,6 +75,10 @@ const PostList = ({
   onDeleteConfirmClick,
   onEditClick,
   onShareNowClick,
+  onImageClick,
+  onImageClickNext,
+  onImageClickPrev,
+  onImageClose,
 }) =>
   <div>
     <div style={listHeaderStyle}>
@@ -85,6 +99,10 @@ const PostList = ({
               onDeleteConfirmClick,
               onEditClick,
               onShareNowClick,
+              onImageClick,
+              onImageClickNext,
+              onImageClickPrev,
+              onImageClose,
             })
           }
         </div>,
@@ -104,6 +122,10 @@ PostList.propTypes = {
   onDeleteConfirmClick: PropTypes.func,
   onEditClick: PropTypes.func,
   onShareNowClick: PropTypes.func,
+  onImageClick: PropTypes.func,
+  onImageClickNext: PropTypes.func,
+  onImageClickPrev: PropTypes.func,
+  onImageClose: PropTypes.func,
 };
 
 PostList.defaultProps = {

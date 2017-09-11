@@ -14,6 +14,12 @@
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.6.tgz#104417af8c4940c92d45164cc097d5d38fd7d957"
 
+"@bufferapp/publish-utils@0.5.33":
+  version "0.5.33"
+  resolved "https://registry.yarnpkg.com/@bufferapp/publish-utils/-/publish-utils-0.5.33.tgz#028253e856f7930c24e47ed55e15bb6830062718"
+  dependencies:
+    moment-timezone "0.5.12"
+
 "@bufferapp/shutdown-helper@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/shutdown-helper/-/shutdown-helper-0.2.0.tgz#d43bbba845e30e411dda76a7b7629e11160e5395"
@@ -2668,7 +2674,7 @@ punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-pusher@^1.5.1:
+pusher@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/pusher/-/pusher-1.5.1.tgz#8186cf16e5b124b51da6c83001a4c36a2ad42b44"
   dependencies:

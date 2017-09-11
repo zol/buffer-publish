@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Lightbox from 'react-images';
 import {
   IdTag,
   Image,
@@ -26,7 +27,6 @@ const imageTagStyle = {
   left: '0.7rem',
 };
 
-
 const renderTag = (tag) => {
   if (!tag) return;
   return (
@@ -52,6 +52,11 @@ const ImagePost = ({
   text,
   tag,
   retweetProfile,
+  isLightboxOpen,
+  onImageClick,
+  onImageClickNext,
+  onImageClickPrev,
+  onImageClose,
 }) => {
   const children = (
     <div style={postContentStyle}>
@@ -66,7 +71,7 @@ const ImagePost = ({
           {text}
         </LinkifiedText>
       </span>
-      <div style={imageWrapperStyle}>
+      <div style={imageWrapperStyle} onClick={onImageClick}>
         <Image
           src={imageSrc}
           width={'15rem'}
@@ -74,6 +79,15 @@ const ImagePost = ({
           minHeight={'10rem'}
           border={'rounded'}
           objectFit={'cover'}
+        />
+        <Lightbox
+          images={[{ src: `${imageSrc}` }]}
+          isOpen={isLightboxOpen}
+          onClickPrev={onImageClickPrev}
+          onClickNext={onImageClickNext}
+          onClose={onImageClose}
+          backdropClosesModal
+          showImageCount={false}
         />
         { renderTag(tag) }
       </div>
@@ -116,6 +130,11 @@ ImagePost.propTypes = {
   ).isRequired,
   text: PropTypes.string.isRequired,
   tag: PropTypes.string,
+  isLightboxOpen: PropTypes.bool,
+  onImageClick: PropTypes.func,
+  onImageClickNext: PropTypes.func,
+  onImageClickPrev: PropTypes.func,
+  onImageClose: PropTypes.func,
 };
 
 ImagePost.defaultProps = ImagePost.defaultProps;

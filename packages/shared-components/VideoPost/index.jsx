@@ -17,6 +17,11 @@ const VideoPost = ({
   tag,
   retweetProfile,
   sent,
+  onImageClick,
+  onImageClickNext,
+  onImageClickPrev,
+  onImageClose,
+  isLightboxOpen,
 }) =>
   <ImagePost
     isConfirmingDelete={isConfirmingDelete}
@@ -34,6 +39,11 @@ const VideoPost = ({
     onShareNowClick={onShareNowClick}
     retweetProfile={retweetProfile}
     sent={sent}
+    onImageClick={onImageClick}
+    onImageClickNext={onImageClickNext}
+    onImageClickPrev={onImageClickPrev}
+    onImageClose={onImageClose}
+    isLightboxOpen={isLightboxOpen}
   />;
 
 VideoPost.propTypes = ImagePost.propTypes;

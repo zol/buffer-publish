@@ -9,6 +9,10 @@ export const actionTypes = {
   POST_DELETED: 'POST_DELETED',
   POST_CANCELED_DELETE: 'POST_CANCELED_DELETE',
   POST_ERROR: 'POST_ERROR',
+  POST_IMAGE_CLICKED: 'POST_IMAGE_CLICKED',
+  POST_IMAGE_CLICKED_NEXT: 'POST_IMAGE_CLICKED_NEXT',
+  POST_IMAGE_CLICKED_PREV: 'POST_IMAGE_CLICKED_PREV',
+  POST_IMAGE_CLOSED: 'POST_IMAGE_CLOSED',
   OPEN_COMPOSER: 'OPEN_COMPOSER',
   HIDE_COMPOSER: 'HIDE_COMPOSER',
 };
@@ -50,6 +54,8 @@ const postReducer = (state, action) => {
     case actionTypes.POST_CREATED:
     case actionTypes.POST_UPDATED:
       return action.post;
+    case actionTypes.POST_ERROR:
+      return state;
     case actionTypes.POST_CLICKED_DELETE:
       return {
         ...state,
@@ -58,16 +64,35 @@ const postReducer = (state, action) => {
     case actionTypes.POST_CONFIRMED_DELETE:
       return {
         ...state,
-        isConfirmingDelete: false,
         isDeleting: true,
+        isConfirmingDelete: false,
       };
     case actionTypes.POST_CANCELED_DELETE:
       return {
         ...state,
         isConfirmingDelete: false,
       };
-    case actionTypes.POST_ERROR:
-      return state;
+    case actionTypes.POST_IMAGE_CLICKED:
+      return {
+        ...state,
+        isLightboxOpen: true,
+        currentImage: 0,
+      };
+    case actionTypes.POST_IMAGE_CLOSED:
+      return {
+        ...state,
+        isLightboxOpen: false,
+      };
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+      return {
+        ...state,
+        currentImage: state.currentImage + 1,
+      };
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
+      return {
+        ...state,
+        currentImage: state.currentImage - 1,
+      };
     default:
       return state;
   }
@@ -91,6 +116,10 @@ const postsReducer = (state = {}, action) => {
     case actionTypes.POST_CLICKED_DELETE:
     case actionTypes.POST_CONFIRMED_DELETE:
     case actionTypes.POST_CANCELED_DELETE:
+    case actionTypes.POST_IMAGE_CLICKED:
+    case actionTypes.POST_IMAGE_CLOSED:
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
     case actionTypes.POST_ERROR:
       return {
         ...state,
@@ -124,13 +153,17 @@ const profileReducer = (state = profileInitialState, action) => {
         ...state,
         loading: false,
       };
+    case actionTypes.POST_ERROR:
     case actionTypes.POST_CREATED:
     case actionTypes.POST_UPDATED:
     case actionTypes.POST_CLICKED_DELETE:
     case actionTypes.POST_CONFIRMED_DELETE:
     case actionTypes.POST_DELETED:
     case actionTypes.POST_CANCELED_DELETE:
-    case actionTypes.POST_ERROR: {
+    case actionTypes.POST_IMAGE_CLICKED:
+    case actionTypes.POST_IMAGE_CLOSED:
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+    case actionTypes.POST_IMAGE_CLICKED_PREV: {
       let adjustTotal = 0;
       if (action.type === actionTypes.POST_CREATED) {
         adjustTotal = 1;
@@ -162,6 +195,10 @@ export default (state = initialState, action) => {
     case actionTypes.POST_DELETED:
     case actionTypes.POST_CANCELED_DELETE:
     case actionTypes.POST_ERROR:
+    case actionTypes.POST_IMAGE_CLICKED:
+    case actionTypes.POST_IMAGE_CLOSED:
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
       profileId = getProfileId(action);
       if (profileId) {
         return {
@@ -205,16 +242,38 @@ export const actions = {
     post,
     profileId,
   }),
-
   handleDeleteConfirmClick: ({ post, profileId }) => ({
     type: actionTypes.POST_CONFIRMED_DELETE,
     updateId: post.id,
     post,
     profileId,
   }),
-
   handleCancelConfirmClick: ({ post, profileId }) => ({
     type: actionTypes.POST_CANCELED_DELETE,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClick: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLICKED,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClickNext: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLICKED_NEXT,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClickPrev: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLICKED_PREV,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClose: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLOSED,
     updateId: post.id,
     post,
     profileId,

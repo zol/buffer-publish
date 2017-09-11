@@ -39,14 +39,7 @@ const TabContent = ({ tabId, profileId }) => {
   switch (tabId) {
     case 'queue':
       return (
-        <QueuedPosts
-          profileId={profileId}
-          onCancelConfirmClick={() => { }}
-          onDeleteClick={() => { }}
-          onDeleteConfirmClick={() => { }}
-          onEditClick={() => { }}
-          onShareNowClick={() => { }}
-        />
+        <QueuedPosts profileId={profileId} />
       );
     case 'sent':
       return (

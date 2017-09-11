@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Lightbox from 'react-images';
 import {
   LinkifiedText,
   MultipleImages,
@@ -31,7 +32,14 @@ const MultipleImagesPost = ({
   retweetProfile,
   sent,
   text,
+  isLightboxOpen,
+  onImageClickPrev,
+  onImageClickNext,
+  onImageClose,
+  onImageClick,
+  currentImage,
 }) => {
+  const images = imageUrls.map(url => ({ src: `${url}` }));
   const children = (
     <div style={postContentStyle}>
       <span style={postContentTextStyle}>
@@ -45,12 +53,22 @@ const MultipleImagesPost = ({
           {text}
         </LinkifiedText>
       </span>
-      <div>
+      <div onClick={onImageClick}>
         <MultipleImages
           border={'rounded'}
           height={'15rem'}
           urls={imageUrls}
           width={'20rem'}
+        />
+        <Lightbox
+          images={images}
+          isOpen={isLightboxOpen}
+          onClickPrev={onImageClickPrev}
+          onClickNext={onImageClickNext}
+          onClose={onImageClose}
+          currentImage={currentImage}
+          backdropClosesModal
+          showImageCount={false}
         />
       </div>
     </div>
@@ -89,6 +107,12 @@ MultipleImagesPost.propTypes = {
     }),
   ).isRequired,
   text: PropTypes.string.isRequired,
+  isLightboxOpen: PropTypes.bool,
+  onImageClickNext: PropTypes.func,
+  onImageClickPrev: PropTypes.func,
+  onImageClose: PropTypes.func,
+  onImageClick: PropTypes.func,
+  currentImage: PropTypes.number,
 };
 
 MultipleImagesPost.defaultProps = Post.defaultProps;

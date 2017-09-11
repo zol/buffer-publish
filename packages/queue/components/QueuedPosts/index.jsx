@@ -39,6 +39,10 @@ const QueuedPosts = ({
   onDeleteConfirmClick,
   onEditClick,
   onShareNowClick,
+  onImageClick,
+  onImageClickNext,
+  onImageClickPrev,
+  onImageClose,
   showComposer,
 }) => {
   if (loading) {
@@ -90,6 +94,10 @@ const QueuedPosts = ({
         onDeleteConfirmClick={onDeleteConfirmClick}
         onEditClick={onEditClick}
         onShareNowClick={onShareNowClick}
+        onImageClick={onImageClick}
+        onImageClickNext={onImageClickNext}
+        onImageClickPrev={onImageClickPrev}
+        onImageClose={onImageClose}
       />
       <div style={loadMoreStyle}><Text>Loading&hellip;</Text></div>
     </div>
@@ -119,6 +127,10 @@ QueuedPosts.propTypes = {
   onDeleteConfirmClick: PropTypes.func.isRequired,
   onEditClick: PropTypes.func.isRequired,
   onShareNowClick: PropTypes.func.isRequired,
+  onImageClick: PropTypes.func,
+  onImageClickNext: PropTypes.func,
+  onImageClickPrev: PropTypes.func,
+  onImageClose: PropTypes.func,
   showComposer: PropTypes.bool,
 };
 
