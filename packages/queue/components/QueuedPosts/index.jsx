@@ -70,7 +70,7 @@ const QueuedPosts = ({
   return (
     <div>
       <div style={composerStyle}>
-        {showComposer ?
+        {showComposer && !editMode ?
           <ComposerWrapper
             onSave={onComposerCreateSuccess}
           />

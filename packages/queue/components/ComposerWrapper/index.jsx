@@ -11,10 +11,14 @@ const ComposerWrapper = ({
   accessToken,
   onSave,
   environment,
+  editMode,
+  post,
 }) => {
+  const saveButtons = editMode ? ['SAVE'] : ['ADD_TO_QUEUE', 'SHARE_NOW'];
+
   const options = {
-    canSelectProfiles: true,
-    saveButtons: ['ADD_TO_QUEUE', 'SHARE_NOW'],
+    canSelectProfiles: !editMode,
+    saveButtons,
     position: { top: '10rem', left: '10rem' },
     onSave,
   };
@@ -26,7 +30,11 @@ const ComposerWrapper = ({
       userData.features && userData.features.includes('mc_facebook_autocomplete'),
     should_show_twitter_alt_text:
       userData.features && userData.features.includes('twitter_alt_text'),
-    should_use_new_twitter_autocomplete: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
+    // TODO: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
+    should_use_new_twitter_autocomplete: false,
+    updateId: post ? post.id : undefined,
+    update: post,
+    subprofileId: post ? post.subprofile_id : undefined,
   };
 
   const formattedData = formatInputData({
@@ -36,7 +44,7 @@ const ComposerWrapper = ({
       userData,
       metaData,
       csrfToken: '1234', // dummy string for now since MC requires csrfToken
-      update: {}, // post
+      update: post,
       imageDimensionsKey: userData.imageDimensionsKey,
     },
   });
@@ -73,27 +81,30 @@ ComposerWrapper.propTypes = {
   accessToken: PropTypes.string.isRequired,
   onSave: PropTypes.func.isRequired,
   environment: PropTypes.string.isRequired,
-  // post: PropTypes.shape({}),
+  editMode: PropTypes.bool.isRequired,
+  post: PropTypes.shape({}),
 };
 
 ComposerWrapper.defaultProps = {
   profiles: [],
   enabledApplicationModes: [],
   csrfToken: '1234',
-  // post: {},
+  post: {},
 };
 
 export default connect(
   (state) => {
     if (state.appSidebar && state.profileSidebar) {
+      const selectedProfileId = state.profileSidebar.selectedProfileId;
+      const postId = state.queue.editingPostId;
       return ({
         userData: state.appSidebar.user,
         profiles: state.profileSidebar.profiles,
-        enabledApplicationModes: state.queue.enabledApplicationModes,
+        enabledApplicationModes: state.enabledApplicationModes,
         environment: state.queue.environment,
         accessToken: state.login.sessionToken,
         editMode: state.queue.editMode,
-        // post: state.queue.byProfileId[profileId].posts[postId],
+        post: state.queue.byProfileId[selectedProfileId].posts[postId],
       });
     }
     return {};

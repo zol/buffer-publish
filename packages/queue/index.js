@@ -39,6 +39,8 @@ export default connect(
         enabledApplicationModes: state.queue.enabledApplicationModes,
         showComposer: state.queue.showComposer,
         environment: state.queue.environment,
+        editMode: state.queue.editMode,
+        editingPostId: state.queue.editingPostId,
       };
     }
     return {};

@@ -4,7 +4,6 @@ import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-pro
 export const actionTypes = {
   POST_CREATED: 'POST_CREATED',
   POST_UPDATED: 'POST_UPDATED',
-  // POST_CLICKED_EDIT: 'POST_CLICKED_EDIT',
   POST_CLICKED_DELETE: 'POST_CLICKED_DELETE',
   POST_CONFIRMED_DELETE: 'POST_CONFIRMED_DELETE',
   POST_DELETED: 'POST_DELETED',
@@ -25,6 +24,8 @@ const initialState = {
   showComposer: false,
   enabledApplicationModes: [],
   environment: 'production',
+  editMode: false,
+  editingPostId: '',
 };
 
 const profileInitialState = {
@@ -256,6 +257,7 @@ export default (state = initialState, action) => {
         ...state,
         showComposer: true,
         editMode: action.editMode,
+        editingPostId: action.updateId,
       };
     case actionTypes.HIDE_COMPOSER:
       return {
@@ -327,6 +329,7 @@ export const actions = {
   handleComposerPlaceholderClick: () => ({
     type: actionTypes.OPEN_COMPOSER,
   }),
+  // TODO: rename to more representative name
   handleComposerCreateSuccess: () => ({
     type: actionTypes.HIDE_COMPOSER,
   }),
