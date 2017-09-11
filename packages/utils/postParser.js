@@ -96,6 +96,7 @@ module.exports = (post) => {
     text,
     type: getPostType({ post }),
     media,
+    extra_media: post.extra_media,
     subprofile_id: post.subprofile_id,
   };
 };
