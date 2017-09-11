@@ -230,8 +230,8 @@ class App extends React.Component {
   }
 
   onDocumentClick = (ev) => {
-    // on document click, if not from MC, execute callback from options
-    if (!this.appElement.contains(ev.target)) {
+    // on document click, if not from MC or Edit button, execute callback from options
+    if (!this.appElement.contains(ev.target) && ev.target.innerText !== 'Edit') {
       AppStore.getOptions().onSave();
     }
   }
