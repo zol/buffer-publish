@@ -17,8 +17,8 @@ const WebDashboardHooks = {
   handleSavedDrafts: () => {
     const onNewPublish = AppStore.getUserData();
     if (onNewPublish) {
-      AppStore.getOptions().onSave();
       AppActionCreators.resetData();
+      AppStore.getOptions().onSave();
       return;
     }
     const { environment } = AppStore.getMetaData();
