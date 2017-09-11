@@ -1,6 +1,7 @@
 /* global window */
 
 import AppStore from '../../stores/AppStore';
+import AppActionCreators from '../../action-creators/AppActionCreators';
 import { bufferOrigins } from '../../AppConstants';
 
 const WebDashboardHooks = {
@@ -17,6 +18,7 @@ const WebDashboardHooks = {
     const onNewPublish = AppStore.getUserData();
     if (onNewPublish) {
       AppStore.getOptions().onSave();
+      AppActionCreators.resetData();
       return;
     }
     const { environment } = AppStore.getMetaData();
