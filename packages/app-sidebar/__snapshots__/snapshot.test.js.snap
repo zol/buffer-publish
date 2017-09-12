@@ -897,22 +897,6 @@ exports[`Snapshots AppSidebar should show app sidebar 1`] = `
               <div
                 style={
                   Object {
-                    "backgroundImage": "url()",
-                    "backgroundSize": "cover",
-                    "borderRadius": "100%",
-                    "height": "27px",
-                    "left": 0,
-                    "overflow": "hidden",
-                    "position": "absolute",
-                    "top": 0,
-                    "width": "27px",
-                    "zIndex": 10,
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
                     "left": 0,
                     "position": "absolute",
                     "top": 0,
