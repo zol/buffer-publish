@@ -6,33 +6,20 @@ import {
   AvatarIcon,
 } from '@bufferapp/components';
 
-const UserAvatar = ({ avatar, color, size }) => {
+const UserAvatar = ({ color, size }) => {
   const style = {
     height: size.height,
     width: size.width,
     position: 'relative',
   };
-  const avatarImageStyle = {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    height: size.height,
-    width: size.width,
-    backgroundImage: `url(${avatar})`,
-    backgroundSize: 'cover',
-    zIndex: 10,
-    borderRadius: '100%',
-    overflow: 'hidden',
-  };
-  const fallbackAvatarStyle = {
+  const avatarStyle = {
     position: 'absolute',
     top: 0,
     left: 0,
   };
   return (
     <div style={style}>
-      <div style={avatarImageStyle} />
-      <div style={fallbackAvatarStyle}>
+      <div style={avatarStyle}>
         <AvatarIcon color={color} size={size} />
       </div>
     </div>
@@ -40,7 +27,6 @@ const UserAvatar = ({ avatar, color, size }) => {
 };
 
 UserAvatar.propTypes = {
-  avatar: PropTypes.string.isRequired,
   color: PropTypes.string,
   size: PropTypes.shape({
     width: PropTypes.string.isRequired,
