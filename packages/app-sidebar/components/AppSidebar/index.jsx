@@ -70,7 +70,7 @@ const AppSidebar = ({
           <PopoverMenuItem href="https://buffer.com/wishlist">Wishlist</PopoverMenuItem>
         </PopoverMenu>
       </PopoverButton>
-      {!user.loading && <PopoverButton icon={<UserAvatar avatar={user.avatar} />} label="My Account" popoverPosition="above" large>
+      {!user.loading && <PopoverButton icon={<UserAvatar />} label="My Account" popoverPosition="above" large>
         <PopoverMenu>
           <PopoverMenuItem href="https://buffer.com/pricing" subtitle={user.email}>My Account</PopoverMenuItem>
           <PopoverMenuItem href="https://buffer.com/wishlist" subtitle="Notifications, time & date, apps&hellip;">Preferences</PopoverMenuItem>
@@ -89,7 +89,6 @@ AppSidebar.propTypes = {
     loading: PropTypes.bool.isRequired,
     id: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
   }).isRequired,
 };
 
