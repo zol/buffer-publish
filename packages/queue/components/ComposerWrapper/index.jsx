@@ -33,10 +33,9 @@ const ComposerWrapper = ({
     // TODO: enabledApplicationModes.includes('web-twitter-typeahead-autocomplete'),
     should_use_new_twitter_autocomplete: false,
     updateId: post ? post.id : undefined,
-    update: post,
+    update: { ...post, images: post.imageUrls },
     subprofileId: post ? post.subprofile_id : undefined,
   };
-
   const formattedData = formatInputData({
     env: metaData.application,
     data: {
@@ -44,11 +43,10 @@ const ComposerWrapper = ({
       userData,
       metaData,
       csrfToken: '1234', // dummy string for now since MC requires csrfToken
-      update: post,
+      update: { ...post, images: post.imageUrls },
       imageDimensionsKey: userData.imageDimensionsKey,
     },
   });
-
   return (
     <div>
       <Composer
