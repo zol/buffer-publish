@@ -38,6 +38,8 @@ export const sidebarBackgroundBlue = '#192534';
 export const sidebarIcon = '#7088A5';
 export const darkPopover = '#2E435E';
 
+export const baliHai = '#8D969E';
+
 const colors = {
   curiousBlue,
   curiousBlueLight,
@@ -70,6 +72,7 @@ const colors = {
   sidebarBackgroundBlue,
   sidebarIcon,
   darkPopover,
+  baliHai,
 };
 
 export default colors;
