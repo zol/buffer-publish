@@ -32,6 +32,18 @@ const increasePageCount = (page) => {
 const determineIfMoreToLoad = (action, currentPosts) =>
   (action.result.total > (currentPosts.length + action.result.updates.length));
 
+const postsReducer = (state, action) => {
+  switch (action.type) {
+    case actionTypes.POST_SENT:
+      return {
+        ...state,
+        [action.updateId]: action.post,
+      };
+    default:
+      return state;
+  }
+};
+
 const profileReducer = (state = profileInitialState, action) => {
   switch (action.type) {
     case profileSidebarActionTypes.SELECT_PROFILE:
@@ -57,6 +69,11 @@ const profileReducer = (state = profileInitialState, action) => {
         ...state,
         loading: false,
       };
+    case actionTypes.POST_SENT:
+      return {
+        ...state,
+        posts: postsReducer(state.posts, action),
+      };
     default:
       return state;
   }
@@ -79,6 +96,17 @@ export default (state = initialState, action) => {
     case `sentPosts_${dataFetchActionTypes.FETCH_START}`:
     case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
     case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
+      profileId = getProfileId(action);
+      if (profileId) {
+        return {
+          byProfileId: {
+            ...state.byProfileId,
+            [profileId]: profileReducer(state.byProfileId[profileId], action),
+          },
+        };
+      }
+      return state;
+    case actionTypes.POST_SENT:
       profileId = getProfileId(action);
       if (profileId) {
         return {

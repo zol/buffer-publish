@@ -9,6 +9,8 @@ export const actionTypes = {
   POST_DELETED: 'POST_DELETED',
   POST_CANCELED_DELETE: 'POST_CANCELED_DELETE',
   POST_ERROR: 'POST_ERROR',
+  POST_SHARE_NOW: 'POST_SHARE_NOW',
+  POST_SENT: 'POST_SENT',
   POST_IMAGE_CLICKED: 'POST_IMAGE_CLICKED',
   POST_IMAGE_CLICKED_NEXT: 'POST_IMAGE_CLICKED_NEXT',
   POST_IMAGE_CLICKED_PREV: 'POST_IMAGE_CLICKED_PREV',
@@ -57,15 +59,17 @@ const postReducer = (state, action) => {
     case actionTypes.POST_ERROR:
       return state;
     case actionTypes.POST_CLICKED_DELETE:
-      return {
-        ...state,
-        isConfirmingDelete: true,
-      };
+      return { ...state, isConfirmingDelete: true };
     case actionTypes.POST_CONFIRMED_DELETE:
       return {
         ...state,
-        isDeleting: true,
         isConfirmingDelete: false,
+        isDeleting: true,
+      };
+    case actionTypes.POST_SHARE_NOW:
+      return {
+        ...state,
+        isWorking: true,
       };
     case actionTypes.POST_CANCELED_DELETE:
       return {
@@ -125,6 +129,14 @@ const postsReducer = (state = {}, action) => {
         ...state,
         [action.post.id]: postReducer(state[action.post.id], action),
       };
+    case actionTypes.POST_SHARE_NOW:
+      return {
+        ...state,
+        [action.updateId]: postReducer(state[action.updateId], action),
+      };
+    case actionTypes.POST_SENT:
+      var { [action.post.id]: deleted, ...currentState } = state; //eslint-disable-line
+      return currentState;
     default:
       return state;
   }
@@ -160,10 +172,13 @@ const profileReducer = (state = profileInitialState, action) => {
     case actionTypes.POST_CONFIRMED_DELETE:
     case actionTypes.POST_DELETED:
     case actionTypes.POST_CANCELED_DELETE:
+    case actionTypes.POST_ERROR: //eslint-disable-line
     case actionTypes.POST_IMAGE_CLICKED:
     case actionTypes.POST_IMAGE_CLOSED:
     case actionTypes.POST_IMAGE_CLICKED_NEXT:
-    case actionTypes.POST_IMAGE_CLICKED_PREV: {
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
+    case actionTypes.POST_SHARE_NOW:
+    case actionTypes.POST_SENT: {
       let adjustTotal = 0;
       if (action.type === actionTypes.POST_CREATED) {
         adjustTotal = 1;
@@ -199,6 +214,8 @@ export default (state = initialState, action) => {
     case actionTypes.POST_IMAGE_CLOSED:
     case actionTypes.POST_IMAGE_CLICKED_NEXT:
     case actionTypes.POST_IMAGE_CLICKED_PREV:
+    case actionTypes.POST_SHARE_NOW:
+    case actionTypes.POST_SENT: {
       profileId = getProfileId(action);
       if (profileId) {
         return {
@@ -210,6 +227,7 @@ export default (state = initialState, action) => {
         };
       }
       return state;
+    }
     case `enabledApplicationModes_${dataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
@@ -250,6 +268,12 @@ export const actions = {
   }),
   handleCancelConfirmClick: ({ post, profileId }) => ({
     type: actionTypes.POST_CANCELED_DELETE,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleShareNowClick: ({ post, profileId }) => ({
+    type: actionTypes.POST_SHARE_NOW,
     updateId: post.id,
     post,
     profileId,

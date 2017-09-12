@@ -35,6 +35,14 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
         },
       }));
       break;
+    case actionTypes.POST_SHARE_NOW:
+      dispatch(dataFetchActions.fetch({
+        name: 'sharePostNow',
+        args: {
+          updateId: action.post.id,
+        },
+      }));
+      break;
     default:
       break;
   }

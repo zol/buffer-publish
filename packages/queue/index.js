@@ -62,6 +62,12 @@ export default connect(
         profileId: ownProps.profileId,
       }));
     },
+    onShareNowClick: (post) => {
+      dispatch(actions.handleShareNowClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
     onImageClick: (post) => {
       dispatch(actions.handleImageClick({
         post: post.post,
