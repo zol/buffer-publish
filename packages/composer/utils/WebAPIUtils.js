@@ -412,12 +412,16 @@ function getFormattedAPIData(serviceName, unformattedData) {
   const isUsingCustomScheduleTime = unformattedData.customScheduleTime !== null;
 
   const getFormattedMediaFields = () => {
-    let formattedMediaFields;
+    let formattedMediaFields = {
+      media: null,
+      extra_media: null,
+    };
 
     if (hasEnabledLinkAttachment) {
       const doesLinkAttachmentHaveThumbnail = serviceDraft.link.thumbnail !== null;
 
       formattedMediaFields = {
+        ...formattedMediaFields,
         media: {
           link: serviceDraft.link.url,
           title: serviceDraft.link.title,
@@ -447,6 +451,7 @@ function getFormattedAPIData(serviceName, unformattedData) {
         const [firstImage] = images.splice(0, 1);
 
         formattedMediaFields = {
+          ...formattedMediaFields,
           media: getFormattedImageFields(firstImage),
         };
 
@@ -462,6 +467,7 @@ function getFormattedAPIData(serviceName, unformattedData) {
         const gif = serviceDraft.gif.url;
 
         formattedMediaFields = {
+          ...formattedMediaFields,
           media: {
             progress: 100,
             uploaded: true,
@@ -474,6 +480,7 @@ function getFormattedAPIData(serviceName, unformattedData) {
         const video = serviceDraft.video;
 
         formattedMediaFields = {
+          ...formattedMediaFields,
           media: {
             progress: 100,
             uploaded: true,
@@ -496,8 +503,6 @@ function getFormattedAPIData(serviceName, unformattedData) {
           },
         };
       }
-    } else {
-      formattedMediaFields = {};
     }
 
     return formattedMediaFields;
