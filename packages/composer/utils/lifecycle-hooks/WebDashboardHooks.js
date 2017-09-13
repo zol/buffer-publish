@@ -15,17 +15,18 @@ const WebDashboardHooks = {
   },
 
   handleSavedDrafts: () => {
-    const onNewPublish = AppStore.getUserData();
-    if (onNewPublish) {
-      AppActionCreators.resetData();
-      AppStore.getOptions().onSave();
-      return;
-    }
-    const { environment } = AppStore.getMetaData();
+    const { onNewPublish } = AppStore.getUserData();
 
-    window.parent.postMessage({
-      type: 'drafts-saved',
-    }, bufferOrigins.get(environment));
+    if (onNewPublish) {
+      AppStore.getOptions().onSave();
+      AppActionCreators.resetData();
+    } else {
+      const { environment } = AppStore.getMetaData();
+
+      window.parent.postMessage({
+        type: 'drafts-saved',
+      }, bufferOrigins.get(environment));
+    }
   },
 
 };
