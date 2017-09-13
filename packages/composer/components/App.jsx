@@ -224,6 +224,8 @@ class App extends React.Component {
     window.removeEventListener('dragover', (e) => e.preventDefault());
 
     if (this.dragMe) this.dragMe.cleanup();
+
+    AppActionCreators.resetData();
   }
 
   onStoreChange = () => this.setState(getState());

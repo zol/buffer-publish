@@ -19,7 +19,6 @@ const WebDashboardHooks = {
 
     if (onNewPublish) {
       AppStore.getOptions().onSave();
-      AppActionCreators.resetData();
     } else {
       const { environment } = AppStore.getMetaData();
 

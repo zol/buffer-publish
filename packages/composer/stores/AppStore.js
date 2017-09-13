@@ -4,8 +4,7 @@ import debounce from 'lodash.debounce';
 import escapeRegExp from 'lodash.escaperegexp';
 import moment from 'moment-timezone';
 import AppDispatcher from '../dispatcher';
-import { ActionTypes, AsyncOperationStates, Services, QueueingTypes, AppEnvironments }
-  from '../AppConstants';
+import { ActionTypes, AsyncOperationStates, Services, QueueingTypes } from '../AppConstants';
 import ComposerStore from './ComposerStore';
 import ComposerActionCreators from '../action-creators/ComposerActionCreators';
 import AppActionCreators from '../action-creators/AppActionCreators';
@@ -41,6 +40,7 @@ const getInitialState = () => ({
 });
 
 let state = getInitialState();
+
 
 const getNewProfile = (data) => ({
   id: data.id,
