@@ -14,7 +14,6 @@ import {
   PostLists,
   EmptyState,
 } from '@bufferapp/publish-shared-components';
-import ComposerWrapper from '../ComposerWrapper';
 import ComposerPopover from '../ComposerPopover';
 
 const composerStyle = {
