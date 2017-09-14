@@ -36,6 +36,11 @@ export default (state = initialState, action) => {
             ...profile,
             open: profile.id === action.profileId,
           })),
+        lockedProfiles: state.lockedProfiles
+          .map(profile => ({
+            ...profile,
+            open: profile.id === action.profileId,
+          })),
       };
     }
     default:
