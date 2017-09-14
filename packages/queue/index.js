@@ -39,11 +39,19 @@ export default connect(
         enabledApplicationModes: state.queue.enabledApplicationModes,
         showComposer: state.queue.showComposer,
         environment: state.queue.environment,
+        editMode: state.queue.editMode,
+        editingPostId: state.queue.editingPostId,
       };
     }
     return {};
   },
   (dispatch, ownProps) => ({
+    onEditClick: (post) => {
+      dispatch(actions.handleEditClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
     onDeleteClick: (post) => {
       dispatch(actions.handleDeleteClick({
         post: post.post,

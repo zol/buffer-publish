@@ -188,7 +188,7 @@ const DataImportUtils = {
           images: (
             (update.media && update.media.picture &&
               [update.media.picture].concat(
-                (update.extra_media || []).map((extraMedia) => extraMedia.picture)
+                (update.extra_media || []).map((extraMedia) => extraMedia.picture || extraMedia.photo)
               )) ||
             null
           ),

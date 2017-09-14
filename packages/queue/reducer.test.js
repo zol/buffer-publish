@@ -10,6 +10,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const action = {
       type: 'INIT',
@@ -34,6 +36,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const action = {
       profileId,
@@ -63,6 +67,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const action = {
       profileId,
@@ -95,6 +101,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const action = {
       profileId,
@@ -121,6 +129,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const action = {
       type: 'POST_CREATED',
@@ -149,6 +159,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const stateAfter = {
       byProfileId: {
@@ -164,6 +176,8 @@ describe('reducer', () => {
       enabledApplicationModes: [],
       showComposer: false,
       environment: 'production',
+      editMode: false,
+      editingPostId: '',
     };
     const action = {
       type: 'POST_UPDATED',

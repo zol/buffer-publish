@@ -7,6 +7,7 @@ export const actionTypes = {
 const initialState = {
   profiles: [],
   lockedProfiles: [],
+  selectedProfileId: '',
   loading: false,
 };
 
@@ -29,8 +30,13 @@ export default (state = initialState, action) => {
     }
     case actionTypes.SELECT_PROFILE: {
       return {
-        ...state,
+        selectedProfileId: action.profileId,
         profiles: state.profiles
+          .map(profile => ({
+            ...profile,
+            open: profile.id === action.profileId,
+          })),
+        lockedProfiles: state.lockedProfiles
           .map(profile => ({
             ...profile,
             open: profile.id === action.profileId,

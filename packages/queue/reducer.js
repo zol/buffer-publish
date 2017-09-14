@@ -24,6 +24,8 @@ const initialState = {
   showComposer: false,
   enabledApplicationModes: [],
   environment: 'production',
+  editMode: false,
+  editingPostId: '',
 };
 
 const profileInitialState = {
@@ -254,11 +256,14 @@ export default (state = initialState, action) => {
       return {
         ...state,
         showComposer: true,
+        editMode: action.editMode,
+        editingPostId: action.updateId,
       };
     case actionTypes.HIDE_COMPOSER:
       return {
         ...state,
         showComposer: false,
+        editMode: false,
       };
     default:
       return state;
@@ -266,6 +271,13 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
+  handleEditClick: ({ post, profileId }) => ({
+    type: actionTypes.OPEN_COMPOSER,
+    updateId: post.id,
+    editMode: true,
+    post,
+    profileId,
+  }),
   handleDeleteClick: ({ post, profileId }) => ({
     type: actionTypes.POST_CLICKED_DELETE,
     updateId: post.id,
@@ -317,6 +329,7 @@ export const actions = {
   handleComposerPlaceholderClick: () => ({
     type: actionTypes.OPEN_COMPOSER,
   }),
+  // TODO: rename to more representative name
   handleComposerCreateSuccess: () => ({
     type: actionTypes.HIDE_COMPOSER,
   }),

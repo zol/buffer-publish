@@ -1,6 +1,7 @@
 /* global window */
 
 import AppStore from '../../stores/AppStore';
+import AppActionCreators from '../../action-creators/AppActionCreators';
 import { bufferOrigins } from '../../AppConstants';
 
 const WebDashboardHooks = {
@@ -14,16 +15,17 @@ const WebDashboardHooks = {
   },
 
   handleSavedDrafts: () => {
-    const onNewPublish = AppStore.getUserData();
+    const { onNewPublish } = AppStore.getUserData();
+
     if (onNewPublish) {
       AppStore.getOptions().onSave();
-      return;
-    }
-    const { environment } = AppStore.getMetaData();
+    } else {
+      const { environment } = AppStore.getMetaData();
 
-    window.parent.postMessage({
-      type: 'drafts-saved',
-    }, bufferOrigins.get(environment));
+      window.parent.postMessage({
+        type: 'drafts-saved',
+      }, bufferOrigins.get(environment));
+    }
   },
 
 };

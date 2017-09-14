@@ -95,5 +95,8 @@ module.exports = (post) => {
     sent: post.status === 'sent',
     text,
     type: getPostType({ post }),
+    media,
+    extra_media: post.extra_media,
+    subprofile_id: post.subprofile_id,
   };
 };
