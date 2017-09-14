@@ -3,6 +3,7 @@ import {
   actions as dataFetchActions,
   actionTypes as dataFetchActionTypes,
 } from '@bufferapp/async-data-fetch';
+import { actions as notificationActions } from '@bufferapp/notifications';
 import { actionTypes } from './reducer';
 
 export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars
@@ -40,7 +41,14 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
         name: 'sharePostNow',
         args: {
           updateId: action.post.id,
+          profileId: action.profileId,
         },
+      }));
+      break;
+    case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
+      dispatch(notificationActions.createNotification({
+        notificationType: 'error',
+        message: action.error,
       }));
       break;
     default:

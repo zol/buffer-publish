@@ -97,6 +97,11 @@ const postReducer = (state, action) => {
         ...state,
         currentImage: state.currentImage - 1,
       };
+    case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
+      return {
+        ...state,
+        isWorking: false,
+      };
     default:
       return state;
   }
@@ -137,6 +142,11 @@ const postsReducer = (state = {}, action) => {
     case actionTypes.POST_SENT:
       var { [action.post.id]: deleted, ...currentState } = state; //eslint-disable-line
       return currentState;
+    case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
+      return {
+        ...state,
+        [action.args.updateId]: postReducer(state[action.args.updateId], action),
+      };
     default:
       return state;
   }
@@ -165,6 +175,7 @@ const profileReducer = (state = profileInitialState, action) => {
         ...state,
         loading: false,
       };
+    case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
     case actionTypes.POST_ERROR:
     case actionTypes.POST_CREATED:
     case actionTypes.POST_UPDATED:
@@ -182,7 +193,7 @@ const profileReducer = (state = profileInitialState, action) => {
       let adjustTotal = 0;
       if (action.type === actionTypes.POST_CREATED) {
         adjustTotal = 1;
-      } else if (action.type === actionTypes.POST_DELETED) {
+      } else if (action.type === (actionTypes.POST_DELETED || actionTypes.POST_SENT)) {
         adjustTotal = -1;
       }
       return {
@@ -199,6 +210,7 @@ const profileReducer = (state = profileInitialState, action) => {
 export default (state = initialState, action) => {
   let profileId;
   switch (action.type) {
+    case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
     case profileSidebarActionTypes.SELECT_PROFILE:
     case `queuedPosts_${dataFetchActionTypes.FETCH_START}`:
     case `queuedPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
