@@ -100,7 +100,6 @@ const renderLoadingProfiles = () => (
     <LoadingProfileListItem offset="200ms" />
     <LoadingProfileListItem offset="300ms" />
     <LoadingProfileListItem offset="400ms" />
-    <LoadingProfileListItem offset="500ms" />
   </div>
 );
 
