@@ -92,6 +92,12 @@ const productTitle = (
   </div>
 );
 
+const renderLoadingProfiles = () => (
+  <div>
+    Loading!
+  </div>
+);
+
 const ProfileSidebar = ({
   loading,
   selectedProfileId,
@@ -102,6 +108,7 @@ const ProfileSidebar = ({
 }) =>
   <div style={profileSidebarStyle}>
     {productTitle}
+    {loading && renderLoadingProfiles()}
     <div style={profileListStyle} data-hide-scrollbar>
       <ProfileList
         selectedProfileId={selectedProfileId}
