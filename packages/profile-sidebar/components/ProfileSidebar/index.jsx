@@ -50,7 +50,50 @@ const buttonDividerStyle = {
   marginBottom: '1rem',
 };
 
+const renderLockedHeader = translations => (
+  <div style={lockedAccountHeaderStyle}>
+    <Text size={'small'}>
+      {translations.lockedList}
+    </Text>
+    <div style={{ marginLeft: 'auto' }}>
+      <IconArrowPopover
+        icon={<QuestionIcon />}
+        position="above"
+        shadow
+        oneLine={false}
+        width="320px"
+        label={translations.lockedList}
+      >
+        <div style={{ padding: '.5rem .25rem' }}>
+          {translations.lockedListTooltip}
+        </div>
+      </IconArrowPopover>
+    </div>
+  </div>
+);
+
+const productTitle = (
+  <div>
+    <span style={productTitleStyle}>
+      <Text
+        color={'curiousBlue'}
+        weight={'bold'}
+        size={'large'}
+      >
+        Publish
+      </Text>
+    </span>
+    <Text
+      size={'large'}
+    >
+      Free
+    </Text>
+    <Divider marginTop={'1rem'} />
+  </div>
+);
+
 const ProfileSidebar = ({
+  loading,
   selectedProfileId,
   profiles,
   lockedProfiles,
@@ -58,50 +101,14 @@ const ProfileSidebar = ({
   onProfileClick,
 }) =>
   <div style={profileSidebarStyle}>
-    <div>
-      <span style={productTitleStyle}>
-        <Text
-          color={'curiousBlue'}
-          weight={'bold'}
-          size={'large'}
-        >
-          Publish
-        </Text>
-      </span>
-      <Text
-        size={'large'}
-      >
-        Free
-      </Text>
-      <Divider marginTop={'1rem'} />
-    </div>
+    {productTitle}
     <div style={profileListStyle} data-hide-scrollbar>
       <ProfileList
         selectedProfileId={selectedProfileId}
         profiles={profiles}
         onProfileClick={onProfileClick}
       />
-      {lockedProfiles.length > 0 &&
-        <div style={lockedAccountHeaderStyle}>
-          <Text size={'small'}>
-            {translations.lockedList}
-          </Text>
-          <div style={{ marginLeft: 'auto' }}>
-            <IconArrowPopover
-              icon={<QuestionIcon />}
-              position="above"
-              shadow
-              oneLine={false}
-              width="320px"
-              label={translations.lockedList}
-            >
-              <div style={{ padding: '.5rem .25rem' }}>
-                {translations.lockedListTooltip}
-              </div>
-            </IconArrowPopover>
-          </div>
-        </div>
-      }
+      {lockedProfiles.length > 0 && renderLockedHeader(translations) }
       {lockedProfiles.length > 0 && <Divider />}
       <ProfileList
         selectedProfileId={selectedProfileId}
@@ -123,6 +130,7 @@ const ProfileSidebar = ({
   </div>;
 
 ProfileSidebar.propTypes = {
+  loading: PropTypes.bool.isRequired,
   onProfileClick: ProfileList.propTypes.onProfileClick,
   selectedProfileId: ProfileList.propTypes.selectedProfileId,
   profiles: PropTypes.arrayOf(
