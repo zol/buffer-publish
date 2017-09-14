@@ -15,6 +15,7 @@ import {
   borderWidth,
 } from '@bufferapp/components/style/border';
 
+import LoadingProfileListItem from '../LoadingProfileListItem';
 import ProfileListItem from '../ProfileListItem';
 import ProfileList from '../ProfileList';
 
@@ -94,7 +95,12 @@ const productTitle = (
 
 const renderLoadingProfiles = () => (
   <div>
-    Loading!
+    <LoadingProfileListItem />
+    <LoadingProfileListItem offset="100ms" />
+    <LoadingProfileListItem offset="200ms" />
+    <LoadingProfileListItem offset="300ms" />
+    <LoadingProfileListItem offset="400ms" />
+    <LoadingProfileListItem offset="500ms" />
   </div>
 );
 
