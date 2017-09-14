@@ -1,13 +1,14 @@
 import deepFreeze from 'deep-freeze';
 import reducer, { actions, actionTypes } from './reducer';
+
 import profiles from './mockData/profiles';
-import lockedProfiles from './mockData/lockedProfiles';
 
 describe('reducer', () => {
   it('should initialize default state', () => {
     const stateAfter = {
-      profiles,
-      lockedProfiles,
+      profiles: [],
+      lockedProfiles: [],
+      loading: false,
     };
     const action = {
       type: 'INIT',

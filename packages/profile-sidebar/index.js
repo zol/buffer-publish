@@ -6,6 +6,7 @@ import { actions } from './reducer';
 
 export default connect(
   (state, ownProps) => ({
+    loading: state.profileSidebar.loading,
     selectedProfile: state.profileSidebar.selectedProfile,
     selectedProfileId: ownProps.profileId,
     profiles: state.profileSidebar.profiles,
