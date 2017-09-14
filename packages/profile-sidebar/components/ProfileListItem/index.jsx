@@ -41,7 +41,7 @@ Notifications.defaultProps = {
   notifications: null,
 };
 
-const ProfileSidebar = ({
+const ProfileListItem = ({
   avatarUrl,
   type,
   notifications,
@@ -102,7 +102,7 @@ const ProfileSidebar = ({
   );
 };
 
-ProfileSidebar.propTypes = {
+ProfileListItem.propTypes = {
   ...Notifications.propTypes,
   ...ProfileBadge.propTypes,
   handle: PropTypes.string.isRequired,
@@ -110,9 +110,9 @@ ProfileSidebar.propTypes = {
   selected: PropTypes.bool,
 };
 
-ProfileSidebar.defaultProps = {
+ProfileListItem.defaultProps = {
   locked: false,
   selected: false,
 };
 
-export default ProfileSidebar;
+export default ProfileListItem;
