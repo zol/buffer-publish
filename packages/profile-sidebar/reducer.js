@@ -1,25 +1,30 @@
 import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
-import profiles from './mockData/profiles';
-import lockedProfiles from './mockData/lockedProfiles';
 
 export const actionTypes = {
   SELECT_PROFILE: 'SELECT_PROFILE',
 };
 
 const initialState = {
-  profiles,
-  lockedProfiles,
+  profiles: [],
+  lockedProfiles: [],
+  loading: false,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case `profiles_${dataFetchActionTypes.FETCH_START}`:
+      return {
+        ...state,
+        loading: true,
+      };
     case `profiles_${dataFetchActionTypes.FETCH_SUCCESS}`: {
       return {
         ...state,
+        loading: false,
         profiles: action.result
-          .filter(profile => !profile.locked),
+          .filter(profile => !profile.disabled),
         lockedProfiles: action.result
-          .filter(profile => profile.locked),
+          .filter(profile => profile.disabled),
       };
     }
     case actionTypes.SELECT_PROFILE: {
