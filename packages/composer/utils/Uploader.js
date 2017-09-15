@@ -121,7 +121,7 @@ function uploadToBuffer(uploadKey) {
     const rpc = new RPCClient({ url: '/rpc' });
     const type = getMediaType(uploadKey);
 
-    return rpc.call('bufferApi', {
+    return rpc.call('composerApiProxy', {
       url: `/i/upload_${type === 'photo' ? 'image' : 'video'}.json`,
       args: data,
       token: AppStore.getUserData().accessToken,

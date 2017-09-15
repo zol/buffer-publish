@@ -14,9 +14,12 @@ class API extends BufferAPI {
     const { onNewPublish } = AppStore.getUserData();
 
     if (onNewPublish) {
-      const rpc = new RPCClient({ url: '/rpc' });
+      const rpc = new RPCClient({
+        url: '/rpc',
+        sendCredentials: 'same-origin',
+      });
 
-      return rpc.call('bufferApi', {
+      return rpc.call('composerApiProxy', {
         url: `/1/${url}`,
         args: data,
         token: AppStore.getUserData().accessToken,
