@@ -7,7 +7,7 @@ const userMethod = require('./user');
 const deletePostMethod = require('./deletePost');
 const sharePostNowMethod = require('./sharePostNow');
 const enabledApplicationModesMethod = require('./enabledApplicationModes');
-const apiWrapperMethod = require('./apiWrapper');
+const composerApiProxyMethod = require('./composerApiProxy');
 const environmentMethod = require('./environment');
 
 module.exports = checkToken(rpc(
@@ -18,6 +18,6 @@ module.exports = checkToken(rpc(
   deletePostMethod,
   sharePostNowMethod,
   enabledApplicationModesMethod,
-  apiWrapperMethod,
+  composerApiProxyMethod,
   environmentMethod,
 ));

@@ -14,4 +14,6 @@ config.plugins.unshift(
   new webpack.HotModuleReplacementPlugin(),
 );
 
+config.module.rules[1].loaders.unshift('cache-loader');
+
 module.exports = config;

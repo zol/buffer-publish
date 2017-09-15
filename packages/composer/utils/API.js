@@ -13,10 +13,20 @@ class API extends BufferAPI {
   static request(url, data = {}, settings, apiSettings = {}) {
     const { onNewPublish } = AppStore.getUserData();
 
+    /**
+     * The new publish dashboard uses an RPC client to
+     * make authenticated requests to the Buffer API.
+     * Since the composer is still quite siloed and depends
+     * on the normal Buffer API we create another RPC client
+     * to allow the composer to make proxied requests.
+     */
     if (onNewPublish) {
-      const rpc = new RPCClient({ url: '/rpc' });
+      const rpc = new RPCClient({
+        url: '/rpc',
+        sendCredentials: 'same-origin',
+      });
 
-      return rpc.call('bufferApi', {
+      return rpc.call('composerApiProxy', {
         url: `/1/${url}`,
         args: data,
         token: AppStore.getUserData().accessToken,

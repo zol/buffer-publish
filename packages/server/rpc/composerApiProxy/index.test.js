@@ -1,9 +1,9 @@
 /* eslint-disable import/first */
-import bufferApi from './';
+import composerApiProxy from './';
 
 describe('rpc/apiWrapper', () => {
   it('should have the expected name', () => {
-    expect(bufferApi.name)
-      .toBe('bufferApi');
+    expect(composerApiProxy.name)
+      .toBe('composerApiProxy');
   });
 });
