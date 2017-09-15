@@ -1,10 +1,6 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
 
-// Rename apiWrapper -> composerApi
-// Modify error handling below to pass through errors correctly. (Need to be raw.)
-// Test, commit.
-
 module.exports = method(
   'composerApiProxy',
   'communicate with buffer api',
