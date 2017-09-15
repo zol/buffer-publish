@@ -59,29 +59,14 @@ const getHtml = () => fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
 app.use(logMiddleware({ name: 'BufferPublish' }));
 app.use(cookieParser());
 
+// All routes after this have access to the user session
+app.use(session.middleware);
+
 app.post('/rpc', (req, res, next) => {
   rpc(req, res)
     // catch any unexpected errors
     .catch(err => next(err));
 });
-
-// All routes after this have access to the user session
-app.use(session.middleware);
-
-app.get('/', (req, res) => {
-  if (!req.session || !req.session.accessToken) {
-    return res.redirect('/login');
-  }
-  res.send(getHtml());
-});
-
-app.route('/login')
-  .get(controller.login)
-  .post(bodyParser.urlencoded({ extended: true }), controller.handleLogin);
-app.route('/login/tfa')
-  .get(controller.tfa)
-  .post(bodyParser.urlencoded({ extended: true }), controller.handleTfa);
-app.post('/signout', controller.signout);
 
 app.get('/health-check', controller.healthCheck);
 
@@ -96,6 +81,16 @@ app.post('/pusher/auth',
     res.send(auth);
   },
 );
+
+app.get('*', (req, res) => {
+  if (!req.session || !req.session.accessToken) {
+    const redirect = encodeURIComponent(`https://${req.get('host')}${req.originalUrl}`);
+    const accountUrl = `https://account${isProduction ? '' : '.local'}.buffer.com/login/`;
+    res.redirect(`${accountUrl}?redirect=${redirect}`);
+  } else {
+    res.send(getHtml());
+  }
+});
 
 app.use(apiError);
 

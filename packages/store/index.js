@@ -4,7 +4,7 @@ import {
   compose,
 } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
-import createHistory from 'history/createHashHistory';
+import createHistory from 'history/createBrowserHistory';
 import { middleware as loginMiddleware } from '@bufferapp/login';
 import { middleware as queueMiddleware } from '@bufferapp/publish-queue';
 import { middleware as sentMiddleware } from '@bufferapp/publish-sent';

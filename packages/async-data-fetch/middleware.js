@@ -7,7 +7,10 @@ import {
 
 export default (store) => {
   let counter = 0;
-  const rpc = new RPCClient({ url: '/rpc' });
+  const rpc = new RPCClient({
+    url: '/rpc',
+    sendCredentials: 'same-origin',
+  });
   return next => (action) => {
     next(action);
     switch (action.type) {
