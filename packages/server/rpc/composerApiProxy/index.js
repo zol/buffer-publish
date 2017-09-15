@@ -1,4 +1,4 @@
-const { method, createError } = require('@bufferapp/micro-rpc');
+const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
 
 // Rename apiWrapper -> composerApi
@@ -8,21 +8,26 @@ const rp = require('request-promise');
 module.exports = method(
   'composerApiProxy',
   'communicate with buffer api',
-  ({ url, args }, { session }) => rp({
-    uri: `${process.env.API_ADDR}${url}`,
-    method: 'POST',
-    strictSSL: process.env.NODE_ENV !== 'development',
-    form: Object.assign(args, {
-      access_token: session.accessToken,
-    }),
-  })
-    .catch((err) => {
-      console.log('ERR: ', err);
-      if (err.error && err.error.error) {
-        throw createError({ message: err.error.error });
-      } else {
-        throw err;
+  async ({ url, args }, { session }) => {
+    let result;
+    try {
+      result = await rp({
+        uri: `${process.env.API_ADDR}${url}`,
+        method: 'POST',
+        strictSSL: process.env.NODE_ENV !== 'development',
+        form: Object.assign(args, {
+          access_token: session.accessToken,
+        }),
+      });
+    } catch (err) {
+      if (err.error) {
+        // debugger;
+        // Catch and pass through Buffer API errors
+        return Promise.resolve(JSON.parse(err.error));
       }
-    })
-    .then(result => JSON.parse(result)),
+      throw err;
+    }
+    result = JSON.parse(result);
+    return Promise.resolve(result);
+  },
 );
