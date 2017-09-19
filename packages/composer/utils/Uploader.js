@@ -118,7 +118,10 @@ function uploadToBuffer(uploadKey) {
   const { onNewPublish } = AppStore.getUserData();
 
   if (onNewPublish) {
-    const rpc = new RPCClient({ url: '/rpc' });
+    const rpc = new RPCClient({
+      url: '/rpc',
+      sendCredentials: 'same-origin',
+    });
     const type = getMediaType(uploadKey);
 
     return rpc.call('composerApiProxy', {

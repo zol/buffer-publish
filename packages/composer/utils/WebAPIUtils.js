@@ -587,7 +587,7 @@ function getFormattedAPIData(serviceName, unformattedData) {
       ),
       shorten: shouldShortenLinks,
       // When editing updates, the API expects only the text field to be used (not fb_text)
-      text: (serviceName !== 'facebook' || isEditingUpdate) ? serviceDraftText : '',
+      text: serviceDraftText,
       fb_text: (serviceName === 'facebook' && !isEditingUpdate) ? serviceDraftText : '',
       entities: serviceName === 'facebook' ?
         getFacebookAutocompleteEntities(serviceDraft.editorState) :
