@@ -16,7 +16,7 @@ const ProfileList = ({
         avatarUrl={profile.avatarUrl}
         type={profile.type}
         handle={profile.handle}
-        notifications={profile.notifications}
+        notifications={profile.pendingCount}
         selected={profile.id === selectedProfileId}
         locked={profile.locked}
         onClick={() => onProfileClick(profile)}

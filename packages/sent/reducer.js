@@ -1,10 +1,15 @@
 import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-profile-sidebar';
+import { actionTypes as queueActionTypes } from '@bufferapp/publish-queue';
 import {
   header,
 } from './components/SentPosts/postData';
 
 export const actionTypes = { };
+
+const initialState = {
+  byProfileId: {},
+};
 
 const profileInitialState = {
   header,
@@ -32,13 +37,16 @@ const increasePageCount = (page) => {
 const determineIfMoreToLoad = (action, currentPosts) =>
   (action.result.total > (currentPosts.length + action.result.updates.length));
 
+const getProfileId = (action) => {
+  if (action.profileId) { return action.profileId; }
+  if (action.args) { return action.args.profileId; }
+  if (action.profile) { return action.profile.id; }
+};
+
 const postsReducer = (state, action) => {
   switch (action.type) {
-    case actionTypes.POST_SENT:
-      return {
-        ...state,
-        [action.updateId]: action.post,
-      };
+    case queueActionTypes.POST_SENT:
+      return [action.post, ...state];
     default:
       return state;
   }
@@ -69,7 +77,12 @@ const profileReducer = (state = profileInitialState, action) => {
         ...state,
         loading: false,
       };
-    case actionTypes.POST_SENT:
+    case queueActionTypes.POST_COUNT_UPDATED:
+      return {
+        ...state,
+        total: action.counts.sent,
+      };
+    case queueActionTypes.POST_SENT:
       return {
         ...state,
         posts: postsReducer(state.posts, action),
@@ -79,16 +92,6 @@ const profileReducer = (state = profileInitialState, action) => {
   }
 };
 
-const initialState = {
-  byProfileId: {},
-};
-
-const getProfileId = (action) => {
-  if (action.profileId) { return action.profileId; }
-  if (action.args) { return action.args.profileId; }
-  if (action.profile) { return action.profile.id; }
-};
-
 export default (state = initialState, action) => {
   let profileId;
   switch (action.type) {
@@ -96,17 +99,8 @@ export default (state = initialState, action) => {
     case `sentPosts_${dataFetchActionTypes.FETCH_START}`:
     case `sentPosts_${dataFetchActionTypes.FETCH_SUCCESS}`:
     case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
-      profileId = getProfileId(action);
-      if (profileId) {
-        return {
-          byProfileId: {
-            ...state.byProfileId,
-            [profileId]: profileReducer(state.byProfileId[profileId], action),
-          },
-        };
-      }
-      return state;
-    case actionTypes.POST_SENT:
+    case queueActionTypes.POST_SENT:
+    case queueActionTypes.POST_COUNT_UPDATED:
       profileId = getProfileId(action);
       if (profileId) {
         return {

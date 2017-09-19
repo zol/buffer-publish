@@ -1,12 +1,13 @@
 import { actionTypes as profileActionTypes } from '@bufferapp/publish-profile-sidebar';
+
 import {
   actions as dataFetchActions,
   actionTypes as dataFetchActionTypes,
 } from '@bufferapp/async-data-fetch';
 import { actions as notificationActions } from '@bufferapp/notifications';
-import { actionTypes } from './reducer';
+import { actionTypes, actions } from './reducer';
 
-export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars
+export default ({ dispatch, getState }) => next => (action) => {
   next(action);
   switch (action.type) {
     case 'APP_INIT':
@@ -51,6 +52,33 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
         message: action.error,
       }));
       break;
+
+    /**
+     * Watch for Pusher events to keep post counts up-to-date throughout the app.
+     */
+    case actionTypes.POST_CREATED:
+    case actionTypes.POST_DELETED:
+    case actionTypes.POST_SENT: {
+      const state = getState();
+      const { profileId } = action;
+      const currentCounts = {
+        pending: state.queue.byProfileId[profileId].total,
+        sent: state.sent.byProfileId[profileId].total,
+      };
+      const changeMap = {
+        [actionTypes.POST_CREATED]: { pending: 1, sent: 0 },
+        [actionTypes.POST_DELETED]: { pending: -1, sent: 0 },
+        [actionTypes.POST_SENT]: { pending: -1, sent: 1 },
+      };
+      const countChanges = changeMap[action.type];
+      const newCounts = {
+        pending: currentCounts.pending + countChanges.pending,
+        sent: currentCounts.sent + countChanges.sent,
+      };
+      dispatch(actions.postCountUpdated(profileId, newCounts));
+      break;
+    }
+
     default:
       break;
   }

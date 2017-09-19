@@ -123,7 +123,7 @@ describe('reducer', () => {
           moreToLoad: false,
           page: 1,
           posts: { 12345: postCreated },
-          total: 1,
+          total: 0, // still 0 because counts are updated separately
         },
       },
       enabledApplicationModes: [],
@@ -288,7 +288,7 @@ describe('reducer', () => {
           moreToLoad: false,
           page: 1,
           posts: { },
-          total: 0,
+          total: 1, // still 1 because counts are updated separately
         },
       },
     };
