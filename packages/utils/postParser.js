@@ -80,7 +80,7 @@ module.exports = (post) => {
     isWorking: !post.isDeleting && post.requestingDraftAction,
     imageSrc: isVideo ? media.thumbnail : media.picture,
     imageUrls: getImageUrls(post),
-    links: parseTwitterLinks(text),
+    links: post.profile_service === 'twitter' ? parseTwitterLinks(text) : [],
     profileTimezone: post.profile_timezone,
     linkAttachment: {
       title: media.title,
@@ -90,7 +90,7 @@ module.exports = (post) => {
     },
     postDetails: getPostDetails({ post }),
     retweetComment,
-    retweetCommentLinks: parseTwitterLinks(retweetComment),
+    retweetCommentLinks: post.profile_service === 'twitter' ? parseTwitterLinks(retweetComment) : [],
     retweetProfile: getRetweetProfileInfo(post),
     sent: post.status === 'sent',
     text,
