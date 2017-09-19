@@ -182,6 +182,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
+    AppActionCreators.resetData();
     AppStore.addChangeListener(this.onStoreChange);
     NotificationStore.addChangeListener(this.onStoreChange);
     /* prevent drop/dragover behavior when dropping a file not in the dropzone*/
@@ -224,8 +225,6 @@ class App extends React.Component {
     window.removeEventListener('dragover', (e) => e.preventDefault());
 
     if (this.dragMe) this.dragMe.cleanup();
-
-    AppActionCreators.resetData();
   }
 
   onStoreChange = () => this.setState(getState());
