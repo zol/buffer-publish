@@ -2,6 +2,7 @@ import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch
 
 export const actionTypes = {
   SELECT_PROFILE: 'SELECT_PROFILE',
+  POST_COUNT_UPDATED: 'POST_COUNT_UPDATED',
 };
 
 const initialState = {
@@ -9,6 +10,30 @@ const initialState = {
   lockedProfiles: [],
   selectedProfileId: '',
   loading: false,
+};
+
+const profilesReducer = (state = [], action) => {
+  switch (action.type) {
+    case actionTypes.SELECT_PROFILE:
+      return state
+        .map(profile => ({
+          ...profile,
+          open: profile.id === action.profileId,
+        }));
+    case actionTypes.POST_COUNT_UPDATED:
+      return state
+        .map(profile => ({
+          ...profile,
+          pendingCount: profile.id === action.profileId
+            ? action.counts.pending
+            : profile.pendingCount,
+          sentCount: profile.id === action.profileId
+            ? action.counts.sent
+            : profile.sentCount,
+        }));
+    default:
+      return state;
+  }
 };
 
 export default (state = initialState, action) => {
@@ -31,16 +56,15 @@ export default (state = initialState, action) => {
     case actionTypes.SELECT_PROFILE: {
       return {
         selectedProfileId: action.profileId,
-        profiles: state.profiles
-          .map(profile => ({
-            ...profile,
-            open: profile.id === action.profileId,
-          })),
-        lockedProfiles: state.lockedProfiles
-          .map(profile => ({
-            ...profile,
-            open: profile.id === action.profileId,
-          })),
+        profiles: profilesReducer(state.profiles, action),
+        lockedProfiles: profilesReducer(state.lockedProfiles, action),
+      };
+    }
+    case actionTypes.POST_COUNT_UPDATED: {
+      return {
+        ...state,
+        profiles: profilesReducer(state.profiles, action),
+        lockedProfiles: profilesReducer(state.lockedProfiles, action),
       };
     }
     default:

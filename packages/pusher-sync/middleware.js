@@ -1,16 +1,16 @@
 import Pusher from 'pusher-js';
 import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-profile-sidebar';
+import { actionTypes as queueActionTypes } from '@bufferapp/publish-queue';
 import { postParser } from '@bufferapp/publish-utils';
 
 const PUSHER_APP_KEY = 'bd9ba9324ece3341976e';
 
 const profileEventActionMap = {
-  added_update: 'POST_CREATED',
-  sent_update: 'POST_SENT',
-  deleted_update: 'POST_DELETED',
-  updated_update: 'POST_UPDATED',
+  added_update: queueActionTypes.POST_CREATED,
+  sent_update: queueActionTypes.POST_SENT,
+  deleted_update: queueActionTypes.POST_DELETED,
+  updated_update: queueActionTypes.POST_UPDATED,
 };
-
 
 const bindProfileEvents = (channel, profileId, dispatch) => {
   Object.entries(profileEventActionMap).forEach(([pusherEvent, actionType]) => {

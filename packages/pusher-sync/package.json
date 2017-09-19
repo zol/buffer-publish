@@ -17,6 +17,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@bufferapp/publish-queue": "0.5.35",
     "@bufferapp/publish-profile-sidebar": "0.5.35",
     "@bufferapp/publish-utils": "0.5.35",
     "pusher-js": "4.1.0"

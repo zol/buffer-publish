@@ -11,6 +11,8 @@
   },
   "author": "melissa@buffer.com",
   "dependencies": {
+    "@bufferapp/publish-pusher-sync": "0.5.35",
+    "@bufferapp/publish-queue": "0.5.35",
     "@bufferapp/async-data-fetch": "0.5.35",
     "@bufferapp/components": "0.5.35",
     "@bufferapp/publish-profile-sidebar": "0.5.35",

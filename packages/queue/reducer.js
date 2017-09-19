@@ -4,19 +4,20 @@ import { actionTypes as profileSidebarActionTypes } from '@bufferapp/publish-pro
 export const actionTypes = {
   POST_CREATED: 'POST_CREATED',
   POST_UPDATED: 'POST_UPDATED',
+  POST_DELETED: 'POST_DELETED',
+  POST_SENT: 'POST_SENT',
   POST_CLICKED_DELETE: 'POST_CLICKED_DELETE',
   POST_CONFIRMED_DELETE: 'POST_CONFIRMED_DELETE',
-  POST_DELETED: 'POST_DELETED',
   POST_CANCELED_DELETE: 'POST_CANCELED_DELETE',
   POST_ERROR: 'POST_ERROR',
   POST_SHARE_NOW: 'POST_SHARE_NOW',
-  POST_SENT: 'POST_SENT',
   POST_IMAGE_CLICKED: 'POST_IMAGE_CLICKED',
   POST_IMAGE_CLICKED_NEXT: 'POST_IMAGE_CLICKED_NEXT',
   POST_IMAGE_CLICKED_PREV: 'POST_IMAGE_CLICKED_PREV',
   POST_IMAGE_CLOSED: 'POST_IMAGE_CLOSED',
   OPEN_COMPOSER: 'OPEN_COMPOSER',
   HIDE_COMPOSER: 'HIDE_COMPOSER',
+  POST_COUNT_UPDATED: 'POST_COUNT_UPDATED',
 };
 
 const initialState = {
@@ -47,6 +48,12 @@ const getProfileId = (action) => {
   if (action.profileId) { return action.profileId; }
   if (action.args) { return action.args.profileId; }
   if (action.profile) { return action.profile.id; }
+};
+
+const getPostUpdateId = (action) => {
+  if (action.updateId) { return action.updateId; }
+  if (action.args) { return action.args.updateId; }
+  if (action.post) { return action.post.id; }
 };
 
 /**
@@ -118,8 +125,9 @@ const postsReducer = (state = {}, action) => {
       }
       return updates;
     }
-    case actionTypes.POST_DELETED: {
-      const { [action.post.id]: deleted, ...currentState } = state;
+    case actionTypes.POST_DELETED:
+    case actionTypes.POST_SENT: {
+      const { [getPostUpdateId(action)]: deleted, ...currentState } = state;
       return currentState;
     }
     case actionTypes.POST_CREATED:
@@ -127,27 +135,16 @@ const postsReducer = (state = {}, action) => {
     case actionTypes.POST_CLICKED_DELETE:
     case actionTypes.POST_CONFIRMED_DELETE:
     case actionTypes.POST_CANCELED_DELETE:
+    case actionTypes.POST_SHARE_NOW:
     case actionTypes.POST_IMAGE_CLICKED:
     case actionTypes.POST_IMAGE_CLOSED:
     case actionTypes.POST_IMAGE_CLICKED_NEXT:
     case actionTypes.POST_IMAGE_CLICKED_PREV:
     case actionTypes.POST_ERROR:
-      return {
-        ...state,
-        [action.post.id]: postReducer(state[action.post.id], action),
-      };
-    case actionTypes.POST_SHARE_NOW:
-      return {
-        ...state,
-        [action.updateId]: postReducer(state[action.updateId], action),
-      };
-    case actionTypes.POST_SENT:
-      var { [action.post.id]: deleted, ...currentState } = state; //eslint-disable-line
-      return currentState;
     case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
       return {
         ...state,
-        [action.args.updateId]: postReducer(state[action.args.updateId], action),
+        [getPostUpdateId(action)]: postReducer(state[getPostUpdateId(action)], action),
       };
     default:
       return state;
@@ -177,6 +174,11 @@ const profileReducer = (state = profileInitialState, action) => {
         ...state,
         loading: false,
       };
+    case actionTypes.POST_COUNT_UPDATED:
+      return {
+        ...state,
+        total: action.counts.pending,
+      };
     case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
     case actionTypes.POST_ERROR:
     case actionTypes.POST_CREATED:
@@ -191,19 +193,11 @@ const profileReducer = (state = profileInitialState, action) => {
     case actionTypes.POST_IMAGE_CLICKED_NEXT:
     case actionTypes.POST_IMAGE_CLICKED_PREV:
     case actionTypes.POST_SHARE_NOW:
-    case actionTypes.POST_SENT: {
-      let adjustTotal = 0;
-      if (action.type === actionTypes.POST_CREATED) {
-        adjustTotal = 1;
-      } else if (action.type === (actionTypes.POST_DELETED || actionTypes.POST_SENT)) {
-        adjustTotal = -1;
-      }
+    case actionTypes.POST_SENT:
       return {
         ...state,
         posts: postsReducer(state.posts, action),
-        total: state.total + adjustTotal,
       };
-    }
     default:
       return state;
   }
@@ -229,7 +223,8 @@ export default (state = initialState, action) => {
     case actionTypes.POST_IMAGE_CLICKED_NEXT:
     case actionTypes.POST_IMAGE_CLICKED_PREV:
     case actionTypes.POST_SHARE_NOW:
-    case actionTypes.POST_SENT: {
+    case actionTypes.POST_SENT:
+    case actionTypes.POST_COUNT_UPDATED: {
       profileId = getProfileId(action);
       if (profileId) {
         return {
@@ -332,5 +327,10 @@ export const actions = {
   // TODO: rename to more representative name
   handleComposerCreateSuccess: () => ({
     type: actionTypes.HIDE_COMPOSER,
+  }),
+  postCountUpdated: (profileId, counts) => ({
+    type: actionTypes.POST_COUNT_UPDATED,
+    profileId,
+    counts,
   }),
 };
