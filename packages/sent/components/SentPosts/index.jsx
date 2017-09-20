@@ -31,7 +31,6 @@ const SentPosts = ({
   header,
   total,
   loading,
-  loadingMore,
   postLists,
 }) => {
   if (loading) {
@@ -51,18 +50,6 @@ const SentPosts = ({
       />
     );
   }
-  const loadMoreStyle = {
-    border: `1px solid ${geyser}`,
-    width: '100%',
-    padding: '1rem',
-    margin: '0 0 2rem 0',
-    position: 'relative',
-    textAlign: 'center',
-    backgroundColor: fillColor,
-    color: curiousBlue,
-    opacity: loadingMore ? '1' : '0',
-    boxSizing: 'border-box',
-  };
   return (
     <div>
       <div style={headerStyle}>
@@ -72,7 +59,6 @@ const SentPosts = ({
       <PostLists
         postLists={postLists}
       />
-      <div style={loadMoreStyle}><Text>Loading&hellip;</Text></div>
     </div>
   );
 };
@@ -80,7 +66,6 @@ const SentPosts = ({
 SentPosts.propTypes = {
   header: PropTypes.string,
   loading: PropTypes.bool,
-  loadingMore: PropTypes.bool,
   moreToLoad: PropTypes.bool, // eslint-disable-line
   page: PropTypes.number, // eslint-disable-line
   postLists: PropTypes.arrayOf(
@@ -99,7 +84,6 @@ SentPosts.propTypes = {
 SentPosts.defaultProps = {
   header: null,
   loading: true,
-  loadingMore: false,
   moreToLoad: false,
   page: 1,
   postLists: [],

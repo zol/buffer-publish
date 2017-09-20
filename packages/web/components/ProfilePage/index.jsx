@@ -13,6 +13,7 @@ import ProfileSidebar from '@bufferapp/publish-profile-sidebar';
 import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
 import { ScrollableContainer } from '@bufferapp/publish-shared-components';
 import { getProfilePageParams } from '@bufferapp/publish-routes';
+import { Button } from '@bufferapp/components';
 
 const profilePageStyle = {
   display: 'flex',
@@ -33,6 +34,12 @@ const contentStyle = {
   marginLeft: '1rem',
   marginRight: '1rem',
   height: '100vh',
+};
+
+const buttonContainerStyle = {
+  flexShrink: '0',
+  marginBottom: '40px',
+  alignSelf: 'center',
 };
 
 const TabContent = ({ tabId, profileId }) => {
@@ -74,36 +81,44 @@ const ProfilePage = ({
       tabId,
     },
   },
-  handleScroll,
+  onLoadMoreClick,
   loadingMore,
   moreToLoad,
   page,
-}) =>
-  <div style={profilePageStyle}>
-    <div style={profileSideBarStyle}>
-      <ProfileSidebar
-        profileId={profileId}
-        tabId={tabId}
-      />
+}) => {
+  const isPostsTab = ['queue', 'sent'].includes(tabId);
+  const showLoadMoreButton = moreToLoad && isPostsTab;
+  return (
+    <div style={profilePageStyle}>
+      <div style={profileSideBarStyle}>
+        <ProfileSidebar
+          profileId={profileId}
+          tabId={tabId}
+        />
+      </div>
+      <div style={contentStyle}>
+        <TabNavigation
+          profileId={profileId}
+          tabId={tabId}
+        />
+        <ScrollableContainer
+          tabId={tabId}
+        >
+          {TabContent({ tabId, profileId })}
+          {showLoadMoreButton &&
+            <div style={buttonContainerStyle}>
+              <Button
+                disabled={loadingMore} secondary
+                onClick={() => onLoadMoreClick({ profileId, page, tabId })}
+              >
+                {loadingMore ? 'Loading...' : 'Load more'}
+              </Button>
+            </div>}
+        </ScrollableContainer>
+      </div>
     </div>
-    <div style={contentStyle}>
-      <TabNavigation
-        profileId={profileId}
-        tabId={tabId}
-      />
-      <ScrollableContainer
-        tabId={tabId}
-        onReachBottom={() => {
-          const isPostsTab = ['queue', 'sent'].includes(tabId);
-          if (!loadingMore && moreToLoad && isPostsTab) {
-            handleScroll({ profileId, page, tabId });
-          }
-        }}
-      >
-        {TabContent({ tabId, profileId })}
-      </ScrollableContainer>
-    </div>
-  </div>;
+  );
+};
 
 ProfilePage.propTypes = {
   match: PropTypes.shape({
@@ -112,14 +127,13 @@ ProfilePage.propTypes = {
       profileId: PropTypes.string,
     }),
   }).isRequired,
-  handleScroll: PropTypes.func.isRequired,
+  onLoadMoreClick: PropTypes.func.isRequired,
   loadingMore: PropTypes.bool.isRequired,
   moreToLoad: PropTypes.bool.isRequired,
   page: PropTypes.number.isRequired,
 };
 
 ProfilePage.defaultProps = {
-  loading: false,
   loadingMore: false,
   moreToLoad: false,
   page: 1,
@@ -145,7 +159,7 @@ export default connect(
     return {};
   },
   dispatch => ({
-    handleScroll: ({ profileId, page, tabId }) => {
+    onLoadMoreClick: ({ profileId, page, tabId }) => {
       dispatch(
         dataFetchActions.fetch({
           name: `${tabId === 'queue' ? 'queued' : 'sent'}Posts`,

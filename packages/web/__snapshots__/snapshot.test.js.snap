@@ -1227,7 +1227,8 @@ exports[`Snapshots ProfilePage should render 1`] = `
       <div
         style={
           Object {
-            "flexGrow": 1,
+            "display": "flex",
+            "flexDirection": "column",
             "marginTop": "1rem",
             "overflowY": "auto",
             "paddingRight": "1rem",
@@ -1586,7 +1587,8 @@ exports[`Snapshots ProfilePage should render settings 1`] = `
       <div
         style={
           Object {
-            "flexGrow": 1,
+            "display": "flex",
+            "flexDirection": "column",
             "marginTop": "1rem",
             "overflowY": "auto",
             "paddingRight": "1rem",
