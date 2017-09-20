@@ -1,6 +1,21 @@
 const twitter = require('./twitter.text');
 
+const makeUnicodeAwareIndexUnaware = (str, i) => Array.from(str).slice(0, i).join('').length;
+
 module.exports = {
+  parseFacebookEntities: (postText, entities) => {
+    if (!entities) return [];
+
+    return entities.map(({ url, text, indices }) => ({
+      displayString: text,
+      indices: [
+        makeUnicodeAwareIndexUnaware(postText, indices[0]),
+        makeUnicodeAwareIndexUnaware(postText, indices[1]),
+      ],
+      rawString: text,
+      url,
+    }));
+  },
   parseTwitterLinks: text =>
     twitter.extractEntitiesWithIndices(text)
       .map((entity) => {

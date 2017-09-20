@@ -1,5 +1,8 @@
 const { getDateString } = require('./date');
-const { parseTwitterLinks } = require('./linkParsing');
+const {
+  parseTwitterLinks,
+  parseFacebookEntities,
+} = require('./linkParsing');
 
 const getImageUrls = (post) => {
   if (!(post.media && post.media.picture && post.extra_media)) return [];
@@ -72,6 +75,14 @@ module.exports = (post) => {
   } else {
     text = post.text;
   }
+
+  const canHaveLinks = post.profile_service === 'twitter' || post.profile_service === 'facebook';
+
+  const links =
+      parseTwitterLinks(text)
+        .concat(post.profile_service === 'facebook' ? parseFacebookEntities(text, post.entities) : [])
+        .sort(({ indices: [startIdxA] }, { indices: [startIdxB] }) => startIdxA - startIdxB);
+
   return {
     day: post.day,
     id: post.id,
@@ -80,7 +91,7 @@ module.exports = (post) => {
     isWorking: !post.isDeleting && post.requestingDraftAction,
     imageSrc: isVideo ? media.thumbnail : media.picture,
     imageUrls: getImageUrls(post),
-    links: post.profile_service === 'twitter' ? parseTwitterLinks(text) : [],
+    links: canHaveLinks ? links : [],
     profileTimezone: post.profile_timezone,
     linkAttachment: {
       title: media.title,
@@ -90,7 +101,7 @@ module.exports = (post) => {
     },
     postDetails: getPostDetails({ post }),
     retweetComment,
-    retweetCommentLinks: post.profile_service === 'twitter' ? parseTwitterLinks(retweetComment) : [],
+    retweetCommentLinks: canHaveLinks ? links : [],
     retweetProfile: getRetweetProfileInfo(post),
     sent: post.status === 'sent',
     text,
