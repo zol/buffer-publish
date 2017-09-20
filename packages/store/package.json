@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-store",
-  "version": "0.5.35",
+  "version": "0.6.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "@bufferapp/notifications": "0.5.35",
     "@bufferapp/publish-example": "0.5.35",
     "@bufferapp/publish-i18n": "0.5.28",
-    "@bufferapp/publish-profile-sidebar": "0.5.35",
-    "@bufferapp/publish-pusher-sync": "0.5.35",
-    "@bufferapp/publish-queue": "0.5.35",
+    "@bufferapp/publish-profile-sidebar": "0.6.0",
+    "@bufferapp/publish-pusher-sync": "0.6.0",
+    "@bufferapp/publish-queue": "0.6.0",
     "@bufferapp/publish-routes": "0.5.25",
-    "@bufferapp/publish-sent": "0.5.35",
-    "@bufferapp/publish-settings": "0.5.35",
-    "@bufferapp/publish-tabs": "0.5.35"
+    "@bufferapp/publish-sent": "0.6.0",
+    "@bufferapp/publish-settings": "0.6.0",
+    "@bufferapp/publish-tabs": "0.6.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",

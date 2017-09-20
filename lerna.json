@@ -1,7 +1,7 @@
 {
   "name": "web",
   "lerna": "2.0.0-beta.38",
-  "version": "0.5.35",
+  "version": "0.6.0",
   "independent": false,
   "npmClient": "yarn"
 }

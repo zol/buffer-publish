@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-settings",
-  "version": "0.5.35",
+  "version": "0.6.0",
   "description": "Settings package",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,8 @@
   "dependencies": {
     "@bufferapp/async-data-fetch": "0.5.35",
     "@bufferapp/components": "0.5.35",
-    "@bufferapp/publish-profile-sidebar": "0.5.35",
-    "@bufferapp/publish-shared-components": "0.5.35",
+    "@bufferapp/publish-profile-sidebar": "0.6.0",
+    "@bufferapp/publish-shared-components": "0.6.0",
     "moment-timezone": "0.5.12"
   },
   "devDependencies": {
