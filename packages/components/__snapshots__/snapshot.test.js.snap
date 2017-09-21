@@ -20981,7 +20981,7 @@ exports[`Snapshots Notification default 1`] = `
       <div
         style={
           Object {
-            "margin": "1.5rem",
+            "margin": "1rem",
           }
         }
       >
@@ -21013,7 +21013,7 @@ exports[`Snapshots Notification default 1`] = `
         style={
           Object {
             "flexGrow": 1,
-            "margin": "1.5rem 0",
+            "margin": "1rem 0",
           }
         }
       >
@@ -21022,7 +21022,7 @@ exports[`Snapshots Notification default 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -21125,7 +21125,7 @@ exports[`Snapshots Notification error 1`] = `
       <div
         style={
           Object {
-            "margin": "1.5rem",
+            "margin": "1rem",
           }
         }
       >
@@ -21157,7 +21157,7 @@ exports[`Snapshots Notification error 1`] = `
         style={
           Object {
             "flexGrow": 1,
-            "margin": "1.5rem 0",
+            "margin": "1rem 0",
           }
         }
       >
@@ -21166,7 +21166,7 @@ exports[`Snapshots Notification error 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -21269,7 +21269,7 @@ exports[`Snapshots Notification handle close click 1`] = `
       <div
         style={
           Object {
-            "margin": "1.5rem",
+            "margin": "1rem",
           }
         }
       >
@@ -21301,7 +21301,7 @@ exports[`Snapshots Notification handle close click 1`] = `
         style={
           Object {
             "flexGrow": 1,
-            "margin": "1.5rem 0",
+            "margin": "1rem 0",
           }
         }
       >
@@ -21310,7 +21310,7 @@ exports[`Snapshots Notification handle close click 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }
@@ -21413,7 +21413,7 @@ exports[`Snapshots Notification long text 1`] = `
       <div
         style={
           Object {
-            "margin": "1.5rem",
+            "margin": "1rem",
           }
         }
       >
@@ -21445,7 +21445,7 @@ exports[`Snapshots Notification long text 1`] = `
         style={
           Object {
             "flexGrow": 1,
-            "margin": "1.5rem 0",
+            "margin": "1rem 0",
           }
         }
       >
@@ -21454,7 +21454,7 @@ exports[`Snapshots Notification long text 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
+              "fontSize": "0.9rem",
               "fontWeight": 400,
             }
           }

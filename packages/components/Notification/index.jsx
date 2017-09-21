@@ -45,7 +45,7 @@ const Notification = ({
     >
       <div
         style={{
-          margin: '1.5rem',
+          margin: '1rem',
         }}
       >
         <NotificationIcon
@@ -55,11 +55,11 @@ const Notification = ({
       <div
         style={{
           flexGrow: 1,
-          margin: '1.5rem 0',
+          margin: '1rem 0',
         }}
       >
         <Text
-          size={'large'}
+          size={'mini'}
         >
           {children}
         </Text>

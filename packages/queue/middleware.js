@@ -46,6 +46,12 @@ export default ({ dispatch, getState }) => next => (action) => {
         },
       }));
       break;
+    case `sharePostNow_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      dispatch(notificationActions.createNotification({
+        notificationType: 'success',
+        message: 'Yay, your post has been shared! 🎉',
+      }));
+      break;
     case `sharePostNow_${dataFetchActionTypes.FETCH_FAIL}`:
       dispatch(notificationActions.createNotification({
         notificationType: 'error',
