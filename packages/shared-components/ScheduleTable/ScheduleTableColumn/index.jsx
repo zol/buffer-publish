@@ -37,6 +37,7 @@ const ScheduleTableColumn = ({
   disabled,
   select24Hours,
   times,
+  onUpdateTime,
 }) => (
   <div style={(times.length === 0) ? columnNoTimesStyle : columnStyle}>
     <ScheduleTableHeader
@@ -51,6 +52,9 @@ const ScheduleTableColumn = ({
             key={index}
             select24Hours={select24Hours}
             time={time}
+            onUpdateTime={onUpdateTime}
+            dayName={dayName}
+            timeIndex={index}
           />,
         )
       }
@@ -63,7 +67,6 @@ ScheduleTableColumn.defaultProps = {
   select24Hours: false,
 };
 
-// TODO: onChange and onRemoveTimeClick required when app is not read-only
 ScheduleTableColumn.propTypes = {
   dayName: PropTypes.string.isRequired,
   disabled: PropTypes.bool.isRequired,
@@ -77,10 +80,10 @@ ScheduleTableColumn.propTypes = {
         }),
         PropTypes.string,
       ]),
-      onChange: PropTypes.func,
       onRemoveTimeClick: PropTypes.func,
     }).isRequired,
   ).isRequired,
+  onUpdateTime: PropTypes.func.isRequired,
 };
 
 export default ScheduleTableColumn;

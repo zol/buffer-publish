@@ -56,7 +56,9 @@ const TabContent = ({ tabId, profileId }) => {
       );
     case 'settings':
       return (
-        <ProfileSettings />
+        <ProfileSettings
+          profileId={profileId}
+        />
       );
     default:
       return (

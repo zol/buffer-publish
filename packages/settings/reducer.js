@@ -7,12 +7,15 @@ import {
 import transformSchedules from './utils/transformSchedule';
 
 export const actionTypes = {
+  UPDATE_SCHEDULE_TIME: 'UPDATE_SCHEDULE_TIME',
 };
+
 // TODO remove stubbed data once we have real data coming in
 const initialState = {
   settingsHeader: 'Your posting schedule',
   loading: false,
   days: [],
+  schedules: [],
   items: timezones,
   profileTimezone: '',
   hasTwentyFourHourTimeFormat: false,
@@ -25,6 +28,7 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         days: transformSchedules(action.profile.schedules),
+        schedules: action.profile.schedules,
         profileTimezone: action.profile.timezone,
         settingsHeader: `Your posting schedule for ${action.profile.serviceUsername}`,
       };
@@ -33,9 +37,26 @@ export default (state = initialState, action) => {
         ...state,
         hasTwentyFourHourTimeFormat: action.result.hasTwentyFourHourTimeFormat,
       };
+    case `updateSchedule_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        days: transformSchedules(action.result.schedules),
+        schedules: action.result.schedules,
+      };
+    case actionTypes.UPDATE_SCHEDULE_TIME:
+      return state;
     default:
       return state;
   }
 };
 
-export const actions = {};
+export const actions = {
+  handleUpdateTime: ({ hours, minutes, dayName, profileId, timeIndex }) => ({
+    type: actionTypes.UPDATE_SCHEDULE_TIME,
+    hours,
+    minutes,
+    timeIndex,
+    dayName,
+    profileId,
+  }),
+};

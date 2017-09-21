@@ -14,7 +14,7 @@ const times = [
       minutes: 41,
     },
     onChange: action('on-change'),
-    onRemoveTimeClick: action('on-remove-time-click')
+    onRemoveTimeClick: action('on-remove-time-click'),
   },
   {
     value: {
@@ -22,7 +22,7 @@ const times = [
       minutes: 0,
     },
     onChange: action('on-change'),
-    onRemoveTimeClick: action('on-remove-time-click')
+    onRemoveTimeClick: action('on-remove-time-click'),
   },
 ];
 const timesSingle = [
@@ -32,7 +32,7 @@ const timesSingle = [
       minutes: 41,
     },
     onChange: action('on-change'),
-    onRemoveTimeClick: action('on-remove-time-click')
+    onRemoveTimeClick: action('on-remove-time-click'),
   },
 ];
 
@@ -44,6 +44,7 @@ storiesOf('ScheduleTableColumn')
     <ScheduleTableColumn
       dayName={dayName}
       times={times}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('disabled', () => (
@@ -51,6 +52,7 @@ storiesOf('ScheduleTableColumn')
       dayName={dayName}
       disabled
       times={times}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('24-hour time setting', () => (
@@ -58,6 +60,7 @@ storiesOf('ScheduleTableColumn')
       dayName={dayName}
       select24Hours
       times={times}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('24-hour time setting, disabled', () => (
@@ -66,17 +69,20 @@ storiesOf('ScheduleTableColumn')
       disabled
       select24Hours
       times={times}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('single time', () => (
     <ScheduleTableColumn
       dayName={dayName}
       times={timesSingle}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('without times', () => (
     <ScheduleTableColumn
       dayName={dayName}
       times={timesEmpty}
+      onUpdateTime={action('on-update-time')}
     />
   ));

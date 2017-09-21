@@ -2,6 +2,7 @@
 import { connect } from 'react-redux';
 // load the presentational component
 import ProfileSettings from './components/ProfileSettings';
+import { actions } from './reducer';
 
 // default export = container
 export default connect(
@@ -10,9 +11,21 @@ export default connect(
     settingsHeader: state.settings.settingsHeader,
     translations: state.i18n.translations.settings, // all package translations
     days: state.settings.days,
+    schedules: state.settings.schedules,
     items: state.settings.items,
     profileTimezone: state.settings.profileTimezone,
     hasTwentyFourHourTimeFormat: state.settings.hasTwentyFourHourTimeFormat,
+  }),
+  (dispatch, ownProps) => ({
+    onUpdateTime: (hours, minutes, dayName, timeIndex) => {
+      dispatch(actions.handleUpdateTime({
+        hours,
+        minutes,
+        dayName,
+        timeIndex,
+        profileId: ownProps.profileId,
+      }));
+    },
   }),
 )(ProfileSettings);
 

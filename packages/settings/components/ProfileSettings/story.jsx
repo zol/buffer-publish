@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { checkA11y } from 'storybook-addon-a11y';
 import {
   reducer as formReducer,
@@ -40,5 +41,6 @@ storiesOf('ProfileSettings')
       initialValues={initialValues}
       items={timezones}
       profileTimezone={profileTimezone}
+      onUpdateTime={action('on-update-time')}
     />
   ));

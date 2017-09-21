@@ -9,6 +9,7 @@ const sharePostNowMethod = require('./sharePostNow');
 const enabledApplicationModesMethod = require('./enabledApplicationModes');
 const composerApiProxyMethod = require('./composerApiProxy');
 const environmentMethod = require('./environment');
+const updateScheduleMethod = require('./updateSchedule');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -20,4 +21,5 @@ module.exports = checkToken(rpc(
   enabledApplicationModesMethod,
   composerApiProxyMethod,
   environmentMethod,
+  updateScheduleMethod,
 ));

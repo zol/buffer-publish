@@ -2099,6 +2099,7 @@ exports[`Snapshots ScheduleTable 24-hour time setting 1`] = `
       ]
     }
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={true}
   />
 </span>
@@ -2266,6 +2267,7 @@ exports[`Snapshots ScheduleTable 24-hour time setting, disabled 1`] = `
       ]
     }
     disabled={true}
+    onUpdateTime={[Function]}
     select24Hours={true}
   />
 </span>
@@ -2433,6 +2435,7 @@ exports[`Snapshots ScheduleTable default 1`] = `
       ]
     }
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
   />
 </span>
@@ -2600,6 +2603,7 @@ exports[`Snapshots ScheduleTable disabled 1`] = `
       ]
     }
     disabled={true}
+    onUpdateTime={[Function]}
     select24Hours={false}
   />
 </span>
@@ -2648,6 +2652,7 @@ exports[`Snapshots ScheduleTable no times 1`] = `
       ]
     }
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
   />
 </span>
@@ -2759,6 +2764,7 @@ exports[`Snapshots ScheduleTable single time 1`] = `
       ]
     }
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
   />
 </span>
@@ -2767,7 +2773,9 @@ exports[`Snapshots ScheduleTable single time 1`] = `
 exports[`Snapshots ScheduleTableCell 24-hour time setting 1`] = `
 <span>
   <ScheduleTableCell
+    dayName="Monday"
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={true}
     time={
       Object {
@@ -2779,6 +2787,7 @@ exports[`Snapshots ScheduleTableCell 24-hour time setting 1`] = `
         },
       }
     }
+    timeIndex={0}
   />
 </span>
 `;
@@ -2786,7 +2795,9 @@ exports[`Snapshots ScheduleTableCell 24-hour time setting 1`] = `
 exports[`Snapshots ScheduleTableCell 24-hour time setting, disabled 1`] = `
 <span>
   <ScheduleTableCell
+    dayName="Monday"
     disabled={true}
+    onUpdateTime={[Function]}
     select24Hours={true}
     time={
       Object {
@@ -2798,6 +2809,7 @@ exports[`Snapshots ScheduleTableCell 24-hour time setting, disabled 1`] = `
         },
       }
     }
+    timeIndex={0}
   />
 </span>
 `;
@@ -2805,7 +2817,9 @@ exports[`Snapshots ScheduleTableCell 24-hour time setting, disabled 1`] = `
 exports[`Snapshots ScheduleTableCell default 1`] = `
 <span>
   <ScheduleTableCell
+    dayName="Monday"
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
     time={
       Object {
@@ -2817,6 +2831,7 @@ exports[`Snapshots ScheduleTableCell default 1`] = `
         },
       }
     }
+    timeIndex={0}
   />
 </span>
 `;
@@ -2824,7 +2839,9 @@ exports[`Snapshots ScheduleTableCell default 1`] = `
 exports[`Snapshots ScheduleTableCell disabled 1`] = `
 <span>
   <ScheduleTableCell
+    dayName="Monday"
     disabled={true}
+    onUpdateTime={[Function]}
     select24Hours={false}
     time={
       Object {
@@ -2836,6 +2853,7 @@ exports[`Snapshots ScheduleTableCell disabled 1`] = `
         },
       }
     }
+    timeIndex={0}
   />
 </span>
 `;
@@ -2845,6 +2863,7 @@ exports[`Snapshots ScheduleTableColumn 24-hour time setting 1`] = `
   <ScheduleTableColumn
     dayName="Monday"
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={true}
     times={
       Array [
@@ -2875,6 +2894,7 @@ exports[`Snapshots ScheduleTableColumn 24-hour time setting, disabled 1`] = `
   <ScheduleTableColumn
     dayName="Monday"
     disabled={true}
+    onUpdateTime={[Function]}
     select24Hours={true}
     times={
       Array [
@@ -2905,6 +2925,7 @@ exports[`Snapshots ScheduleTableColumn default 1`] = `
   <ScheduleTableColumn
     dayName="Monday"
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
     times={
       Array [
@@ -2935,6 +2956,7 @@ exports[`Snapshots ScheduleTableColumn disabled 1`] = `
   <ScheduleTableColumn
     dayName="Monday"
     disabled={true}
+    onUpdateTime={[Function]}
     select24Hours={false}
     times={
       Array [
@@ -2965,6 +2987,7 @@ exports[`Snapshots ScheduleTableColumn single time 1`] = `
   <ScheduleTableColumn
     dayName="Monday"
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
     times={
       Array [
@@ -2987,6 +3010,7 @@ exports[`Snapshots ScheduleTableColumn without times 1`] = `
   <ScheduleTableColumn
     dayName="Monday"
     disabled={false}
+    onUpdateTime={[Function]}
     select24Hours={false}
     times={Array []}
   />

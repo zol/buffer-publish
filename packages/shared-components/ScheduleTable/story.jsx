@@ -65,18 +65,21 @@ storiesOf('ScheduleTable')
   .add('default', () => (
     <ScheduleTable
       days={days}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('disabled', () => (
     <ScheduleTable
       days={days}
       disabled
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('24-hour time setting', () => (
     <ScheduleTable
       days={days}
       select24Hours
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('24-hour time setting, disabled', () => (
@@ -84,15 +87,18 @@ storiesOf('ScheduleTable')
       days={days}
       disabled
       select24Hours
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('single time', () => (
     <ScheduleTable
       days={daysSingleTime}
+      onUpdateTime={action('on-update-time')}
     />
   ))
   .add('no times', () => (
     <ScheduleTable
       days={daysNoTimes}
+      onUpdateTime={action('on-update-time')}
     />
   ));

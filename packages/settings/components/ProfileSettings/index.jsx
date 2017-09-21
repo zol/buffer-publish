@@ -44,6 +44,7 @@ const ProfileSettings = ({
   days,
   items,
   loading,
+  onUpdateTime,
   settingsHeader,
   hasTwentyFourHourTimeFormat,
 }) => {
@@ -54,6 +55,7 @@ const ProfileSettings = ({
       </div>
     );
   }
+
   return (
     <div>
       <div style={headerStyle}>
@@ -99,13 +101,13 @@ const ProfileSettings = ({
         <ScheduleTable
           days={days}
           select24Hours={hasTwentyFourHourTimeFormat}
+          onUpdateTime={onUpdateTime}
         />
       </div>
     </div>
   );
 };
 
-// TODO: onChange and onRemoveTimeClick required when app is not read-only
 ProfileSettings.propTypes = {
   days: PropTypes.arrayOf(
     PropTypes.shape({
@@ -120,7 +122,6 @@ ProfileSettings.propTypes = {
             }),
             PropTypes.string,
           ]),
-          onChange: PropTypes.func,
           onRemoveTimeClick: PropTypes.func,
         }).isRequired,
       ).isRequired,
@@ -130,6 +131,7 @@ ProfileSettings.propTypes = {
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   loading: PropTypes.bool.isRequired,
   settingsHeader: PropTypes.string.isRequired,
+  onUpdateTime: PropTypes.func.isRequired,
 };
 
 ProfileSettings.defaultProps = {

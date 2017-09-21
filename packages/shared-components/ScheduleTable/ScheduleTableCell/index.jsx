@@ -35,6 +35,7 @@ const TableCellContents = ({
   hovered,
   select24Hours,
   time,
+  onUpdateTime,
 }) => {
   const buttonStyle = calculateStyles({
     default: {
@@ -76,17 +77,34 @@ const TableCellContents = ({
   );
 };
 /* eslint-enable react/prop-types */
+const dayMap = {
+  Monday: 'mon',
+  Tuesday: 'tue',
+  Wednesday: 'wed',
+  Thursday: 'thu',
+  Friday: 'fri',
+  Saturday: 'sat',
+  Sunday: 'sun',
+};
 
 const ScheduleTableCell = ({
   disabled,
   select24Hours,
   time,
+  onUpdateTime,
+  dayName,
+  timeIndex,
 }) => (
   <TableCell>
     <TableCellContents
       disabled={disabled}
       select24Hours={select24Hours}
-      time={time}
+      time={{
+        ...time,
+        onChange: ({ hours, minutes }) => {
+          onUpdateTime(hours, minutes, dayMap[dayName], timeIndex);
+        },
+      }}
     />
   </TableCell>
   );
@@ -96,10 +114,12 @@ ScheduleTableCell.defaultProps = {
   select24Hours: false,
 };
 
-// TODO: onChange and onRemoveTimeClick required when app is not read-only
 ScheduleTableCell.propTypes = {
   disabled: PropTypes.bool.isRequired,
   select24Hours: PropTypes.bool.isRequired,
+  onUpdateTime: PropTypes.func.isRequired,
+  dayName: PropTypes.string.isRequired,
+  timeIndex: PropTypes.number.isRequired,
   time: PropTypes.shape({
     value: PropTypes.oneOfType([
       PropTypes.shape({
