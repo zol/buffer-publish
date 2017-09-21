@@ -1,4 +1,8 @@
-import { actions as dataFetchActions } from '@bufferapp/async-data-fetch';
+import {
+  actions as dataFetchActions,
+  actionTypes as dataFetchActionTypes,
+} from '@bufferapp/async-data-fetch';
+import { actions as notificationActions } from '@bufferapp/notifications';
 import { actionTypes } from './reducer';
 
 const transformScheduleForApi = (unformattedSchedule, action) => {
@@ -23,6 +27,18 @@ export default ({ dispatch, getState }) => next => (action) => {
           profileId: action.profileId,
           schedules: transformScheduleForApi(getState().settings.schedules, action),
         },
+      }));
+      break;
+    case `updateSchedule_${dataFetchActionTypes.FETCH_SUCCESS}`:
+      dispatch(notificationActions.createNotification({
+        notificationType: 'success',
+        message: 'Awesome! Your schedule has been successfully saved.',
+      }));
+      break;
+    case `updateSchedule_${dataFetchActionTypes.FETCH_FAIL}`:
+      dispatch(notificationActions.createNotification({
+        notificationType: 'error',
+        message: action.error,
       }));
       break;
     default:

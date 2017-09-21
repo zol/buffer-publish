@@ -102,6 +102,8 @@ const ScheduleTableCell = ({
       time={{
         ...time,
         onChange: ({ hours, minutes }) => {
+          hours = hours < 10 ? `0${hours}` : hours;
+          minutes = minutes < 10 ? `0${minutes}` : minutes;
           onUpdateTime(hours, minutes, dayMap[dayName], timeIndex);
         },
       }}
