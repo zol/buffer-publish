@@ -10,6 +10,7 @@ import {
 
 import {
   ScheduleTable,
+  EmptyState,
 } from '@bufferapp/publish-shared-components';
 
 import PostingTimeForm from '../PostingTimeForm';
@@ -56,6 +57,7 @@ const ProfileSettings = ({
       </div>
     );
   }
+  const emptySchedule = days.filter(day => day.postingTimesTotal > 0).length < 1;
 
   return (
     <div>
@@ -99,12 +101,21 @@ const ProfileSettings = ({
           </div>
         </Text>
         <Divider color="white" />
-        <ScheduleTable
-          days={days}
-          select24Hours={hasTwentyFourHourTimeFormat}
-          onRemoveTimeClick={onRemoveTimeClick}
-          onUpdateTime={onUpdateTime}
-        />
+        {emptySchedule &&
+          <EmptyState
+            title="Looks like you don't have any posting times set!"
+            subtitle="Add a new posting time to start publishing posts from your queue."
+            heroImg="https://s3.amazonaws.com/buffer-publish/images/clock2x.png"
+            heroImgSize={{ width: '40px', height: '40px' }}
+            height={'30vh'}
+          />}
+        {!emptySchedule &&
+          <ScheduleTable
+            days={days}
+            select24Hours={hasTwentyFourHourTimeFormat}
+            onRemoveTimeClick={onRemoveTimeClick}
+            onUpdateTime={onUpdateTime}
+          />}
       </div>
     </div>
   );

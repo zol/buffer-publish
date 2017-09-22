@@ -5,7 +5,7 @@ import {
   Image,
 } from '@bufferapp/components';
 
-const EmptyState = ({ title, subtitle, heroImg, heroImgSize }) => {
+const EmptyState = ({ title, subtitle, heroImg, heroImgSize, height }) => {
   const containerStyle = {
     textAlign: 'center',
     width: '700px',
@@ -15,7 +15,7 @@ const EmptyState = ({ title, subtitle, heroImg, heroImgSize }) => {
   const wrapperStyle = {
     display: 'flex',
     justifyContent: 'center',
-    height: '70vh',
+    height: `${height || '70vh'}`,
   };
 
   const headerStyle = {
@@ -59,6 +59,7 @@ EmptyState.propTypes = {
     width: PropTypes.string,
     height: PropTypes.string,
   }).isRequired,
+  height: PropTypes.string,
 };
 
 export default EmptyState;
