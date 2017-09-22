@@ -17,6 +17,15 @@ export default connect(
     hasTwentyFourHourTimeFormat: state.settings.hasTwentyFourHourTimeFormat,
   }),
   (dispatch, ownProps) => ({
+    onRemoveTimeClick: (hours, minutes, dayName, timeIndex) => {
+      dispatch(actions.handleRemoveTimeClick({
+        hours,
+        minutes,
+        dayName,
+        timeIndex,
+        profileId: ownProps.profileId,
+      }));
+    },
     onUpdateTime: (hours, minutes, dayName, timeIndex) => {
       dispatch(actions.handleUpdateTime({
         hours,

@@ -37,6 +37,7 @@ const ScheduleTableColumn = ({
   disabled,
   select24Hours,
   times,
+  onRemoveTimeClick,
   onUpdateTime,
 }) => (
   <div style={(times.length === 0) ? columnNoTimesStyle : columnStyle}>
@@ -52,6 +53,7 @@ const ScheduleTableColumn = ({
             key={index}
             select24Hours={select24Hours}
             time={time}
+            onRemoveTimeClick={onRemoveTimeClick}
             onUpdateTime={onUpdateTime}
             dayName={dayName}
             timeIndex={index}
@@ -80,9 +82,9 @@ ScheduleTableColumn.propTypes = {
         }),
         PropTypes.string,
       ]),
-      onRemoveTimeClick: PropTypes.func,
     }).isRequired,
   ).isRequired,
+  onRemoveTimeClick: PropTypes.func.isRequired,
   onUpdateTime: PropTypes.func.isRequired,
 };
 

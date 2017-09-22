@@ -39,7 +39,6 @@ const transformForTable = (derivedSchedule) => {
       times: splitTimes,
     });
   });
-
   return scheduleTable;
 };
 

@@ -24,6 +24,7 @@ const ScheduleTable = ({
   days,
   disabled,
   select24Hours,
+  onRemoveTimeClick,
   onUpdateTime,
 }) => (
   <div style={tableStyle}>
@@ -43,6 +44,7 @@ const ScheduleTable = ({
             postingTimesTotal={postingTimesTotal}
             select24Hours={select24Hours}
             times={times}
+            onRemoveTimeClick={onRemoveTimeClick}
             onUpdateTime={onUpdateTime}
           />
         </div>,
@@ -71,14 +73,13 @@ ScheduleTable.propTypes = {
             }),
             PropTypes.string,
           ]),
-          // onChange: PropTypes.func,
-          onRemoveTimeClick: PropTypes.func,
         }).isRequired,
       ).isRequired,
     }),
   ).isRequired,
   disabled: PropTypes.bool.isRequired,
   select24Hours: PropTypes.bool.isRequired,
+  onRemoveTimeClick: PropTypes.func.isRequired,
   onUpdateTime: PropTypes.func.isRequired,
 };
 

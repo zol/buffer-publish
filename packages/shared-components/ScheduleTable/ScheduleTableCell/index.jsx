@@ -21,20 +21,23 @@ const iconWrapperStyle = {
 
 /* eslint-disable react/prop-types */
 
-const RemoveButton = ({ onRemoveTimeClick }, buttonStyle) =>
+const RemoveButton = (time, onRemoveTimeClick, buttonStyle) => (
   <div style={buttonStyle}>
-    <Button onClick={onRemoveTimeClick} noStyle label="remove time">
+    <Button onClick={() => onRemoveTimeClick(time)} noStyle label="remove time">
       <div style={iconWrapperStyle}>
         <CloseIcon size={'small'} />
       </div>
     </Button>
-  </div>;
+  </div>
+);
+
 
 const TableCellContents = ({
   disabled,
   hovered,
   select24Hours,
   time,
+  onRemoveTimeClick,
   onUpdateTime,
 }) => {
   const buttonStyle = calculateStyles({
@@ -72,7 +75,7 @@ const TableCellContents = ({
           displayTimeColon
         />
       </div>
-      {RemoveButton(time, buttonStyle)}
+      {RemoveButton(time, onRemoveTimeClick, buttonStyle)}
     </div>
   );
 };
@@ -91,6 +94,7 @@ const ScheduleTableCell = ({
   disabled,
   select24Hours,
   time,
+  onRemoveTimeClick,
   onUpdateTime,
   dayName,
   timeIndex,
@@ -99,6 +103,7 @@ const ScheduleTableCell = ({
     <TableCellContents
       disabled={disabled}
       select24Hours={select24Hours}
+      onRemoveTimeClick={() => onRemoveTimeClick(time.hours, time.minutes, dayMap[dayName], timeIndex)} //eslint-disable-line
       time={{
         ...time,
         onChange: ({ hours, minutes }) => {
@@ -109,7 +114,7 @@ const ScheduleTableCell = ({
       }}
     />
   </TableCell>
-  );
+);
 
 ScheduleTableCell.defaultProps = {
   disabled: false,
@@ -131,8 +136,8 @@ ScheduleTableCell.propTypes = {
       PropTypes.string,
     ]),
     onChange: PropTypes.func,
-    onRemoveTimeClick: PropTypes.func,
   }).isRequired,
+  onRemoveTimeClick: PropTypes.func.isRequired,
 };
 
 export default ScheduleTableCell;

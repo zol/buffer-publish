@@ -47,6 +47,7 @@ const ProfileSettings = ({
   onUpdateTime,
   settingsHeader,
   hasTwentyFourHourTimeFormat,
+  onRemoveTimeClick,
 }) => {
   if (loading) {
     return (
@@ -101,6 +102,7 @@ const ProfileSettings = ({
         <ScheduleTable
           days={days}
           select24Hours={hasTwentyFourHourTimeFormat}
+          onRemoveTimeClick={onRemoveTimeClick}
           onUpdateTime={onUpdateTime}
         />
       </div>
@@ -122,7 +124,6 @@ ProfileSettings.propTypes = {
             }),
             PropTypes.string,
           ]),
-          onRemoveTimeClick: PropTypes.func,
         }).isRequired,
       ).isRequired,
     }),
@@ -131,6 +132,7 @@ ProfileSettings.propTypes = {
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   loading: PropTypes.bool.isRequired,
   settingsHeader: PropTypes.string.isRequired,
+  onRemoveTimeClick: PropTypes.func.isRequired,
   onUpdateTime: PropTypes.func.isRequired,
 };
 

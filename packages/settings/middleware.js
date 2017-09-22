@@ -17,6 +17,18 @@ const transformScheduleForApi = (unformattedSchedule, action) => {
   return unformattedSchedule;
 };
 
+const deleteTimeFromSchedule = (unformattedSchedule, action) => {
+  if (!Array.isArray(unformattedSchedule)) return [];
+  const formattedSchedule = [...unformattedSchedule];
+  formattedSchedule.forEach((scheduleItem) => {
+    if (scheduleItem.days.includes(action.dayName)) {
+      const removedTime = scheduleItem.times[action.timeIndex];
+      scheduleItem.times = scheduleItem.times.filter(time => time !== removedTime);
+    }
+  });
+  return formattedSchedule;
+};
+
 export default ({ dispatch, getState }) => next => (action) => {
   next(action);
   switch (action.type) {
@@ -26,6 +38,15 @@ export default ({ dispatch, getState }) => next => (action) => {
         args: {
           profileId: action.profileId,
           schedules: transformScheduleForApi(getState().settings.schedules, action),
+        },
+      }));
+      break;
+    case actionTypes.REMOVE_SCHEDULE_TIME:
+      dispatch(dataFetchActions.fetch({
+        name: 'updateSchedule',
+        args: {
+          profileId: action.profileId,
+          schedules: deleteTimeFromSchedule(getState().settings.schedules, action),
         },
       }));
       break;
