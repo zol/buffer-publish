@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-settings",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Settings package",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "@bufferapp/components": "0.7.0",
     "@bufferapp/notifications": "0.7.0",
     "@bufferapp/publish-profile-sidebar": "0.7.0",
-    "@bufferapp/publish-shared-components": "0.7.0",
+    "@bufferapp/publish-shared-components": "0.7.1",
     "moment-timezone": "0.5.12"
   },
   "devDependencies": {

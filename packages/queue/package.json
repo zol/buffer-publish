@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-queue",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Queue UI package",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "@bufferapp/notifications": "0.7.0",
     "@bufferapp/publish-composer": "0.6.0",
     "@bufferapp/publish-profile-sidebar": "0.7.0",
-    "@bufferapp/publish-shared-components": "0.7.0",
+    "@bufferapp/publish-shared-components": "0.7.1",
     "moment-timezone": "0.5.12"
   },
   "devDependencies": {
