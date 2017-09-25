@@ -46,6 +46,7 @@ const ProfileSettings = ({
   items,
   loading,
   onUpdateTime,
+  onAddPostingTime,
   settingsHeader,
   hasTwentyFourHourTimeFormat,
   onRemoveTimeClick,
@@ -67,7 +68,7 @@ const ProfileSettings = ({
       <Divider />
       <div style={timezoneStyle}>
         <TimezoneInputForm
-          handleSubmit={() => { console.log('timezone submit'); }}
+          onSubmit={() => { console.log('timezone submit'); }}
           items={items}
           onChange={() => { console.log('on change'); }}
           onSelect={() => { console.log('on select action'); }}
@@ -76,7 +77,14 @@ const ProfileSettings = ({
       <Divider />
       <div style={sectionStyle}>
         <PostingTimeForm
-          handleSubmit={() => { console.log('posting time submit'); }}
+          onSubmit={({ day, time }) => {
+            time.hours = time.hours < 10 ? `0${time.hours}` : time.hours;
+            time.minutes = time.minutes < 10 ? `0${time.minutes}` : time.minutes;
+            onAddPostingTime({
+              day,
+              time,
+            });
+          }}
           twentyfourHourTime={hasTwentyFourHourTimeFormat}
         />
       </div>
@@ -145,6 +153,7 @@ ProfileSettings.propTypes = {
   settingsHeader: PropTypes.string.isRequired,
   onRemoveTimeClick: PropTypes.func.isRequired,
   onUpdateTime: PropTypes.func.isRequired,
+  onAddPostingTime: PropTypes.func.isRequired,
 };
 
 ProfileSettings.defaultProps = {

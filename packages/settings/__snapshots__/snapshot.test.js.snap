@@ -93,7 +93,7 @@ exports[`Snapshots PostingTimeForm default 1`] = `
                       "width": "100%",
                     }
                   }
-                  value={undefined}
+                  value="everyday"
                 >
                   <option
                     value="everyday"
@@ -1118,7 +1118,7 @@ exports[`Snapshots PostingTimeForm with 24hour time 1`] = `
                       "width": "100%",
                     }
                   }
-                  value={undefined}
+                  value="everyday"
                 >
                   <option
                     value="everyday"
@@ -2061,7 +2061,7 @@ exports[`Snapshots PostingTimeForm with submitting delay 1`] = `
                       "width": "100%",
                     }
                   }
-                  value={undefined}
+                  value="everyday"
                 >
                   <option
                     value="everyday"
@@ -3249,7 +3249,7 @@ exports[`Snapshots ProfileSettings default 1`] = `
                           "width": "100%",
                         }
                       }
-                      value={undefined}
+                      value="everyday"
                     >
                       <option
                         value="everyday"

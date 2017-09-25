@@ -35,6 +35,14 @@ export default connect(
         profileId: ownProps.profileId,
       }));
     },
+    onAddPostingTime: ({ day, time }) => {
+      dispatch(actions.handleAddPostingTime({
+        hours: time.hours,
+        minutes: time.minutes,
+        dayName: day.day || day,
+        profileId: ownProps.profileId,
+      }));
+    },
   }),
 )(ProfileSettings);
 

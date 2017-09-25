@@ -1,15 +1,16 @@
+const dayMap = {
+  mon: 'Monday',
+  tue: 'Tuesday',
+  wed: 'Wednesday',
+  thu: 'Thursday',
+  fri: 'Friday',
+  sat: 'Saturday',
+  sun: 'Sunday',
+};
+
 const transformForTable = (derivedSchedule) => {
   const scheduleTable = [];
   const orderOfDays = Object.keys(derivedSchedule);
-  const dayMap = {
-    mon: 'Monday',
-    tue: 'Tuesday',
-    wed: 'Wednesday',
-    thu: 'Thursday',
-    fri: 'Friday',
-    sat: 'Saturday',
-    sun: 'Sunday',
-  };
 
   orderOfDays.forEach((key) => {
     const splitTimes = [];
@@ -116,4 +117,4 @@ const transformSchedules = (profileSchedules) => {
   return transformForTable(schedule);
 };
 
-export default transformSchedules;
+export { transformSchedules, dayMap };

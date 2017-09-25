@@ -4,11 +4,12 @@ import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch
 import {
   timezones,
 } from './components/ProfileSettings/settingsData';
-import transformSchedules from './utils/transformSchedule';
+import { transformSchedules } from './utils/transformSchedule';
 
 export const actionTypes = {
   REMOVE_SCHEDULE_TIME: 'REMOVE_SCHEDULE_TIME',
   UPDATE_SCHEDULE_TIME: 'UPDATE_SCHEDULE_TIME',
+  ADD_SCHEDULE_TIME: 'ADD_SCHEDULE_TIME',
 };
 
 // TODO remove stubbed data once we have real data coming in
@@ -44,8 +45,6 @@ export default (state = initialState, action) => {
         days: transformSchedules(action.result.schedules),
         schedules: action.result.schedules,
       };
-    case actionTypes.UPDATE_SCHEDULE_TIME:
-      return state;
     default:
       return state;
   }
@@ -65,6 +64,13 @@ export const actions = {
     hours,
     minutes,
     timeIndex,
+    dayName,
+    profileId,
+  }),
+  handleAddPostingTime: ({ hours, minutes, dayName, profileId }) => ({
+    type: actionTypes.ADD_SCHEDULE_TIME,
+    hours,
+    minutes,
     dayName,
     profileId,
   }),

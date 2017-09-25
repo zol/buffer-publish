@@ -116,6 +116,7 @@ PostingTimeForm.defaultProps = {
 const mapStateToProps = (state) => {
   const timezone = state.settings ? state.settings.profileTimezone : null;
   const now = moment().tz(timezone);
+  const day = { day: 'everyday' };
   const time = now ? {
     hours: now.hour(),
     minutes: now.minute(),
@@ -126,6 +127,7 @@ const mapStateToProps = (state) => {
   return {
     initialValues: {
       time,
+      day,
     },
   };
 };

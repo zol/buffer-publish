@@ -4,13 +4,16 @@ import {
 } from '@bufferapp/async-data-fetch';
 import { actions as notificationActions } from '@bufferapp/notifications';
 import { actionTypes } from './reducer';
+import { dayMap } from './utils/transformSchedule';
 
-const transformScheduleForApi = (unformattedSchedule, action) => {
+// This depends on the schedule format of the profile for 'settings_schedule' enabled
+const updateScheduleTimeForApi = (unformattedSchedule, action) => {
   if (!Array.isArray(unformattedSchedule)) return [];
 
   unformattedSchedule.forEach((scheduleItem) => {
     if (scheduleItem.days.includes(action.dayName)) {
       scheduleItem.times[action.timeIndex] = `${action.hours}:${action.minutes}`;
+      scheduleItem.times.sort();
     }
   });
 
@@ -29,6 +32,32 @@ const deleteTimeFromSchedule = (unformattedSchedule, action) => {
   return formattedSchedule;
 };
 
+const addTimeToScheduleForApi = (unformattedSchedule, action) => {
+  const multDays = ['weekends', 'weekdays', 'everyday'];
+  const everyday = Object.keys(dayMap);
+  const weekdays = everyday.slice(0, 5);
+  const weekends = everyday.slice(-2);
+  const daysMap = {
+    everyday,
+    weekdays,
+    weekends,
+  };
+
+  const newTime = `${action.hours}:${action.minutes}`;
+  const daysToAdd = multDays.includes(action.dayName) ? daysMap[action.dayName] : [action.dayName];
+
+  daysToAdd.forEach((dayToAdd) => {
+    unformattedSchedule.forEach((daySchedule) => {
+      if (daySchedule.days.includes(dayToAdd)) {
+        daySchedule.times.push(newTime);
+        daySchedule.times.sort();
+      }
+    });
+  });
+
+  return unformattedSchedule;
+};
+
 export default ({ dispatch, getState }) => next => (action) => {
   next(action);
   switch (action.type) {
@@ -37,7 +66,16 @@ export default ({ dispatch, getState }) => next => (action) => {
         name: 'updateSchedule',
         args: {
           profileId: action.profileId,
-          schedules: transformScheduleForApi(getState().settings.schedules, action),
+          schedules: updateScheduleTimeForApi(getState().settings.schedules, action),
+        },
+      }));
+      break;
+    case actionTypes.ADD_SCHEDULE_TIME:
+      dispatch(dataFetchActions.fetch({
+        name: 'updateSchedule',
+        args: {
+          profileId: action.profileId,
+          schedules: addTimeToScheduleForApi(getState().settings.schedules, action),
         },
       }));
       break;
