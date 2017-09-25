@@ -40,11 +40,16 @@ const loadingContainerStyle = {
   paddingTop: '5rem',
 };
 
+const scheduleLoadingContainerStyle = {
+  textAlign: 'center',
+};
+
 /* eslint no-console: 0 */
 const ProfileSettings = ({
   days,
   items,
   loading,
+  scheduleLoading,
   onUpdateTime,
   onAddPostingTime,
   settingsHeader,
@@ -59,7 +64,6 @@ const ProfileSettings = ({
     );
   }
   const emptySchedule = days.filter(day => day.postingTimesTotal > 0).length < 1;
-
   return (
     <div>
       <div style={headerStyle}>
@@ -109,7 +113,11 @@ const ProfileSettings = ({
           </div>
         </Text>
         <Divider color="white" />
-        {emptySchedule &&
+        {scheduleLoading &&
+          <div style={scheduleLoadingContainerStyle}>
+            <LoadingAnimation />
+          </div>}
+        {!scheduleLoading && emptySchedule &&
           <EmptyState
             title="Looks like you don't have any posting times set!"
             subtitle="Add a new posting time to start publishing posts from your queue."
@@ -150,6 +158,7 @@ ProfileSettings.propTypes = {
   hasTwentyFourHourTimeFormat: PropTypes.bool.isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   loading: PropTypes.bool.isRequired,
+  scheduleLoading: PropTypes.bool.isRequired,
   settingsHeader: PropTypes.string.isRequired,
   onRemoveTimeClick: PropTypes.func.isRequired,
   onUpdateTime: PropTypes.func.isRequired,

@@ -8,6 +8,7 @@ import { actions } from './reducer';
 export default connect(
   state => ({
     loading: state.settings.loading,
+    scheduleLoading: state.settings.scheduleLoading,
     settingsHeader: state.settings.settingsHeader,
     translations: state.i18n.translations.settings, // all package translations
     days: state.settings.days,

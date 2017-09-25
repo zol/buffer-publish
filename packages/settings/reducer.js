@@ -16,6 +16,7 @@ export const actionTypes = {
 const initialState = {
   settingsHeader: 'Your posting schedule',
   loading: false,
+  scheduleLoading: true,
   days: [],
   schedules: [],
   items: timezones,
@@ -30,6 +31,7 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         days: transformSchedules(action.profile.schedules),
+        scheduleLoading: false,
         schedules: action.profile.schedules,
         profileTimezone: action.profile.timezone,
         settingsHeader: `Your posting schedule for ${action.profile.serviceUsername}`,
