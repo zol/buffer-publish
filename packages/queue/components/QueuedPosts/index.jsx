@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import { DragDropContext } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
+
 import {
-  Text,
   Input,
   LoadingAnimation,
 } from '@bufferapp/components';
-import {
-  geyser,
-  fillColor,
-  curiousBlue,
-} from '@bufferapp/components/style/color';
 import {
   PostLists,
   EmptyState,
@@ -90,6 +88,7 @@ const QueuedPosts = ({
         onImageClickNext={onImageClickNext}
         onImageClickPrev={onImageClickPrev}
         onImageClose={onImageClose}
+        draggable
       />
     </div>
   );
@@ -136,4 +135,4 @@ QueuedPosts.defaultProps = {
   editMode: false,
 };
 
-export default QueuedPosts;
+export default DragDropContext(HTML5Backend)(QueuedPosts);

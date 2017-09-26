@@ -9,6 +9,7 @@ import ImagePost from '../ImagePost';
 import MultipleImagesPost from '../MultipleImagesPost';
 import LinkPost from '../LinkPost';
 import VideoPost from '../VideoPost';
+import PostDragWrapper from '../PostDragWrapper';
 
 const postStyle = {
   marginBottom: '2rem',
@@ -19,6 +20,14 @@ const listHeaderStyle = {
   marginTop: '1rem',
   marginLeft: '0.5rem',
 };
+
+const postTypeComponentMap = new Map([
+  ['text', TextPost],
+  ['image', ImagePost],
+  ['multipleImage', MultipleImagesPost],
+  ['link', LinkPost],
+  ['video', VideoPost],
+]);
 
 /* eslint-disable react/prop-types */
 
@@ -33,6 +42,7 @@ const renderPost = ({
   onImageClickNext,
   onImageClickPrev,
   onImageClose,
+  draggable,
 }) => {
   const postWithEventHandlers = {
     ...post,
@@ -47,20 +57,18 @@ const renderPost = ({
     onImageClickPrev: () => onImageClickPrev({ post }),
     onImageClose: () => onImageClose({ post }),
   };
-  switch (post.type) {
-    case 'text':
-      return (<TextPost {...postWithEventHandlers} />);
-    case 'image':
-      return (<ImagePost {...postWithEventHandlers} />);
-    case 'multipleImage':
-      return (<MultipleImagesPost {...postWithEventHandlers} />);
-    case 'link':
-      return (<LinkPost {...postWithEventHandlers} />);
-    case 'video':
-      return (<VideoPost {...postWithEventHandlers} />);
-    default:
-      return (<TextPost {...postWithEventHandlers} />);
+  let PostComponent = postTypeComponentMap.get(post.type);
+  PostComponent = PostComponent || TextPost;
+
+  if (draggable) {
+    return (
+      <PostDragWrapper id={post.id}>
+        <PostComponent {...postWithEventHandlers} />
+      </PostDragWrapper>
+    );
   }
+
+  return <PostComponent {...postWithEventHandlers} />;
 };
 
 /* eslint-enable react/prop-types */
@@ -77,6 +85,7 @@ const PostList = ({
   onImageClickNext,
   onImageClickPrev,
   onImageClose,
+  draggable,
 }) =>
   <div>
     <div style={listHeaderStyle}>
@@ -101,6 +110,7 @@ const PostList = ({
               onImageClickNext,
               onImageClickPrev,
               onImageClose,
+              draggable,
             })
           }
         </div>,
@@ -124,10 +134,12 @@ PostList.propTypes = {
   onImageClickNext: PropTypes.func,
   onImageClickPrev: PropTypes.func,
   onImageClose: PropTypes.func,
+  draggable: PropTypes.bool,
 };
 
 PostList.defaultProps = {
   posts: [],
+  draggable: false,
 };
 
 export default PostList;

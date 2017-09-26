@@ -24,6 +24,7 @@ const renderPostList = ({
   onImageClickNext,
   onImageClickPrev,
   onImageClose,
+  draggable,
 }) =>
   <div style={postListStyle}>
     <PostList
@@ -39,6 +40,7 @@ const renderPostList = ({
       onImageClickNext={onImageClickNext}
       onImageClickPrev={onImageClickPrev}
       onImageClose={onImageClose}
+      draggable={draggable}
     />
   </div>;
 
@@ -55,6 +57,7 @@ const PostLists = ({
   onImageClickNext,
   onImageClickPrev,
   onImageClose,
+  draggable,
 }) =>
   <List
     items={postLists.map((postList, index) =>
@@ -70,6 +73,7 @@ const PostLists = ({
         onImageClickNext,
         onImageClickPrev,
         onImageClose,
+        draggable,
       }),
     )}
     fillContainer
@@ -95,10 +99,12 @@ PostLists.propTypes = {
   onImageClickNext: PropTypes.func,
   onImageClickPrev: PropTypes.func,
   onImageClose: PropTypes.func,
+  draggable: PropTypes.bool,
 };
 
 PostLists.defaultProps = {
   postLists: [],
+  draggable: false,
 };
 
 export default PostLists;
