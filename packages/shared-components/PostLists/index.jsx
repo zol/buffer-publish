@@ -24,26 +24,23 @@ const renderPostList = ({
   onImageClickNext,
   onImageClickPrev,
   onImageClose,
-}) => {
-  return (
-    <div style={postListStyle}>
-      <PostList
-        key={`postList-${index}`}
-        listHeader={postList.listHeader}
-        posts={postList.posts}
-        onCancelConfirmClick={onCancelConfirmClick}
-        onDeleteClick={onDeleteClick}
-        onDeleteConfirmClick={onDeleteConfirmClick}
-        onEditClick={onEditClick}
-        onShareNowClick={onShareNowClick}
-        onImageClick={onImageClick}
-        onImageClickNext={onImageClickNext}
-        onImageClickPrev={onImageClickPrev}
-        onImageClose={onImageClose}
-      />
-    </div>
-  );
-}
+}) =>
+  <div style={postListStyle}>
+    <PostList
+      key={`postList-${index}`}
+      listHeader={postList.listHeader}
+      posts={postList.posts}
+      onCancelConfirmClick={onCancelConfirmClick}
+      onDeleteClick={onDeleteClick}
+      onDeleteConfirmClick={onDeleteConfirmClick}
+      onEditClick={onEditClick}
+      onShareNowClick={onShareNowClick}
+      onImageClick={onImageClick}
+      onImageClickNext={onImageClickNext}
+      onImageClickPrev={onImageClickPrev}
+      onImageClose={onImageClose}
+    />
+  </div>;
 
 /* eslint-enable react/prop-types */
 

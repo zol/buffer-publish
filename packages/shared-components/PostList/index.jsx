@@ -43,8 +43,6 @@ const renderPost = ({
     onEditClick: () => onEditClick({ post }),
     onShareNowClick: () => onShareNowClick({ post }),
     onImageClick: () => onImageClick({ post }),
-    isLightboxOpen: post.isLightboxOpen,
-    currentImage: post.currentImage,
     onImageClickNext: () => onImageClickNext({ post }),
     onImageClickPrev: () => onImageClickPrev({ post }),
     onImageClose: () => onImageClose({ post }),
