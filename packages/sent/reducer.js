@@ -150,6 +150,7 @@ export default (state = initialState, action) => {
     case actionTypes.POST_IMAGE_CLICKED_NEXT:
     case actionTypes.POST_IMAGE_CLICKED_PREV:
     case actionTypes.POST_IMAGE_CLOSED:
+      profileId = getProfileId(action);
       if (profileId) {
         return {
           byProfileId: {
