@@ -1,3 +1,4 @@
+import 'react-chromatic/storybook-addon';
 import { configure } from '@storybook/react';
 
 // automatically import all story.js files
