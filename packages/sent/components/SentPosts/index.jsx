@@ -32,6 +32,10 @@ const SentPosts = ({
   total,
   loading,
   postLists,
+  onImageClick,
+  onImageClickNext,
+  onImageClickPrev,
+  onImageClose,
 }) => {
   if (loading) {
     return (
@@ -58,6 +62,10 @@ const SentPosts = ({
       </div>
       <PostLists
         postLists={postLists}
+        onImageClick={onImageClick}
+        onImageClickNext={onImageClickNext}
+        onImageClickPrev={onImageClickPrev}
+        onImageClose={onImageClose}
       />
     </div>
   );
@@ -79,6 +87,10 @@ SentPosts.propTypes = {
     }),
   ),
   total: PropTypes.number,
+  onImageClick: PropTypes.func.isRequired,
+  onImageClickNext: PropTypes.func.isRequired,
+  onImageClickPrev: PropTypes.func.isRequired,
+  onImageClose: PropTypes.func.isRequired,
 };
 
 SentPosts.defaultProps = {

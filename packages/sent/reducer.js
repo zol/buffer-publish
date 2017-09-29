@@ -5,7 +5,12 @@ import {
   header,
 } from './components/SentPosts/postData';
 
-export const actionTypes = { };
+export const actionTypes = {
+  POST_IMAGE_CLICKED: 'POST_IMAGE_CLICKED',
+  POST_IMAGE_CLICKED_NEXT: 'POST_IMAGE_CLICKED_NEXT',
+  POST_IMAGE_CLICKED_PREV: 'POST_IMAGE_CLICKED_PREV',
+  POST_IMAGE_CLOSED: 'POST_IMAGE_CLOSED',
+};
 
 const initialState = {
   byProfileId: {},
@@ -43,10 +48,46 @@ const getProfileId = (action) => {
   if (action.profile) { return action.profile.id; }
 };
 
+const postReducer = (state, action) => {
+  switch (action.type) {
+    case actionTypes.POST_IMAGE_CLICKED:
+      return {
+        ...state,
+        isLightboxOpen: true,
+        currentImage: 0,
+      };
+    case actionTypes.POST_IMAGE_CLOSED:
+      return {
+        ...state,
+        isLightboxOpen: false,
+      };
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+      return {
+        ...state,
+        currentImage: state.currentImage + 1,
+      };
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
+      return {
+        ...state,
+        currentImage: state.currentImage - 1,
+      };
+    default:
+      break;
+  }
+};
+
 const postsReducer = (state, action) => {
   switch (action.type) {
     case queueActionTypes.POST_SENT:
       return [action.post, ...state];
+    case actionTypes.POST_IMAGE_CLICKED:
+    case actionTypes.POST_IMAGE_CLOSED:
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
+      return {
+        ...state,
+        [action.updateId]: postReducer(state[action.updateId], action),
+      };
     default:
       return state;
   }
@@ -83,6 +124,10 @@ const profileReducer = (state = profileInitialState, action) => {
         total: action.counts.sent,
       };
     case queueActionTypes.POST_SENT:
+    case actionTypes.POST_IMAGE_CLICKED:
+    case actionTypes.POST_IMAGE_CLOSED:
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
       return {
         ...state,
         posts: postsReducer(state.posts, action),
@@ -101,7 +146,10 @@ export default (state = initialState, action) => {
     case `sentPosts_${dataFetchActionTypes.FETCH_FAIL}`:
     case queueActionTypes.POST_SENT:
     case queueActionTypes.POST_COUNT_UPDATED:
-      profileId = getProfileId(action);
+    case actionTypes.POST_IMAGE_CLICKED:
+    case actionTypes.POST_IMAGE_CLICKED_NEXT:
+    case actionTypes.POST_IMAGE_CLICKED_PREV:
+    case actionTypes.POST_IMAGE_CLOSED:
       if (profileId) {
         return {
           byProfileId: {
@@ -116,4 +164,29 @@ export default (state = initialState, action) => {
   }
 };
 
-export const actions = {};
+export const actions = {
+  handleImageClick: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLICKED,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClickNext: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLICKED_NEXT,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClickPrev: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLICKED_PREV,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+  handleImageClose: ({ post, profileId }) => ({
+    type: actionTypes.POST_IMAGE_CLOSED,
+    updateId: post.id,
+    post,
+    profileId,
+  }),
+};

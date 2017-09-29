@@ -2,6 +2,7 @@
 import { connect } from 'react-redux';
 // load the presentational component
 import SentPosts from './components/SentPosts';
+import { actions } from './reducer';
 
 const formatPostLists = (posts) => {
   const postLists = [];
@@ -39,6 +40,32 @@ export default connect(
     }
     return {};
   },
+  (dispatch, ownProps) => ({
+    onImageClick: (post) => {
+      dispatch(actions.handleImageClick({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onImageClose: (post) => {
+      dispatch(actions.handleImageClose({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onImageClickNext: (post) => {
+      dispatch(actions.handleImageClickNext({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+    onImageClickPrev: (post) => {
+      dispatch(actions.handleImageClickPrev({
+        post: post.post,
+        profileId: ownProps.profileId,
+      }));
+    },
+  }),
 )(SentPosts);
 
 // export reducer, actions and action types
