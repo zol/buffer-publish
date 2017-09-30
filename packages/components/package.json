@@ -8,7 +8,7 @@
     "lint": "eslint . --ignore-pattern coverage .storybook node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
     "test-update": "jest -u --config=../../.jestrc.json",
-    "chromatic": "chromatic test --app-code='v0vvbm0wip8' --storybook"
+    "chromatic": "chromatic test --app-code='v0vvbm0wip8' --storybook --port=9001"
 
   },
   "repository": {
